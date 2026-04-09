@@ -3,6 +3,7 @@ import { ArrowRight, Compass, Heart, Users, Globe, Shield, Star } from "lucide-r
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import heroBg from "@/assets/hero-beach-sunset.jpg";
+import logo from "@/assets/logo.png";
 import maldivesImg from "@/assets/destination-maldives.jpg";
 import portugalImg from "@/assets/destination-portugal.jpg";
 import mexicoImg from "@/assets/destination-mexico.jpg";
@@ -115,8 +116,8 @@ const Index = () => {
         <div className="absolute inset-0 hero-overlay" />
 
         <div className="relative z-10 container mx-auto px-6 text-center">
+          <img src={logo} alt="SJU Luxe Travel" className="h-24 w-24 mx-auto mb-6 animate-fade-in object-contain" />
           <p className="font-body text-sm tracking-[0.4em] uppercase mb-6 animate-fade-in text-destructive-foreground">
-            Based in San Juan, Puerto Rico
           </p>
           <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl text-foreground mb-6 animate-fade-in-up">
             Travel is not a Luxury,
