@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Compass, Heart, Users, Globe, Shield, Star } from "lucide-react";
+import { ArrowRight, Compass, Heart, Users, Globe, Shield, Star, ChevronDown } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import heroBg from "@/assets/hero-beach-sunset.jpg";
@@ -64,6 +65,77 @@ const destinations = [
     subtitle: "Ancient & Vibrant",
   },
 ];
+
+const faqs = [
+  {
+    question: "What is SJU Luxe Travel?",
+    answer: "SJU Luxe Travel is a boutique luxury travel advisory based in San Juan, Puerto Rico. We specialize in crafting intentional, experience-driven international travel itineraries tailored to each client's preferences and travel goals.",
+  },
+  {
+    question: "What destinations does SJU Luxe Travel offer?",
+    answer: "We curate travel experiences to destinations worldwide, including the Maldives, Portugal, Mexico, the Caribbean, Europe, Asia, and beyond. Our portfolio is constantly expanding based on client interests and emerging luxury destinations.",
+  },
+  {
+    question: "How is SJU Luxe Travel different from booking online?",
+    answer: "Unlike online booking platforms, we provide personalized service, insider access, and exclusive perks such as complimentary room upgrades, resort credits, and VIP amenities. We handle every detail so you can focus on enjoying the experience.",
+  },
+  {
+    question: "Who is the founder of SJU Luxe Travel?",
+    answer: "SJU Luxe Travel was founded by Daniel Santiago Díaz, a travel professional with over a decade of experience in luxury sales and international tourism. His hands-on approach and global network ensure every journey is exceptional.",
+  },
+  {
+    question: "How can I start working with SJU Luxe Travel?",
+    answer: "Simply reach out through our contact page or email us at dsantiago@ncmconcierge.com. We'll schedule a complimentary consultation to discuss your travel goals, preferences, and budget to begin designing your perfect journey.",
+  },
+];
+
+const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <div className="gold-border rounded-lg overflow-hidden">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full flex items-center justify-between p-6 text-left hover:bg-gold/5 transition-colors"
+      >
+        <span className="font-heading text-lg text-foreground">{question}</span>
+        <ChevronDown
+          size={20}
+          className={`text-gold transition-transform duration-300 flex-shrink-0 ml-4 ${isOpen ? "rotate-180" : ""}`}
+        />
+      </button>
+      {isOpen && (
+        <div className="px-6 pb-6 text-muted-foreground leading-relaxed">
+          {answer}
+        </div>
+      )}
+    </div>
+  );
+};
+
+const FAQSection = () => (
+  <section className="py-24 bg-background">
+    <div className="container mx-auto px-6">
+      <div className="max-w-3xl mx-auto">
+        <div className="text-center mb-16">
+          <span className="font-body text-gold text-sm tracking-[0.3em] uppercase">
+            Common Questions
+          </span>
+          <h2 className="font-heading text-3xl md:text-5xl text-foreground mt-4 mb-4">
+            Frequently Asked <span className="text-gold-gradient italic">Questions</span>
+          </h2>
+          <p className="text-muted-foreground text-lg">
+            Everything you need to know about working with SJU Luxe Travel.
+          </p>
+        </div>
+        <div className="space-y-4">
+          {faqs.map((faq, index) => (
+            <FAQItem key={index} question={faq.question} answer={faq.answer} />
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+);
 
 const schemaJson = {
   "@context": "https://schema.org",
@@ -292,7 +364,7 @@ const Index = () => {
                 What sets SJU Luxe Travel apart is our commitment to intentional, personalized service. We don't sell cookie-cutter vacation packages. Instead, we take the time to understand your travel goals, design bespoke itineraries, and handle every logistical detail so you can focus entirely on the experience.
               </p>
               <p>
-                As an independent agent of NCM Concierge, we have access to an extensive network of preferred travel partners, including luxury hotel chains, boutique properties, cruise lines, and destination management companies.
+                As an independent agent of NCM Concierge, we have access to an extensive network of preferred travel partners, including luxury hotel chains, boutique properties, cruise lines, and destination management companies. This means exclusive perks like complimentary room upgrades, resort credits, early check-in, and VIP amenities that aren't available when booking directly online.
               </p>
               <p>
                 Whether you're planning a romantic getaway, a family adventure, a destination wedding, or a solo retreat, we bring the same level of care, expertise, and personal attention to every trip we design.
@@ -301,6 +373,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      <FAQSection />
 
       {/* CTA Section */}
       <section className="py-24 bg-background relative overflow-hidden">
