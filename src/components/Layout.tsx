@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Linkedin, Mail, Phone } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -11,8 +12,8 @@ const navLinks = [
 const Header = () => (
   <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md gold-border border-t-0 border-l-0 border-r-0">
     <div className="container mx-auto px-6 flex items-center justify-between h-16">
-      <Link to="/" className="font-heading text-xl text-foreground tracking-wide">
-        SJU <span className="text-gold-gradient italic">Luxe</span> Travel
+      <Link to="/" className="flex items-center">
+        <img src={logo} alt="SJU Luxe Travel" className="h-12 w-12 object-contain" />
       </Link>
       <nav className="hidden md:flex items-center gap-8">
         {navLinks.map((link) => (
@@ -34,9 +35,7 @@ const Footer = () => (
     <div className="container mx-auto px-6">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
         <div>
-          <h3 className="font-heading text-xl text-foreground mb-4">
-            SJU <span className="text-gold-gradient italic">Luxe</span> Travel
-          </h3>
+          <img src={logo} alt="SJU Luxe Travel" className="h-16 w-16 object-contain mb-4" />
           <p className="text-muted-foreground text-sm leading-relaxed">
             Boutique luxury travel agency based in San Juan, Puerto Rico. Crafting intentional journeys worldwide.
           </p>
