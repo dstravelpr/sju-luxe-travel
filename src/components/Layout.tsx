@@ -26,6 +26,12 @@ const Header = () => (
             {link.label}
           </Link>
         ))}
+        <Link
+          to="/contact"
+          className="ml-2 px-6 py-2 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-widest uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105"
+        >
+          Plan Your Journey
+        </Link>
       </nav>
     </div>
   </header>

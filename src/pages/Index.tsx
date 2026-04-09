@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Compass, Heart, Users, Globe, Shield, Star } from "lucide-react";
+import { ArrowRight, Compass, Heart, Users, Globe, Shield, Star, ChevronDown } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import heroBg from "@/assets/hero-beach-sunset.jpg";
