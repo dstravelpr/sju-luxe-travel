@@ -303,6 +303,9 @@ const Index = () => {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <FAQSection />
+
       {/* CTA Section */}
       <section className="py-24 bg-background relative overflow-hidden">
         <div className="absolute inset-0 opacity-5">
