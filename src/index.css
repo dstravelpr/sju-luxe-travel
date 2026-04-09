@@ -66,9 +66,9 @@
   .hero-overlay {
     background: linear-gradient(
       to bottom,
-      hsla(220, 20%, 8%, 0.3) 0%,
-      hsla(220, 20%, 8%, 0.6) 50%,
-      hsla(220, 20%, 8%, 0.9) 100%
+      hsla(0, 0%, 3%, 0.2) 0%,
+      hsla(0, 0%, 3%, 0.5) 50%,
+      hsla(0, 0%, 3%, 0.95) 100%
     );
   }
 

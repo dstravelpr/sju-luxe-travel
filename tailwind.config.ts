@@ -28,6 +28,7 @@ export default {
           light: "hsl(var(--gold-light))",
         },
         charcoal: "hsl(var(--charcoal))",
+        cream: "hsl(var(--cream))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
