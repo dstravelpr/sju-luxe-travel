@@ -12,9 +12,9 @@ const navLinks = [
 
 const Header = () => (
   <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/30">
-    <div className="container mx-auto px-6 flex flex-col items-center py-3">
-      <Link to="/" className="mb-2">
-        <img src={logo} alt="SJU Luxe Travel" className="h-14 w-14 object-contain" />
+    <div className="container mx-auto px-6 flex items-center justify-between h-16">
+      <Link to="/" className="flex-shrink-0">
+        <img src={logo} alt="SJU Luxe Travel" className="h-12 w-12 object-contain" />
       </Link>
       <nav className="hidden md:flex items-center gap-10">
         {navLinks.map((link) => (
@@ -27,6 +27,12 @@ const Header = () => (
           </Link>
         ))}
       </nav>
+      <Link
+        to="/contact"
+        className="hidden md:inline-block px-6 py-2 border border-gold text-foreground font-body text-xs font-semibold tracking-[0.2em] uppercase transition-all duration-300 hover:bg-gold hover:text-primary-foreground"
+      >
+        Plan Your Journey
+      </Link>
     </div>
   </header>
 );
