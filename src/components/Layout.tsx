@@ -11,27 +11,21 @@ const navLinks = [
 ];
 
 const Header = () => (
-  <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md gold-border border-t-0 border-l-0 border-r-0">
-    <div className="container mx-auto px-6 flex items-center justify-between h-16">
-      <Link to="/" className="flex items-center">
-        <img src={logo} alt="SJU Luxe Travel" className="h-12 w-12 object-contain" />
+  <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/30">
+    <div className="container mx-auto px-6 flex flex-col items-center py-3">
+      <Link to="/" className="mb-2">
+        <img src={logo} alt="SJU Luxe Travel" className="h-14 w-14 object-contain" />
       </Link>
-      <nav className="hidden md:flex items-center gap-8">
+      <nav className="hidden md:flex items-center gap-10">
         {navLinks.map((link) => (
           <Link
             key={link.to}
             to={link.to}
-            className="font-body text-sm tracking-widest uppercase text-muted-foreground hover:text-gold transition-colors"
+            className="font-body text-xs tracking-[0.25em] uppercase text-foreground/70 hover:text-gold transition-colors"
           >
             {link.label}
           </Link>
         ))}
-        <Link
-          to="/contact"
-          className="ml-2 px-6 py-2 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-widest uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105"
-        >
-          Plan Your Journey
-        </Link>
       </nav>
     </div>
   </header>

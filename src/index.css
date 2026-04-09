@@ -6,47 +6,48 @@
 
 @layer base {
   :root {
-    --background: 220 20% 8%;
-    --foreground: 40 20% 92%;
+    --background: 0 0% 3%;
+    --foreground: 40 30% 88%;
 
-    --card: 220 18% 11%;
-    --card-foreground: 40 20% 92%;
+    --card: 0 0% 7%;
+    --card-foreground: 40 30% 88%;
 
-    --popover: 220 18% 11%;
-    --popover-foreground: 40 20% 92%;
+    --popover: 0 0% 7%;
+    --popover-foreground: 40 30% 88%;
 
     --primary: 43 74% 49%;
-    --primary-foreground: 220 20% 8%;
+    --primary-foreground: 0 0% 3%;
 
-    --secondary: 220 15% 15%;
-    --secondary-foreground: 40 20% 92%;
+    --secondary: 0 0% 10%;
+    --secondary-foreground: 40 30% 88%;
 
-    --muted: 220 15% 15%;
-    --muted-foreground: 220 10% 55%;
+    --muted: 0 0% 12%;
+    --muted-foreground: 40 10% 55%;
 
     --accent: 43 74% 49%;
-    --accent-foreground: 220 20% 8%;
+    --accent-foreground: 0 0% 3%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 40 20% 95%;
+    --destructive-foreground: 40 30% 95%;
 
-    --border: 43 30% 25%;
-    --input: 220 15% 18%;
+    --border: 43 20% 20%;
+    --input: 0 0% 12%;
     --ring: 43 74% 49%;
 
     --radius: 0.25rem;
 
     --gold: 43 74% 49%;
     --gold-light: 43 74% 62%;
-    --charcoal: 220 18% 11%;
+    --charcoal: 0 0% 7%;
+    --cream: 40 30% 88%;
 
-    --sidebar-background: 220 18% 11%;
-    --sidebar-foreground: 40 20% 92%;
+    --sidebar-background: 0 0% 7%;
+    --sidebar-foreground: 40 30% 88%;
     --sidebar-primary: 43 74% 49%;
-    --sidebar-primary-foreground: 220 20% 8%;
-    --sidebar-accent: 220 15% 15%;
-    --sidebar-accent-foreground: 40 20% 92%;
-    --sidebar-border: 43 30% 25%;
+    --sidebar-primary-foreground: 0 0% 3%;
+    --sidebar-accent: 0 0% 10%;
+    --sidebar-accent-foreground: 40 30% 88%;
+    --sidebar-border: 43 20% 20%;
     --sidebar-ring: 43 74% 49%;
   }
 }
@@ -65,9 +66,9 @@
   .hero-overlay {
     background: linear-gradient(
       to bottom,
-      hsla(220, 20%, 8%, 0.3) 0%,
-      hsla(220, 20%, 8%, 0.6) 50%,
-      hsla(220, 20%, 8%, 0.9) 100%
+      hsla(0, 0%, 3%, 0.2) 0%,
+      hsla(0, 0%, 3%, 0.5) 50%,
+      hsla(0, 0%, 3%, 0.95) 100%
     );
   }
 
