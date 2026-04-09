@@ -293,7 +293,7 @@ const Index = () => {
                 What sets SJU Luxe Travel apart is our commitment to intentional, personalized service. We don't sell cookie-cutter vacation packages. Instead, we take the time to understand your travel goals, design bespoke itineraries, and handle every logistical detail so you can focus entirely on the experience.
               </p>
               <p>
-                As an independent agent of NCM Concierge, we have access to an extensive network of preferred travel partners, including luxury hotel chains, boutique properties, cruise lines, and destination management companies.
+                As an independent agent of NCM Concierge, we have access to an extensive network of preferred travel partners, including luxury hotel chains, boutique properties, cruise lines, and destination management companies. This means exclusive perks like complimentary room upgrades, resort credits, early check-in, and VIP amenities that aren't available when booking directly online.
               </p>
               <p>
                 Whether you're planning a romantic getaway, a family adventure, a destination wedding, or a solo retreat, we bring the same level of care, expertise, and personal attention to every trip we design.
