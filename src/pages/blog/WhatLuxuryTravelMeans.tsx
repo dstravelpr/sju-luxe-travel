@@ -24,7 +24,7 @@ const WhatLuxuryTravelMeans = () => {
     <Layout>
       <SEOHead
         title="What Luxury Travel Really Means — SJU Luxe Travel"
-        description="Real luxury in travel isn't about how much you spend. It's about intention, comfort, and meaningful moments. SJU Luxe Travel redefines luxury."
+        description="Luxury travel isn't about spending more — it's about intention, comfort & meaningful moments. SJU Luxe Travel redefines luxury."
         canonical="https://sjuluxetravel.com/blog/what-luxury-travel-really-means"
         schemaJson={schemaJson}
       />
