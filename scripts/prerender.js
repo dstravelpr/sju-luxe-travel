@@ -73,12 +73,40 @@ for (const [route, content] of Object.entries(pages)) {
   const dir = path.join(DIST, route);
   fs.mkdirSync(dir, { recursive: true });
 
-  // Replace the root div content with route-specific SEO content
+  const canonical = `${HOSTNAME}${route}`;
+
   const html = template
+    // Replace title
     .replace(
       /<title>[^<]*<\/title>/,
       `<title>${content.title}</title>`
     )
+    // Replace meta description
+    .replace(
+      /<meta name="description" content="[^"]*" \/>/,
+      `<meta name="description" content="${content.description}" />`
+    )
+    // Replace og:title
+    .replace(
+      /<meta property="og:title" content="[^"]*" \/>/,
+      `<meta property="og:title" content="${content.title}" />`
+    )
+    // Replace og:description
+    .replace(
+      /<meta property="og:description" content="[^"]*" \/>/,
+      `<meta property="og:description" content="${content.description}" />`
+    )
+    // Replace og:url
+    .replace(
+      /<meta property="og:url" content="[^"]*" \/>/,
+      `<meta property="og:url" content="${canonical}" />`
+    )
+    // Inject canonical link before </head>
+    .replace(
+      /<\/head>/,
+      `  <link rel="canonical" href="${canonical}" />\n  </head>`
+    )
+    // Replace root div content
     .replace(
       /<div id="root">[\s\S]*?<\/div>/,
       `<div id="root"><h1>${content.h1}</h1><p>${content.body}</p></div>`
