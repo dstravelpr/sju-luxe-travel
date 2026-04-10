@@ -67,9 +67,6 @@ const About = () => {
                 headquartered in San Juan, Puerto Rico. With over a decade of luxury sales experience
                 across six continents, Daniel is a certified travel professional and independent agent
                 of NCM Concierge — one of the most respected concierge travel networks in the Americas.
-                Licensed in Florida (ST15578), California (2090937-50), Washington (UBID 603189022),
-                and Iowa (Agency #1202), he brings a uniquely strategic, client-centered approach to
-                crafting intentional travel experiences.
               </p>
               <p>
                 His career in travel began with the Puerto Rico Tourism Company, where he worked in
