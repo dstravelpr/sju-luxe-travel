@@ -113,8 +113,8 @@ const Destinations = () => {
   return (
     <Layout>
       <SEOHead
-        title="Luxury Travel Destinations — SJU Luxe Travel, San Juan PR"
-        description="Explore luxury destinations curated by your Puerto Rico travel advisor: Maldives, Portugal, Mexico & beyond. Exclusive perks at every property."
+        title="Luxury Travel Destinations — Bespoke Itineraries by SJU Luxe Travel"
+        description="Explore luxury destinations curated by your Puerto Rico travel advisor: Maldives, Portugal, Mexico & beyond. Exclusive NCM Concierge perks at every property."
         canonical="https://sjuluxetravel.com/destinations"
       />
       <section className="pt-32 pb-8 bg-background">

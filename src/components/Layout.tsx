@@ -148,8 +148,9 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 items-end">
             <div className="text-muted-foreground text-[10px] leading-relaxed space-y-1">
               <p className="font-semibold text-foreground text-xs">SJU Luxe Travel</p>
-              <p>{t.footer.independentAgent}</p>
               <p>{t.footer.boutiqueAgency}</p>
+              <p>{t.footer.independentAgent}</p>
+              <p>{t.footer.bilingual}</p>
               <p>AV-166 Lic. 237</p>
               <p>Florida Seller of Travel # ST15578</p>
               <p>California Seller of Travel No. 2090937-50</p>
