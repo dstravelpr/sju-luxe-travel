@@ -5,7 +5,6 @@ import { componentTagger } from "lovable-tagger";
 import Sitemap from "vite-plugin-sitemap";
 
 const routes = [
-  "/",
   "/about",
   "/destinations",
   "/destinations/maldives",
