@@ -9,8 +9,8 @@ const Contact = () => {
   return (
     <Layout>
       <SEOHead
-        title="Contact | SJU Luxe Travel — Luxury Travel Advisor San Juan, PR"
-        description="Contact your luxury travel advisor in San Juan, Puerto Rico. SJU Luxe Travel offers bilingual, bespoke travel planning with exclusive NCM Concierge perks."
+        title="Free Luxury Travel Consultation | SJU Luxe Travel — San Juan, PR"
+        description="Schedule a free luxury travel consultation with your boutique travel advisor in San Juan, Puerto Rico. Private guided tours, luxury cruises from San Juan, solo women's travel & bespoke itineraries with exclusive NCM Concierge perks."
         canonical="https://sjuluxetravel.com/contact"
       />
 
@@ -111,6 +111,8 @@ const Contact = () => {
                       <option value="adventure">{t.contact.travelTypes.adventure}</option>
                       <option value="wellness">{t.contact.travelTypes.wellness}</option>
                       <option value="cruise">{t.contact.travelTypes.cruise}</option>
+                      <option value="soloWomen">{t.contact.travelTypes.soloWomen}</option>
+                      <option value="incentive">{t.contact.travelTypes.incentive}</option>
                       <option value="other">{t.contact.travelTypes.other}</option>
                     </select>
                   </div>
