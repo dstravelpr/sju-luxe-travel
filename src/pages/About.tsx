@@ -37,7 +37,7 @@ const About = () => {
           {/* Hero portrait */}
           <div className="mt-10 max-w-md mx-auto">
             <img
-              src="/about/IMG_2975.jpg"
+            src="/about/hero-portrait.jpg"
               alt="Daniel Santiago Díaz, founder of SJU Luxe Travel, luxury travel advisor in Puerto Rico"
               className="w-full rounded-lg shadow-2xl object-cover aspect-[3/4]"
               loading="eager"
