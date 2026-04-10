@@ -32,6 +32,7 @@ const App = () => (
             <Route path="/destinations/portugal" element={<Portugal />} />
             <Route path="/destinations/mexico" element={<Mexico />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/what-luxury-travel-really-means" element={<WhatLuxuryTravelMeans />} />
             <Route path="/contact" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
