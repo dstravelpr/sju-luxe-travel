@@ -1,0 +1,23 @@
+# SJU Luxe Travel
+
+> Boutique luxury travel agency based in San Juan, Puerto Rico. Founded by Daniel Santiago Díaz.
+
+## About
+SJU Luxe Travel crafts curated, intentional luxury travel experiences to destinations including the Maldives, Portugal, Mexico, and beyond. We are an independent agent of NCM Concierge, one of the most respected concierge travel networks in the Americas.
+
+## Services
+- Curated luxury itineraries
+- Honeymoon & anniversary planning
+- Group & family travel
+- Personal travel concierge
+- Exclusive resort perks & upgrades
+- VIP transfers & private experiences
+
+## Destinations
+- Maldives: Overwater villas, private dining, world-class diving
+- Portugal: Lisbon, Porto, Algarve, Douro Valley wine country
+- Mexico: Riviera Maya, Tulum, Oaxaca, cenotes
+
+## Contact
+- Website: https://sjuluxetravel.com
+- Location: San Juan, Puerto Rico

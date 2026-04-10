@@ -29,7 +29,7 @@ const Maldives = () => (
   <Layout>
     <SEOHead
       title="Luxury Maldives Travel Packages — Curated by SJU Luxe Travel"
-      description="Plan your luxury Maldives vacation with SJU Luxe Travel. Overwater villas, private dinners, world-class diving & exclusive resort perks. Boutique travel agency in San Juan, PR."
+      description="Plan your luxury Maldives vacation with SJU Luxe Travel. Overwater villas, private dinners, diving & exclusive resort perks from San Juan, PR."
       canonical="https://sjuluxetravel.com/destinations/maldives"
       schemaJson={schemaJson}
     />

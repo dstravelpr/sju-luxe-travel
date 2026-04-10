@@ -28,7 +28,7 @@ const Portugal = () => (
   <Layout>
     <SEOHead
       title="Luxury Portugal Travel Packages — Curated by SJU Luxe Travel"
-      description="Plan your luxury Portugal vacation with SJU Luxe Travel. Lisbon, Porto, Algarve beaches, Douro Valley wine tours & exclusive hotel perks. Boutique travel agency in San Juan, PR."
+      description="Plan your luxury Portugal vacation with SJU Luxe Travel. Lisbon, Porto, Algarve, Douro Valley wine tours & exclusive hotel perks."
       canonical="https://sjuluxetravel.com/destinations/portugal"
       schemaJson={schemaJson}
     />

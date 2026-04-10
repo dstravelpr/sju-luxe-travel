@@ -202,8 +202,8 @@ const Index = () => {
   return (
     <Layout>
       <SEOHead
-        title="SJU Luxe Travel | Boutique Luxury Travel Agency in San Juan, Puerto Rico"
-        description="SJU Luxe Travel is a boutique luxury travel agency based in San Juan, Puerto Rico. We craft bespoke international itineraries to the Maldives, Portugal, Mexico, and beyond — with exclusive perks you can't get booking online."
+        title="SJU Luxe Travel | Luxury Travel Agency San Juan PR"
+        description="Boutique luxury travel agency in San Juan, Puerto Rico. Curated itineraries to the Maldives, Portugal, Mexico & beyond with exclusive perks."
         canonical="https://sjuluxetravel.com/"
         schemaJson={schemaJson}
       />
