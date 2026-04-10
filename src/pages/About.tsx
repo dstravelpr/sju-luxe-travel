@@ -50,10 +50,12 @@ const About = () => {
               <div className="text-muted-foreground text-sm leading-relaxed space-y-5">
                 <p>
                   Daniel Santiago Díaz is the founder of SJU Luxe Travel, a boutique travel advisory
-                  headquartered in San Juan, Puerto Rico. With over a decade of professional
-                  experience spanning travel, tourism, luxury hospitality, and international sales,
-                  Daniel brings a uniquely strategic, client-centered approach to crafting intentional
-                  travel experiences.
+                  headquartered in San Juan, Puerto Rico. With over a decade of luxury sales experience
+                  across six continents, Daniel is a certified travel professional and independent agent
+                  of NCM Concierge — one of the most respected concierge travel networks in the Americas.
+                  Licensed in Florida (ST15578), California (2090937-50), Washington (UBID 603189022),
+                  and Iowa (Agency #1202), he brings a uniquely strategic, client-centered approach to
+                  crafting intentional travel experiences.
                 </p>
                 <p>
                   His career in travel began with the Puerto Rico Tourism Company, where he worked in
