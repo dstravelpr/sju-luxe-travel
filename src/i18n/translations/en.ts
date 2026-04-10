@@ -19,7 +19,7 @@ export const en = {
     fullName: "Full Name",
     emailAddress: "Email Address",
     subscribe: "Subscribe",
-    independentAgent: "Independent Agent of NCM Concierge",
+    independentAgent: "Independent Agent of NCM Concierge, part of Travel Leaders",
     boutiqueAgency: "Boutique Travel Agency",
     privacyPolicy: "Privacy Policy",
     termsOfService: "Terms of Service",

@@ -21,7 +21,7 @@ export const es: typeof en = {
     fullName: "Nombre Completo",
     emailAddress: "Correo Electrónico",
     subscribe: "Suscribirse",
-    independentAgent: "Agente Independiente de NCM Concierge",
+    independentAgent: "Agente Independiente de NCM Concierge, parte de Travel Leaders",
     boutiqueAgency: "Agencia de Viajes Boutique",
     privacyPolicy: "Política de Privacidad",
     termsOfService: "Términos de Servicio",
