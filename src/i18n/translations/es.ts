@@ -57,7 +57,6 @@ export const es: typeof en = {
       personalConcierge: "Concierge de Viajes Privado",
       personalConciergeDesc: "Apoyo dedicado desde la planificación hasta el regreso, asegurando que cada detalle supere las expectativas. Tu concierge de viajes privado se encarga de reservas, traslados, solicitudes especiales y soporte en tiempo real — sirviendo a clientes en el Caribe y más allá.",
       internationalExpertise: "Experiencia Internacional",
-      internationalExperiencesDesc: "Con experiencia directa en seis continentes y relaciones profundas con socios de viaje globales, proporcionamos conocimiento interno y acceso exclusivo a los destinos más cautivadores del mundo.",
       internationalExpertiseDesc: "Con experiencia directa en seis continentes y relaciones profundas con socios de viaje globales, proporcionamos conocimiento interno y acceso exclusivo a los destinos más cautivadores del mundo.",
       bookingProtection: "Protección de Reservas",
       bookingProtectionDesc: "Viaja con confianza sabiendo que tu inversión está protegida. Te guiamos a través de opciones integrales de seguro de viaje y abogamos en tu nombre si los planes cambian o surgen problemas durante tu viaje.",
