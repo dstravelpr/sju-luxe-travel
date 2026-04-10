@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Instagram, Facebook, Linkedin, Mail, Phone, MapPin } from "lucide-react";
 import logo from "@/assets/logo.png";
+import footerSeal from "@/assets/footer-seal.png";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -147,6 +148,7 @@ const Footer = () => (
             <p>Iowa Registered Agency, # 1501</p>
           </div>
           <div className="flex flex-col items-end gap-3">
+            <img src={footerSeal} alt="SJU Luxe Travel seal" className="h-16 w-auto object-contain" />
             <div className="flex gap-6 text-muted-foreground text-xs">
               <a href="#" className="hover:text-gold transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-gold transition-colors">Terms of Service</a>
