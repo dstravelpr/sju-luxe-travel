@@ -148,7 +148,7 @@ const Footer = () => (
             <p>Iowa Registered Agency # 1202</p>
           </div>
           <div className="flex flex-col items-end gap-3">
-            <img src={footerSeal} alt="SJU Luxe Travel seal" className="h-16 w-auto object-contain" />
+            <img src={footerSeal} alt="SJU Luxe Travel seal" className="h-28 w-auto object-contain" />
             <div className="flex gap-6 text-muted-foreground text-xs">
               <a href="#" className="hover:text-gold transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-gold transition-colors">Terms of Service</a>
