@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { ArrowRight, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
+import blogMicrocationsImg from "@/assets/blog-microcations.jpg";
+import blogLuxuryImg from "@/assets/blog-luxury-travel.jpg";
+import blogAgentImg from "@/assets/blog-travel-agent.jpg";
 
 const categories = ["All", "Destinations", "Travel Tips", "Accommodations", "Culture"];
 
