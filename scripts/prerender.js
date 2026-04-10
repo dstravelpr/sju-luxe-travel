@@ -101,10 +101,10 @@ for (const [route, content] of Object.entries(pages)) {
       /<meta property="og:url" content="[^"]*" \/>/,
       `<meta property="og:url" content="${canonical}" />`
     )
-    // Inject canonical link before </head>
+    // Replace canonical link
     .replace(
-      /<\/head>/,
-      `  <link rel="canonical" href="${canonical}" />\n  </head>`
+      /<link rel="canonical" href="[^"]*" \/>/,
+      `<link rel="canonical" href="${canonical}" />`
     )
     // Replace root div content
     .replace(
