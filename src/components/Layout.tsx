@@ -46,14 +46,8 @@ const Header = () => {
             </Link>
           ))}
         </nav>
-        <div className="hidden md:flex items-center gap-4">
+        <div className="hidden md:flex items-center">
           <LanguageToggle />
-          <Link
-            to="/contact"
-            className="px-6 py-2 border border-gold text-foreground font-body text-xs font-semibold tracking-[0.2em] uppercase transition-all duration-300 hover:bg-gold hover:text-primary-foreground"
-          >
-            {t.nav.planYourJourney}
-          </Link>
         </div>
         {/* Mobile: just toggle */}
         <div className="md:hidden">
