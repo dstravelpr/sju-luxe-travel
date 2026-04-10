@@ -139,13 +139,13 @@ const Footer = () => (
         <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 items-end">
           <div className="text-muted-foreground text-[10px] leading-relaxed space-y-1">
             <p className="font-semibold text-foreground text-xs">SJU Luxe Travel</p>
-            <p>Agencia Independiente de NCM Concierge</p>
+            <p>Agente Independiente de NCM Concierge</p>
             <p>Agencia de Viajes Boutique</p>
-            <p>EIN Núm.: 399</p>
-            <p>Florida Seller of Travel #: ST43578</p>
-            <p>California Seller of Travel No. 2160017-50</p>
-            <p>Washington UBID No.: 604589037</p>
-            <p>Iowa Registered Agency, # 1501</p>
+            <p>AV-166 Lic. 237</p>
+            <p>Florida Seller of Travel # ST15578</p>
+            <p>California Seller of Travel No. 2090937-50</p>
+            <p>Washington UBID No. 603189022</p>
+            <p>Iowa Registered Agency # 1202</p>
           </div>
           <div className="flex flex-col items-end gap-3">
             <img src={footerSeal} alt="SJU Luxe Travel seal" className="h-16 w-auto object-contain" />
