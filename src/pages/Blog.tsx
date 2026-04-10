@@ -85,12 +85,14 @@ const Blog = () => {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center max-w-5xl mx-auto">
             <div className="aspect-[4/3] bg-charcoal gold-border rounded-sm overflow-hidden relative">
-              <div className="absolute top-4 left-4 px-3 py-1 bg-gold-gradient text-primary-foreground text-[10px] tracking-[0.15em] uppercase font-semibold rounded-sm">
+              <div className="absolute top-4 left-4 px-3 py-1 bg-gold-gradient text-primary-foreground text-[10px] tracking-[0.15em] uppercase font-semibold rounded-sm z-10">
                 Featured
               </div>
-              <div className="w-full h-full bg-charcoal flex items-center justify-center">
-                <span className="text-muted-foreground text-xs italic">Featured image</span>
-              </div>
+              <img
+                src={featuredPost.image}
+                alt={featuredPost.title}
+                className="w-full h-full object-cover"
+              />
             </div>
             <div>
               <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">
@@ -145,13 +147,16 @@ const Blog = () => {
                 key={post.slug}
                 className="gold-border gold-border-hover rounded-sm overflow-hidden group"
               >
-                <div className="aspect-[16/9] bg-charcoal relative">
-                  <div className="absolute top-3 left-3 px-2.5 py-1 gold-border text-[10px] tracking-[0.15em] uppercase text-muted-foreground rounded-sm">
+                <div className="aspect-[16/9] bg-charcoal relative overflow-hidden">
+                  <div className="absolute top-3 left-3 px-2.5 py-1 gold-border text-[10px] tracking-[0.15em] uppercase text-muted-foreground rounded-sm z-10">
                     {post.category}
                   </div>
-                  <div className="w-full h-full flex items-center justify-center">
-                    <span className="text-muted-foreground text-xs italic">Post image</span>
-                  </div>
+                  <img
+                    src={post.image}
+                    alt={post.title}
+                    className="w-full h-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="font-heading text-lg text-foreground mb-3 group-hover:text-gold transition-colors">
