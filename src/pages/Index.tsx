@@ -139,39 +139,71 @@ const FAQSection = () => (
 
 const schemaJson = {
   "@context": "https://schema.org",
-  "@type": "TravelAgency",
-  name: "SJU Luxe Travel",
-  url: "https://sjuluxetravel.com",
-  description:
-    "SJU Luxe Travel is a boutique luxury travel agency based in San Juan, Puerto Rico, specializing in curated international travel experiences to destinations including the Maldives, Portugal, Mexico, and beyond.",
-  telephone: "+16179355714",
-  email: "dsantiago@ncmconcierge.com",
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "San Juan",
-    addressRegion: "PR",
-    addressCountry: "US",
-  },
-  sameAs: [
-    "https://www.instagram.com/sjuluxetravel/",
-    "https://www.facebook.com/sjuluxetravel",
-    "https://www.linkedin.com/company/sju-luxe-travel",
+  "@graph": [
+    {
+      "@type": "TravelAgency",
+      name: "SJU Luxe Travel",
+      url: "https://sjuluxetravel.com",
+      description:
+        "SJU Luxe Travel is a boutique luxury travel agency based in San Juan, Puerto Rico. We craft bespoke international itineraries to the Maldives, Portugal, Mexico, and beyond — with exclusive perks you can't get booking online.",
+      telephone: "+16179355714",
+      email: "dsantiago@ncmconcierge.com",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "San Juan",
+        addressRegion: "PR",
+        addressCountry: "US",
+      },
+      sameAs: [
+        "https://www.instagram.com/sjuluxetravel/",
+        "https://www.facebook.com/sjuluxetravel",
+        "https://www.linkedin.com/company/sju-luxe-travel",
+      ],
+      founder: {
+        "@type": "Person",
+        name: "Daniel Santiago Díaz",
+        jobTitle: "Founder & Lead Travel Advisor",
+      },
+      areaServed: { "@type": "Place", name: "Worldwide" },
+      priceRange: "$$-$$$$",
+    },
+    {
+      "@type": "LocalBusiness",
+      name: "SJU Luxe Travel",
+      image: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6cdf4b5b-9b67-48a1-83fb-134129ec892a/id-preview-f5dd5032--633f6989-8325-4a39-b1db-9033d10321cf.lovable.app-1775821560059.png",
+      telephone: "+16179355714",
+      email: "dsantiago@ncmconcierge.com",
+      url: "https://sjuluxetravel.com",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "San Juan",
+        addressRegion: "PR",
+        addressCountry: "US",
+      },
+      openingHoursSpecification: [
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          opens: "09:00",
+          closes: "18:00",
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: "Saturday",
+          opens: "10:00",
+          closes: "16:00",
+        },
+      ],
+    },
   ],
-  founder: {
-    "@type": "Person",
-    name: "Daniel Santiago Díaz",
-    jobTitle: "Founder & Lead Travel Advisor",
-  },
-  areaServed: { "@type": "Place", name: "Worldwide" },
-  priceRange: "$$-$$$$",
 };
 
 const Index = () => {
   return (
     <Layout>
       <SEOHead
-        title="Boutique Luxury Travel Agency | San Juan, Puerto Rico"
-        description="SJU Luxe Travel crafts curated luxury vacations to the Maldives, Portugal, Mexico & beyond. Boutique travel agency in San Juan, PR."
+        title="SJU Luxe Travel | Boutique Luxury Travel Agency in San Juan, Puerto Rico"
+        description="SJU Luxe Travel is a boutique luxury travel agency based in San Juan, Puerto Rico. We craft bespoke international itineraries to the Maldives, Portugal, Mexico, and beyond — with exclusive perks you can't get booking online."
         canonical="https://sjuluxetravel.com/"
         schemaJson={schemaJson}
       />
@@ -191,11 +223,14 @@ const Index = () => {
           <img src={logo} alt="SJU Luxe Travel" className="h-24 w-24 mx-auto mb-6 animate-fade-in object-contain" />
           <p className="font-body text-sm tracking-[0.4em] uppercase mb-6 animate-fade-in text-destructive-foreground">
           </p>
-          <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl text-foreground mb-6 animate-fade-in-up">
+          <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl text-foreground mb-4 animate-fade-in-up">
             Travel is not a Luxury,
             <br />
             <span className="text-gold-gradient italic">It's an Opportunity</span>
           </h1>
+          <h2 className="font-body text-sm md:text-base tracking-[0.3em] uppercase text-gold mb-6 animate-fade-in-up">
+            Boutique Luxury Travel Agency — San Juan, Puerto Rico
+          </h2>
           <p className="font-body text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-delay">
             Your gateway to extraordinary international destinations. We specialize in crafting
             unforgettable, intentional journeys to the world's most captivating places—from overwater villas in the Maldives to the sun-kissed coasts of Portugal and the vibrant culture of Mexico.
@@ -249,9 +284,11 @@ const Index = () => {
                 we tailor each itinerary around what matters most to you.
               </p>
               <p>
-                Founded by Daniel Santiago Díaz, a travel professional with over a decade of
-                experience in luxury sales and international tourism, SJU Luxe Travel brings a
-                uniquely personal, hands-on approach to travel advisory.
+              With over a decade of luxury sales experience across six continents, founder
+                Daniel Santiago Díaz is a certified travel professional and independent agent of
+                NCM Concierge — one of the most respected concierge travel networks in the Americas.
+                Licensed in Florida (ST15578), California, Washington, and Iowa, SJU Luxe Travel
+                brings a uniquely personal, hands-on approach to travel advisory.
               </p>
             </div>
             <Link
@@ -327,7 +364,7 @@ const Index = () => {
             {destinations.map((dest, index) => (
               <Link
                 key={index}
-                to="/destinations"
+                to={`/destinations/${dest.title.toLowerCase().replace("the ", "")}`}
                 className="group relative aspect-[4/5] overflow-hidden rounded-lg gold-border gold-border-hover"
               >
                 <img
