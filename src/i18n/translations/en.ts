@@ -39,7 +39,7 @@ export const en = {
     philosophyTitle2: "Extraordinary Memories",
     philosophyP1: "SJU Luxe Travel is a boutique travel advisory based in San Juan, Puerto Rico, specializing in intentional, experience-driven travel. We believe travel is not a luxury—it's an opportunity to slow down, connect, and live more fully.",
     philosophyP2: "Our approach blends expert planning, insider knowledge, and firsthand experience to ensure every trip is thoughtfully designed—not rushed, generic, or overwhelming. From honeymoons and milestone celebrations to cultural immersions and wellness retreats, we tailor each itinerary around what matters most to you.",
-    philosophyP3: "With over a decade of luxury sales experience across six continents, founder Daniel Santiago Díaz is a certified travel professional and independent agent of NCM Concierge — one of the most respected concierge travel networks in the Americas. Licensed in Florida (ST15578), California, Washington, and Iowa, SJU Luxe Travel brings a uniquely personal, hands-on approach to travel advisory.",
+    philosophyP3: "With over a decade of luxury sales experience across six continents, founder Daniel Santiago Díaz is a certified travel professional and independent agent of NCM Concierge, part of Travel Leaders — one of the most respected concierge travel networks in the Americas.",
     learnMore: "Learn More About Us",
     servicesLabel: "What We Offer",
     servicesTitle: "Exceptional",
