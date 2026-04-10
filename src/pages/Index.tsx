@@ -220,7 +220,7 @@ const Index = () => {
         <div className="absolute inset-0 hero-overlay" />
 
         <div className="relative z-10 container mx-auto px-6 text-center">
-          <img src={logo} alt="SJU Luxe Travel" className="h-24 w-24 mx-auto mb-6 animate-fade-in object-contain" />
+          <img src={logo} alt="SJU Luxe Travel" className="hidden md:block h-24 w-24 mx-auto mb-6 animate-fade-in object-contain" />
           <p className="font-body text-sm tracking-[0.4em] uppercase mb-6 animate-fade-in text-destructive-foreground">
           </p>
           <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl text-foreground mb-4 animate-fade-in-up">
