@@ -9,8 +9,8 @@ const Contact = () => {
   return (
     <Layout>
       <SEOHead
-        title="Contact | SJU Luxe Travel — Plan Your Journey"
-        description="Ready to start planning? Contact SJU Luxe Travel to design your next luxury getaway. Based in San Juan, Puerto Rico."
+        title="Contact | SJU Luxe Travel — Luxury Travel Advisor San Juan, PR"
+        description="Contact your luxury travel advisor in San Juan, Puerto Rico. SJU Luxe Travel offers bilingual, bespoke travel planning with exclusive NCM Concierge perks."
         canonical="https://sjuluxetravel.com/contact"
       />
 

@@ -8,8 +8,8 @@ import mexicoImg from "@/assets/destination-mexico.jpg";
 const schemaJson = {
   "@context": "https://schema.org",
   "@type": "TouristDestination",
-  name: "Luxury Mexico Travel Packages",
-  description: "Curated luxury travel to Mexico by SJU Luxe Travel. Riviera Maya, Tulum, Oaxaca, San Miguel de Allende & cenote experiences with exclusive resort perks.",
+  name: "Luxury Mexico Vacation Packages",
+  description: "Curated luxury vacation packages to Mexico by SJU Luxe Travel. Riviera Maya, Tulum, Oaxaca, San Miguel de Allende & cenote experiences with exclusive resort perks.",
   url: "https://sjuluxetravel.com/destinations/mexico",
 };
 
@@ -20,8 +20,8 @@ const Mexico = () => {
   return (
     <Layout>
       <SEOHead
-        title="Luxury Mexico Travel Packages — Curated by SJU Luxe Travel"
-        description="Plan your luxury Mexico vacation with SJU Luxe Travel. Riviera Maya, Tulum, Oaxaca, cenotes & exclusive resort perks. Boutique travel agency in San Juan, PR."
+        title="Luxury Mexico Vacation Packages — Curated by SJU Luxe Travel"
+        description="Plan your luxury Mexico vacation with SJU Luxe Travel. Riviera Maya, Tulum, Oaxaca, cenotes & exclusive resort perks. Bespoke itineraries from San Juan, PR."
         canonical="https://sjuluxetravel.com/destinations/mexico"
         schemaJson={schemaJson}
       />
