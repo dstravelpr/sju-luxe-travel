@@ -12,6 +12,7 @@ import Portugal from "./pages/destinations/Portugal.tsx";
 import Mexico from "./pages/destinations/Mexico.tsx";
 import Blog from "./pages/Blog.tsx";
 import Contact from "./pages/Contact.tsx";
+import WhatLuxuryTravelMeans from "./pages/blog/WhatLuxuryTravelMeans.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
