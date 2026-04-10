@@ -12,6 +12,7 @@ import Portugal from "./pages/destinations/Portugal.tsx";
 import Mexico from "./pages/destinations/Mexico.tsx";
 import Blog from "./pages/Blog.tsx";
 import Contact from "./pages/Contact.tsx";
+import WhatLuxuryTravelMeans from "./pages/blog/WhatLuxuryTravelMeans.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ const App = () => (
             <Route path="/destinations/portugal" element={<Portugal />} />
             <Route path="/destinations/mexico" element={<Mexico />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/what-luxury-travel-really-means" element={<WhatLuxuryTravelMeans />} />
             <Route path="/contact" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
