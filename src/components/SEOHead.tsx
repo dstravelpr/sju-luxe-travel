@@ -33,6 +33,11 @@ export const SEOHead = ({ title, description, canonical, schemaJson, ogImage }: 
 
       {canonical && <link rel="canonical" href={canonical} />}
 
+      {/* Hreflang — same URL serves both languages via client-side toggle */}
+      {canonical && <link rel="alternate" hrefLang="en" href={canonical} />}
+      {canonical && <link rel="alternate" hrefLang="es" href={canonical} />}
+      {canonical && <link rel="alternate" hrefLang="x-default" href={canonical} />}
+
       {schemaJson && (
         <script type="application/ld+json">
           {JSON.stringify(schemaJson)}
