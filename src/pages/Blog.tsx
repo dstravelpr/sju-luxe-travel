@@ -18,6 +18,7 @@ const featuredPost = {
   author: "Daniel Santiago Díaz",
   date: "April 9, 2026",
   readTime: "6 min read",
+  image: blogMicrocationsImg,
   featured: true,
 };
 
@@ -30,6 +31,7 @@ const posts = [
       "When people hear luxury travel, they picture something out of reach. But real luxury isn't about how much you spend—it's about how the experience…",
     author: "Daniel Santiago Díaz",
     readTime: "8 min read",
+    image: blogLuxuryImg,
   },
   {
     slug: "do-travel-agents-really-help-save-money",
@@ -39,6 +41,7 @@ const posts = [
       "An honest perspective from a modern travel advisor on how professional guidance saves you money, time, and stress—and why the real value goes far beyond…",
     author: "Daniel Santiago Díaz",
     readTime: "7 min read",
+    image: blogAgentImg,
   },
 ];
 
