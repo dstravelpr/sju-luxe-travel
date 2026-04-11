@@ -122,7 +122,7 @@ const Index = () => {
       />
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative h-screen flex items-end md:items-center justify-center overflow-hidden pb-16 md:pb-0">
         <img src={heroBg} alt="Luxury beach sunset — SJU Luxe Travel" className="absolute inset-0 w-full h-full object-cover object-center" fetchPriority="high" decoding="async" />
         <div className="absolute inset-0 hero-overlay" />
         <div className="relative z-10 container mx-auto px-6 text-center">
@@ -136,7 +136,7 @@ const Index = () => {
           <h2 className="font-body text-sm md:text-base tracking-[0.3em] uppercase text-gold mb-6 animate-fade-in-up">
             {t.home.heroSubtitle}
           </h2>
-          <p className="font-body text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 animate-fade-in-delay">
+          <p className="font-body text-lg md:text-xl text-foreground/90 max-w-2xl mx-auto mb-10 animate-fade-in-delay">
             {t.home.heroDescription}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-delay">
