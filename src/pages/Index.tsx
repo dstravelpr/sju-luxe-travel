@@ -122,21 +122,21 @@ const Index = () => {
       />
 
       {/* Hero Section */}
-      <section className="relative h-screen flex items-end md:items-center justify-center overflow-hidden pb-16 md:pb-0">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-10 md:pt-0 md:pb-0">
         <img src={heroBg} alt="Luxury beach sunset — SJU Luxe Travel" className="absolute inset-0 w-full h-full object-cover object-center" fetchPriority="high" decoding="async" />
         <div className="absolute inset-0 hero-overlay" />
         <div className="relative z-10 container mx-auto px-6 text-center">
           <img src={logo} alt="SJU Luxe Travel" className="hidden md:block h-24 w-24 mx-auto mb-6 animate-fade-in object-contain" />
-          <p className="font-body text-sm tracking-[0.4em] uppercase mb-6 animate-fade-in text-destructive-foreground"></p>
-          <h1 className="font-heading text-4xl md:text-6xl lg:text-7xl text-foreground mb-4 animate-fade-in-up">
+          <p className="font-body text-sm tracking-[0.4em] uppercase mb-4 md:mb-6 animate-fade-in text-destructive-foreground"></p>
+          <h1 className="font-heading text-3xl md:text-6xl lg:text-7xl text-foreground mb-3 md:mb-4 animate-fade-in-up">
             {t.home.heroTitle1}
             <br />
             <span className="text-gold-gradient italic">{t.home.heroTitle2}</span>
           </h1>
-          <h2 className="font-body text-sm md:text-base tracking-[0.3em] uppercase text-gold mb-6 animate-fade-in-up">
+          <h2 className="font-body text-xs md:text-base tracking-[0.3em] uppercase text-gold mb-4 md:mb-6 animate-fade-in-up">
             {t.home.heroSubtitle}
           </h2>
-          <p className="font-body text-lg md:text-xl text-foreground/90 max-w-2xl mx-auto mb-10 animate-fade-in-delay">
+          <p className="font-body text-sm md:text-xl text-foreground/90 max-w-2xl mx-auto mb-8 md:mb-10 animate-fade-in-delay">
             {t.home.heroDescription}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-delay">
