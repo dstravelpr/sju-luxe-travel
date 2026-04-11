@@ -10,7 +10,7 @@ const schemaJson = {
   "@type": "TouristDestination",
   name: "Luxury Mexico Vacation Packages",
   description: "Curated luxury vacation packages to Mexico by SJU Luxe Travel. Riviera Maya, Tulum, Oaxaca, San Miguel de Allende & cenote experiences with exclusive resort perks.",
-  url: "https://sjuluxetravel.com/destinations/mexico",
+  url: "https://www.sjuluxetravel.com/destinations/mexico",
 };
 
 const Mexico = () => {
@@ -22,7 +22,7 @@ const Mexico = () => {
       <SEOHead
         title="Luxury Mexico Vacation Packages — Curated by SJU Luxe Travel"
         description="Plan your luxury Mexico vacation with SJU Luxe Travel. Riviera Maya, Tulum, Oaxaca, cenotes & exclusive resort perks. Bespoke itineraries from San Juan, PR."
-        canonical="https://sjuluxetravel.com/destinations/mexico"
+        canonical="https://www.sjuluxetravel.com/destinations/mexico"
         schemaJson={schemaJson}
       />
 

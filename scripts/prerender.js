@@ -10,7 +10,7 @@ const DIST = path.resolve("dist");
 const template = fs.readFileSync(path.join(DIST, "index.html"), "utf-8");
 
 // Route → static content mapping for crawlers
-const HOSTNAME = "https://sjuluxetravel.com";
+const HOSTNAME = "https://www.sjuluxetravel.com";
 
 const pages = {
   "/about": {

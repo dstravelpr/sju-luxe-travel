@@ -13,7 +13,7 @@ const schemaJson = {
   author: { "@type": "Person", name: "Daniel Santiago Díaz" },
   publisher: { "@type": "Organization", name: "SJU Luxe Travel" },
   datePublished: "2026-04-08",
-  url: "https://sjuluxetravel.com/blog/what-luxury-travel-really-means",
+  url: "https://www.sjuluxetravel.com/blog/what-luxury-travel-really-means",
 };
 
 const WhatLuxuryTravelMeans = () => {
@@ -25,7 +25,7 @@ const WhatLuxuryTravelMeans = () => {
       <SEOHead
         title="What Luxury Travel Really Means — Intentional Luxury Travel | SJU Luxe Travel"
         description="Luxury travel isn't about spending more — it's about intentional, bespoke experiences. SJU Luxe Travel redefines luxury from San Juan, Puerto Rico."
-        canonical="https://sjuluxetravel.com/blog/what-luxury-travel-really-means"
+        canonical="https://www.sjuluxetravel.com/blog/what-luxury-travel-really-means"
         schemaJson={schemaJson}
       />
 

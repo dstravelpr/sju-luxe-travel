@@ -20,7 +20,7 @@ const Blog = () => {
       <SEOHead
         title="Blog | SJU Luxe Travel — Travel Stories & Tips"
         description="Explore travel stories, tips, and inspiration from SJU Luxe Travel. Luxury travel insights from San Juan, Puerto Rico."
-        canonical="https://sjuluxetravel.com/blog"
+        canonical="https://www.sjuluxetravel.com/blog"
       />
 
       <div className="pt-24 bg-background" />

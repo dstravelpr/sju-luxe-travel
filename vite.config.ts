@@ -29,7 +29,7 @@ export default defineConfig(({ mode }) => ({
     react(),
     mode === "development" && componentTagger(),
     Sitemap({
-      hostname: "https://sjuluxetravel.com",
+      hostname: "https://www.sjuluxetravel.com",
       dynamicRoutes: routes,
       readable: true,
     }),
