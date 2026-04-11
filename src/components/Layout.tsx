@@ -1,5 +1,6 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, Linkedin, Mail, Phone, MapPin } from "lucide-react";
+import { Instagram, Facebook, Linkedin, Mail, Phone, MapPin, Menu, X } from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import logo from "@/assets/logo.png";
 import footerSeal from "@/assets/footer-seal.png";
@@ -21,6 +22,7 @@ const LanguageToggle = () => {
 
 const Header = () => {
   const { t } = useLanguage();
+  const [mobileOpen, setMobileOpen] = useState(false);
   const navLinks = [
     { label: t.nav.home, to: "/" },
     { label: t.nav.about, to: "/about" },
@@ -49,15 +51,38 @@ const Header = () => {
         <div className="hidden md:flex items-center">
           <LanguageToggle />
         </div>
-        {/* Mobile: just toggle */}
-        <div className="md:hidden">
+        {/* Mobile controls */}
+        <div className="md:hidden flex items-center gap-3">
           <LanguageToggle />
+          <button
+            onClick={() => setMobileOpen(!mobileOpen)}
+            className="text-foreground/70 hover:text-gold transition-colors"
+            aria-label="Toggle menu"
+          >
+            {mobileOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
       </div>
+      {/* Mobile dropdown */}
+      {mobileOpen && (
+        <nav className="md:hidden bg-background/95 backdrop-blur-md border-t border-border/30 animate-fade-in">
+          <div className="container mx-auto px-6 py-4 flex flex-col gap-4">
+            {navLinks.map((link) => (
+              <Link
+                key={link.to}
+                to={link.to}
+                onClick={() => setMobileOpen(false)}
+                className="font-body text-sm tracking-[0.2em] uppercase text-foreground/70 hover:text-gold transition-colors py-1"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </nav>
+      )}
     </header>
   );
 };
-
 const Footer = () => {
   const { t } = useLanguage();
   const navLinks = [
