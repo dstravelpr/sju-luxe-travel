@@ -39,7 +39,7 @@ const schemaJson = {
     {
       "@type": "TravelAgency",
       name: "SJU Luxe Travel",
-      url: "https://sjuluxetravel.com",
+      url: "https://www.sjuluxetravel.com",
       description:
         "SJU Luxe Travel is a boutique luxury travel agency based in San Juan, Puerto Rico. We craft bespoke international itineraries to the Maldives, Portugal, Mexico, and beyond — with exclusive NCM Concierge perks you can't get booking online. Bilingual luxury travel advisor serving the US, Caribbean, and Latin America.",
       telephone: "+16179355714",
@@ -69,7 +69,7 @@ const schemaJson = {
       image: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6cdf4b5b-9b67-48a1-83fb-134129ec892a/id-preview-f5dd5032--633f6989-8325-4a39-b1db-9033d10321cf.lovable.app-1775821560059.png",
       telephone: "+16179355714",
       email: "dsantiago@ncmconcierge.com",
-      url: "https://sjuluxetravel.com",
+      url: "https://www.sjuluxetravel.com",
       address: {
         "@type": "PostalAddress",
         addressLocality: "San Juan",
@@ -117,7 +117,7 @@ const Index = () => {
       <SEOHead
         title="SJU Luxe Travel | Luxury Travel Agency in San Juan, Puerto Rico"
         description="SJU Luxe Travel is a boutique luxury travel agency in San Juan, Puerto Rico. We craft bespoke international itineraries to the Maldives, Portugal, Mexico & beyond — with exclusive NCM Concierge perks unavailable online."
-        canonical="https://sjuluxetravel.com/"
+        canonical="https://www.sjuluxetravel.com/"
         schemaJson={schemaJson}
       />
 

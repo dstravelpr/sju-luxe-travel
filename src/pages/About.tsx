@@ -20,7 +20,7 @@ const About = () => {
       <SEOHead
         title="About | SJU Luxe Travel — Bilingual Luxury Travel Advisor, San Juan PR"
         description="Meet Daniel Santiago Díaz, bilingual luxury travel advisor and founder of SJU Luxe Travel. Private travel concierge serving the Caribbean, US & Latin America from San Juan, Puerto Rico."
-        canonical="https://sjuluxetravel.com/about"
+        canonical="https://www.sjuluxetravel.com/about"
       />
 
       <section className="pt-32 pb-16 bg-background text-center">

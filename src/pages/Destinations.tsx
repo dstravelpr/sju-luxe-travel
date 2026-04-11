@@ -115,7 +115,7 @@ const Destinations = () => {
       <SEOHead
         title="Luxury Travel Destinations — Bespoke Itineraries by SJU Luxe Travel"
         description="Explore luxury destinations curated by your Puerto Rico travel advisor: Maldives, Portugal, Mexico & beyond. Exclusive NCM Concierge perks at every property."
-        canonical="https://sjuluxetravel.com/destinations"
+        canonical="https://www.sjuluxetravel.com/destinations"
       />
       <section className="pt-32 pb-8 bg-background">
         <div className="container mx-auto px-6 max-w-5xl">

@@ -11,7 +11,7 @@ const schemaJson = {
   name: "Luxury Maldives Travel Packages",
   description: "Curated luxury travel packages to the Maldives by SJU Luxe Travel. Overwater villas, private beach dinners, world-class diving, and exclusive resort perks.",
   touristType: "Luxury travelers, honeymooners, wellness seekers",
-  url: "https://sjuluxetravel.com/destinations/maldives",
+  url: "https://www.sjuluxetravel.com/destinations/maldives",
 };
 
 const Maldives = () => {
@@ -23,7 +23,7 @@ const Maldives = () => {
       <SEOHead
         title="Luxury Maldives Travel Packages — Curated by SJU Luxe Travel"
         description="Plan your luxury Maldives vacation with SJU Luxe Travel. Overwater villas, private dinners, diving & exclusive resort perks from San Juan, PR."
-        canonical="https://sjuluxetravel.com/destinations/maldives"
+        canonical="https://www.sjuluxetravel.com/destinations/maldives"
         schemaJson={schemaJson}
       />
 
