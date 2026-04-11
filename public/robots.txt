@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://sjuluxetravel.com/sitemap.xml
+Sitemap: https://www.sjuluxetravel.com/sitemap.xml
