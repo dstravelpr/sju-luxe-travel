@@ -15,6 +15,7 @@ import Blog from "./pages/Blog.tsx";
 import Contact from "./pages/Contact.tsx";
 import WhatLuxuryTravelMeans from "./pages/blog/WhatLuxuryTravelMeans.tsx";
 import DoTravelAgentsSaveMoney from "./pages/blog/DoTravelAgentsSaveMoney.tsx";
+import Privacy from "./pages/Privacy.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -38,6 +39,7 @@ const App = () => (
             <Route path="/blog/what-luxury-travel-really-means" element={<WhatLuxuryTravelMeans />} />
             <Route path="/blog/do-travel-agents-really-help-save-money" element={<DoTravelAgentsSaveMoney />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/privacy" element={<Privacy />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

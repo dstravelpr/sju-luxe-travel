@@ -14,6 +14,7 @@ const routes = [
   "/blog/what-luxury-travel-really-means",
   "/blog/do-travel-agents-really-help-save-money",
   "/contact",
+  "/privacy",
 ];
 
 // https://vitejs.dev/config/
