@@ -15,6 +15,7 @@ const routes = [
   "/blog/do-travel-agents-really-help-save-money",
   "/contact",
   "/privacy",
+  "/terms",
 ];
 
 // https://vitejs.dev/config/

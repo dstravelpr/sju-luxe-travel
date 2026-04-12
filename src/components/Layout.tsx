@@ -179,8 +179,8 @@ const Footer = () => {
             <div className="flex flex-col items-end gap-3">
               <img src={footerSeal} alt="SJU Luxe Travel seal" className="h-28 w-auto object-contain" />
               <div className="flex gap-6 text-muted-foreground text-xs">
-                <a href="#" className="hover:text-gold transition-colors">{t.footer.privacyPolicy}</a>
-                <a href="#" className="hover:text-gold transition-colors">{t.footer.termsOfService}</a>
+                <a href="/privacy" className="hover:text-gold transition-colors">{t.footer.privacyPolicy}</a>
+                <a href="/terms" className="hover:text-gold transition-colors">{t.footer.termsOfService}</a>
               </div>
             </div>
           </div>
