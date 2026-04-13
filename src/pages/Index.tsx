@@ -122,7 +122,7 @@ const Index = () => {
       />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-10 md:pt-0 md:pb-0">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-10">
         <img src={heroBg} alt="Luxury beach sunset — SJU Luxe Travel" className="absolute inset-0 w-full h-full object-cover object-center" fetchPriority="high" decoding="async" />
         <div className="absolute inset-0 hero-overlay" />
         <div className="relative z-10 container mx-auto px-6 text-center">
