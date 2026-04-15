@@ -9,6 +9,15 @@ const CrucerosDeLujo = () => (
       title="Cruceros de Lujo desde San Juan, Puerto Rico — Planificación VIP | SJU Luxe Travel"
       description="Planifica tu crucero de lujo desde San Juan, Puerto Rico con SJU Luxe Travel. Acceso a cruceros premium, cabinas exclusivas, excursiones privadas y beneficios VIP de NCM Concierge que no obtienes reservando directo."
       canonical="https://www.sjuluxetravel.com/cruceros-de-lujo-desde-san-juan"
+      schemaJson={{
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Cruceros de Lujo desde San Juan Puerto Rico",
+        "provider": { "@type": "TravelAgency", "name": "SJU Luxe Travel", "url": "https://www.sjuluxetravel.com" },
+        "areaServed": "San Juan, Puerto Rico",
+        "description": "Planificación VIP de cruceros de lujo que salen desde el puerto de San Juan, Puerto Rico, con beneficios exclusivos NCM Concierge.",
+        "url": "https://www.sjuluxetravel.com/cruceros-de-lujo-desde-san-juan"
+      }}
     />
 
     <article className="pt-32 pb-20 bg-background">
@@ -23,24 +32,97 @@ const CrucerosDeLujo = () => (
             San Juan es uno de los puertos de cruceros más importantes del Caribe. Cada semana, decenas de barcos parten del Muelle de Pan American — pero no todos los cruceros son iguales, y definitivamente no todas las experiencias a bordo son iguales. La diferencia entre un crucero ordinario y un crucero de lujo extraordinario está, en gran parte, en cómo lo planificas y con quién lo planificas.
           </p>
           <p className="text-muted-foreground text-base leading-relaxed">
-            <strong className="text-foreground">SJU Luxe Travel</strong> es tu asesor de cruceros de lujo con base en San Juan, Puerto Rico. Como parte de la red <strong className="text-foreground">NCM Concierge — Travel Leaders</strong>, tenemos acceso a beneficios VIP exclusivos, tarifas preferentes y atención personalizada que simplemente no obtienes reservando directamente con la naviera o a través de plataformas de viaje genéricas.
+            <strong className="text-foreground">SJU Luxe Travel</strong> es tu agente de cruceros de lujo con base en San Juan, Puerto Rico. Como parte de la red <strong className="text-foreground">NCM Concierge — Travel Leaders</strong>, tenemos acceso a beneficios VIP exclusivos, tarifas preferentes y atención personalizada que simplemente no obtienes reservando directamente con la naviera.
           </p>
 
-          <h2 className="font-heading text-2xl text-foreground mt-10">¿Por Qué Planificar Tu Crucero con un Asesor Especializado?</h2>
-          <p className="text-muted-foreground text-base leading-relaxed">
-            La mayoría de las personas reserva su crucero directamente en el sitio web de la naviera y cree que así obtiene la mejor oferta. En realidad, lo que obtiene es la tarifa pública estándar, sin ningún beneficio adicional.
-          </p>
+          <h2 className="font-heading text-2xl text-foreground mt-10">¿Por Qué Planificar Tu Crucero con un Agente de Viaje Especializado?</h2>
           <p className="text-muted-foreground text-base leading-relaxed">
             Al trabajar con SJU Luxe Travel a través de nuestra red NCM Concierge, recibes:
           </p>
           <ul className="space-y-2 text-muted-foreground text-base leading-relaxed list-none">
             {[
-              ["Crédito a bordo (onboard credit)", "dinero real para gastar en el barco en spa, excursiones, restaurantes especiales o tiendas"],
-              ["Amenidades de bienvenida en cabina", "champagne, frutas, flores o notas personalizadas coordinadas con el barco antes de embarcar"],
-              ["Acceso a tarifas de grupo y tarifas no publicadas", "en muchos casos, igual o más económicas que las tarifas públicas"],
-              ["Selección de cabina óptima", "te ayudamos a elegir la categoría y ubicación ideal según tu presupuesto y preferencias"],
-              ["Coordinación de excursiones privadas", "en cada puerto, organizamos excursiones exclusivas con guías privados en lugar de las excursiones masivas estándar del barco"],
-              ["Atención pre y post crucero", "hotel en San Juan la noche anterior, transfers desde tu casa, planificación de extensiones de itinerario"],
+              ["Crédito a bordo (onboard credit)", "dinero real para gastar en spa, excursiones o restaurantes especiales"],
+              ["Amenidades de bienvenida en cabina", "champagne, frutas, flores coordinadas antes de embarcar"],
+              ["Acceso a tarifas de grupo y tarifas no publicadas", ""],
+              ["Selección de cabina óptima según tu presupuesto y preferencias", ""],
+              ["Excursiones privadas en cada puerto", "guías privados en lugar de excursiones masivas"],
+              ["Coordinación de hotel en San Juan la noche anterior, transfers y extensiones de itinerario", ""],
+            ].map(([title, desc], i) => (
+              <li key={i} className="flex items-start gap-3">
+                <span className="text-gold mt-1">•</span>
+                <span><strong className="text-foreground">{title}</strong>{desc ? ` — ${desc}` : ""}</span>
+              </li>
+            ))}
+          </ul>
+
+          <h2 className="font-heading text-2xl text-foreground mt-10">Líneas de Cruceros de Lujo que Zarpan desde San Juan en 2026</h2>
+          <p className="text-muted-foreground text-base leading-relaxed">
+            Estas son las líneas de lujo con salidas confirmadas o programadas desde el Puerto de San Juan este año — y las que trabajo como agente de viajes especializado:
+          </p>
+
+          <h3 className="font-heading text-xl text-foreground mt-8">Ritz-Carlton Yacht Collection</h3>
+          <p className="text-muted-foreground text-base leading-relaxed">
+            Lo más nuevo y exclusivo en llegar a San Juan. Tres yates de ultra-lujo (Evrima, Ilma, Luminara) con máximo 298 pasajeros, diseño de hotel de cinco estrellas y una propuesta que borra la línea entre yate privado y crucero. Servicio casi personalizado al 100%, gastronomía de nivel Michelin y acceso a puertos pequeños que las grandes navieras no pueden alcanzar.
+          </p>
+
+          <h3 className="font-heading text-xl text-foreground mt-8">Explora Journeys</h3>
+          <p className="text-muted-foreground text-base leading-relaxed">
+            La nueva línea de lujo de MSC, llegando al Caribe con una propuesta diseñada para el viajero moderno de alto nivel. Sus barcos combinan espacios amplios, múltiples restaurantes de autor y un ambiente que se siente más resort de playa que crucero tradicional. Una de las propuestas más frescas del segmento en 2026.
+          </p>
+
+          <h3 className="font-heading text-xl text-foreground mt-8">Virgin Voyages</h3>
+          <p className="text-muted-foreground text-base leading-relaxed">
+            Solo para adultos. Sin buffet, sin horarios fijos, sin el ambiente familiar del crucero convencional. Sus barcos tipo Scarlet Lady ofrecen más de 20 restaurantes incluidos en la tarifa, spa Redemption, entretenimiento curado y un ambiente que apela al viajero de lujo millennial y Gen X que rechaza el crucero tradicional. Sus salidas desde San Juan al Caribe son de las más solicitadas en 2026.
+          </p>
+
+          <h3 className="font-heading text-xl text-foreground mt-8">Azamara Cruises</h3>
+          <p className="text-muted-foreground text-base leading-relaxed">
+            Especialistas en cruceros de inmersión cultural con estadías nocturnas en puerto. Sus barcos de tamaño medio (menos de 700 pasajeros) atracan cuando los demás ya han zarpado, permitiéndote vivir la ciudad de noche. Excelente opción para el viajero que quiere profundidad en cada destino, no solo un día de excursión.
+          </p>
+
+          <h3 className="font-heading text-xl text-foreground mt-8">Crystal Cruises</h3>
+          <p className="text-muted-foreground text-base leading-relaxed">
+            Regresaron renovados en 2023 tras su relanzamiento y están de vuelta en el Caribe. Sinónimo histórico de ultra-lujo en el mar: servicio de mayordomo, todo incluido premium y una clientela fiel que los ha seguido por décadas. Sus camarotes y suites figuran entre los más espaciosos del segmento.
+          </p>
+
+          <h3 className="font-heading text-xl text-foreground mt-8">Oceania Cruises</h3>
+          <p className="text-muted-foreground text-base leading-relaxed">
+            Para el viajero que pone la gastronomía primero. Barcos boutique, cocina de autor con el programa Culinary Center a bordo y destinos boutique que los barcos grandes no pueden visitar. Sus rutas desde San Juan hacia el Caribe sur son perfectas para quienes ya conocen el Caribe convencional.
+          </p>
+
+          <h3 className="font-heading text-xl text-foreground mt-8">Regent Seven Seas</h3>
+          <p className="text-muted-foreground text-base leading-relaxed">
+            El todo incluido más completo del mercado: vuelos en business class, excursiones en cada puerto, bebidas premium, spa y propinas — todo en el precio. Si quieres la experiencia más sin complicaciones posible, Regent es la respuesta.
+          </p>
+
+          <h3 className="font-heading text-xl text-foreground mt-8">Silversea</h3>
+          <p className="text-muted-foreground text-base leading-relaxed">
+            Elegancia europea y servicio ultra-personalizado. Sus barcos de expedición abren puertas a la Antártida, Galápagos y el Ártico, mientras que su flota clásica cubre el Caribe con el refinamiento que los distingue. Todo suite, todo incluido.
+          </p>
+
+          <h3 className="font-heading text-xl text-foreground mt-8">Viking Ocean Cruises</h3>
+          <p className="text-muted-foreground text-base leading-relaxed">
+            Sin casinos, sin espectáculos masivos, sin niños. Solo destinos, historia y gastronomía. Sus barcos uniformes de 930 pasajeros ofrecen conferencias a bordo, excursiones culturales incluidas y una clientela que viaja para aprender, no solo para descansar.
+          </p>
+
+          <h3 className="font-heading text-xl text-foreground mt-8">Seabourn</h3>
+          <p className="text-muted-foreground text-base leading-relaxed">
+            Ultra-lujo en el mar. Barcos pequeños (máximo 600 pasajeros), servicio casi de yate privado, champagne en la cubierta y acceso a puertos íntimos donde los grandes barcos no caben. Sus itinerarios del Caribe desde San Juan son perfectos para el viajero que busca exclusividad absoluta.
+          </p>
+
+          <h3 className="font-heading text-xl text-foreground mt-8">SeaDream Yacht Club</h3>
+          <p className="text-muted-foreground text-base leading-relaxed">
+            Dos mega-yates de solo 112 pasajeros cada uno. La experiencia más cercana a un yate privado disponible en el mercado: sin horarios fijos, sin código de etiqueta estricto, sin masas. Atracan en puertos boutique del Caribe donde ningún otro crucero llega. La opción favorita para el cliente que lo ha probado todo y quiere algo verdaderamente diferente.
+          </p>
+
+          <h2 className="font-heading text-2xl text-foreground mt-10">Itinerarios de Crucero Populares desde San Juan</h2>
+          <ul className="space-y-3 text-muted-foreground text-base leading-relaxed list-none">
+            {[
+              ["Caribe del Este y Sur", "Barbados, St. Lucia, Grenada, Aruba, Curaçao"],
+              ["Caribe del Oeste", "Jamaica, Islas Caimán, Belize, Costa Maya"],
+              ["Islas del Caribe del Norte", "St. Barts, St. Maarten, Antigua, St. Kitts"],
+              ["Trasatlántico desde San Juan", "Cruzar el Atlántico hacia España, Portugal o las Islas Canarias"],
+              ["Reposicionamientos", "Tarifas reducidas en itinerarios largos desde San Juan hacia Europa o el Mediterráneo"],
             ].map(([title, desc], i) => (
               <li key={i} className="flex items-start gap-3">
                 <span className="text-gold mt-1">•</span>
@@ -49,74 +131,16 @@ const CrucerosDeLujo = () => (
             ))}
           </ul>
 
-          <h2 className="font-heading text-2xl text-foreground mt-10">Líneas de Cruceros de Lujo que Trabajamos</h2>
-          <p className="text-muted-foreground text-base leading-relaxed">
-            No todas las navieras ofrecen la misma experiencia. Estas son las líneas de cruceros premium que recomendamos y con las que tenemos relaciones preferenciales:
-          </p>
-
-          <h3 className="font-heading text-xl text-foreground mt-8">Oceania Cruises</h3>
-          <p className="text-muted-foreground text-base leading-relaxed">
-            Para el viajero que prioriza la gastronomía. Barcos boutique de tamaño mediano, cocina de autor y destinos únicos que los barcos más grandes no pueden alcanzar.
-          </p>
-
-          <h3 className="font-heading text-xl text-foreground mt-8">Regent Seven Seas</h3>
-          <p className="text-muted-foreground text-base leading-relaxed">
-            El crucero todo incluido de lujo por excelencia. Todo incluido de verdad: vuelos en business class, excursiones en cada puerto, champagne, spa — sin sorpresas al final.
-          </p>
-
-          <h3 className="font-heading text-xl text-foreground mt-8">Silversea</h3>
-          <p className="text-muted-foreground text-base leading-relaxed">
-            Elegancia europea, servicio ultra-personalizado y rutas que incluyen destinos remotos como la Antártida, las Islas Galápagos y el Ártico.
-          </p>
-
-          <h3 className="font-heading text-xl text-foreground mt-8">Viking Ocean Cruises</h3>
-          <p className="text-muted-foreground text-base leading-relaxed">
-            Para quienes buscan experiencias culturales profundas. Sin casinos, sin espectáculos de entretenimiento masivo — solo destinos, historia y gastronomía de calidad.
-          </p>
-
-          <h3 className="font-heading text-xl text-foreground mt-8">Seabourn</h3>
-          <p className="text-muted-foreground text-base leading-relaxed">
-            El ultra-lujo en el mar. Barcos pequeños, servicio casi de yate privado y acceso a puertos que los barcos grandes no pueden visitar.
-          </p>
-
-          <h3 className="font-heading text-xl text-foreground mt-8">Celebrity Cruises (Suite Class)</h3>
-          <p className="text-muted-foreground text-base leading-relaxed">
-            Para el viajero que busca lujo moderno con rutas amplias desde San Juan y otros puertos del Caribe.
-          </p>
-
-          <h2 className="font-heading text-2xl text-foreground mt-10">Itinerarios de Crucero Populares desde San Juan</h2>
-          <p className="text-muted-foreground text-base leading-relaxed">
-            Desde el Puerto de San Juan, estos son los itinerarios más solicitados por nuestros clientes:
-          </p>
-          <p className="text-muted-foreground text-base leading-relaxed">
-            <strong className="text-foreground">Caribe del Este y Sur</strong> — Barbados, St. Lucia, Grenada, Aruba, Curaçao — el Caribe más auténtico y menos masificado.
-          </p>
-          <p className="text-muted-foreground text-base leading-relaxed">
-            <strong className="text-foreground">Caribe del Oeste</strong> — Jamaica, Islas Caimán, Belize, Costa Maya — cultura, naturaleza y aguas cristalinas.
-          </p>
-          <p className="text-muted-foreground text-base leading-relaxed">
-            <strong className="text-foreground">Islas del Caribe del Norte</strong> — St. Barts, St. Maarten, Antigua, St. Kitts — el Caribe más exclusivo y chic.
-          </p>
-          <p className="text-muted-foreground text-base leading-relaxed">
-            <strong className="text-foreground">Trasatlántico desde San Juan</strong> — Para los aventureros que sueñan con cruzar el Atlántico en barco y llegar a las costas de España, Portugal o las Islas Canarias.
-          </p>
-          <p className="text-muted-foreground text-base leading-relaxed">
-            <strong className="text-foreground">Reposicionamientos</strong> — Una de las joyas ocultas del mundo de los cruceros: tarifas significativamente más bajas en itinerarios largos de reposicionamiento que salen desde San Juan hacia Europa o el Mediterráneo.
-          </p>
-
           <h2 className="font-heading text-2xl text-foreground mt-10">Cruceros de Lujo para Grupos desde Puerto Rico</h2>
           <p className="text-muted-foreground text-base leading-relaxed">
-            ¿Celebras un cumpleaños especial, una luna de miel, un aniversario o una reunión familiar? Los cruceros son una de las mejores opciones para grupos: cada persona tiene su privacidad y espacio, pero todos comparten la experiencia de estar juntos en los mismos destinos.
-          </p>
-          <p className="text-muted-foreground text-base leading-relaxed">
-            Coordinamos cruceros de lujo en grupo desde Puerto Rico con:
+            ¿Celebras un cumpleaños especial, una luna de miel, un aniversario o una reunión familiar? Coordinamos cruceros de lujo en grupo con:
           </p>
           <ul className="space-y-2 text-muted-foreground text-base leading-relaxed list-none">
             {[
               "Bloques de cabinas en ubicaciones premium",
               "Cenas privadas en restaurantes de especialidad a bordo",
               "Cócteles de bienvenida privados",
-              "Excursiones privadas coordinadas en cada puerto",
+              "Excursiones privadas en cada puerto",
               "Atención individual a cada miembro del grupo",
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3"><span className="text-gold mt-1">•</span>{item}</li>
@@ -125,12 +149,12 @@ const CrucerosDeLujo = () => (
 
           <h2 className="font-heading text-2xl text-foreground mt-10">El Puerto de San Juan — Tu Puerta de Salida al Mundo</h2>
           <p className="text-muted-foreground text-base leading-relaxed">
-            El Terminal de Cruceros de San Juan opera desde el histórico Muelle de Pan American y el Old San Juan Cruise Port, con acceso fácil desde cualquier punto del área metropolitana. Antes de zarpar, podemos coordinar:
+            El Terminal de Cruceros de San Juan opera desde el histórico Muelle de Pan American y el Old San Juan Cruise Port. Antes de zarpar, podemos coordinar:
           </p>
           <ul className="space-y-2 text-muted-foreground text-base leading-relaxed list-none">
             {[
               "Estadía en hotel boutique en el Viejo San Juan o Condado la noche anterior",
-              "Transfer privado desde tu casa o lugar de estadía hasta el puerto",
+              "Transfer privado desde tu casa hasta el puerto",
               "Cena de pre-crucero en uno de los mejores restaurantes de San Juan",
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3"><span className="text-gold mt-1">•</span>{item}</li>
