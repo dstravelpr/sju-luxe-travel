@@ -18,7 +18,7 @@ const schemaJson = {
 };
 
 const WhatLuxuryTravelMeans = () => {
-  const { language } = useLanguage();
+  const { language, localPath } = useLanguage();
   const isEs = language === "es";
 
   return (
