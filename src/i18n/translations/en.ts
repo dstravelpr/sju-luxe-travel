@@ -149,6 +149,8 @@ export const en = {
       ctaTitleHighlight: "Maldives Getaway?",
       ctaDescription: "Contact us for a complimentary consultation. We'll design a personalized Maldives itinerary based on your preferences, budget, and travel dates.",
       startPlanning: "Start Planning",
+      koveliTitle: "Certified Koveli Maldives Expert",
+      koveliDescription: "Our lead advisor holds the Koveli Maldives Expert certification — a distinction earned through in-depth destination training and firsthand resort knowledge. This means you get insider access, expert recommendations, and exclusive perks at top Maldives properties.",
     },
     portugal: {
       label: "Featured Destination",
