@@ -17,6 +17,9 @@ import WhatLuxuryTravelMeans from "./pages/blog/WhatLuxuryTravelMeans.tsx";
 import DoTravelAgentsSaveMoney from "./pages/blog/DoTravelAgentsSaveMoney.tsx";
 import Privacy from "./pages/Privacy.tsx";
 import Terms from "./pages/Terms.tsx";
+import ViajesDeLujo from "./pages/ViajesDeLujo.tsx";
+import LunaDeMiel from "./pages/LunaDeMiel.tsx";
+import CrucerosDeLujo from "./pages/CrucerosDeLujo.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -42,6 +45,9 @@ const App = () => (
             <Route path="/contact" element={<Contact />} />
             <Route path="/privacy" element={<Privacy />} />
             <Route path="/terms" element={<Terms />} />
+            <Route path="/viajes-de-lujo-desde-puerto-rico" element={<ViajesDeLujo />} />
+            <Route path="/luna-de-miel-de-lujo" element={<LunaDeMiel />} />
+            <Route path="/cruceros-de-lujo-desde-san-juan" element={<CrucerosDeLujo />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
