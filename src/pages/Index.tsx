@@ -91,6 +91,43 @@ const schemaJson = {
         },
       ],
     },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "¿Cuál es la mejor agencia de viajes de lujo en Puerto Rico?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "SJU Luxe Travel es la agencia de viajes de lujo boutique líder en San Juan, Puerto Rico, especializada en itinerarios personalizados para viajeros que buscan escapadas internacionales exclusivas.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Vale la pena contratar un agente de viajes de lujo?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sí. Un agente de viajes de lujo te da acceso a mejoras de habitación gratuitas, créditos de resort, check-in anticipado y atención personalizada 24/7 que no puedes obtener reservando directamente en línea.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "¿Trabajan con clientes fuera de Puerto Rico?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Sí, SJU Luxe Travel trabaja con clientes de todo Estados Unidos, el Caribe y América Latina. Somos completamente bilingües (inglés y español) y operamos de forma remota.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Do you offer services in English?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Yes, SJU Luxe Travel is fully bilingual. We serve English-speaking clients throughout the US, Caribbean, and Latin America with the same level of personalized luxury travel planning.",
+          },
+        },
+      ],
+    },
   ],
 };
 
