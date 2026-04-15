@@ -8,9 +8,9 @@ import maldivesImg from "@/assets/destination-maldives.jpg";
 const schemaJson = {
   "@context": "https://schema.org",
   "@type": "TouristDestination",
-  name: "Luxury Maldives Travel Packages",
-  description: "Curated luxury travel packages to the Maldives by SJU Luxe Travel. Overwater villas, private beach dinners, world-class diving, and exclusive resort perks.",
-  touristType: "Luxury travelers, honeymooners, wellness seekers",
+  name: "Maldives",
+  description: "Luxury overwater villa vacations in the Maldives, planned from San Juan Puerto Rico by SJU Luxe Travel.",
+  touristType: "Luxury travelers",
   url: "https://www.sjuluxetravel.com/destinations/maldives",
 };
 
@@ -21,8 +21,8 @@ const Maldives = () => {
   return (
     <Layout>
       <SEOHead
-        title="Luxury Maldives Travel Packages — Curated by SJU Luxe Travel"
-        description="Plan your luxury Maldives vacation with SJU Luxe Travel. Overwater villas, private dinners, diving & exclusive resort perks from San Juan, PR."
+        title="Vacaciones de Lujo en Maldivas desde Puerto Rico | SJU Luxe Travel"
+        description="Planifica tus vacaciones de lujo en Maldivas con SJU Luxe Travel. Villas sobre el agua, cenas privadas, buceo y beneficios exclusivos de resort — desde San Juan, PR."
         canonical="https://www.sjuluxetravel.com/destinations/maldives"
         schemaJson={schemaJson}
       />

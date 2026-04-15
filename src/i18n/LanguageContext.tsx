@@ -18,13 +18,15 @@ const translations: Record<Language, Translations> = { en, es };
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLang] = useState<Language>(() => {
     const stored = localStorage.getItem("sju-lang");
-    return stored === "es" ? "es" : "en";
+    const lang = stored === "en" ? "en" : "es";
+    document.documentElement.lang = lang === "es" ? "es-PR" : "en";
+    return lang;
   });
 
   const setLanguage = useCallback((lang: Language) => {
     setLang(lang);
     localStorage.setItem("sju-lang", lang);
-    document.documentElement.lang = lang;
+    document.documentElement.lang = lang === "es" ? "es-PR" : "en";
   }, []);
 
   return (
