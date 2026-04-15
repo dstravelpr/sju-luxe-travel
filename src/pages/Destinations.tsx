@@ -120,7 +120,7 @@ const Destinations = () => {
       <section className="pt-32 pb-8 bg-background">
         <div className="container mx-auto px-6 max-w-5xl">
           <h1 className="font-heading text-4xl md:text-5xl text-foreground mb-8 text-center">
-            Destinos de Viajes de Lujo — <span className="text-gold-gradient italic">Itinerarios a Medida desde Puerto Rico</span>
+            Destinos de Viajes de Lujo — <span className="text-gold-gradient italic">Itinerarios desde Puerto Rico</span>
           </h1>
           {destinations.map((dest, i) => (
             <DestinationCard key={i} destination={dest} />
