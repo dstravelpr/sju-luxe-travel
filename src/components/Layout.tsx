@@ -101,14 +101,29 @@ const Header = () => {
         <nav className="md:hidden bg-background/95 backdrop-blur-md border-t border-border/30 animate-fade-in">
           <div className="container mx-auto px-6 py-4 flex flex-col gap-4">
             {navLinks.map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                onClick={() => setMobileOpen(false)}
-                className="font-body text-sm tracking-[0.2em] uppercase text-foreground/70 hover:text-gold transition-colors py-1"
-              >
-                {link.label}
-              </Link>
+              <div key={link.to}>
+                <Link
+                  to={link.to}
+                  onClick={() => setMobileOpen(false)}
+                  className="font-body text-sm tracking-[0.2em] uppercase text-foreground/70 hover:text-gold transition-colors py-1"
+                >
+                  {link.label}
+                </Link>
+                {link.children && (
+                  <div className="ml-4 mt-2 flex flex-col gap-2">
+                    {link.children.map((child) => (
+                      <Link
+                        key={child.to}
+                        to={child.to}
+                        onClick={() => setMobileOpen(false)}
+                        className="font-body text-xs tracking-[0.15em] uppercase text-foreground/50 hover:text-gold transition-colors py-1"
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
           </div>
         </nav>
