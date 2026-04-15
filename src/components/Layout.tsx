@@ -33,6 +33,7 @@ const Header = () => {
         { label: "Viajes desde Puerto Rico", to: "/viajes-de-lujo-desde-puerto-rico" },
         { label: "Luna de Miel", to: "/luna-de-miel-de-lujo" },
         { label: "Cruceros de Lujo", to: "/cruceros-de-lujo-desde-san-juan" },
+        { label: "Cruceros Fluviales", to: "/cruceros-fluviales-de-lujo-desde-puerto-rico" },
         { label: "Maldivas", to: "/destinations/maldives" },
         { label: "Portugal", to: "/destinations/portugal" },
         { label: "México", to: "/destinations/mexico" },

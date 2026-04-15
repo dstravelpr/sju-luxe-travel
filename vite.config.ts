@@ -20,6 +20,7 @@ const routes = [
   "/viajes-de-lujo-desde-puerto-rico",
   "/luna-de-miel-de-lujo",
   "/cruceros-de-lujo-desde-san-juan",
+  "/cruceros-fluviales-de-lujo-desde-puerto-rico",
 ];
 
 // https://vitejs.dev/config/

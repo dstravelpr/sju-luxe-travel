@@ -98,6 +98,11 @@ const ViajesDeLujo = () => (
           <p className="text-muted-foreground text-base leading-relaxed">
             Desde Puerto Rico, planificamos viajes de lujo para: lunas de miel, aniversarios y escapadas en pareja, bodas de destino, aventuras familiares de lujo, retiros de bienestar, viajes solo para mujeres, y viajes corporativos e incentivos.
           </p>
+          <p className="text-muted-foreground text-base leading-relaxed mt-4">
+            ¿Te interesan los cruceros? Explora nuestras opciones de{" "}
+            <Link to="/cruceros-de-lujo-desde-san-juan" className="text-gold hover:underline">cruceros oceánicos de lujo</Link> y{" "}
+            <Link to="/cruceros-fluviales-de-lujo-desde-puerto-rico" className="text-gold hover:underline">cruceros fluviales por Europa, Asia y más</Link>.
+          </p>
         </div>
 
         <div className="mt-16 text-center py-12 gold-border rounded-lg">
