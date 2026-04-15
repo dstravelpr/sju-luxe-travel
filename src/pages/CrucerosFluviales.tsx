@@ -78,7 +78,10 @@ const CrucerosFluviales = () => {
             <p className="text-muted-foreground text-base leading-relaxed">{d.certificationsIntro}</p>
 
             <h3 className="font-heading text-xl text-foreground mt-8">{d.amaTitle}</h3>
-            <p className="text-muted-foreground text-base leading-relaxed">{d.amaDesc}</p>
+            <div className="flex items-start gap-6 mt-3">
+              <img src={amaLogo} alt="AmaWaterways Certified Advisor" className="w-36 rounded border border-border/30 flex-shrink-0" />
+              <p className="text-muted-foreground text-base leading-relaxed">{d.amaDesc}</p>
+            </div>
 
             <h3 className="font-heading text-xl text-foreground mt-8">{d.avalonTitle}</h3>
             <p className="text-muted-foreground text-base leading-relaxed">{d.avalonDesc}</p>
