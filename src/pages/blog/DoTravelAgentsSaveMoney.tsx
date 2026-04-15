@@ -32,7 +32,7 @@ const DoTravelAgentsSaveMoney = () => {
 
       <article className="pt-28 pb-20 bg-background">
         <div className="container mx-auto px-6 max-w-3xl">
-          <Link to="/blog" className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors font-body text-sm tracking-wide mb-8">
+          <Link to={localPath("/blog")} className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors font-body text-sm tracking-wide mb-8">
             <ArrowLeft size={16} />
             {isEs ? "Volver al Blog" : "Back to Blog"}
           </Link>
@@ -250,7 +250,7 @@ const DoTravelAgentsSaveMoney = () => {
                 ? "Podemos ayudarte a crear una experiencia de viaje personalizada adaptada a tus objetivos y presupuesto."
                 : "We can help craft a personalized travel experience tailored to your goals and budget."}
             </p>
-            <Link to="/contact" className="inline-flex items-center gap-2 px-8 py-4 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-[0.15em] uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105">
+            <Link to={localPath("/contact")} className="inline-flex items-center gap-2 px-8 py-4 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-[0.15em] uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105">
               {isEs ? "Comenzar a Planificar" : "Start Planning"}
             </Link>
           </div>

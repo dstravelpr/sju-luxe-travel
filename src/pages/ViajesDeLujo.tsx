@@ -16,7 +16,7 @@ const schema = {
 };
 
 const ViajesDeLujo = () => {
-  const { t } = useLanguage();
+  const { t, localPath } = useLanguage();
   const d = t.viajesDeLujo;
 
   return (
@@ -70,8 +70,8 @@ const ViajesDeLujo = () => {
             <p className="text-muted-foreground text-base leading-relaxed">{d.occasionsP}</p>
             <p className="text-muted-foreground text-base leading-relaxed mt-4">
               {d.cruisesLink}{" "}
-              <Link to="/cruceros-de-lujo-desde-san-juan" className="text-gold hover:underline">{d.oceanCruises}</Link> {d.andText}{" "}
-              <Link to="/cruceros-fluviales-de-lujo-desde-puerto-rico" className="text-gold hover:underline">{d.riverCruises}</Link>.
+              <Link to={localPath("/cruceros-de-lujo-desde-san-juan")} className="text-gold hover:underline">{d.oceanCruises}</Link> {d.andText}{" "}
+              <Link to={localPath("/cruceros-fluviales-de-lujo-desde-puerto-rico")} className="text-gold hover:underline">{d.riverCruises}</Link>.
             </p>
           </div>
 
@@ -80,7 +80,7 @@ const ViajesDeLujo = () => {
               {d.ctaTitle} <span className="text-gold-gradient italic">{d.ctaTitleHighlight}</span>
             </h3>
             <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">{d.ctaDescription}</p>
-            <Link to="/contact" className="inline-flex items-center gap-2 px-8 py-4 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-[0.15em] uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105">
+            <Link to={localPath("/contact")} className="inline-flex items-center gap-2 px-8 py-4 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-[0.15em] uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105">
               {d.ctaButton}
               <ArrowRight size={16} />
             </Link>
