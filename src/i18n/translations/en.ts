@@ -6,6 +6,13 @@ export const en = {
     blog: "Blog",
     contact: "Contact",
     planYourJourney: "Plan Your Journey",
+    tripsFromPR: "Trips from Puerto Rico",
+    honeymoon: "Honeymoon",
+    luxuryCruises: "Luxury Cruises",
+    riverCruises: "River Cruises",
+    maldives: "Maldives",
+    portugal: "Portugal",
+    mexico: "Mexico",
   },
   footer: {
     tagline: "Travel is not a Luxury, It's an",

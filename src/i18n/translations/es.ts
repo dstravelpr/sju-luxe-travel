@@ -8,6 +8,13 @@ export const es: typeof en = {
     blog: "Blog",
     contact: "Contacto",
     planYourJourney: "Planifica Tu Viaje",
+    tripsFromPR: "Viajes desde Puerto Rico",
+    honeymoon: "Luna de Miel",
+    luxuryCruises: "Cruceros de Lujo",
+    riverCruises: "Cruceros Fluviales",
+    maldives: "Maldivas",
+    portugal: "Portugal",
+    mexico: "México",
   },
   footer: {
     tagline: "Viajar no es un Lujo, Es una",
