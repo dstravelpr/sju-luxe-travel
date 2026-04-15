@@ -5,6 +5,7 @@ import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
 import amaLogo from "@/assets/amawaterways-certified_logo.jpg";
 import riversideLogo from "@/assets/riverside-certified_logo.jpg";
+import avalonLogo from "@/assets/avalon-certified_logo.png";
 import {
   Accordion,
   AccordionContent,
@@ -85,7 +86,10 @@ const CrucerosFluviales = () => {
             </div>
 
             <h3 className="font-heading text-xl text-foreground mt-8">{d.avalonTitle}</h3>
-            <p className="text-muted-foreground text-base leading-relaxed">{d.avalonDesc}</p>
+            <div className="flex items-start gap-6 mt-3">
+              <img src={avalonLogo} alt="Avalon Waterways Specialist" className="w-28 flex-shrink-0" />
+              <p className="text-muted-foreground text-base leading-relaxed">{d.avalonDesc}</p>
+            </div>
 
             <h3 className="font-heading text-xl text-foreground mt-8">{d.riversideTitle}</h3>
             <div className="flex items-start gap-6 mt-3">
