@@ -124,7 +124,7 @@ const schemaJson = {
 };
 
 const Index = () => {
-  const { t } = useLanguage();
+  const { t, localPath } = useLanguage();
 
   const services = [
     { icon: Compass, title: t.home.services.curatedItineraries, description: t.home.services.curatedItinerariesDesc },
@@ -169,11 +169,11 @@ const Index = () => {
             {t.home.heroDescription}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-delay">
-            <Link to="/destinations" className="inline-flex items-center gap-2 px-8 py-4 bg-gold-gradient text-primary-foreground font-body text-sm font-semibold tracking-wide uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_40px_-5px_hsl(43,74%,49%,0.6)] hover:scale-105">
+            <Link to={localPath("/destinations")} className="inline-flex items-center gap-2 px-8 py-4 bg-gold-gradient text-primary-foreground font-body text-sm font-semibold tracking-wide uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_40px_-5px_hsl(43,74%,49%,0.6)] hover:scale-105">
               {t.home.exploreDestinations}
               <ArrowRight size={18} />
             </Link>
-            <Link to="/contact" className="inline-flex items-center gap-2 px-8 py-4 gold-border text-gold font-body text-sm font-semibold tracking-wide uppercase rounded-sm transition-all duration-300 hover:bg-gold/10">
+            <Link to={localPath("/contact")} className="inline-flex items-center gap-2 px-8 py-4 gold-border text-gold font-body text-sm font-semibold tracking-wide uppercase rounded-sm transition-all duration-300 hover:bg-gold/10">
               {t.home.startPlanning}
             </Link>
           </div>
@@ -194,7 +194,7 @@ const Index = () => {
               <p>{t.home.philosophyP2}</p>
               <p>{t.home.philosophyP3}</p>
             </div>
-            <Link to="/about" className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors font-body tracking-wide">
+            <Link to={localPath("/about")} className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors font-body tracking-wide">
               {t.home.learnMore}
               <ArrowRight size={18} />
             </Link>
@@ -237,7 +237,7 @@ const Index = () => {
               </h2>
               <p className="text-muted-foreground text-lg mt-4 max-w-xl">{t.home.destinationsDescription}</p>
             </div>
-            <Link to="/destinations" className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors font-body tracking-wide">
+            <Link to={localPath("/destinations")} className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors font-body tracking-wide">
               {t.home.viewAll}
               <ArrowRight size={18} />
             </Link>
@@ -343,7 +343,7 @@ const Index = () => {
             {t.home.ctaTitle} <span className="text-gold-gradient italic">{t.home.ctaTitleHighlight}</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-10">{t.home.ctaDescription}</p>
-          <Link to="/contact" className="inline-flex items-center gap-2 px-10 py-4 bg-gold-gradient text-primary-foreground font-body text-sm font-semibold tracking-wide uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_40px_-5px_hsl(43,74%,49%,0.6)] hover:scale-105">
+          <Link to={localPath("/contact")} className="inline-flex items-center gap-2 px-10 py-4 bg-gold-gradient text-primary-foreground font-body text-sm font-semibold tracking-wide uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_40px_-5px_hsl(43,74%,49%,0.6)] hover:scale-105">
             {t.home.startPlanningToday}
             <ArrowRight size={18} />
           </Link>
