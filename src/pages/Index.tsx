@@ -296,11 +296,11 @@ const Index = () => {
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-lg">✈️</span>
-                <div><span className="text-foreground font-semibold">Especialidad:</span> <span className="text-muted-foreground">Viajes de lujo salientes desde Puerto Rico</span></div>
+                <div><span className="text-foreground font-semibold">Especialidad:</span> <span className="text-muted-foreground">Viajes de lujo saliendo de Puerto Rico</span></div>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-lg">🌍</span>
-                <div><span className="text-foreground font-semibold">Destinos:</span> <span className="text-muted-foreground">Maldivas, Portugal, México, Caribe y más</span></div>
+                <div><span className="text-foreground font-semibold">Destinos:</span> <span className="text-muted-foreground">Maldivas, Portugal, México, Europa y más</span></div>
               </div>
               <div className="flex items-start gap-3">
                 <span className="text-lg">🗣️</span>
