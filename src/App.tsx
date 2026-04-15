@@ -20,6 +20,7 @@ import Terms from "./pages/Terms.tsx";
 import ViajesDeLujo from "./pages/ViajesDeLujo.tsx";
 import LunaDeMiel from "./pages/LunaDeMiel.tsx";
 import CrucerosDeLujo from "./pages/CrucerosDeLujo.tsx";
+import CrucerosFluviales from "./pages/CrucerosFluviales.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -48,6 +49,7 @@ const App = () => (
             <Route path="/viajes-de-lujo-desde-puerto-rico" element={<ViajesDeLujo />} />
             <Route path="/luna-de-miel-de-lujo" element={<LunaDeMiel />} />
             <Route path="/cruceros-de-lujo-desde-san-juan" element={<CrucerosDeLujo />} />
+            <Route path="/cruceros-fluviales-de-lujo-desde-puerto-rico" element={<CrucerosFluviales />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
