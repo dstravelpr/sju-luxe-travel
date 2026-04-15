@@ -24,6 +24,7 @@ const DestinationCard = ({
     imagePosition: "left" | "right";
     inquireNow: string;
     highlightsLabel: string;
+    badge?: { src: string; alt: string; label: string };
   };
 }) => {
   const { localPath } = useLanguage();
@@ -41,6 +42,12 @@ const DestinationCard = ({
         <div className={`${imageOnLeft ? "" : "md:[direction:ltr]"}`}>
           <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{destination.subtitle}</span>
           <h2 className="font-heading text-3xl md:text-4xl text-foreground mt-2 mb-6">{destination.title}</h2>
+          {destination.badge && (
+            <div className="flex items-center gap-3 mb-6 p-3 gold-border rounded-sm">
+              <img src={destination.badge.src} alt={destination.badge.alt} className="w-12 h-12 rounded-full flex-shrink-0" />
+              <span className="text-muted-foreground text-xs leading-relaxed">{destination.badge.label}</span>
+            </div>
+          )}
           <p className="text-muted-foreground text-sm leading-relaxed mb-6">{destination.description}</p>
           <div className="flex flex-wrap items-center gap-6 text-muted-foreground text-xs mb-6">
             <span className="flex items-center gap-1.5"><MapPin size={14} className="text-gold" />{destination.location}</span>
