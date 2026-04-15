@@ -3,19 +3,31 @@ import { ArrowRight } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Viajes de Lujo desde Puerto Rico",
+  "provider": { "@type": "TravelAgency", "name": "SJU Luxe Travel", "url": "https://www.sjuluxetravel.com" },
+  "areaServed": "Puerto Rico",
+  "description": "Planificación de viajes de lujo saliendo desde Puerto Rico a destinos internacionales exclusivos.",
+  "url": "https://www.sjuluxetravel.com/viajes-de-lujo-desde-puerto-rico",
+  "availableLanguage": ["Spanish", "English"],
+};
+
 const ViajesDeLujo = () => (
   <Layout>
     <SEOHead
-      title="Viajes de Lujo desde Puerto Rico — Asesor Privado en San Juan | SJU Luxe Travel"
+      title="Viajes de Lujo desde Puerto Rico — Agente de Viajes Privado en San Juan | SJU Luxe Travel"
       description="Planifica tu próximo viaje de lujo desde Puerto Rico con SJU Luxe Travel. Itinerarios personalizados a las Maldivas, Europa, México y más — sin pasaporte, misma zona horaria, servicio completamente bilingüe."
       canonical="https://www.sjuluxetravel.com/viajes-de-lujo-desde-puerto-rico"
+      schemaJson={schema}
     />
 
     <article className="pt-32 pb-20 bg-background">
       <div className="container mx-auto px-6 max-w-3xl">
-        <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">Tu Asesor Privado</span>
+        <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">Tu Agente de Viajes Privado</span>
         <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-8">
-          Viajes de Lujo desde Puerto Rico — <span className="text-gold-gradient italic">Tu Asesor Privado en San Juan</span>
+          Viajes de Lujo desde Puerto Rico — <span className="text-gold-gradient italic">Tu Agente de Viajes en San Juan</span>
         </h1>
 
         <div className="prose-custom space-y-6">
@@ -26,7 +38,7 @@ const ViajesDeLujo = () => (
             En <strong className="text-foreground">SJU Luxe Travel</strong>, somos tu agencia de viajes de lujo boutique con base en San Juan, Puerto Rico, especializada exclusivamente en viajes de salida — es decir, en llevar a viajeros de Puerto Rico a los destinos más extraordinarios del mundo.
           </p>
 
-          <h2 className="font-heading text-2xl text-foreground mt-10">¿Por Qué Elegir un Asesor de Viajes de Lujo en Puerto Rico?</h2>
+          <h2 className="font-heading text-2xl text-foreground mt-10">¿Por Qué Elegir un Agente de Viajes de Lujo en Puerto Rico?</h2>
           <p className="text-muted-foreground text-base leading-relaxed">
             Reservar un viaje de lujo en línea puede parecer sencillo, pero lo que no ves en ninguna página web es el valor real detrás de trabajar con un asesor certificado con acceso a redes de viaje de élite.
           </p>
@@ -51,26 +63,22 @@ const ViajesDeLujo = () => (
 
           <h2 className="font-heading text-2xl text-foreground mt-10">Destinos Internacionales Populares desde Puerto Rico</h2>
           <p className="text-muted-foreground text-base leading-relaxed">
-            Desde San Juan, el mundo es más accesible de lo que imaginas. Estos son algunos de los destinos más solicitados por nuestros clientes:
+            <strong className="text-foreground">Las Maldivas</strong> — El destino por excelencia para lunas de miel y escapadas románticas. Villas sobre el agua, arrecifes de coral, privacidad absoluta y resorts como Conrad Rangali Island, Hurawalhi y One&Only Reethi Rah.
           </p>
           <p className="text-muted-foreground text-base leading-relaxed">
-            <strong className="text-foreground">Las Maldivas</strong> — El destino por excelencia para lunas de miel y escapadas románticas. Villas sobre el agua, arrecifes de coral, privacidad absoluta y resorts como Conrad Rangali Island, Huvawalhi y One&Only Reethi Rah.
+            <strong className="text-foreground">Portugal</strong> — Lisboa, el Algarve y el Douro Valley ofrecen gastronomía de clase mundial, hoteles históricos convertidos en palacios boutique y una calidez cultural inigualable.
           </p>
           <p className="text-muted-foreground text-base leading-relaxed">
-            <strong className="text-foreground">Portugal</strong> — Uno de los secretos mejor guardados de Europa. Lisboa, el Algarve y el Douro Valley ofrecen gastronomía de clase mundial, hoteles históricos convertidos en palacios boutique y una calidez cultural inigualable.
+            <strong className="text-foreground">México</strong> — Desde la modernidad cosmopolita de la Ciudad de México hasta el lujo discreto de Tulum y los resorts exclusivos de Los Cabos.
           </p>
           <p className="text-muted-foreground text-base leading-relaxed">
-            <strong className="text-foreground">México</strong> — Desde la modernidad cosmopolita de la Ciudad de México hasta el lujo discreto de Tulum y los resorts exclusivos de Los Cabos. México ofrece cultura, naturaleza y gastronomía en un solo destino.
+            <strong className="text-foreground">El Caribe</strong> — St. Barts, Anguilla, Turks & Caicos, Barbados y las Islas Vírgenes Británicas, cada una con su propio carácter de lujo.
           </p>
           <p className="text-muted-foreground text-base leading-relaxed">
-            <strong className="text-foreground">El Caribe</strong> — Aunque Puerto Rico es el Caribe, hay un mundo de islas que explorar: St. Barts, Anguilla, Turks & Caicos, Barbados y las Islas Vírgenes Británicas, cada una con su propio carácter de lujo.
-          </p>
-          <p className="text-muted-foreground text-base leading-relaxed">
-            <strong className="text-foreground">Europa</strong> — Italia, Francia, Grecia, España — diseñamos recorridos privados por Europa que evitan las multitudes y se enfocan en experiencias auténticas, alojamientos con historia y momentos que no encontrarás en ningún paquete masivo.
+            <strong className="text-foreground">Europa</strong> — Italia, Francia, Grecia, España — diseñamos recorridos privados que evitan las multitudes y se enfocan en experiencias auténticas.
           </p>
 
           <h2 className="font-heading text-2xl text-foreground mt-10">Cómo Funciona Trabajar con SJU Luxe Travel</h2>
-          <p className="text-muted-foreground text-base leading-relaxed">El proceso es sencillo y completamente personalizado:</p>
           <ol className="space-y-3 text-muted-foreground text-base leading-relaxed list-none">
             {[
               ["Consulta gratuita", "Agendamos una llamada de 30 minutos para conocer tu visión, fechas, presupuesto y estilo de viaje."],
@@ -87,23 +95,9 @@ const ViajesDeLujo = () => (
           </ol>
 
           <h2 className="font-heading text-2xl text-foreground mt-10">Viajes de Lujo para Toda Ocasión</h2>
-          <p className="text-muted-foreground text-base leading-relaxed">Desde Puerto Rico, planificamos viajes de lujo para:</p>
-          <ul className="space-y-2 text-muted-foreground text-base leading-relaxed list-none">
-            {[
-              ["Lunas de miel", "El inicio de una vida juntos merece un viaje que nunca olvidarán."],
-              ["Aniversarios y escapadas en pareja", "Para celebrar lo construido juntos."],
-              ["Bodas de destino", "Coordinamos el alojamiento y la logística de viaje para toda la familia y los invitados."],
-              ["Aventuras familiares de lujo", "Viajes diseñados para que todos, desde los más pequeños hasta los abuelos, vivan una experiencia extraordinaria."],
-              ["Retiros de bienestar", "Spas de clase mundial, yoga retreats y destinos centrados en el descanso profundo."],
-              ["Viajes solo para mujeres", "Un espacio seguro, lujoso y empoderador para explorar el mundo en tus propios términos."],
-              ["Viajes corporativos e incentivos", "Experiencias premium para equipos que se lo merecen."],
-            ].map(([title, desc], i) => (
-              <li key={i} className="flex items-start gap-3">
-                <span className="text-gold mt-1">•</span>
-                <span><strong className="text-foreground">{title}</strong> — {desc}</span>
-              </li>
-            ))}
-          </ul>
+          <p className="text-muted-foreground text-base leading-relaxed">
+            Desde Puerto Rico, planificamos viajes de lujo para: lunas de miel, aniversarios y escapadas en pareja, bodas de destino, aventuras familiares de lujo, retiros de bienestar, viajes solo para mujeres, y viajes corporativos e incentivos.
+          </p>
         </div>
 
         <div className="mt-16 text-center py-12 gold-border rounded-lg">
