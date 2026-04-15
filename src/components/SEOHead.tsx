@@ -16,15 +16,11 @@ const BASE = "https://www.sjuluxetravel.com";
 export const SEOHead = ({ title, description, canonical, schemaJson, ogImage }: SEOHeadProps) => {
   const image = ogImage || DEFAULT_OG_IMAGE;
   const location = useLocation();
-  const isEnglish = location.pathname.startsWith("/en");
 
-  // Derive the base path without /en prefix
-  const basePath = isEnglish ? (location.pathname.replace(/^\/en/, "") || "/") : location.pathname;
-  const esUrl = `${BASE}${basePath === "/" ? "" : basePath}`;
-  const enUrl = `${BASE}/en${basePath === "/" ? "" : basePath}`;
-
-  // Use canonical if provided, otherwise derive from current URL
-  const effectiveCanonical = canonical || (isEnglish ? enUrl : esUrl);
+  // Canonical is always the non-prefixed URL
+  const currentPath = location.pathname.replace(/^\/(en|es)(\/|$)/, "/") || "/";
+  const pageUrl = `${BASE}${currentPath === "/" ? "" : currentPath}`;
+  const effectiveCanonical = canonical || pageUrl;
 
   return (
     <Helmet>
@@ -52,10 +48,10 @@ export const SEOHead = ({ title, description, canonical, schemaJson, ogImage }: 
 
       <link rel="canonical" href={effectiveCanonical} />
 
-      {/* Hreflang — always point to both versions */}
-      <link rel="alternate" hrefLang="es-PR" href={esUrl} />
-      <link rel="alternate" hrefLang="en" href={enUrl} />
-      <link rel="alternate" hrefLang="x-default" href={esUrl} />
+      {/* Hreflang — all point to canonical non-prefixed URL */}
+      <link rel="alternate" hrefLang="es-PR" href={pageUrl} />
+      <link rel="alternate" hrefLang="en" href={pageUrl} />
+      <link rel="alternate" hrefLang="x-default" href={pageUrl} />
 
       {schemaJson && (
         <script type="application/ld+json">
