@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Layout } from "@/components/Layout";
-import virginLogo from "@/assets/virgin-voyages-certified_logo.png";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
 import {
@@ -80,9 +79,6 @@ const CrucerosDeLujo = () => {
               <div key={key}>
                 <h3 className="font-heading text-xl text-foreground mt-8">{d.lines[key].title}</h3>
                 <p className="text-muted-foreground text-base leading-relaxed">{d.lines[key].desc}</p>
-                {key === "virgin" && (
-                  <img src={virginLogo} alt="Virgin Voyages Certified First Mate" className="w-36 mt-4" />
-                )}
               </div>
             ))}
 
