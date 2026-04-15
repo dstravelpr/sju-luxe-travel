@@ -18,12 +18,18 @@ const Blog = () => {
   return (
     <Layout>
       <SEOHead
-        title="Blog | SJU Luxe Travel — Travel Stories & Tips"
-        description="Explore travel stories, tips, and inspiration from SJU Luxe Travel. Luxury travel insights from San Juan, Puerto Rico."
+        title="Blog de Viajes de Lujo — Consejos e Inspiración | SJU Luxe Travel"
+        description="Artículos sobre viajes de lujo, destinos exclusivos e itinerarios personalizados desde San Juan, Puerto Rico. Escrito por Daniel Santiago Díaz, asesor certificado."
         canonical="https://www.sjuluxetravel.com/blog"
       />
 
-      <div className="pt-24 bg-background" />
+      <div className="pt-24 bg-background">
+        <div className="container mx-auto px-6">
+          <h1 className="font-heading text-4xl md:text-5xl text-foreground text-center pt-8 pb-4">
+            Blog de Viajes de Lujo — <span className="text-gold-gradient italic">Consejos e Inspiración desde San Juan</span>
+          </h1>
+        </div>
+      </div>
 
       <section className="py-8 bg-background">
         <div className="container mx-auto px-6">

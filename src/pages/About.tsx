@@ -18,16 +18,26 @@ const About = () => {
   return (
     <Layout>
       <SEOHead
-        title="About | SJU Luxe Travel — Bilingual Luxury Travel Advisor, San Juan PR"
-        description="Meet Daniel Santiago Díaz, bilingual luxury travel advisor and founder of SJU Luxe Travel. Private travel concierge serving the Caribbean, US & Latin America from San Juan, Puerto Rico."
+        title="Sobre SJU Luxe Travel — Asesor de Viajes de Lujo en Puerto Rico"
+        description="Conoce a Daniel Santiago Díaz, asesor de viajes de lujo certificado y bilingüe en San Juan, Puerto Rico. Itinerarios exclusivos y beneficios NCM Concierge en seis continentes."
         canonical="https://www.sjuluxetravel.com/about"
+        schemaJson={{
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Daniel Santiago Díaz",
+          "jobTitle": "Luxury Travel Advisor",
+          "worksFor": { "@type": "TravelAgency", "name": "SJU Luxe Travel", "url": "https://www.sjuluxetravel.com" },
+          "address": { "@type": "PostalAddress", "addressLocality": "San Juan", "addressRegion": "PR", "addressCountry": "US" },
+          "knowsLanguage": ["Spanish", "English"],
+          "url": "https://www.sjuluxetravel.com/about"
+        }}
       />
 
       <section className="pt-32 pb-16 bg-background text-center">
         <div className="container mx-auto px-6">
           <span className="font-body text-gold text-sm tracking-[0.3em] uppercase">{t.about.label}</span>
           <h1 className="font-heading text-4xl md:text-6xl text-foreground mt-4">
-            {t.about.name} <span className="text-gold-gradient italic">{t.about.nameHighlight}</span>
+            Daniel Santiago Díaz — <span className="text-gold-gradient italic">Asesor de Viajes de Lujo en San Juan, Puerto Rico</span>
           </h1>
           <p className="text-muted-foreground text-base md:text-lg mt-4 max-w-xl mx-auto">{t.about.subtitle}</p>
           <div className="mt-10 max-w-md mx-auto">

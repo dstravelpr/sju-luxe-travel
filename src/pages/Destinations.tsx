@@ -113,12 +113,15 @@ const Destinations = () => {
   return (
     <Layout>
       <SEOHead
-        title="Luxury Travel Destinations — Bespoke Itineraries by SJU Luxe Travel"
-        description="Explore luxury destinations curated by your Puerto Rico travel advisor: Maldives, Portugal, Mexico & beyond. Exclusive NCM Concierge perks at every property."
+        title="Destinos de Lujo — Itinerarios Personalizados | SJU Luxe Travel"
+        description="Explora destinos de lujo curados por tu asesor de viajes en San Juan, Puerto Rico: Maldivas, Portugal, México y más. Beneficios exclusivos de NCM Concierge en cada propiedad."
         canonical="https://www.sjuluxetravel.com/destinations"
       />
       <section className="pt-32 pb-8 bg-background">
         <div className="container mx-auto px-6 max-w-5xl">
+          <h1 className="font-heading text-4xl md:text-5xl text-foreground mb-8 text-center">
+            Destinos de Viajes de Lujo — <span className="text-gold-gradient italic">Itinerarios a Medida desde Puerto Rico</span>
+          </h1>
           {destinations.map((dest, i) => (
             <DestinationCard key={i} destination={dest} />
           ))}
