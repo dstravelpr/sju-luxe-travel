@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 import Sitemap from "vite-plugin-sitemap";
 
-const routes = [
+const spanishRoutes = [
   "/about",
   "/destinations",
   "/destinations/maldives",
@@ -23,6 +23,13 @@ const routes = [
   "/cruceros-fluviales-de-lujo-desde-puerto-rico",
 ];
 
+const englishRoutes = [
+  "/en",
+  ...spanishRoutes.map((r) => `/en${r}`),
+];
+
+const routes = [...spanishRoutes, ...englishRoutes];
+
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   server: {
@@ -39,42 +46,6 @@ export default defineConfig(({ mode }) => ({
       hostname: "https://www.sjuluxetravel.com",
       dynamicRoutes: routes,
       readable: true,
-      changefreq: {
-        "/": "weekly",
-        "/about": "monthly",
-        "/destinations": "monthly",
-        "/destinations/maldives": "monthly",
-        "/destinations/portugal": "monthly",
-        "/destinations/mexico": "monthly",
-        "/blog": "weekly",
-        "/blog/what-luxury-travel-really-means": "monthly",
-        "/blog/do-travel-agents-really-help-save-money": "monthly",
-        "/blog/micro-vacaciones-futuro-del-viaje": "monthly",
-        "/contact": "monthly",
-        "/privacy": "yearly",
-        "/terms": "yearly",
-        "/viajes-de-lujo-desde-puerto-rico": "monthly",
-        "/luna-de-miel-de-lujo": "monthly",
-        "/cruceros-de-lujo-desde-san-juan": "monthly",
-      } as unknown as string,
-      priority: {
-        "/": 1.0,
-        "/about": 0.8,
-        "/destinations": 0.8,
-        "/destinations/maldives": 0.8,
-        "/destinations/portugal": 0.8,
-        "/destinations/mexico": 0.8,
-        "/blog": 0.7,
-        "/blog/what-luxury-travel-really-means": 0.6,
-        "/blog/do-travel-agents-really-help-save-money": 0.6,
-        "/blog/micro-vacaciones-futuro-del-viaje": 0.6,
-        "/contact": 0.8,
-        "/privacy": 0.3,
-        "/terms": 0.3,
-        "/viajes-de-lujo-desde-puerto-rico": 0.8,
-        "/luna-de-miel-de-lujo": 0.8,
-        "/cruceros-de-lujo-desde-san-juan": 0.8,
-      } as unknown as number,
     }),
   ].filter(Boolean),
   resolve: {
