@@ -21,31 +21,19 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const language: Language = location.pathname.startsWith("/en") ? "en" : "es";
+  // Language is now controlled by user preference, not URL prefix
+  // Default to Spanish since this is a Puerto Rico site
+  const language: Language = "es";
 
   // Update html lang attribute
-  document.documentElement.lang = language === "es" ? "es-PR" : "en";
+  document.documentElement.lang = "es-PR";
 
-  const setLanguage = (lang: Language) => {
-    const currentPath = location.pathname;
-    if (lang === "en" && !currentPath.startsWith("/en")) {
-      // Spanish → English: add /en prefix
-      const newPath = currentPath === "/" ? "/en" : `/en${currentPath}`;
-      navigate(newPath);
-    } else if (lang === "es" && currentPath.startsWith("/en")) {
-      // English → Spanish: remove /en prefix
-      const newPath = currentPath.replace(/^\/en/, "") || "/";
-      navigate(newPath);
-    }
+  const setLanguage = (_lang: Language) => {
+    // No-op: language switching via URL prefix has been removed
   };
 
-  // Helper to prefix links with /en when in English mode
-  const localPath = (path: string) => {
-    if (language === "en") {
-      return path === "/" ? "/en" : `/en${path}`;
-    }
-    return path;
-  };
+  // No prefix needed — all routes are canonical
+  const localPath = (path: string) => path;
 
   const value = useMemo(
     () => ({ language, setLanguage, t: translations[language], localPath }),
