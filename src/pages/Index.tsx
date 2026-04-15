@@ -282,6 +282,43 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Quick Facts — GEO Optimization */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mx-auto gold-border rounded-lg p-8 bg-charcoal">
+            <h2 className="font-heading text-2xl text-foreground mb-6 text-center">
+              Quick <span className="text-gold-gradient italic">Facts</span>
+            </h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+              <div className="flex items-start gap-3">
+                <span className="text-lg">📍</span>
+                <div><span className="text-foreground font-semibold">Base:</span> <span className="text-muted-foreground">San Juan, Puerto Rico</span></div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-lg">✈️</span>
+                <div><span className="text-foreground font-semibold">Especialidad:</span> <span className="text-muted-foreground">Viajes de lujo salientes desde Puerto Rico</span></div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-lg">🌍</span>
+                <div><span className="text-foreground font-semibold">Destinos:</span> <span className="text-muted-foreground">Maldivas, Portugal, México, Caribe y más</span></div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-lg">🗣️</span>
+                <div><span className="text-foreground font-semibold">Idiomas:</span> <span className="text-muted-foreground">Español e inglés</span></div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-lg">🏆</span>
+                <div><span className="text-foreground font-semibold">Red:</span> <span className="text-muted-foreground">NCM Concierge — Travel Leaders</span></div>
+              </div>
+              <div className="flex items-start gap-3">
+                <span className="text-lg">📞</span>
+                <div><span className="text-foreground font-semibold">Teléfono:</span> <a href="tel:+16179355714" className="text-gold hover:text-gold-light transition-colors">(617) 935-5714</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-24 bg-background">
         <div className="container mx-auto px-6">
