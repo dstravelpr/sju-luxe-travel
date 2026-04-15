@@ -1,4 +1,4 @@
-import { createContext, useContext, useMemo, type ReactNode } from "react";
+import { createContext, useContext, useMemo, useState, useEffect, type ReactNode } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { en } from "./translations/en";
 import { es } from "./translations/es";
@@ -21,15 +21,18 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  // Language is now controlled by user preference, not URL prefix
-  // Default to Spanish since this is a Puerto Rico site
-  const language: Language = "es";
+  const [language, setLanguageState] = useState<Language>(() => {
+    const saved = localStorage.getItem("lang");
+    return saved === "en" ? "en" : "es";
+  });
 
-  // Update html lang attribute
-  document.documentElement.lang = "es-PR";
+  useEffect(() => {
+    document.documentElement.lang = language === "en" ? "en" : "es-PR";
+  }, [language]);
 
-  const setLanguage = (_lang: Language) => {
-    // No-op: language switching via URL prefix has been removed
+  const setLanguage = (lang: Language) => {
+    setLanguageState(lang);
+    localStorage.setItem("lang", lang);
   };
 
   // No prefix needed — all routes are canonical
