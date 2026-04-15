@@ -26,7 +26,16 @@ const Header = () => {
   const navLinks = [
     { label: t.nav.home, to: "/" },
     { label: t.nav.about, to: "/about" },
-    { label: t.nav.destinations, to: "/destinations" },
+    {
+      label: t.nav.destinations,
+      to: "/destinations",
+      children: [
+        { label: "Viajes desde Puerto Rico", to: "/viajes-de-lujo-desde-puerto-rico" },
+        { label: "Maldivas", to: "/destinations/maldives" },
+        { label: "Portugal", to: "/destinations/portugal" },
+        { label: "México", to: "/destinations/mexico" },
+      ],
+    },
     { label: t.nav.blog, to: "/blog" },
     { label: t.nav.contact, to: "/contact" },
   ];
@@ -38,15 +47,39 @@ const Header = () => {
           <img src={logo} alt="SJU Luxe Travel" className="h-12 w-12 object-contain" />
         </Link>
         <nav className="hidden md:flex items-center gap-10">
-          {navLinks.map((link) => (
-            <Link
-              key={link.to}
-              to={link.to}
-              className="font-body text-xs tracking-[0.25em] uppercase text-foreground/70 hover:text-gold transition-colors"
-            >
-              {link.label}
-            </Link>
-          ))}
+          {navLinks.map((link) =>
+            link.children ? (
+              <div key={link.to} className="relative group">
+                <Link
+                  to={link.to}
+                  className="font-body text-xs tracking-[0.25em] uppercase text-foreground/70 hover:text-gold transition-colors"
+                >
+                  {link.label}
+                </Link>
+                <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                  <div className="bg-background/95 backdrop-blur-md border border-border/30 rounded-sm py-2 min-w-[220px] shadow-lg">
+                    {link.children.map((child) => (
+                      <Link
+                        key={child.to}
+                        to={child.to}
+                        className="block px-5 py-2.5 font-body text-[11px] tracking-[0.15em] uppercase text-foreground/70 hover:text-gold hover:bg-gold/5 transition-colors"
+                      >
+                        {child.label}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ) : (
+              <Link
+                key={link.to}
+                to={link.to}
+                className="font-body text-xs tracking-[0.25em] uppercase text-foreground/70 hover:text-gold transition-colors"
+              >
+                {link.label}
+              </Link>
+            )
+          )}
         </nav>
         <div className="hidden md:flex items-center">
           <LanguageToggle />
