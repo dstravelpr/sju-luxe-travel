@@ -23,6 +23,7 @@ import CrucerosDeLujo from "./pages/CrucerosDeLujo.tsx";
 import CrucerosFluviales from "./pages/CrucerosFluviales.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
+
 const queryClient = new QueryClient();
 
 const App = () => (
