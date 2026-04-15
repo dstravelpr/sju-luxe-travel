@@ -4,6 +4,7 @@ import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
 import amaLogo from "@/assets/amawaterways-certified_logo.jpg";
+import riversideLogo from "@/assets/riverside-certified_logo.jpg";
 import {
   Accordion,
   AccordionContent,
@@ -87,7 +88,10 @@ const CrucerosFluviales = () => {
             <p className="text-muted-foreground text-base leading-relaxed">{d.avalonDesc}</p>
 
             <h3 className="font-heading text-xl text-foreground mt-8">{d.riversideTitle}</h3>
-            <p className="text-muted-foreground text-base leading-relaxed">{d.riversideDesc}</p>
+            <div className="flex items-start gap-6 mt-3">
+              <img src={riversideLogo} alt="Riverside Luxury Cruises Specialist" className="w-28 rounded-full flex-shrink-0" />
+              <p className="text-muted-foreground text-base leading-relaxed">{d.riversideDesc}</p>
+            </div>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">{d.h2OtherLines}</h2>
             <p className="text-muted-foreground text-base leading-relaxed">{d.otherLinesIntro}</p>
