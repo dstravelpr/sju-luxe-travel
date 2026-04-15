@@ -162,6 +162,15 @@ const CrucerosDeLujo = () => (
           </ul>
         </div>
 
+        <div className="mt-10 text-center">
+          <p className="text-muted-foreground text-sm">
+            ¿Prefieres un crucero por ríos históricos?{" "}
+            <Link to="/cruceros-fluviales-de-lujo-desde-puerto-rico" className="text-gold hover:underline">
+              Descubre nuestros cruceros fluviales de lujo →
+            </Link>
+          </p>
+        </div>
+
         <div className="mt-16 text-center py-12 gold-border rounded-lg">
           <h3 className="font-heading text-2xl text-foreground mb-3">
             ¿Listo para zarpar desde San Juan <span className="text-gold-gradient italic">en el crucero de tus sueños?</span>
