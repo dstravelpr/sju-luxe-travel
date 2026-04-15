@@ -4,6 +4,7 @@ import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
 import maldivesImg from "@/assets/destination-maldives.jpg";
+import koveliBadge from "@/assets/koveli-maldives-expert.png";
 
 const schemaJson = {
   "@context": "https://schema.org",
@@ -65,6 +66,15 @@ const Maldives = () => {
               </div>
             ))}
           </div>
+          {/* Koveli Maldives Expert Badge */}
+          <div className="flex flex-col items-center gap-4 mb-12 py-8 gold-border rounded-lg">
+            <img src={koveliBadge} alt="Koveli Maldives Expert Badge — SJU Luxe Travel" className="w-28 h-28 rounded-full" />
+            <div className="text-center max-w-lg">
+              <h3 className="font-heading text-xl text-foreground mb-2">{d.koveliTitle}</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">{d.koveliDescription}</p>
+            </div>
+          </div>
+
           <div className="text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">
               {d.ctaTitle} <span className="text-gold-gradient italic">{d.ctaTitleHighlight}</span>

@@ -6,6 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import maldivesImg from "@/assets/destination-maldives.jpg";
 import portugalImg from "@/assets/destination-portugal.jpg";
 import mexicoImg from "@/assets/destination-mexico.jpg";
+import koveliBadge from "@/assets/koveli-maldives-expert.png";
 
 const DestinationCard = ({
   destination,
