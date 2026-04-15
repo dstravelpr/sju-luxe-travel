@@ -8,11 +8,12 @@ import blogLuxuryImg from "@/assets/blog-luxury-travel.jpg";
 const schemaJson = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "What Luxury Travel Really Means",
-  description: "Real luxury in travel isn't about how much you spend. It's about how the experience makes you feel.",
+  headline: "Lo Que Realmente Significa el Viaje de Lujo",
+  description: "El verdadero lujo en los viajes no se trata de cuánto gastas. Se trata de cómo te hace sentir la experiencia.",
   author: { "@type": "Person", name: "Daniel Santiago Díaz" },
-  publisher: { "@type": "Organization", name: "SJU Luxe Travel" },
+  publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
   datePublished: "2026-04-08",
+  inLanguage: "es-PR",
   url: "https://www.sjuluxetravel.com/blog/what-luxury-travel-really-means",
 };
 

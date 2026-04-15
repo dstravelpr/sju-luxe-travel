@@ -8,11 +8,12 @@ import blogAgentImg from "@/assets/blog-travel-agent.jpg";
 const schemaJson = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "Do Travel Agents Really Help You Save Money?",
-  description: "An honest perspective from a modern travel advisor on how professional guidance saves you money, time, and stress.",
+  headline: "¿Los Agentes de Viajes Realmente Te Ayudan a Ahorrar Dinero?",
+  description: "Una perspectiva honesta de un asesor de viajes moderno sobre cómo la orientación profesional te ahorra dinero, tiempo y estrés.",
   author: { "@type": "Person", name: "Daniel Santiago Díaz" },
-  publisher: { "@type": "Organization", name: "SJU Luxe Travel" },
+  publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
   datePublished: "2026-04-07",
+  inLanguage: "es-PR",
   url: "https://www.sjuluxetravel.com/blog/do-travel-agents-really-help-save-money",
 };
 
