@@ -22,6 +22,14 @@ import LunaDeMiel from "./pages/LunaDeMiel.tsx";
 import CrucerosDeLujo from "./pages/CrucerosDeLujo.tsx";
 import CrucerosFluviales from "./pages/CrucerosFluviales.tsx";
 import NotFound from "./pages/NotFound.tsx";
+import { Navigate, useLocation } from "react-router-dom";
+
+/** 301-style redirect: strip /en or /es prefix and navigate to canonical path */
+const LangRedirect = () => {
+  const location = useLocation();
+  const canonical = location.pathname.replace(/^\/(en|es)(\/|$)/, "/") || "/";
+  return <Navigate to={canonical + location.search + location.hash} replace />;
+};
 
 const queryClient = new QueryClient();
 
@@ -57,11 +65,9 @@ const App = () => (
             {appRoutes.map((r) => (
               <Route key={r.path} path={r.path} element={r.element} />
             ))}
-            {/* English /en/ routes — same components, language detected from URL */}
-            <Route path="/en" element={<Index />} />
-            {appRoutes.filter(r => r.path !== "/").map((r) => (
-              <Route key={`en-${r.path}`} path={`/en${r.path}`} element={r.element} />
-            ))}
+            {/* Redirect /en/* and /es/* to canonical non-prefixed URLs */}
+            <Route path="/en/*" element={<LangRedirect />} />
+            <Route path="/es/*" element={<LangRedirect />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
