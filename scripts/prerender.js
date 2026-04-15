@@ -11,6 +11,27 @@ const template = fs.readFileSync(path.join(DIST, "index.html"), "utf-8");
 
 // Route → static content mapping for crawlers
 const HOSTNAME = "https://www.sjuluxetravel.com";
+const LANGUAGE_PREFIXES = ["en", "es"];
+
+const allRoutes = [
+  "/",
+  "/about",
+  "/destinations",
+  "/destinations/maldives",
+  "/destinations/portugal",
+  "/destinations/mexico",
+  "/blog",
+  "/blog/what-luxury-travel-really-means",
+  "/blog/do-travel-agents-really-help-save-money",
+  "/blog/micro-vacaciones-futuro-del-viaje",
+  "/contact",
+  "/privacy",
+  "/terms",
+  "/viajes-de-lujo-desde-puerto-rico",
+  "/luna-de-miel-de-lujo",
+  "/cruceros-de-lujo-desde-san-juan",
+  "/cruceros-fluviales-de-lujo-desde-puerto-rico",
+];
 
 const pages = {
   "/about": {
@@ -69,13 +90,79 @@ const pages = {
   },
 };
 
-for (const [route, content] of Object.entries(pages)) {
-  const dir = path.join(DIST, route);
+const getCanonicalUrl = (route) => `${HOSTNAME}${route === "/" ? "" : route}`;
+
+const buildAlternateLinks = (canonical) => `
+    <link rel="alternate" hreflang="es-PR" href="${canonical}" />
+    <link rel="alternate" hreflang="en" href="${canonical}" />
+    <link rel="alternate" hreflang="x-default" href="${canonical}" />`;
+
+const withCanonicalSeo = (html, canonical) => {
+  const alternateLinks = buildAlternateLinks(canonical);
+
+  const htmlWithCanonical = /<link rel="canonical" href="[^"]*"\s*\/>/.test(html)
+    ? html.replace(
+        /<link rel="canonical" href="[^"]*"\s*\/>/,
+        `<link rel="canonical" href="${canonical}" />`
+      )
+    : html.replace("</head>", `    <link rel="canonical" href="${canonical}" />\n</head>`);
+
+  const htmlWithoutAlternates = htmlWithCanonical
+    .replace(/\s*<link rel="alternate" hreflang="es-PR" href="[^"]*"\s*\/?>/g, "")
+    .replace(/\s*<link rel="alternate" hreflang="en" href="[^"]*"\s*\/?>/g, "")
+    .replace(/\s*<link rel="alternate" hreflang="x-default" href="[^"]*"\s*\/?>/g, "");
+
+  return htmlWithoutAlternates.replace(
+    /<link rel="canonical" href="[^"]*"\s*\/>/,
+    `<link rel="canonical" href="${canonical}" />${alternateLinks}`
+  );
+};
+
+const routeToDir = (...parts) => {
+  const sanitizedParts = parts
+    .filter(Boolean)
+    .map((part) => part.replace(/^\/+|\/+$/g, ""))
+    .filter(Boolean);
+
+  return path.join(DIST, ...sanitizedParts);
+};
+
+const writeHtmlFile = (dir, html) => {
   fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, "index.html"), html);
+};
 
-  const canonical = `${HOSTNAME}${route}`;
+const createRedirectPage = (route, prefix) => {
+  const canonicalPath = route === "/" ? "/" : route;
+  const canonicalUrl = getCanonicalUrl(route);
+  const redirectHtml = `<!doctype html>
+<html lang="es-PR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirecting…</title>
+    <meta name="robots" content="noindex,follow" />
+    <link rel="canonical" href="${canonicalUrl}" />
+    ${buildAlternateLinks(canonicalUrl)}
+    <meta http-equiv="refresh" content="0; url=${canonicalUrl}" />
+    <script>
+      window.location.replace(${JSON.stringify(canonicalPath)} + window.location.search + window.location.hash);
+    </script>
+  </head>
+  <body></body>
+</html>`;
 
-  const html = template
+  writeHtmlFile(routeToDir(prefix, route), redirectHtml);
+};
+
+writeHtmlFile(routeToDir(), withCanonicalSeo(template, getCanonicalUrl("/")));
+
+for (const [route, content] of Object.entries(pages)) {
+  const dir = routeToDir(route);
+  const canonical = getCanonicalUrl(route);
+
+  const html = withCanonicalSeo(
+    template
     // Replace title
     .replace(
       /<title>[^<]*<\/title>/,
@@ -110,9 +197,17 @@ for (const [route, content] of Object.entries(pages)) {
     .replace(
       /<div id="root">[\s\S]*?<\/div>/,
       `<div id="root"><h1>${content.h1}</h1><p>${content.body}</p></div>`
-    );
+    ),
+    canonical
+  );
 
-  fs.writeFileSync(path.join(dir, "index.html"), html);
+  writeHtmlFile(dir, html);
 }
 
-console.log(`✅ Prerendered ${Object.keys(pages).length} routes`);
+for (const prefix of LANGUAGE_PREFIXES) {
+  for (const route of allRoutes) {
+    createRedirectPage(route, prefix);
+  }
+}
+
+console.log(`✅ Prerendered ${Object.keys(pages).length} routes and generated ${LANGUAGE_PREFIXES.length * allRoutes.length} language redirects`);
