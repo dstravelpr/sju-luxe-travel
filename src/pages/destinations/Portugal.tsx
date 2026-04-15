@@ -8,8 +8,9 @@ import portugalImg from "@/assets/destination-portugal.jpg";
 const schemaJson = {
   "@context": "https://schema.org",
   "@type": "TouristDestination",
-  name: "Luxury Portugal Travel Itinerary",
-  description: "Curated luxury travel itinerary to Portugal by SJU Luxe Travel. Lisbon, Porto, Algarve, Douro Valley & Sintra with exclusive hotel perks.",
+  name: "Portugal",
+  description: "Luxury travel itineraries to Portugal, planned from San Juan Puerto Rico by SJU Luxe Travel. Lisbon, Porto, Algarve & Douro Valley.",
+  touristType: "Luxury travelers",
   url: "https://www.sjuluxetravel.com/destinations/portugal",
 };
 
@@ -20,8 +21,8 @@ const Portugal = () => {
   return (
     <Layout>
       <SEOHead
-        title="Luxury Portugal Travel Itinerary — Curated by SJU Luxe Travel"
-        description="Plan your luxury Portugal travel itinerary with SJU Luxe Travel. Lisbon, Porto, Algarve & Douro Valley wine tours. Boutique travel agency in San Juan, PR."
+        title="Viajes de Lujo a Portugal desde Puerto Rico | SJU Luxe Travel"
+        description="Descubre Portugal con un itinerario de lujo a medida. Cenas en Belem, quintas históricas y experiencias culturales exclusivas — planificado desde San Juan, PR."
         canonical="https://www.sjuluxetravel.com/destinations/portugal"
         schemaJson={schemaJson}
       />
