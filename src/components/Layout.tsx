@@ -21,32 +21,32 @@ const LanguageToggle = () => {
 };
 
 const Header = () => {
-  const { t } = useLanguage();
+  const { t, localPath } = useLanguage();
   const [mobileOpen, setMobileOpen] = useState(false);
   const navLinks = [
-    { label: t.nav.home, to: "/" },
-    { label: t.nav.about, to: "/about" },
+    { label: t.nav.home, to: localPath("/") },
+    { label: t.nav.about, to: localPath("/about") },
     {
       label: t.nav.destinations,
-      to: "/destinations",
+      to: localPath("/destinations"),
       children: [
-        { label: t.nav.tripsFromPR, to: "/viajes-de-lujo-desde-puerto-rico" },
-        { label: t.nav.honeymoon, to: "/luna-de-miel-de-lujo" },
-        { label: t.nav.luxuryCruises, to: "/cruceros-de-lujo-desde-san-juan" },
-        { label: t.nav.riverCruises, to: "/cruceros-fluviales-de-lujo-desde-puerto-rico" },
-        { label: t.nav.maldives, to: "/destinations/maldives" },
-        { label: t.nav.portugal, to: "/destinations/portugal" },
-        { label: t.nav.mexico, to: "/destinations/mexico" },
+        { label: t.nav.tripsFromPR, to: localPath("/viajes-de-lujo-desde-puerto-rico") },
+        { label: t.nav.honeymoon, to: localPath("/luna-de-miel-de-lujo") },
+        { label: t.nav.luxuryCruises, to: localPath("/cruceros-de-lujo-desde-san-juan") },
+        { label: t.nav.riverCruises, to: localPath("/cruceros-fluviales-de-lujo-desde-puerto-rico") },
+        { label: t.nav.maldives, to: localPath("/destinations/maldives") },
+        { label: t.nav.portugal, to: localPath("/destinations/portugal") },
+        { label: t.nav.mexico, to: localPath("/destinations/mexico") },
       ],
     },
-    { label: t.nav.blog, to: "/blog" },
-    { label: t.nav.contact, to: "/contact" },
+    { label: t.nav.blog, to: localPath("/blog") },
+    { label: t.nav.contact, to: localPath("/contact") },
   ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/30">
       <div className="container mx-auto px-6 flex items-center justify-between h-16">
-        <Link to="/" className="flex-shrink-0">
+        <Link to={localPath("/")} className="flex-shrink-0">
           <img src={logo} alt="SJU Luxe Travel" className="h-12 w-12 object-contain" />
         </Link>
         <nav className="hidden md:flex items-center gap-10">
@@ -135,13 +135,13 @@ const Header = () => {
   );
 };
 const Footer = () => {
-  const { t } = useLanguage();
+  const { t, localPath } = useLanguage();
   const navLinks = [
-    { label: t.nav.home, to: "/" },
-    { label: t.nav.about, to: "/about" },
-    { label: t.nav.destinations, to: "/destinations" },
-    { label: t.nav.blog, to: "/blog" },
-    { label: t.nav.contact, to: "/contact" },
+    { label: t.nav.home, to: localPath("/") },
+    { label: t.nav.about, to: localPath("/about") },
+    { label: t.nav.destinations, to: localPath("/destinations") },
+    { label: t.nav.blog, to: localPath("/blog") },
+    { label: t.nav.contact, to: localPath("/contact") },
   ];
 
   return (
@@ -230,8 +230,8 @@ const Footer = () => {
             <div className="flex flex-col items-end gap-3">
               <img src={footerSeal} alt="SJU Luxe Travel seal" className="h-28 w-auto object-contain" />
               <div className="flex gap-6 text-muted-foreground text-xs">
-                <a href="/privacy" className="hover:text-gold transition-colors">{t.footer.privacyPolicy}</a>
-                <a href="/terms" className="hover:text-gold transition-colors">{t.footer.termsOfService}</a>
+                <Link to={localPath("/privacy")} className="hover:text-gold transition-colors">{t.footer.privacyPolicy}</Link>
+                <Link to={localPath("/terms")} className="hover:text-gold transition-colors">{t.footer.termsOfService}</Link>
               </div>
             </div>
           </div>

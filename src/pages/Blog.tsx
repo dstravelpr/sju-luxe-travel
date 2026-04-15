@@ -9,7 +9,7 @@ import blogLuxuryImg from "@/assets/blog-luxury-travel.jpg";
 import blogAgentImg from "@/assets/blog-travel-agent.jpg";
 
 const Blog = () => {
-  const { t } = useLanguage();
+  const { t, localPath } = useLanguage();
   const [activeCategory, setActiveCategory] = useState(t.blog.categories[0]);
 
   const postImages = [blogLuxuryImg, blogAgentImg];

@@ -25,36 +25,48 @@ import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
 
+const appRoutes = [
+  { path: "/", element: <Index /> },
+  { path: "/about", element: <About /> },
+  { path: "/destinations", element: <Destinations /> },
+  { path: "/destinations/maldives", element: <Maldives /> },
+  { path: "/destinations/portugal", element: <Portugal /> },
+  { path: "/destinations/mexico", element: <Mexico /> },
+  { path: "/blog", element: <Blog /> },
+  { path: "/blog/what-luxury-travel-really-means", element: <WhatLuxuryTravelMeans /> },
+  { path: "/blog/do-travel-agents-really-help-save-money", element: <DoTravelAgentsSaveMoney /> },
+  { path: "/contact", element: <Contact /> },
+  { path: "/privacy", element: <Privacy /> },
+  { path: "/terms", element: <Terms /> },
+  { path: "/viajes-de-lujo-desde-puerto-rico", element: <ViajesDeLujo /> },
+  { path: "/luna-de-miel-de-lujo", element: <LunaDeMiel /> },
+  { path: "/cruceros-de-lujo-desde-san-juan", element: <CrucerosDeLujo /> },
+  { path: "/cruceros-fluviales-de-lujo-desde-puerto-rico", element: <CrucerosFluviales /> },
+];
+
 const App = () => (
   <HelmetProvider>
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <LanguageProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
+      <BrowserRouter>
+        <LanguageProvider>
+          <Toaster />
+          <Sonner />
           <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/destinations" element={<Destinations />} />
-            <Route path="/destinations/maldives" element={<Maldives />} />
-            <Route path="/destinations/portugal" element={<Portugal />} />
-            <Route path="/destinations/mexico" element={<Mexico />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/what-luxury-travel-really-means" element={<WhatLuxuryTravelMeans />} />
-            <Route path="/blog/do-travel-agents-really-help-save-money" element={<DoTravelAgentsSaveMoney />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/privacy" element={<Privacy />} />
-            <Route path="/terms" element={<Terms />} />
-            <Route path="/viajes-de-lujo-desde-puerto-rico" element={<ViajesDeLujo />} />
-            <Route path="/luna-de-miel-de-lujo" element={<LunaDeMiel />} />
-            <Route path="/cruceros-de-lujo-desde-san-juan" element={<CrucerosDeLujo />} />
-            <Route path="/cruceros-fluviales-de-lujo-desde-puerto-rico" element={<CrucerosFluviales />} />
+            {/* Spanish (default) routes */}
+            {appRoutes.map((r) => (
+              <Route key={r.path} path={r.path} element={r.element} />
+            ))}
+            {/* English /en/ routes — same components, language detected from URL */}
+            <Route path="/en" element={<Index />} />
+            {appRoutes.filter(r => r.path !== "/").map((r) => (
+              <Route key={`en-${r.path}`} path={`/en${r.path}`} element={r.element} />
+            ))}
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
-        </BrowserRouter>
-      </LanguageProvider>
+        </LanguageProvider>
+      </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
   </HelmetProvider>

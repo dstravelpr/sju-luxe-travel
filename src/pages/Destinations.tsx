@@ -25,6 +25,7 @@ const DestinationCard = ({
     highlightsLabel: string;
   };
 }) => {
+  const { localPath } = useLanguage();
   const imageOnLeft = destination.imagePosition === "left";
 
   return (
@@ -51,7 +52,7 @@ const DestinationCard = ({
               <span key={h} className="px-3 py-1.5 gold-border rounded-full text-xs text-muted-foreground hover:border-gold transition-colors">{h}</span>
             ))}
           </div>
-          <Link to="/contact" className="inline-flex items-center gap-2 px-6 py-3 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-[0.15em] uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105">
+          <Link to={localPath("/contact")} className="inline-flex items-center gap-2 px-6 py-3 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-[0.15em] uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105">
             {destination.inquireNow}
             <ArrowRight size={16} />
           </Link>
@@ -62,7 +63,7 @@ const DestinationCard = ({
 };
 
 const Destinations = () => {
-  const { t } = useLanguage();
+  const { t, localPath } = useLanguage();
   const dp = t.destinations.page;
 
   const destinations = [
