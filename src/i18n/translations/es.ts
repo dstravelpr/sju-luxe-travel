@@ -151,8 +151,8 @@ export const es: typeof en = {
       ctaTitleHighlight: "Escapada a Maldivas?",
       ctaDescription: "Contáctanos para una consulta gratuita. Diseñaremos un itinerario personalizado para las Maldivas basado en tus preferencias, presupuesto y fechas de viaje.",
       startPlanning: "Comenzar a Planificar",
-      koveliTitle: "Experta Certificada Koveli en Maldivas",
-      koveliDescription: "Nuestra asesora principal posee la certificación Koveli Maldives Expert — una distinción obtenida a través de entrenamiento profundo del destino y conocimiento directo de los resorts. Esto significa acceso privilegiado, recomendaciones expertas y beneficios exclusivos en las mejores propiedades de Maldivas.",
+      koveliTitle: "Experto Certificado Koveli en Maldivas",
+      koveliDescription: "Poseemos la certificación Koveli como Experto en las Maldivs Expert — una distinción obtenida a través de entrenamiento profundo del destino y conocimiento directo de los resorts. Esto significa acceso privilegiado, recomendaciones expertas y beneficios exclusivos en las mejores propiedades de Maldivas.",
     },
     portugal: {
       label: "Destino Destacado",
