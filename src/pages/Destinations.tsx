@@ -25,6 +25,7 @@ const DestinationCard = ({
     highlightsLabel: string;
   };
 }) => {
+  const { localPath } = useLanguage();
   const imageOnLeft = destination.imagePosition === "left";
 
   return (
