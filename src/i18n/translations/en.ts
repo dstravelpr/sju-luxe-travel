@@ -207,6 +207,8 @@ export const en = {
       startPlanning: "Start Planning",
     },
     page: {
+      headingMain: "Luxury Travel Destinations —",
+      headingHighlight: "Itineraries from Puerto Rico",
       paradiseOnEarth: "Paradise on Earth",
       oldWorldCharm: "Old World Charm",
       richCulture: "Rich Culture & Beauty",
