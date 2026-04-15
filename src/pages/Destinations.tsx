@@ -88,6 +88,11 @@ const Destinations = () => {
       imagePosition: "left" as const,
       inquireNow: dp.inquireNow,
       highlightsLabel: dp.highlights,
+      badge: {
+        src: koveliBadge,
+        alt: "Koveli Maldives Expert Badge",
+        label: dp.koveliBadgeLabel,
+      },
     },
     {
       subtitle: dp.oldWorldCharm,
