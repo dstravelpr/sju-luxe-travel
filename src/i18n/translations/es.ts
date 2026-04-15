@@ -209,6 +209,8 @@ export const es: typeof en = {
       startPlanning: "Comenzar a Planificar",
     },
     page: {
+      headingMain: "Destinos de Viajes de Lujo —",
+      headingHighlight: "Itinerarios desde Puerto Rico",
       paradiseOnEarth: "Paraíso en la Tierra",
       oldWorldCharm: "Encanto del Viejo Mundo",
       richCulture: "Cultura Rica y Belleza",
