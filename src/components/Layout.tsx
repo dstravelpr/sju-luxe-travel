@@ -31,6 +31,7 @@ const Header = () => {
       to: "/destinations",
       children: [
         { label: "Viajes desde Puerto Rico", to: "/viajes-de-lujo-desde-puerto-rico" },
+        { label: "Luna de Miel", to: "/luna-de-miel-de-lujo" },
         { label: "Maldivas", to: "/destinations/maldives" },
         { label: "Portugal", to: "/destinations/portugal" },
         { label: "México", to: "/destinations/mexico" },
