@@ -18,6 +18,12 @@ export const SEOHead = ({ title, description, canonical, schemaJson, ogImage }: 
       <title>{title}</title>
       <meta name="description" content={description} />
 
+      {/* Geo meta tags */}
+      <meta name="geo.region" content="US-PR" />
+      <meta name="geo.placename" content="San Juan, Puerto Rico" />
+      <meta name="geo.position" content="18.4655;-66.1057" />
+      <meta name="ICBM" content="18.4655, -66.1057" />
+
       {/* Open Graph */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
@@ -33,9 +39,9 @@ export const SEOHead = ({ title, description, canonical, schemaJson, ogImage }: 
 
       {canonical && <link rel="canonical" href={canonical} />}
 
-      {/* Hreflang — same URL serves both languages via client-side toggle */}
+      {/* Hreflang */}
+      {canonical && <link rel="alternate" hrefLang="es-PR" href={canonical} />}
       {canonical && <link rel="alternate" hrefLang="en" href={canonical} />}
-      {canonical && <link rel="alternate" hrefLang="es" href={canonical} />}
       {canonical && <link rel="alternate" hrefLang="x-default" href={canonical} />}
 
       {schemaJson && (
