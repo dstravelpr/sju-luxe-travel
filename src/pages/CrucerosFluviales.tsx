@@ -3,6 +3,7 @@ import { ArrowRight, Award } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
+import amaLogo from "@/assets/amawaterways-certified_logo.jpg";
 import {
   Accordion,
   AccordionContent,
