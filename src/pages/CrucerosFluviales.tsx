@@ -6,6 +6,14 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import amaLogo from "@/assets/amawaterways-certified_logo.jpg";
 import riversideLogo from "@/assets/riverside-certified_logo.jpg";
 import avalonLogo from "@/assets/avalon-certified_logo.png";
+import danubeImg from "@/assets/rivers/danube.png";
+import rhineImg from "@/assets/rivers/rhine.png";
+import seineImg from "@/assets/rivers/seine.png";
+import douroImg from "@/assets/rivers/douro.png";
+import nileImg from "@/assets/rivers/nile.png";
+import mekongImg from "@/assets/rivers/mekong.png";
+
+const riverImages = [danubeImg, rhineImg, seineImg, douroImg, nileImg, mekongImg];
 import {
   Accordion,
   AccordionContent,
@@ -111,7 +119,10 @@ const CrucerosFluviales = () => {
 
             <h2 className="font-heading text-2xl text-foreground mt-10">{d.h2Destinations}</h2>
             {d.riverDestinations.map(([title, desc], i) => (
-              <div key={i} className="mt-6">
+              <div key={i} className="mt-8">
+                <div className="aspect-[4/3] overflow-hidden rounded-lg border border-border/30 mb-4">
+                  <img src={riverImages[i]} alt={title} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+                </div>
                 <h3 className="font-heading text-xl text-foreground">{title}</h3>
                 <p className="text-muted-foreground text-base leading-relaxed mt-2">{desc}</p>
               </div>
