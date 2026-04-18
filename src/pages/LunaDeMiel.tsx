@@ -3,18 +3,24 @@ import { ArrowRight } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
+import maldivesImg from "@/assets/honeymoon/maldives.png";
+import santoriniImg from "@/assets/honeymoon/santorini.png";
+import amalfiImg from "@/assets/honeymoon/amalfi.png";
+import boraBoraImg from "@/assets/honeymoon/bora-bora.png";
+import portugalImg from "@/assets/honeymoon/portugal.png";
+import tuscanyImg from "@/assets/honeymoon/tuscany.png";
 
 const LunaDeMiel = () => {
   const { t, localPath } = useLanguage();
   const d = t.lunaDeMiel;
 
   const destinations = [
-    d.destMaldives,
-    d.destSantorini,
-    d.destAmalfi,
-    d.destBoraBora,
-    d.destPortugal,
-    d.destTuscany,
+    { ...d.destMaldives, img: maldivesImg },
+    { ...d.destSantorini, img: santoriniImg },
+    { ...d.destAmalfi, img: amalfiImg },
+    { ...d.destBoraBora, img: boraBoraImg },
+    { ...d.destPortugal, img: portugalImg },
+    { ...d.destTuscany, img: tuscanyImg },
   ];
 
   return (
@@ -40,8 +46,16 @@ const LunaDeMiel = () => {
             <p className="text-muted-foreground text-base leading-relaxed" dangerouslySetInnerHTML={{ __html: d.destinationsIntro }} />
 
             {destinations.map((dest, i) => (
-              <div key={i}>
-                <h3 className="font-heading text-xl text-foreground mt-8">{dest.title}</h3>
+              <div key={i} className="mt-8">
+                <div className="overflow-hidden rounded-lg mb-4 aspect-[4/3]">
+                  <img
+                    src={dest.img}
+                    alt={dest.title}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  />
+                </div>
+                <h3 className="font-heading text-xl text-foreground">{dest.title}</h3>
                 <p className="text-muted-foreground text-base leading-relaxed">{dest.desc}</p>
               </div>
             ))}
