@@ -19,6 +19,8 @@ import silverseaImg from "@/assets/ocean/silversea.png";
 import vikingImg from "@/assets/ocean/viking.png";
 import oceaniaImg from "@/assets/ocean/oceania.png";
 import ritzCarltonImg from "@/assets/ocean/ritz-carlton.jpg";
+import virginImg from "@/assets/ocean/virgin.jpg";
+import virginCertImg from "@/assets/ocean/virgin-cert.png";
 
 const CrucerosDeLujo = () => {
   const { t, localPath } = useLanguage();
@@ -27,6 +29,7 @@ const CrucerosDeLujo = () => {
   const lineKeys = ["ritzCarlton", "explora", "virgin", "azamara", "crystal", "oceania", "regent", "silversea", "viking", "seabourn", "seadream"] as const;
   const lineImages: Partial<Record<typeof lineKeys[number], string>> = {
     ritzCarlton: ritzCarltonImg,
+    virgin: virginImg,
     explora: exploraImg,
     azamara: azamaraImg,
     crystal: crystalImg,
@@ -109,6 +112,14 @@ const CrucerosDeLujo = () => {
                       className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
                     />
                   </div>
+                )}
+                {key === "virgin" && (
+                  <img
+                    src={virginCertImg}
+                    alt="Virgin Voyages Certified First Mate"
+                    loading="lazy"
+                    className="mx-auto my-4 max-w-xs w-full h-auto"
+                  />
                 )}
                 <p className="text-muted-foreground text-base leading-relaxed">{d.lines[key].desc}</p>
               </div>
