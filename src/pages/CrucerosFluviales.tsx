@@ -91,18 +91,27 @@ const CrucerosFluviales = () => {
             <p className="text-muted-foreground text-base leading-relaxed">{d.certificationsIntro}</p>
 
             <h3 className="font-heading text-xl text-foreground mt-8">{d.amaTitle}</h3>
+            <div className="aspect-[4/3] overflow-hidden rounded-lg border border-border/30 mt-3 mb-4">
+              <img src={amaPhoto} alt="AmaWaterways luxury river ship" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+            </div>
             <div className="flex items-start gap-6 mt-3">
               <img src={amaLogo} alt="AmaWaterways Certified Advisor" className="w-36 rounded border border-border/30 flex-shrink-0" />
               <p className="text-muted-foreground text-base leading-relaxed">{d.amaDesc}</p>
             </div>
 
             <h3 className="font-heading text-xl text-foreground mt-8">{d.avalonTitle}</h3>
+            <div className="aspect-[4/3] overflow-hidden rounded-lg border border-border/30 mt-3 mb-4">
+              <img src={avalonPhoto} alt="Avalon Waterways river ship sailing past a hilltop castle" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+            </div>
             <div className="flex items-start gap-6 mt-3">
               <img src={avalonLogo} alt="Avalon Waterways Specialist" className="w-28 flex-shrink-0" />
               <p className="text-muted-foreground text-base leading-relaxed">{d.avalonDesc}</p>
             </div>
 
             <h3 className="font-heading text-xl text-foreground mt-8">{d.riversideTitle}</h3>
+            <div className="aspect-[4/3] overflow-hidden rounded-lg border border-border/30 mt-3 mb-4">
+              <img src={riversidePhoto} alt="Riverside Luxury Cruises panoramic suite with river view" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+            </div>
             <div className="flex items-start gap-6 mt-3">
               <img src={riversideLogo} alt="Riverside Luxury Cruises Specialist" className="w-28 rounded-full flex-shrink-0" />
               <p className="text-muted-foreground text-base leading-relaxed">{d.riversideDesc}</p>
