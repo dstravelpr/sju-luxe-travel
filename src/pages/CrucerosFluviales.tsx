@@ -12,6 +12,9 @@ import seineImg from "@/assets/rivers/seine.png";
 import douroImg from "@/assets/rivers/douro.png";
 import nileImg from "@/assets/rivers/nile.png";
 import mekongImg from "@/assets/rivers/mekong.png";
+import amaPhoto from "@/assets/rivers/ama-waterways.png";
+import avalonPhoto from "@/assets/rivers/avalon-waterways.png";
+import riversidePhoto from "@/assets/rivers/riverside-luxury-cruises.png";
 
 const riverImages = [danubeImg, rhineImg, seineImg, douroImg, nileImg, mekongImg];
 import {
