@@ -118,7 +118,7 @@ const CrucerosDeLujo = () => {
                     src={virginCertImg}
                     alt="Virgin Voyages Certified First Mate"
                     loading="lazy"
-                    className="mx-auto my-4 max-w-xs w-full h-auto"
+                    className="w-36 mb-4 mx-auto"
                   />
                 )}
                 <p className="text-muted-foreground text-base leading-relaxed">{d.lines[key].desc}</p>
