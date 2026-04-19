@@ -94,21 +94,21 @@ const CrucerosFluviales = () => {
             <div className="aspect-[4/3] overflow-hidden rounded-lg border border-border/30 mt-3 mb-4">
               <img src={amaPhoto} alt="AmaWaterways luxury river ship" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
             </div>
-            <img src={amaLogo} alt="AmaWaterways Certified Advisor" className="w-36 rounded border border-border/30 mb-4" />
+            <img src={amaLogo} alt="AmaWaterways Certified Advisor" className="w-36 rounded border border-border/30 mb-4 mx-auto" />
             <p className="text-muted-foreground text-base leading-relaxed">{d.amaDesc}</p>
 
             <h3 className="font-heading text-xl text-foreground mt-8">{d.avalonTitle}</h3>
             <div className="aspect-[4/3] overflow-hidden rounded-lg border border-border/30 mt-3 mb-4">
               <img src={avalonPhoto} alt="Avalon Waterways river ship sailing past a hilltop castle" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
             </div>
-            <img src={avalonLogo} alt="Avalon Waterways Specialist" className="w-28 mb-4" />
+            <img src={avalonLogo} alt="Avalon Waterways Specialist" className="w-28 mb-4 mx-auto" />
             <p className="text-muted-foreground text-base leading-relaxed">{d.avalonDesc}</p>
 
             <h3 className="font-heading text-xl text-foreground mt-8">{d.riversideTitle}</h3>
             <div className="aspect-[4/3] overflow-hidden rounded-lg border border-border/30 mt-3 mb-4">
               <img src={riversidePhoto} alt="Riverside Luxury Cruises panoramic suite with river view" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
             </div>
-            <img src={riversideLogo} alt="Riverside Luxury Cruises Specialist" className="w-28 rounded-full mb-4" />
+            <img src={riversideLogo} alt="Riverside Luxury Cruises Specialist" className="w-28 rounded-full mb-4 mx-auto" />
             <p className="text-muted-foreground text-base leading-relaxed">{d.riversideDesc}</p>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">{d.h2OtherLines}</h2>
