@@ -9,12 +9,32 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import azamaraImg from "@/assets/ocean/azamara.png";
+import crystalImg from "@/assets/ocean/crystal.png";
+import exploraImg from "@/assets/ocean/explora.png";
+import regentImg from "@/assets/ocean/regent.png";
+import seabournImg from "@/assets/ocean/seabourn.png";
+import seadreamImg from "@/assets/ocean/seadream.png";
+import silverseaImg from "@/assets/ocean/silversea.png";
+import vikingImg from "@/assets/ocean/viking.png";
+import oceaniaImg from "@/assets/ocean/oceania.png";
 
 const CrucerosDeLujo = () => {
   const { t, localPath } = useLanguage();
   const d = t.crucerosDeLujo;
 
   const lineKeys = ["ritzCarlton", "explora", "virgin", "azamara", "crystal", "oceania", "regent", "silversea", "viking", "seabourn", "seadream"] as const;
+  const lineImages: Partial<Record<typeof lineKeys[number], string>> = {
+    explora: exploraImg,
+    azamara: azamaraImg,
+    crystal: crystalImg,
+    oceania: oceaniaImg,
+    regent: regentImg,
+    silversea: silverseaImg,
+    viking: vikingImg,
+    seabourn: seabournImg,
+    seadream: seadreamImg,
+  };
 
   return (
     <Layout>
@@ -78,6 +98,16 @@ const CrucerosDeLujo = () => {
             {lineKeys.map((key) => (
               <div key={key}>
                 <h3 className="font-heading text-xl text-foreground mt-8">{d.lines[key].title}</h3>
+                {lineImages[key] && (
+                  <div className="my-4 overflow-hidden rounded-lg aspect-[4/3] gold-border">
+                    <img
+                      src={lineImages[key]}
+                      alt={d.lines[key].title}
+                      loading="lazy"
+                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                    />
+                  </div>
+                )}
                 <p className="text-muted-foreground text-base leading-relaxed">{d.lines[key].desc}</p>
               </div>
             ))}
