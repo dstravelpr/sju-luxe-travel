@@ -18,6 +18,7 @@ import seadreamImg from "@/assets/ocean/seadream.png";
 import silverseaImg from "@/assets/ocean/silversea.png";
 import vikingImg from "@/assets/ocean/viking.png";
 import oceaniaImg from "@/assets/ocean/oceania.png";
+import ritzCarltonImg from "@/assets/ocean/ritz-carlton.jpg";
 
 const CrucerosDeLujo = () => {
   const { t, localPath } = useLanguage();
@@ -25,6 +26,7 @@ const CrucerosDeLujo = () => {
 
   const lineKeys = ["ritzCarlton", "explora", "virgin", "azamara", "crystal", "oceania", "regent", "silversea", "viking", "seabourn", "seadream"] as const;
   const lineImages: Partial<Record<typeof lineKeys[number], string>> = {
+    ritzCarlton: ritzCarltonImg,
     explora: exploraImg,
     azamara: azamaraImg,
     crystal: crystalImg,
