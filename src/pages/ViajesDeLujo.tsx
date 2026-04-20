@@ -3,6 +3,8 @@ import { ArrowRight } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
+import travelAgentDesk from "@/assets/travel-agent-desk.jpg";
+import travelerAirport from "@/assets/traveler-airport.jpg";
 
 const schema = {
   "@context": "https://schema.org",
@@ -39,6 +41,17 @@ const ViajesDeLujo = () => {
             <p className="text-muted-foreground text-base leading-relaxed">{d.p1}</p>
             <p className="text-muted-foreground text-base leading-relaxed" dangerouslySetInnerHTML={{ __html: d.p2 }} />
 
+            <figure className="my-8 overflow-hidden rounded-lg gold-border">
+              <img
+                src={travelAgentDesk}
+                alt="Planificación de viaje de lujo: pasaporte, mapa y folletos sobre escritorio"
+                loading="lazy"
+                width={1280}
+                height={832}
+                className="w-full h-auto object-cover"
+              />
+            </figure>
+
             <h2 className="font-heading text-2xl text-foreground mt-10">{d.h2Why}</h2>
             <p className="text-muted-foreground text-base leading-relaxed">{d.whyP1}</p>
             <p className="text-muted-foreground text-base leading-relaxed" dangerouslySetInnerHTML={{ __html: d.whyP2 }} />
@@ -55,6 +68,17 @@ const ViajesDeLujo = () => {
             <p className="text-muted-foreground text-base leading-relaxed" dangerouslySetInnerHTML={{ __html: d.destMexico }} />
             <p className="text-muted-foreground text-base leading-relaxed" dangerouslySetInnerHTML={{ __html: d.destCaribbean }} />
             <p className="text-muted-foreground text-base leading-relaxed" dangerouslySetInnerHTML={{ __html: d.destEurope }} />
+
+            <figure className="my-8 overflow-hidden rounded-lg gold-border">
+              <img
+                src={travelerAirport}
+                alt="Viajero elegante con maleta caminando por la terminal del aeropuerto"
+                loading="lazy"
+                width={1280}
+                height={832}
+                className="w-full h-auto object-cover"
+              />
+            </figure>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">{d.h2HowItWorks}</h2>
             <ol className="space-y-3 text-muted-foreground text-base leading-relaxed list-none">
