@@ -82,11 +82,53 @@ const pages = {
     h1: "Is It Worth Using a Travel Agent? Do They Really Save You Money?",
     body: "Discover why luxury travelers consistently choose travel agents over online booking. From exclusive NCM Concierge perks like complimentary upgrades and resort credits to insider access and bespoke itinerary planning, learn how a boutique travel agency saves you both time and money.",
   },
+  "/blog/micro-vacaciones-futuro-del-viaje": {
+    title: "¿Son las Microvacaciones el Futuro de los Viajes? | SJU Luxe Travel",
+    description: "Descubre por qué las microvacaciones de lujo (3–4 días) son la nueva tendencia: escapadas cortas, intencionales y transformadoras desde Puerto Rico.",
+    h1: "¿Son las Microvacaciones el Futuro de los Viajes?",
+    body: "Las microvacaciones —escapadas de lujo de 3 a 4 días— se están convirtiendo en la forma preferida de viajar para profesionales ocupados. Descubre cómo planificar microvacaciones intencionales y transformadoras desde San Juan, Puerto Rico, con itinerarios bespoke, acceso privado y los beneficios exclusivos de NCM Concierge.",
+  },
   "/contact": {
     title: "Free Luxury Travel Consultation — Contact SJU Luxe Travel",
     description: "Schedule your free luxury travel consultation with SJU Luxe Travel. Luxury cruises, private tours, solo travel & more. Phone: (617) 935-5714.",
     h1: "Free Luxury Travel Consultation — Contact Your Luxury Travel Advisor",
     body: "Schedule your free luxury travel consultation today. Whether you are planning luxury cruises from San Juan, private guided tours, luxury solo travel for women, corporate incentive travel, or exclusive destinations without mass tourism — your boutique travel advisor is ready. Phone: (617) 935-5714. Email: dsantiago@ncmconcierge.com.",
+  },
+  "/privacy": {
+    title: "Privacy Policy | SJU Luxe Travel",
+    description: "Privacy Policy for SJU Luxe Travel. Learn how we collect, use, and protect your personal information when planning your luxury travel experience.",
+    h1: "Privacy Policy",
+    body: "This Privacy Policy describes how SJU Luxe Travel collects, uses, and protects your personal information when you use our luxury travel advisory services. We are committed to safeguarding the privacy of our clients in Puerto Rico, the United States, and worldwide.",
+  },
+  "/terms": {
+    title: "Terms of Service | SJU Luxe Travel",
+    description: "Terms of Service for SJU Luxe Travel — boutique luxury travel agency in San Juan, Puerto Rico. Review our booking, cancellation, and service terms.",
+    h1: "Terms of Service",
+    body: "These Terms of Service govern your use of SJU Luxe Travel's bespoke luxury travel advisory services. Please review our booking, cancellation, and service terms before engaging our boutique travel agency in San Juan, Puerto Rico.",
+  },
+  "/viajes-de-lujo-desde-puerto-rico": {
+    title: "Viajes de Lujo desde Puerto Rico — Itinerarios Privados a Medida | SJU Luxe Travel",
+    description: "Agencia de viajes de lujo boutique en San Juan, Puerto Rico. Itinerarios privados a medida, cruceros, lunas de miel y destinos exclusivos sin turismo masivo.",
+    h1: "Viajes de Lujo desde Puerto Rico — Itinerarios Privados a Medida",
+    body: "SJU Luxe Travel es tu asesor de viajes de lujo bilingüe en San Juan, Puerto Rico. Diseñamos viajes privados de lujo desde Puerto Rico con itinerarios a medida, acceso exclusivo y los beneficios VIP de NCM Concierge: upgrades de habitación, créditos de hotel y amenidades premium en las mejores propiedades del mundo.",
+  },
+  "/luna-de-miel-de-lujo": {
+    title: "Luna de Miel de Lujo desde Puerto Rico — Maldivas, Bora Bora & Más | SJU Luxe Travel",
+    description: "Planifica tu luna de miel de lujo con SJU Luxe Travel. Maldivas, Bora Bora, Santorini y más con villas overwater y experiencias privadas exclusivas.",
+    h1: "Luna de Miel de Lujo desde Puerto Rico",
+    body: "Tu luna de miel merece más que un paquete genérico. Diseñamos lunas de miel de lujo a medida desde Puerto Rico hacia los destinos más románticos del mundo: Maldivas, Bora Bora, Santorini, Bali y más. Villas overwater, cenas privadas y beneficios exclusivos de NCM Concierge incluidos.",
+  },
+  "/cruceros-de-lujo-desde-san-juan": {
+    title: "Cruceros de Lujo desde San Juan — Caribe, Mediterráneo & Mundiales | SJU Luxe Travel",
+    description: "Reserva tu crucero de lujo desde San Juan, Puerto Rico. Regent, Silversea, Seabourn y Crystal con suites premium y beneficios exclusivos de concierge.",
+    h1: "Cruceros de Lujo desde San Juan, Puerto Rico",
+    body: "Descubre los mejores cruceros de lujo que zarpan desde San Juan, Puerto Rico. Trabajamos con Regent Seven Seas, Silversea, Seabourn y Crystal Cruises para reservar suites premium con créditos a bordo, excursiones privadas y beneficios exclusivos de NCM Concierge.",
+  },
+  "/cruceros-fluviales-de-lujo-desde-puerto-rico": {
+    title: "Cruceros Fluviales de Lujo desde Puerto Rico — Europa & Asia | SJU Luxe Travel",
+    description: "Planifica tu crucero fluvial de lujo desde Puerto Rico. Danubio, Rin, Sena, Mekong y Nilo con AmaWaterways, Uniworld y Scenic. Suites con balcón privado.",
+    h1: "Cruceros Fluviales de Lujo desde Puerto Rico",
+    body: "Explora Europa y Asia a bordo de los cruceros fluviales más exclusivos del mundo. Diseñamos itinerarios fluviales de lujo por el Danubio, Rin, Sena, Mekong y Nilo con AmaWaterways, Uniworld y Scenic — incluyendo suites con balcón privado, excursiones VIP y beneficios exclusivos de NCM Concierge.",
   },
 };
 
