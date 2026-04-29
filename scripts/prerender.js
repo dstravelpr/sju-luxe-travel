@@ -134,6 +134,67 @@ const pages = {
 
 const getCanonicalUrl = (route) => `${HOSTNAME}${route === "/" ? "" : route}`;
 
+const ORG_SCHEMA = {
+  "@type": "TravelAgency",
+  "@id": `${HOSTNAME}/#org`,
+  name: "SJU Luxe Travel",
+  url: HOSTNAME,
+  telephone: "+1-617-935-5714",
+  email: "dsantiago@ncmconcierge.com",
+  areaServed: "Worldwide",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "San Juan",
+    addressRegion: "PR",
+    addressCountry: "US",
+  },
+};
+
+const buildSchema = (route, content, canonical) => {
+  const isBlog = route.startsWith("/blog/");
+  const isListBlog = route === "/blog";
+  const isAbout = route === "/about";
+  const isContact = route === "/contact";
+  const inLanguage = /[áéíóúñ¿]|de-lujo|cruceros|luna-de-miel|viajes-de|micro-vacaciones/i.test(route + content.title)
+    ? "es-PR"
+    : "en-US";
+
+  const breadcrumb = {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: HOSTNAME + "/" },
+      { "@type": "ListItem", position: 2, name: content.h1, item: canonical },
+    ],
+  };
+
+  let primary;
+  if (isBlog) {
+    primary = {
+      "@type": "BlogPosting",
+      headline: content.h1,
+      description: content.description,
+      inLanguage,
+      mainEntityOfPage: canonical,
+      url: canonical,
+      author: { "@type": "Person", name: "Daniel Santiago Díaz" },
+      publisher: ORG_SCHEMA,
+    };
+  } else if (isListBlog) {
+    primary = { "@type": "Blog", name: content.h1, url: canonical, inLanguage, publisher: ORG_SCHEMA };
+  } else if (isAbout) {
+    primary = { "@type": "AboutPage", name: content.h1, url: canonical, inLanguage, mainEntity: ORG_SCHEMA };
+  } else if (isContact) {
+    primary = { "@type": "ContactPage", name: content.h1, url: canonical, inLanguage, mainEntity: ORG_SCHEMA };
+  } else {
+    primary = { "@type": "WebPage", name: content.h1, description: content.description, url: canonical, inLanguage, isPartOf: { "@id": `${HOSTNAME}/#org` } };
+  }
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [ORG_SCHEMA, primary, breadcrumb],
+  };
+};
+
 const buildAlternateLinks = (canonical) => `
     <link rel="alternate" hreflang="es-PR" href="${canonical}" />
     <link rel="alternate" hreflang="en" href="${canonical}" />
@@ -158,6 +219,13 @@ const withCanonicalSeo = (html, canonical) => {
     /<link rel="canonical" href="[^"]*"\s*\/>/,
     `<link rel="canonical" href="${canonical}" />${alternateLinks}`
   );
+};
+
+const injectJsonLd = (html, schema) => {
+  // Remove any prerender-injected JSON-LD from the template, then add fresh one before </head>
+  const cleaned = html.replace(/\s*<script type="application\/ld\+json" data-prerender>[\s\S]*?<\/script>/g, "");
+  const tag = `    <script type="application/ld+json" data-prerender>${JSON.stringify(schema)}</script>\n`;
+  return cleaned.replace("</head>", `${tag}</head>`);
 };
 
 const routeToDir = (...parts) => {
@@ -197,52 +265,40 @@ const createRedirectPage = (route, prefix) => {
   writeHtmlFile(routeToDir(prefix, route), redirectHtml);
 };
 
-writeHtmlFile(routeToDir(), withCanonicalSeo(template, getCanonicalUrl("/")));
+// Root page schema
+const ROOT_CONTENT = {
+  title: "SJU Luxe Travel | Luxury Travel Agency San Juan Puerto Rico",
+  description: "Boutique luxury travel agency in San Juan, Puerto Rico. Bespoke itineraries to the Maldives, Portugal, Mexico & beyond with exclusive concierge perks.",
+  h1: "SJU Luxe Travel — Boutique Luxury Travel Agency in San Juan, Puerto Rico",
+};
+{
+  const canonical = getCanonicalUrl("/");
+  const html = injectJsonLd(
+    withCanonicalSeo(template, canonical),
+    buildSchema("/", ROOT_CONTENT, canonical)
+  );
+  writeHtmlFile(routeToDir(), html);
+}
 
 for (const [route, content] of Object.entries(pages)) {
   const dir = routeToDir(route);
   const canonical = getCanonicalUrl(route);
 
-  const html = withCanonicalSeo(
+  const seoHtml = withCanonicalSeo(
     template
-    // Replace title
-    .replace(
-      /<title>[^<]*<\/title>/,
-      `<title>${content.title}</title>`
-    )
-    // Replace meta description
-    .replace(
-      /<meta name="description" content="[^"]*" \/>/,
-      `<meta name="description" content="${content.description}" />`
-    )
-    // Replace og:title
-    .replace(
-      /<meta property="og:title" content="[^"]*" \/>/,
-      `<meta property="og:title" content="${content.title}" />`
-    )
-    // Replace og:description
-    .replace(
-      /<meta property="og:description" content="[^"]*" \/>/,
-      `<meta property="og:description" content="${content.description}" />`
-    )
-    // Replace og:url
-    .replace(
-      /<meta property="og:url" content="[^"]*" \/>/,
-      `<meta property="og:url" content="${canonical}" />`
-    )
-    // Replace canonical link
-    .replace(
-      /<link rel="canonical" href="[^"]*" \/>/,
-      `<link rel="canonical" href="${canonical}" />`
-    )
-    // Replace root div content
-    .replace(
-      /<div id="root">[\s\S]*?<\/div>/,
-      `<div id="root"><h1>${content.h1}</h1><p>${content.body}</p></div>`
-    ),
+    .replace(/<title>[^<]*<\/title>/, `<title>${content.title}</title>`)
+    .replace(/<meta name="description" content="[^"]*" \/>/, `<meta name="description" content="${content.description}" />`)
+    .replace(/<meta property="og:title" content="[^"]*" \/>/, `<meta property="og:title" content="${content.title}" />`)
+    .replace(/<meta property="og:description" content="[^"]*" \/>/, `<meta property="og:description" content="${content.description}" />`)
+    .replace(/<meta property="og:url" content="[^"]*" \/>/, `<meta property="og:url" content="${canonical}" />`)
+    .replace(/<meta name="twitter:title" content="[^"]*" \/>/, `<meta name="twitter:title" content="${content.title}" />`)
+    .replace(/<meta name="twitter:description" content="[^"]*" \/>/, `<meta name="twitter:description" content="${content.description}" />`)
+    .replace(/<link rel="canonical" href="[^"]*" \/>/, `<link rel="canonical" href="${canonical}" />`)
+    .replace(/<div id="root">[\s\S]*?<\/div>/, `<div id="root"><h1>${content.h1}</h1><p>${content.body}</p></div>`),
     canonical
   );
 
+  const html = injectJsonLd(seoHtml, buildSchema(route, content, canonical));
   writeHtmlFile(dir, html);
 }
 
