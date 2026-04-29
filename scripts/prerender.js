@@ -132,7 +132,66 @@ const pages = {
   },
 };
 
-const getCanonicalUrl = (route) => `${HOSTNAME}${route === "/" ? "" : route}`;
+const ORG_SCHEMA = {
+  "@type": "TravelAgency",
+  "@id": `${HOSTNAME}/#org`,
+  name: "SJU Luxe Travel",
+  url: HOSTNAME,
+  telephone: "+1-617-935-5714",
+  email: "dsantiago@ncmconcierge.com",
+  areaServed: "Worldwide",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "San Juan",
+    addressRegion: "PR",
+    addressCountry: "US",
+  },
+};
+
+const buildSchema = (route, content, canonical) => {
+  const isBlog = route.startsWith("/blog/");
+  const isListBlog = route === "/blog";
+  const isAbout = route === "/about";
+  const isContact = route === "/contact";
+  const inLanguage = /[áéíóúñ¿]|de-lujo|cruceros|luna-de-miel|viajes-de|micro-vacaciones/i.test(route + content.title)
+    ? "es-PR"
+    : "en-US";
+
+  const breadcrumb = {
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: HOSTNAME + "/" },
+      { "@type": "ListItem", position: 2, name: content.h1, item: canonical },
+    ],
+  };
+
+  let primary;
+  if (isBlog) {
+    primary = {
+      "@type": "BlogPosting",
+      headline: content.h1,
+      description: content.description,
+      inLanguage,
+      mainEntityOfPage: canonical,
+      url: canonical,
+      author: { "@type": "Person", name: "Daniel Santiago Díaz" },
+      publisher: ORG_SCHEMA,
+    };
+  } else if (isListBlog) {
+    primary = { "@type": "Blog", name: content.h1, url: canonical, inLanguage, publisher: ORG_SCHEMA };
+  } else if (isAbout) {
+    primary = { "@type": "AboutPage", name: content.h1, url: canonical, inLanguage, mainEntity: ORG_SCHEMA };
+  } else if (isContact) {
+    primary = { "@type": "ContactPage", name: content.h1, url: canonical, inLanguage, mainEntity: ORG_SCHEMA };
+  } else {
+    primary = { "@type": "WebPage", name: content.h1, description: content.description, url: canonical, inLanguage, isPartOf: { "@id": `${HOSTNAME}/#org` } };
+  }
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [ORG_SCHEMA, primary, breadcrumb],
+  };
+};
 
 const buildAlternateLinks = (canonical) => `
     <link rel="alternate" hreflang="es-PR" href="${canonical}" />
@@ -158,6 +217,13 @@ const withCanonicalSeo = (html, canonical) => {
     /<link rel="canonical" href="[^"]*"\s*\/>/,
     `<link rel="canonical" href="${canonical}" />${alternateLinks}`
   );
+};
+
+const injectJsonLd = (html, schema) => {
+  // Remove any prerender-injected JSON-LD from the template, then add fresh one before </head>
+  const cleaned = html.replace(/\s*<script type="application\/ld\+json" data-prerender>[\s\S]*?<\/script>/g, "");
+  const tag = `    <script type="application/ld+json" data-prerender>${JSON.stringify(schema)}</script>\n`;
+  return cleaned.replace("</head>", `${tag}</head>`);
 };
 
 const routeToDir = (...parts) => {
