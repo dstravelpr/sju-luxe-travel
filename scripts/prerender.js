@@ -267,9 +267,9 @@ const createRedirectPage = (route, prefix) => {
 
 // Root page schema
 const ROOT_CONTENT = {
-  title: "SJU Luxe Travel | Luxury Travel Agency San Juan Puerto Rico",
-  description: "Boutique luxury travel agency in San Juan, Puerto Rico. Bespoke itineraries to the Maldives, Portugal, Mexico & beyond with exclusive concierge perks.",
-  h1: "SJU Luxe Travel — Boutique Luxury Travel Agency in San Juan, Puerto Rico",
+  title: "SJU Luxe Travel | Agencia de Viajes de Lujo en San Juan, Puerto Rico",
+  description: "Agencia boutique de viajes de lujo en San Juan, Puerto Rico. Itinerarios a medida a Maldivas, Portugal, México y más con beneficios exclusivos de concierge.",
+  h1: "SJU Luxe Travel — Agencia Boutique de Viajes de Lujo en San Juan, Puerto Rico",
 };
 {
   const canonical = getCanonicalUrl("/");
