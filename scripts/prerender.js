@@ -132,6 +132,8 @@ const pages = {
   },
 };
 
+const getCanonicalUrl = (route) => `${HOSTNAME}${route === "/" ? "" : route}`;
+
 const ORG_SCHEMA = {
   "@type": "TravelAgency",
   "@id": `${HOSTNAME}/#org`,
