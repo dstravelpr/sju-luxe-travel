@@ -69,7 +69,7 @@ const Blog = () => {
                 <span className="flex items-center gap-1.5"><Calendar size={12} className="text-gold" />{t.blog.featuredPost.date}</span>
                 <span className="flex items-center gap-1.5"><Clock size={12} className="text-gold" />{t.blog.featuredPost.readTime}</span>
               </div>
-              <Link to="/blog/micro-cations-future-of-travel" className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors font-body text-sm tracking-wide">
+              <Link to={localPath("/blog/micro-vacaciones-futuro-del-viaje")} className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors font-body text-sm tracking-wide">
                 {t.blog.readArticle}
                 <ArrowRight size={16} />
               </Link>
