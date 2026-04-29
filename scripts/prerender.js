@@ -265,52 +265,40 @@ const createRedirectPage = (route, prefix) => {
   writeHtmlFile(routeToDir(prefix, route), redirectHtml);
 };
 
-writeHtmlFile(routeToDir(), withCanonicalSeo(template, getCanonicalUrl("/")));
+// Root page schema
+const ROOT_CONTENT = {
+  title: "SJU Luxe Travel | Luxury Travel Agency San Juan Puerto Rico",
+  description: "Boutique luxury travel agency in San Juan, Puerto Rico. Bespoke itineraries to the Maldives, Portugal, Mexico & beyond with exclusive concierge perks.",
+  h1: "SJU Luxe Travel — Boutique Luxury Travel Agency in San Juan, Puerto Rico",
+};
+{
+  const canonical = getCanonicalUrl("/");
+  const html = injectJsonLd(
+    withCanonicalSeo(template, canonical),
+    buildSchema("/", ROOT_CONTENT, canonical)
+  );
+  writeHtmlFile(routeToDir(), html);
+}
 
 for (const [route, content] of Object.entries(pages)) {
   const dir = routeToDir(route);
   const canonical = getCanonicalUrl(route);
 
-  const html = withCanonicalSeo(
+  const seoHtml = withCanonicalSeo(
     template
-    // Replace title
-    .replace(
-      /<title>[^<]*<\/title>/,
-      `<title>${content.title}</title>`
-    )
-    // Replace meta description
-    .replace(
-      /<meta name="description" content="[^"]*" \/>/,
-      `<meta name="description" content="${content.description}" />`
-    )
-    // Replace og:title
-    .replace(
-      /<meta property="og:title" content="[^"]*" \/>/,
-      `<meta property="og:title" content="${content.title}" />`
-    )
-    // Replace og:description
-    .replace(
-      /<meta property="og:description" content="[^"]*" \/>/,
-      `<meta property="og:description" content="${content.description}" />`
-    )
-    // Replace og:url
-    .replace(
-      /<meta property="og:url" content="[^"]*" \/>/,
-      `<meta property="og:url" content="${canonical}" />`
-    )
-    // Replace canonical link
-    .replace(
-      /<link rel="canonical" href="[^"]*" \/>/,
-      `<link rel="canonical" href="${canonical}" />`
-    )
-    // Replace root div content
-    .replace(
-      /<div id="root">[\s\S]*?<\/div>/,
-      `<div id="root"><h1>${content.h1}</h1><p>${content.body}</p></div>`
-    ),
+    .replace(/<title>[^<]*<\/title>/, `<title>${content.title}</title>`)
+    .replace(/<meta name="description" content="[^"]*" \/>/, `<meta name="description" content="${content.description}" />`)
+    .replace(/<meta property="og:title" content="[^"]*" \/>/, `<meta property="og:title" content="${content.title}" />`)
+    .replace(/<meta property="og:description" content="[^"]*" \/>/, `<meta property="og:description" content="${content.description}" />`)
+    .replace(/<meta property="og:url" content="[^"]*" \/>/, `<meta property="og:url" content="${canonical}" />`)
+    .replace(/<meta name="twitter:title" content="[^"]*" \/>/, `<meta name="twitter:title" content="${content.title}" />`)
+    .replace(/<meta name="twitter:description" content="[^"]*" \/>/, `<meta name="twitter:description" content="${content.description}" />`)
+    .replace(/<link rel="canonical" href="[^"]*" \/>/, `<link rel="canonical" href="${canonical}" />`)
+    .replace(/<div id="root">[\s\S]*?<\/div>/, `<div id="root"><h1>${content.h1}</h1><p>${content.body}</p></div>`),
     canonical
   );
 
+  const html = injectJsonLd(seoHtml, buildSchema(route, content, canonical));
   writeHtmlFile(dir, html);
 }
 
