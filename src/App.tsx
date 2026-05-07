@@ -16,6 +16,7 @@ import Contact from "./pages/Contact.tsx";
 import WhatLuxuryTravelMeans from "./pages/blog/WhatLuxuryTravelMeans.tsx";
 import DoTravelAgentsSaveMoney from "./pages/blog/DoTravelAgentsSaveMoney.tsx";
 import MicroVacaciones from "./pages/blog/MicroVacaciones.tsx";
+import WellnessTravel from "./pages/blog/WellnessTravel.tsx";
 import Privacy from "./pages/Privacy.tsx";
 import Terms from "./pages/Terms.tsx";
 import ViajesDeLujo from "./pages/ViajesDeLujo.tsx";
@@ -45,6 +46,7 @@ const appRoutes = [
   { path: "/blog/what-luxury-travel-really-means", element: <WhatLuxuryTravelMeans /> },
   { path: "/blog/do-travel-agents-really-help-save-money", element: <DoTravelAgentsSaveMoney /> },
   { path: "/blog/micro-vacaciones-futuro-del-viaje", element: <MicroVacaciones /> },
+  { path: "/blog/wellness-travel-intentional-luxury", element: <WellnessTravel /> },
   { path: "/contact", element: <Contact /> },
   { path: "/privacy", element: <Privacy /> },
   { path: "/terms", element: <Terms /> },
