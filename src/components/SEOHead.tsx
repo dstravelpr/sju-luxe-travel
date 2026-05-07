@@ -7,13 +7,14 @@ interface SEOHeadProps {
   canonical?: string;
   schemaJson?: Record<string, unknown>;
   ogImage?: string;
+  noindex?: boolean;
 }
 
 const DEFAULT_OG_IMAGE = "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6cdf4b5b-9b67-48a1-83fb-134129ec892a/id-preview-f5dd5032--633f6989-8325-4a39-b1db-9033d10321cf.lovable.app-1775821560059.png";
 
 const BASE = "https://www.sjuluxetravel.com";
 
-export const SEOHead = ({ title, description, canonical, schemaJson, ogImage }: SEOHeadProps) => {
+export const SEOHead = ({ title, description, canonical, schemaJson, ogImage, noindex }: SEOHeadProps) => {
   const image = ogImage || DEFAULT_OG_IMAGE;
   const location = useLocation();
 
@@ -26,6 +27,7 @@ export const SEOHead = ({ title, description, canonical, schemaJson, ogImage }: 
     <Helmet>
       <title>{title}</title>
       <meta name="description" content={description} />
+      {noindex && <meta name="robots" content="noindex,nofollow" />}
 
       {/* Geo meta tags */}
       <meta name="geo.region" content="US-PR" />
