@@ -61,7 +61,7 @@ const RiverCruisingNewGeneration = () => {
             </span>
             <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">
               {isEs
-                ? "Los Cruceros Fluviales Ya No Son Solo Para Tus Padres — Y Eso Lo Cambia Todo"
+                ? "Los cruceros fluviales ya no son solo para tus padres — y eso lo cambia todo"
                 : "River Cruising Isn't Just for Your Parents Anymore — And That Changes Everything"}
             </h1>
             <p className="font-heading text-xl md:text-2xl text-muted-foreground italic mb-6">
@@ -125,38 +125,41 @@ const RiverCruisingNewGeneration = () => {
           <div className="prose-custom space-y-6">
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Esto habría sorprendido a la industria de viajes hace cinco años: el grupo demográfico más entusiasmado con los cruceros fluviales hoy no son los jubilados. Son los menores de 35."
+                ? "Hace cinco años, si le decías a alguien de 30 años que un crucero por el río era una opción real de vacaciones, te miraban raro. Hoy la historia es completamente diferente."
                 : "Here's something that would've shocked the travel industry five years ago: the demographic most excited about river cruising right now isn't retirees. It's people under 35."}
             </p>
 
             <p className="text-muted-foreground text-base leading-relaxed">
-              {isEs ? "Una encuesta reciente del Reino Unido reportada por " : "A recent UK survey reported by "}
-              <a
-                href="https://www.travelweekly.co.uk/news/cruise/under-35s-show-strong-interest-in-river-cruising"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gold hover:text-gold-light underline-offset-4 hover:underline"
-              >
-                Travel Weekly
-              </a>
+              {isEs ? "Una encuesta reciente en el Reino Unido encontró que el 84 por ciento de los jóvenes entre 18 y 34 años está interesado en hacer un crucero fluvial. No es un número menor — es una generación entera diciendo \"sí, eso me interesa.\" Y cuando lo analizas bien, tiene todo el sentido del mundo."
+                : "A recent UK survey reported by "}
+              {!isEs && (
+                <a
+                  href="https://www.travelweekly.co.uk/news/cruise/under-35s-show-strong-interest-in-river-cruising"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gold hover:text-gold-light underline-offset-4 hover:underline"
+                >
+                  Travel Weekly
+                </a>
+              )}
               {isEs
-                ? " encontró que el 84% de los viajeros de 18 a 34 años está interesado en hacer un crucero fluvial. No es una curiosidad de nicho — es toda una generación diciendo: \"sí, esto sí lo quiero\". Y tiene mucho sentido cuando dejas de pensar en los cruceros fluviales como te los han vendido durante las últimas dos décadas."
+                ? ""
                 : " found that 84% of 18-to-34-year-olds are interested in river cruising. That's not a niche curiosity — that's a generation saying, \"Yeah, I actually want this.\" And it makes perfect sense once you stop thinking of river cruises the way they've been marketed for the last two decades."}
             </p>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "Por qué tiene tanto sentido" : "Why this tracks"}
+              {isEs ? "Por qué tiene lógica" : "Why this tracks"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Piensa en lo que los viajeros más jóvenes realmente quieren ahora: ver varios destinos sin la pesadilla logística de planificar cada traslado, check-in y reserva en cuatro países distintos. Quieren experiencias inmersivas, no apuradas. Quieren desconectarse — no pasar las vacaciones mirando una pantalla intentando descifrar el horario del tren de Viena a Budapest."
+                ? "Piensa en lo que realmente busca el viajero joven hoy. Quiere conocer varios destinos sin volverse loco organizando cada traslado, cada hotel, cada reservación de restaurante en cuatro países distintos. Quiere experiencias que se sientan auténticas, no apresuradas. Quiere desconectar de verdad — no pasarse las vacaciones pegado al teléfono tratando de descifrar el tren de Viena a Budapest."
                 : "Think about what younger travelers actually want right now. They want to see multiple destinations without the logistical nightmare of planning every transfer, hotel check-in, and restaurant reservation across four countries. They want experiences that feel immersive, not rushed. They want to unplug — not spend their vacation staring at a screen trying to figure out the train schedule from Vienna to Budapest."}
             </p>
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Los cruceros fluviales cumplen con todo eso. Te despiertas en una ciudad nueva, caminas desde el barco directo al centro — no a un puerto industrial a 45 minutos de cualquier cosa interesante. Exploras, comes bien, te unes a una excursión local o vagas por tu cuenta. Luego regresas, cenas espectacular, y flotas hacia el próximo destino mientras duermes."
+                ? "Un crucero fluvial te da todo eso sin el dolor de cabeza. Te despiertas en una ciudad nueva. Bajas del barco y estás en el centro — no en un puerto industrial a 45 minutos de todo. Exploras, comes bien, te unes a una excursión local o simplemente caminas por tu cuenta. Regresas, cenas increíble, y mientras duermes ya estás navegando hacia el próximo destino. Eso no es el viaje de tus abuelos — eso es viajar de manera inteligente."
                 : "River cruising checks every one of those boxes. You wake up in a new city. You walk off the ship into the heart of town — not some industrial port 45 minutes from anything interesting. You explore, eat well, maybe join a local excursion or just wander on your own. Then you come back, have a great dinner, and float to the next destination while you sleep."}
             </p>
 
@@ -166,55 +169,67 @@ const RiverCruisingNewGeneration = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "La misma encuesta encontró que solo el 9% de las personas que no han hecho un crucero fluvial lo consideran buen valor frente a un viaje en tierra. Pero entre quienes ya lo vivieron, ese número sube al 36%. El producto entrega. El problema es que la industria está comunicando muy mal por qué vale la inversión antes de reservar."
+                ? "Aquí es donde la cosa se pone interesante — y donde yo veo una oportunidad que casi nadie está aprovechando. Esa misma encuesta reveló que solo el nueve por ciento de las personas que nunca han hecho un crucero fluvial piensan que es buen valor comparado con un viaje por tierra. Nueve por ciento. Pero entre los que ya lo han hecho, ese número sube a 36 por ciento."
                 : "That same survey found that only 9% of people who haven't taken a river cruise think it's good value compared to a land-based trip. But among people who've actually done one? That number jumps to 36%. The product delivers. The industry is just doing a terrible job of communicating why it's worth the investment before someone books."}
             </p>
 
             <p className="text-muted-foreground text-base leading-relaxed">
-              {isEs ? "Como " : "As a "}
+              {isEs ? "El producto cumple. La gente que lo prueba lo entiende. Pero la industria está haciendo un trabajo pésimo comunicando por qué vale la pena antes de que alguien reserve. Este es exactamente el tipo de problema que resuelvo todos los días como " : "As a "}
               <Link to={localPath("/about")} className="text-gold hover:text-gold-light underline-offset-4 hover:underline">
                 {isEs ? "asesor de viajes de lujo" : "luxury travel advisor"}
               </Link>
               {isEs
-                ? ", lo veo todos los días: un cliente dice \"los cruceros fluviales se ven caros\". Entonces lo desglosamos — cabina, todas las comidas (y son comidas serias), vino con la cena, excursiones guiadas, traslados — todo incluido. Compáralo con armar el mismo itinerario por tu cuenta: vuelos entre ciudades, hoteles, restaurantes, taxis, entradas, propinas. Nueve de cada diez veces, el crucero fluvial es la mejor oferta."
+                ? ". Un cliente me dice: \"Miré cruceros fluviales, pero me parecen caros.\" Y entonces lo desglosamos juntos: tu camarote, todas las comidas (y hablo de comida de verdad, no un buffet genérico), vinos con la cena, excursiones guiadas, traslados — todo incluido. Ahora cotiza hacer ese mismo itinerario por tu cuenta. Vuelos entre ciudades, hoteles en cada destino, restaurantes, taxis, entradas, propinas. Nueve de cada diez veces, el crucero fluvial sale mejor. Lo que pasa es que no lo ves a primera vista porque el precio aparece como un solo número grande en vez de cincuenta pequeños."
                 : ", I see this every day: a client says, \"river cruises seem expensive.\" Then we break it down — cabin, all meals (and I mean good meals), wine with dinner, guided excursions, transfers — all included. Now price out the same itinerary on your own: flights between cities, hotels, restaurants, taxis, entrance fees, tips. Nine times out of ten, the river cruise is the better deal."}
             </p>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "El factor flexibilidad" : "The flexibility factor"}
+              {isEs ? "La flexibilidad que marca la diferencia" : "The flexibility factor"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Las navieras también lo están entendiendo. El viejo modelo de \"esta es tu hora de cena, esta es tu excursión, sube al bus a las 8 AM\" se está desvaneciendo. Los nuevos itinerarios ofrecen elección real: cena cuando quieras, sáltate el tour grupal, o elige entre varias excursiones según tus intereses. Eso es enorme para viajeros que no quieren sentirse atados a la agenda de otro."
+                ? "Las líneas de cruceros fluviales también están evolucionando. El modelo viejo de \"aquí es tu hora de cenar, aquí es tu excursión, estate en el bus a las 8 AM\" está desapareciendo. Los barcos y los itinerarios más nuevos te dan opciones reales — cenas cuando quieras, te saltas el tour grupal y exploras solo, o escoges entre varias excursiones que realmente van contigo."
                 : "River cruise lines are catching on. The old model of \"here's your dinner time, here's your excursion, be on the bus at 8 AM\" is fading fast. The newer itineraries give you real choice — dine when you want, skip the group tour, or pick from multiple excursions that match your interests. That's huge for travelers who don't want to feel locked into someone else's schedule."}
             </p>
 
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {isEs
+                ? "Eso es clave para viajeros jóvenes que no quieren sentirse atrapados en el horario de otra persona. Tienes la conveniencia de que todo está organizado sin perder la libertad de hacerlo a tu manera. Es lo mejor de los dos mundos, y es exactamente el tipo de viaje intencional que diseño para mis clientes."
+                : "That's huge for travelers who don't want to feel locked into someone else's schedule. You get the convenience of everything being organized without losing the freedom to do it your way. It's the best of both worlds."}
+            </p>
+
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "Lo que les digo a mis clientes" : "What I tell my clients"}
+              {isEs ? "Lo que le digo a mis clientes" : "What I tell my clients"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Si tienes menos de 45 y nunca has considerado un crucero fluvial, probablemente estás trabajando con suposiciones desactualizadas. El Danubio, el Rin, el "
+                ? "Si tienes menos de 45 años y nunca has considerado un crucero fluvial, probablemente estás trabajando con suposiciones que ya no aplican. Esto no se trata de actividades para jubilados ni cenas a las cinco de la tarde. Se trata de amanecer en Burdeos, pasar la tarde en un viñedo familiar, y llegar a un pueblo completamente diferente por la mañana — todo sin hacer una sola maleta."
                 : "If you're under 45 and you've never considered a river cruise, you're probably working with outdated assumptions. The Danube, the Rhine, the "}
-              <Link to={localPath("/destinations/portugal")} className="text-gold hover:text-gold-light underline-offset-4 hover:underline">
-                {isEs ? "Duero en Portugal" : "Douro in Portugal"}
-              </Link>
+              {!isEs && (
+                <Link to={localPath("/destinations/portugal")} className="text-gold hover:text-gold-light underline-offset-4 hover:underline">
+                  Douro in Portugal
+                </Link>
+              )}
+              {isEs ? "" : ", the Mekong — these are world-class destinations best experienced from the water. And with "}
+              {!isEs && (
+                <Link to={localPath("/cruceros-fluviales-de-lujo-desde-puerto-rico")} className="text-gold hover:text-gold-light underline-offset-4 hover:underline">
+                  luxury river cruises planned from Puerto Rico
+                </Link>
+              )}
+              {isEs ? "" : ", you don't have to start your trip with a complicated itinerary just to get to the ship."}
+            </p>
+
+            <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? ", el Mekong — son destinos de clase mundial que se experimentan mejor desde el agua. Y con "
-                : ", the Mekong — these are world-class destinations best experienced from the water. And with "}
-              <Link to={localPath("/cruceros-fluviales-de-lujo-desde-puerto-rico")} className="text-gold hover:text-gold-light underline-offset-4 hover:underline">
-                {isEs ? "cruceros fluviales de lujo desde Puerto Rico" : "luxury river cruises planned from Puerto Rico"}
-              </Link>
-              {isEs
-                ? ", no tienes que armar un itinerario complicado solo para llegar al barco."
-                : ", you don't have to start your trip with a complicated itinerary just to get to the ship."}
+                ? "El Danubio, el Rin, el Duero en Portugal, el Mekong — son destinos de clase mundial que simplemente se experimentan mejor desde el agua. Y con cruceros de lujo desde San Juan, ni siquiera tienes que complicarte la vida con un itinerario enredado solo para llegar al barco."
+                : ""}
             </p>
 
             <p className="text-foreground text-lg leading-relaxed font-heading italic">
               {isEs
-                ? "Los mejores viajes son aquellos donde no estás pensando en logística — solo estás ahí, presente. El crucero fluvial hace eso mejor que casi cualquier cosa."
+                ? "Esto es lo que sé después de una década planificando viajes de lujo por seis continentes: los mejores viajes son los que no te hacen pensar en logística. Simplemente estás ahí, presente, disfrutando cada momento. Los cruceros fluviales logran eso mejor que casi cualquier otra experiencia que he visto — y el hecho de que una nueva generación lo esté descubriendo es algo que me entusiasma de verdad."
                 : "The best trips are the ones where you're not thinking about logistics. You're just there, fully present. River cruising does that better than almost anything else."}
             </p>
           </div>
@@ -222,11 +237,11 @@ const RiverCruisingNewGeneration = () => {
           {/* CTA */}
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">
-              {isEs ? "¿Curioso pero sin reservar todavía?" : "Curious but haven't booked yet?"}
+              {isEs ? "¿Te ha dado curiosidad?" : "Curious but haven't booked yet?"}
             </h3>
             <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">
               {isEs
-                ? "Hablemos. Sin presión, sin compromiso — solo una conversación sobre si el crucero fluvial encaja con lo que estás buscando."
+                ? "Hablemos. Sin presión, sin compromiso — solo una conversación para ver si un crucero fluvial encaja con lo que realmente estás buscando."
                 : "Let's talk. No pressure, no commitment — just a conversation about whether river cruising fits what you're actually looking for."}
             </p>
             <Link
@@ -235,6 +250,16 @@ const RiverCruisingNewGeneration = () => {
             >
               {isEs ? "Solicitar Consulta Gratuita" : "Book Free Consultation"}
             </Link>
+          </div>
+
+          {/* Author bio */}
+          <div className="mt-12 pt-8 border-t border-gold/20">
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              {isEs
+                ? "Daniel Santiago Díaz es el fundador de SJU Luxe Travel, una agencia de viajes de lujo boutique en San Juan, Puerto Rico. Como especialista certificado en cruceros fluviales y agente independiente de NCM Concierge, diseña itinerarios de lujo a medida para viajeros en Estados Unidos, el Caribe y América Latina."
+                : "Daniel Santiago Díaz is the founder of SJU Luxe Travel, a boutique luxury travel agency based in San Juan, Puerto Rico. As a certified river cruise specialist and independent agent of NCM Concierge, he designs bespoke river cruise itineraries for travelers across the US, Caribbean, and Latin America."}
+            </p>
+            <p className="text-gold text-sm mt-2">www.sjuluxetravel.com</p>
           </div>
         </div>
       </article>
