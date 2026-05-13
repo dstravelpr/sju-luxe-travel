@@ -239,10 +239,10 @@ export const en = {
     categories: ["All", "Destinations", "Travel Tips", "Accommodations", "Culture"],
     featured: "Featured",
     featuredPost: {
-      category: "Travel Trends",
-      title: "Are 'Micro-Cations' the Future of Travel?",
-      excerpt: "One of the biggest shifts in travel right now is the rise of micro-cations—shorter, more intentional getaways that fit into real life without sacrificing the experience.",
-      date: "April 9, 2026",
+      category: "River Cruising",
+      title: "River Cruising Isn't Just for Your Parents Anymore",
+      excerpt: "84% of travelers under 35 are now interested in river cruising. A luxury travel advisor explains why a new generation is discovering the smartest way to travel.",
+      date: "May 13, 2026",
       readTime: "6 min read",
     },
     posts: [
@@ -259,9 +259,9 @@ export const en = {
         readTime: "7 min read",
       },
       {
-        category: "River Cruising",
-        title: "River Cruising Isn't Just for Your Parents Anymore",
-        excerpt: "84% of travelers under 35 are now interested in river cruising. A luxury travel advisor explains why a new generation is discovering the smartest way to travel.",
+        category: "Travel Trends",
+        title: "Are 'Micro-Cations' the Future of Travel?",
+        excerpt: "One of the biggest shifts in travel right now is the rise of micro-cations—shorter, more intentional getaways that fit into real life without sacrificing the experience.",
         readTime: "6 min read",
       },
     ],
