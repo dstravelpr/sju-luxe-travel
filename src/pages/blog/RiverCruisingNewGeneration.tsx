@@ -12,7 +12,7 @@ const RiverCruisingNewGeneration = () => {
   return (
     <Layout>
       <SEOHead
-        noindex
+        
         title={
           isEs
             ? "Cruceros Fluviales de Lujo: Ya No Son Solo Para Tus Padres"
