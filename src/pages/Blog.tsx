@@ -13,8 +13,8 @@ const Blog = () => {
   const { t, localPath } = useLanguage();
   const [activeCategory, setActiveCategory] = useState(t.blog.categories[0]);
 
-  const postImages = [blogLuxuryImg, blogAgentImg, blogRiverCruiseImg];
-  const postSlugs = ["what-luxury-travel-really-means", "do-travel-agents-really-help-save-money", "river-cruising-new-generation"];
+  const postImages = [blogLuxuryImg, blogAgentImg, blogMicrocationsImg];
+  const postSlugs = ["what-luxury-travel-really-means", "do-travel-agents-really-help-save-money", "micro-vacaciones-futuro-del-viaje"];
 
   return (
     <Layout>
@@ -59,7 +59,7 @@ const Blog = () => {
               <div className="absolute top-4 left-4 px-3 py-1 bg-gold-gradient text-primary-foreground text-[10px] tracking-[0.15em] uppercase font-semibold rounded-sm z-10">
                 {t.blog.featured}
               </div>
-              <img src={blogMicrocationsImg} alt={t.blog.featuredPost.title} className="w-full h-full object-cover" />
+              <img src={blogRiverCruiseImg} alt={t.blog.featuredPost.title} className="w-full h-full object-cover" />
             </div>
             <div>
               <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{t.blog.featuredPost.category}</span>
@@ -70,7 +70,7 @@ const Blog = () => {
                 <span className="flex items-center gap-1.5"><Calendar size={12} className="text-gold" />{t.blog.featuredPost.date}</span>
                 <span className="flex items-center gap-1.5"><Clock size={12} className="text-gold" />{t.blog.featuredPost.readTime}</span>
               </div>
-              <Link to={localPath("/blog/micro-vacaciones-futuro-del-viaje")} className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors font-body text-sm tracking-wide">
+              <Link to={localPath("/blog/river-cruising-new-generation")} className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors font-body text-sm tracking-wide">
                 {t.blog.readArticle}
                 <ArrowRight size={16} />
               </Link>

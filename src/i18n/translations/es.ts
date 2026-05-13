@@ -241,10 +241,10 @@ export const es: typeof en = {
     categories: ["Todos", "Destinos", "Consejos de Viaje", "Alojamientos", "Cultura"],
     featured: "Destacado",
     featuredPost: {
-      category: "Tendencias de Viaje",
-      title: "¿Son las 'Micro-Vacaciones' el Futuro del Viaje?",
-      excerpt: "Uno de los mayores cambios en los viajes ahora es el auge de las micro-vacaciones — escapadas más cortas e intencionales que se adaptan a la vida real sin sacrificar la experiencia.",
-      date: "9 de abril de 2026",
+      category: "Cruceros Fluviales",
+      title: "Los Cruceros Fluviales Ya No Son Solo Para Tus Padres",
+      excerpt: "El 84% de los viajeros menores de 35 años se interesan por los cruceros fluviales. Un asesor de viajes de lujo explica por qué una nueva generación los está descubriendo.",
+      date: "13 de mayo de 2026",
       readTime: "6 min de lectura",
     },
     posts: [
@@ -261,9 +261,9 @@ export const es: typeof en = {
         readTime: "7 min de lectura",
       },
       {
-        category: "Cruceros Fluviales",
-        title: "Los Cruceros Fluviales Ya No Son Solo Para Tus Padres",
-        excerpt: "El 84% de los viajeros menores de 35 años se interesan por los cruceros fluviales. Un asesor de viajes de lujo explica por qué una nueva generación los está descubriendo.",
+        category: "Tendencias de Viaje",
+        title: "¿Son las 'Micro-Vacaciones' el Futuro del Viaje?",
+        excerpt: "Uno de los mayores cambios en los viajes ahora es el auge de las micro-vacaciones — escapadas más cortas e intencionales que se adaptan a la vida real sin sacrificar la experiencia.",
         readTime: "6 min de lectura",
       },
     ],
