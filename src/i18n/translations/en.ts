@@ -258,6 +258,12 @@ export const en = {
         excerpt: "An honest perspective from a modern travel advisor on how professional guidance saves you money, time, and stress—and why the real value goes far beyond…",
         readTime: "7 min read",
       },
+      {
+        category: "River Cruising",
+        title: "River Cruising Isn't Just for Your Parents Anymore",
+        excerpt: "84% of travelers under 35 are now interested in river cruising. A luxury travel advisor explains why a new generation is discovering the smartest way to travel.",
+        readTime: "6 min read",
+      },
     ],
     readArticle: "Read Article",
     latestPosts: "Latest Posts",
