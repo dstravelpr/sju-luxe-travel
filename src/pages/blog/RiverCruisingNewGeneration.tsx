@@ -5,6 +5,25 @@ import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
 import heroImg from "@/assets/blog-river-cruise.jpg";
 
+const schemaJson = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: "River Cruising Isn't Just for Your Parents Anymore — And That Changes Everything",
+  description:
+    "84% of travelers under 35 want to take a river cruise. A luxury travel advisor explains why — and how to get the most out of the experience.",
+  image: "https://www.sjuluxetravel.com/assets/blog-river-cruise.jpg",
+  author: { "@type": "Person", name: "Daniel Santiago Díaz", url: "https://www.sjuluxetravel.com/about" },
+  publisher: {
+    "@type": "Organization",
+    name: "SJU Luxe Travel",
+    url: "https://www.sjuluxetravel.com",
+  },
+  datePublished: "2026-05-13",
+  inLanguage: "en",
+  url: "https://www.sjuluxetravel.com/blog/river-cruising-new-generation",
+  mainEntityOfPage: "https://www.sjuluxetravel.com/blog/river-cruising-new-generation",
+};
+
 const RiverCruisingNewGeneration = () => {
   const { language, localPath } = useLanguage();
   const isEs = language === "es";
@@ -12,7 +31,7 @@ const RiverCruisingNewGeneration = () => {
   return (
     <Layout>
       <SEOHead
-        
+        schemaJson={schemaJson}
         title={
           isEs
             ? "Cruceros Fluviales de Lujo: Ya No Son Solo Para Tus Padres"

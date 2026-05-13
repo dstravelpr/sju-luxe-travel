@@ -24,6 +24,7 @@ const allRoutes = [
   "/blog/what-luxury-travel-really-means",
   "/blog/do-travel-agents-really-help-save-money",
   "/blog/micro-vacaciones-futuro-del-viaje",
+  "/blog/river-cruising-new-generation",
   "/contact",
   "/privacy",
   "/terms",
@@ -87,6 +88,12 @@ const pages = {
     description: "Descubre por qué las microvacaciones de lujo (3–4 días) son la nueva tendencia: escapadas cortas, intencionales y transformadoras desde Puerto Rico.",
     h1: "¿Son las Microvacaciones el Futuro de los Viajes?",
     body: "Las microvacaciones —escapadas de lujo de 3 a 4 días— se están convirtiendo en la forma preferida de viajar para profesionales ocupados. Descubre cómo planificar microvacaciones intencionales y transformadoras desde San Juan, Puerto Rico, con itinerarios bespoke, acceso privado y los beneficios exclusivos de NCM Concierge.",
+  },
+  "/blog/river-cruising-new-generation": {
+    title: "Luxury River Cruising Isn't Just for Your Parents Anymore | SJU Luxe Travel",
+    description: "84% of travelers under 35 want to take a river cruise. A luxury travel advisor explains why — and how to get the most out of the experience.",
+    h1: "River Cruising Isn't Just for Your Parents Anymore — And That Changes Everything",
+    body: "84% of UK travelers aged 18–34 are interested in river cruising. A luxury travel advisor unpacks why a new generation is discovering river cruising — all-inclusive value, walk-off-the-ship convenience, and itineraries on the Danube, Rhine, Douro and Mekong that are best experienced from the water.",
   },
   "/contact": {
     title: "Consulta Gratis de Viajes de Lujo — Contacto | SJU Luxe Travel",

@@ -7,13 +7,14 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import blogMicrocationsImg from "@/assets/blog-microcations.jpg";
 import blogLuxuryImg from "@/assets/blog-luxury-travel.jpg";
 import blogAgentImg from "@/assets/blog-travel-agent.jpg";
+import blogRiverCruiseImg from "@/assets/blog-river-cruise.jpg";
 
 const Blog = () => {
   const { t, localPath } = useLanguage();
   const [activeCategory, setActiveCategory] = useState(t.blog.categories[0]);
 
-  const postImages = [blogLuxuryImg, blogAgentImg];
-  const postSlugs = ["what-luxury-travel-really-means", "do-travel-agents-really-help-save-money"];
+  const postImages = [blogLuxuryImg, blogAgentImg, blogRiverCruiseImg];
+  const postSlugs = ["what-luxury-travel-really-means", "do-travel-agents-really-help-save-money", "river-cruising-new-generation"];
 
   return (
     <Layout>
@@ -86,7 +87,7 @@ const Blog = () => {
               {t.blog.moreStories} <span className="text-gold-gradient italic">{t.blog.moreStoriesHighlight}</span>
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {t.blog.posts.map((post, i) => (
               <article key={postSlugs[i]} className="gold-border gold-border-hover rounded-sm overflow-hidden group">
                 <div className="aspect-[16/9] bg-charcoal relative overflow-hidden">
