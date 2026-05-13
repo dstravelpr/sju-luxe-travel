@@ -89,22 +89,28 @@ const Blog = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {t.blog.posts.map((post, i) => (
-              <article key={postSlugs[i]} className="gold-border gold-border-hover rounded-sm overflow-hidden group">
-                <div className="aspect-[16/9] bg-charcoal relative overflow-hidden">
-                  <div className="absolute top-3 left-3 px-2.5 py-1 gold-border text-[10px] tracking-[0.15em] uppercase text-muted-foreground rounded-sm z-10">
-                    {post.category}
+              <Link
+                key={postSlugs[i]}
+                to={localPath(`/blog/${postSlugs[i]}`)}
+                className="gold-border gold-border-hover rounded-sm overflow-hidden group block"
+              >
+                <article>
+                  <div className="aspect-[16/9] bg-charcoal relative overflow-hidden">
+                    <div className="absolute top-3 left-3 px-2.5 py-1 gold-border text-[10px] tracking-[0.15em] uppercase text-muted-foreground rounded-sm z-10">
+                      {post.category}
+                    </div>
+                    <img src={postImages[i]} alt={post.title} className="w-full h-full object-cover" loading="lazy" />
                   </div>
-                  <img src={postImages[i]} alt={post.title} className="w-full h-full object-cover" loading="lazy" />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-heading text-lg text-foreground mb-3 group-hover:text-gold transition-colors">{post.title}</h3>
-                  <p className="text-muted-foreground text-xs leading-relaxed mb-4">{post.excerpt}</p>
-                  <div className="flex items-center justify-between text-muted-foreground text-[11px]">
-                    <span className="flex items-center gap-1.5"><User size={11} className="text-gold" />Daniel Santiago Díaz</span>
-                    <span className="flex items-center gap-1.5"><Clock size={11} className="text-gold" />{post.readTime}</span>
+                  <div className="p-6">
+                    <h3 className="font-heading text-lg text-foreground mb-3 group-hover:text-gold transition-colors">{post.title}</h3>
+                    <p className="text-muted-foreground text-xs leading-relaxed mb-4">{post.excerpt}</p>
+                    <div className="flex items-center justify-between text-muted-foreground text-[11px]">
+                      <span className="flex items-center gap-1.5"><User size={11} className="text-gold" />Daniel Santiago Díaz</span>
+                      <span className="flex items-center gap-1.5"><Clock size={11} className="text-gold" />{post.readTime}</span>
+                    </div>
                   </div>
-                </div>
-              </article>
+                </article>
+              </Link>
             ))}
           </div>
         </div>
