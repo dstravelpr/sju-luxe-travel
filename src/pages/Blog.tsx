@@ -59,7 +59,7 @@ const Blog = () => {
               <div className="absolute top-4 left-4 px-3 py-1 bg-gold-gradient text-primary-foreground text-[10px] tracking-[0.15em] uppercase font-semibold rounded-sm z-10">
                 {t.blog.featured}
               </div>
-              <img src={blogMicrocationsImg} alt={t.blog.featuredPost.title} className="w-full h-full object-cover" />
+              <img src={blogRiverCruiseImg} alt={t.blog.featuredPost.title} className="w-full h-full object-cover" />
             </div>
             <div>
               <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{t.blog.featuredPost.category}</span>
