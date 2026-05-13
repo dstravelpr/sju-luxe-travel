@@ -13,8 +13,8 @@ const Blog = () => {
   const { t, localPath } = useLanguage();
   const [activeCategory, setActiveCategory] = useState(t.blog.categories[0]);
 
-  const postImages = [blogLuxuryImg, blogAgentImg, blogRiverCruiseImg];
-  const postSlugs = ["what-luxury-travel-really-means", "do-travel-agents-really-help-save-money", "river-cruising-new-generation"];
+  const postImages = [blogLuxuryImg, blogAgentImg, blogMicrocationsImg];
+  const postSlugs = ["what-luxury-travel-really-means", "do-travel-agents-really-help-save-money", "micro-vacaciones-futuro-del-viaje"];
 
   return (
     <Layout>
