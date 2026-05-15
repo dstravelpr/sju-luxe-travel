@@ -24,8 +24,15 @@ const spanishRoutes = [
   "/cruceros-fluviales-de-lujo-desde-puerto-rico",
 ];
 
-// Only canonical (non-prefixed) routes in the sitemap
-const routes = spanishRoutes;
+// Include canonical, English, and Spanish-prefixed URLs for distinct hreflang ranking
+const routes = [
+  "/",
+  ...spanishRoutes,
+  "/en",
+  ...spanishRoutes.map((r) => `/en${r}`),
+  "/es",
+  ...spanishRoutes.map((r) => `/es${r}`),
+];
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({

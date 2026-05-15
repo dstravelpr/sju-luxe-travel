@@ -56,9 +56,9 @@ export const SEOHead = ({ title, description, canonical, schemaJson, ogImage, no
 
       <link rel="canonical" href={effectiveCanonical} />
 
-      {/* Hreflang — all point to canonical non-prefixed URL */}
-      <link rel="alternate" hrefLang="es-PR" href={pageUrl} />
-      <link rel="alternate" hrefLang="en" href={pageUrl} />
+      {/* Hreflang — distinct URLs per language */}
+      <link rel="alternate" hrefLang="es-PR" href={`${BASE}/es${currentPath === "/" ? "" : currentPath}`} />
+      <link rel="alternate" hrefLang="en" href={`${BASE}/en${currentPath === "/" ? "" : currentPath}`} />
       <link rel="alternate" hrefLang="x-default" href={pageUrl} />
 
       {schemaJson && (

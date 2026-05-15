@@ -27,9 +27,13 @@ import CrucerosFluviales from "./pages/CrucerosFluviales.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import { Navigate, useLocation } from "react-router-dom";
 
-/** 301-style redirect: strip /en or /es prefix and navigate to canonical path */
+/** Persist language from URL prefix, then redirect to canonical path */
 const LangRedirect = () => {
   const location = useLocation();
+  const match = location.pathname.match(/^\/(en|es)(\/|$)/);
+  if (match) {
+    try { localStorage.setItem("lang", match[1]); } catch {}
+  }
   const canonical = location.pathname.replace(/^\/(en|es)(\/|$)/, "/") || "/";
   return <Navigate to={canonical + location.search + location.hash} replace />;
 };
