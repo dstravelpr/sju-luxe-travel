@@ -14,6 +14,7 @@ const spanishRoutes = [
   "/blog/what-luxury-travel-really-means",
   "/blog/do-travel-agents-really-help-save-money",
   "/blog/micro-vacaciones-futuro-del-viaje",
+  "/blog/river-cruising-new-generation",
   "/contact",
   "/privacy",
   "/terms",

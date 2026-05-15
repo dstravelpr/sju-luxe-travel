@@ -10,13 +10,16 @@ interface SEOHeadProps {
   noindex?: boolean;
 }
 
-const DEFAULT_OG_IMAGE = "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6cdf4b5b-9b67-48a1-83fb-134129ec892a/id-preview-f5dd5032--633f6989-8325-4a39-b1db-9033d10321cf.lovable.app-1775821560059.png";
+const DEFAULT_OG_IMAGE = "https://www.sjuluxetravel.com/og-image.jpg";
 
 const BASE = "https://www.sjuluxetravel.com";
 
 export const SEOHead = ({ title, description, canonical, schemaJson, ogImage, noindex }: SEOHeadProps) => {
   const image = ogImage || DEFAULT_OG_IMAGE;
   const location = useLocation();
+  const lang = typeof document !== "undefined" ? document.documentElement.lang : "es-PR";
+  const ogLocale = lang.startsWith("en") ? "en_US" : "es_PR";
+  const ogLocaleAlt = lang.startsWith("en") ? "es_PR" : "en_US";
 
   // Canonical is always the non-prefixed URL
   const currentPath = location.pathname.replace(/^\/(en|es)(\/|$)/, "/") || "/";
@@ -41,6 +44,9 @@ export const SEOHead = ({ title, description, canonical, schemaJson, ogImage, no
       <meta property="og:type" content="website" />
       <meta property="og:image" content={image} />
       <meta property="og:url" content={effectiveCanonical} />
+      <meta property="og:site_name" content="SJU Luxe Travel" />
+      <meta property="og:locale" content={ogLocale} />
+      <meta property="og:locale:alternate" content={ogLocaleAlt} />
 
       {/* Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
