@@ -314,10 +314,45 @@ const buildSchema = (route, content, canonical) => {
   };
 };
 
-const buildAlternateLinks = (canonical) => `
-    <link rel="alternate" hreflang="es-PR" href="${canonical}" />
-    <link rel="alternate" hreflang="en" href="${canonical}" />
-    <link rel="alternate" hreflang="x-default" href="${canonical}" />`;
+const buildAlternateLinksFor = (route) => {
+  const canonicalUrl = getCanonicalUrl(route);
+  const enUrl = `${HOSTNAME}/en${route === "/" ? "" : route}`;
+  const esUrl = `${HOSTNAME}/es${route === "/" ? "" : route}`;
+  return `
+    <link rel="alternate" hreflang="es-PR" href="${esUrl}" />
+    <link rel="alternate" hreflang="en" href="${enUrl}" />
+    <link rel="alternate" hreflang="x-default" href="${canonicalUrl}" />`;
+};
+
+const langPageHtml = (route, content, lang) => {
+  const selfPath = `/${lang}${route === "/" ? "" : route}`;
+  const selfUrl = `${HOSTNAME}${selfPath}`;
+  const htmlLang = lang === "en" ? "en" : "es-PR";
+  const ogLocale = lang === "en" ? "en_US" : "es_PR";
+  const ogLocaleAlt = lang === "en" ? "es_PR" : "en_US";
+
+  let html = template
+    .replace(/<html lang="[^"]*">/, `<html lang="${htmlLang}">`)
+    .replace(/<title>[^<]*<\/title>/, `<title>${content.title}</title>`)
+    .replace(/<meta name="description" content="[^"]*" \/>/, `<meta name="description" content="${content.description}" />`)
+    .replace(/<meta property="og:title" content="[^"]*" \/>/, `<meta property="og:title" content="${content.title}" />`)
+    .replace(/<meta property="og:description" content="[^"]*" \/>/, `<meta property="og:description" content="${content.description}" />`)
+    .replace(/<meta property="og:url" content="[^"]*" \/>/, `<meta property="og:url" content="${selfUrl}" />`)
+    .replace(/<meta property="og:locale" content="[^"]*" \/>/, `<meta property="og:locale" content="${ogLocale}" />`)
+    .replace(/<meta property="og:locale:alternate" content="[^"]*" \/>/, `<meta property="og:locale:alternate" content="${ogLocaleAlt}" />`)
+    .replace(/<meta name="twitter:title" content="[^"]*" \/>/, `<meta name="twitter:title" content="${content.title}" />`)
+    .replace(/<meta name="twitter:description" content="[^"]*" \/>/, `<meta name="twitter:description" content="${content.description}" />`)
+    .replace(/<div id="root">[\s\S]*?<\/div>/, `<div id="root"><h1>${content.h1}</h1><p>${content.body}</p></div>`);
+
+  // Self-canonical + hreflang group (replace any existing canonical/hreflang)
+  html = html
+    .replace(/\s*<link rel="alternate" hreflang="[^"]*" href="[^"]*"\s*\/?>/g, "")
+    .replace(/<link rel="canonical" href="[^"]*"\s*\/>/, `<link rel="canonical" href="${selfUrl}" />${buildAlternateLinksFor(route)}`);
+
+  // JSON-LD
+  const schema = buildSchema(route, content, selfUrl);
+  return injectJsonLd(html, schema);
+};
 
 const withCanonicalSeo = (html, canonical) => {
   const alternateLinks = buildAlternateLinks(canonical);
