@@ -354,8 +354,8 @@ const langPageHtml = (route, content, lang) => {
   return injectJsonLd(html, schema);
 };
 
-const withCanonicalSeo = (html, canonical) => {
-  const alternateLinks = buildAlternateLinks(canonical);
+const withCanonicalSeo = (html, canonical, route) => {
+  const alternateLinks = buildAlternateLinksFor(route);
 
   const htmlWithCanonical = /<link rel="canonical" href="[^"]*"\s*\/>/.test(html)
     ? html.replace(
@@ -365,9 +365,7 @@ const withCanonicalSeo = (html, canonical) => {
     : html.replace("</head>", `    <link rel="canonical" href="${canonical}" />\n</head>`);
 
   const htmlWithoutAlternates = htmlWithCanonical
-    .replace(/\s*<link rel="alternate" hreflang="es-PR" href="[^"]*"\s*\/?>/g, "")
-    .replace(/\s*<link rel="alternate" hreflang="en" href="[^"]*"\s*\/?>/g, "")
-    .replace(/\s*<link rel="alternate" hreflang="x-default" href="[^"]*"\s*\/?>/g, "");
+    .replace(/\s*<link rel="alternate" hreflang="[^"]*" href="[^"]*"\s*\/?>/g, "");
 
   return htmlWithoutAlternates.replace(
     /<link rel="canonical" href="[^"]*"\s*\/>/,
