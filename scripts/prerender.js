@@ -394,39 +394,17 @@ const writeHtmlFile = (dir, html) => {
   fs.writeFileSync(path.join(dir, "index.html"), html);
 };
 
-const createRedirectPage = (route, prefix) => {
-  const canonicalPath = route === "/" ? "/" : route;
-  const canonicalUrl = getCanonicalUrl(route);
-  const redirectHtml = `<!doctype html>
-<html lang="es-PR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Redirecting…</title>
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="${canonicalUrl}" />
-    ${buildAlternateLinks(canonicalUrl)}
-    <meta http-equiv="refresh" content="0; url=${canonicalUrl}" />
-    <script>
-      window.location.replace(${JSON.stringify(canonicalPath)} + window.location.search + window.location.hash);
-    </script>
-  </head>
-  <body></body>
-</html>`;
-
-  writeHtmlFile(routeToDir(prefix, route), redirectHtml);
-};
-
 // Root page schema
 const ROOT_CONTENT = {
   title: "SJU Luxe Travel | Agencia de Viajes de Lujo en San Juan, Puerto Rico",
   description: "Agencia boutique de viajes de lujo en San Juan, Puerto Rico. Itinerarios a medida a Maldivas, Portugal, México y más con beneficios exclusivos de concierge.",
   h1: "SJU Luxe Travel — Agencia Boutique de Viajes de Lujo en San Juan, Puerto Rico",
+  body: "Agencia boutique de viajes de lujo en San Juan, Puerto Rico. Diseñamos itinerarios a medida con beneficios exclusivos de NCM Concierge.",
 };
 {
   const canonical = getCanonicalUrl("/");
   const html = injectJsonLd(
-    withCanonicalSeo(template, canonical),
+    withCanonicalSeo(template, canonical, "/"),
     buildSchema("/", ROOT_CONTENT, canonical)
   );
   writeHtmlFile(routeToDir(), html);
@@ -447,17 +425,30 @@ for (const [route, content] of Object.entries(pages)) {
     .replace(/<meta name="twitter:description" content="[^"]*" \/>/, `<meta name="twitter:description" content="${content.description}" />`)
     .replace(/<link rel="canonical" href="[^"]*" \/>/, `<link rel="canonical" href="${canonical}" />`)
     .replace(/<div id="root">[\s\S]*?<\/div>/, `<div id="root"><h1>${content.h1}</h1><p>${content.body}</p></div>`),
-    canonical
+    canonical,
+    route
   );
 
   const html = injectJsonLd(seoHtml, buildSchema(route, content, canonical));
   writeHtmlFile(dir, html);
 }
 
-for (const prefix of LANGUAGE_PREFIXES) {
-  for (const route of allRoutes) {
-    createRedirectPage(route, prefix);
+// Write real content pages at /en/* and /es/* (distinct hreflang URLs, not redirects)
+let langPagesWritten = 0;
+const writeLangPage = (route, contentEs, contentEn) => {
+  if (contentEs) {
+    writeHtmlFile(routeToDir("es", route), langPageHtml(route, contentEs, "es"));
+    langPagesWritten++;
   }
+  if (contentEn) {
+    writeHtmlFile(routeToDir("en", route), langPageHtml(route, contentEn, "en"));
+    langPagesWritten++;
+  }
+};
+
+writeLangPage("/", ROOT_CONTENT, ROOT_EN);
+for (const route of Object.keys(pages)) {
+  writeLangPage(route, pages[route], pagesEn[route]);
 }
 
-console.log(`✅ Prerendered ${Object.keys(pages).length} routes and generated ${LANGUAGE_PREFIXES.length * allRoutes.length} language redirects`);
+console.log(`✅ Prerendered ${Object.keys(pages).length + 1} routes + ${langPagesWritten} language-prefixed pages`);
