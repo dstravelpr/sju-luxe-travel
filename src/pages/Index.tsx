@@ -66,7 +66,7 @@ const schemaJson = {
     {
       "@type": "LocalBusiness",
       name: "SJU Luxe Travel",
-      image: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/6cdf4b5b-9b67-48a1-83fb-134129ec892a/id-preview-f5dd5032--633f6989-8325-4a39-b1db-9033d10321cf.lovable.app-1775821560059.png",
+      image: "https://www.sjuluxetravel.com/og-image.jpg",
       telephone: "+16179355714",
       email: "dsantiago@ncmconcierge.com",
       url: "https://www.sjuluxetravel.com",
