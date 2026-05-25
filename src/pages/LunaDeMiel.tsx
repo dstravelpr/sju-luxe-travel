@@ -26,8 +26,8 @@ const LunaDeMiel = () => {
   return (
     <Layout>
       <SEOHead
-        title="Luna de Miel de Lujo desde Puerto Rico — Planificación Personalizada | SJU Luxe Travel"
-        description="Planifica tu luna de miel de lujo desde San Juan, Puerto Rico. Las Maldivas, Amalfi, Santorini, Bora Bora y más — itinerarios románticos a medida con beneficios exclusivos de NCM Concierge."
+        title="Luna de Miel de Lujo desde PR | SJU Luxe Travel"
+        description="Planifica tu luna de miel de lujo desde San Juan, PR. Maldivas, Amalfi, Santorini, Bora Bora y más — itinerarios románticos a medida."
         canonical="https://www.sjuluxetravel.com/luna-de-miel-de-lujo"
       />
 
