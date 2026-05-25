@@ -24,8 +24,8 @@ const ViajesDeLujo = () => {
   return (
     <Layout>
       <SEOHead
-        title="Viajes de Lujo desde Puerto Rico — Agente de Viajes Privado en San Juan | SJU Luxe Travel"
-        description="Planifica tu próximo viaje de lujo desde Puerto Rico con SJU Luxe Travel. Itinerarios personalizados a las Maldivas, Europa, México y más — sin pasaporte, misma zona horaria, servicio completamente bilingüe."
+        title="Viajes de Lujo desde Puerto Rico | SJU Luxe Travel"
+        description="Itinerarios de lujo personalizados desde PR a las Maldivas, Europa, México y más. Servicio bilingüe, sin pasaporte para destinos US."
         canonical="https://www.sjuluxetravel.com/viajes-de-lujo-desde-puerto-rico"
         schemaJson={schema}
       />
