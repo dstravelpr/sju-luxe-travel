@@ -31,6 +31,7 @@ const RiverCruisingNewGeneration = () => {
   return (
     <Layout>
       <SEOHead
+        ogType="article"
         schemaJson={schemaJson}
         title={
           isEs
