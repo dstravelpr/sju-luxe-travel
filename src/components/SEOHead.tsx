@@ -7,6 +7,7 @@ interface SEOHeadProps {
   canonical?: string;
   schemaJson?: Record<string, unknown>;
   ogImage?: string;
+  ogType?: "website" | "article";
   noindex?: boolean;
 }
 
