@@ -15,7 +15,7 @@ const DEFAULT_OG_IMAGE = "https://www.sjuluxetravel.com/og-image.jpg";
 
 const BASE = "https://www.sjuluxetravel.com";
 
-export const SEOHead = ({ title, description, canonical, schemaJson, ogImage, noindex }: SEOHeadProps) => {
+export const SEOHead = ({ title, description, canonical, schemaJson, ogImage, ogType = "website", noindex }: SEOHeadProps) => {
   const image = ogImage || DEFAULT_OG_IMAGE;
   const location = useLocation();
   const lang = typeof document !== "undefined" ? document.documentElement.lang : "es-PR";
