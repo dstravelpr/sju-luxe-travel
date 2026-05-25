@@ -24,8 +24,9 @@ const DoTravelAgentsSaveMoney = () => {
   return (
     <Layout>
       <SEOHead
-        title="Is It Worth Using a Travel Agent for Luxury Vacation? — SJU Luxe Travel"
-        description="Is it worth using a travel agent for a luxury vacation? How a travel advisor saves you money, time & stress. Travel agent vs booking online luxury — an honest take."
+        ogType="article"
+        title="Is It Worth Using a Travel Agent? | SJU Luxe Travel"
+        description="Is it worth using a travel agent for a luxury vacation? How an advisor saves you money, time & stress. Travel agent vs booking online — an honest take."
         canonical="https://www.sjuluxetravel.com/blog/do-travel-agents-really-help-save-money"
         schemaJson={schemaJson}
       />
