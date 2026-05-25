@@ -21,8 +21,8 @@ const Portugal = () => {
   return (
     <Layout>
       <SEOHead
-        title="Viajes de Lujo a Portugal desde Puerto Rico | SJU Luxe Travel"
-        description="Descubre Portugal con un itinerario de lujo a medida. Cenas en Belem, quintas históricas y experiencias culturales exclusivas — planificado desde San Juan, PR."
+        title="Viajes de Lujo a Portugal | SJU Luxe Travel"
+        description="Descubre Portugal con un itinerario de lujo a medida. Cenas en Belem, quintas históricas y experiencias culturales exclusivas — desde San Juan, PR."
         canonical="https://www.sjuluxetravel.com/destinations/portugal"
         schemaJson={schemaJson}
       />

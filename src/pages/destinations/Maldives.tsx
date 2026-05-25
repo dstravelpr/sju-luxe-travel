@@ -22,8 +22,8 @@ const Maldives = () => {
   return (
     <Layout>
       <SEOHead
-        title="Vacaciones de Lujo en Maldivas desde Puerto Rico | SJU Luxe Travel"
-        description="Planifica tus vacaciones de lujo en Maldivas con SJU Luxe Travel. Villas sobre el agua, cenas privadas, buceo y beneficios exclusivos de resort — desde San Juan, PR."
+        title="Vacaciones de Lujo en Maldivas | SJU Luxe Travel"
+        description="Planifica tus vacaciones de lujo en Maldivas: villas sobre el agua, cenas privadas, buceo y beneficios exclusivos de resort — desde San Juan, PR."
         canonical="https://www.sjuluxetravel.com/destinations/maldives"
         schemaJson={schemaJson}
       />

@@ -127,8 +127,8 @@ const Destinations = () => {
   return (
     <Layout>
       <SEOHead
-        title="Destinos de Lujo — Itinerarios Personalizados | SJU Luxe Travel"
-        description="Explora destinos de lujo curados por tu asesor de viajes en San Juan, Puerto Rico: Maldivas, Portugal, México y más. Beneficios exclusivos de NCM Concierge en cada propiedad."
+        title="Destinos de Lujo Personalizados | SJU Luxe Travel"
+        description="Explora destinos de lujo curados desde San Juan, PR: Maldivas, Portugal, México y más. Beneficios exclusivos de NCM Concierge."
         canonical="https://www.sjuluxetravel.com/destinations"
       />
       <section className="pt-32 pb-8 bg-background">

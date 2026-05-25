@@ -7,6 +7,7 @@ interface SEOHeadProps {
   canonical?: string;
   schemaJson?: Record<string, unknown>;
   ogImage?: string;
+  ogType?: "website" | "article";
   noindex?: boolean;
 }
 
@@ -14,7 +15,7 @@ const DEFAULT_OG_IMAGE = "https://www.sjuluxetravel.com/og-image.jpg";
 
 const BASE = "https://www.sjuluxetravel.com";
 
-export const SEOHead = ({ title, description, canonical, schemaJson, ogImage, noindex }: SEOHeadProps) => {
+export const SEOHead = ({ title, description, canonical, schemaJson, ogImage, ogType = "website", noindex }: SEOHeadProps) => {
   const image = ogImage || DEFAULT_OG_IMAGE;
   const location = useLocation();
   const lang = typeof document !== "undefined" ? document.documentElement.lang : "es-PR";
@@ -41,7 +42,7 @@ export const SEOHead = ({ title, description, canonical, schemaJson, ogImage, no
       {/* Open Graph */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content={ogType} />
       <meta property="og:image" content={image} />
       <meta property="og:url" content={effectiveCanonical} />
       <meta property="og:site_name" content="SJU Luxe Travel" />

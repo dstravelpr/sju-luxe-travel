@@ -21,8 +21,8 @@ const Mexico = () => {
   return (
     <Layout>
       <SEOHead
-        title="Viajes de Lujo a México desde Puerto Rico | SJU Luxe Travel"
-        description="Desde Tulum hasta la Ciudad de México — itinerarios de lujo personalizados para viajeros de Puerto Rico. Resorts boutique, cultura y gastronomía de clase mundial."
+        title="Viajes de Lujo a México | SJU Luxe Travel"
+        description="Desde Tulum hasta CDMX — itinerarios de lujo personalizados para viajeros de PR. Resorts boutique, cultura y gastronomía de clase mundial."
         canonical="https://www.sjuluxetravel.com/destinations/mexico"
         schemaJson={schemaJson}
       />

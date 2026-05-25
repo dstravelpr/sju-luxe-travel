@@ -12,6 +12,7 @@ const WellnessTravel = () => {
   return (
     <Layout>
       <SEOHead
+        ogType="article"
         noindex
         title={
           isEs

@@ -44,8 +44,8 @@ const CrucerosDeLujo = () => {
   return (
     <Layout>
       <SEOHead
-        title="Cruceros de Lujo desde San Juan, Puerto Rico — Planificación VIP | SJU Luxe Travel"
-        description="Planifica tu crucero de lujo desde San Juan, Puerto Rico con SJU Luxe Travel. Acceso a cruceros premium, cabinas exclusivas, excursiones privadas y beneficios VIP de NCM Concierge que no obtienes reservando directo."
+        title="Cruceros de Lujo desde San Juan, PR | SJU Luxe Travel"
+        description="Planifica tu crucero de lujo desde San Juan, PR. Cabinas exclusivas, excursiones privadas y beneficios VIP de NCM Concierge."
         canonical="https://www.sjuluxetravel.com/cruceros-de-lujo-desde-san-juan"
         schemaJson={{
           "@context": "https://schema.org",

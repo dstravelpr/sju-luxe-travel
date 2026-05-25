@@ -59,8 +59,8 @@ const CrucerosFluviales = () => {
   return (
     <Layout>
       <SEOHead
-        title="Cruceros Fluviales de Lujo desde Puerto Rico — Agente Certificado | SJU Luxe Travel"
-        description="Planifica tu crucero fluvial de lujo desde Puerto Rico con un agente de viajes certificado por AmaWaterways, Avalon Waterways y Riverside Luxury Cruises."
+        title="Cruceros Fluviales de Lujo desde PR | SJU Luxe Travel"
+        description="Planifica tu crucero fluvial de lujo desde PR con un agente certificado por AmaWaterways, Avalon y Riverside Luxury Cruises."
         canonical="https://www.sjuluxetravel.com/cruceros-fluviales-de-lujo-desde-puerto-rico"
         schemaJson={schema}
       />

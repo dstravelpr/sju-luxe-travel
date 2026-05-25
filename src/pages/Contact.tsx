@@ -9,8 +9,8 @@ const Contact = () => {
   return (
     <Layout>
       <SEOHead
-        title="Free Luxury Travel Consultation | SJU Luxe Travel — San Juan, PR"
-        description="Schedule a free luxury travel consultation with your boutique travel advisor in San Juan, Puerto Rico. Private guided tours, luxury cruises from San Juan, solo women's travel & bespoke itineraries with exclusive NCM Concierge perks."
+        title="Free Luxury Travel Consultation | SJU Luxe Travel"
+        description="Schedule a free luxury travel consultation with your boutique advisor in San Juan, PR. Private tours, cruises & bespoke itineraries with NCM Concierge perks."
         canonical="https://www.sjuluxetravel.com/contact"
       />
 

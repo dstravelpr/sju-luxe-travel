@@ -29,6 +29,7 @@ const MicroVacaciones = () => {
   return (
     <Layout>
       <SEOHead
+        ogType="article"
         title={
           isEs
             ? "¿Son las Microvacaciones el Futuro de los Viajes? — SJU Luxe Travel"

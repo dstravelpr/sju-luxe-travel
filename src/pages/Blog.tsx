@@ -19,8 +19,8 @@ const Blog = () => {
   return (
     <Layout>
       <SEOHead
-        title="Blog de Viajes de Lujo — Consejos e Inspiración | SJU Luxe Travel"
-        description="Artículos sobre viajes de lujo, destinos exclusivos e itinerarios personalizados desde San Juan, Puerto Rico. Escrito por Daniel Santiago Díaz, asesor certificado."
+        title="Blog de Viajes de Lujo | SJU Luxe Travel"
+        description="Artículos sobre viajes de lujo, destinos exclusivos e itinerarios personalizados desde San Juan, PR. Por Daniel Santiago Díaz."
         canonical="https://www.sjuluxetravel.com/blog"
       />
 
