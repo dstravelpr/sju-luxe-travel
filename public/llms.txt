@@ -37,6 +37,24 @@ SJU Luxe Travel is a boutique luxury travel agency in San Juan, Puerto Rico. We 
 - Licensed in Florida (ST15578), California, Washington & Iowa
 - Free luxury travel consultation with personalized recommendations
 
+## Pages
+- [Home](/): Boutique luxury travel agency in San Juan, PR.
+- [About](/about): Daniel Santiago Díaz, bilingual luxury travel advisor.
+- [Destinations](/destinations): Curated luxury destinations overview.
+- [Maldives](/destinations/maldives): Overwater villas & private dining.
+- [Portugal](/destinations/portugal): Lisbon, Porto, Algarve, Douro Valley.
+- [Mexico](/destinations/mexico): Riviera Maya, Tulum, Oaxaca, cenotes.
+- [Viajes de Lujo desde Puerto Rico](/viajes-de-lujo-desde-puerto-rico): Itinerarios privados desde PR.
+- [Luna de Miel de Lujo](/luna-de-miel-de-lujo): Honeymoon planning from PR.
+- [Cruceros de Lujo desde San Juan](/cruceros-de-lujo-desde-san-juan): Luxury cruises departing from San Juan.
+- [Cruceros Fluviales de Lujo](/cruceros-fluviales-de-lujo-desde-puerto-rico): River cruise planning.
+- [Blog](/blog): Luxury travel articles and insights.
+- [What Luxury Travel Really Means](/blog/what-luxury-travel-really-means): Intentional luxury travel philosophy.
+- [Is It Worth Using a Travel Agent?](/blog/do-travel-agents-really-help-save-money): Honest take on advisor value.
+- [Microvacaciones — El Futuro del Viaje](/blog/micro-vacaciones-futuro-del-viaje): Short luxury getaways.
+- [River Cruising New Generation](/blog/river-cruising-new-generation): Why younger travelers love river cruises.
+- [Contact](/contact): Schedule a free luxury travel consultation.
+
 ## Contact
 - Website: https://www.sjuluxetravel.com
 - Location: San Juan, Puerto Rico
