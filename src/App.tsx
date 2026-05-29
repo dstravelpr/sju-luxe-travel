@@ -18,6 +18,14 @@ import DoTravelAgentsSaveMoney from "./pages/blog/DoTravelAgentsSaveMoney.tsx";
 import MicroVacaciones from "./pages/blog/MicroVacaciones.tsx";
 import WellnessTravel from "./pages/blog/WellnessTravel.tsx";
 import RiverCruisingNewGeneration from "./pages/blog/RiverCruisingNewGeneration.tsx";
+import LunaDeMielPuertoRico2026 from "./pages/blog/LunaDeMielPuertoRico2026.tsx";
+import CrucerosFluvialesComparativa from "./pages/blog/CrucerosFluvialesComparativa.tsx";
+import ValeLaPenaAsesor2026 from "./pages/blog/ValeLaPenaAsesor2026.tsx";
+import VuelosPuertoRicoPortugal from "./pages/blog/VuelosPuertoRicoPortugal.tsx";
+import MaldivasDesdePuertoRico from "./pages/blog/MaldivasDesdePuertoRico.tsx";
+import ServiciosConciergeViaje from "./pages/blog/ServiciosConciergeViaje.tsx";
+import ViajesSinPasaporte from "./pages/blog/ViajesSinPasaporte.tsx";
+import LuxurySoloFemaleTravel from "./pages/blog/LuxurySoloFemaleTravel.tsx";
 import Privacy from "./pages/Privacy.tsx";
 import Terms from "./pages/Terms.tsx";
 import ViajesDeLujo from "./pages/ViajesDeLujo.tsx";
@@ -53,6 +61,14 @@ const appRoutes = [
   { path: "/blog/micro-vacaciones-futuro-del-viaje", element: <MicroVacaciones /> },
   { path: "/blog/wellness-travel-intentional-luxury", element: <WellnessTravel /> },
   { path: "/blog/river-cruising-new-generation", element: <RiverCruisingNewGeneration /> },
+  { path: "/blog/luna-de-miel-puerto-rico-2026", element: <LunaDeMielPuertoRico2026 /> },
+  { path: "/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside", element: <CrucerosFluvialesComparativa /> },
+  { path: "/blog/vale-la-pena-asesor-viajes-2026", element: <ValeLaPenaAsesor2026 /> },
+  { path: "/blog/vuelos-puerto-rico-portugal", element: <VuelosPuertoRicoPortugal /> },
+  { path: "/blog/maldivas-desde-puerto-rico-guia", element: <MaldivasDesdePuertoRico /> },
+  { path: "/blog/servicios-concierge-viaje", element: <ServiciosConciergeViaje /> },
+  { path: "/blog/viajes-sin-pasaporte-desde-pr", element: <ViajesSinPasaporte /> },
+  { path: "/blog/luxury-solo-female-travel", element: <LuxurySoloFemaleTravel /> },
   { path: "/contact", element: <Contact /> },
   { path: "/privacy", element: <Privacy /> },
   { path: "/terms", element: <Terms /> },

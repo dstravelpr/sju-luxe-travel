@@ -18,8 +18,8 @@ const About = () => {
   return (
     <Layout>
       <SEOHead
-        title="Sobre SJU Luxe Travel — Asesor de Lujo en PR"
-        description="Conoce a Daniel Santiago Díaz, asesor de viajes de lujo bilingüe en San Juan, PR. Itinerarios exclusivos con beneficios NCM Concierge."
+        title="Daniel Santiago Díaz — Asesor de Viajes de Lujo PR"
+        description="Asesor bilingüe de viajes de lujo en San Juan, PR. +10 años de experiencia, beneficios NCM Concierge, itinerarios a medida. Consulta gratuita."
         canonical="https://www.sjuluxetravel.com/about"
         schemaJson={{
           "@context": "https://schema.org",
