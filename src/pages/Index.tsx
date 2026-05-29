@@ -157,11 +157,12 @@ const Index = () => {
         <div className="relative z-10 container mx-auto px-6 text-center">
           <img src={logo} alt="SJU Luxe Travel" className="hidden md:block h-24 w-24 mx-auto mb-6 animate-fade-in object-contain" />
           <p className="font-body text-sm tracking-[0.4em] uppercase mb-4 md:mb-6 animate-fade-in text-destructive-foreground"></p>
-          <h1 className="font-heading text-3xl md:text-6xl lg:text-7xl text-foreground mb-3 md:mb-4 animate-fade-in-up">
+          <h1 className="sr-only">Boutique Luxury Travel Agency in San Juan, Puerto Rico</h1>
+          <div aria-hidden="true" className="font-heading text-3xl md:text-6xl lg:text-7xl text-foreground mb-3 md:mb-4 animate-fade-in-up">
             {t.home.heroTitle1}
             <br />
             <span className="text-gold-gradient italic">{t.home.heroTitle2}</span>
-          </h1>
+          </div>
           <h2 className="font-body text-xs md:text-base tracking-[0.3em] uppercase text-gold mb-4 md:mb-6 animate-fade-in-up">
             {t.home.heroSubtitle}
           </h2>

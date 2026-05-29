@@ -190,12 +190,12 @@ const Footer = () => {
               <h4 className="font-body text-gold text-sm tracking-[0.2em] uppercase mb-5">{t.footer.followUs}</h4>
               <div className="flex gap-3 mb-8">
                 {[
-                  { icon: Instagram, href: "https://www.instagram.com/sjuluxetravel/" },
-                  { icon: Facebook, href: "https://www.facebook.com/sjuluxetravel" },
-                  { icon: Linkedin, href: "https://www.linkedin.com/company/sju-luxe-travel" },
-                ].map(({ icon: Icon, href }) => (
-                  <a key={href} href={href} target="_blank" rel="noopener noreferrer" className="w-9 h-9 rounded-full gold-border flex items-center justify-center text-muted-foreground hover:text-gold hover:border-gold transition-colors">
-                    <Icon size={16} />
+                  { icon: Instagram, href: "https://www.instagram.com/sjuluxetravel/", label: "Follow SJU Luxe Travel on Instagram" },
+                  { icon: Facebook, href: "https://www.facebook.com/sjuluxetravel", label: "Follow SJU Luxe Travel on Facebook" },
+                  { icon: Linkedin, href: "https://www.linkedin.com/company/sju-luxe-travel", label: "Follow SJU Luxe Travel on LinkedIn" },
+                ].map(({ icon: Icon, href, label }) => (
+                  <a key={href} href={href} target="_blank" rel="noopener noreferrer" aria-label={label} className="w-9 h-9 rounded-full gold-border flex items-center justify-center text-muted-foreground hover:text-gold hover:border-gold transition-colors">
+                    <Icon size={16} aria-hidden="true" />
                   </a>
                 ))}
               </div>
