@@ -249,6 +249,12 @@ export const es: typeof en = {
     },
     posts: [
       {
+        category: "Romance",
+        title: "Mejores Destinos de Luna de Miel 2026 desde Puerto Rico",
+        excerpt: "Los 7 mejores destinos de luna de miel para 2026 desde San Juan: Maldivas, Bora Bora, Amalfi, Santorini, Portugal y más — con itinerarios y vuelos recomendados.",
+        readTime: "8 min de lectura",
+      },
+      {
         category: "Filosofía de Viaje",
         title: "Lo Que Realmente Significa el Viaje de Lujo",
         excerpt: "Cuando la gente escucha viaje de lujo, se imaginan algo fuera de alcance. Pero el verdadero lujo no se trata de cuánto gastas — se trata de cómo la experiencia…",
