@@ -8,12 +8,22 @@ import heroImg from "@/assets/honeymoon/maldives.png";
 const schemaJson = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "Luna de Miel en Puerto Rico: 7 Destinos de Lujo para 2026",
-  description: "Los mejores destinos de luna de miel desde San Juan, PR para 2026: Maldivas, Bora Bora, Santorini, Amalfi, Portugal y más.",
+  headline: "Mejores Destinos de Luna de Miel 2026 desde Puerto Rico",
+  description: "Los 7 mejores destinos de luna de miel 2026 desde San Juan: Maldivas, Bora Bora, Amalfi, Santorini, Portugal. Itinerarios y vuelos por asesor de lujo.",
   author: { "@type": "Person", name: "Daniel Santiago Díaz" },
   publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
-  datePublished: "2026-05-29",
+  datePublished: "2026-06-01",
   inLanguage: "es-PR",
+  image: "https://www.sjuluxetravel.com/og/honeymoon-2026.jpg",
+  keywords: [
+    "mejores destinos luna de miel 2026",
+    "honeymoon destinations 2026",
+    "luna de miel desde Puerto Rico",
+    "paquetes luna de miel",
+    "luna de miel Maldivas",
+    "luna de miel Bora Bora",
+    "luna de miel todo incluido",
+  ],
   url: "https://www.sjuluxetravel.com/blog/luna-de-miel-puerto-rico-2026",
 };
 
@@ -25,8 +35,8 @@ const Post = () => {
     <Layout>
       <SEOHead
         ogType="article"
-        title="Luna de Miel desde Puerto Rico 2026 — 7 Destinos de Lujo"
-        description="Los 7 mejores destinos de luna de miel de lujo desde San Juan, Puerto Rico para 2026. Maldivas, Bora Bora, Amalfi y más — itinerarios a medida."
+        title="Mejores Destinos de Luna de Miel 2026 desde Puerto Rico"
+        description="Los 7 mejores destinos de luna de miel 2026 desde San Juan: Maldivas, Bora Bora, Amalfi, Santorini, Portugal. Itinerarios y vuelos por asesor de lujo."
         canonical="https://www.sjuluxetravel.com/blog/luna-de-miel-puerto-rico-2026"
         schemaJson={schemaJson}
       />
@@ -40,7 +50,9 @@ const Post = () => {
           <div className="mb-10">
             <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{isEs ? "Romance" : "Romance"}</span>
             <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">
-              {isEs ? "Luna de Miel en Puerto Rico: 7 Destinos de Lujo para 2026" : "Honeymoon from Puerto Rico: 7 Luxury Destinations for 2026"}
+              {isEs
+                ? "Mejores Destinos de Luna de Miel 2026 — 7 Escapadas de Lujo desde Puerto Rico"
+                : "Best Honeymoon Destinations 2026 — 7 Luxury Escapes from Puerto Rico"}
             </h1>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
               <span className="flex items-center gap-1.5"><User size={12} className="text-gold" />Daniel Santiago Díaz</span>

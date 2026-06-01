@@ -8,13 +8,14 @@ import blogMicrocationsImg from "@/assets/blog-microcations.jpg";
 import blogLuxuryImg from "@/assets/blog-luxury-travel.jpg";
 import blogAgentImg from "@/assets/blog-travel-agent.jpg";
 import blogRiverCruiseImg from "@/assets/blog-river-cruise.jpg";
+import blogHoneymoonImg from "@/assets/honeymoon/maldives.png";
 
 const Blog = () => {
   const { t, localPath } = useLanguage();
   const [activeCategory, setActiveCategory] = useState(t.blog.categories[0]);
 
-  const postImages = [blogLuxuryImg, blogAgentImg, blogMicrocationsImg];
-  const postSlugs = ["what-luxury-travel-really-means", "do-travel-agents-really-help-save-money", "micro-vacaciones-futuro-del-viaje"];
+  const postImages = [blogHoneymoonImg, blogLuxuryImg, blogAgentImg, blogMicrocationsImg];
+  const postSlugs = ["luna-de-miel-puerto-rico-2026", "what-luxury-travel-really-means", "do-travel-agents-really-help-save-money", "micro-vacaciones-futuro-del-viaje"];
 
   return (
     <Layout>
