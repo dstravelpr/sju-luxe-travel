@@ -247,6 +247,12 @@ export const en = {
     },
     posts: [
       {
+        category: "Romance",
+        title: "Best Honeymoon Destinations 2026 from Puerto Rico",
+        excerpt: "The 7 best honeymoon destinations for 2026 from San Juan: Maldives, Bora Bora, Amalfi, Santorini, Portugal and more — with itineraries and recommended flights.",
+        readTime: "8 min read",
+      },
+      {
         category: "Travel Philosophy",
         title: "What Luxury Travel Really Means",
         excerpt: "When people hear luxury travel, they picture something out of reach. But real luxury isn't about how much you spend—it's about how the experience…",
