@@ -7,22 +7,34 @@ import heroImg from "@/assets/blog-river-cruise.jpg";
 
 const schemaJson = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  headline: "River Cruising Isn't Just for Your Parents Anymore — And That Changes Everything",
-  description:
-    "84% of travelers under 35 want to take a river cruise. A luxury travel advisor explains why — and how to get the most out of the experience.",
-  image: "https://www.sjuluxetravel.com/assets/blog-river-cruise.jpg",
-  author: { "@type": "Person", name: "Daniel Santiago Díaz", url: "https://www.sjuluxetravel.com/about" },
-  publisher: {
-    "@type": "Organization",
-    name: "SJU Luxe Travel",
-    url: "https://www.sjuluxetravel.com",
-  },
-  datePublished: "2026-05-13",
-  inLanguage: "en",
-  url: "https://www.sjuluxetravel.com/blog/river-cruising-new-generation",
-  mainEntityOfPage: "https://www.sjuluxetravel.com/blog/river-cruising-new-generation",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      headline: "River Cruising Isn't Just for Your Parents Anymore — And That Changes Everything",
+      description: "84% of travelers under 35 want to take a river cruise. A luxury travel advisor explains why — and how to get the most out of the experience.",
+      image: "https://www.sjuluxetravel.com/assets/blog-river-cruise.jpg",
+      author: { "@type": "Person", name: "Daniel Santiago Díaz", url: "https://www.sjuluxetravel.com/about" },
+      publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
+      datePublished: "2026-05-13",
+      dateModified: "2026-06-02",
+      inLanguage: "en",
+      keywords: ["luxury river cruise", "river cruising Puerto Rico", "Danube river cruise", "Rhine river cruise", "Douro river cruise", "AmaWaterways", "Avalon Waterways", "Riverside Luxury Cruises", "river cruise for young travelers"],
+      url: "https://www.sjuluxetravel.com/blog/river-cruising-new-generation",
+      mainEntityOfPage: "https://www.sjuluxetravel.com/blog/river-cruising-new-generation",
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        { "@type": "Question", name: "Are river cruises good for younger travelers?", acceptedAnswer: { "@type": "Answer", text: "Yes — 84% of travelers aged 18–34 in the UK report interest in river cruising. The newer ships and itineraries offer real flexibility (dine when you want, choose your excursion intensity, skip the group tour), which matches what younger travelers actually want." } },
+        { "@type": "Question", name: "Which river cruise line is best?", acceptedAnswer: { "@type": "Answer", text: "AmaWaterways for active gourmet travelers (onboard bikes, Michelin-recognized dining). Avalon Waterways for biggest panoramic views and flexible excursion choices. Riverside Luxury Cruises (former Crystal River) for top-tier all-inclusive luxury with butler service. The right line depends on your travel style." } },
+        { "@type": "Question", name: "What's included in a luxury river cruise?", acceptedAnswer: { "@type": "Answer", text: "Cabin, all meals, wines and beverages with dinner, guided shore excursions in every port, gratuities (on most luxury lines), and transfers. There are no hidden fees the way ocean cruises layer them on — almost everything is bundled into the cruise fare." } },
+        { "@type": "Question", name: "What are the best river cruise destinations?", acceptedAnswer: { "@type": "Answer", text: "The Danube (Vienna, Budapest, Bratislava), the Rhine (Cologne, Strasbourg, Basel), the Douro in Portugal (Porto wine country), and the Mekong (Vietnam and Cambodia) are the most-requested itineraries. The Seine (Paris to Normandy) and Rhône (Burgundy/Provence) are excellent secondary choices." } },
+        { "@type": "Question", name: "How do I book a river cruise from Puerto Rico?", acceptedAnswer: { "@type": "Answer", text: "Most river cruises depart from European cities, so the booking starts with finding the right SJU flight routing (typically via JFK, MIA or ATL) and a pre-cruise hotel night. A certified river cruise advisor coordinates flights, hotels, transfers and the cruise as one package — often with extra perks on top." } },
+      ],
+    },
+  ],
 };
+
 
 const RiverCruisingNewGeneration = () => {
   const { language, localPath } = useLanguage();
@@ -233,7 +245,45 @@ const RiverCruisingNewGeneration = () => {
                 ? "Esto es lo que sé después de una década planificando viajes de lujo por seis continentes: los mejores viajes son los que no te hacen pensar en logística. Simplemente estás ahí, presente, disfrutando cada momento. Los cruceros fluviales logran eso mejor que casi cualquier otra experiencia que he visto — y el hecho de que una nueva generación lo esté descubriendo es algo que me entusiasma de verdad."
                 : "The best trips are the ones where you're not thinking about logistics. You're just there, fully present. River cruising does that better than almost anything else."}
             </p>
+
+            {/* FAQ */}
+            <h2 className="font-heading text-2xl text-foreground mt-12">
+              {isEs ? "Preguntas Frecuentes sobre Cruceros Fluviales" : "River Cruise FAQs"}
+            </h2>
+            <div className="space-y-5">
+              <div>
+                <h3 className="font-heading text-lg text-foreground mb-2">{isEs ? "¿Son los cruceros fluviales para viajeros jóvenes?" : "Are river cruises good for younger travelers?"}</h3>
+                <p className="text-muted-foreground text-base leading-relaxed">{isEs ? "Sí — el 84% de los viajeros británicos de 18 a 34 años quiere hacer uno. Los barcos e itinerarios nuevos ofrecen flexibilidad real: cenas a tu hora, excursiones por intensidad, salir por tu cuenta." : "Yes — 84% of UK travelers aged 18–34 want to. Newer ships and itineraries offer real flexibility: dine when you want, choose excursion intensity, explore solo."}</p>
+              </div>
+              <div>
+                <h3 className="font-heading text-lg text-foreground mb-2">{isEs ? "¿Cuál línea fluvial es la mejor?" : "Which river cruise line is best?"}</h3>
+                <p className="text-muted-foreground text-base leading-relaxed">{isEs ? "AmaWaterways para gourmet activo. Avalon Waterways para vistas y flexibilidad. Riverside Luxury Cruises (ex-Crystal) para el lujo más alto con servicio butler." : "AmaWaterways for active gourmet. Avalon Waterways for views and flexibility. Riverside Luxury Cruises (former Crystal) for top-tier luxury with butler service."}</p>
+              </div>
+              <div>
+                <h3 className="font-heading text-lg text-foreground mb-2">{isEs ? "¿Qué incluye un crucero fluvial de lujo?" : "What's included in a luxury river cruise?"}</h3>
+                <p className="text-muted-foreground text-base leading-relaxed">{isEs ? "Camarote, todas las comidas, vinos con cena, excursiones guiadas en cada puerto, propinas (en la mayoría de líneas de lujo) y traslados — todo dentro de la tarifa." : "Cabin, all meals, wines with dinner, guided excursions every port, gratuities (on most luxury lines), and transfers — all bundled."}</p>
+              </div>
+              <div>
+                <h3 className="font-heading text-lg text-foreground mb-2">{isEs ? "¿Cuáles son los mejores destinos fluviales?" : "What are the best river cruise destinations?"}</h3>
+                <p className="text-muted-foreground text-base leading-relaxed">{isEs ? "Danubio (Viena, Budapest), Rin (Colonia, Estrasburgo), Duero en Portugal (Oporto y viñedos), y Mekong (Vietnam y Camboya)." : "Danube (Vienna, Budapest), Rhine (Cologne, Strasbourg), Douro in Portugal (Porto and wine country), and Mekong (Vietnam and Cambodia)."}</p>
+              </div>
+              <div>
+                <h3 className="font-heading text-lg text-foreground mb-2">{isEs ? "¿Cómo reservo un crucero fluvial desde Puerto Rico?" : "How do I book a river cruise from Puerto Rico?"}</h3>
+                <p className="text-muted-foreground text-base leading-relaxed">{isEs ? "Los cruceros salen de ciudades europeas, así que la reserva empieza con el ruteo SJU (vía JFK, MIA o ATL) y una noche pre-crucero. Un asesor coordina vuelos, hotel y crucero como un solo paquete." : "Cruises depart from European cities, so booking starts with SJU routing (via JFK, MIA or ATL) and a pre-cruise hotel night. An advisor coordinates flights, hotel and cruise as one package."}</p>
+              </div>
+            </div>
+
+            {/* Related Reading */}
+            <h2 className="font-heading text-2xl text-foreground mt-12">{isEs ? "Lecturas Relacionadas" : "Related Reading"}</h2>
+            <ul className="space-y-2 list-none">
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/cruceros-fluviales-de-lujo-desde-puerto-rico")} className="text-gold hover:text-gold-light underline">{isEs ? "Cruceros fluviales de lujo desde Puerto Rico" : "Luxury river cruises from Puerto Rico"}</Link></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/do-travel-agents-really-help-save-money")} className="text-gold hover:text-gold-light underline">{isEs ? "¿Los asesores de viajes realmente ayudan a ahorrar?" : "Do travel agents really help save money?"}</Link></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/luna-de-miel-puerto-rico-2026")} className="text-gold hover:text-gold-light underline">{isEs ? "Mejores destinos de luna de miel 2026" : "Best honeymoon destinations 2026"}</Link></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/what-luxury-travel-really-means")} className="text-gold hover:text-gold-light underline">{isEs ? "Lo que realmente significa el viaje de lujo" : "What luxury travel really means"}</Link></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/destinations/portugal")} className="text-gold hover:text-gold-light underline">{isEs ? "Portugal — guía de destino" : "Portugal — destination guide"}</Link></li>
+            </ul>
           </div>
+
 
           {/* CTA */}
           <div className="mt-16 text-center py-12 gold-border rounded-lg">

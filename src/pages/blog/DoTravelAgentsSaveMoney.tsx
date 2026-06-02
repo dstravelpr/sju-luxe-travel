@@ -280,6 +280,34 @@ const DoTravelAgentsSaveMoney = () => {
                 ? "Porque cuando el viaje se hace bien, no es un lujo. Es una oportunidad para explorar, conectar y vivir plenamente."
                 : "Because when travel is done right, it's not a luxury. It's an opportunity to explore, connect, and live fully."}
             </p>
+
+            {/* Real Examples */}
+            <h2 className="font-heading text-2xl text-foreground mt-12">
+              {isEs ? "Ejemplos Reales: Cuánto Suma el Valor Agregado" : "Real Examples: How Much the Added Value Adds Up"}
+            </h2>
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {isEs
+                ? "Estos son escenarios reales de clientes desde Puerto Rico — mismo hotel, mismo precio, beneficios distintos según dónde reservaste:"
+                : "These are real scenarios from Puerto Rico clients — same hotel, same price, different benefits depending on where you booked:"}
+            </p>
+            <ul className="space-y-3 list-none">
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">•</span><span><strong className="text-foreground">{isEs ? "Four Seasons Maui (7 noches):" : "Four Seasons Maui (7 nights):"}</strong> {isEs ? "via Four Seasons Preferred Partner — desayuno diario para 2 ($1,400 valor), $100 crédito de spa, upgrade a Ocean View sujeto a disponibilidad. Total: ~$1,800 en beneficios sin costo extra." : "via Four Seasons Preferred Partner — daily breakfast for 2 ($1,400 value), $100 spa credit, Ocean View upgrade subject to availability. Total: ~$1,800 in perks at no extra cost."}</span></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">•</span><span><strong className="text-foreground">{isEs ? "Soneva Fushi Maldivas (luna de miel 7 noches):" : "Soneva Fushi Maldives (7-night honeymoon):"}</strong> {isEs ? "via Virtuoso — cena privada en la playa ($800 valor), 60 min de spa por persona ($400 valor), upgrade y amenidad de luna de miel. Total: ~$1,500–$2,000." : "via Virtuoso — private beach dinner ($800 value), 60-min spa per person ($400 value), upgrade and honeymoon amenity. Total: ~$1,500–$2,000."}</span></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">•</span><span><strong className="text-foreground">{isEs ? "Belmond Hotel Caruso, Amalfi (5 noches):" : "Belmond Hotel Caruso, Amalfi (5 nights):"}</strong> {isEs ? "via Belmond Bellini Club — desayuno, €100 crédito por estadía, early check-in. Total: ~$700 en valor agregado." : "via Belmond Bellini Club — breakfast, €100 per-stay credit, early check-in. Total: ~$700 in added value."}</span></li>
+            </ul>
+            <p className="text-muted-foreground text-base leading-relaxed italic">
+              {isEs ? "Reservar el mismo hotel en Expedia o Booking.com paga el mismo precio — sin un solo beneficio de estos." : "Booking the same hotel on Expedia or Booking.com costs the same price — without a single one of these perks."}
+            </p>
+
+            {/* Related Reading */}
+            <h2 className="font-heading text-2xl text-foreground mt-12">{isEs ? "Lecturas Relacionadas" : "Related Reading"}</h2>
+            <ul className="space-y-2 list-none">
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/what-luxury-travel-really-means")} className="text-gold hover:text-gold-light underline">{isEs ? "Lo que realmente significa el viaje de lujo" : "What luxury travel really means"}</Link></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/luna-de-miel-puerto-rico-2026")} className="text-gold hover:text-gold-light underline">{isEs ? "Mejores destinos de luna de miel 2026" : "Best honeymoon destinations 2026"}</Link></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/river-cruising-new-generation")} className="text-gold hover:text-gold-light underline">{isEs ? "Cruceros fluviales: la nueva generación" : "River cruising: the new generation"}</Link></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/micro-vacaciones-futuro-del-viaje")} className="text-gold hover:text-gold-light underline">{isEs ? "Microvacaciones: viajes cortos bien planificados" : "Micro-cations: short trips done right"}</Link></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/about")} className="text-gold hover:text-gold-light underline">{isEs ? "Sobre Daniel Santiago Díaz — Asesor de Lujo" : "About Daniel Santiago Díaz — Luxury Advisor"}</Link></li>
+            </ul>
           </div>
 
           {/* CTA */}
