@@ -7,15 +7,32 @@ import blogLuxuryImg from "@/assets/blog-luxury-travel.jpg";
 
 const schemaJson = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  headline: "Lo Que Realmente Significa el Viaje de Lujo",
-  description: "El verdadero lujo en los viajes no se trata de cuánto gastas. Se trata de cómo te hace sentir la experiencia.",
-  author: { "@type": "Person", name: "Daniel Santiago Díaz" },
-  publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
-  datePublished: "2026-04-08",
-  inLanguage: "es-PR",
-  url: "https://www.sjuluxetravel.com/blog/what-luxury-travel-really-means",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      headline: "Lo Que Realmente Significa el Viaje de Lujo desde Puerto Rico",
+      description: "El verdadero lujo en los viajes no se trata de cuánto gastas, sino de cómo te hace sentir la experiencia. Filosofía de un asesor de viajes de lujo en San Juan, PR.",
+      author: { "@type": "Person", name: "Daniel Santiago Díaz", url: "https://www.sjuluxetravel.com/about" },
+      publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
+      datePublished: "2026-04-08",
+      dateModified: "2026-06-02",
+      inLanguage: "es-PR",
+      keywords: ["viaje de lujo desde Puerto Rico", "luxury travel from San Juan", "asesor de viajes de lujo", "Virtuoso advisor", "Four Seasons Preferred Partner", "viajes bespoke", "luxury travel philosophy"],
+      url: "https://www.sjuluxetravel.com/blog/what-luxury-travel-really-means",
+      mainEntityOfPage: "https://www.sjuluxetravel.com/blog/what-luxury-travel-really-means",
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        { "@type": "Question", name: "¿Qué significa realmente el viaje de lujo?", acceptedAnswer: { "@type": "Answer", text: "El viaje de lujo no se define por cuánto gastas, sino por la intención, el servicio personalizado y los momentos significativos. Significa tener cada detalle resuelto para que puedas estar presente, sin logística que manejar." } },
+        { "@type": "Question", name: "¿Cuál es la diferencia entre un viaje caro y un viaje de lujo?", acceptedAnswer: { "@type": "Answer", text: "Un viaje caro acumula servicios costosos; un viaje de lujo es intencional, bespoke, y diseñado alrededor de tu estilo. La diferencia se siente en el flujo: hoteles correctos para ti, transferencias privadas, beneficios de hotel (desayuno, upgrades, créditos), y un asesor disponible 24/7." } },
+        { "@type": "Question", name: "¿Por qué reservar con un asesor de lujo en lugar de Expedia?", acceptedAnswer: { "@type": "Answer", text: "Al mismo precio que Expedia, un asesor afiliado a programas como Virtuoso, Four Seasons Preferred Partner o Rosewood Elite consigue beneficios complementarios (créditos de resort de $100–300, desayuno, upgrade sujeto a disponibilidad, early check-in/late check-out, amenidad de bienvenida) — pagados por el hotel, no por ti." } },
+        { "@type": "Question", name: "¿El lujo es solo para viajes largos?", acceptedAnswer: { "@type": "Answer", text: "No. Una microvacación de 3 días bien planificada puede sentirse más lujosa que un viaje de 10 días desorganizado. El lujo es la calidad de la experiencia, no la duración." } },
+      ],
+    },
+  ],
 };
+
 
 const WhatLuxuryTravelMeans = () => {
   const { language, localPath } = useLanguage();
