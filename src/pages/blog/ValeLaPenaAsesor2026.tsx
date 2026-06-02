@@ -45,7 +45,7 @@ const Post = () => {
             </div>
           </div>
           <div className="aspect-[16/9] overflow-hidden rounded-lg gold-border mb-12">
-            <img src={heroImg} alt={isEs ? "Asesor de viajes de lujo" : "Luxury travel advisor"} className="w-full h-full object-cover" />
+            <img src={heroImg} alt={isEs ? "Consultor de viajes de lujo" : "Luxury travel advisor"} className="w-full h-full object-cover" />
           </div>
           <div className="prose-custom space-y-6 text-muted-foreground text-base leading-relaxed">
             <p>{isEs ? "En 2026, con IA reservando vuelos y Booking.com en cada bolsillo, la pregunta es legítima: ¿realmente necesitas un asesor de viajes? La respuesta honesta es: depende del viaje." : "In 2026, with AI booking flights and Booking.com in every pocket, the question is fair: do you really need a travel advisor? The honest answer: it depends on the trip."}</p>
