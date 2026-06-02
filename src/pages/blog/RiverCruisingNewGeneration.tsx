@@ -138,26 +138,25 @@ const RiverCruisingNewGeneration = () => {
           <div className="prose-custom space-y-6">
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Hace cinco años, si le decías a alguien de 30 años que un crucero por el río era una opción real de vacaciones, te miraban raro. Hoy la historia es completamente diferente."
-                : "Here's something that would've shocked the travel industry five years ago: the demographic most excited about river cruising right now isn't retirees. It's people under 35."}
+                ? "Hace cinco años, si le decías a alguien de 30 años en Estados Unidos que un crucero por el río era una opción real de vacaciones, te miraban raro. Hoy la historia es completamente diferente."
+                : "Here's something that would've shocked the travel industry five years ago: in the U.S., the demographic driving river cruise growth right now isn't retirees. It's Gen X and Millennials."}
             </p>
 
             <p className="text-muted-foreground text-base leading-relaxed">
-              {isEs ? "Una encuesta reciente en el Reino Unido encontró que el 84 por ciento de los jóvenes entre 18 y 34 años está interesado en hacer un crucero fluvial. No es un número menor — es una generación entera diciendo \"sí, eso me interesa.\" Y cuando lo analizas bien, tiene todo el sentido del mundo."
-                : "A recent UK survey reported by "}
-              {!isEs && (
-                <a
-                  href="https://www.travelweekly.co.uk/news/cruise/under-35s-show-strong-interest-in-river-cruising"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gold hover:text-gold-light underline-offset-4 hover:underline"
-                >
-                  Travel Weekly
-                </a>
-              )}
+              {isEs ? "Según " : "According to "}
+              <a
+                href="https://cruising.org/en/news-and-research/research/2024/may/state-of-the-cruise-industry-report"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold hover:text-gold-light underline-offset-4 hover:underline"
+              >
+                CLIA
+              </a>
               {isEs
-                ? ""
-                : " found that 84% of 18-to-34-year-olds are interested in river cruising. That's not a niche curiosity — that's a generation saying, \"Yeah, I actually want this.\" And it makes perfect sense once you stop thinking of river cruises the way they've been marketed for the last two decades."}
+                ? " (Cruise Lines International Association), los pasajeros de cruceros fluviales en Norteamérica crecieron más de 20% interanual, y Gen X y Millennials son el segmento de más rápido crecimiento. No es una curiosidad de nicho — es una generación entera de viajeros estadounidenses diciendo \"sí, eso me interesa.\""
+                : " (Cruise Lines International Association), North American river cruise passengers grew more than 20% year over year, with Gen X and Millennials as the fastest-growing demographic. That's not a niche curiosity — that's a whole generation of U.S. travelers saying, \"Yeah, I actually want this.\""}
+            </p>
+
             </p>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">
