@@ -276,10 +276,40 @@ const WhatLuxuryTravelMeans = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "En SJU Luxe Travel, creemos que todos merecen acceso a ese tipo de viaje—porque la oportunidad nunca debería sentirse exclusiva."
-                : "At SJU Luxe Travel, we believe everyone deserves access to that kind of travel—because opportunity should never feel exclusive."}
+                ? "En SJU Luxe Travel, creemos que todos merecen acceso a ese tipo de viaje—porque la oportunidad nunca debería sentirse exclusiva. Desde San Juan, Puerto Rico, hemos diseñado lunas de miel en Maldivas, safaris en Sudáfrica, cruceros fluviales por el Danubio y escapadas cortas a Europa — siempre con el mismo principio: el lujo es la experiencia, no la etiqueta."
+                : "At SJU Luxe Travel, we believe everyone deserves access to that kind of travel—because opportunity should never feel exclusive. From San Juan, Puerto Rico, we've designed honeymoons in the Maldives, South African safaris, Danube river cruises, and short European getaways — always with the same principle: luxury is the experience, not the label."}
             </p>
+
+            {/* FAQ */}
+            <h2 className="font-heading text-2xl text-foreground mt-12">
+              {isEs ? "Preguntas Frecuentes sobre Viajes de Lujo" : "Frequently Asked Questions About Luxury Travel"}
+            </h2>
+            <div className="space-y-5">
+              <div>
+                <h3 className="font-heading text-lg text-foreground mb-2">{isEs ? "¿Qué significa realmente el viaje de lujo?" : "What does luxury travel really mean?"}</h3>
+                <p className="text-muted-foreground text-base leading-relaxed">{isEs ? "No se define por cuánto gastas, sino por la intención, el servicio personalizado y los momentos significativos. Significa tener cada detalle resuelto para estar presente." : "It's not defined by how much you spend, but by intention, personalized service and meaningful moments. It means having every detail handled so you can be present."}</p>
+              </div>
+              <div>
+                <h3 className="font-heading text-lg text-foreground mb-2">{isEs ? "¿Cuál es la diferencia entre un viaje caro y uno de lujo?" : "What's the difference between expensive travel and luxury travel?"}</h3>
+                <p className="text-muted-foreground text-base leading-relaxed">{isEs ? "Un viaje caro acumula servicios costosos; uno de lujo es bespoke. La diferencia se siente en el flujo, los upgrades, las amenidades y el asesor 24/7." : "Expensive travel piles on costly services; luxury travel is bespoke. The difference shows in the flow, upgrades, amenities and 24/7 advisor."}</p>
+              </div>
+              <div>
+                <h3 className="font-heading text-lg text-foreground mb-2">{isEs ? "¿Por qué reservar con un asesor en lugar de Expedia?" : "Why book with an advisor instead of Expedia?"}</h3>
+                <p className="text-muted-foreground text-base leading-relaxed">{isEs ? "Al mismo precio, programas como Virtuoso o Four Seasons Preferred Partner suman beneficios reales: créditos de $100–300, desayuno, upgrades, check-in/out flexible, amenidades de bienvenida — pagados por el hotel." : "At the same price, programs like Virtuoso or Four Seasons Preferred Partner add real perks: $100–300 credits, breakfast, upgrades, flexible check-in/out, welcome amenities — paid by the hotel."}</p>
+              </div>
+            </div>
+
+            {/* Related Reading */}
+            <h2 className="font-heading text-2xl text-foreground mt-12">{isEs ? "Lecturas Relacionadas" : "Related Reading"}</h2>
+            <ul className="space-y-2 list-none">
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/do-travel-agents-really-help-save-money")} className="text-gold hover:text-gold-light underline">{isEs ? "¿Los asesores de viajes realmente ayudan a ahorrar dinero?" : "Do travel agents really help save money?"}</Link></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/luna-de-miel-puerto-rico-2026")} className="text-gold hover:text-gold-light underline">{isEs ? "Mejores destinos de luna de miel 2026 desde Puerto Rico" : "Best honeymoon destinations 2026 from Puerto Rico"}</Link></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/micro-vacaciones-futuro-del-viaje")} className="text-gold hover:text-gold-light underline">{isEs ? "Microvacaciones: el futuro del viaje" : "Micro-cations: the future of travel"}</Link></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/river-cruising-new-generation")} className="text-gold hover:text-gold-light underline">{isEs ? "Cruceros fluviales: la nueva generación de viajeros" : "River cruising: the new generation of travelers"}</Link></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/viajes-de-lujo")} className="text-gold hover:text-gold-light underline">{isEs ? "Servicios de viajes de lujo desde San Juan" : "Luxury travel services from San Juan"}</Link></li>
+            </ul>
           </div>
+
 
           {/* CTA */}
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
