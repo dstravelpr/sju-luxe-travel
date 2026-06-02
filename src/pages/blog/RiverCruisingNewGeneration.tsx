@@ -115,14 +115,14 @@ const RiverCruisingNewGeneration = () => {
             <ul className="space-y-2 text-muted-foreground text-sm leading-relaxed list-none">
               {(isEs
                 ? [
-                    "El 84% de los viajeros británicos de 18 a 34 años quiere hacer un crucero fluvial.",
-                    "Solo el 9% de los no-cruceristas lo ven como buen valor — vs. 36% de quienes ya lo vivieron.",
+                    "Gen X y Millennials son el segmento de más rápido crecimiento en cruceros fluviales según CLIA.",
+                    "Los pasajeros de cruceros fluviales en Norteamérica crecieron más de 20% interanual.",
                     "Todo está incluido: cabina, comidas, vinos, excursiones y traslados.",
                     "El Danubio, el Rin, el Duero y el Mekong son los itinerarios estrella.",
                   ]
                 : [
-                    "84% of UK travelers aged 18–34 are interested in river cruising.",
-                    "Only 9% of non-cruisers see it as good value — vs. 36% of those who've sailed.",
+                    "Gen X and Millennials are the fastest-growing river cruise segment, per CLIA.",
+                    "North American river cruise passengers grew more than 20% year over year.",
                     "All-inclusive: cabin, meals, wine, excursions and transfers.",
                     "The Danube, Rhine, Douro and Mekong lead the most-requested itineraries.",
                   ]
