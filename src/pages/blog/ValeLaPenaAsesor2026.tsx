@@ -48,9 +48,9 @@ const Post = () => {
             <img src={heroImg} alt={isEs ? "Consultor de viajes de lujo" : "Luxury travel advisor"} className="w-full h-full object-cover" />
           </div>
           <div className="prose-custom space-y-6 text-muted-foreground text-base leading-relaxed">
-            <p>{isEs ? "En 2026, con IA reservando vuelos y Booking.com en cada bolsillo, la pregunta es legítima: ¿realmente necesitas un asesor de viajes? La respuesta honesta es: depende del viaje." : "In 2026, with AI booking flights and Booking.com in every pocket, the question is fair: do you really need a travel advisor? The honest answer: it depends on the trip."}</p>
+            <p>{isEs ? "En 2026, con IA reservando vuelos y Booking.com en cada bolsillo, la pregunta es legítima: ¿realmente necesitas un consultor de viajes? La respuesta honesta es: depende del viaje." : "In 2026, with AI booking flights and Booking.com in every pocket, the question is fair: do you really need a travel advisor? The honest answer: it depends on the trip."}</p>
 
-            <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "Cuándo NO necesitas un asesor" : "When you DON'T need one"}</h2>
+            <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "Cuándo NO necesitas un agente de viajes" : "When you DON'T need one"}</h2>
             <p>{isEs ? "Un fin de semana en Miami, dos noches en Nueva York, una escapada a República Dominicana — reserva tú mismo. La complejidad es baja, el riesgo financiero también, y las plataformas funcionan bien." : "A weekend in Miami, two nights in NYC, a quick Dominican Republic escape — book it yourself. Low complexity, low financial risk, the platforms work fine."}</p>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "Cuándo SÍ vale cada peso" : "When it IS worth every penny"}</h2>
@@ -64,7 +64,7 @@ const Post = () => {
             <p>{isEs ? "Beneficios de programas como Virtuoso, Four Seasons Preferred Partner, Belmond Bellini Club o Rosewood Elite — créditos de resort de $100–300, desayuno gratis, upgrades cuando hay disponibilidad, check-in temprano y check-out tardío. Mismo precio que Expedia, valor agregado real." : "Perks from programs like Virtuoso, Four Seasons Preferred Partner, Belmond Bellini Club or Rosewood Elite — $100–300 resort credits, free breakfast, upgrades when available, early check-in, late check-out. Same price as Expedia, real added value."}</p>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "El factor humano" : "The human factor"}</h2>
-            <p>{isEs ? "Cuando tu vuelo se cancela a las 2 AM en Frankfurt, ¿prefieres esperar 90 minutos en el chat de Expedia o que tu asesor ya esté reaccionando? Eso es lo que en realidad pagas." : "When your flight cancels at 2 AM in Frankfurt, do you prefer waiting 90 minutes in the Expedia chat — or your advisor already on it? That's what you're really paying for."}</p>
+            <p>{isEs ? "Cuando tu vuelo se cancela a las 2 AM en Frankfurt, ¿prefieres esperar 90 minutos en el chat de Expedia o que tu consultor ya esté reaccionando? Eso es lo que en realidad pagas." : "When your flight cancels at 2 AM in Frankfurt, do you prefer waiting 90 minutes in the Expedia chat — or your advisor already on it? That's what you're really paying for."}</p>
           </div>
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">{isEs ? "Consulta Gratuita" : "Complimentary Consultation"}</h3>
