@@ -241,18 +241,18 @@ export const es: typeof en = {
     categories: ["Todos", "Destinos", "Consejos de Viaje", "Alojamientos", "Cultura"],
     featured: "Destacado",
     featuredPost: {
-      category: "Cruceros Fluviales",
-      title: "Los Cruceros Fluviales Ya No Son Solo Para Tus Padres",
-      excerpt: "El 84% de los viajeros menores de 35 años se interesan por los cruceros fluviales. Un asesor de viajes de lujo explica por qué una nueva generación los está descubriendo.",
-      date: "13 de mayo de 2026",
-      readTime: "6 min de lectura",
+      category: "Romance",
+      title: "Mejores Destinos de Luna de Miel 2026 desde Puerto Rico",
+      excerpt: "Los 7 mejores destinos de luna de miel para 2026 desde San Juan: Maldivas, Bora Bora, Amalfi, Santorini, Portugal y más — con itinerarios y vuelos recomendados.",
+      date: "1 de junio de 2026",
+      readTime: "8 min de lectura",
     },
     posts: [
       {
-        category: "Romance",
-        title: "Mejores Destinos de Luna de Miel 2026 desde Puerto Rico",
-        excerpt: "Los 7 mejores destinos de luna de miel para 2026 desde San Juan: Maldivas, Bora Bora, Amalfi, Santorini, Portugal y más — con itinerarios y vuelos recomendados.",
-        readTime: "8 min de lectura",
+        category: "Cruceros Fluviales",
+        title: "Los Cruceros Fluviales Ya No Son Solo Para Tus Padres",
+        excerpt: "El 84% de los viajeros menores de 35 años se interesan por los cruceros fluviales. Un asesor de viajes de lujo explica por qué una nueva generación los está descubriendo.",
+        readTime: "6 min de lectura",
       },
       {
         category: "Filosofía de Viaje",
