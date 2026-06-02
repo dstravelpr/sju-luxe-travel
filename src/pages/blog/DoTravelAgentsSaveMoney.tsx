@@ -216,7 +216,7 @@ const DoTravelAgentsSaveMoney = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Horas de investigación, comparar opciones y dudar de las decisiones se acumulan. Un asesor de viajes agiliza el proceso para que puedas concentrarte en la experiencia—no en la logística."
+                ? "Horas de investigación, comparar opciones y dudar de las decisiones se acumulan. Un consultor de viajes agiliza el proceso para que puedas concentrarte en la experiencia—no en la logística."
                 : "Hours of research, comparing options, and second‑guessing decisions adds up. A travel advisor streamlines the process so you can focus on the experience—not the logistics."}
             </p>
 
