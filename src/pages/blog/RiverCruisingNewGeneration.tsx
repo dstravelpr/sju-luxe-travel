@@ -7,22 +7,34 @@ import heroImg from "@/assets/blog-river-cruise.jpg";
 
 const schemaJson = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  headline: "River Cruising Isn't Just for Your Parents Anymore — And That Changes Everything",
-  description:
-    "84% of travelers under 35 want to take a river cruise. A luxury travel advisor explains why — and how to get the most out of the experience.",
-  image: "https://www.sjuluxetravel.com/assets/blog-river-cruise.jpg",
-  author: { "@type": "Person", name: "Daniel Santiago Díaz", url: "https://www.sjuluxetravel.com/about" },
-  publisher: {
-    "@type": "Organization",
-    name: "SJU Luxe Travel",
-    url: "https://www.sjuluxetravel.com",
-  },
-  datePublished: "2026-05-13",
-  inLanguage: "en",
-  url: "https://www.sjuluxetravel.com/blog/river-cruising-new-generation",
-  mainEntityOfPage: "https://www.sjuluxetravel.com/blog/river-cruising-new-generation",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      headline: "River Cruising Isn't Just for Your Parents Anymore — And That Changes Everything",
+      description: "84% of travelers under 35 want to take a river cruise. A luxury travel advisor explains why — and how to get the most out of the experience.",
+      image: "https://www.sjuluxetravel.com/assets/blog-river-cruise.jpg",
+      author: { "@type": "Person", name: "Daniel Santiago Díaz", url: "https://www.sjuluxetravel.com/about" },
+      publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
+      datePublished: "2026-05-13",
+      dateModified: "2026-06-02",
+      inLanguage: "en",
+      keywords: ["luxury river cruise", "river cruising Puerto Rico", "Danube river cruise", "Rhine river cruise", "Douro river cruise", "AmaWaterways", "Avalon Waterways", "Riverside Luxury Cruises", "river cruise for young travelers"],
+      url: "https://www.sjuluxetravel.com/blog/river-cruising-new-generation",
+      mainEntityOfPage: "https://www.sjuluxetravel.com/blog/river-cruising-new-generation",
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        { "@type": "Question", name: "Are river cruises good for younger travelers?", acceptedAnswer: { "@type": "Answer", text: "Yes — 84% of travelers aged 18–34 in the UK report interest in river cruising. The newer ships and itineraries offer real flexibility (dine when you want, choose your excursion intensity, skip the group tour), which matches what younger travelers actually want." } },
+        { "@type": "Question", name: "Which river cruise line is best?", acceptedAnswer: { "@type": "Answer", text: "AmaWaterways for active gourmet travelers (onboard bikes, Michelin-recognized dining). Avalon Waterways for biggest panoramic views and flexible excursion choices. Riverside Luxury Cruises (former Crystal River) for top-tier all-inclusive luxury with butler service. The right line depends on your travel style." } },
+        { "@type": "Question", name: "What's included in a luxury river cruise?", acceptedAnswer: { "@type": "Answer", text: "Cabin, all meals, wines and beverages with dinner, guided shore excursions in every port, gratuities (on most luxury lines), and transfers. There are no hidden fees the way ocean cruises layer them on — almost everything is bundled into the cruise fare." } },
+        { "@type": "Question", name: "What are the best river cruise destinations?", acceptedAnswer: { "@type": "Answer", text: "The Danube (Vienna, Budapest, Bratislava), the Rhine (Cologne, Strasbourg, Basel), the Douro in Portugal (Porto wine country), and the Mekong (Vietnam and Cambodia) are the most-requested itineraries. The Seine (Paris to Normandy) and Rhône (Burgundy/Provence) are excellent secondary choices." } },
+        { "@type": "Question", name: "How do I book a river cruise from Puerto Rico?", acceptedAnswer: { "@type": "Answer", text: "Most river cruises depart from European cities, so the booking starts with finding the right SJU flight routing (typically via JFK, MIA or ATL) and a pre-cruise hotel night. A certified river cruise advisor coordinates flights, hotels, transfers and the cruise as one package — often with extra perks on top." } },
+      ],
+    },
+  ],
 };
+
 
 const RiverCruisingNewGeneration = () => {
   const { language, localPath } = useLanguage();
