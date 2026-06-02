@@ -130,7 +130,7 @@ const DoTravelAgentsSaveMoney = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Un asesor de viajes moderno no es solo alguien que reserva viajes. Piensa en ellos como tu estratega de viajes personal. Un asesor profesional se toma el tiempo para:"
+                ? "Un consultor de viajes moderno no es solo alguien que reserva viajes. Piensa en él como tu estratega de viajes personal. Un buen agente de viajes se toma el tiempo para:"
                 : "A modern travel advisor is not just someone who books trips. Think of them as your personal travel strategist. A professional advisor takes the time to:"}
             </p>
 
@@ -159,14 +159,14 @@ const DoTravelAgentsSaveMoney = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed font-semibold">
               {isEs
-                ? "Los motores de reserva en línea muestran precios. Los asesores de viaje entregan valor, conocimiento y apoyo humano."
+                ? "Los motores de reserva en línea muestran precios. Los consultores de viajes entregan valor, conocimiento y apoyo humano."
                 : "Online booking engines show prices. Travel advisors deliver value, insight, and human support."}
             </p>
 
             {/* Section 2 */}
             <h2 className="font-heading text-2xl text-foreground mt-10">
               {isEs
-                ? "Cómo los Asesores de Viajes Te Ayudan a Ahorrar (Sin Recortar Calidad)"
+                ? "Cómo los Consultores de Viajes Te Ayudan a Ahorrar (Sin Recortar Calidad)"
                 : "How Travel Advisors Help You Save Money (Without Cutting Corners)"}
             </h2>
 
@@ -182,7 +182,7 @@ const DoTravelAgentsSaveMoney = () => {
             </h3>
 
             <p className="text-muted-foreground text-base leading-relaxed">
-              {isEs ? "Los asesores de viajes a menudo tienen acceso a:" : "Travel advisors often have access to:"}
+              {isEs ? "Los agentes de viajes a menudo tienen acceso a:" : "Travel advisors often have access to:"}
             </p>
 
             <ul className="space-y-2 text-muted-foreground text-base leading-relaxed list-none">
@@ -205,7 +205,7 @@ const DoTravelAgentsSaveMoney = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Reservar el aeropuerto incorrecto, elegir un hotel mal ubicado, perder requisitos de entrada o quedar atrapado en tarifas restrictivas puede costar mucho más de lo que esperas. Un asesor te ayuda a prevenir esos errores antes de que ocurran."
+                ? "Reservar el aeropuerto incorrecto, elegir un hotel mal ubicado, perder requisitos de entrada o quedar atrapado en tarifas restrictivas puede costar mucho más de lo que esperas. Un buen agente de viajes te ayuda a prevenir esos errores antes de que ocurran."
                 : "Booking the wrong airport, choosing a poorly located hotel, missing entry requirements, or locking into restrictive fares can cost far more than you expect. An advisor helps prevent those mistakes before they happen."}
             </p>
 
@@ -216,18 +216,18 @@ const DoTravelAgentsSaveMoney = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Horas de investigación, comparar opciones y dudar de las decisiones se acumulan. Un asesor de viajes agiliza el proceso para que puedas concentrarte en la experiencia—no en la logística."
+                ? "Horas de investigación, comparar opciones y dudar de las decisiones se acumulan. Un consultor de viajes agiliza el proceso para que puedas concentrarte en la experiencia—no en la logística."
                 : "Hours of research, comparing options, and second‑guessing decisions adds up. A travel advisor streamlines the process so you can focus on the experience—not the logistics."}
             </p>
 
             {/* Section 3 */}
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "Cuándo Tiene Más Sentido Usar un Asesor de Viajes" : "When Using a Travel Advisor Makes the Most Sense"}
+              {isEs ? "Cuándo Tiene Más Sentido Usar un Consultor de Viajes" : "When Using a Travel Advisor Makes the Most Sense"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Si bien los viajes simples se pueden reservar en línea, un asesor de viajes es especialmente valioso cuando:"
+                ? "Si bien los viajes simples se pueden reservar en línea, un consultor de viajes es especialmente valioso cuando:"
                 : "While simple trips can be booked online, a travel advisor is especially valuable when:"}
             </p>
 
@@ -271,7 +271,7 @@ const DoTravelAgentsSaveMoney = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Un asesor de viajes no reemplaza tu capacidad de reservar en línea. Eleva tu experiencia, protege tu inversión y ayuda a convertir un viaje en una experiencia significativa."
+                ? "Un agente de viajes no reemplaza tu capacidad de reservar en línea. Eleva tu experiencia, protege tu inversión y ayuda a convertir un viaje en una experiencia significativa."
                 : "A travel advisor doesn't replace your ability to book online. They elevate your experience, protect your investment, and help turn a trip into a meaningful journey."}
             </p>
 

@@ -251,7 +251,7 @@ export const es: typeof en = {
       {
         category: "Cruceros Fluviales",
         title: "Los Cruceros Fluviales Ya No Son Solo Para Tus Padres",
-        excerpt: "El 84% de los viajeros menores de 35 años se interesan por los cruceros fluviales. Un asesor de viajes de lujo explica por qué una nueva generación los está descubriendo.",
+        excerpt: "El 84% de los viajeros menores de 35 años se interesan por los cruceros fluviales. Un consultor de viajes de lujo explica por qué una nueva generación los está descubriendo.",
         readTime: "6 min de lectura",
       },
       {
@@ -263,7 +263,7 @@ export const es: typeof en = {
       {
         category: "Consejos de Viaje",
         title: "¿Los Agentes de Viajes Realmente Te Ayudan a Ahorrar Dinero?",
-        excerpt: "Una perspectiva honesta de un asesor de viajes moderno sobre cómo la orientación profesional te ahorra dinero, tiempo y estrés — y por qué el verdadero valor va mucho más allá…",
+        excerpt: "Una perspectiva honesta de un consultor de viajes moderno sobre cómo la orientación profesional te ahorra dinero, tiempo y estrés — y por qué el verdadero valor va mucho más allá…",
         readTime: "7 min de lectura",
       },
       {

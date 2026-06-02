@@ -52,7 +52,7 @@ const RiverCruisingNewGeneration = () => {
         }
         description={
           isEs
-            ? "El 84% de los viajeros menores de 35 años quiere hacer un crucero fluvial. Un asesor de viajes de lujo explica por qué — y cómo aprovechar al máximo la experiencia."
+            ? "El 84% de los viajeros menores de 35 años quiere hacer un crucero fluvial. Un consultor de viajes de lujo explica por qué — y cómo aprovechar al máximo la experiencia."
             : "84% of travelers under 35 want to take a river cruise. A luxury travel advisor explains why — and how to get the most out of the experience."
         }
         canonical="https://www.sjuluxetravel.com/blog/river-cruising-new-generation"
