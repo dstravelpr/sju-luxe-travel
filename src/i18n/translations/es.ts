@@ -251,7 +251,7 @@ export const es: typeof en = {
       {
         category: "Cruceros Fluviales",
         title: "Los Cruceros Fluviales Ya No Son Solo Para Tus Padres",
-        excerpt: "El 84% de los viajeros menores de 35 años se interesan por los cruceros fluviales. Un asesor de viajes de lujo explica por qué una nueva generación los está descubriendo.",
+        excerpt: "El 84% de los viajeros menores de 35 años se interesan por los cruceros fluviales. Un consultor de viajes de lujo explica por qué una nueva generación los está descubriendo.",
         readTime: "6 min de lectura",
       },
       {
