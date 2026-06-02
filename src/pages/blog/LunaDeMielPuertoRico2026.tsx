@@ -261,7 +261,8 @@ const Post = () => {
             <p><strong className="text-foreground">{isEs ? "Vuelo recomendado:" : "Recommended routing:"}</strong> SJU → JFK → FCO (Roma) → FLR (Florencia), luego FLR → OLB (Olbia). </p>
             <p><strong className="text-foreground">{isEs ? "Mejor temporada:" : "Best season:"}</strong> {isEs ? "Junio o septiembre — Toscana en pleno verde, Cerdeña en su mejor mar." : "June or September — Tuscany in full green, Sardinia at peak sea."}</p>
             <p><strong className="text-foreground">{isEs ? "Duración ideal:" : "Ideal length:"}</strong> {isEs ? "10–12 noches: 5 en Toscana, 6 en Cerdeña, 1 en Roma." : "10–12 nights: 5 in Tuscany, 6 in Sardinia, 1 in Rome."}</p>
-            <p><strong className="text-foreground">{isEs ? "Presupuesto:" : "Budget:"}</strong> {isEs ? "$20,000–$38,000 por pareja." : "$20,000–$38,000 per couple."}</p>
+            <p><strong className="text-foreground">{isEs ? "Presupuesto Luxe:" : "Luxe Budget:"}</strong> {isEs ? "$20,000–$38,000 por pareja." : "$20,000–$38,000 per couple."}</p>
+            <p><strong className="text-foreground">{isEs ? "Presupuesto Budget Friendly:" : "Budget Friendly:"}</strong> {isEs ? "$9,000–$14,000 por pareja con vuelos en economy, agriturismo de lujo en la Toscana (Castello di Velona o similar) en lugar de Rosewood, y hoteles 4★ frente al mar en Cerdeña fuera de Porto Cervo (Baja Sardinia o Cannigione)." : "$9,000–$14,000 per couple with economy flights, luxury agriturismo in Tuscany (Castello di Velona or similar) instead of Rosewood, and 4★ beachfront hotels in Sardinia outside Porto Cervo (Baja Sardinia or Cannigione)."}</p>
             <p><strong className="text-foreground">{isEs ? "Hoteles:" : "Hotels:"}</strong> Rosewood Castiglion del Bosco, Belmond Castello di Casole, Hotel Cala di Volpe (Cerdeña), Hotel Pitrizza.</p>
 
             {/* 7. South Africa + Mauritius */}
