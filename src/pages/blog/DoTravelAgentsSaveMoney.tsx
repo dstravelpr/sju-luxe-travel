@@ -159,7 +159,7 @@ const DoTravelAgentsSaveMoney = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed font-semibold">
               {isEs
-                ? "Los motores de reserva en línea muestran precios. Los asesores de viaje entregan valor, conocimiento y apoyo humano."
+                ? "Los motores de reserva en línea muestran precios. Los consultores de viajes entregan valor, conocimiento y apoyo humano."
                 : "Online booking engines show prices. Travel advisors deliver value, insight, and human support."}
             </p>
 
