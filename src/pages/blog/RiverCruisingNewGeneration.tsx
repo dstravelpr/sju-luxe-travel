@@ -25,7 +25,7 @@ const schemaJson = {
     {
       "@type": "FAQPage",
       mainEntity: [
-        { "@type": "Question", name: "Are river cruises good for younger travelers?", acceptedAnswer: { "@type": "Answer", text: "Yes — 84% of travelers aged 18–34 in the UK report interest in river cruising. The newer ships and itineraries offer real flexibility (dine when you want, choose your excursion intensity, skip the group tour), which matches what younger travelers actually want." } },
+        { "@type": "Question", name: "Are river cruises good for younger travelers?", acceptedAnswer: { "@type": "Answer", text: "Yes — according to CLIA (Cruise Lines International Association), Gen X and Millennials now make up the fastest-growing demographic in river cruising, with North American river cruise passengers up more than 20% year over year. Newer ships and itineraries offer real flexibility (dine when you want, choose your excursion intensity, skip the group tour), which matches what younger U.S. travelers actually want." } },
         { "@type": "Question", name: "Which river cruise line is best?", acceptedAnswer: { "@type": "Answer", text: "AmaWaterways for active gourmet travelers (onboard bikes, Michelin-recognized dining). Avalon Waterways for biggest panoramic views and flexible excursion choices. Riverside Luxury Cruises (former Crystal River) for top-tier all-inclusive luxury with butler service. The right line depends on your travel style." } },
         { "@type": "Question", name: "What's included in a luxury river cruise?", acceptedAnswer: { "@type": "Answer", text: "Cabin, all meals, wines and beverages with dinner, guided shore excursions in every port, gratuities (on most luxury lines), and transfers. There are no hidden fees the way ocean cruises layer them on — almost everything is bundled into the cruise fare." } },
         { "@type": "Question", name: "What are the best river cruise destinations?", acceptedAnswer: { "@type": "Answer", text: "The Danube (Vienna, Budapest, Bratislava), the Rhine (Cologne, Strasbourg, Basel), the Douro in Portugal (Porto wine country), and the Mekong (Vietnam and Cambodia) are the most-requested itineraries. The Seine (Paris to Normandy) and Rhône (Burgundy/Provence) are excellent secondary choices." } },
@@ -115,14 +115,14 @@ const RiverCruisingNewGeneration = () => {
             <ul className="space-y-2 text-muted-foreground text-sm leading-relaxed list-none">
               {(isEs
                 ? [
-                    "El 84% de los viajeros británicos de 18 a 34 años quiere hacer un crucero fluvial.",
-                    "Solo el 9% de los no-cruceristas lo ven como buen valor — vs. 36% de quienes ya lo vivieron.",
+                    "Gen X y Millennials son el segmento de más rápido crecimiento en cruceros fluviales según CLIA.",
+                    "Los pasajeros de cruceros fluviales en Norteamérica crecieron más de 20% interanual.",
                     "Todo está incluido: cabina, comidas, vinos, excursiones y traslados.",
                     "El Danubio, el Rin, el Duero y el Mekong son los itinerarios estrella.",
                   ]
                 : [
-                    "84% of UK travelers aged 18–34 are interested in river cruising.",
-                    "Only 9% of non-cruisers see it as good value — vs. 36% of those who've sailed.",
+                    "Gen X and Millennials are the fastest-growing river cruise segment, per CLIA.",
+                    "North American river cruise passengers grew more than 20% year over year.",
                     "All-inclusive: cabin, meals, wine, excursions and transfers.",
                     "The Danube, Rhine, Douro and Mekong lead the most-requested itineraries.",
                   ]
@@ -138,27 +138,25 @@ const RiverCruisingNewGeneration = () => {
           <div className="prose-custom space-y-6">
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Hace cinco años, si le decías a alguien de 30 años que un crucero por el río era una opción real de vacaciones, te miraban raro. Hoy la historia es completamente diferente."
-                : "Here's something that would've shocked the travel industry five years ago: the demographic most excited about river cruising right now isn't retirees. It's people under 35."}
+                ? "Hace cinco años, si le decías a alguien de 30 años en Estados Unidos que un crucero por el río era una opción real de vacaciones, te miraban raro. Hoy la historia es completamente diferente."
+                : "Here's something that would've shocked the travel industry five years ago: in the U.S., the demographic driving river cruise growth right now isn't retirees. It's Gen X and Millennials."}
             </p>
 
             <p className="text-muted-foreground text-base leading-relaxed">
-              {isEs ? "Una encuesta reciente en el Reino Unido encontró que el 84 por ciento de los jóvenes entre 18 y 34 años está interesado en hacer un crucero fluvial. No es un número menor — es una generación entera diciendo \"sí, eso me interesa.\" Y cuando lo analizas bien, tiene todo el sentido del mundo."
-                : "A recent UK survey reported by "}
-              {!isEs && (
-                <a
-                  href="https://www.travelweekly.co.uk/news/cruise/under-35s-show-strong-interest-in-river-cruising"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-gold hover:text-gold-light underline-offset-4 hover:underline"
-                >
-                  Travel Weekly
-                </a>
-              )}
+              {isEs ? "Según " : "According to "}
+              <a
+                href="https://cruising.org/en/news-and-research/research/2024/may/state-of-the-cruise-industry-report"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gold hover:text-gold-light underline-offset-4 hover:underline"
+              >
+                CLIA
+              </a>
               {isEs
-                ? ""
-                : " found that 84% of 18-to-34-year-olds are interested in river cruising. That's not a niche curiosity — that's a generation saying, \"Yeah, I actually want this.\" And it makes perfect sense once you stop thinking of river cruises the way they've been marketed for the last two decades."}
+                ? " (Cruise Lines International Association), los pasajeros de cruceros fluviales en Norteamérica crecieron más de 20% interanual, y Gen X y Millennials son el segmento de más rápido crecimiento. No es una curiosidad de nicho — es una generación entera de viajeros estadounidenses diciendo \"sí, eso me interesa.\""
+                : " (Cruise Lines International Association), North American river cruise passengers grew more than 20% year over year, with Gen X and Millennials as the fastest-growing demographic. That's not a niche curiosity — that's a whole generation of U.S. travelers saying, \"Yeah, I actually want this.\""}
             </p>
+
 
             <h2 className="font-heading text-2xl text-foreground mt-10">
               {isEs ? "Por qué tiene lógica" : "Why this tracks"}
