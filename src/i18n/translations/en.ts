@@ -239,18 +239,18 @@ export const en = {
     categories: ["All", "Destinations", "Travel Tips", "Accommodations", "Culture"],
     featured: "Featured",
     featuredPost: {
-      category: "River Cruising",
-      title: "River Cruising Isn't Just for Your Parents Anymore",
-      excerpt: "84% of travelers under 35 are now interested in river cruising. A luxury travel advisor explains why a new generation is discovering the smartest way to travel.",
-      date: "May 13, 2026",
-      readTime: "6 min read",
+      category: "Romance",
+      title: "Best Honeymoon Destinations 2026 from Puerto Rico",
+      excerpt: "The 7 best honeymoon destinations for 2026 from San Juan: Maldives, Bora Bora, Amalfi, Santorini, Portugal and more — with itineraries and recommended flights.",
+      date: "June 1, 2026",
+      readTime: "8 min read",
     },
     posts: [
       {
-        category: "Romance",
-        title: "Best Honeymoon Destinations 2026 from Puerto Rico",
-        excerpt: "The 7 best honeymoon destinations for 2026 from San Juan: Maldives, Bora Bora, Amalfi, Santorini, Portugal and more — with itineraries and recommended flights.",
-        readTime: "8 min read",
+        category: "River Cruising",
+        title: "River Cruising Isn't Just for Your Parents Anymore",
+        excerpt: "84% of travelers under 35 are now interested in river cruising. A luxury travel advisor explains why a new generation is discovering the smartest way to travel.",
+        readTime: "6 min read",
       },
       {
         category: "Travel Philosophy",
