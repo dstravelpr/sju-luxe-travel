@@ -271,7 +271,7 @@ const DoTravelAgentsSaveMoney = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Un asesor de viajes no reemplaza tu capacidad de reservar en línea. Eleva tu experiencia, protege tu inversión y ayuda a convertir un viaje en una experiencia significativa."
+                ? "Un agente de viajes no reemplaza tu capacidad de reservar en línea. Eleva tu experiencia, protege tu inversión y ayuda a convertir un viaje en una experiencia significativa."
                 : "A travel advisor doesn't replace your ability to book online. They elevate your experience, protect your investment, and help turn a trip into a meaningful journey."}
             </p>
 
