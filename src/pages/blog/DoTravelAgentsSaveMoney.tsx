@@ -205,7 +205,7 @@ const DoTravelAgentsSaveMoney = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Reservar el aeropuerto incorrecto, elegir un hotel mal ubicado, perder requisitos de entrada o quedar atrapado en tarifas restrictivas puede costar mucho más de lo que esperas. Un asesor te ayuda a prevenir esos errores antes de que ocurran."
+                ? "Reservar el aeropuerto incorrecto, elegir un hotel mal ubicado, perder requisitos de entrada o quedar atrapado en tarifas restrictivas puede costar mucho más de lo que esperas. Un buen agente de viajes te ayuda a prevenir esos errores antes de que ocurran."
                 : "Booking the wrong airport, choosing a poorly located hotel, missing entry requirements, or locking into restrictive fares can cost far more than you expect. An advisor helps prevent those mistakes before they happen."}
             </p>
 
