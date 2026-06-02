@@ -166,7 +166,7 @@ const DoTravelAgentsSaveMoney = () => {
             {/* Section 2 */}
             <h2 className="font-heading text-2xl text-foreground mt-10">
               {isEs
-                ? "Cómo los Asesores de Viajes Te Ayudan a Ahorrar (Sin Recortar Calidad)"
+                ? "Cómo los Consultores de Viajes Te Ayudan a Ahorrar (Sin Recortar Calidad)"
                 : "How Travel Advisors Help You Save Money (Without Cutting Corners)"}
             </h2>
 
