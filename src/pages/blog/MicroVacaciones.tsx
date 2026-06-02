@@ -7,20 +7,33 @@ import blogMicrocationsImg from "@/assets/blog-microcations.jpg";
 
 const schemaJson = {
   "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  headline: "¿Son las Microvacaciones el Futuro de los Viajes?",
-  description:
-    "Las microvacaciones —escapadas de 2 a 5 días bien planificadas— se están convirtiendo en una nueva forma de viajar más consciente, flexible y de lujo.",
-  author: { "@type": "Person", name: "Daniel Santiago Díaz" },
-  publisher: {
-    "@type": "Organization",
-    name: "SJU Luxe Travel",
-    url: "https://www.sjuluxetravel.com",
-  },
-  datePublished: "2026-04-11",
-  inLanguage: "es-PR",
-  url: "https://www.sjuluxetravel.com/blog/micro-vacaciones-futuro-del-viaje",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      headline: "¿Son las Microvacaciones el Futuro de los Viajes desde Puerto Rico?",
+      description: "Las microvacaciones —escapadas de 2 a 5 días bien planificadas desde San Juan— son una nueva forma de viajar más consciente, flexible y de lujo.",
+      author: { "@type": "Person", name: "Daniel Santiago Díaz", url: "https://www.sjuluxetravel.com/about" },
+      publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
+      datePublished: "2026-04-11",
+      dateModified: "2026-06-02",
+      inLanguage: "es-PR",
+      keywords: ["microvacaciones", "micro-cation", "escapadas cortas desde Puerto Rico", "long weekend luxury", "viajes cortos de lujo", "weekend getaways from San Juan", "luxury short trips"],
+      url: "https://www.sjuluxetravel.com/blog/micro-vacaciones-futuro-del-viaje",
+      mainEntityOfPage: "https://www.sjuluxetravel.com/blog/micro-vacaciones-futuro-del-viaje",
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: [
+        { "@type": "Question", name: "¿Qué es una microvacación?", acceptedAnswer: { "@type": "Answer", text: "Una microvacación es una escapada breve y bien planificada de 2 a 5 días — típicamente un fin de semana largo o una pausa estratégica entre semana. Está diseñada para encajar en tu vida sin alterarla." } },
+        { "@type": "Question", name: "¿Cuáles son las mejores microvacaciones desde San Juan, Puerto Rico?", acceptedAnswer: { "@type": "Answer", text: "Desde SJU funcionan especialmente bien: Miami (vuelos directos, 2h30), Nueva York (4h), Cartagena (3h), Aruba/Curaçao (1h30), Bahamas, Punta Cana, y vuelos nocturnos a Madrid o Lisboa para un long weekend europeo de 4 días." } },
+        { "@type": "Question", name: "¿Cuánto debería durar una microvacación?", acceptedAnswer: { "@type": "Answer", text: "Entre 2 y 5 días. Menos de 2 noches se siente apresurado; más de 5 deja de ser micro. El sweet spot son 3–4 noches: tiempo real para desconectar sin agotar tus PTO." } },
+        { "@type": "Question", name: "¿Son las microvacaciones más sostenibles?", acceptedAnswer: { "@type": "Answer", text: "Pueden serlo cuando se planifican bien: vuelos directos, hoteles eficientes, soporte a negocios locales. Múltiples escapadas mal planificadas pueden ser menos sostenibles que un solo viaje bien diseñado." } },
+        { "@type": "Question", name: "¿Vale la pena un asesor para un viaje de 3 días?", acceptedAnswer: { "@type": "Answer", text: "Sí, porque un viaje corto no perdona errores: hotel mal ubicado, vuelo con escala innecesaria o reserva de restaurante negada queman porciones grandes del viaje. Un asesor maximiza cada hora — y al mismo precio te suma beneficios de hotel." } },
+      ],
+    },
+  ],
 };
+
 
 const MicroVacaciones = () => {
   const { language, localPath } = useLanguage();
