@@ -182,7 +182,7 @@ const DoTravelAgentsSaveMoney = () => {
             </h3>
 
             <p className="text-muted-foreground text-base leading-relaxed">
-              {isEs ? "Los asesores de viajes a menudo tienen acceso a:" : "Travel advisors often have access to:"}
+              {isEs ? "Los agentes de viajes a menudo tienen acceso a:" : "Travel advisors often have access to:"}
             </p>
 
             <ul className="space-y-2 text-muted-foreground text-base leading-relaxed list-none">
