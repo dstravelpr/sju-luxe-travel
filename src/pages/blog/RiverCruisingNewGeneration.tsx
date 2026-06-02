@@ -157,7 +157,6 @@ const RiverCruisingNewGeneration = () => {
                 : " (Cruise Lines International Association), North American river cruise passengers grew more than 20% year over year, with Gen X and Millennials as the fastest-growing demographic. That's not a niche curiosity — that's a whole generation of U.S. travelers saying, \"Yeah, I actually want this.\""}
             </p>
 
-            </p>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">
               {isEs ? "Por qué tiene lógica" : "Why this tracks"}
