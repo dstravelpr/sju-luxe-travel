@@ -130,7 +130,7 @@ const DoTravelAgentsSaveMoney = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Un asesor de viajes moderno no es solo alguien que reserva viajes. Piensa en ellos como tu estratega de viajes personal. Un asesor profesional se toma el tiempo para:"
+                ? "Un consultor de viajes moderno no es solo alguien que reserva viajes. Piensa en él como tu estratega de viajes personal. Un buen agente de viajes se toma el tiempo para:"
                 : "A modern travel advisor is not just someone who books trips. Think of them as your personal travel strategist. A professional advisor takes the time to:"}
             </p>
 
