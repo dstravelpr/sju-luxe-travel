@@ -227,7 +227,7 @@ const DoTravelAgentsSaveMoney = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Si bien los viajes simples se pueden reservar en línea, un asesor de viajes es especialmente valioso cuando:"
+                ? "Si bien los viajes simples se pueden reservar en línea, un consultor de viajes es especialmente valioso cuando:"
                 : "While simple trips can be booked online, a travel advisor is especially valuable when:"}
             </p>
 
