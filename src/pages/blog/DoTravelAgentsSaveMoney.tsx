@@ -222,7 +222,7 @@ const DoTravelAgentsSaveMoney = () => {
 
             {/* Section 3 */}
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "Cuándo Tiene Más Sentido Usar un Asesor de Viajes" : "When Using a Travel Advisor Makes the Most Sense"}
+              {isEs ? "Cuándo Tiene Más Sentido Usar un Consultor de Viajes" : "When Using a Travel Advisor Makes the Most Sense"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
