@@ -13,6 +13,31 @@ const template = fs.readFileSync(path.join(DIST, "index.html"), "utf-8");
 const HOSTNAME = "https://www.sjuluxetravel.com";
 const LANGUAGE_PREFIXES = ["en", "es"];
 
+// Per-route OG image overrides (absolute URLs). Falls back to default og-image.jpg.
+const ROUTE_IMAGES = {
+  "/blog/luna-de-miel-puerto-rico-2026": `${HOSTNAME}/og/honeymoon-2026.png`,
+  "/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside": `${HOSTNAME}/og/cruceros-fluviales.jpg`,
+  "/blog/vale-la-pena-asesor-viajes-2026": `${HOSTNAME}/og/vale-la-pena-asesor-2026.jpg`,
+  "/blog/vuelos-puerto-rico-portugal": `${HOSTNAME}/og/vuelos-puerto-rico-portugal.jpg`,
+  "/blog/maldivas-desde-puerto-rico-guia": `${HOSTNAME}/og/maldivas-desde-puerto-rico.jpg`,
+  "/blog/servicios-concierge-viaje": `${HOSTNAME}/og/servicios-concierge-viaje.jpg`,
+  "/blog/viajes-sin-pasaporte-desde-pr": `${HOSTNAME}/og/viajes-sin-pasaporte.jpg`,
+  "/blog/luxury-solo-female-travel": `${HOSTNAME}/og/luxury-solo-female-travel.jpg`,
+  "/blog/wellness-travel": `${HOSTNAME}/og/wellness-travel.jpg`,
+  "/blog/river-cruising-new-generation": `${HOSTNAME}/og/river-cruising-new-generation.jpg`,
+  "/blog/what-luxury-travel-really-means": `${HOSTNAME}/og/what-luxury-travel-means.jpg`,
+  "/blog/do-travel-agents-really-help-save-money": `${HOSTNAME}/og/do-travel-agents-save-money.jpg`,
+  "/blog/micro-vacaciones-futuro-del-viaje": `${HOSTNAME}/og/micro-vacaciones.jpg`,
+};
+
+const applyOgImage = (html, route) => {
+  const img = ROUTE_IMAGES[route];
+  if (!img) return html;
+  return html
+    .replace(/<meta property="og:image" content="[^"]*" \/>/, `<meta property="og:image" content="${img}" />`)
+    .replace(/<meta name="twitter:image" content="[^"]*" \/>/, `<meta name="twitter:image" content="${img}" />`);
+};
+
 const allRoutes = [
   "/",
   "/about",
@@ -360,7 +385,7 @@ const langPageHtml = (route, content, lang) => {
 
   // JSON-LD
   const schema = buildSchema(route, content, selfUrl);
-  return injectJsonLd(html, schema);
+  return injectJsonLd(applyOgImage(html, route), schema);
 };
 
 const withCanonicalSeo = (html, canonical, route) => {
@@ -438,7 +463,7 @@ for (const [route, content] of Object.entries(pages)) {
     route
   );
 
-  const html = injectJsonLd(seoHtml, buildSchema(route, content, canonical));
+  const html = injectJsonLd(applyOgImage(seoHtml, route), buildSchema(route, content, canonical));
   writeHtmlFile(dir, html);
 }
 
