@@ -13,6 +13,7 @@ const WellnessTravel = () => {
     <Layout>
       <SEOHead
         ogType="article"
+        ogImage="https://www.sjuluxetravel.com/og/wellness-travel.jpg"
         noindex
         title={
           isEs

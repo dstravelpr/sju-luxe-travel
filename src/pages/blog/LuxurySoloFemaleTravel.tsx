@@ -25,6 +25,7 @@ const Post = () => {
     <Layout>
       <SEOHead
         ogType="article"
+        ogImage="https://www.sjuluxetravel.com/og/luxury-solo-female-travel.jpg"
         title="Luxury Solo Female Travel — Safest Destinations 2026"
         description="The safest, most empowering luxury destinations for solo women travelers in 2026: Iceland, Japan, Portugal, NZ — curated by SJU Luxe Travel."
         canonical="https://www.sjuluxetravel.com/blog/luxury-solo-female-travel"

@@ -25,6 +25,7 @@ const Post = () => {
     <Layout>
       <SEOHead
         ogType="article"
+        ogImage="https://www.sjuluxetravel.com/og/vuelos-puerto-rico-portugal.jpg"
         title="Vuelos de Puerto Rico a Portugal — Mejores Rutas 2026"
         description="Guía completa de vuelos SJU a Lisboa y Porto: rutas con menos escalas, mejores aerolíneas, consejos para business class y honeymoons."
         canonical="https://www.sjuluxetravel.com/blog/vuelos-puerto-rico-portugal"

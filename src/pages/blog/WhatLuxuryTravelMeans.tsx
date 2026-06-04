@@ -42,6 +42,7 @@ const WhatLuxuryTravelMeans = () => {
     <Layout>
       <SEOHead
         ogType="article"
+        ogImage="https://www.sjuluxetravel.com/og/what-luxury-travel-means.jpg"
         title="What Luxury Travel Really Means | SJU Luxe Travel"
         description="Luxury travel isn't about spending more — it's about intentional, bespoke experiences. SJU Luxe Travel redefines luxury from San Juan, PR."
         canonical="https://www.sjuluxetravel.com/blog/what-luxury-travel-really-means"

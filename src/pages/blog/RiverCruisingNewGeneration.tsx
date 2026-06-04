@@ -12,7 +12,7 @@ const schemaJson = {
       "@type": "BlogPosting",
       headline: "River Cruising Isn't Just for Your Parents Anymore — And That Changes Everything",
       description: "84% of travelers under 35 want to take a river cruise. A luxury travel advisor explains why — and how to get the most out of the experience.",
-      image: "https://www.sjuluxetravel.com/assets/blog-river-cruise.jpg",
+      image: "https://www.sjuluxetravel.com/og/river-cruising-new-generation.jpg",
       author: { "@type": "Person", name: "Daniel Santiago Díaz", url: "https://www.sjuluxetravel.com/about" },
       publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
       datePublished: "2026-05-13",
@@ -44,6 +44,7 @@ const RiverCruisingNewGeneration = () => {
     <Layout>
       <SEOHead
         ogType="article"
+        ogImage="https://www.sjuluxetravel.com/og/river-cruising-new-generation.jpg"
         schemaJson={schemaJson}
         title={
           isEs
