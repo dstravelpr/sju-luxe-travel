@@ -87,6 +87,7 @@ const Post = () => {
     <Layout>
       <SEOHead
         ogType="article"
+        ogImage="https://www.sjuluxetravel.com/og/honeymoon-2026.png"
         title="Mejores Destinos de Luna de Miel 2026 desde Puerto Rico"
         description="Los 7 mejores destinos de luna de miel 2026 desde San Juan: Maldivas, Bora Bora, Amalfi, Santorini, Portugal. Itinerarios y vuelos por asesor de lujo."
         canonical="https://www.sjuluxetravel.com/blog/luna-de-miel-puerto-rico-2026"
