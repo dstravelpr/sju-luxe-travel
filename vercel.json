@@ -22,6 +22,12 @@
       "permanent": true
     }
   ],
+  "rewrites": [
+    {
+      "source": "/((?!api|assets|og|.*\\..*).*)",
+      "destination": "/index.html"
+    }
+  ],
   "headers": [
     {
       "source": "/sitemap.xml",
