@@ -26,7 +26,7 @@ const schemaJson = {
   datePublished: "2026-06-01",
   dateModified: "2026-06-01",
   inLanguage: "es-PR",
-  image: "https://www.sjuluxetravel.com/og/honeymoon-2026.jpg",
+  image: "https://www.sjuluxetravel.com/og/honeymoon-2026.png",
   keywords: [
     "mejores destinos luna de miel 2026",
     "honeymoon destinations 2026",
