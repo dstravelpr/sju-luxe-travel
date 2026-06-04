@@ -463,7 +463,7 @@ for (const [route, content] of Object.entries(pages)) {
     route
   );
 
-  const html = injectJsonLd(seoHtml, buildSchema(route, content, canonical));
+  const html = injectJsonLd(applyOgImage(seoHtml, route), buildSchema(route, content, canonical));
   writeHtmlFile(dir, html);
 }
 
