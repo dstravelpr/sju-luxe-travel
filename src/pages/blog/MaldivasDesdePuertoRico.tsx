@@ -25,6 +25,7 @@ const Post = () => {
     <Layout>
       <SEOHead
         ogType="article"
+        ogImage="https://www.sjuluxetravel.com/og/maldivas-desde-puerto-rico.jpg"
         title="Maldivas desde Puerto Rico: Ruta, Costo y Mejores Resorts"
         description="Guía completa para planificar Maldivas desde San Juan: vuelos, presupuesto realista, mejor temporada y resorts top según tu estilo."
         canonical="https://www.sjuluxetravel.com/blog/maldivas-desde-puerto-rico-guia"

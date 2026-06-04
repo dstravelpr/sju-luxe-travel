@@ -25,6 +25,7 @@ const Post = () => {
     <Layout>
       <SEOHead
         ogType="article"
+        ogImage="https://www.sjuluxetravel.com/og/viajes-sin-pasaporte.jpg"
         title="Viajes de Lujo sin Pasaporte desde Puerto Rico"
         description="Los mejores destinos de lujo sin pasaporte para residentes de PR: USVI, Hawaii, Florida Keys, Napa y más — sin trámites internacionales."
         canonical="https://www.sjuluxetravel.com/blog/viajes-sin-pasaporte-desde-pr"

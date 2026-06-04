@@ -25,6 +25,7 @@ const Post = () => {
     <Layout>
       <SEOHead
         ogType="article"
+        ogImage="https://www.sjuluxetravel.com/og/cruceros-fluviales.jpg"
         title="Cruceros Fluviales: AmaWaterways vs Avalon vs Riverside"
         description="Compara AmaWaterways, Avalon Waterways y Riverside Luxury Cruises. Diferencias en barcos, itinerarios, gastronomía y precio para viajeros de PR."
         canonical="https://www.sjuluxetravel.com/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside"

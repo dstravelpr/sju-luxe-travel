@@ -25,6 +25,7 @@ const Post = () => {
     <Layout>
       <SEOHead
         ogType="article"
+        ogImage="https://www.sjuluxetravel.com/og/vale-la-pena-asesor-2026.jpg"
         title="¿Vale la Pena un Asesor de Viajes de Lujo en 2026?"
         description="Cuándo vale la pena contratar un asesor de viajes de lujo en 2026 y cuándo no — análisis honesto desde Puerto Rico por SJU Luxe Travel."
         canonical="https://www.sjuluxetravel.com/blog/vale-la-pena-asesor-viajes-2026"

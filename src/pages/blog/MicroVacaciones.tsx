@@ -43,6 +43,7 @@ const MicroVacaciones = () => {
     <Layout>
       <SEOHead
         ogType="article"
+        ogImage="https://www.sjuluxetravel.com/og/micro-vacaciones.jpg"
         title={
           isEs
             ? "¿Son las Microvacaciones el Futuro de los Viajes? — SJU Luxe Travel"

@@ -25,6 +25,7 @@ const Post = () => {
     <Layout>
       <SEOHead
         ogType="article"
+        ogImage="https://www.sjuluxetravel.com/og/servicios-concierge-viaje.jpg"
         title="Servicios de Concierge de Viaje — Qué Incluye y Cuándo Vale"
         description="Concierge de viaje desde Puerto Rico: qué cubre, qué no, cuánto cuesta y cuándo realmente vale la pena contratarlo."
         canonical="https://www.sjuluxetravel.com/blog/servicios-concierge-viaje"
