@@ -385,7 +385,7 @@ const langPageHtml = (route, content, lang) => {
 
   // JSON-LD
   const schema = buildSchema(route, content, selfUrl);
-  return injectJsonLd(html, schema);
+  return injectJsonLd(applyOgImage(html, route), schema);
 };
 
 const withCanonicalSeo = (html, canonical, route) => {
