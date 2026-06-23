@@ -329,8 +329,27 @@ const WellnessTravel = () => {
             </p>
           </div>
 
+          {/* FAQ — AEO */}
+          <section className="mt-16" aria-labelledby="wellness-faq-heading">
+            <h2 id="wellness-faq-heading" className="font-heading text-2xl md:text-3xl text-foreground mb-6">
+              {isEs ? "Preguntas frecuentes" : "Frequently asked questions"}
+            </h2>
+            <div className="space-y-4">
+              {faqs.map((f, i) => (
+                <details key={i} className="gold-border rounded-lg p-5 group">
+                  <summary className="font-heading text-lg text-foreground cursor-pointer list-none flex justify-between items-center gap-4">
+                    {f.q}
+                    <span className="text-gold transition-transform group-open:rotate-45 text-2xl leading-none">+</span>
+                  </summary>
+                  <p className="text-muted-foreground text-sm leading-relaxed mt-3">{f.a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+
           {/* CTA */}
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
+
             <h3 className="font-heading text-2xl text-foreground mb-3">
               {isEs ? "¿Listo para invertir en tu bienestar?" : "Ready to invest in your wellbeing?"}
             </h3>
