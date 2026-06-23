@@ -12,7 +12,7 @@ import blogHoneymoonImg from "@/assets/honeymoon/maldives.png";
 import blogWellnessImg from "@/assets/blog-wellness-maldives.jpg";
 
 const Blog = () => {
-  const { t, localPath } = useLanguage();
+  const { t, localPath, language } = useLanguage();
   const [activeCategory, setActiveCategory] = useState(t.blog.categories[0]);
 
   const postImages = [blogRiverCruiseImg, blogLuxuryImg, blogAgentImg, blogMicrocationsImg];
