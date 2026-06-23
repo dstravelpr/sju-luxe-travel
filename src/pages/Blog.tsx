@@ -103,12 +103,12 @@ const Blog = () => {
                 </div>
                 <div className="p-6">
                   <h3 className="font-heading text-lg text-foreground mb-3 group-hover:text-gold transition-colors">
-                    {useLanguage().language === "es"
+                    {language === "es"
                       ? "Viajes de Bienestar: Por Qué Tu Médico Tiene Razón (2026)"
                       : "Wellness Travel: Why Your Doctor Might Be Right (2026)"}
                   </h3>
                   <p className="text-muted-foreground text-xs leading-relaxed mb-4">
-                    {useLanguage().language === "es"
+                    {language === "es"
                       ? "El viaje de lujo intencional como estrategia real de salud mental — Maldivas, Riviera Maya y la ciencia detrás del descanso."
                       : "Intentional luxury travel as a real mental-health strategy — the Maldives, Riviera Maya, and the science behind real rest."}
                   </p>
