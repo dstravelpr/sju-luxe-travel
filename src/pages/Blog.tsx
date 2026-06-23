@@ -9,6 +9,7 @@ import blogLuxuryImg from "@/assets/blog-luxury-travel.jpg";
 import blogAgentImg from "@/assets/blog-travel-agent.jpg";
 import blogRiverCruiseImg from "@/assets/blog-river-cruise.jpg";
 import blogHoneymoonImg from "@/assets/honeymoon/maldives.png";
+import blogWellnessImg from "@/assets/blog-wellness-maldives.jpg";
 
 const Blog = () => {
   const { t, localPath } = useLanguage();
