@@ -23,6 +23,7 @@ const spanishRoutes = [
   "/blog/servicios-concierge-viaje",
   "/blog/viajes-sin-pasaporte-desde-pr",
   "/blog/luxury-solo-female-travel",
+  "/blog/wellness-travel-intentional-luxury",
   "/contact",
   "/privacy",
   "/terms",

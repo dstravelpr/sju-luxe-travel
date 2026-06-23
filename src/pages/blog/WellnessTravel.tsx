@@ -5,28 +5,125 @@ import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
 import heroImg from "@/assets/blog-wellness-maldives.jpg";
 
+const POST_URL = "https://www.sjuluxetravel.com/blog/wellness-travel-intentional-luxury";
+const OG_IMAGE = "https://www.sjuluxetravel.com/og/wellness-travel.jpg";
+
+const FAQS_EN = [
+  {
+    q: "What is intentional luxury travel?",
+    a: "Intentional luxury travel is a trip designed around restoring your nervous system — silence, nature, nourishing food, movement and real rest — rather than packing in sightseeing. Every element (flights, hotel, guides, spa) is chosen to support that wellness outcome.",
+  },
+  {
+    q: "Is wellness travel actually good for mental health?",
+    a: "Yes. Research summarized by Condé Nast Traveler and the Global Wellness Institute shows that even 72 hours of intentional disconnection lowers cortisol, improves sleep, and restores cognitive function for weeks afterward.",
+  },
+  {
+    q: "What is the best wellness destination from Puerto Rico?",
+    a: "For travelers from San Juan, Mexico's Riviera Maya is the most efficient: same time zone, direct flights, and properties like Chablé Yucatán or Maroma — A Belmond Hotel. For a longer immersion, the Maldives (Joali Being, Six Senses Laamu) is the gold standard.",
+  },
+  {
+    q: "How long should a wellness trip be?",
+    a: "A minimum of four full days at the destination is the sweet spot. Three nights is usually too short to fully decompress; seven to ten days delivers the deepest, longest-lasting benefits.",
+  },
+];
+
+const FAQS_ES = [
+  {
+    q: "¿Qué es el viaje de lujo intencional?",
+    a: "El viaje de lujo intencional es un viaje diseñado para restaurar tu sistema nervioso — silencio, naturaleza, comida nutritiva, movimiento y descanso real — en lugar de acumular turismo. Cada elemento (vuelos, hotel, guías, spa) se elige para reforzar ese objetivo de bienestar.",
+  },
+  {
+    q: "¿El turismo de bienestar realmente ayuda a la salud mental?",
+    a: "Sí. Investigaciones recopiladas por Condé Nast Traveler y el Global Wellness Institute muestran que incluso 72 horas de desconexión intencional reducen el cortisol, mejoran el sueño y restauran la función cognitiva durante semanas.",
+  },
+  {
+    q: "¿Cuál es el mejor destino de bienestar desde Puerto Rico?",
+    a: "Para viajeros desde San Juan, la Riviera Maya de México es lo más eficiente: misma zona horaria, vuelos directos y propiedades como Chablé Yucatán o Maroma — A Belmond Hotel. Para una inmersión más profunda, Maldivas (Joali Being, Six Senses Laamu) es el estándar de oro.",
+  },
+  {
+    q: "¿Cuánto debe durar un viaje de bienestar?",
+    a: "Un mínimo de cuatro días completos en el destino es ideal. Tres noches suele ser muy poco para desconectar; de siete a diez días entrega los beneficios más profundos y duraderos.",
+  },
+];
+
 const WellnessTravel = () => {
   const { language, localPath } = useLanguage();
   const isEs = language === "es";
+  const faqs = isEs ? FAQS_ES : FAQS_EN;
+
+  const title = isEs
+    ? "Viajes de Bienestar: Por Qué Tu Médico Tiene Razón (Guía 2026)"
+    : "Wellness Travel: Why Your Doctor Might Be Right (2026 Guide)";
+  const description = isEs
+    ? "El viaje de lujo intencional no es una tendencia, es una estrategia de salud mental. Descubre cómo retiros en Maldivas y Riviera Maya generan bienestar real."
+    : "Intentional luxury travel isn't a trend — it's a mental health strategy. See how wellness retreats in the Maldives and Riviera Maya deliver lasting benefits.";
+
+  const schemaJson = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BlogPosting",
+        headline: title,
+        description,
+        image: OG_IMAGE,
+        author: {
+          "@type": "Person",
+          name: "Daniel Santiago Díaz",
+          url: "https://www.sjuluxetravel.com/about",
+        },
+        publisher: {
+          "@type": "Organization",
+          name: "SJU Luxe Travel",
+          url: "https://www.sjuluxetravel.com",
+          logo: {
+            "@type": "ImageObject",
+            url: "https://www.sjuluxetravel.com/favicon.png",
+          },
+        },
+        datePublished: "2026-05-15",
+        dateModified: "2026-05-15",
+        inLanguage: isEs ? "es-PR" : "en-US",
+        mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
+        url: POST_URL,
+        keywords: isEs
+          ? "viajes de bienestar, lujo intencional, Maldivas, Riviera Maya, salud mental, Puerto Rico"
+          : "wellness travel, intentional luxury, Maldives, Riviera Maya, mental health, Puerto Rico",
+        about: [
+          { "@type": "Thing", name: "Wellness tourism" },
+          { "@type": "Place", name: "Maldives" },
+          { "@type": "Place", name: "Riviera Maya, Mexico" },
+        ],
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.sjuluxetravel.com/" },
+          { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.sjuluxetravel.com/blog" },
+          { "@type": "ListItem", position: 3, name: title, item: POST_URL },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      },
+    ],
+  };
 
   return (
     <Layout>
       <SEOHead
         ogType="article"
-        ogImage="https://www.sjuluxetravel.com/og/wellness-travel.jpg"
-        noindex
-        title={
-          isEs
-            ? "Viajes de Bienestar: Por Qué Tu Médico Tiene Razón (Guía 2026)"
-            : "Wellness Travel: Why Your Doctor Might Be Right (2026 Guide)"
-        }
-        description={
-          isEs
-            ? "El viaje de lujo intencional no es una tendencia, es una estrategia de salud mental. Descubre cómo retiros en Maldivas y Riviera Maya generan bienestar real."
-            : "Intentional luxury travel isn't a trend — it's a mental health strategy. See how wellness retreats in the Maldives and Riviera Maya deliver lasting benefits."
-        }
-        canonical="https://www.sjuluxetravel.com/blog/wellness-travel-intentional-luxury"
+        ogImage={OG_IMAGE}
+        title={title}
+        description={description}
+        canonical={POST_URL}
+        schemaJson={schemaJson}
       />
+
 
       <article className="pt-28 pb-20 bg-background">
         <div className="container mx-auto px-6 max-w-3xl">
@@ -232,8 +329,27 @@ const WellnessTravel = () => {
             </p>
           </div>
 
+          {/* FAQ — AEO */}
+          <section className="mt-16" aria-labelledby="wellness-faq-heading">
+            <h2 id="wellness-faq-heading" className="font-heading text-2xl md:text-3xl text-foreground mb-6">
+              {isEs ? "Preguntas frecuentes" : "Frequently asked questions"}
+            </h2>
+            <div className="space-y-4">
+              {faqs.map((f, i) => (
+                <details key={i} className="gold-border rounded-lg p-5 group">
+                  <summary className="font-heading text-lg text-foreground cursor-pointer list-none flex justify-between items-center gap-4">
+                    {f.q}
+                    <span className="text-gold transition-transform group-open:rotate-45 text-2xl leading-none">+</span>
+                  </summary>
+                  <p className="text-muted-foreground text-sm leading-relaxed mt-3">{f.a}</p>
+                </details>
+              ))}
+            </div>
+          </section>
+
           {/* CTA */}
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
+
             <h3 className="font-heading text-2xl text-foreground mb-3">
               {isEs ? "¿Listo para invertir en tu bienestar?" : "Ready to invest in your wellbeing?"}
             </h3>
