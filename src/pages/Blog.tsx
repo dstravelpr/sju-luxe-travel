@@ -9,9 +9,10 @@ import blogLuxuryImg from "@/assets/blog-luxury-travel.jpg";
 import blogAgentImg from "@/assets/blog-travel-agent.jpg";
 import blogRiverCruiseImg from "@/assets/blog-river-cruise.jpg";
 import blogHoneymoonImg from "@/assets/honeymoon/maldives.png";
+import blogWellnessImg from "@/assets/blog-wellness-maldives.jpg";
 
 const Blog = () => {
-  const { t, localPath } = useLanguage();
+  const { t, localPath, language } = useLanguage();
   const [activeCategory, setActiveCategory] = useState(t.blog.categories[0]);
 
   const postImages = [blogRiverCruiseImg, blogLuxuryImg, blogAgentImg, blogMicrocationsImg];
@@ -89,6 +90,35 @@ const Blog = () => {
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Link
+              to={localPath("/blog/wellness-travel-intentional-luxury")}
+              className="gold-border gold-border-hover rounded-sm overflow-hidden group block"
+            >
+              <article>
+                <div className="aspect-[16/9] bg-charcoal relative overflow-hidden">
+                  <div className="absolute top-3 left-3 px-2.5 py-1 bg-gold-gradient text-primary-foreground text-[10px] tracking-[0.15em] uppercase font-semibold rounded-sm z-10">
+                    {t.blog.featured}
+                  </div>
+                  <img src={blogWellnessImg} alt="Wellness Travel" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-heading text-lg text-foreground mb-3 group-hover:text-gold transition-colors">
+                    {language === "es"
+                      ? "Viajes de Bienestar: Por Qué Tu Médico Tiene Razón (2026)"
+                      : "Wellness Travel: Why Your Doctor Might Be Right (2026)"}
+                  </h3>
+                  <p className="text-muted-foreground text-xs leading-relaxed mb-4">
+                    {language === "es"
+                      ? "El viaje de lujo intencional como estrategia real de salud mental — Maldivas, Riviera Maya y la ciencia detrás del descanso."
+                      : "Intentional luxury travel as a real mental-health strategy — the Maldives, Riviera Maya, and the science behind real rest."}
+                  </p>
+                  <div className="flex items-center justify-between text-muted-foreground text-[11px]">
+                    <span className="flex items-center gap-1.5"><User size={11} className="text-gold" />Daniel Santiago Díaz</span>
+                    <span className="flex items-center gap-1.5"><Clock size={11} className="text-gold" />7 min</span>
+                  </div>
+                </div>
+              </article>
+            </Link>
             {t.blog.posts.map((post, i) => (
               <Link
                 key={postSlugs[i]}
