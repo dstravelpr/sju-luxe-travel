@@ -19,11 +19,27 @@ const FAQS_EN = [
   },
   {
     q: "What is the best wellness destination from Puerto Rico?",
-    a: "For travelers from San Juan, Mexico's Riviera Maya is the most efficient: same time zone, direct flights, and properties like Chablé Yucatán or Maroma — A Belmond Hotel. For a longer immersion, the Maldives (Joali Being, Six Senses Laamu) is the gold standard.",
+    a: "For travelers from San Juan (SJU), Mexico's Riviera Maya is the most efficient: same time zone, direct flights under 4 hours, and properties like Chablé Yucatán or Maroma — A Belmond Hotel. For a longer immersion, the Maldives (Joali Being, Six Senses Laamu) is the gold standard.",
   },
   {
     q: "How long should a wellness trip be?",
     a: "A minimum of four full days at the destination is the sweet spot. Three nights is usually too short to fully decompress; seven to ten days delivers the deepest, longest-lasting benefits.",
+  },
+  {
+    q: "How much does a luxury wellness retreat cost from San Juan?",
+    a: "A four-night curated wellness retreat in the Riviera Maya typically runs $4,500–$9,000 per person all-in (flights, transfers, 5-star resort, spa program, private guide). A seven-night Maldives wellness program at Joali Being or Six Senses Laamu starts around $12,000 per person and scales with villa category and treatments.",
+  },
+  {
+    q: "What is the difference between a wellness retreat and a regular vacation?",
+    a: "A regular vacation is built around activities and sightseeing; a wellness retreat is built around outcomes — sleep quality, stress reduction, nutrition, movement and mental clarity. The schedule, food, treatments and even Wi-Fi access are designed to deliver measurable physiological recovery.",
+  },
+  {
+    q: "Do I need a passport for a wellness trip from Puerto Rico?",
+    a: "Mexico, the Maldives, Costa Rica and most international wellness destinations require a U.S. passport. If you don't have one yet, we can also design a no-passport wellness escape — St. Thomas, St. Croix or stateside retreats in Sedona and Miraval all qualify.",
+  },
+  {
+    q: "When is the best time of year to book a wellness retreat?",
+    a: "January through March is peak demand (New Year resets) and books out 4–6 months ahead. The smartest value windows are late April to early June, and September to mid-November, when 5-star resorts offer shoulder-season rates without compromising weather.",
   },
 ];
 
@@ -38,11 +54,27 @@ const FAQS_ES = [
   },
   {
     q: "¿Cuál es el mejor destino de bienestar desde Puerto Rico?",
-    a: "Para viajeros desde San Juan, la Riviera Maya de México es lo más eficiente: misma zona horaria, vuelos directos y propiedades como Chablé Yucatán o Maroma — A Belmond Hotel. Para una inmersión más profunda, Maldivas (Joali Being, Six Senses Laamu) es el estándar de oro.",
+    a: "Para viajeros desde San Juan (SJU), la Riviera Maya de México es lo más eficiente: misma zona horaria, vuelos directos de menos de 4 horas y propiedades como Chablé Yucatán o Maroma — A Belmond Hotel. Para una inmersión más profunda, Maldivas (Joali Being, Six Senses Laamu) es el estándar de oro.",
   },
   {
     q: "¿Cuánto debe durar un viaje de bienestar?",
     a: "Un mínimo de cuatro días completos en el destino es ideal. Tres noches suele ser muy poco para desconectar; de siete a diez días entrega los beneficios más profundos y duraderos.",
+  },
+  {
+    q: "¿Cuánto cuesta un retiro de bienestar de lujo desde San Juan?",
+    a: "Un retiro de bienestar curado de cuatro noches en la Riviera Maya cuesta típicamente $4,500–$9,000 por persona todo incluido (vuelos, traslados, resort 5 estrellas, programa de spa, guía privado). Un programa de siete noches en Maldivas en Joali Being o Six Senses Laamu comienza alrededor de $12,000 por persona.",
+  },
+  {
+    q: "¿Cuál es la diferencia entre un retiro de bienestar y unas vacaciones normales?",
+    a: "Unas vacaciones normales se construyen alrededor de actividades y turismo; un retiro de bienestar se construye alrededor de resultados — calidad de sueño, reducción de estrés, nutrición, movimiento y claridad mental. Cada detalle está diseñado para entregar recuperación fisiológica medible.",
+  },
+  {
+    q: "¿Necesito pasaporte para un viaje de bienestar desde Puerto Rico?",
+    a: "México, Maldivas, Costa Rica y la mayoría de destinos internacionales requieren pasaporte estadounidense. Si aún no tienes uno, también diseñamos escapes de bienestar sin pasaporte — St. Thomas, St. Croix o retiros como Sedona y Miraval en EE. UU.",
+  },
+  {
+    q: "¿Cuál es la mejor época para reservar un retiro de bienestar?",
+    a: "Enero a marzo es la temporada alta (resets de Año Nuevo) y se agota con 4–6 meses de anticipación. Las mejores ventanas de valor son finales de abril a principios de junio, y septiembre a mediados de noviembre.",
   },
 ];
 
