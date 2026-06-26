@@ -19,11 +19,27 @@ const FAQS_EN = [
   },
   {
     q: "What is the best wellness destination from Puerto Rico?",
-    a: "For travelers from San Juan, Mexico's Riviera Maya is the most efficient: same time zone, direct flights, and properties like Chablé Yucatán or Maroma — A Belmond Hotel. For a longer immersion, the Maldives (Joali Being, Six Senses Laamu) is the gold standard.",
+    a: "For travelers from San Juan (SJU), Mexico's Riviera Maya is the most efficient: same time zone, direct flights under 4 hours, and properties like Chablé Yucatán or Maroma — A Belmond Hotel. For a longer immersion, the Maldives (Joali Being, Six Senses Laamu) is the gold standard.",
   },
   {
     q: "How long should a wellness trip be?",
     a: "A minimum of four full days at the destination is the sweet spot. Three nights is usually too short to fully decompress; seven to ten days delivers the deepest, longest-lasting benefits.",
+  },
+  {
+    q: "How much does a luxury wellness retreat cost from San Juan?",
+    a: "A four-night curated wellness retreat in the Riviera Maya typically runs $4,500–$9,000 per person all-in (flights, transfers, 5-star resort, spa program, private guide). A seven-night Maldives wellness program at Joali Being or Six Senses Laamu starts around $12,000 per person and scales with villa category and treatments.",
+  },
+  {
+    q: "What is the difference between a wellness retreat and a regular vacation?",
+    a: "A regular vacation is built around activities and sightseeing; a wellness retreat is built around outcomes — sleep quality, stress reduction, nutrition, movement and mental clarity. The schedule, food, treatments and even Wi-Fi access are designed to deliver measurable physiological recovery.",
+  },
+  {
+    q: "Do I need a passport for a wellness trip from Puerto Rico?",
+    a: "Mexico, the Maldives, Costa Rica and most international wellness destinations require a U.S. passport. If you don't have one yet, we can also design a no-passport wellness escape — St. Thomas, St. Croix or stateside retreats in Sedona and Miraval all qualify.",
+  },
+  {
+    q: "When is the best time of year to book a wellness retreat?",
+    a: "January through March is peak demand (New Year resets) and books out 4–6 months ahead. The smartest value windows are late April to early June, and September to mid-November, when 5-star resorts offer shoulder-season rates without compromising weather.",
   },
 ];
 
@@ -38,11 +54,27 @@ const FAQS_ES = [
   },
   {
     q: "¿Cuál es el mejor destino de bienestar desde Puerto Rico?",
-    a: "Para viajeros desde San Juan, la Riviera Maya de México es lo más eficiente: misma zona horaria, vuelos directos y propiedades como Chablé Yucatán o Maroma — A Belmond Hotel. Para una inmersión más profunda, Maldivas (Joali Being, Six Senses Laamu) es el estándar de oro.",
+    a: "Para viajeros desde San Juan (SJU), la Riviera Maya de México es lo más eficiente: misma zona horaria, vuelos directos de menos de 4 horas y propiedades como Chablé Yucatán o Maroma — A Belmond Hotel. Para una inmersión más profunda, Maldivas (Joali Being, Six Senses Laamu) es el estándar de oro.",
   },
   {
     q: "¿Cuánto debe durar un viaje de bienestar?",
     a: "Un mínimo de cuatro días completos en el destino es ideal. Tres noches suele ser muy poco para desconectar; de siete a diez días entrega los beneficios más profundos y duraderos.",
+  },
+  {
+    q: "¿Cuánto cuesta un retiro de bienestar de lujo desde San Juan?",
+    a: "Un retiro de bienestar curado de cuatro noches en la Riviera Maya cuesta típicamente $4,500–$9,000 por persona todo incluido (vuelos, traslados, resort 5 estrellas, programa de spa, guía privado). Un programa de siete noches en Maldivas en Joali Being o Six Senses Laamu comienza alrededor de $12,000 por persona.",
+  },
+  {
+    q: "¿Cuál es la diferencia entre un retiro de bienestar y unas vacaciones normales?",
+    a: "Unas vacaciones normales se construyen alrededor de actividades y turismo; un retiro de bienestar se construye alrededor de resultados — calidad de sueño, reducción de estrés, nutrición, movimiento y claridad mental. Cada detalle está diseñado para entregar recuperación fisiológica medible.",
+  },
+  {
+    q: "¿Necesito pasaporte para un viaje de bienestar desde Puerto Rico?",
+    a: "México, Maldivas, Costa Rica y la mayoría de destinos internacionales requieren pasaporte estadounidense. Si aún no tienes uno, también diseñamos escapes de bienestar sin pasaporte — St. Thomas, St. Croix o retiros como Sedona y Miraval en EE. UU.",
+  },
+  {
+    q: "¿Cuál es la mejor época para reservar un retiro de bienestar?",
+    a: "Enero a marzo es la temporada alta (resets de Año Nuevo) y se agota con 4–6 meses de anticipación. Las mejores ventanas de valor son finales de abril a principios de junio, y septiembre a mediados de noviembre.",
   },
 ];
 
@@ -322,11 +354,169 @@ const WellnessTravel = () => {
                 : ", we build every itinerary around your nervous system — not just your calendar."}
             </p>
 
-            <p className="text-foreground text-lg leading-relaxed font-heading italic">
+            <h2 className="font-heading text-2xl text-foreground mt-10">
+              {isEs ? "Top 5 destinos de bienestar desde San Juan en 2026" : "Top 5 wellness destinations from San Juan in 2026"}
+            </h2>
+
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {isEs
+                ? "Estos son los destinos que actualmente recomendamos a clientes en Puerto Rico que buscan un retiro de bienestar de lujo con vuelo eficiente desde SJU:"
+                : "These are the destinations we currently recommend to Puerto Rico clients looking for a luxury wellness retreat with an efficient flight out of SJU:"}
+            </p>
+
+            <ol className="space-y-3 text-muted-foreground text-base leading-relaxed list-decimal pl-6 marker:text-gold marker:font-heading">
+              <li>
+                <strong className="text-foreground">
+                  {isEs ? "Riviera Maya, México" : "Riviera Maya, Mexico"}
+                </strong>{" "}
+                {isEs
+                  ? "— vuelo directo de 3 h 45 min, misma zona horaria, cenotes mayas, temazcal y resorts como Chablé Yucatán, Maroma (Belmond) y Rosewood Mayakoba. Ideal para 4–5 noches."
+                  : "— 3h 45min nonstop, same time zone, Mayan cenotes, temazcal and resorts like Chablé Yucatán, Maroma (Belmond) and Rosewood Mayakoba. Ideal for 4–5 nights."}
+              </li>
+              <li>
+                <strong className="text-foreground">{isEs ? "Maldivas (Joali Being / Six Senses Laamu)" : "Maldives (Joali Being / Six Senses Laamu)"}</strong>{" "}
+                {isEs
+                  ? "— el estándar de oro mundial en wellness. Programas de sueño, ayurveda, terapia de respiración y silencio absoluto sobre el agua. Mínimo 7 noches."
+                  : "— the global gold standard for wellness. Sleep programs, ayurveda, breathwork, and absolute silence over water. Minimum 7 nights."}
+              </li>
+              <li>
+                <strong className="text-foreground">{isEs ? "Costa Rica (Nayara Tented Camp, Kura Boutique)" : "Costa Rica (Nayara Tented Camp, Kura Boutique)"}</strong>{" "}
+                {isEs
+                  ? "— inmersión en selva tropical, baños de bosque (shinrin-yoku), aguas termales volcánicas. Vuelo directo desde SJU."
+                  : "— rainforest immersion, forest bathing (shinrin-yoku), volcanic hot springs. Nonstop from SJU."}
+              </li>
+              <li>
+                <strong className="text-foreground">{isEs ? "Sedona, Arizona (Mii amo, Enchantment Resort)" : "Sedona, Arizona (Mii amo, Enchantment Resort)"}</strong>{" "}
+                {isEs
+                  ? "— retiros de vortex energético, all-inclusive de spa de 3 a 7 noches. No requiere pasaporte."
+                  : "— vortex energy retreats, 3–7 night all-inclusive spa programs. No passport required."}
+              </li>
+              <li>
+                <strong className="text-foreground">{isEs ? "Toscana, Italia (Borgo Santo Pietro, COMO Castello del Nero)" : "Tuscany, Italy (Borgo Santo Pietro, COMO Castello del Nero)"}</strong>{" "}
+                {isEs
+                  ? "— bienestar mediterráneo: cocina de granja a mesa, caminatas en viñedos y spas históricos. Ideal de 7 a 10 noches."
+                  : "— Mediterranean wellness: farm-to-table cuisine, vineyard walks, and heritage spas. Ideal for 7–10 nights."}
+              </li>
+            </ol>
+
+            <h2 className="font-heading text-2xl text-foreground mt-10">
+              {isEs ? "7 señales de que necesitas un viaje de bienestar (no unas vacaciones)" : "7 signs you need a wellness trip — not a vacation"}
+            </h2>
+
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {isEs
+                ? "Si reconoces tres o más de estas señales, tu cuerpo te está pidiendo descanso intencional, no más turismo:"
+                : "If you recognize three or more of these signs, your body is asking for intentional rest — not more sightseeing:"}
+            </p>
+
+            <ul className="space-y-2 text-muted-foreground text-base leading-relaxed list-none pl-0">
+              {(isEs
+                ? [
+                    "Te despiertas cansado incluso después de 8 horas de sueño.",
+                    "Revisas el teléfono dentro de los 60 segundos de despertarte.",
+                    "El domingo en la tarde ya sientes ansiedad por el lunes.",
+                    "No recuerdas la última vez que tuviste una idea creativa.",
+                    "Tu última 'vacación' fue más agotadora que descansada.",
+                    "Tu médico mencionó cortisol, presión arterial o sueño.",
+                    "Sientes que estás funcionando, no viviendo.",
+                  ]
+                : [
+                    "You wake up tired even after 8 hours of sleep.",
+                    "You check your phone within 60 seconds of waking up.",
+                    "Sunday afternoon already feels like Monday anxiety.",
+                    "You can't remember the last time you had a creative idea.",
+                    "Your last 'vacation' was more draining than restful.",
+                    "Your doctor mentioned cortisol, blood pressure or sleep.",
+                    "You feel like you're functioning, not living.",
+                  ]
+              ).map((item, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="text-gold mt-1">✓</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+
+            <h2 className="font-heading text-2xl text-foreground mt-10">
+              {isEs ? "Itinerario ejemplo: 5 noches de bienestar en Riviera Maya desde SJU" : "Sample itinerary: 5-night wellness reset in Riviera Maya from SJU"}
+            </h2>
+
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {isEs
+                ? "Así es como estructuramos un retiro de bienestar real para un cliente desde Puerto Rico — diseñado para entregar reducción medible de estrés en menos de una semana:"
+                : "Here's how we structure a real wellness reset for a Puerto Rico client — designed to deliver measurable stress reduction in under a week:"}
+            </p>
+
+            <ul className="space-y-3 text-muted-foreground text-base leading-relaxed list-none pl-0">
+              {(isEs
+                ? [
+                    ["Día 1", "Vuelo directo SJU → CUN en la mañana. Traslado privado a Chablé Yucatán. Cena ligera maya, sin Wi-Fi después de las 8 pm."],
+                    ["Día 2", "Ceremonia de cenote al amanecer. Masaje sound-healing de 90 min. Caminata silenciosa al atardecer."],
+                    ["Día 3", "Temazcal (cabaña de sudor maya) con chamán. Almuerzo plant-based. Yoga restaurativo nocturno."],
+                    ["Día 4", "Día abierto: spa privado, lectura, siesta. Solo se permite movimiento gentil."],
+                    ["Día 5", "Sesión de respiración al amanecer. Almuerzo de transición. Vuelo de regreso a SJU."],
+                    ["Día 6", "Regreso a casa renovado, no agotado. Recomendamos 24 h de buffer antes de volver al trabajo."],
+                  ]
+                : [
+                    ["Day 1", "Morning nonstop SJU → CUN. Private transfer to Chablé Yucatán. Light Mayan dinner, no Wi-Fi after 8 pm."],
+                    ["Day 2", "Sunrise cenote ceremony. 90-min sound-healing massage. Silent walk at sunset."],
+                    ["Day 3", "Temazcal (Mayan sweat lodge) with a shaman. Plant-based lunch. Restorative yoga in the evening."],
+                    ["Day 4", "Open day: private spa, reading, naps. Only gentle movement allowed."],
+                    ["Day 5", "Sunrise breathwork. Transition lunch. Return flight to SJU."],
+                    ["Day 6", "Home — restored, not wrecked. We recommend a 24-hour buffer before returning to work."],
+                  ]
+              ).map(([day, desc], i) => (
+                <li key={i} className="flex items-start gap-4">
+                  <span className="font-heading text-gold text-sm tracking-[0.2em] uppercase shrink-0 w-16 pt-0.5">{day}</span>
+                  <span>{desc}</span>
+                </li>
+              ))}
+            </ul>
+
+            <h2 className="font-heading text-2xl text-foreground mt-10">
+              {isEs ? "Qué empacar (y qué dejar en casa)" : "What to pack — and what to leave at home"}
+            </h2>
+
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {isEs
+                ? "El equipaje correcto puede hacer o romper un retiro de bienestar. Empaca ligero, natural y sin pantallas. Lleva: ropa de lino y algodón, sandalias cómodas, un diario físico, libro impreso, traje de baño, y bloqueador mineral reef-safe. Deja: laptop de trabajo, smartwatch, calendario lleno de notificaciones, y la culpa de no 'aprovechar al máximo' el destino."
+                : "The right packing list can make or break a wellness retreat. Pack light, natural, and screen-free. Bring: linen and cotton clothing, comfortable sandals, a physical journal, a printed book, swimwear, and reef-safe mineral sunscreen. Leave behind: work laptop, smartwatch, a calendar full of notifications, and the guilt of not 'making the most' of the destination."}
+            </p>
+
+            <h2 className="font-heading text-2xl text-foreground mt-10">
+              {isEs ? "¿Cuánto cuesta un retiro de bienestar de lujo en 2026?" : "What does a luxury wellness retreat cost in 2026?"}
+            </h2>
+
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {isEs
+                ? "Los rangos típicos para 2026, todo incluido (vuelos desde SJU, traslados privados, resort 5 estrellas, programa de spa y guía/concierge):"
+                : "Typical 2026 ranges, all-in (flights from SJU, private transfers, 5-star resort, spa program and concierge/guide):"}
+            </p>
+
+            <ul className="space-y-2 text-muted-foreground text-base leading-relaxed list-none pl-0">
+              <li><span className="text-gold">•</span> <strong className="text-foreground">{isEs ? "Riviera Maya, 4 noches" : "Riviera Maya, 4 nights"}:</strong> $4,500 – $9,000 {isEs ? "por persona" : "per person"}</li>
+              <li><span className="text-gold">•</span> <strong className="text-foreground">{isEs ? "Costa Rica, 5 noches" : "Costa Rica, 5 nights"}:</strong> $5,800 – $11,000 {isEs ? "por persona" : "per person"}</li>
+              <li><span className="text-gold">•</span> <strong className="text-foreground">{isEs ? "Sedona, 5 noches" : "Sedona, 5 nights"}:</strong> $6,500 – $12,500 {isEs ? "por persona" : "per person"}</li>
+              <li><span className="text-gold">•</span> <strong className="text-foreground">{isEs ? "Maldivas, 7 noches" : "Maldives, 7 nights"}:</strong> $12,000 – $28,000+ {isEs ? "por persona" : "per person"}</li>
+              <li><span className="text-gold">•</span> <strong className="text-foreground">{isEs ? "Toscana, 7 noches" : "Tuscany, 7 nights"}:</strong> $9,500 – $18,000 {isEs ? "por persona" : "per person"}</li>
+            </ul>
+
+            <h2 className="font-heading text-2xl text-foreground mt-10">
+              {isEs ? "Por qué Puerto Rico es el punto de partida ideal" : "Why Puerto Rico is the ideal launchpad"}
+            </h2>
+
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {isEs
+                ? "San Juan (SJU) está geográficamente posicionado de forma única: a 4 horas o menos de la mayoría de los destinos de bienestar del Caribe, México y Centroamérica, con conexiones directas a Europa y excelente acceso a Estados Unidos. Eso significa menos horas en aviones, menos jetlag, y más horas en la hamaca. Como agencia de viajes de lujo boutique con base en Puerto Rico, conocemos cada conexión, cada lounge en SJU y cada chofer privado en el destino."
+                : "San Juan (SJU) is uniquely positioned: within 4 hours of most Caribbean, Mexican and Central American wellness destinations, with nonstop access to Europe and excellent connectivity to the U.S. mainland. That means fewer hours on planes, less jet lag, and more hours in the hammock. As a Puerto Rico–based luxury boutique travel agency, we know every connection, every SJU lounge and every private driver on the ground."}
+            </p>
+
+            <p className="text-foreground text-lg leading-relaxed font-heading italic mt-8">
               {isEs
                 ? "El mejor viaje de bienestar es el que sigue trabajando para ti mucho después de regresar a casa."
                 : "The best wellness trip is the one that keeps working for you long after you come home."}
             </p>
+
           </div>
 
           {/* FAQ — AEO */}
