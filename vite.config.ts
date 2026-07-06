@@ -34,15 +34,9 @@ const spanishRoutes = [
   "/cruceros-fluviales-de-lujo-desde-puerto-rico",
 ];
 
-// Include canonical, English, and Spanish-prefixed URLs for distinct hreflang ranking
-const routes = [
-  "/",
-  ...spanishRoutes,
-  "/en",
-  ...spanishRoutes.map((r) => `/en${r}`),
-  "/es",
-  ...spanishRoutes.map((r) => `/es${r}`),
-];
+// Canonical URLs only. Do NOT include /en/* or /es/* — those redirect to the
+// canonical path via LangRedirect and would show up in GSC as "Page with redirect".
+const routes = ["/", ...spanishRoutes];
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
