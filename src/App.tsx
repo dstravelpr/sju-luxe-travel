@@ -46,6 +46,12 @@ const LangRedirect = () => {
   return <Navigate to={canonical + location.search + location.hash} replace />;
 };
 
+/** Redirect old/broken slugs to canonical blog URLs */
+const RedirectBlog = ({ to }: { to: string }) => {
+  const location = useLocation();
+  return <Navigate to={to + location.search + location.hash} replace />;
+};
+
 const queryClient = new QueryClient();
 
 const appRoutes = [
@@ -91,6 +97,9 @@ const App = () => (
             {appRoutes.map((r) => (
               <Route key={r.path} path={r.path} element={r.element} />
             ))}
+            {/* Redirect old/broken blog slugs to canonical URLs */}
+            <Route path="/blog/do-travel-agents-really-" element={<RedirectBlog to="/blog/do-travel-agents-really-help-save-money" />} />
+            <Route path="/blog/do-travel-agents-really" element={<RedirectBlog to="/blog/do-travel-agents-really-help-save-money" />} />
             {/* Redirect /en/* and /es/* to canonical non-prefixed URLs */}
             <Route path="/en/*" element={<LangRedirect />} />
             <Route path="/es/*" element={<LangRedirect />} />
