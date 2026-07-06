@@ -46,6 +46,12 @@ const LangRedirect = () => {
   return <Navigate to={canonical + location.search + location.hash} replace />;
 };
 
+/** Redirect old/broken slugs to canonical blog URLs */
+const RedirectBlog = ({ to }: { to: string }) => {
+  const location = useLocation();
+  return <Navigate to={to + location.search + location.hash} replace />;
+};
+
 const queryClient = new QueryClient();
 
 const appRoutes = [
