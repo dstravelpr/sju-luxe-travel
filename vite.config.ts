@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 import Sitemap from "vite-plugin-sitemap";
+import { mcpPlugin } from "@lovable.dev/mcp-js/stacks/supabase/vite";
 
 const spanishRoutes = [
   "/about",
@@ -60,6 +61,7 @@ export default defineConfig(({ mode }) => ({
       dynamicRoutes: routes,
       readable: true,
     }),
+    mcpPlugin(),
   ].filter(Boolean),
   resolve: {
     alias: {
