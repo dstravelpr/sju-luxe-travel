@@ -32,6 +32,8 @@ const MaldivasDesdePuertoRico = lazy(() => import("./pages/blog/MaldivasDesdePue
 const ServiciosConciergeViaje = lazy(() => import("./pages/blog/ServiciosConciergeViaje.tsx"));
 const ViajesSinPasaporte = lazy(() => import("./pages/blog/ViajesSinPasaporte.tsx"));
 const LuxurySoloFemaleTravel = lazy(() => import("./pages/blog/LuxurySoloFemaleTravel.tsx"));
+const CruceroFluvialDuero = lazy(() => import("./pages/blog/CruceroFluvialDuero.tsx"));
+const ExcursionesLujoSanJuan = lazy(() => import("./pages/blog/ExcursionesLujoSanJuan.tsx"));
 const Privacy = lazy(() => import("./pages/Privacy.tsx"));
 const Terms = lazy(() => import("./pages/Terms.tsx"));
 const ViajesDeLujo = lazy(() => import("./pages/ViajesDeLujo.tsx"));
