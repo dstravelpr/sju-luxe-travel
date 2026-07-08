@@ -29,6 +29,8 @@ const ROUTE_IMAGES = {
   "/blog/what-luxury-travel-really-means": `${HOSTNAME}/og/what-luxury-travel-means.jpg`,
   "/blog/do-travel-agents-really-help-save-money": `${HOSTNAME}/og/do-travel-agents-save-money.jpg`,
   "/blog/micro-vacaciones-futuro-del-viaje": `${HOSTNAME}/og/micro-vacaciones.jpg`,
+  "/blog/crucero-fluvial-duero-desde-puerto-rico": `${HOSTNAME}/og/crucero-fluvial-duero.jpg`,
+  "/blog/excursiones-de-lujo-san-juan-puerto-cruceros": `${HOSTNAME}/og/excursiones-lujo-san-juan.jpg`,
 };
 
 // ---------------------------------------------------------------
