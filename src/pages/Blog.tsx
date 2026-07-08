@@ -144,6 +144,35 @@ const Blog = () => {
               </article>
             </Link>
             <Link
+              to={localPath("/blog/servicios-concierge-viaje")}
+              className="gold-border gold-border-hover rounded-sm overflow-hidden group block"
+            >
+              <article>
+                <div className="aspect-[16/9] bg-charcoal relative overflow-hidden">
+                  <div className="absolute top-3 left-3 px-2.5 py-1 gold-border text-[10px] tracking-[0.15em] uppercase text-muted-foreground rounded-sm z-10">
+                    {language === "es" ? "Servicios" : "Services"}
+                  </div>
+                  <img src={blogConciergeImg} alt="Servicios de concierge de viaje desde Puerto Rico" className="w-full h-full object-cover" loading="lazy" />
+                </div>
+                <div className="p-6">
+                  <h3 className="font-heading text-lg text-foreground mb-3 group-hover:text-gold transition-colors">
+                    {language === "es"
+                      ? "Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena"
+                      : "Travel Concierge Services: What They Are, What's Included & Why They're Worth It"}
+                  </h3>
+                  <p className="text-muted-foreground text-xs leading-relaxed mb-4">
+                    {language === "es"
+                      ? "Qué hace un travel concierge, qué incluye (reservas VIP, upgrades, asistencia 24/7) y cuándo realmente vale la pena."
+                      : "What a travel concierge does, what's included (VIP bookings, upgrades, 24/7 support) and when it's actually worth it."}
+                  </p>
+                  <div className="flex items-center justify-between text-muted-foreground text-[11px]">
+                    <span className="flex items-center gap-1.5"><User size={11} className="text-gold" />Daniel Santiago Díaz</span>
+                    <span className="flex items-center gap-1.5"><Clock size={11} className="text-gold" />5 min</span>
+                  </div>
+                </div>
+              </article>
+            </Link>
+            <Link
               to={localPath("/blog/wellness-travel-intentional-luxury")}
               className="gold-border gold-border-hover rounded-sm overflow-hidden group block"
             >
