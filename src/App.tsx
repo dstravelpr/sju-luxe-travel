@@ -79,6 +79,8 @@ const appRoutes = [
   { path: "/blog/servicios-concierge-viaje", element: <ServiciosConciergeViaje /> },
   { path: "/blog/viajes-sin-pasaporte-desde-pr", element: <ViajesSinPasaporte /> },
   { path: "/blog/luxury-solo-female-travel", element: <LuxurySoloFemaleTravel /> },
+  { path: "/blog/crucero-fluvial-duero-desde-puerto-rico", element: <CruceroFluvialDuero /> },
+  { path: "/blog/excursiones-de-lujo-san-juan-puerto-cruceros", element: <ExcursionesLujoSanJuan /> },
   { path: "/contact", element: <Contact /> },
   { path: "/privacy", element: <Privacy /> },
   { path: "/terms", element: <Terms /> },
