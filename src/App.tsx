@@ -1,52 +1,54 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, Navigate, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import { lazy, Suspense } from "react";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { LanguageProvider } from "@/i18n/LanguageContext";
-import Index from "./pages/Index.tsx";
-import About from "./pages/About.tsx";
-import Destinations from "./pages/Destinations.tsx";
-import Maldives from "./pages/destinations/Maldives.tsx";
-import Portugal from "./pages/destinations/Portugal.tsx";
-import Mexico from "./pages/destinations/Mexico.tsx";
-import Blog from "./pages/Blog.tsx";
-import Contact from "./pages/Contact.tsx";
-import WhatLuxuryTravelMeans from "./pages/blog/WhatLuxuryTravelMeans.tsx";
-import DoTravelAgentsSaveMoney from "./pages/blog/DoTravelAgentsSaveMoney.tsx";
-import MicroVacaciones from "./pages/blog/MicroVacaciones.tsx";
-import WellnessTravel from "./pages/blog/WellnessTravel.tsx";
-import RiverCruisingNewGeneration from "./pages/blog/RiverCruisingNewGeneration.tsx";
-import LunaDeMielPuertoRico2026 from "./pages/blog/LunaDeMielPuertoRico2026.tsx";
-import CrucerosFluvialesComparativa from "./pages/blog/CrucerosFluvialesComparativa.tsx";
-import ValeLaPenaAsesor2026 from "./pages/blog/ValeLaPenaAsesor2026.tsx";
-import VuelosPuertoRicoPortugal from "./pages/blog/VuelosPuertoRicoPortugal.tsx";
-import MaldivasDesdePuertoRico from "./pages/blog/MaldivasDesdePuertoRico.tsx";
-import ServiciosConciergeViaje from "./pages/blog/ServiciosConciergeViaje.tsx";
-import ViajesSinPasaporte from "./pages/blog/ViajesSinPasaporte.tsx";
-import LuxurySoloFemaleTravel from "./pages/blog/LuxurySoloFemaleTravel.tsx";
-import Privacy from "./pages/Privacy.tsx";
-import Terms from "./pages/Terms.tsx";
-import ViajesDeLujo from "./pages/ViajesDeLujo.tsx";
-import LunaDeMiel from "./pages/LunaDeMiel.tsx";
-import CrucerosDeLujo from "./pages/CrucerosDeLujo.tsx";
-import CrucerosFluviales from "./pages/CrucerosFluviales.tsx";
-import NotFound from "./pages/NotFound.tsx";
-import { Navigate, useLocation } from "react-router-dom";
 
-/** Persist language from URL prefix, then redirect to canonical path */
+// Eager: only the homepage (LCP-critical)
+import Index from "./pages/Index.tsx";
+import NotFound from "./pages/NotFound.tsx";
+
+// Lazy: everything else — one chunk per route
+const About = lazy(() => import("./pages/About.tsx"));
+const Destinations = lazy(() => import("./pages/Destinations.tsx"));
+const Maldives = lazy(() => import("./pages/destinations/Maldives.tsx"));
+const Portugal = lazy(() => import("./pages/destinations/Portugal.tsx"));
+const Mexico = lazy(() => import("./pages/destinations/Mexico.tsx"));
+const Blog = lazy(() => import("./pages/Blog.tsx"));
+const Contact = lazy(() => import("./pages/Contact.tsx"));
+const WhatLuxuryTravelMeans = lazy(() => import("./pages/blog/WhatLuxuryTravelMeans.tsx"));
+const DoTravelAgentsSaveMoney = lazy(() => import("./pages/blog/DoTravelAgentsSaveMoney.tsx"));
+const MicroVacaciones = lazy(() => import("./pages/blog/MicroVacaciones.tsx"));
+const WellnessTravel = lazy(() => import("./pages/blog/WellnessTravel.tsx"));
+const RiverCruisingNewGeneration = lazy(() => import("./pages/blog/RiverCruisingNewGeneration.tsx"));
+const LunaDeMielPuertoRico2026 = lazy(() => import("./pages/blog/LunaDeMielPuertoRico2026.tsx"));
+const CrucerosFluvialesComparativa = lazy(() => import("./pages/blog/CrucerosFluvialesComparativa.tsx"));
+const ValeLaPenaAsesor2026 = lazy(() => import("./pages/blog/ValeLaPenaAsesor2026.tsx"));
+const VuelosPuertoRicoPortugal = lazy(() => import("./pages/blog/VuelosPuertoRicoPortugal.tsx"));
+const MaldivasDesdePuertoRico = lazy(() => import("./pages/blog/MaldivasDesdePuertoRico.tsx"));
+const ServiciosConciergeViaje = lazy(() => import("./pages/blog/ServiciosConciergeViaje.tsx"));
+const ViajesSinPasaporte = lazy(() => import("./pages/blog/ViajesSinPasaporte.tsx"));
+const LuxurySoloFemaleTravel = lazy(() => import("./pages/blog/LuxurySoloFemaleTravel.tsx"));
+const Privacy = lazy(() => import("./pages/Privacy.tsx"));
+const Terms = lazy(() => import("./pages/Terms.tsx"));
+const ViajesDeLujo = lazy(() => import("./pages/ViajesDeLujo.tsx"));
+const LunaDeMiel = lazy(() => import("./pages/LunaDeMiel.tsx"));
+const CrucerosDeLujo = lazy(() => import("./pages/CrucerosDeLujo.tsx"));
+const CrucerosFluviales = lazy(() => import("./pages/CrucerosFluviales.tsx"));
+
 const LangRedirect = () => {
   const location = useLocation();
   const match = location.pathname.match(/^\/(en|es)(\/|$)/);
   if (match) {
-    try { localStorage.setItem("lang", match[1]); } catch {}
+    try { localStorage.setItem("lang", match[1]); } catch { /* noop */ }
   }
   const canonical = location.pathname.replace(/^\/(en|es)(\/|$)/, "/") || "/";
   return <Navigate to={canonical + location.search + location.hash} replace />;
 };
 
-/** Redirect old/broken slugs to canonical blog URLs */
 const RedirectBlog = ({ to }: { to: string }) => {
   const location = useLocation();
   return <Navigate to={to + location.search + location.hash} replace />;
@@ -86,30 +88,28 @@ const appRoutes = [
 
 const App = () => (
   <HelmetProvider>
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <BrowserRouter>
-        <LanguageProvider>
-          <Toaster />
-          <Sonner />
-          <Routes>
-            {/* Spanish (default) routes */}
-            {appRoutes.map((r) => (
-              <Route key={r.path} path={r.path} element={r.element} />
-            ))}
-            {/* Redirect old/broken blog slugs to canonical URLs */}
-            <Route path="/blog/do-travel-agents-really-" element={<RedirectBlog to="/blog/do-travel-agents-really-help-save-money" />} />
-            <Route path="/blog/do-travel-agents-really" element={<RedirectBlog to="/blog/do-travel-agents-really-help-save-money" />} />
-            {/* Redirect /en/* and /es/* to canonical non-prefixed URLs */}
-            <Route path="/en/*" element={<LangRedirect />} />
-            <Route path="/es/*" element={<LangRedirect />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </LanguageProvider>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <BrowserRouter>
+          <LanguageProvider>
+            <Toaster />
+            <Sonner />
+            <Suspense fallback={<div className="min-h-screen bg-background" />}>
+              <Routes>
+                {appRoutes.map((r) => (
+                  <Route key={r.path} path={r.path} element={r.element} />
+                ))}
+                <Route path="/blog/do-travel-agents-really-" element={<RedirectBlog to="/blog/do-travel-agents-really-help-save-money" />} />
+                <Route path="/blog/do-travel-agents-really" element={<RedirectBlog to="/blog/do-travel-agents-really-help-save-money" />} />
+                <Route path="/en/*" element={<LangRedirect />} />
+                <Route path="/es/*" element={<LangRedirect />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </Suspense>
+          </LanguageProvider>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
   </HelmetProvider>
 );
 
