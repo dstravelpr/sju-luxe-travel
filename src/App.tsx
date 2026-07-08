@@ -32,6 +32,8 @@ const MaldivasDesdePuertoRico = lazy(() => import("./pages/blog/MaldivasDesdePue
 const ServiciosConciergeViaje = lazy(() => import("./pages/blog/ServiciosConciergeViaje.tsx"));
 const ViajesSinPasaporte = lazy(() => import("./pages/blog/ViajesSinPasaporte.tsx"));
 const LuxurySoloFemaleTravel = lazy(() => import("./pages/blog/LuxurySoloFemaleTravel.tsx"));
+const CruceroFluvialDuero = lazy(() => import("./pages/blog/CruceroFluvialDuero.tsx"));
+const ExcursionesLujoSanJuan = lazy(() => import("./pages/blog/ExcursionesLujoSanJuan.tsx"));
 const Privacy = lazy(() => import("./pages/Privacy.tsx"));
 const Terms = lazy(() => import("./pages/Terms.tsx"));
 const ViajesDeLujo = lazy(() => import("./pages/ViajesDeLujo.tsx"));
@@ -77,6 +79,8 @@ const appRoutes = [
   { path: "/blog/servicios-concierge-viaje", element: <ServiciosConciergeViaje /> },
   { path: "/blog/viajes-sin-pasaporte-desde-pr", element: <ViajesSinPasaporte /> },
   { path: "/blog/luxury-solo-female-travel", element: <LuxurySoloFemaleTravel /> },
+  { path: "/blog/crucero-fluvial-duero-desde-puerto-rico", element: <CruceroFluvialDuero /> },
+  { path: "/blog/excursiones-de-lujo-san-juan-puerto-cruceros", element: <ExcursionesLujoSanJuan /> },
   { path: "/contact", element: <Contact /> },
   { path: "/privacy", element: <Privacy /> },
   { path: "/terms", element: <Terms /> },
