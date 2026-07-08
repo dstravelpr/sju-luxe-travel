@@ -476,7 +476,7 @@ const applyOgImage = (html, route) => {
 const injectJsonLd = (html, schema) => {
   const cleaned = html.replace(/\s*<script type="application\/ld\+json" data-prerender>[\s\S]*?<\/script>/g, "");
   const tag = `    <script type="application/ld+json" data-prerender>${JSON.stringify(schema)}</script>\n`;
-  return cleaned.replace("</head>", `${tag}</head>`);
+  return cleaned.replace("</head>", () => `${tag}</head>`);
 };
 
 // Replace or insert canonical + optional hreflang, always strip stale hreflang
