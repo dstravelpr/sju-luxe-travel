@@ -87,7 +87,7 @@ const DoTravelAgentsSaveMoney = () => {
             <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">
               {isEs
                 ? "¿Los Agentes de Viajes Realmente Te Ayudan a Ahorrar Dinero?"
-                : "Do Travel Agents Really Help You Save Money?"}
+                : "Is a Travel Agent Worth It? Do They Really Save You Money?"}
             </h1>
             <p className="font-heading text-xl md:text-2xl text-muted-foreground italic mb-6">
               {isEs
