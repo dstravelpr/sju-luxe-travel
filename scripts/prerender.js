@@ -183,6 +183,22 @@ const pages = {
     datePublished: "2026-04-30", dateModified: "2026-04-30", forcedLang: "en",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }, { name: "Wellness Travel", path: "/blog/wellness-travel-intentional-luxury" }],
   },
+  "/blog/crucero-fluvial-duero-desde-puerto-rico": {
+    title: "Crucero Fluvial por el Duero desde Puerto Rico: Portugal desde el Río | SJU Luxe Travel",
+    description: "Cómo planificar un crucero fluvial de lujo por el Duero desde San Juan: navieras (AmaWaterways, Scenic, Uniworld), rutas de vuelo, mejor temporada y experiencias de bodega en Portugal.",
+    h1: "Crucero Fluvial por el Duero desde Puerto Rico: Portugal desde el Río",
+    body: "Guía completa para hacer un crucero fluvial por el Duero desde Puerto Rico. Comparamos AmaWaterways, Scenic y Uniworld, la mejor temporada (mayo, junio, septiembre y octubre para la vendimia), las rutas de vuelo desde SJU vía MIA o JFK, y las experiencias privadas de bodega en las quintas del valle vinícola más antiguo del mundo.",
+    datePublished: "2026-07-08", dateModified: "2026-07-08",
+    breadcrumbs: [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }, { name: "Crucero Fluvial Duero desde PR", path: "/blog/crucero-fluvial-duero-desde-puerto-rico" }],
+  },
+  "/blog/excursiones-de-lujo-san-juan-puerto-cruceros": {
+    title: "Excursiones de Lujo desde el Puerto de Cruceros de San Juan | SJU Luxe Travel",
+    description: "Guía de excursiones privadas de lujo para pasajeros de crucero en San Juan: tours privados del Viejo San Juan, El Yunque, catamarán y experiencias gastronómicas coordinadas por un concierge local.",
+    h1: "Excursiones de Lujo desde el Puerto de Cruceros de San Juan",
+    body: "Guía para pasajeros de crucero que atracan en San Juan: por qué reservar excursiones privadas en vez de las oficiales del barco, las cinco excursiones de lujo que más reservamos (Viejo San Juan con historiador, El Yunque privado, catamarán a Icacos, tour gastronómico farm-to-table, combo Bacardí Reserva) y cómo un concierge local coordina cada detalle con vehículo privado, guía bilingüe y reservas confirmadas.",
+    datePublished: "2026-07-08", dateModified: "2026-07-08",
+    breadcrumbs: [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }, { name: "Excursiones de Lujo San Juan", path: "/blog/excursiones-de-lujo-san-juan-puerto-cruceros" }],
+  },
   "/contact": {
     title: "Consulta Gratis de Viajes de Lujo — Contacto | SJU Luxe Travel",
     description: "Agenda tu consulta gratis de viajes de lujo con SJU Luxe Travel. Cruceros de lujo, tours privados, viajes solo y más. Teléfono: (617) 935-5714.",
