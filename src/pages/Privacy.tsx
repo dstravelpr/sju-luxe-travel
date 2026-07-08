@@ -115,7 +115,7 @@ const Privacy = () => {
               </ul>
               <p className="mt-3">
                 To exercise any of these rights, please contact us at{" "}
-                <a href="mailto:dsantiago@ncmconcierge.com" className="text-gold underline">dsantiago@ncmconcierge.com</a>.
+                <a href="mailto:info@sjuluxetravel.com" className="text-gold underline">info@sjuluxetravel.com</a>.
               </p>
             </div>
 
@@ -143,7 +143,7 @@ const Privacy = () => {
               <ul className="list-none mt-3 space-y-1">
                 <li><strong>SJU Luxe Travel</strong></li>
                 <li>San Juan, Puerto Rico</li>
-                <li>Email: <a href="mailto:dsantiago@ncmconcierge.com" className="text-gold underline">dsantiago@ncmconcierge.com</a></li>
+                <li>Email: <a href="mailto:info@sjuluxetravel.com" className="text-gold underline">info@sjuluxetravel.com</a></li>
                 <li>Phone: <a href="tel:+16179355714" className="text-gold underline">(617) 935-5714</a></li>
               </ul>
             </div>

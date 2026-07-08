@@ -180,8 +180,8 @@ const Footer = () => {
                 <a href="tel:+16179355714" className="flex items-center gap-2 hover:text-gold transition-colors">
                   <Phone size={14} className="text-gold flex-shrink-0" /> (617) 935-5714
                 </a>
-                <a href="mailto:dsantiago@ncmconcierge.com" className="flex items-center gap-2 hover:text-gold transition-colors">
-                  <Mail size={14} className="text-gold flex-shrink-0" /> dsantiago@ncmconcierge.com
+                <a href="mailto:info@sjuluxetravel.com" className="flex items-center gap-2 hover:text-gold transition-colors">
+                  <Mail size={14} className="text-gold flex-shrink-0" /> info@sjuluxetravel.com
                 </a>
               </div>
             </div>
