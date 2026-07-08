@@ -185,7 +185,7 @@ const pages = {
     title: "Consulta Gratis de Viajes de Lujo — Contacto | SJU Luxe Travel",
     description: "Agenda tu consulta gratis de viajes de lujo con SJU Luxe Travel. Cruceros de lujo, tours privados, viajes solo y más. Teléfono: (617) 935-5714.",
     h1: "Consulta Gratis de Viajes de Lujo — Contacta a tu Asesor de Lujo",
-    body: "Agenda hoy tu consulta gratis de viajes de lujo. Ya sea que planifiques cruceros de lujo desde San Juan, tours privados guiados, viajes de lujo solo para mujeres, viajes corporativos de incentivos o destinos exclusivos sin turismo masivo, tu asesor boutique de viajes está listo. Teléfono: (617) 935-5714. Email: dsantiago@ncmconcierge.com.",
+    body: "Agenda hoy tu consulta gratis de viajes de lujo. Ya sea que planifiques cruceros de lujo desde San Juan, tours privados guiados, viajes de lujo solo para mujeres, viajes corporativos de incentivos o destinos exclusivos sin turismo masivo, tu asesor boutique de viajes está listo. Teléfono: (617) 935-5714. Email: info@sjuluxetravel.com.",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Contacto", path: "/contact" }],
   },
   "/privacy": {
@@ -284,7 +284,7 @@ const pagesEn = {
     title: "Free Luxury Travel Consultation — Contact | SJU Luxe Travel",
     description: "Schedule your free luxury travel consultation with SJU Luxe Travel. Luxury cruises, private tours, solo travel and more. Phone: (617) 935-5714.",
     h1: "Free Luxury Travel Consultation — Contact Your Advisor",
-    body: "Schedule your free luxury travel consultation today. Whether you're planning luxury cruises from San Juan, private guided tours, luxury solo female travel, corporate incentive travel or exclusive destinations without mass tourism, your boutique travel advisor is ready. Phone: (617) 935-5714. Email: dsantiago@ncmconcierge.com.",
+    body: "Schedule your free luxury travel consultation today. Whether you're planning luxury cruises from San Juan, private guided tours, luxury solo female travel, corporate incentive travel or exclusive destinations without mass tourism, your boutique travel advisor is ready. Phone: (617) 935-5714. Email: info@sjuluxetravel.com.",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Contact", path: "/contact" }],
   },
   "/privacy": {
@@ -367,7 +367,7 @@ const ORG_SCHEMA = {
   logo: LOGO_URL,
   image: DEFAULT_OG,
   telephone: "+1-617-935-5714",
-  email: "dsantiago@ncmconcierge.com",
+  email: "info@sjuluxetravel.com",
   priceRange: "$$$",
   areaServed: "Worldwide",
   knowsLanguage: ["en", "es"],

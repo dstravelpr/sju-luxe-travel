@@ -52,7 +52,7 @@ const Contact = () => {
                   <div className="w-9 h-9 rounded-full bg-gold/10 flex items-center justify-center flex-shrink-0 mt-0.5"><Mail size={16} className="text-gold" /></div>
                   <div>
                     <p className="text-foreground text-sm font-semibold">{t.contact.emailLabel}</p>
-                    <a href="mailto:dsantiago@ncmconcierge.com" className="text-muted-foreground text-xs hover:text-gold transition-colors">dsantiago@ncmconcierge.com</a>
+                    <a href="mailto:info@sjuluxetravel.com" className="text-muted-foreground text-xs hover:text-gold transition-colors">info@sjuluxetravel.com</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
