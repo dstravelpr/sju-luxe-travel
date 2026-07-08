@@ -65,11 +65,12 @@ const Post = () => {
       <SEOHead
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/servicios-concierge-viaje.jpg"
-        title="Servicios de Concierge de Viaje — Qué Incluye y Cuándo Vale"
-        description="Concierge de viaje desde Puerto Rico: qué cubre, qué no, cuánto cuesta y cuándo realmente vale la pena contratarlo."
+        title="Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena | SJU Luxe Travel"
+        description="Guía completa de servicios de concierge de viaje: qué es un travel concierge, qué incluye (reservas VIP, upgrades, asistencia 24/7) y cómo acceder gratis con un asesor de lujo en Puerto Rico."
         canonical="https://www.sjuluxetravel.com/blog/servicios-concierge-viaje"
         schemaJson={schemaJson}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <article className="pt-28 pb-20 bg-background">
         <div className="container mx-auto px-6 max-w-3xl">
           <Link to={localPath("/blog")} className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors font-body text-sm tracking-wide mb-8">
@@ -77,7 +78,7 @@ const Post = () => {
           </Link>
           <div className="mb-10">
             <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{isEs ? "Servicios" : "Services"}</span>
-            <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">{isEs ? "Servicios de Concierge de Viaje: Qué Incluye y Cuándo Vale" : "Travel Concierge Services: What's Included & When It's Worth It"}</h1>
+            <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">{isEs ? "Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena" : "Travel Concierge Services: What They Are, What's Included & Why They're Worth It"}</h1>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
               <span className="flex items-center gap-1.5"><User size={12} className="text-gold" />Daniel Santiago Díaz</span>
               <span className="flex items-center gap-1.5"><Calendar size={12} className="text-gold" />{isEs ? "29 de mayo de 2026" : "May 29, 2026"}</span>
