@@ -71,6 +71,12 @@ const Post = () => {
 
             <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "¿Cuál es para ti?" : "Which one is right for you?"}</h2>
             <p>{isEs ? "Si quieres actividad y gastronomía: AmaWaterways. Si quieres vistas y flexibilidad: Avalon. Si quieres el máximo lujo y servicio personalizado: Riverside. Como agente certificado de las tres líneas, podemos comparar precios reales y beneficios exclusivos para tu fecha." : "If you want activity and food: AmaWaterways. If you want views and flexibility: Avalon. If you want max luxury and personal service: Riverside. As a certified advisor for all three lines, we compare real pricing and exclusive perks for your dates."}</p>
+
+            <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "Lecturas Relacionadas" : "Related Reading"}</h2>
+            <ul className="space-y-2 list-none">
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/cruceros-fluviales-de-lujo-desde-puerto-rico")} className="text-gold hover:text-gold-light underline">{isEs ? "Cruceros fluviales de lujo desde Puerto Rico" : "Luxury river cruises from Puerto Rico"}</Link></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/cruceros-de-lujo-desde-san-juan")} className="text-gold hover:text-gold-light underline">{isEs ? "Cruceros de lujo desde San Juan" : "Luxury ocean cruises from San Juan"}</Link></li>
+            </ul>
           </div>
 
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
