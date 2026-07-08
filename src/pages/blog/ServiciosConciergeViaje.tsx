@@ -8,13 +8,52 @@ import heroImg from "@/assets/traveler-airport.jpg";
 const schemaJson = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "Servicios de Concierge de Viaje: Qué Incluye y Cuándo Vale",
-  description: "Qué es un concierge de viaje, qué cubre, cuánto cuesta y cuándo realmente vale la pena para viajeros desde Puerto Rico.",
+  headline: "Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena",
+  description: "Guía completa de servicios de concierge de viaje: qué es un travel concierge, qué incluye (reservas VIP, upgrades, asistencia 24/7) y cómo acceder gratis con un asesor de lujo en Puerto Rico.",
   author: { "@type": "Person", name: "Daniel Santiago Díaz" },
   publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
   datePublished: "2026-05-29",
   inLanguage: "es-PR",
   url: "https://www.sjuluxetravel.com/blog/servicios-concierge-viaje",
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "¿Qué es un servicio de concierge de viaje?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Un servicio de concierge de viaje es un profesional que se encarga de planificar, coordinar y resolver cada detalle de tu viaje —desde el diseño del itinerario hasta la asistencia 24/7 mientras estás fuera. En vez de que tú corras detrás de reservas, vuelos y cambios de última hora, un concierge lo hace por ti con acceso a contactos y beneficios que no aparecen en las páginas públicas."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "¿Qué incluye un servicio de concierge de viaje?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Incluye diseño de itinerario a la medida, reservas VIP en hoteles y restaurantes con estrella Michelin, tours privados con guías locales, coordinación de visados y documentación, transferencias privadas y asistencia 24/7 en español e inglés durante el viaje. También cubre upgrades de habitación, amenidades de cortesía y re-booking inmediato si hay cancelaciones o cambios."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "¿Cuánto cuesta un travel concierge?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "En SJU Luxe Travel el servicio de concierge está incluido —no cobramos honorarios para itinerarios de lujo porque somos compensados directamente por nuestros hoteles y cruceros partners. Ofrecemos una consulta inicial gratuita para evaluar tu viaje, y solo en casos de itinerarios extremadamente complejos aplicamos un fee de planificación, siempre confirmado al inicio."
+      }
+    },
+    {
+      "@type": "Question",
+      name: "¿Cuál es la diferencia entre un concierge y un agente de viajes?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Un agente de viajes tradicional se enfoca principalmente en reservar vuelos, hoteles y paquetes al mejor precio. Un concierge de viaje va mucho más allá: diseña la experiencia completa, negocia beneficios exclusivos, coordina cada detalle en tierra y te acompaña 24/7 durante el viaje. En la práctica, todo buen concierge también es agente de viajes, pero no todo agente de viajes ofrece servicio de concierge real."
+      }
+    }
+  ]
 };
 
 const Post = () => {
