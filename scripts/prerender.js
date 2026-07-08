@@ -323,7 +323,7 @@ const ROOT_CONTENT_ES = {
 // locales: which language variants exist on disk (default = canonical URL)
 // ---------------------------------------------------------------
 const ROUTE_MANIFEST = [
-  { path: "/", locales: ["default", "en", "es"], type: "home" },
+  { path: "/", locales: ["default", "en", "es"], type: "home", hreflang: true },
   ...Object.keys(pages).map((p) => {
     const isBlogPost = p.startsWith("/blog/");
     const hasEn = !!pagesEn[p];
