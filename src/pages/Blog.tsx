@@ -12,6 +12,7 @@ import blogHoneymoonImg from "@/assets/honeymoon/maldives.png";
 import blogWellnessImg from "@/assets/blog-wellness-maldives.jpg";
 import blogDueroImg from "@/assets/rivers/douro.png";
 import blogSanJuanImg from "@/assets/hero-beach-sunset.jpg";
+import blogConciergeImg from "@/assets/traveler-airport.jpg";
 
 const Blog = () => {
   const { t, localPath, language } = useLanguage();
