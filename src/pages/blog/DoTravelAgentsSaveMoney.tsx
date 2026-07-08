@@ -67,7 +67,7 @@ const DoTravelAgentsSaveMoney = () => {
       <SEOHead
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/do-travel-agents-save-money.jpg"
-        title="Is It Worth Using a Travel Agent? | SJU Luxe Travel"
+        title="Is a Travel Agent Worth It? Do They Really Save You Money? | SJU Luxe Travel"
         description="Is it worth using a travel agent for a luxury vacation? How an advisor saves you money, time & stress. Travel agent vs booking online — an honest take."
         canonical="https://www.sjuluxetravel.com/blog/do-travel-agents-really-help-save-money"
         schemaJson={schemaJson}
@@ -87,7 +87,7 @@ const DoTravelAgentsSaveMoney = () => {
             <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">
               {isEs
                 ? "¿Los Agentes de Viajes Realmente Te Ayudan a Ahorrar Dinero?"
-                : "Do Travel Agents Really Help You Save Money?"}
+                : "Is a Travel Agent Worth It? Do They Really Save You Money?"}
             </h1>
             <p className="font-heading text-xl md:text-2xl text-muted-foreground italic mb-6">
               {isEs
@@ -109,7 +109,7 @@ const DoTravelAgentsSaveMoney = () => {
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
                 ? "En un mundo donde vuelos y hoteles se pueden reservar en minutos, muchos viajeros se hacen la misma pregunta: ¿Los agentes de viajes realmente te ayudan a ahorrar dinero—o son solo un gasto adicional?"
-                : "In a world where flights and hotels can be booked in minutes, many travelers ask the same question: Do travel agents actually help you save money—or are they just an added expense?"}
+                : "In a world where flights and hotels can be booked in minutes, many travelers ask the same two questions: Is a travel agent worth it? And do they really save you money—or are they just an added expense?"}
             </p>
 
             <p className="text-muted-foreground text-base leading-relaxed">
