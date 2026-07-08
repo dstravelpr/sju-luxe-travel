@@ -334,6 +334,9 @@ export const en = {
     dreamTrip: "Tell Us About Your Dream Trip",
     dreamTripPlaceholder: "Share your travel dreams, preferences, budget range, and any special requirements or occasions you're celebrating...",
     sendMessage: "Send Message",
+    formSuccessTitle: "Thank You",
+    formSuccessBody: "Your consultation request has been sent. A luxury travel advisor will reach out within 24 hours.",
+    formSuccessButton: "Send Another Message",
     locationBanner: "The heart of the Caribbean — Your luxury travel advisor for international destinations",
   },
   viajesDeLujo: {
