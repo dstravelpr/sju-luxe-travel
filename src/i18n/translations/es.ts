@@ -336,6 +336,9 @@ export const es: typeof en = {
     dreamTrip: "Cuéntanos Sobre Tu Viaje Soñado",
     dreamTripPlaceholder: "Comparte tus sueños de viaje, preferencias, rango de presupuesto y cualquier requisito especial u ocasión que estés celebrando...",
     sendMessage: "Enviar Mensaje",
+    formSuccessTitle: "Gracias",
+    formSuccessBody: "Tu solicitud de consulta ha sido enviada. Un asesor de viajes de lujo se comunicará contigo dentro de 24 horas.",
+    formSuccessButton: "Enviar Otro Mensaje",
     locationBanner: "El corazón del Caribe — Tu asesor de viajes de lujo para destinos internacionales",
   },
   viajesDeLujo: {
