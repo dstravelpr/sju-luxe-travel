@@ -2,9 +2,14 @@ import { MapPin, Phone, Mail, Clock, Send, CheckCircle } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 
 const Contact = () => {
   const { t } = useLanguage();
+  const [submitting, setSubmitting] = useState(false);
+  const [searchParams] = useSearchParams();
+  const sent = searchParams.get("sent") === "1";
 
   return (
     <Layout>
