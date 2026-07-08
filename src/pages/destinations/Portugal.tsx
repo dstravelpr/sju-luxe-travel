@@ -54,6 +54,9 @@ const Portugal = () => {
             <p>{d.p3}</p>
             <p>{d.p4}</p>
           </div>
+          <p className="text-muted-foreground text-sm leading-relaxed mb-12">
+            ¿Planificando la ruta desde San Juan? Consulta nuestra guía de <Link to={localPath("/blog/vuelos-puerto-rico-portugal")} className="text-gold hover:text-gold-light underline">vuelos de Puerto Rico a Portugal — mejores rutas y aerolíneas</Link>.
+          </p>
           <h2 className="font-heading text-2xl text-foreground mb-6">
             {d.highlightsTitle} <span className="text-gold-gradient italic">{d.highlightsTitleHighlight}</span>
           </h2>
