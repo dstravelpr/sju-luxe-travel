@@ -109,7 +109,7 @@ const DoTravelAgentsSaveMoney = () => {
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
                 ? "En un mundo donde vuelos y hoteles se pueden reservar en minutos, muchos viajeros se hacen la misma pregunta: ¿Los agentes de viajes realmente te ayudan a ahorrar dinero—o son solo un gasto adicional?"
-                : "In a world where flights and hotels can be booked in minutes, many travelers ask the same question: Do travel agents actually help you save money—or are they just an added expense?"}
+                : "In a world where flights and hotels can be booked in minutes, many travelers ask the same two questions: Is a travel agent worth it? And do they really save you money—or are they just an added expense?"}
             </p>
 
             <p className="text-muted-foreground text-base leading-relaxed">
