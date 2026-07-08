@@ -66,6 +66,9 @@ const Maldives = () => {
               </div>
             ))}
           </div>
+          <p className="text-muted-foreground text-sm leading-relaxed mb-12">
+            ¿Primera vez planeando Maldivas desde San Juan? Lee nuestra <Link to={localPath("/blog/maldivas-desde-puerto-rico-guia")} className="text-gold hover:text-gold-light underline">guía completa de Maldivas desde Puerto Rico: ruta, costo y mejores resorts</Link>.
+          </p>
           {/* Koveli Maldives Expert Badge */}
           <div className="flex flex-col items-center gap-4 mb-12 py-8 gold-border rounded-lg">
             <img src={koveliBadge} alt="Koveli Maldives Expert Badge — SJU Luxe Travel" className="w-28 h-28 rounded-full" />

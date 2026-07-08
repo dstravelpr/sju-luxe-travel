@@ -69,6 +69,8 @@ const Post = () => {
             <p><strong className="text-foreground">{isEs ? "Familiar de lujo:" : "Luxury family:"}</strong> Soneva Fushi, Four Seasons Landaa Giraavaru.</p>
             <p><strong className="text-foreground">{isEs ? "Ultra-lujo sin niños:" : "Adults-only ultra-luxe:"}</strong> Cheval Blanc Randheli, One&Only Reethi Rah.</p>
             <p><strong className="text-foreground">{isEs ? "Mejor valor:" : "Best value:"}</strong> Ayada Maldives, Nala Maldives.</p>
+
+            <p>{isEs ? "Cuando tengas claro el estilo, revisa nuestra " : "Once you've narrowed the style, see our full "}<Link to={localPath("/destinations/maldives")} className="text-gold hover:text-gold-light underline">{isEs ? "guía de vacaciones de lujo en Maldivas desde Puerto Rico" : "luxury Maldives vacations from Puerto Rico guide"}</Link>{isEs ? " con villas sobre el agua, cenas privadas y beneficios exclusivos de resort." : " with overwater villas, private dining and exclusive resort perks."}</p>
           </div>
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">{isEs ? "Cotiza Tu Maldivas" : "Quote Your Maldives Trip"}</h3>

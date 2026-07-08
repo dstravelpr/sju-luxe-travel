@@ -66,6 +66,8 @@ const Post = () => {
                 <li key={i} className="flex items-start gap-3"><span className="text-gold mt-1">•</span>{it}</li>
               ))}
             </ul>
+
+            <p>{isEs ? "Una vez que aterrizas, arma el itinerario con nuestra " : "Once you land, plan the itinerary with our "}<Link to={localPath("/destinations/portugal")} className="text-gold hover:text-gold-light underline">{isEs ? "guía de viajes de lujo a Portugal desde Puerto Rico" : "luxury Portugal travel guide from Puerto Rico"}</Link>{isEs ? " — hoteles boutique en Lisboa y Oporto, quintas del Douro y experiencias privadas seleccionadas." : " — boutique hotels in Lisbon and Porto, Douro quintas and curated private experiences."}</p>
           </div>
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">{isEs ? "Planifica Tu Viaje a Portugal" : "Plan Your Portugal Trip"}</h3>

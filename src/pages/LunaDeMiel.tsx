@@ -77,6 +77,10 @@ const LunaDeMiel = () => {
 
             <h2 className="font-heading text-2xl text-foreground mt-10">{d.h2NoPassport}</h2>
             <p className="text-muted-foreground text-base leading-relaxed">{d.noPassportP}</p>
+
+            <p className="text-muted-foreground text-base leading-relaxed">
+              ¿Quieres ideas concretas por destino? Lee nuestros <Link to={localPath("/blog/luna-de-miel-puerto-rico-2026")} className="text-gold hover:text-gold-light underline">mejores destinos de luna de miel 2026 desde Puerto Rico</Link> con itinerarios, rutas de vuelo y presupuestos.
+            </p>
           </div>
 
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
