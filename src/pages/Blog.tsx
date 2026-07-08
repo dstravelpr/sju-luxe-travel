@@ -10,6 +10,8 @@ import blogAgentImg from "@/assets/blog-travel-agent.jpg";
 import blogRiverCruiseImg from "@/assets/blog-river-cruise.jpg";
 import blogHoneymoonImg from "@/assets/honeymoon/maldives.png";
 import blogWellnessImg from "@/assets/blog-wellness-maldives.jpg";
+import blogDueroImg from "@/assets/rivers/douro.png";
+import blogSanJuanImg from "@/assets/hero-beach-sunset.jpg";
 
 const Blog = () => {
   const { t, localPath, language } = useLanguage();
