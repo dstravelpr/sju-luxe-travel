@@ -70,6 +70,8 @@ const Post = () => {
 
             <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "¿Cuánto cuesta?" : "How much does it cost?"}</h2>
             <p>{isEs ? "En SJU Luxe Travel no cobramos honorarios de concierge para itinerarios de lujo — somos compensados por nuestros hoteles y cruceros partners. Solo para itinerarios muy complejos cobramos un fee de planificación, siempre confirmado al inicio." : "At SJU Luxe Travel we don't charge concierge fees for luxury itineraries — we're compensated by our hotel and cruise partners. Only for highly complex itineraries do we charge a planning fee, always confirmed up front."}</p>
+
+            <p>{isEs ? "Si estás evaluando un viaje complejo, agenda una " : "If you're evaluating a complex trip, book a "}<Link to={localPath("/contact")} className="text-gold hover:text-gold-light underline">{isEs ? "consulta gratis con nuestro concierge de viajes" : "free consultation with our travel concierge"}</Link>{isEs ? " o explora nuestros " : " or explore our "}<Link to={localPath("/viajes-de-lujo-desde-puerto-rico")} className="text-gold hover:text-gold-light underline">{isEs ? "viajes de lujo a medida desde Puerto Rico" : "bespoke luxury trips from Puerto Rico"}</Link>{isEs ? "." : "."}</p>
           </div>
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">{isEs ? "Consulta tu Caso" : "Discuss Your Trip"}</h3>
