@@ -1,34 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://www.sjuluxetravel.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/about</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/destinations</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/destinations/maldives</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/destinations/portugal</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/destinations/mexico</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/contact</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-
-  <url><loc>https://www.sjuluxetravel.com/viajes-de-lujo-desde-puerto-rico</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/luna-de-miel-de-lujo</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/cruceros-de-lujo-desde-san-juan</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/cruceros-fluviales-de-lujo-desde-puerto-rico</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
-
-  <url><loc>https://www.sjuluxetravel.com/blog</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/blog/luna-de-miel-puerto-rico-2026</loc><lastmod>2026-06-01</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/blog/river-cruising-new-generation</loc><lastmod>2026-05-13</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/blog/what-luxury-travel-really-means</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/blog/do-travel-agents-really-help-save-money</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/blog/micro-vacaciones-futuro-del-viaje</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/blog/wellness-travel-intentional-luxury</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/blog/vale-la-pena-asesor-viajes-2026</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/blog/vuelos-puerto-rico-portugal</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/blog/maldivas-desde-puerto-rico-guia</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/blog/servicios-concierge-viaje</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/blog/viajes-sin-pasaporte-desde-pr</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/blog/luxury-solo-female-travel</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
-
-  <url><loc>https://www.sjuluxetravel.com/privacy</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
-  <url><loc>https://www.sjuluxetravel.com/terms</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://www.sjuluxetravel.com/</loc></url>
+  <url><loc>https://www.sjuluxetravel.com/en</loc></url>
+  <url><loc>https://www.sjuluxetravel.com/es</loc></url>
+  <url><loc>https://www.sjuluxetravel.com/about</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/about"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/about"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/about"/></url>
+  <url><loc>https://www.sjuluxetravel.com/en/about</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/about"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/about"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/about"/></url>
+  <url><loc>https://www.sjuluxetravel.com/es/about</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/about"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/about"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/about"/></url>
+  <url><loc>https://www.sjuluxetravel.com/destinations</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/destinations"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/destinations"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/destinations"/></url>
+  <url><loc>https://www.sjuluxetravel.com/en/destinations</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/destinations"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/destinations"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/destinations"/></url>
+  <url><loc>https://www.sjuluxetravel.com/es/destinations</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/destinations"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/destinations"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/destinations"/></url>
+  <url><loc>https://www.sjuluxetravel.com/destinations/maldives</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/destinations/maldives"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/destinations/maldives"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/destinations/maldives"/></url>
+  <url><loc>https://www.sjuluxetravel.com/en/destinations/maldives</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/destinations/maldives"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/destinations/maldives"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/destinations/maldives"/></url>
+  <url><loc>https://www.sjuluxetravel.com/es/destinations/maldives</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/destinations/maldives"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/destinations/maldives"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/destinations/maldives"/></url>
+  <url><loc>https://www.sjuluxetravel.com/destinations/portugal</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/destinations/portugal"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/destinations/portugal"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/destinations/portugal"/></url>
+  <url><loc>https://www.sjuluxetravel.com/en/destinations/portugal</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/destinations/portugal"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/destinations/portugal"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/destinations/portugal"/></url>
+  <url><loc>https://www.sjuluxetravel.com/es/destinations/portugal</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/destinations/portugal"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/destinations/portugal"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/destinations/portugal"/></url>
+  <url><loc>https://www.sjuluxetravel.com/destinations/mexico</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/destinations/mexico"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/destinations/mexico"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/destinations/mexico"/></url>
+  <url><loc>https://www.sjuluxetravel.com/en/destinations/mexico</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/destinations/mexico"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/destinations/mexico"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/destinations/mexico"/></url>
+  <url><loc>https://www.sjuluxetravel.com/es/destinations/mexico</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/destinations/mexico"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/destinations/mexico"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/destinations/mexico"/></url>
+  <url><loc>https://www.sjuluxetravel.com/blog</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/blog"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/blog"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/blog"/></url>
+  <url><loc>https://www.sjuluxetravel.com/en/blog</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/blog"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/blog"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/blog"/></url>
+  <url><loc>https://www.sjuluxetravel.com/es/blog</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/blog"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/blog"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/blog"/></url>
+  <url><loc>https://www.sjuluxetravel.com/blog/what-luxury-travel-really-means</loc><lastmod>2026-06-02</lastmod></url>
+  <url><loc>https://www.sjuluxetravel.com/blog/do-travel-agents-really-help-save-money</loc><lastmod>2026-05-20</lastmod></url>
+  <url><loc>https://www.sjuluxetravel.com/blog/micro-vacaciones-futuro-del-viaje</loc><lastmod>2026-05-01</lastmod></url>
+  <url><loc>https://www.sjuluxetravel.com/blog/river-cruising-new-generation</loc><lastmod>2026-05-13</lastmod></url>
+  <url><loc>https://www.sjuluxetravel.com/blog/luna-de-miel-puerto-rico-2026</loc><lastmod>2026-06-01</lastmod></url>
+  <url><loc>https://www.sjuluxetravel.com/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside</loc><lastmod>2026-05-20</lastmod></url>
+  <url><loc>https://www.sjuluxetravel.com/blog/vale-la-pena-asesor-viajes-2026</loc><lastmod>2026-05-10</lastmod></url>
+  <url><loc>https://www.sjuluxetravel.com/blog/vuelos-puerto-rico-portugal</loc><lastmod>2026-03-05</lastmod></url>
+  <url><loc>https://www.sjuluxetravel.com/blog/maldivas-desde-puerto-rico-guia</loc><lastmod>2026-04-15</lastmod></url>
+  <url><loc>https://www.sjuluxetravel.com/blog/servicios-concierge-viaje</loc><lastmod>2026-03-10</lastmod></url>
+  <url><loc>https://www.sjuluxetravel.com/blog/viajes-sin-pasaporte-desde-pr</loc><lastmod>2026-02-05</lastmod></url>
+  <url><loc>https://www.sjuluxetravel.com/blog/luxury-solo-female-travel</loc><lastmod>2026-05-05</lastmod></url>
+  <url><loc>https://www.sjuluxetravel.com/blog/wellness-travel-intentional-luxury</loc><lastmod>2026-04-30</lastmod></url>
+  <url><loc>https://www.sjuluxetravel.com/contact</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/contact"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/contact"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/contact"/></url>
+  <url><loc>https://www.sjuluxetravel.com/en/contact</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/contact"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/contact"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/contact"/></url>
+  <url><loc>https://www.sjuluxetravel.com/es/contact</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/contact"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/contact"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/contact"/></url>
+  <url><loc>https://www.sjuluxetravel.com/privacy</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/privacy"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/privacy"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/privacy"/></url>
+  <url><loc>https://www.sjuluxetravel.com/en/privacy</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/privacy"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/privacy"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/privacy"/></url>
+  <url><loc>https://www.sjuluxetravel.com/es/privacy</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/privacy"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/privacy"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/privacy"/></url>
+  <url><loc>https://www.sjuluxetravel.com/terms</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/terms"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/terms"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/terms"/></url>
+  <url><loc>https://www.sjuluxetravel.com/en/terms</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/terms"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/terms"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/terms"/></url>
+  <url><loc>https://www.sjuluxetravel.com/es/terms</loc><xhtml:link rel="alternate" hreflang="es-PR" href="https://www.sjuluxetravel.com/es/terms"/><xhtml:link rel="alternate" hreflang="en" href="https://www.sjuluxetravel.com/en/terms"/><xhtml:link rel="alternate" hreflang="x-default" href="https://www.sjuluxetravel.com/terms"/></url>
+  <url><loc>https://www.sjuluxetravel.com/viajes-de-lujo-desde-puerto-rico</loc></url>
+  <url><loc>https://www.sjuluxetravel.com/es/viajes-de-lujo-desde-puerto-rico</loc></url>
+  <url><loc>https://www.sjuluxetravel.com/luna-de-miel-de-lujo</loc></url>
+  <url><loc>https://www.sjuluxetravel.com/es/luna-de-miel-de-lujo</loc></url>
+  <url><loc>https://www.sjuluxetravel.com/cruceros-de-lujo-desde-san-juan</loc></url>
+  <url><loc>https://www.sjuluxetravel.com/es/cruceros-de-lujo-desde-san-juan</loc></url>
+  <url><loc>https://www.sjuluxetravel.com/cruceros-fluviales-de-lujo-desde-puerto-rico</loc></url>
+  <url><loc>https://www.sjuluxetravel.com/es/cruceros-fluviales-de-lujo-desde-puerto-rico</loc></url>
 </urlset>
