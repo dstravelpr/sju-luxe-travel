@@ -90,57 +90,80 @@ const Contact = () => {
               <h2 className="font-heading text-2xl text-foreground mb-2">{t.contact.formTitle}</h2>
               <p className="text-muted-foreground text-xs mb-8">{t.contact.formDescription}</p>
 
-              <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                  <div>
-                    <label className="text-foreground text-xs mb-1.5 block">{t.contact.fullName} <span className="text-gold">*</span></label>
-                    <input type="text" placeholder={t.contact.fullNamePlaceholder} className="w-full px-4 py-3 bg-charcoal gold-border rounded-sm text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors" />
-                  </div>
-                  <div>
-                    <label className="text-foreground text-xs mb-1.5 block">{t.contact.emailAddressLabel} <span className="text-gold">*</span></label>
-                    <input type="email" placeholder={t.contact.emailPlaceholder} className="w-full px-4 py-3 bg-charcoal gold-border rounded-sm text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors" />
-                  </div>
+              {sent ? (
+                <div className="text-center py-10">
+                  <CheckCircle size={48} className="text-gold mx-auto mb-4" />
+                  <h3 className="font-heading text-xl text-foreground mb-2">{t.contact.formSuccessTitle}</h3>
+                  <p className="text-muted-foreground text-sm max-w-md mx-auto mb-6">{t.contact.formSuccessBody}</p>
+                  <a
+                    href="/contact"
+                    className="inline-flex items-center gap-2 px-6 py-2.5 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-[0.15em] uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105"
+                  >
+                    {t.contact.formSuccessButton}
+                  </a>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                  <div>
-                    <label className="text-foreground text-xs mb-1.5 block">{t.contact.phoneNumber}</label>
-                    <input type="tel" placeholder={t.contact.phonePlaceholder} className="w-full px-4 py-3 bg-charcoal gold-border rounded-sm text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors" />
+              ) : (
+                <form
+                  action="https://formsubmit.co/info@sjuluxetravel.com"
+                  method="POST"
+                  onSubmit={() => setSubmitting(true)}
+                  className="space-y-5"
+                >
+                  <input type="hidden" name="_subject" value="New consultation request from SJU Luxe Travel" />
+                  <input type="hidden" name="_template" value="table" />
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input type="hidden" name="_next" value={`${window.location.origin}/contact?sent=1`} />
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div>
+                      <label className="text-foreground text-xs mb-1.5 block">{t.contact.fullName} <span className="text-gold">*</span></label>
+                      <input type="text" name="name" placeholder={t.contact.fullNamePlaceholder} required className="w-full px-4 py-3 bg-charcoal gold-border rounded-sm text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors" />
+                    </div>
+                    <div>
+                      <label className="text-foreground text-xs mb-1.5 block">{t.contact.emailAddressLabel} <span className="text-gold">*</span></label>
+                      <input type="email" name="email" placeholder={t.contact.emailPlaceholder} required className="w-full px-4 py-3 bg-charcoal gold-border rounded-sm text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors" />
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div>
+                      <label className="text-foreground text-xs mb-1.5 block">{t.contact.phoneNumber}</label>
+                      <input type="tel" name="phone" placeholder={t.contact.phonePlaceholder} className="w-full px-4 py-3 bg-charcoal gold-border rounded-sm text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors" />
+                    </div>
+                    <div>
+                      <label className="text-foreground text-xs mb-1.5 block">{t.contact.travelType}</label>
+                      <select name="travelType" className="w-full px-4 py-3 bg-charcoal gold-border rounded-sm text-muted-foreground text-sm focus:outline-none focus:border-gold transition-colors appearance-none">
+                        <option value="">{t.contact.travelTypeSelect}</option>
+                        <option value="honeymoon">{t.contact.travelTypes.honeymoon}</option>
+                        <option value="anniversary">{t.contact.travelTypes.anniversary}</option>
+                        <option value="family">{t.contact.travelTypes.family}</option>
+                        <option value="adventure">{t.contact.travelTypes.adventure}</option>
+                        <option value="wellness">{t.contact.travelTypes.wellness}</option>
+                        <option value="cruise">{t.contact.travelTypes.cruise}</option>
+                        <option value="soloWomen">{t.contact.travelTypes.soloWomen}</option>
+                        <option value="incentive">{t.contact.travelTypes.incentive}</option>
+                        <option value="other">{t.contact.travelTypes.other}</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <div>
+                      <label className="text-foreground text-xs mb-1.5 block">{t.contact.desiredDestinations}</label>
+                      <input type="text" name="destinations" placeholder={t.contact.destinationsPlaceholder} className="w-full px-4 py-3 bg-charcoal gold-border rounded-sm text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors" />
+                    </div>
+                    <div>
+                      <label className="text-foreground text-xs mb-1.5 block">{t.contact.preferredDates}</label>
+                      <input type="text" name="dates" placeholder={t.contact.datesPlaceholder} className="w-full px-4 py-3 bg-charcoal gold-border rounded-sm text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors" />
+                    </div>
                   </div>
                   <div>
-                    <label className="text-foreground text-xs mb-1.5 block">{t.contact.travelType}</label>
-                    <select className="w-full px-4 py-3 bg-charcoal gold-border rounded-sm text-muted-foreground text-sm focus:outline-none focus:border-gold transition-colors appearance-none">
-                      <option value="">{t.contact.travelTypeSelect}</option>
-                      <option value="honeymoon">{t.contact.travelTypes.honeymoon}</option>
-                      <option value="anniversary">{t.contact.travelTypes.anniversary}</option>
-                      <option value="family">{t.contact.travelTypes.family}</option>
-                      <option value="adventure">{t.contact.travelTypes.adventure}</option>
-                      <option value="wellness">{t.contact.travelTypes.wellness}</option>
-                      <option value="cruise">{t.contact.travelTypes.cruise}</option>
-                      <option value="soloWomen">{t.contact.travelTypes.soloWomen}</option>
-                      <option value="incentive">{t.contact.travelTypes.incentive}</option>
-                      <option value="other">{t.contact.travelTypes.other}</option>
-                    </select>
+                    <label className="text-foreground text-xs mb-1.5 block">{t.contact.dreamTrip} <span className="text-gold">*</span></label>
+                    <textarea name="message" rows={5} placeholder={t.contact.dreamTripPlaceholder} required className="w-full px-4 py-3 bg-charcoal gold-border rounded-sm text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors resize-none" />
                   </div>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-                  <div>
-                    <label className="text-foreground text-xs mb-1.5 block">{t.contact.desiredDestinations}</label>
-                    <input type="text" placeholder={t.contact.destinationsPlaceholder} className="w-full px-4 py-3 bg-charcoal gold-border rounded-sm text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors" />
-                  </div>
-                  <div>
-                    <label className="text-foreground text-xs mb-1.5 block">{t.contact.preferredDates}</label>
-                    <input type="text" placeholder={t.contact.datesPlaceholder} className="w-full px-4 py-3 bg-charcoal gold-border rounded-sm text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors" />
-                  </div>
-                </div>
-                <div>
-                  <label className="text-foreground text-xs mb-1.5 block">{t.contact.dreamTrip} <span className="text-gold">*</span></label>
-                  <textarea rows={5} placeholder={t.contact.dreamTripPlaceholder} className="w-full px-4 py-3 bg-charcoal gold-border rounded-sm text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors resize-none" />
-                </div>
-                <button type="submit" className="inline-flex items-center gap-2 px-8 py-3 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-[0.15em] uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105">
-                  {t.contact.sendMessage}
-                  <Send size={14} />
-                </button>
-              </form>
+                  <button type="submit" disabled={submitting} className="inline-flex items-center gap-2 px-8 py-3 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-[0.15em] uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105 disabled:opacity-60 disabled:pointer-events-none">
+                    {submitting ? "Sending..." : t.contact.sendMessage}
+                    <Send size={14} />
+                  </button>
+                </form>
+              )}
             </div>
           </div>
         </div>
