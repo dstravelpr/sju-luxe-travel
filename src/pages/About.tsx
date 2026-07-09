@@ -37,8 +37,11 @@ const About = () => {
         <div className="container mx-auto px-6">
           <span className="font-body text-gold text-sm tracking-[0.3em] uppercase">{t.about.label}</span>
           <h1 className="font-heading text-4xl md:text-6xl text-foreground mt-4">
-            Daniel Santiago Díaz — <span className="text-gold-gradient italic">Agente de Viaje de Lujo en San Juan, Puerto Rico</span>
+            Daniel Santiago Díaz
           </h1>
+          <p className="font-heading text-2xl md:text-3xl text-gold-gradient italic mt-3">
+            Agente de Viajes en San Juan, Puerto Rico
+          </p>
           <p className="text-muted-foreground text-base md:text-lg mt-4 max-w-xl mx-auto">{t.about.subtitle}</p>
           <div className="mt-10 max-w-md mx-auto">
             <img src="/about/hero-portrait.jpg" alt="Daniel Santiago Díaz, founder of SJU Luxe Travel, luxury travel agent in Puerto Rico" className="w-full rounded-lg shadow-2xl object-cover aspect-[3/4]" loading="eager" />
