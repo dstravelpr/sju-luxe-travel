@@ -309,14 +309,14 @@ const pagesEn = {
     title: "Privacy Policy | SJU Luxe Travel",
     description: "SJU Luxe Travel Privacy Policy. Learn how we collect, use and protect your personal information when planning your luxury travel experience.",
     h1: "Privacy Policy",
-    body: "This Privacy Policy describes how SJU Luxe Travel collects, uses, and protects your personal information when you use our luxury travel advisory services.",
+    body: "This Privacy Policy describes how SJU Luxe Travel collects, uses, and protects your personal information when you use our luxury travel planning services.",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Privacy", path: "/privacy" }],
   },
   "/terms": {
     title: "Terms of Service | SJU Luxe Travel",
     description: "SJU Luxe Travel Terms of Service — boutique luxury travel agency in San Juan, Puerto Rico. Review our booking, cancellation and service conditions.",
     h1: "Terms of Service",
-    body: "These Terms of Service govern the use of SJU Luxe Travel's bespoke luxury travel advisory services.",
+    body: "These Terms of Service govern the use of SJU Luxe Travel's bespoke luxury travel planning services.",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Terms", path: "/terms" }],
   },
 };
