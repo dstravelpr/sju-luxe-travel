@@ -9,7 +9,7 @@ const schemaJson = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   headline: "Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena",
-  description: "Guía completa de servicios de concierge de viaje: qué es un travel concierge, qué incluye (reservas VIP, upgrades, asistencia 24/7) y cómo acceder gratis con un asesor de lujo en Puerto Rico.",
+  description: "Guía completa de servicios de concierge de viaje: qué es un travel concierge, qué incluye (reservas VIP, upgrades, asistencia 24/7) y cómo acceder gratis con un agente de lujo en Puerto Rico.",
   author: { "@type": "Person", name: "Daniel Santiago Díaz" },
   publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
   datePublished: "2026-05-29",
@@ -47,10 +47,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "¿Cuál es la diferencia entre un concierge y un agente de viajes?",
+      name: "¿Cuál es la diferencia entre un concierge y un agente de viaje?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Un agente de viajes tradicional se enfoca principalmente en reservar vuelos, hoteles y paquetes al mejor precio. Un concierge de viaje va mucho más allá: diseña la experiencia completa, negocia beneficios exclusivos, coordina cada detalle en tierra y te acompaña 24/7 durante el viaje. En la práctica, todo buen concierge también es agente de viajes, pero no todo agente de viajes ofrece servicio de concierge real."
+        text: "Un agente de viaje tradicional se enfoca principalmente en reservar vuelos, hoteles y paquetes al mejor precio. Un concierge de viaje va mucho más allá: diseña la experiencia completa, negocia beneficios exclusivos, coordina cada detalle en tierra y te acompaña 24/7 durante el viaje. En la práctica, todo buen concierge también es agente de viaje, pero no todo agente de viaje ofrece servicio de concierge real."
       }
     }
   ]
@@ -66,7 +66,7 @@ const Post = () => {
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/servicios-concierge-viaje.jpg"
         title="Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena | SJU Luxe Travel"
-        description="Guía completa de servicios de concierge de viaje: qué es un travel concierge, qué incluye (reservas VIP, upgrades, asistencia 24/7) y cómo acceder gratis con un asesor de lujo en Puerto Rico."
+        description="Guía completa de servicios de concierge de viaje: qué es un travel concierge, qué incluye (reservas VIP, upgrades, asistencia 24/7) y cómo acceder gratis con un agente de lujo en Puerto Rico."
         canonical="https://www.sjuluxetravel.com/blog/servicios-concierge-viaje"
         schemaJson={schemaJson}
       />
@@ -128,8 +128,8 @@ const Post = () => {
                 <p>En SJU Luxe Travel el servicio de concierge está incluido —no cobramos honorarios para itinerarios de lujo porque somos compensados directamente por nuestros hoteles y cruceros partners. Ofrecemos una <Link to={localPath("/contact")} className="text-gold hover:text-gold-light underline">consulta inicial gratuita</Link> para evaluar tu viaje, y solo en casos de itinerarios extremadamente complejos aplicamos un fee de planificación, siempre confirmado al inicio.</p>
               </div>
               <div>
-                <h3 className="font-heading text-lg text-foreground mb-2">¿Cuál es la diferencia entre un concierge y un agente de viajes?</h3>
-                <p>Un agente de viajes tradicional se enfoca principalmente en reservar vuelos, hoteles y paquetes al mejor precio. Un concierge de viaje va mucho más allá: diseña la experiencia completa, negocia beneficios exclusivos, coordina cada detalle en tierra y te acompaña 24/7 durante el viaje. En la práctica, todo buen concierge también es agente de viajes, pero no todo agente de viajes ofrece servicio de concierge real.</p>
+                <h3 className="font-heading text-lg text-foreground mb-2">¿Cuál es la diferencia entre un concierge y un agente de viaje?</h3>
+                <p>Un agente de viaje tradicional se enfoca principalmente en reservar vuelos, hoteles y paquetes al mejor precio. Un concierge de viaje va mucho más allá: diseña la experiencia completa, negocia beneficios exclusivos, coordina cada detalle en tierra y te acompaña 24/7 durante el viaje. En la práctica, todo buen concierge también es agente de viaje, pero no todo agente de viaje ofrece servicio de concierge real.</p>
               </div>
             </div>
           </div>

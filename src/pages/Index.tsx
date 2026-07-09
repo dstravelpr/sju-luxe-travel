@@ -41,7 +41,7 @@ const schemaJson = {
       name: "SJU Luxe Travel",
       url: "https://www.sjuluxetravel.com",
       description:
-        "SJU Luxe Travel is a boutique luxury travel agency based in San Juan, Puerto Rico. We craft bespoke international itineraries to the Maldives, Portugal, Mexico, and beyond — with exclusive NCM Concierge perks you can't get booking online. Bilingual luxury travel advisor serving the US, Caribbean, and Latin America.",
+        "SJU Luxe Travel is a boutique luxury travel agency based in San Juan, Puerto Rico. We craft bespoke international itineraries to the Maldives, Portugal, Mexico, and beyond — with exclusive NCM Concierge perks you can't get booking online. Bilingual luxury travel agent serving the US, Caribbean, and Latin America.",
       telephone: "+16179355714",
       email: "info@sjuluxetravel.com",
       address: {
@@ -58,7 +58,7 @@ const schemaJson = {
       founder: {
         "@type": "Person",
         name: "Daniel Santiago Díaz",
-        jobTitle: "Founder & Lead Travel Advisor",
+        jobTitle: "Founder & Lead Travel Agent",
       },
       areaServed: { "@type": "Place", name: "Worldwide" },
       priceRange: "$$-$$$$",
@@ -96,10 +96,10 @@ const schemaJson = {
       mainEntity: [
         {
           "@type": "Question",
-          name: "¿Vale la pena contratar un agente de viajes?",
+          name: "¿Vale la pena contratar un agente de viaje?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Sí. Un agente de viajes te da acceso a mejoras de habitación gratuitas, créditos de resort, check-in anticipado y atención personalizada 24/7 que no puedes obtener reservando directamente en línea.",
+            text: "Sí. Un agente de viaje te da acceso a mejoras de habitación gratuitas, créditos de resort, check-in anticipado y atención personalizada 24/7 que no puedes obtener reservando directamente en línea.",
           },
         },
         {

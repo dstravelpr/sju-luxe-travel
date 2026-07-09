@@ -6,7 +6,7 @@ const aboutImages = [
   { src: "/about/IMG_2975.jpg", alt: "Daniel Santiago Díaz exploring international destinations" },
   { src: "/about/IMG_9540.jpg", alt: "Daniel Santiago Díaz luxury travel experience" },
   { src: "/about/travel-1.jpg", alt: "Daniel Santiago Díaz on a curated travel adventure" },
-  { src: "/about/Image_18.jpg", alt: "Daniel Santiago Díaz travel advisor SJU Luxe Travel" },
+  { src: "/about/Image_18.jpg", alt: "Daniel Santiago Díaz travel agent SJU Luxe Travel" },
   { src: "/about/IMG_0941.jpg", alt: "Daniel Santiago Díaz destination scouting" },
   { src: "/about/IMG_3214.jpg", alt: "Daniel Santiago Díaz international travel professional" },
   { src: "/about/IMG_2086.jpg", alt: "Daniel Santiago Díaz founder of SJU Luxe Travel" },
@@ -18,14 +18,14 @@ const About = () => {
   return (
     <Layout>
       <SEOHead
-        title="Daniel Santiago Díaz — Asesor de Viajes de Lujo PR"
-        description="Asesor bilingüe de viajes de lujo en San Juan, PR. +10 años de experiencia, beneficios NCM Concierge, itinerarios a medida. Consulta gratuita."
+        title="Daniel Santiago Díaz — Agente de Viaje de Lujo PR"
+        description="Agente bilingüe de viajes de lujo en San Juan, PR. +10 años de experiencia, beneficios NCM Concierge, itinerarios a medida. Consulta gratuita."
         canonical="https://www.sjuluxetravel.com/about"
         schemaJson={{
           "@context": "https://schema.org",
           "@type": "Person",
           "name": "Daniel Santiago Díaz",
-          "jobTitle": "Luxury Travel Advisor",
+          "jobTitle": "Luxury Travel Agent",
           "worksFor": { "@type": "TravelAgency", "name": "SJU Luxe Travel", "url": "https://www.sjuluxetravel.com" },
           "address": { "@type": "PostalAddress", "addressLocality": "San Juan", "addressRegion": "PR", "addressCountry": "US" },
           "knowsLanguage": ["Spanish", "English"],
@@ -37,11 +37,11 @@ const About = () => {
         <div className="container mx-auto px-6">
           <span className="font-body text-gold text-sm tracking-[0.3em] uppercase">{t.about.label}</span>
           <h1 className="font-heading text-4xl md:text-6xl text-foreground mt-4">
-            Daniel Santiago Díaz — <span className="text-gold-gradient italic">Asesor de Viajes de Lujo en San Juan, Puerto Rico</span>
+            Daniel Santiago Díaz — <span className="text-gold-gradient italic">Agente de Viaje de Lujo en San Juan, Puerto Rico</span>
           </h1>
           <p className="text-muted-foreground text-base md:text-lg mt-4 max-w-xl mx-auto">{t.about.subtitle}</p>
           <div className="mt-10 max-w-md mx-auto">
-            <img src="/about/hero-portrait.jpg" alt="Daniel Santiago Díaz, founder of SJU Luxe Travel, luxury travel advisor in Puerto Rico" className="w-full rounded-lg shadow-2xl object-cover aspect-[3/4]" loading="eager" />
+            <img src="/about/hero-portrait.jpg" alt="Daniel Santiago Díaz, founder of SJU Luxe Travel, luxury travel agent in Puerto Rico" className="w-full rounded-lg shadow-2xl object-cover aspect-[3/4]" loading="eager" />
           </div>
         </div>
       </section>
@@ -76,7 +76,7 @@ const About = () => {
             <div className="text-muted-foreground text-sm leading-relaxed space-y-5">
               <p>{t.about.bioP5}</p>
             </div>
-            <img src="/about/Image_18.jpg" alt="Daniel Santiago Díaz travel advisor SJU Luxe Travel" className="w-full rounded-lg shadow-xl object-cover aspect-[4/3]" loading="lazy" />
+            <img src="/about/Image_18.jpg" alt="Daniel Santiago Díaz travel agent SJU Luxe Travel" className="w-full rounded-lg shadow-xl object-cover aspect-[4/3]" loading="lazy" />
           </div>
 
           <blockquote className="max-w-3xl mx-auto mt-8 border-l-2 border-gold pl-6 py-2">

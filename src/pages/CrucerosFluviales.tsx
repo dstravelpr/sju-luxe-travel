@@ -30,7 +30,7 @@ const schema = {
     {
       "@type": "Service",
       "name": "Cruceros Fluviales de Lujo — Agente Certificado desde Puerto Rico",
-      "description": "Agente de viajes certificado por AmaWaterways, Avalon Waterways y Riverside Luxury Cruises. Planificación completa de cruceros fluviales de lujo para viajeros de Puerto Rico.",
+      "description": "Agente de viaje certificado por AmaWaterways, Avalon Waterways y Riverside Luxury Cruises. Planificación completa de cruceros fluviales de lujo para viajeros de Puerto Rico.",
       "provider": {
         "@type": "TravelAgency",
         "name": "SJU Luxe Travel",
@@ -94,7 +94,7 @@ const CrucerosFluviales = () => {
             <div className="aspect-[4/3] overflow-hidden rounded-lg border border-border/30 mt-3 mb-4">
               <img src={amaPhoto} alt="AmaWaterways luxury river ship" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
             </div>
-            <img src={amaLogo} alt="AmaWaterways Certified Advisor" className="w-36 rounded border border-border/30 mb-4 mx-auto" />
+            <img src={amaLogo} alt="AmaWaterways Certified Agent" className="w-36 rounded border border-border/30 mb-4 mx-auto" />
             <p className="text-muted-foreground text-base leading-relaxed">{d.amaDesc}</p>
 
             <h3 className="font-heading text-xl text-foreground mt-8">{d.avalonTitle}</h3>

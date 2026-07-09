@@ -68,7 +68,7 @@ const Post = () => {
 
             <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "Cómo lo planificamos diferente" : "How we plan it differently"}</h2>
             <ul className="space-y-2 list-none">
-              {(isEs ? ["Traslados privados puerta a puerta — nunca taxi sola al hotel","Hoteles seleccionados por su staff de seguridad femenino","Excursiones privadas con guías mujeres cuando sea posible","Línea directa 24/7 con tu asesor en español","Habitaciones en pisos altos, lejos de ascensores"] : ["Private door-to-door transfers — no solo taxi to hotel","Hotels chosen for their female security staff","Private excursions with female guides when possible","24/7 direct line to your advisor","Higher-floor rooms, away from elevators"]).map((it, i) => (
+              {(isEs ? ["Traslados privados puerta a puerta — nunca taxi sola al hotel","Hoteles seleccionados por su staff de seguridad femenino","Excursiones privadas con guías mujeres cuando sea posible","Línea directa 24/7 con tu agente en español","Habitaciones en pisos altos, lejos de ascensores"] : ["Private door-to-door transfers — no solo taxi to hotel","Hotels chosen for their female security staff","Private excursions with female guides when possible","24/7 direct line to your agent","Higher-floor rooms, away from elevators"]).map((it, i) => (
                 <li key={i} className="flex items-start gap-3"><span className="text-gold mt-1">•</span>{it}</li>
               ))}
             </ul>
