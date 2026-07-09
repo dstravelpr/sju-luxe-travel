@@ -8,7 +8,7 @@ import heroImg from "@/assets/travel-agent-desk.jpg";
 const schemaJson = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "¿Vale la Pena un Asesor de Viajes de Lujo en 2026?",
+  headline: "¿Vale la Pena un Agente de Viajes en 2026?",
   description: "Análisis honesto desde Puerto Rico: cuándo un asesor de viajes te conviene en 2026 y cuándo es mejor reservar tú mismo.",
   author: { "@type": "Person", name: "Daniel Santiago Díaz" },
   publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
@@ -26,8 +26,8 @@ const Post = () => {
       <SEOHead
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/vale-la-pena-asesor-2026.jpg"
-        title="¿Vale la Pena un Asesor de Viajes de Lujo en 2026?"
-        description="Cuándo vale la pena contratar un asesor de viajes de lujo en 2026 y cuándo no — análisis honesto desde Puerto Rico por SJU Luxe Travel."
+        title="¿Vale la Pena un Agente de Viajes en 2026?"
+        description="Cuándo vale la pena contratar un agente de viajes en 2026 y cuándo no — análisis honesto desde Puerto Rico por SJU Luxe Travel."
         canonical="https://www.sjuluxetravel.com/blog/vale-la-pena-asesor-viajes-2026"
         schemaJson={schemaJson}
       />
@@ -38,7 +38,7 @@ const Post = () => {
           </Link>
           <div className="mb-10">
             <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{isEs ? "Consejos" : "Travel Tips"}</span>
-            <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">{isEs ? "¿Vale la Pena un Asesor de Viajes de Lujo en 2026?" : "Is a Luxury Travel Advisor Worth It in 2026?"}</h1>
+            <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">{isEs ? "¿Vale la Pena un Agente de Viajes en 2026?" : "Is a Luxury Travel Advisor Worth It in 2026?"}</h1>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
               <span className="flex items-center gap-1.5"><User size={12} className="text-gold" />Daniel Santiago Díaz</span>
               <span className="flex items-center gap-1.5"><Calendar size={12} className="text-gold" />{isEs ? "29 de mayo de 2026" : "May 29, 2026"}</span>

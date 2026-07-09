@@ -188,7 +188,7 @@ const RiverCruisingNewGeneration = () => {
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs ? "El producto cumple. La gente que lo prueba lo entiende. Pero la industria está haciendo un trabajo pésimo comunicando por qué vale la pena antes de que alguien reserve. Este es exactamente el tipo de problema que resuelvo todos los días como " : "As a "}
               <Link to={localPath("/about")} className="text-gold hover:text-gold-light underline-offset-4 hover:underline">
-                {isEs ? "asesor de viajes de lujo" : "luxury travel advisor"}
+                {isEs ? "agente de viajes" : "luxury travel advisor"}
               </Link>
               {isEs
                 ? ". Un cliente me dice: \"Miré cruceros fluviales, pero me parecen caros.\" Y entonces lo desglosamos juntos: tu camarote, todas las comidas (y hablo de comida de verdad, no un buffet genérico), vinos con la cena, excursiones guiadas, traslados — todo incluido. Ahora cotiza hacer ese mismo itinerario por tu cuenta. Vuelos entre ciudades, hoteles en cada destino, restaurantes, taxis, entradas, propinas. Nueve de cada diez veces, el crucero fluvial sale mejor. Lo que pasa es que no lo ves a primera vista porque el precio aparece como un solo número grande en vez de cincuenta pequeños."

@@ -38,7 +38,7 @@ const ROUTE_IMAGES = {
 // ---------------------------------------------------------------
 const pages = {
   "/about": {
-    title: "Sobre SJU Luxe Travel — Asesor de Viajes de Lujo en Puerto Rico",
+    title: "Sobre SJU Luxe Travel — Agente de Viajes en Puerto Rico",
     description: "Conoce a Daniel Santiago Díaz, asesor bilingüe de viajes de lujo certificado en San Juan, Puerto Rico. Itinerarios a medida y beneficios exclusivos de NCM Concierge.",
     h1: "Sobre SJU Luxe Travel — Tu Asesor Bilingüe de Viajes de Lujo",
     body: "Fundada por Daniel Santiago Díaz, profesional bilingüe certificado y concierge privado de viajes con más de una década de experiencia en ventas de lujo en seis continentes. Como agente independiente de NCM Concierge, parte de Travel Leaders, ofrecemos experiencias de viaje de lujo intencional, itinerarios a medida y beneficios exclusivos que no consigues reservando en línea. Licenciados en Florida (ST15578), California, Washington e Iowa.",
@@ -55,7 +55,7 @@ const pages = {
     title: "Viajes de Lujo a Maldivas — Villas Overwater & Resorts Privados | SJU Luxe Travel",
     description: "Planifica tu viaje de lujo a Maldivas con SJU Luxe Travel. Villas overwater, cenas privadas, buceo y beneficios exclusivos en resorts desde San Juan, PR.",
     h1: "Viajes de Lujo a Maldivas — Villas Overwater & Resorts en Islas Privadas",
-    body: "Vive el máximo lujo con nuestros paquetes a medida a Maldivas. Desde villas overwater en los mejores resorts del mundo hasta experiencias en islas privadas, tu asesor de viajes de lujo cuida cada detalle con beneficios exclusivos de NCM Concierge: upgrades de habitación, créditos de resort y amenidades VIP.",
+    body: "Vive el máximo lujo con nuestros paquetes a medida a Maldivas. Desde villas overwater en los mejores resorts del mundo hasta experiencias en islas privadas, tu agente de viajes cuida cada detalle con beneficios exclusivos de NCM Concierge: upgrades de habitación, créditos de resort y amenidades VIP.",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Destinos", path: "/destinations" }, { name: "Maldivas", path: "/destinations/maldives" }],
   },
   "/destinations/portugal": {
@@ -224,7 +224,7 @@ const pages = {
     title: "Viajes de Lujo desde Puerto Rico — Itinerarios Privados a Medida | SJU Luxe Travel",
     description: "Agencia de viajes de lujo boutique en San Juan, Puerto Rico. Itinerarios privados a medida, cruceros, lunas de miel y destinos exclusivos sin turismo masivo.",
     h1: "Viajes de Lujo desde Puerto Rico — Itinerarios Privados a Medida",
-    body: "SJU Luxe Travel es tu asesor de viajes de lujo bilingüe en San Juan, Puerto Rico. Diseñamos viajes privados de lujo desde Puerto Rico con itinerarios a medida, acceso exclusivo y los beneficios VIP de NCM Concierge.",
+    body: "SJU Luxe Travel es tu agente de viajes bilingüe en San Juan, Puerto Rico. Diseñamos viajes privados de lujo desde Puerto Rico con itinerarios a medida, acceso exclusivo y los beneficios VIP de NCM Concierge.",
     service: { name: "Viajes privados de lujo desde Puerto Rico", serviceType: "Luxury travel planning" },
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Viajes de Lujo desde Puerto Rico", path: "/viajes-de-lujo-desde-puerto-rico" }],
   },
