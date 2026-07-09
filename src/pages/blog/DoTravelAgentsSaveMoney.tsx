@@ -11,7 +11,7 @@ const schemaJson = {
     {
       "@type": "BlogPosting",
       headline: "¿Los Agentes de Viajes Realmente Te Ayudan a Ahorrar Dinero?",
-      description: "Una perspectiva honesta de un asesor de viajes moderno sobre cómo la orientación profesional te ahorra dinero, tiempo y estrés.",
+      description: "Una perspectiva honesta de un agente de viajes moderno sobre cómo la orientación profesional te ahorra dinero, tiempo y estrés.",
       author: { "@type": "Person", name: "Daniel Santiago Díaz" },
       publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
       datePublished: "2026-04-07",
@@ -26,7 +26,7 @@ const schemaJson = {
           name: "Does a travel agent save you money?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Yes — a professional travel advisor can save you money through preferred partner rates, complimentary resort credits, room upgrades, and by preventing costly booking mistakes. The real value goes beyond price: time saved, expert support, and personalized planning."
+            text: "Yes — a professional travel agent can save you money through preferred partner rates, complimentary resort credits, room upgrades, and by preventing costly booking mistakes. The real value goes beyond price: time saved, expert support, and personalized planning."
           }
         },
         {
@@ -34,15 +34,15 @@ const schemaJson = {
           name: "Is it worth using a travel agent in 2026?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "For international travel, multi-destination trips, honeymoons, and luxury vacations, yes. An advisor handles complex logistics, advocates for you when things go wrong, and unlocks perks unavailable on booking sites."
+            text: "For international travel, multi-destination trips, honeymoons, and luxury vacations, yes. An agent handles complex logistics, advocates for you when things go wrong, and unlocks perks unavailable on booking sites."
           }
         },
         {
           "@type": "Question",
-          name: "What does a luxury travel advisor actually do?",
+          name: "What does a luxury travel agent actually do?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "A modern travel advisor designs custom itineraries, recommends destinations and hotels that fit your style, handles logistics, secures exclusive perks, and provides human support before and during your trip."
+            text: "A modern travel agent designs custom itineraries, recommends destinations and hotels that fit your style, handles logistics, secures exclusive perks, and provides human support before and during your trip."
           }
         },
         {
@@ -50,7 +50,7 @@ const schemaJson = {
           name: "Do travel agents charge a fee?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Most luxury travel advisors are compensated by their hotel and cruise partners, not by you. Some charge a planning fee for highly complex itineraries — always confirmed upfront."
+            text: "Most luxury travel agents are compensated by their hotel and cruise partners, not by you. Some charge a planning fee for highly complex itineraries — always confirmed upfront."
           }
         }
       ]
@@ -68,7 +68,7 @@ const DoTravelAgentsSaveMoney = () => {
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/do-travel-agents-save-money.jpg"
         title="Is a Travel Agent Worth It? Do They Really Save You Money? | SJU Luxe Travel"
-        description="Is it worth using a travel agent for a luxury vacation? How an advisor saves you money, time & stress. Travel agent vs booking online — an honest take."
+        description="Is it worth using a travel agent for a luxury vacation? How an agent saves you money, time & stress. Travel agent vs booking online — an honest take."
         canonical="https://www.sjuluxetravel.com/blog/do-travel-agents-really-help-save-money"
         schemaJson={schemaJson}
       />
@@ -91,8 +91,8 @@ const DoTravelAgentsSaveMoney = () => {
             </h1>
             <p className="font-heading text-xl md:text-2xl text-muted-foreground italic mb-6">
               {isEs
-                ? "Una Perspectiva Honesta de un Asesor de Viajes Moderno"
-                : "An Honest Perspective from a Modern Travel Advisor"}
+                ? "Una Perspectiva Honesta de un Agente de Viajes Moderno"
+                : "An Honest Perspective from a Modern Travel Agent"}
             </p>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
               <span className="flex items-center gap-1.5"><User size={12} className="text-gold" />Daniel Santiago Díaz</span>
@@ -114,8 +114,8 @@ const DoTravelAgentsSaveMoney = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "En SJU Luxe Travel, creemos en ser honestos. La respuesta corta es: Sí, un asesor de viajes profesional puede ayudarte a ahorrar dinero, tiempo y estrés—pero el verdadero valor va mucho más allá del precio."
-                : "At SJU Luxe Travel, we believe in being honest. The short answer is: Yes, a professional travel advisor can help you save money, time, and stress—but the real value goes far beyond price alone."}
+                ? "En SJU Luxe Travel, creemos en ser honestos. La respuesta corta es: Sí, un agente de viajes profesional puede ayudarte a ahorrar dinero, tiempo y estrés—pero el verdadero valor va mucho más allá del precio."
+                : "At SJU Luxe Travel, we believe in being honest. The short answer is: Yes, a professional travel agent can help you save money, time, and stress—but the real value goes far beyond price alone."}
             </p>
 
             <p className="text-foreground text-lg leading-relaxed font-heading italic">
@@ -126,13 +126,13 @@ const DoTravelAgentsSaveMoney = () => {
 
             {/* Section 1 */}
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "¿Qué Hace Realmente un Asesor de Viajes?" : "What Does a Travel Advisor Really Do?"}
+              {isEs ? "¿Qué Hace Realmente un Agente de Viajes?" : "What Does a Travel Agent Really Do?"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
                 ? "Un consultor de viajes moderno no es solo alguien que reserva viajes. Piensa en él como tu estratega de viajes personal. Un buen agente de viajes se toma el tiempo para:"
-                : "A modern travel advisor is not just someone who books trips. Think of them as your personal travel strategist. A professional advisor takes the time to:"}
+                : "A modern travel agent is not just someone who books trips. Think of them as your personal travel strategist. A professional agent takes the time to:"}
             </p>
 
             <ul className="space-y-2 text-muted-foreground text-base leading-relaxed list-none">
@@ -161,14 +161,14 @@ const DoTravelAgentsSaveMoney = () => {
             <p className="text-muted-foreground text-base leading-relaxed font-semibold">
               {isEs
                 ? "Los motores de reserva en línea muestran precios. Los consultores de viajes entregan valor, conocimiento y apoyo humano."
-                : "Online booking engines show prices. Travel advisors deliver value, insight, and human support."}
+                : "Online booking engines show prices. Travel agents deliver value, insight, and human support."}
             </p>
 
             {/* Section 2 */}
             <h2 className="font-heading text-2xl text-foreground mt-10">
               {isEs
                 ? "Cómo los Consultores de Viajes Te Ayudan a Ahorrar (Sin Recortar Calidad)"
-                : "How Travel Advisors Help You Save Money (Without Cutting Corners)"}
+                : "How Travel Agents Help You Save Money (Without Cutting Corners)"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
@@ -183,7 +183,7 @@ const DoTravelAgentsSaveMoney = () => {
             </h3>
 
             <p className="text-muted-foreground text-base leading-relaxed">
-              {isEs ? "Los agentes de viajes a menudo tienen acceso a:" : "Travel advisors often have access to:"}
+              {isEs ? "Los agentes de viajes a menudo tienen acceso a:" : "Travel agents often have access to:"}
             </p>
 
             <ul className="space-y-2 text-muted-foreground text-base leading-relaxed list-none">
@@ -207,7 +207,7 @@ const DoTravelAgentsSaveMoney = () => {
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
                 ? "Reservar el aeropuerto incorrecto, elegir un hotel mal ubicado, perder requisitos de entrada o quedar atrapado en tarifas restrictivas puede costar mucho más de lo que esperas. Un buen agente de viajes te ayuda a prevenir esos errores antes de que ocurran."
-                : "Booking the wrong airport, choosing a poorly located hotel, missing entry requirements, or locking into restrictive fares can cost far more than you expect. An advisor helps prevent those mistakes before they happen."}
+                : "Booking the wrong airport, choosing a poorly located hotel, missing entry requirements, or locking into restrictive fares can cost far more than you expect. An agent helps prevent those mistakes before they happen."}
             </p>
 
             {/* Sub-section: Time Savings */}
@@ -218,18 +218,18 @@ const DoTravelAgentsSaveMoney = () => {
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
                 ? "Horas de investigación, comparar opciones y dudar de las decisiones se acumulan. Un consultor de viajes agiliza el proceso para que puedas concentrarte en la experiencia—no en la logística."
-                : "Hours of research, comparing options, and second‑guessing decisions adds up. A travel advisor streamlines the process so you can focus on the experience—not the logistics."}
+                : "Hours of research, comparing options, and second‑guessing decisions adds up. A travel agent streamlines the process so you can focus on the experience—not the logistics."}
             </p>
 
             {/* Section 3 */}
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "Cuándo Tiene Más Sentido Usar un Consultor de Viajes" : "When Using a Travel Advisor Makes the Most Sense"}
+              {isEs ? "Cuándo Tiene Más Sentido Usar un Consultor de Viajes" : "When Using a Travel Agent Makes the Most Sense"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
                 ? "Si bien los viajes simples se pueden reservar en línea, un consultor de viajes es especialmente valioso cuando:"
-                : "While simple trips can be booked online, a travel advisor is especially valuable when:"}
+                : "While simple trips can be booked online, a travel agent is especially valuable when:"}
             </p>
 
             <ul className="space-y-2 text-muted-foreground text-base leading-relaxed list-none">
@@ -273,7 +273,7 @@ const DoTravelAgentsSaveMoney = () => {
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
                 ? "Un agente de viajes no reemplaza tu capacidad de reservar en línea. Eleva tu experiencia, protege tu inversión y ayuda a convertir un viaje en una experiencia significativa."
-                : "A travel advisor doesn't replace your ability to book online. They elevate your experience, protect your investment, and help turn a trip into a meaningful journey."}
+                : "A travel agent doesn't replace your ability to book online. They elevate your experience, protect your investment, and help turn a trip into a meaningful journey."}
             </p>
 
             <p className="text-foreground text-lg leading-relaxed font-heading italic">
@@ -307,7 +307,7 @@ const DoTravelAgentsSaveMoney = () => {
               <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/luna-de-miel-puerto-rico-2026")} className="text-gold hover:text-gold-light underline">{isEs ? "Mejores destinos de luna de miel 2026" : "Best honeymoon destinations 2026"}</Link></li>
               <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/river-cruising-new-generation")} className="text-gold hover:text-gold-light underline">{isEs ? "Cruceros fluviales: la nueva generación" : "River cruising: the new generation"}</Link></li>
               <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/micro-vacaciones-futuro-del-viaje")} className="text-gold hover:text-gold-light underline">{isEs ? "Microvacaciones: viajes cortos bien planificados" : "Micro-cations: short trips done right"}</Link></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/about")} className="text-gold hover:text-gold-light underline">{isEs ? "Sobre Daniel Santiago Díaz — Asesor de Lujo" : "About Daniel Santiago Díaz — Luxury Advisor"}</Link></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/about")} className="text-gold hover:text-gold-light underline">{isEs ? "Sobre Daniel Santiago Díaz — Agente de Lujo" : "About Daniel Santiago Díaz — Luxury Agent"}</Link></li>
             </ul>
           </div>
 

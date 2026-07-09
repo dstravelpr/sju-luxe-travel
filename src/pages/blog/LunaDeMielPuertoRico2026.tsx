@@ -16,7 +16,7 @@ const schemaJson = {
   "@type": "BlogPosting",
   headline: "Mejores Destinos de Luna de Miel 2026 desde Puerto Rico",
   description:
-    "Los 7 mejores destinos de luna de miel 2026 desde San Juan: Maldivas, Bora Bora, Amalfi, Santorini, Portugal. Itinerarios, vuelos, presupuestos y temporadas por asesor de lujo.",
+    "Los 7 mejores destinos de luna de miel 2026 desde San Juan: Maldivas, Bora Bora, Amalfi, Santorini, Portugal. Itinerarios, vuelos, presupuestos y temporadas por agente de lujo.",
   author: { "@type": "Person", name: "Daniel Santiago Díaz" },
   publisher: {
     "@type": "Organization",
@@ -89,7 +89,7 @@ const Post = () => {
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/honeymoon-2026.png"
         title="Mejores Destinos de Luna de Miel 2026 desde Puerto Rico"
-        description="Los 7 mejores destinos de luna de miel 2026 desde San Juan: Maldivas, Bora Bora, Amalfi, Santorini, Portugal. Itinerarios y vuelos por asesor de lujo."
+        description="Los 7 mejores destinos de luna de miel 2026 desde San Juan: Maldivas, Bora Bora, Amalfi, Santorini, Portugal. Itinerarios y vuelos por agente de lujo."
         canonical="https://www.sjuluxetravel.com/blog/luna-de-miel-puerto-rico-2026"
         schemaJson={schemaJson}
       />
@@ -307,13 +307,13 @@ const Post = () => {
             <ol className="list-decimal pl-6 space-y-2">
               <li>{isEs ? <><strong className="text-foreground">Volar en economy a Asia.</strong> 28+ horas con escala — destruye los primeros 3 días de luna de miel. Business class es obligatorio para Maldivas/Bora Bora.</> : <><strong className="text-foreground">Flying economy to Asia.</strong> 28+ hours with connection — destroys the first 3 days of honeymoon. Business class is mandatory for Maldives/Bora Bora.</>}</li>
               <li>{isEs ? <><strong className="text-foreground">Subestimar el jet lag.</strong> De Puerto Rico a Maldivas hay 9 horas de diferencia. Planea 2 noches de "buffer" al llegar antes de actividades intensas.</> : <><strong className="text-foreground">Underestimating jet lag.</strong> Puerto Rico to Maldives is 9 hours difference. Plan 2 buffer nights on arrival before intense activities.</>}</li>
-              <li>{isEs ? <><strong className="text-foreground">Reservar solo el hotel.</strong> Los traslados, cenas privadas, experiencias y upgrades son lo que diferencia una luna de miel "linda" de una inolvidable. Un asesor coordina todo esto.</> : <><strong className="text-foreground">Booking just the hotel.</strong> Transfers, private dinners, experiences and upgrades are what separate a "nice" honeymoon from an unforgettable one. An advisor coordinates all of it.</>}</li>
+              <li>{isEs ? <><strong className="text-foreground">Reservar solo el hotel.</strong> Los traslados, cenas privadas, experiencias y upgrades son lo que diferencia una luna de miel "linda" de una inolvidable. Un agente coordina todo esto.</> : <><strong className="text-foreground">Booking just the hotel.</strong> Transfers, private dinners, experiences and upgrades are what separate a "nice" honeymoon from an unforgettable one. An agent coordinates all of it.</>}</li>
               <li>{isEs ? <><strong className="text-foreground">Ignorar el pasaporte.</strong> Necesitas mínimo 6 meses de vigencia desde la fecha de regreso. Renueva antes de reservar.</> : <><strong className="text-foreground">Ignoring the passport.</strong> You need at least 6 months validity from your return date. Renew before booking.</>}</li>
-              <li>{isEs ? <><strong className="text-foreground">No mencionar que es luna de miel.</strong> La mayoría de hoteles 5★ ofrecen amenidades de cortesía (champagne, decoración, upgrades) — pero solo si saben. Un asesor las gestiona por ti.</> : <><strong className="text-foreground">Not mentioning it's a honeymoon.</strong> Most 5★ hotels offer complimentary amenities (champagne, decor, upgrades) — but only if they know. An advisor arranges all of it.</>}</li>
+              <li>{isEs ? <><strong className="text-foreground">No mencionar que es luna de miel.</strong> La mayoría de hoteles 5★ ofrecen amenidades de cortesía (champagne, decoración, upgrades) — pero solo si saben. Un agente las gestiona por ti.</> : <><strong className="text-foreground">Not mentioning it's a honeymoon.</strong> Most 5★ hotels offer complimentary amenities (champagne, decor, upgrades) — but only if they know. An agent arranges all of it.</>}</li>
             </ol>
 
             <h2 className="font-heading text-2xl text-foreground mt-12">
-              {isEs ? "¿Por qué reservar con un agente de viajes?" : "Why book with a luxury travel advisor?"}
+              {isEs ? "¿Por qué reservar con un agente de viajes?" : "Why book with a luxury travel agent?"}
             </h2>
             <p>
               {isEs

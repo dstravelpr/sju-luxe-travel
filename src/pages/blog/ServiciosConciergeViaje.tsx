@@ -9,7 +9,7 @@ const schemaJson = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
   headline: "Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena",
-  description: "Guía completa de servicios de concierge de viaje: qué es un travel concierge, qué incluye (reservas VIP, upgrades, asistencia 24/7) y cómo acceder gratis con un asesor de lujo en Puerto Rico.",
+  description: "Guía completa de servicios de concierge de viaje: qué es un travel concierge, qué incluye (reservas VIP, upgrades, asistencia 24/7) y cómo acceder gratis con un agente de lujo en Puerto Rico.",
   author: { "@type": "Person", name: "Daniel Santiago Díaz" },
   publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
   datePublished: "2026-05-29",
@@ -66,7 +66,7 @@ const Post = () => {
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/servicios-concierge-viaje.jpg"
         title="Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena | SJU Luxe Travel"
-        description="Guía completa de servicios de concierge de viaje: qué es un travel concierge, qué incluye (reservas VIP, upgrades, asistencia 24/7) y cómo acceder gratis con un asesor de lujo en Puerto Rico."
+        description="Guía completa de servicios de concierge de viaje: qué es un travel concierge, qué incluye (reservas VIP, upgrades, asistencia 24/7) y cómo acceder gratis con un agente de lujo en Puerto Rico."
         canonical="https://www.sjuluxetravel.com/blog/servicios-concierge-viaje"
         schemaJson={schemaJson}
       />

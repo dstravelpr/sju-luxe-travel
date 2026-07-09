@@ -105,7 +105,7 @@ export const es: typeof en = {
     startPlanningToday: "Consulta Gratuita — Comienza a Planificar",
   },
   about: {
-    label: "Conoce a Tu Asesor",
+    label: "Conoce a Tu Agente",
     name: "Daniel Santiago",
     nameHighlight: "Díaz",
     subtitle: "Agente de Viajes, San Juan, Puerto Rico — Concierge de Viajes Privado Bilingüe para el Caribe y Más Allá",
@@ -288,7 +288,7 @@ export const es: typeof en = {
   contact: {
     title: "Contáctanos",
     titleHighlight: "",
-    description: "¿Listo para una consulta gratuita de viajes de lujo? Ya sea que sueñes con cruceros de lujo desde San Juan, viajes privados de lujo desde Puerto Rico, viajes de lujo para mujeres solas o destinos exclusivos sin turismo masivo — tu asesor de viajes boutique está listo para crear algo extraordinario.",
+    description: "¿Listo para una consulta gratuita de viajes de lujo? Ya sea que sueñes con cruceros de lujo desde San Juan, viajes privados de lujo desde Puerto Rico, viajes de lujo para mujeres solas o destinos exclusivos sin turismo masivo — tu agente de viajes boutique está listo para crear algo extraordinario.",
     sidebarTitle: "Comencemos a",
     sidebarTitleHighlight: "Planificar",
     location: "Ubicación",
@@ -303,7 +303,7 @@ export const es: typeof en = {
     whyItems: [
       "Agencia de viajes boutique — no un operador turístico masivo ni mayorista",
       "Viajes privados de lujo e itinerarios a medida, nunca viajes grupales",
-      "Asesor de viajes bilingüe — Inglés y Español",
+      "Agente de viajes bilingüe — Inglés y Español",
       "Consulta gratuita de agente de viajes con recomendaciones personalizadas",
       "Beneficios exclusivos de NCM Concierge — mejoras, créditos y amenidades VIP",
       "Agencia licenciada y asegurada: FL, CA, WA e IA",
@@ -348,7 +348,7 @@ export const es: typeof en = {
     p1: "Vivir en Puerto Rico es tener el mundo al alcance de la mano. Desde el Aeropuerto Internacional Luis Muñoz Marín, puedes estar en Europa, las Maldivas, México o el Caribe en cuestión de horas — sin pasaporte, sin complicaciones migratorias, con todas las ventajas de viajar como ciudadano americano. Lo único que necesitas es a alguien que planifique cada detalle con el nivel de cuidado que ese viaje merece.",
     p2: "En <strong>SJU Luxe Travel</strong>, somos tu agencia de viajes de lujo boutique con base en San Juan, Puerto Rico, especializada exclusivamente en viajes de salida — es decir, en llevar a viajeros de Puerto Rico a los destinos más extraordinarios del mundo.",
     h2Why: "¿Por Qué Elegir un Agente de Viajes de Lujo en Puerto Rico?",
-    whyP1: "Reservar un viaje de lujo en línea puede parecer sencillo, pero lo que no ves en ninguna página web es el valor real detrás de trabajar con un asesor certificado con acceso a redes de viaje de élite.",
+    whyP1: "Reservar un viaje de lujo en línea puede parecer sencillo, pero lo que no ves en ninguna página web es el valor real detrás de trabajar con un agente certificado con acceso a redes de viaje de élite.",
     whyP2: "Como agente independiente de <strong>NCM Concierge</strong>, parte de <strong>Travel Leaders</strong> — una de las redes de viaje concierge más respetadas de las Américas — Daniel Santiago Díaz tiene acceso a beneficios exclusivos que simplemente no están disponibles al reservar directamente:",
     whyItems: [
       "Mejoras de habitación gratuitas en hoteles de lujo y resorts boutique",
@@ -388,7 +388,7 @@ export const es: typeof en = {
     label: "Experiencias Románticas",
     h1: "Planificación de Luna de Miel de Lujo",
     h1Highlight: "desde San Juan, Puerto Rico",
-    p1: "Tu luna de miel es, probablemente, el viaje más importante de tu vida. No merece ser un paquete genérico, una habitación estándar ni un itinerario copiado de internet. Merece atención, detalle y un asesor que entienda exactamente lo que significa ese momento para ustedes dos.",
+    p1: "Tu luna de miel es, probablemente, el viaje más importante de tu vida. No merece ser un paquete genérico, una habitación estándar ni un itinerario copiado de internet. Merece atención, detalle y un agente que entienda exactamente lo que significa ese momento para ustedes dos.",
     p2: "En <strong>SJU Luxe Travel</strong>, nos especializamos en lunas de miel de lujo para parejas que salen desde Puerto Rico hacia los destinos más románticos del mundo. Desde la primera llamada hasta el regreso a casa, nos encargamos de cada detalle para que tu único trabajo sea disfrutar.",
     h2Destinations: "Destinos de Luna de Miel de Lujo más Solicitados",
     destinationsIntro: "Cada pareja es diferente. Por eso no creemos en destinos \"de moda\" — creemos en encontrar el destino perfecto <em>para ustedes</em>. Estos son los más solicitados por nuestros clientes desde Puerto Rico:",
@@ -421,7 +421,7 @@ export const es: typeof en = {
   crucerosDeLujo: {
     label: "Experiencias en el Mar",
     h1: "Cruceros de Lujo desde San Juan, Puerto Rico —",
-    h1Highlight: "Tu Asesor VIP",
+    h1Highlight: "Tu Agente VIP",
     p1: "San Juan es uno de los puertos de cruceros más importantes del Caribe. Cada semana, decenas de barcos parten del Muelle de Pan American — pero no todos los cruceros son iguales, y definitivamente no todas las experiencias a bordo son iguales. La diferencia entre un crucero ordinario y un crucero de lujo extraordinario está, en gran parte, en cómo lo planificas y con quién lo planificas.",
     p2: "<strong>SJU Luxe Travel</strong> es tu agente de cruceros de lujo con base en San Juan, Puerto Rico. Como parte de la red <strong>NCM Concierge — Travel Leaders</strong>, tenemos acceso a beneficios VIP exclusivos, tarifas preferentes y atención personalizada que simplemente no obtienes reservando directamente con la naviera.",
     h2Why: "¿Por Qué Planificar Tu Crucero con un Agente de Viaje Especializado?",

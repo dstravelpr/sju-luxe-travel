@@ -94,7 +94,7 @@ const CrucerosFluviales = () => {
             <div className="aspect-[4/3] overflow-hidden rounded-lg border border-border/30 mt-3 mb-4">
               <img src={amaPhoto} alt="AmaWaterways luxury river ship" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
             </div>
-            <img src={amaLogo} alt="AmaWaterways Certified Advisor" className="w-36 rounded border border-border/30 mb-4 mx-auto" />
+            <img src={amaLogo} alt="AmaWaterways Certified Agent" className="w-36 rounded border border-border/30 mb-4 mx-auto" />
             <p className="text-muted-foreground text-base leading-relaxed">{d.amaDesc}</p>
 
             <h3 className="font-heading text-xl text-foreground mt-8">{d.avalonTitle}</h3>

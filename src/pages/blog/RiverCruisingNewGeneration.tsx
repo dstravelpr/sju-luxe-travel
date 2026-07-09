@@ -11,7 +11,7 @@ const schemaJson = {
     {
       "@type": "BlogPosting",
       headline: "River Cruising Isn't Just for Your Parents Anymore — And That Changes Everything",
-      description: "84% of travelers under 35 want to take a river cruise. A luxury travel advisor explains why — and how to get the most out of the experience.",
+      description: "84% of travelers under 35 want to take a river cruise. A luxury travel agent explains why — and how to get the most out of the experience.",
       image: "https://www.sjuluxetravel.com/og/river-cruising-new-generation.jpg",
       author: { "@type": "Person", name: "Daniel Santiago Díaz", url: "https://www.sjuluxetravel.com/about" },
       publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
@@ -29,7 +29,7 @@ const schemaJson = {
         { "@type": "Question", name: "Which river cruise line is best?", acceptedAnswer: { "@type": "Answer", text: "AmaWaterways for active gourmet travelers (onboard bikes, Michelin-recognized dining). Avalon Waterways for biggest panoramic views and flexible excursion choices. Riverside Luxury Cruises (former Crystal River) for top-tier all-inclusive luxury with butler service. The right line depends on your travel style." } },
         { "@type": "Question", name: "What's included in a luxury river cruise?", acceptedAnswer: { "@type": "Answer", text: "Cabin, all meals, wines and beverages with dinner, guided shore excursions in every port, gratuities (on most luxury lines), and transfers. There are no hidden fees the way ocean cruises layer them on — almost everything is bundled into the cruise fare." } },
         { "@type": "Question", name: "What are the best river cruise destinations?", acceptedAnswer: { "@type": "Answer", text: "The Danube (Vienna, Budapest, Bratislava), the Rhine (Cologne, Strasbourg, Basel), the Douro in Portugal (Porto wine country), and the Mekong (Vietnam and Cambodia) are the most-requested itineraries. The Seine (Paris to Normandy) and Rhône (Burgundy/Provence) are excellent secondary choices." } },
-        { "@type": "Question", name: "How do I book a river cruise from Puerto Rico?", acceptedAnswer: { "@type": "Answer", text: "Most river cruises depart from European cities, so the booking starts with finding the right SJU flight routing (typically via JFK, MIA or ATL) and a pre-cruise hotel night. A certified river cruise advisor coordinates flights, hotels, transfers and the cruise as one package — often with extra perks on top." } },
+        { "@type": "Question", name: "How do I book a river cruise from Puerto Rico?", acceptedAnswer: { "@type": "Answer", text: "Most river cruises depart from European cities, so the booking starts with finding the right SJU flight routing (typically via JFK, MIA or ATL) and a pre-cruise hotel night. A certified river cruise agent coordinates flights, hotels, transfers and the cruise as one package — often with extra perks on top." } },
       ],
     },
   ],
@@ -54,7 +54,7 @@ const RiverCruisingNewGeneration = () => {
         description={
           isEs
             ? "El 84% de los viajeros menores de 35 años quiere hacer un crucero fluvial. Un consultor de viajes de lujo explica por qué — y cómo aprovechar al máximo la experiencia."
-            : "84% of travelers under 35 want to take a river cruise. A luxury travel advisor explains why — and how to get the most out of the experience."
+            : "84% of travelers under 35 want to take a river cruise. A luxury travel agent explains why — and how to get the most out of the experience."
         }
         canonical="https://www.sjuluxetravel.com/blog/river-cruising-new-generation"
       />
@@ -188,7 +188,7 @@ const RiverCruisingNewGeneration = () => {
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs ? "El producto cumple. La gente que lo prueba lo entiende. Pero la industria está haciendo un trabajo pésimo comunicando por qué vale la pena antes de que alguien reserve. Este es exactamente el tipo de problema que resuelvo todos los días como " : "As a "}
               <Link to={localPath("/about")} className="text-gold hover:text-gold-light underline-offset-4 hover:underline">
-                {isEs ? "agente de viajes" : "luxury travel advisor"}
+                {isEs ? "agente de viajes" : "luxury travel agent"}
               </Link>
               {isEs
                 ? ". Un cliente me dice: \"Miré cruceros fluviales, pero me parecen caros.\" Y entonces lo desglosamos juntos: tu camarote, todas las comidas (y hablo de comida de verdad, no un buffet genérico), vinos con la cena, excursiones guiadas, traslados — todo incluido. Ahora cotiza hacer ese mismo itinerario por tu cuenta. Vuelos entre ciudades, hoteles en cada destino, restaurantes, taxis, entradas, propinas. Nueve de cada diez veces, el crucero fluvial sale mejor. Lo que pasa es que no lo ves a primera vista porque el precio aparece como un solo número grande en vez de cincuenta pequeños."
@@ -268,7 +268,7 @@ const RiverCruisingNewGeneration = () => {
               </div>
               <div>
                 <h3 className="font-heading text-lg text-foreground mb-2">{isEs ? "¿Cómo reservo un crucero fluvial desde Puerto Rico?" : "How do I book a river cruise from Puerto Rico?"}</h3>
-                <p className="text-muted-foreground text-base leading-relaxed">{isEs ? "Los cruceros salen de ciudades europeas, así que la reserva empieza con el ruteo SJU (vía JFK, MIA o ATL) y una noche pre-crucero. Un asesor coordina vuelos, hotel y crucero como un solo paquete." : "Cruises depart from European cities, so booking starts with SJU routing (via JFK, MIA or ATL) and a pre-cruise hotel night. An advisor coordinates flights, hotel and cruise as one package."}</p>
+                <p className="text-muted-foreground text-base leading-relaxed">{isEs ? "Los cruceros salen de ciudades europeas, así que la reserva empieza con el ruteo SJU (vía JFK, MIA o ATL) y una noche pre-crucero. Un agente coordina vuelos, hotel y crucero como un solo paquete." : "Cruises depart from European cities, so booking starts with SJU routing (via JFK, MIA or ATL) and a pre-cruise hotel night. An agent coordinates flights, hotel and cruise as one package."}</p>
               </div>
             </div>
 
@@ -277,7 +277,7 @@ const RiverCruisingNewGeneration = () => {
             <ul className="space-y-2 list-none">
               <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/cruceros-fluviales-de-lujo-desde-puerto-rico")} className="text-gold hover:text-gold-light underline">{isEs ? "Cruceros fluviales de lujo desde Puerto Rico" : "Luxury river cruises from Puerto Rico"}</Link></li>
               <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/cruceros-de-lujo-desde-san-juan")} className="text-gold hover:text-gold-light underline">{isEs ? "Cruceros de lujo desde San Juan" : "Luxury ocean cruises from San Juan"}</Link></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/do-travel-agents-really-help-save-money")} className="text-gold hover:text-gold-light underline">{isEs ? "¿Los asesores de viajes realmente ayudan a ahorrar?" : "Do travel agents really help save money?"}</Link></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/do-travel-agents-really-help-save-money")} className="text-gold hover:text-gold-light underline">{isEs ? "¿Los agentes de viajes realmente ayudan a ahorrar?" : "Do travel agents really help save money?"}</Link></li>
               <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/luna-de-miel-puerto-rico-2026")} className="text-gold hover:text-gold-light underline">{isEs ? "Mejores destinos de luna de miel 2026" : "Best honeymoon destinations 2026"}</Link></li>
               <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/what-luxury-travel-really-means")} className="text-gold hover:text-gold-light underline">{isEs ? "Lo que realmente significa el viaje de lujo" : "What luxury travel really means"}</Link></li>
               <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/destinations/portugal")} className="text-gold hover:text-gold-light underline">{isEs ? "Portugal — guía de destino" : "Portugal — destination guide"}</Link></li>

@@ -39,14 +39,14 @@ const ROUTE_IMAGES = {
 const pages = {
   "/about": {
     title: "Sobre SJU Luxe Travel — Agente de Viajes en Puerto Rico",
-    description: "Conoce a Daniel Santiago Díaz, asesor bilingüe de viajes de lujo certificado en San Juan, Puerto Rico. Itinerarios a medida y beneficios exclusivos de NCM Concierge.",
-    h1: "Sobre SJU Luxe Travel — Tu Asesor Bilingüe de Viajes de Lujo",
+    description: "Conoce a Daniel Santiago Díaz, agente bilingüe de viajes de lujo certificado en San Juan, Puerto Rico. Itinerarios a medida y beneficios exclusivos de NCM Concierge.",
+    h1: "Sobre SJU Luxe Travel — Tu Agente Bilingüe de Viajes de Lujo",
     body: "Fundada por Daniel Santiago Díaz, profesional bilingüe certificado y concierge privado de viajes con más de una década de experiencia en ventas de lujo en seis continentes. Como agente independiente de NCM Concierge, parte de Travel Leaders, ofrecemos experiencias de viaje de lujo intencional, itinerarios a medida y beneficios exclusivos que no consigues reservando en línea. Licenciados en Florida (ST15578), California, Washington e Iowa.",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Sobre nosotros", path: "/about" }],
   },
   "/destinations": {
     title: "Destinos de Lujo — Maldivas, Portugal, México y Más | SJU Luxe Travel",
-    description: "Explora destinos de lujo curados por tu asesor de viajes en Puerto Rico: Maldivas, Portugal, México y más. Beneficios exclusivos de NCM Concierge en cada propiedad.",
+    description: "Explora destinos de lujo curados por tu agente de viajes en Puerto Rico: Maldivas, Portugal, México y más. Beneficios exclusivos de NCM Concierge en cada propiedad.",
     h1: "Destinos de Lujo — Seleccionados por tu Concierge Privado de Viajes",
     body: "Explora nuestra colección curada de destinos de lujo: villas overwater en Maldivas, itinerarios de lujo por Lisboa y el Algarve en Portugal, paquetes de lujo en México por la Riviera Maya y Oaxaca, y cruceros de lujo que zarpan desde San Juan, Puerto Rico. Cada itinerario a medida se diseña personalmente con acceso exclusivo y beneficios VIP de NCM Concierge.",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Destinos", path: "/destinations" }],
@@ -74,9 +74,9 @@ const pages = {
   },
   "/blog": {
     title: "Blog de Viajes de Lujo — Consejos, Guías e Insights | SJU Luxe Travel",
-    description: "Insights expertos sobre viajes de lujo de tu asesor boutique en San Juan, Puerto Rico. Consejos sobre viajes de lujo intencional e itinerarios a medida.",
+    description: "Insights expertos sobre viajes de lujo de tu agente boutique en San Juan, Puerto Rico. Consejos sobre viajes de lujo intencional e itinerarios a medida.",
     h1: "Blog de Viajes de Lujo — Consejos, Guías e Insights",
-    body: "Insights expertos sobre viajes de lujo de tu asesor boutique en San Juan, Puerto Rico. Aprende sobre viajes de lujo intencional, por qué los agentes de viajes te ahorran dinero y cómo planificar itinerarios a medida hacia los destinos más exclusivos del mundo.",
+    body: "Insights expertos sobre viajes de lujo de tu agente boutique en San Juan, Puerto Rico. Aprende sobre viajes de lujo intencional, por qué los agentes de viajes te ahorran dinero y cómo planificar itinerarios a medida hacia los destinos más exclusivos del mundo.",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }],
   },
   "/blog/what-luxury-travel-really-means": {
@@ -105,9 +105,9 @@ const pages = {
   },
   "/blog/river-cruising-new-generation": {
     title: "Luxury River Cruising Isn't Just for Your Parents Anymore | SJU Luxe Travel",
-    description: "84% of travelers under 35 want to take a river cruise. A luxury travel advisor explains why — and how to get the most out of the experience.",
+    description: "84% of travelers under 35 want to take a river cruise. A luxury travel agent explains why — and how to get the most out of the experience.",
     h1: "River Cruising Isn't Just for Your Parents Anymore — And That Changes Everything",
-    body: "84% of UK travelers aged 18–34 are interested in river cruising. A luxury travel advisor unpacks why a new generation is discovering river cruising — all-inclusive value, walk-off-the-ship convenience, and itineraries on the Danube, Rhine, Douro and Mekong that are best experienced from the water.",
+    body: "84% of UK travelers aged 18–34 are interested in river cruising. A luxury travel agent unpacks why a new generation is discovering river cruising — all-inclusive value, walk-off-the-ship convenience, and itineraries on the Danube, Rhine, Douro and Mekong that are best experienced from the water.",
     datePublished: "2026-05-13", dateModified: "2026-05-13", forcedLang: "en",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }, { name: "River Cruising New Generation", path: "/blog/river-cruising-new-generation" }],
   },
@@ -115,7 +115,7 @@ const pages = {
     title: "Luna de Miel de Lujo desde Puerto Rico 2026 — Destinos Top | SJU Luxe Travel",
     description: "Guía 2026 de lunas de miel de lujo desde Puerto Rico: Maldivas, Bora Bora, Santorini y más. Itinerarios privados con beneficios de NCM Concierge.",
     h1: "Luna de Miel de Lujo desde Puerto Rico 2026 — Destinos Top",
-    body: "Guía completa 2026 de lunas de miel de lujo desde Puerto Rico. Comparamos Maldivas, Bora Bora, Santorini y Bali con villas overwater, cenas privadas y beneficios exclusivos de NCM Concierge diseñados por tu asesor boutique.",
+    body: "Guía completa 2026 de lunas de miel de lujo desde Puerto Rico. Comparamos Maldivas, Bora Bora, Santorini y Bali con villas overwater, cenas privadas y beneficios exclusivos de NCM Concierge diseñados por tu agente boutique.",
     datePublished: "2026-06-01", dateModified: "2026-06-01",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }, { name: "Luna de Miel 2026", path: "/blog/luna-de-miel-puerto-rico-2026" }],
   },
@@ -128,12 +128,12 @@ const pages = {
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }, { name: "Comparativa Cruceros Fluviales", path: "/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside" }],
   },
   "/blog/vale-la-pena-asesor-viajes-2026": {
-    title: "¿Vale la Pena un Asesor de Viajes en 2026? | SJU Luxe Travel",
-    description: "En la era de la IA y las reservas online, ¿sigue teniendo sentido usar un asesor de viajes? Ventajas reales, beneficios exclusivos y ahorro.",
-    h1: "¿Vale la Pena un Asesor de Viajes en 2026?",
-    body: "En 2026, con IA generativa y booking online, muchos se preguntan si un asesor de viajes sigue teniendo sentido. Analizamos beneficios exclusivos de programas como NCM Concierge y por qué al mismo precio consigues más valor.",
+    title: "¿Vale la Pena un Agente de Viajes en 2026? | SJU Luxe Travel",
+    description: "En la era de la IA y las reservas online, ¿sigue teniendo sentido usar un agente de viajes? Ventajas reales, beneficios exclusivos y ahorro.",
+    h1: "¿Vale la Pena un Agente de Viajes en 2026?",
+    body: "En 2026, con IA generativa y booking online, muchos se preguntan si un agente de viajes sigue teniendo sentido. Analizamos beneficios exclusivos de programas como NCM Concierge y por qué al mismo precio consigues más valor.",
     datePublished: "2026-04-22", dateModified: "2026-05-10",
-    breadcrumbs: [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }, { name: "Vale la Pena Asesor 2026", path: "/blog/vale-la-pena-asesor-viajes-2026" }],
+    breadcrumbs: [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }, { name: "Vale la Pena Agente 2026", path: "/blog/vale-la-pena-asesor-viajes-2026" }],
   },
   "/blog/vuelos-puerto-rico-portugal": {
     title: "Vuelos desde Puerto Rico a Portugal — Guía 2026 | SJU Luxe Travel",
@@ -147,7 +147,7 @@ const pages = {
     title: "Maldivas desde Puerto Rico — Guía Completa | SJU Luxe Travel",
     description: "Cómo planificar tu viaje a Maldivas desde Puerto Rico: rutas de vuelo, mejores resorts, temporada ideal y beneficios exclusivos de concierge.",
     h1: "Maldivas desde Puerto Rico — Guía Completa",
-    body: "Guía completa para planificar tu viaje a Maldivas desde Puerto Rico. Cubrimos rutas de vuelo, mejores resorts con villa overwater, temporada ideal y beneficios exclusivos que solo un asesor de lujo puede reservar.",
+    body: "Guía completa para planificar tu viaje a Maldivas desde Puerto Rico. Cubrimos rutas de vuelo, mejores resorts con villa overwater, temporada ideal y beneficios exclusivos que solo un agente de lujo puede reservar.",
     datePublished: "2026-02-25", dateModified: "2026-04-15",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }, { name: "Maldivas desde PR", path: "/blog/maldivas-desde-puerto-rico-guia" }],
   },
@@ -169,7 +169,7 @@ const pages = {
   },
   "/blog/luxury-solo-female-travel": {
     title: "Luxury Solo Female Travel — A Complete Guide | SJU Luxe Travel",
-    description: "How to plan luxury solo female travel with safety, style and exclusive perks. Curated destinations and insider tips from your travel advisor.",
+    description: "How to plan luxury solo female travel with safety, style and exclusive perks. Curated destinations and insider tips from your travel agent.",
     h1: "Luxury Solo Female Travel — A Complete Guide",
     body: "How to plan luxury solo female travel with confidence: safest destinations, best-in-class resorts, private guided experiences, and the concierge perks that make a solo trip feel effortless and elevated.",
     datePublished: "2026-03-28", dateModified: "2026-05-05", forcedLang: "en",
@@ -177,7 +177,7 @@ const pages = {
   },
   "/blog/wellness-travel-intentional-luxury": {
     title: "Wellness Travel — Intentional Luxury Retreats | SJU Luxe Travel",
-    description: "Wellness travel is the new luxury. Discover intentional retreats, spa journeys and transformative escapes designed by a boutique advisor.",
+    description: "Wellness travel is the new luxury. Discover intentional retreats, spa journeys and transformative escapes designed by a boutique agent.",
     h1: "Wellness Travel — Intentional Luxury Retreats",
     body: "Wellness travel is redefining luxury. Discover intentional retreats, spa-forward resorts, and transformative journeys — from Ayurvedic escapes to alpine detox — designed around what you actually need to reset.",
     datePublished: "2026-04-30", dateModified: "2026-04-30", forcedLang: "en",
@@ -202,22 +202,22 @@ const pages = {
   "/contact": {
     title: "Consulta Gratis de Viajes de Lujo — Contacto | SJU Luxe Travel",
     description: "Agenda tu consulta gratis de viajes de lujo con SJU Luxe Travel. Cruceros de lujo, tours privados, viajes solo y más. Teléfono: (617) 935-5714.",
-    h1: "Consulta Gratis de Viajes de Lujo — Contacta a tu Asesor de Lujo",
-    body: "Agenda hoy tu consulta gratis de viajes de lujo. Ya sea que planifiques cruceros de lujo desde San Juan, tours privados guiados, viajes de lujo solo para mujeres, viajes corporativos de incentivos o destinos exclusivos sin turismo masivo, tu asesor boutique de viajes está listo. Teléfono: (617) 935-5714. Email: info@sjuluxetravel.com.",
+    h1: "Consulta Gratis de Viajes de Lujo — Contacta a tu Agente de Lujo",
+    body: "Agenda hoy tu consulta gratis de viajes de lujo. Ya sea que planifiques cruceros de lujo desde San Juan, tours privados guiados, viajes de lujo solo para mujeres, viajes corporativos de incentivos o destinos exclusivos sin turismo masivo, tu agente boutique de viajes está listo. Teléfono: (617) 935-5714. Email: info@sjuluxetravel.com.",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Contacto", path: "/contact" }],
   },
   "/privacy": {
     title: "Política de Privacidad | SJU Luxe Travel",
     description: "Política de Privacidad de SJU Luxe Travel. Conoce cómo recopilamos, usamos y protegemos tu información personal al planificar tu experiencia de viaje de lujo.",
     h1: "Política de Privacidad",
-    body: "Esta Política de Privacidad describe cómo SJU Luxe Travel recopila, usa y protege tu información personal cuando utilizas nuestros servicios de asesoría de viajes de lujo.",
+    body: "Esta Política de Privacidad describe cómo SJU Luxe Travel recopila, usa y protege tu información personal cuando utilizas nuestros servicios de planificación de viajes de lujo.",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Privacidad", path: "/privacy" }],
   },
   "/terms": {
     title: "Términos de Servicio | SJU Luxe Travel",
     description: "Términos de Servicio de SJU Luxe Travel — agencia boutique de viajes de lujo en San Juan, Puerto Rico. Revisa nuestras condiciones de reserva, cancelación y servicio.",
     h1: "Términos de Servicio",
-    body: "Estos Términos de Servicio rigen el uso de los servicios de asesoría de viajes de lujo a medida de SJU Luxe Travel.",
+    body: "Estos Términos de Servicio rigen el uso de los servicios de planificación de viajes de lujo a medida de SJU Luxe Travel.",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Términos", path: "/terms" }],
   },
   "/viajes-de-lujo-desde-puerto-rico": {
@@ -257,15 +257,15 @@ const pages = {
 // English translations (only where a real EN variant exists)
 const pagesEn = {
   "/about": {
-    title: "About SJU Luxe Travel — Luxury Travel Advisor in Puerto Rico",
-    description: "Meet Daniel Santiago Díaz, certified bilingual luxury travel advisor in San Juan, Puerto Rico. Bespoke itineraries and exclusive NCM Concierge perks.",
-    h1: "About SJU Luxe Travel — Your Bilingual Luxury Travel Advisor",
+    title: "About SJU Luxe Travel — Luxury Travel Agent in Puerto Rico",
+    description: "Meet Daniel Santiago Díaz, certified bilingual luxury travel agent in San Juan, Puerto Rico. Bespoke itineraries and exclusive NCM Concierge perks.",
+    h1: "About SJU Luxe Travel — Your Bilingual Luxury Travel Agent",
     body: "Founded by Daniel Santiago Díaz, a certified bilingual professional and private travel concierge with over a decade of luxury sales experience across six continents. As an independent agent of NCM Concierge, part of Travel Leaders, we deliver intentional luxury travel experiences, bespoke itineraries, and exclusive perks you won't get booking online. Licensed in Florida (ST15578), California, Washington, and Iowa.",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "About", path: "/about" }],
   },
   "/destinations": {
     title: "Luxury Destinations — Maldives, Portugal, Mexico & More | SJU Luxe Travel",
-    description: "Explore curated luxury destinations from your Puerto Rico travel advisor: Maldives, Portugal, Mexico and more. Exclusive NCM Concierge perks at every property.",
+    description: "Explore curated luxury destinations from your Puerto Rico travel agent: Maldives, Portugal, Mexico and more. Exclusive NCM Concierge perks at every property.",
     h1: "Luxury Destinations — Curated by Your Private Travel Concierge",
     body: "Explore our curated collection of luxury destinations: overwater villas in the Maldives, luxury itineraries through Lisbon and the Algarve in Portugal, luxury Mexico packages across the Riviera Maya and Oaxaca, and luxury cruises sailing from San Juan, Puerto Rico.",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Destinations", path: "/destinations" }],
@@ -274,7 +274,7 @@ const pagesEn = {
     title: "Luxury Maldives Travel — Overwater Villas & Private Resorts | SJU Luxe Travel",
     description: "Plan your luxury Maldives trip with SJU Luxe Travel. Overwater villas, private dining, diving and exclusive resort perks from San Juan, PR.",
     h1: "Luxury Maldives Travel — Overwater Villas & Private Island Resorts",
-    body: "Experience the ultimate in luxury with our bespoke Maldives packages. From overwater villas at the world's top resorts to private island experiences, your luxury travel advisor handles every detail with exclusive NCM Concierge perks.",
+    body: "Experience the ultimate in luxury with our bespoke Maldives packages. From overwater villas at the world's top resorts to private island experiences, your luxury travel agent handles every detail with exclusive NCM Concierge perks.",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Destinations", path: "/destinations" }, { name: "Maldives", path: "/destinations/maldives" }],
   },
   "/destinations/portugal": {
@@ -293,16 +293,16 @@ const pagesEn = {
   },
   "/blog": {
     title: "Luxury Travel Blog — Tips, Guides & Insights | SJU Luxe Travel",
-    description: "Expert luxury travel insights from your boutique advisor in San Juan, Puerto Rico. Tips on intentional luxury travel and bespoke itineraries.",
+    description: "Expert luxury travel insights from your boutique agent in San Juan, Puerto Rico. Tips on intentional luxury travel and bespoke itineraries.",
     h1: "Luxury Travel Blog — Tips, Guides & Insights",
-    body: "Expert luxury travel insights from your boutique advisor in San Juan, Puerto Rico. Learn about intentional luxury travel, why travel agents save you money, and how to plan bespoke itineraries to the world's most exclusive destinations.",
+    body: "Expert luxury travel insights from your boutique agent in San Juan, Puerto Rico. Learn about intentional luxury travel, why travel agents save you money, and how to plan bespoke itineraries to the world's most exclusive destinations.",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }],
   },
   "/contact": {
     title: "Free Luxury Travel Consultation — Contact | SJU Luxe Travel",
     description: "Schedule your free luxury travel consultation with SJU Luxe Travel. Luxury cruises, private tours, solo travel and more. Phone: (617) 935-5714.",
-    h1: "Free Luxury Travel Consultation — Contact Your Advisor",
-    body: "Schedule your free luxury travel consultation today. Whether you're planning luxury cruises from San Juan, private guided tours, luxury solo female travel, corporate incentive travel or exclusive destinations without mass tourism, your boutique travel advisor is ready. Phone: (617) 935-5714. Email: info@sjuluxetravel.com.",
+    h1: "Free Luxury Travel Consultation — Contact Your Agent",
+    body: "Schedule your free luxury travel consultation today. Whether you're planning luxury cruises from San Juan, private guided tours, luxury solo female travel, corporate incentive travel or exclusive destinations without mass tourism, your boutique travel agent is ready. Phone: (617) 935-5714. Email: info@sjuluxetravel.com.",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Contact", path: "/contact" }],
   },
   "/privacy": {
@@ -389,7 +389,7 @@ const ORG_SCHEMA = {
   priceRange: "$$$",
   areaServed: "Worldwide",
   knowsLanguage: ["en", "es"],
-  founder: { "@type": "Person", name: "Daniel Santiago Díaz", jobTitle: "Luxury Travel Advisor" },
+  founder: { "@type": "Person", name: "Daniel Santiago Díaz", jobTitle: "Luxury Travel Agent" },
   address: {
     "@type": "PostalAddress",
     addressLocality: "San Juan",
