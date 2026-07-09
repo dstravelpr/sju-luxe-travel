@@ -313,7 +313,7 @@ const Post = () => {
             </ol>
 
             <h2 className="font-heading text-2xl text-foreground mt-12">
-              {isEs ? "¿Por qué reservar con un asesor de viajes de lujo?" : "Why book with a luxury travel advisor?"}
+              {isEs ? "¿Por qué reservar con un agente de viajes?" : "Why book with a luxury travel advisor?"}
             </h2>
             <p>
               {isEs

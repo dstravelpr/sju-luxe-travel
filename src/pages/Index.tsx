@@ -96,10 +96,10 @@ const schemaJson = {
       mainEntity: [
         {
           "@type": "Question",
-          name: "¿Vale la pena contratar un agente de viajes de lujo?",
+          name: "¿Vale la pena contratar un agente de viajes?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Sí. Un agente de viajes de lujo te da acceso a mejoras de habitación gratuitas, créditos de resort, check-in anticipado y atención personalizada 24/7 que no puedes obtener reservando directamente en línea.",
+            text: "Sí. Un agente de viajes te da acceso a mejoras de habitación gratuitas, créditos de resort, check-in anticipado y atención personalizada 24/7 que no puedes obtener reservando directamente en línea.",
           },
         },
         {
