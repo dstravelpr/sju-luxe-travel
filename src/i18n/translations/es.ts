@@ -36,7 +36,7 @@ export const es: typeof en = {
     phoneWhatsapp: "Teléfono y WhatsApp",
     email: "Correo",
     licensedIn: "Licenciado en Florida, California, Washington e Iowa",
-    bilingual: "Agente de viajes bilingüe — Inglés y Español",
+    bilingual: "Agente de viaje bilingüe — Inglés y Español",
   },
   home: {
     heroTitle1: "Viajar no es un Lujo,",
@@ -303,7 +303,7 @@ export const es: typeof en = {
     whyItems: [
       "Agencia de viajes boutique — no un operador turístico masivo ni mayorista",
       "Viajes privados de lujo e itinerarios a medida, nunca viajes grupales",
-      "Agente de viajes bilingüe — Inglés y Español",
+      "Agente de viaje bilingüe — Inglés y Español",
       "Consulta gratuita de agente de viaje con recomendaciones personalizadas",
       "Beneficios exclusivos de NCM Concierge — mejoras, créditos y amenidades VIP",
       "Agencia licenciada y asegurada: FL, CA, WA e IA",

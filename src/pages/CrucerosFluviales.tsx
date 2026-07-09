@@ -30,7 +30,7 @@ const schema = {
     {
       "@type": "Service",
       "name": "Cruceros Fluviales de Lujo — Agente Certificado desde Puerto Rico",
-      "description": "Agente de viajes certificado por AmaWaterways, Avalon Waterways y Riverside Luxury Cruises. Planificación completa de cruceros fluviales de lujo para viajeros de Puerto Rico.",
+      "description": "Agente de viaje certificado por AmaWaterways, Avalon Waterways y Riverside Luxury Cruises. Planificación completa de cruceros fluviales de lujo para viajeros de Puerto Rico.",
       "provider": {
         "@type": "TravelAgency",
         "name": "SJU Luxe Travel",
