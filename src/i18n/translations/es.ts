@@ -41,8 +41,8 @@ export const es: typeof en = {
   home: {
     heroTitle1: "Viajar no es un Lujo,",
     heroTitle2: "Es una Oportunidad",
-    heroSubtitle: "Agencia de Viajes de Lujo Boutique — San Juan, Puerto Rico",
-    heroDescription: "Tu agente de viajes de lujo personalizado para destinos internacionales extraordinarios. Nos especializamos en viajes desde Puerto Rico — desde villas sobre el agua en las Maldivas hasta cruceros de lujo desde San Juan, las costas de Portugal y la vibrante cultura de México. Una agencia de viajes boutique, no un operador turístico masivo.",
+    heroSubtitle: "Agencia de Viajes Boutique — San Juan, Puerto Rico",
+    heroDescription: "Tu agente de viajes personalizado para destinos internacionales extraordinarios. Nos especializamos en viajes desde Puerto Rico — desde villas sobre el agua en las Maldivas hasta cruceros de lujo desde San Juan, las costas de Portugal y la vibrante cultura de México. Una agencia de viajes boutique, no un operador turístico masivo.",
     exploreDestinations: "Explorar Destinos",
     startPlanning: "Comenzar a Planificar",
     philosophyLabel: "Nuestra Filosofía",
