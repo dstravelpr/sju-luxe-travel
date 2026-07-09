@@ -18,7 +18,7 @@ const About = () => {
   return (
     <Layout>
       <SEOHead
-        title="Daniel Santiago Díaz — Agente de Viajes de Lujo PR"
+        title="Daniel Santiago Díaz — Agente de Viaje de Lujo PR"
         description="Agente bilingüe de viajes de lujo en San Juan, PR. +10 años de experiencia, beneficios NCM Concierge, itinerarios a medida. Consulta gratuita."
         canonical="https://www.sjuluxetravel.com/about"
         schemaJson={{
@@ -37,7 +37,7 @@ const About = () => {
         <div className="container mx-auto px-6">
           <span className="font-body text-gold text-sm tracking-[0.3em] uppercase">{t.about.label}</span>
           <h1 className="font-heading text-4xl md:text-6xl text-foreground mt-4">
-            Daniel Santiago Díaz — <span className="text-gold-gradient italic">Agente de Viajes de Lujo en San Juan, Puerto Rico</span>
+            Daniel Santiago Díaz — <span className="text-gold-gradient italic">Agente de Viaje de Lujo en San Juan, Puerto Rico</span>
           </h1>
           <p className="text-muted-foreground text-base md:text-lg mt-4 max-w-xl mx-auto">{t.about.subtitle}</p>
           <div className="mt-10 max-w-md mx-auto">

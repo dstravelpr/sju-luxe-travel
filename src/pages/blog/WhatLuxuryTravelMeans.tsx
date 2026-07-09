@@ -11,13 +11,13 @@ const schemaJson = {
     {
       "@type": "BlogPosting",
       headline: "Lo Que Realmente Significa el Viaje de Lujo desde Puerto Rico",
-      description: "El verdadero lujo en los viajes no se trata de cuánto gastas, sino de cómo te hace sentir la experiencia. Filosofía de un agente de viajes en San Juan, PR.",
+      description: "El verdadero lujo en los viajes no se trata de cuánto gastas, sino de cómo te hace sentir la experiencia. Filosofía de un agente de viaje en San Juan, PR.",
       author: { "@type": "Person", name: "Daniel Santiago Díaz", url: "https://www.sjuluxetravel.com/about" },
       publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
       datePublished: "2026-04-08",
       dateModified: "2026-06-02",
       inLanguage: "es-PR",
-      keywords: ["viaje de lujo desde Puerto Rico", "luxury travel from San Juan", "agente de viajes", "Virtuoso agent", "Four Seasons Preferred Partner", "viajes bespoke", "luxury travel philosophy"],
+      keywords: ["viaje de lujo desde Puerto Rico", "luxury travel from San Juan", "agente de viaje", "Virtuoso agent", "Four Seasons Preferred Partner", "viajes bespoke", "luxury travel philosophy"],
       url: "https://www.sjuluxetravel.com/blog/what-luxury-travel-really-means",
       mainEntityOfPage: "https://www.sjuluxetravel.com/blog/what-luxury-travel-really-means",
     },
@@ -303,7 +303,7 @@ const WhatLuxuryTravelMeans = () => {
             {/* Related Reading */}
             <h2 className="font-heading text-2xl text-foreground mt-12">{isEs ? "Lecturas Relacionadas" : "Related Reading"}</h2>
             <ul className="space-y-2 list-none">
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/do-travel-agents-really-help-save-money")} className="text-gold hover:text-gold-light underline">{isEs ? "¿Los agentes de viajes realmente ayudan a ahorrar dinero?" : "Do travel agents really help save money?"}</Link></li>
+              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/do-travel-agents-really-help-save-money")} className="text-gold hover:text-gold-light underline">{isEs ? "¿Los agentes de viaje realmente ayudan a ahorrar dinero?" : "Do travel agents really help save money?"}</Link></li>
               <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/luna-de-miel-puerto-rico-2026")} className="text-gold hover:text-gold-light underline">{isEs ? "Mejores destinos de luna de miel 2026 desde Puerto Rico" : "Best honeymoon destinations 2026 from Puerto Rico"}</Link></li>
               <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/micro-vacaciones-futuro-del-viaje")} className="text-gold hover:text-gold-light underline">{isEs ? "Microvacaciones: el futuro del viaje" : "Micro-cations: the future of travel"}</Link></li>
               <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/river-cruising-new-generation")} className="text-gold hover:text-gold-light underline">{isEs ? "Cruceros fluviales: la nueva generación de viajeros" : "River cruising: the new generation of travelers"}</Link></li>

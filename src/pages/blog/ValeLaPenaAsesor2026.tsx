@@ -8,8 +8,8 @@ import heroImg from "@/assets/travel-agent-desk.jpg";
 const schemaJson = {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  headline: "¿Vale la Pena un Agente de Viajes en 2026?",
-  description: "Análisis honesto desde Puerto Rico: cuándo un agente de viajes te conviene en 2026 y cuándo es mejor reservar tú mismo.",
+  headline: "¿Vale la Pena un Agente de Viaje en 2026?",
+  description: "Análisis honesto desde Puerto Rico: cuándo un agente de viaje te conviene en 2026 y cuándo es mejor reservar tú mismo.",
   author: { "@type": "Person", name: "Daniel Santiago Díaz" },
   publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
   datePublished: "2026-05-29",
@@ -26,8 +26,8 @@ const Post = () => {
       <SEOHead
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/vale-la-pena-asesor-2026.jpg"
-        title="¿Vale la Pena un Agente de Viajes en 2026?"
-        description="Cuándo vale la pena contratar un agente de viajes en 2026 y cuándo no — análisis honesto desde Puerto Rico por SJU Luxe Travel."
+        title="¿Vale la Pena un Agente de Viaje en 2026?"
+        description="Cuándo vale la pena contratar un agente de viaje en 2026 y cuándo no — análisis honesto desde Puerto Rico por SJU Luxe Travel."
         canonical="https://www.sjuluxetravel.com/blog/vale-la-pena-asesor-viajes-2026"
         schemaJson={schemaJson}
       />
@@ -38,7 +38,7 @@ const Post = () => {
           </Link>
           <div className="mb-10">
             <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{isEs ? "Consejos" : "Travel Tips"}</span>
-            <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">{isEs ? "¿Vale la Pena un Agente de Viajes en 2026?" : "Is a Luxury Travel Agent Worth It in 2026?"}</h1>
+            <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">{isEs ? "¿Vale la Pena un Agente de Viaje en 2026?" : "Is a Luxury Travel Agent Worth It in 2026?"}</h1>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
               <span className="flex items-center gap-1.5"><User size={12} className="text-gold" />Daniel Santiago Díaz</span>
               <span className="flex items-center gap-1.5"><Calendar size={12} className="text-gold" />{isEs ? "29 de mayo de 2026" : "May 29, 2026"}</span>
@@ -51,7 +51,7 @@ const Post = () => {
           <div className="prose-custom space-y-6 text-muted-foreground text-base leading-relaxed">
             <p>{isEs ? "En 2026, con IA reservando vuelos y Booking.com en cada bolsillo, la pregunta es legítima: ¿realmente necesitas un consultor de viajes? La respuesta honesta es: depende del viaje." : "In 2026, with AI booking flights and Booking.com in every pocket, the question is fair: do you really need a travel agent? The honest answer: it depends on the trip."}</p>
 
-            <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "Cuándo NO necesitas un agente de viajes" : "When you DON'T need one"}</h2>
+            <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "Cuándo NO necesitas un agente de viaje" : "When you DON'T need one"}</h2>
             <p>{isEs ? "Un fin de semana en Miami, dos noches en Nueva York, una escapada a República Dominicana — reserva tú mismo. La complejidad es baja, el riesgo financiero también, y las plataformas funcionan bien." : "A weekend in Miami, two nights in NYC, a quick Dominican Republic escape — book it yourself. Low complexity, low financial risk, the platforms work fine."}</p>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "Cuándo SÍ vale cada peso" : "When it IS worth every penny"}</h2>

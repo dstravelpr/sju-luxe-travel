@@ -38,7 +38,7 @@ const ROUTE_IMAGES = {
 // ---------------------------------------------------------------
 const pages = {
   "/about": {
-    title: "Sobre SJU Luxe Travel — Agente de Viajes en Puerto Rico",
+    title: "Sobre SJU Luxe Travel — Agente de Viaje en Puerto Rico",
     description: "Conoce a Daniel Santiago Díaz, agente bilingüe de viajes de lujo certificado en San Juan, Puerto Rico. Itinerarios a medida y beneficios exclusivos de NCM Concierge.",
     h1: "Sobre SJU Luxe Travel — Tu Agente Bilingüe de Viajes de Lujo",
     body: "Fundada por Daniel Santiago Díaz, profesional bilingüe certificado y concierge privado de viajes con más de una década de experiencia en ventas de lujo en seis continentes. Como agente independiente de NCM Concierge, parte de Travel Leaders, ofrecemos experiencias de viaje de lujo intencional, itinerarios a medida y beneficios exclusivos que no consigues reservando en línea. Licenciados en Florida (ST15578), California, Washington e Iowa.",
@@ -46,7 +46,7 @@ const pages = {
   },
   "/destinations": {
     title: "Destinos de Lujo — Maldivas, Portugal, México y Más | SJU Luxe Travel",
-    description: "Explora destinos de lujo curados por tu agente de viajes en Puerto Rico: Maldivas, Portugal, México y más. Beneficios exclusivos de NCM Concierge en cada propiedad.",
+    description: "Explora destinos de lujo curados por tu agente de viaje en Puerto Rico: Maldivas, Portugal, México y más. Beneficios exclusivos de NCM Concierge en cada propiedad.",
     h1: "Destinos de Lujo — Seleccionados por tu Concierge Privado de Viajes",
     body: "Explora nuestra colección curada de destinos de lujo: villas overwater en Maldivas, itinerarios de lujo por Lisboa y el Algarve en Portugal, paquetes de lujo en México por la Riviera Maya y Oaxaca, y cruceros de lujo que zarpan desde San Juan, Puerto Rico. Cada itinerario a medida se diseña personalmente con acceso exclusivo y beneficios VIP de NCM Concierge.",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Destinos", path: "/destinations" }],
@@ -55,7 +55,7 @@ const pages = {
     title: "Viajes de Lujo a Maldivas — Villas Overwater & Resorts Privados | SJU Luxe Travel",
     description: "Planifica tu viaje de lujo a Maldivas con SJU Luxe Travel. Villas overwater, cenas privadas, buceo y beneficios exclusivos en resorts desde San Juan, PR.",
     h1: "Viajes de Lujo a Maldivas — Villas Overwater & Resorts en Islas Privadas",
-    body: "Vive el máximo lujo con nuestros paquetes a medida a Maldivas. Desde villas overwater en los mejores resorts del mundo hasta experiencias en islas privadas, tu agente de viajes cuida cada detalle con beneficios exclusivos de NCM Concierge: upgrades de habitación, créditos de resort y amenidades VIP.",
+    body: "Vive el máximo lujo con nuestros paquetes a medida a Maldivas. Desde villas overwater en los mejores resorts del mundo hasta experiencias en islas privadas, tu agente de viaje cuida cada detalle con beneficios exclusivos de NCM Concierge: upgrades de habitación, créditos de resort y amenidades VIP.",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Destinos", path: "/destinations" }, { name: "Maldivas", path: "/destinations/maldives" }],
   },
   "/destinations/portugal": {
@@ -76,7 +76,7 @@ const pages = {
     title: "Blog de Viajes de Lujo — Consejos, Guías e Insights | SJU Luxe Travel",
     description: "Insights expertos sobre viajes de lujo de tu agente boutique en San Juan, Puerto Rico. Consejos sobre viajes de lujo intencional e itinerarios a medida.",
     h1: "Blog de Viajes de Lujo — Consejos, Guías e Insights",
-    body: "Insights expertos sobre viajes de lujo de tu agente boutique en San Juan, Puerto Rico. Aprende sobre viajes de lujo intencional, por qué los agentes de viajes te ahorran dinero y cómo planificar itinerarios a medida hacia los destinos más exclusivos del mundo.",
+    body: "Insights expertos sobre viajes de lujo de tu agente boutique en San Juan, Puerto Rico. Aprende sobre viajes de lujo intencional, por qué los agentes de viaje te ahorran dinero y cómo planificar itinerarios a medida hacia los destinos más exclusivos del mundo.",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }],
   },
   "/blog/what-luxury-travel-really-means": {
@@ -88,12 +88,12 @@ const pages = {
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }, { name: "Qué Significa Viajar con Lujo", path: "/blog/what-luxury-travel-really-means" }],
   },
   "/blog/do-travel-agents-really-help-save-money": {
-    title: "¿Vale la Pena un Agente de Viajes? ¿Te Ahorran Dinero? | SJU Luxe Travel",
-    description: "Descubre por qué los viajeros de lujo eligen agentes de viajes en lugar de reservar en línea. Beneficios exclusivos, upgrades y planificación a medida que ahorra tiempo y dinero.",
-    h1: "¿Vale la Pena un Agente de Viajes? ¿Realmente te Ahorran Dinero?",
-    body: "Descubre por qué los viajeros de lujo eligen consistentemente agentes de viajes sobre las reservas en línea. Desde beneficios exclusivos de NCM Concierge como upgrades cortesía y créditos de resort, hasta acceso insider y planificación de itinerarios a medida, aprende cómo una agencia boutique te ahorra tiempo y dinero.",
+    title: "¿Vale la Pena un Agente de Viaje? ¿Te Ahorran Dinero? | SJU Luxe Travel",
+    description: "Descubre por qué los viajeros de lujo eligen agentes de viaje en lugar de reservar en línea. Beneficios exclusivos, upgrades y planificación a medida que ahorra tiempo y dinero.",
+    h1: "¿Vale la Pena un Agente de Viaje? ¿Realmente te Ahorran Dinero?",
+    body: "Descubre por qué los viajeros de lujo eligen consistentemente agentes de viaje sobre las reservas en línea. Desde beneficios exclusivos de NCM Concierge como upgrades cortesía y créditos de resort, hasta acceso insider y planificación de itinerarios a medida, aprende cómo una agencia boutique te ahorra tiempo y dinero.",
     datePublished: "2026-03-15", dateModified: "2026-05-20",
-    breadcrumbs: [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }, { name: "Vale la Pena un Agente de Viajes", path: "/blog/do-travel-agents-really-help-save-money" }],
+    breadcrumbs: [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }, { name: "Vale la Pena un Agente de Viaje", path: "/blog/do-travel-agents-really-help-save-money" }],
   },
   "/blog/micro-vacaciones-futuro-del-viaje": {
     title: "¿Son las Microvacaciones el Futuro de los Viajes? | SJU Luxe Travel",
@@ -128,10 +128,10 @@ const pages = {
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }, { name: "Comparativa Cruceros Fluviales", path: "/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside" }],
   },
   "/blog/vale-la-pena-asesor-viajes-2026": {
-    title: "¿Vale la Pena un Agente de Viajes en 2026? | SJU Luxe Travel",
-    description: "En la era de la IA y las reservas online, ¿sigue teniendo sentido usar un agente de viajes? Ventajas reales, beneficios exclusivos y ahorro.",
-    h1: "¿Vale la Pena un Agente de Viajes en 2026?",
-    body: "En 2026, con IA generativa y booking online, muchos se preguntan si un agente de viajes sigue teniendo sentido. Analizamos beneficios exclusivos de programas como NCM Concierge y por qué al mismo precio consigues más valor.",
+    title: "¿Vale la Pena un Agente de Viaje en 2026? | SJU Luxe Travel",
+    description: "En la era de la IA y las reservas online, ¿sigue teniendo sentido usar un agente de viaje? Ventajas reales, beneficios exclusivos y ahorro.",
+    h1: "¿Vale la Pena un Agente de Viaje en 2026?",
+    body: "En 2026, con IA generativa y booking online, muchos se preguntan si un agente de viaje sigue teniendo sentido. Analizamos beneficios exclusivos de programas como NCM Concierge y por qué al mismo precio consigues más valor.",
     datePublished: "2026-04-22", dateModified: "2026-05-10",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }, { name: "Vale la Pena Agente 2026", path: "/blog/vale-la-pena-asesor-viajes-2026" }],
   },
@@ -224,7 +224,7 @@ const pages = {
     title: "Viajes de Lujo desde Puerto Rico — Itinerarios Privados a Medida | SJU Luxe Travel",
     description: "Agencia de viajes de lujo boutique en San Juan, Puerto Rico. Itinerarios privados a medida, cruceros, lunas de miel y destinos exclusivos sin turismo masivo.",
     h1: "Viajes de Lujo desde Puerto Rico — Itinerarios Privados a Medida",
-    body: "SJU Luxe Travel es tu agente de viajes bilingüe en San Juan, Puerto Rico. Diseñamos viajes privados de lujo desde Puerto Rico con itinerarios a medida, acceso exclusivo y los beneficios VIP de NCM Concierge.",
+    body: "SJU Luxe Travel es tu agente de viaje bilingüe en San Juan, Puerto Rico. Diseñamos viajes privados de lujo desde Puerto Rico con itinerarios a medida, acceso exclusivo y los beneficios VIP de NCM Concierge.",
     service: { name: "Viajes privados de lujo desde Puerto Rico", serviceType: "Luxury travel planning" },
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Viajes de Lujo desde Puerto Rico", path: "/viajes-de-lujo-desde-puerto-rico" }],
   },

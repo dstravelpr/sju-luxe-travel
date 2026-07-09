@@ -10,8 +10,8 @@ const schemaJson = {
   "@graph": [
     {
       "@type": "BlogPosting",
-      headline: "¿Los Agentes de Viajes Realmente Te Ayudan a Ahorrar Dinero?",
-      description: "Una perspectiva honesta de un agente de viajes moderno sobre cómo la orientación profesional te ahorra dinero, tiempo y estrés.",
+      headline: "¿Los Agentes de Viaje Realmente Te Ayudan a Ahorrar Dinero?",
+      description: "Una perspectiva honesta de un agente de viaje moderno sobre cómo la orientación profesional te ahorra dinero, tiempo y estrés.",
       author: { "@type": "Person", name: "Daniel Santiago Díaz" },
       publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
       datePublished: "2026-04-07",
@@ -86,12 +86,12 @@ const DoTravelAgentsSaveMoney = () => {
             </span>
             <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">
               {isEs
-                ? "¿Los Agentes de Viajes Realmente Te Ayudan a Ahorrar Dinero?"
+                ? "¿Los Agentes de Viaje Realmente Te Ayudan a Ahorrar Dinero?"
                 : "Is a Travel Agent Worth It? Do They Really Save You Money?"}
             </h1>
             <p className="font-heading text-xl md:text-2xl text-muted-foreground italic mb-6">
               {isEs
-                ? "Una Perspectiva Honesta de un Agente de Viajes Moderno"
+                ? "Una Perspectiva Honesta de un Agente de Viaje Moderno"
                 : "An Honest Perspective from a Modern Travel Agent"}
             </p>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
@@ -108,13 +108,13 @@ const DoTravelAgentsSaveMoney = () => {
           <div className="prose-custom space-y-6">
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "En un mundo donde vuelos y hoteles se pueden reservar en minutos, muchos viajeros se hacen la misma pregunta: ¿Los agentes de viajes realmente te ayudan a ahorrar dinero—o son solo un gasto adicional?"
+                ? "En un mundo donde vuelos y hoteles se pueden reservar en minutos, muchos viajeros se hacen la misma pregunta: ¿Los agentes de viaje realmente te ayudan a ahorrar dinero—o son solo un gasto adicional?"
                 : "In a world where flights and hotels can be booked in minutes, many travelers ask the same two questions: Is a travel agent worth it? And do they really save you money—or are they just an added expense?"}
             </p>
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "En SJU Luxe Travel, creemos en ser honestos. La respuesta corta es: Sí, un agente de viajes profesional puede ayudarte a ahorrar dinero, tiempo y estrés—pero el verdadero valor va mucho más allá del precio."
+                ? "En SJU Luxe Travel, creemos en ser honestos. La respuesta corta es: Sí, un agente de viaje profesional puede ayudarte a ahorrar dinero, tiempo y estrés—pero el verdadero valor va mucho más allá del precio."
                 : "At SJU Luxe Travel, we believe in being honest. The short answer is: Yes, a professional travel agent can help you save money, time, and stress—but the real value goes far beyond price alone."}
             </p>
 
@@ -126,12 +126,12 @@ const DoTravelAgentsSaveMoney = () => {
 
             {/* Section 1 */}
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "¿Qué Hace Realmente un Agente de Viajes?" : "What Does a Travel Agent Really Do?"}
+              {isEs ? "¿Qué Hace Realmente un Agente de Viaje?" : "What Does a Travel Agent Really Do?"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Un consultor de viajes moderno no es solo alguien que reserva viajes. Piensa en él como tu estratega de viajes personal. Un buen agente de viajes se toma el tiempo para:"
+                ? "Un consultor de viajes moderno no es solo alguien que reserva viajes. Piensa en él como tu estratega de viajes personal. Un buen agente de viaje se toma el tiempo para:"
                 : "A modern travel agent is not just someone who books trips. Think of them as your personal travel strategist. A professional agent takes the time to:"}
             </p>
 
@@ -183,7 +183,7 @@ const DoTravelAgentsSaveMoney = () => {
             </h3>
 
             <p className="text-muted-foreground text-base leading-relaxed">
-              {isEs ? "Los agentes de viajes a menudo tienen acceso a:" : "Travel agents often have access to:"}
+              {isEs ? "Los agentes de viaje a menudo tienen acceso a:" : "Travel agents often have access to:"}
             </p>
 
             <ul className="space-y-2 text-muted-foreground text-base leading-relaxed list-none">
@@ -206,7 +206,7 @@ const DoTravelAgentsSaveMoney = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Reservar el aeropuerto incorrecto, elegir un hotel mal ubicado, perder requisitos de entrada o quedar atrapado en tarifas restrictivas puede costar mucho más de lo que esperas. Un buen agente de viajes te ayuda a prevenir esos errores antes de que ocurran."
+                ? "Reservar el aeropuerto incorrecto, elegir un hotel mal ubicado, perder requisitos de entrada o quedar atrapado en tarifas restrictivas puede costar mucho más de lo que esperas. Un buen agente de viaje te ayuda a prevenir esos errores antes de que ocurran."
                 : "Booking the wrong airport, choosing a poorly located hotel, missing entry requirements, or locking into restrictive fares can cost far more than you expect. An agent helps prevent those mistakes before they happen."}
             </p>
 
@@ -272,7 +272,7 @@ const DoTravelAgentsSaveMoney = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Un agente de viajes no reemplaza tu capacidad de reservar en línea. Eleva tu experiencia, protege tu inversión y ayuda a convertir un viaje en una experiencia significativa."
+                ? "Un agente de viaje no reemplaza tu capacidad de reservar en línea. Eleva tu experiencia, protege tu inversión y ayuda a convertir un viaje en una experiencia significativa."
                 : "A travel agent doesn't replace your ability to book online. They elevate your experience, protect your investment, and help turn a trip into a meaningful journey."}
             </p>
 
