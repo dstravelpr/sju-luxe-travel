@@ -1,9 +1,9 @@
 # SJU Luxe Travel
 
-> Boutique luxury travel agency based in San Juan, Puerto Rico. Founded by Daniel Santiago Díaz, bilingual luxury travel advisor and private travel concierge. A boutique travel agency — not a large tour operator or travel wholesaler.
+> Boutique luxury travel agency based in San Juan, Puerto Rico. Founded by Daniel Santiago Díaz, bilingual luxury travel agent and private travel concierge. A boutique travel agency — not a large tour operator or travel wholesaler.
 
 ## About
-SJU Luxe Travel is a boutique luxury travel agency in San Juan, Puerto Rico. We craft bespoke, intentional luxury travel experiences to destinations including the Maldives, Portugal, Mexico, and beyond. We are an independent agent of NCM Concierge, part of Travel Leaders, one of the most respected concierge travel networks in the Americas. As a bilingual luxury travel advisor (English & Spanish), we serve clients across the US mainland, the Caribbean, and Latin America. We specialize in private guided tours and bespoke itineraries — never group travel or mass-market packages.
+SJU Luxe Travel is a boutique luxury travel agency in San Juan, Puerto Rico. We craft bespoke, intentional luxury travel experiences to destinations including the Maldives, Portugal, Mexico, and beyond. We are an independent agent of NCM Concierge, part of Travel Leaders, one of the most respected concierge travel networks in the Americas. As a bilingual luxury travel agent (English & Spanish), we serve clients across the US mainland, the Caribbean, and Latin America. We specialize in private guided tours and bespoke itineraries — never group travel or mass-market packages.
 
 ## Services
 - Bespoke travel itinerary planning (itinerarios de lujo a medida)
@@ -30,7 +30,7 @@ SJU Luxe Travel is a boutique luxury travel agency in San Juan, Puerto Rico. We 
 ## Why Choose a Boutique Travel Agency
 - Boutique travel agency vs large tour operator — personalized, not mass-market
 - Private guided tours vs group travel — every itinerary is bespoke
-- Bilingual luxury travel advisor — English & Spanish
+- Bilingual luxury travel agent — English & Spanish
 - Private travel concierge serving the Caribbean, US & Latin America
 - Exclusive NCM Concierge perks unavailable when booking online
 - Over a decade of luxury sales experience across six continents
@@ -39,7 +39,7 @@ SJU Luxe Travel is a boutique luxury travel agency in San Juan, Puerto Rico. We 
 
 ## Pages
 - [Home](/): Boutique luxury travel agency in San Juan, PR.
-- [About](/about): Daniel Santiago Díaz, bilingual luxury travel advisor.
+- [About](/about): Daniel Santiago Díaz, bilingual luxury travel agent.
 - [Destinations](/destinations): Curated luxury destinations overview.
 - [Maldives](/destinations/maldives): Overwater villas & private dining.
 - [Portugal](/destinations/portugal): Lisbon, Porto, Algarve, Douro Valley.
@@ -50,7 +50,7 @@ SJU Luxe Travel is a boutique luxury travel agency in San Juan, Puerto Rico. We 
 - [Cruceros Fluviales de Lujo](/cruceros-fluviales-de-lujo-desde-puerto-rico): River cruise planning.
 - [Blog](/blog): Luxury travel articles and insights.
 - [What Luxury Travel Really Means](/blog/what-luxury-travel-really-means): Intentional luxury travel philosophy.
-- [Is It Worth Using a Travel Agent?](/blog/do-travel-agents-really-help-save-money): Honest take on advisor value.
+- [Is It Worth Using a Travel Agent?](/blog/do-travel-agents-really-help-save-money): Honest take on agent value.
 - [Microvacaciones — El Futuro del Viaje](/blog/micro-vacaciones-futuro-del-viaje): Short luxury getaways.
 - [River Cruising New Generation](/blog/river-cruising-new-generation): Why younger travelers love river cruises.
 - [Contact](/contact): Schedule a free luxury travel consultation.
