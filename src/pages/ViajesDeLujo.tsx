@@ -6,16 +6,28 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import travelAgentDesk from "@/assets/travel-agent-desk.jpg";
 import travelerAirport from "@/assets/traveler-airport.jpg";
 
-const schema = {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "name": "Viajes de Lujo desde Puerto Rico",
-  "provider": { "@type": "TravelAgency", "name": "SJU Luxe Travel", "url": "https://www.sjuluxetravel.com", "sameAs": ["https://www.instagram.com/sjuluxetravel", "https://www.facebook.com/sjuluxetravel"] },
-  "areaServed": "Puerto Rico",
-  "description": "Planificación de viajes de lujo saliendo desde Puerto Rico a destinos internacionales exclusivos.",
-  "url": "https://www.sjuluxetravel.com/viajes-de-lujo-desde-puerto-rico",
-  "availableLanguage": ["Spanish", "English"],
-};
+import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
+
+const PAGE_URL = "https://www.sjuluxetravel.com/viajes-de-lujo-desde-puerto-rico";
+const schema = buildGraph(
+  {
+    "@type": "WebPage",
+    "@id": `${PAGE_URL}#webpage`,
+    url: PAGE_URL,
+    name: "Viajes de Lujo desde Puerto Rico",
+    isPartOf: WEBSITE_REF,
+    inLanguage: "es",
+  },
+  {
+    "@type": "Service",
+    name: "Viajes de Lujo desde Puerto Rico",
+    provider: ORG_REF,
+    areaServed: "Puerto Rico",
+    description: "Planificación de viajes de lujo saliendo desde Puerto Rico a destinos internacionales exclusivos.",
+    url: PAGE_URL,
+    availableLanguage: ["Spanish", "English"],
+  }
+);
 
 const ViajesDeLujo = () => {
   const { t, localPath } = useLanguage();
@@ -26,9 +38,10 @@ const ViajesDeLujo = () => {
       <SEOHead
         title="Viajes de Lujo desde Puerto Rico | SJU Luxe Travel"
         description="Itinerarios de lujo personalizados desde PR a las Maldivas, Europa, México y más. Servicio bilingüe, sin pasaporte para destinos US."
-        canonical="https://www.sjuluxetravel.com/viajes-de-lujo-desde-puerto-rico"
+        canonical={PAGE_URL}
         schemaJson={schema}
       />
+
 
       <article className="pt-32 pb-20 bg-background">
         <div className="container mx-auto px-6 max-w-3xl">
