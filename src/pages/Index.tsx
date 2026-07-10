@@ -51,9 +51,8 @@ const schemaJson = {
         addressCountry: "US",
       },
       sameAs: [
-        "https://www.instagram.com/sjuluxetravel/",
+        "https://www.instagram.com/sjuluxetravel",
         "https://www.facebook.com/sjuluxetravel",
-        "https://www.linkedin.com/company/sju-luxe-travel",
       ],
       founder: {
         "@type": "Person",

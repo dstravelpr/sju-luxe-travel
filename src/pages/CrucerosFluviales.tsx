@@ -35,7 +35,8 @@ const schema = {
         "@type": "TravelAgency",
         "name": "SJU Luxe Travel",
         "url": "https://www.sjuluxetravel.com",
-        "address": { "@type": "PostalAddress", "addressLocality": "San Juan", "addressRegion": "PR", "addressCountry": "US" }
+        "address": { "@type": "PostalAddress", "addressLocality": "San Juan", "addressRegion": "PR", "addressCountry": "US" },
+        "sameAs": ["https://www.instagram.com/sjuluxetravel", "https://www.facebook.com/sjuluxetravel"]
       },
       "areaServed": { "@type": "State", "name": "Puerto Rico" },
       "serviceType": "River Cruise Planning",
