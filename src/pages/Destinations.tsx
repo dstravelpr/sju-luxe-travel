@@ -85,7 +85,7 @@ const Destinations = () => {
     {
       subtitle: dp.paradiseOnEarth,
       title: t.home.maldives,
-      image: maldivesImg,
+      image: maldivesImg, imageWebp: maldivesImgWebp,
       imageAlt: "The Maldives — luxury travel destination by SJU Luxe Travel",
       description: dp.maldivesDesc,
       location: dp.indianOcean,
@@ -104,7 +104,7 @@ const Destinations = () => {
     {
       subtitle: dp.oldWorldCharm,
       title: t.home.portugal,
-      image: portugalImg,
+      image: portugalImg, imageWebp: portugalImgWebp,
       imageAlt: "Portugal — luxury travel destination by SJU Luxe Travel",
       description: dp.portugalDesc,
       location: dp.westernEurope,
@@ -118,7 +118,7 @@ const Destinations = () => {
     {
       subtitle: dp.richCulture,
       title: t.home.mexico,
-      image: mexicoImg,
+      image: mexicoImg, imageWebp: mexicoImgWebp,
       imageAlt: "Mexico — luxury travel destination by SJU Luxe Travel",
       description: dp.mexicoDesc,
       location: dp.northAmerica,
