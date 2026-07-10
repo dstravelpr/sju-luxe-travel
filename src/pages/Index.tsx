@@ -163,7 +163,7 @@ const Index = () => {
             <br />
             <span className="text-gold-gradient italic">{t.home.heroTitle2}</span>
           </div>
-          <h2 className="font-body text-xs md:text-base tracking-[0.3em] uppercase text-gold mb-4 md:mb-6 animate-fade-in-up">
+          <h2 className="font-body text-[11px] md:text-base tracking-[0.3em] uppercase text-gold mb-4 md:mb-6 animate-fade-in-up drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
             {t.home.heroSubtitle}
           </h2>
           <p className="font-body text-base md:text-xl text-cream max-w-2xl mx-auto mb-8 md:mb-10 animate-fade-in-delay drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
