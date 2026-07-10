@@ -18,11 +18,8 @@ const schemaJson = buildGraph({
   description:
     "Los 7 mejores destinos de luna de miel 2026 desde San Juan: Maldivas, Bora Bora, Amalfi, Santorini, Portugal. Itinerarios, vuelos, presupuestos y temporadas por agente de lujo.",
   author: { "@type": "Person", name: "Daniel Santiago Díaz" },
-  publisher: {
-    "@type": "Organization",
-    name: "SJU Luxe Travel",
-    url: "https://www.sjuluxetravel.com",
-  },
+  publisher: ORG_REF,
+
   datePublished: "2026-06-01",
   dateModified: "2026-06-01",
   inLanguage: "es-PR",
