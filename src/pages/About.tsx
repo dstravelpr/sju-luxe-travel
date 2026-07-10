@@ -26,7 +26,7 @@ const About = () => {
           "@type": "Person",
           "name": "Daniel Santiago Díaz",
           "jobTitle": "Luxury Travel Agent",
-          "worksFor": { "@type": "TravelAgency", "name": "SJU Luxe Travel", "url": "https://www.sjuluxetravel.com" },
+          "worksFor": { "@type": "TravelAgency", "name": "SJU Luxe Travel", "url": "https://www.sjuluxetravel.com", "sameAs": ["https://www.instagram.com/sjuluxetravel", "https://www.facebook.com/sjuluxetravel"] },
           "address": { "@type": "PostalAddress", "addressLocality": "San Juan", "addressRegion": "PR", "addressCountry": "US" },
           "knowsLanguage": ["Spanish", "English"],
           "url": "https://www.sjuluxetravel.com/about"

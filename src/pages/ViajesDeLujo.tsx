@@ -10,7 +10,7 @@ const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Viajes de Lujo desde Puerto Rico",
-  "provider": { "@type": "TravelAgency", "name": "SJU Luxe Travel", "url": "https://www.sjuluxetravel.com" },
+  "provider": { "@type": "TravelAgency", "name": "SJU Luxe Travel", "url": "https://www.sjuluxetravel.com", "sameAs": ["https://www.instagram.com/sjuluxetravel", "https://www.facebook.com/sjuluxetravel"] },
   "areaServed": "Puerto Rico",
   "description": "Planificación de viajes de lujo saliendo desde Puerto Rico a destinos internacionales exclusivos.",
   "url": "https://www.sjuluxetravel.com/viajes-de-lujo-desde-puerto-rico",

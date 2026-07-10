@@ -53,7 +53,7 @@ const CrucerosDeLujo = () => {
             {
               "@type": "Service",
               "name": "Cruceros de Lujo desde San Juan Puerto Rico",
-              "provider": { "@type": "TravelAgency", "name": "SJU Luxe Travel", "url": "https://www.sjuluxetravel.com" },
+              "provider": { "@type": "TravelAgency", "name": "SJU Luxe Travel", "url": "https://www.sjuluxetravel.com", "sameAs": ["https://www.instagram.com/sjuluxetravel", "https://www.facebook.com/sjuluxetravel"] },
               "areaServed": "San Juan, Puerto Rico",
               "description": "Planificación VIP de cruceros de lujo que salen desde el puerto de San Juan, Puerto Rico, con beneficios exclusivos NCM Concierge.",
               "url": "https://www.sjuluxetravel.com/cruceros-de-lujo-desde-san-juan"
