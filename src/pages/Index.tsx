@@ -125,9 +125,10 @@ const Index = () => {
   ];
 
   const destinations = [
-    { image: maldivesImg, title: t.home.maldives, subtitle: t.home.maldivesSub },
-    { image: portugalImg, title: t.home.portugal, subtitle: t.home.portugalSub },
-    { image: mexicoImg, title: t.home.mexico, subtitle: t.home.mexicoSub },
+    { image: maldivesImg, imageWebp: maldivesImgWebp, title: t.home.maldives, subtitle: t.home.maldivesSub },
+    { image: portugalImg, imageWebp: portugalImgWebp, title: t.home.portugal, subtitle: t.home.portugalSub },
+    { image: mexicoImg, imageWebp: mexicoImgWebp, title: t.home.mexico, subtitle: t.home.mexicoSub },
+
   ];
 
   return (
@@ -141,7 +142,7 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-10">
-        <img src={heroBg} alt="Luxury beach sunset — SJU Luxe Travel" width="1920" height="1080" className="absolute inset-0 w-full h-full object-cover object-center" fetchPriority="high" decoding="async" />
+        <Picture src={heroBg} webpSrc={heroBgWebp} alt="Luxury beach sunset — SJU Luxe Travel" width={1920} height={1080} className="absolute inset-0 w-full h-full object-cover object-center" fetchPriority="high" decoding="async" />
         <div className="absolute inset-0 hero-overlay" />
         <div className="relative z-10 container mx-auto px-6 text-center">
           <img src={logo} alt="SJU Luxe Travel" className="hidden md:block h-24 w-24 mx-auto mb-6 animate-fade-in object-contain" />
@@ -235,7 +236,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {destinations.map((dest, index) => (
               <Link key={index} to={`/destinations/${dest.title.toLowerCase().replace(/^(the |las |los )/, "")}`} className="group relative aspect-[4/5] overflow-hidden rounded-lg gold-border gold-border-hover">
-                <img src={dest.image} alt={`${dest.title} — luxury travel destination curated by SJU Luxe Travel`} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                <Picture src={dest.image} webpSrc={dest.imageWebp} alt={`${dest.title} — luxury travel destination curated by SJU Luxe Travel`} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <p className="text-gold text-xs tracking-widest uppercase mb-2">{dest.subtitle}</p>
