@@ -4,11 +4,17 @@ import { ArrowRight, Compass, Heart, Users, Globe, Shield, Star, ChevronDown } f
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { Picture } from "@/components/Picture";
 import heroBg from "@/assets/hero-beach-sunset.jpg";
+import heroBgWebp from "@/assets/hero-beach-sunset.webp";
 import logo from "@/assets/logo.png";
 import maldivesImg from "@/assets/destination-maldives.jpg";
+import maldivesImgWebp from "@/assets/destination-maldives.webp";
 import portugalImg from "@/assets/destination-portugal.jpg";
+import portugalImgWebp from "@/assets/destination-portugal.webp";
 import mexicoImg from "@/assets/destination-mexico.jpg";
+import mexicoImgWebp from "@/assets/destination-mexico.webp";
+
 
 const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
   const [isOpen, setIsOpen] = useState(false);
