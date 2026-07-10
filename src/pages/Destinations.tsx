@@ -20,6 +20,8 @@ const DestinationCard = ({
     subtitle: string;
     title: string;
     image: string;
+    imageWebp: string;
+
     imageAlt: string;
     description: string;
     location: string;
