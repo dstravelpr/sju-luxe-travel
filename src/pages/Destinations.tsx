@@ -3,10 +3,15 @@ import { ArrowRight, MapPin, Clock, Users } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { Picture } from "@/components/Picture";
 import maldivesImg from "@/assets/destination-maldives.jpg";
+import maldivesImgWebp from "@/assets/destination-maldives.webp";
 import portugalImg from "@/assets/destination-portugal.jpg";
+import portugalImgWebp from "@/assets/destination-portugal.webp";
 import mexicoImg from "@/assets/destination-mexico.jpg";
+import mexicoImgWebp from "@/assets/destination-mexico.webp";
 import koveliBadge from "@/assets/koveli-maldives-expert.png";
+
 
 const DestinationCard = ({
   destination,
@@ -35,7 +40,7 @@ const DestinationCard = ({
       <div className={`grid grid-cols-1 md:grid-cols-2 gap-10 items-start ${imageOnLeft ? "" : "md:[direction:rtl]"}`}>
         <div className={`${imageOnLeft ? "" : "md:[direction:ltr]"}`}>
           <div className="aspect-[4/3] overflow-hidden gold-border rounded-sm">
-            <img src={destination.image} alt={destination.imageAlt} className="w-full h-full object-cover" loading="lazy" />
+            <Picture src={destination.image} webpSrc={destination.imageWebp} alt={destination.imageAlt} className="w-full h-full object-cover" loading="lazy" />
           </div>
           <p className="text-muted-foreground text-xs mt-2 italic">{destination.imageAlt}</p>
         </div>
