@@ -166,7 +166,7 @@ const Index = () => {
           <h2 className="font-body text-xs md:text-base tracking-[0.3em] uppercase text-gold mb-4 md:mb-6 animate-fade-in-up">
             {t.home.heroSubtitle}
           </h2>
-          <p className="font-body text-sm md:text-xl text-foreground/90 max-w-2xl mx-auto mb-8 md:mb-10 animate-fade-in-delay">
+          <p className="font-body text-base md:text-xl text-cream max-w-2xl mx-auto mb-8 md:mb-10 animate-fade-in-delay drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
             {t.home.heroDescription}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-delay">
