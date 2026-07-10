@@ -3,7 +3,10 @@ import { ArrowRight, MapPin, Clock, Users, Star } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { Picture } from "@/components/Picture";
 import portugalImg from "@/assets/destination-portugal.jpg";
+import portugalImgWebp from "@/assets/destination-portugal.webp";
+
 
 const schemaJson = {
   "@context": "https://schema.org",
@@ -29,7 +32,7 @@ const Portugal = () => {
 
       <section className="relative pt-24">
         <div className="aspect-[21/9] max-h-[480px] overflow-hidden">
-          <img src={portugalImg} alt="Luxury travel to Portugal — Lisbon, Porto & Algarve curated by SJU Luxe Travel" className="w-full h-full object-cover" fetchPriority="high" />
+          <Picture src={portugalImg} webpSrc={portugalImgWebp} alt="Luxury travel to Portugal — Lisbon, Porto & Algarve curated by SJU Luxe Travel" className="w-full h-full object-cover" fetchPriority="high" />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
         </div>
         <div className="absolute bottom-8 left-0 right-0">
