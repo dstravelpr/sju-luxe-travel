@@ -6,8 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/hero-beach-sunset.jpg";
 
-const schemaJson = {
-  "@context": "https://schema.org",
+const schemaJson = buildGraph({
   "@type": "BlogPosting",
   headline: "Viajes de Lujo sin Pasaporte desde Puerto Rico",
   description: "Los mejores destinos de lujo sin pasaporte para residentes de Puerto Rico: Islas Vírgenes, Hawaii, Florida Keys y más.",
@@ -16,7 +15,7 @@ const schemaJson = {
   datePublished: "2026-05-29",
   inLanguage: "es-PR",
   url: "https://www.sjuluxetravel.com/blog/viajes-sin-pasaporte-desde-pr",
-};
+});
 
 const Post = () => {
   const { language, localPath } = useLanguage();

@@ -6,8 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/blog-river-cruise.jpg";
 
-const schemaJson = {
-  "@context": "https://schema.org",
+const schemaJson = buildGraph({
   "@type": "BlogPosting",
   headline: "Cruceros Fluviales de Lujo: AmaWaterways vs Avalon vs Riverside",
   description: "Comparativa completa entre AmaWaterways, Avalon Waterways y Riverside Luxury Cruises para viajeros desde Puerto Rico.",
@@ -16,7 +15,7 @@ const schemaJson = {
   datePublished: "2026-05-29",
   inLanguage: "es-PR",
   url: "https://www.sjuluxetravel.com/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside",
-};
+});
 
 const Post = () => {
   const { language, localPath } = useLanguage();

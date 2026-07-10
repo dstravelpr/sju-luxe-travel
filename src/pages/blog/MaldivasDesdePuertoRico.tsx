@@ -6,8 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/destination-maldives.jpg";
 
-const schemaJson = {
-  "@context": "https://schema.org",
+const schemaJson = buildGraph({
   "@type": "BlogPosting",
   headline: "Maldivas desde Puerto Rico: Guía Completa de Ruta, Costo y Resorts",
   description: "Cómo llegar a Maldivas desde San Juan, cuánto cuesta un viaje de lujo y los mejores resorts según tu estilo.",
@@ -16,7 +15,7 @@ const schemaJson = {
   datePublished: "2026-05-29",
   inLanguage: "es-PR",
   url: "https://www.sjuluxetravel.com/blog/maldivas-desde-puerto-rico-guia",
-};
+});
 
 const Post = () => {
   const { language, localPath } = useLanguage();

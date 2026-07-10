@@ -6,10 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import blogLuxuryImg from "@/assets/blog-luxury-travel.jpg";
 
-const schemaJson = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
+const schemaJson = buildGraph({
       "@type": "BlogPosting",
       headline: "Lo Que Realmente Significa el Viaje de Lujo desde Puerto Rico",
       description: "El verdadero lujo en los viajes no se trata de cuánto gastas, sino de cómo te hace sentir la experiencia. Filosofía de un agente de viaje en San Juan, PR.",
@@ -30,9 +27,7 @@ const schemaJson = {
         { "@type": "Question", name: "¿Por qué reservar con un agente de lujo en lugar de Expedia?", acceptedAnswer: { "@type": "Answer", text: "Al mismo precio que Expedia, un agente afiliado a programas como Virtuoso, Four Seasons Preferred Partner o Rosewood Elite consigue beneficios complementarios (créditos de resort de $100–300, desayuno, upgrade sujeto a disponibilidad, early check-in/late check-out, amenidad de bienvenida) — pagados por el hotel, no por ti." } },
         { "@type": "Question", name: "¿El lujo es solo para viajes largos?", acceptedAnswer: { "@type": "Answer", text: "No. Una microvacación de 3 días bien planificada puede sentirse más lujosa que un viaje de 10 días desorganizado. El lujo es la calidad de la experiencia, no la duración." } },
       ],
-    },
-  ],
-};
+    });
 
 
 const WhatLuxuryTravelMeans = () => {

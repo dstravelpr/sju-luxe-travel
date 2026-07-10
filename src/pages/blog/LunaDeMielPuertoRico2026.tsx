@@ -11,8 +11,7 @@ import portugalImg from "@/assets/honeymoon/portugal.png";
 import tuscanyImg from "@/assets/honeymoon/tuscany.png";
 import safariImg from "@/assets/honeymoon/safari.jpg";
 
-const schemaJson = {
-  "@context": "https://schema.org",
+const schemaJson = buildGraph({
   "@type": "BlogPosting",
   headline: "Mejores Destinos de Luna de Miel 2026 desde Puerto Rico",
   description:
@@ -38,7 +37,7 @@ const schemaJson = {
     "honeymoon from San Juan",
   ],
   url: "https://www.sjuluxetravel.com/blog/luna-de-miel-puerto-rico-2026",
-};
+});
 
 const faqSchema = {
   "@context": "https://schema.org",

@@ -6,8 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/rivers/douro.png";
 
-const schemaJson = {
-  "@context": "https://schema.org",
+const schemaJson = buildGraph({
   "@type": "BlogPosting",
   headline: "Crucero Fluvial por el Duero desde Puerto Rico: Portugal desde el Río",
   description:
@@ -20,7 +19,7 @@ const schemaJson = {
   image: "https://www.sjuluxetravel.com/og/crucero-fluvial-duero.jpg",
   url: "https://www.sjuluxetravel.com/blog/crucero-fluvial-duero-desde-puerto-rico",
   mainEntityOfPage: "https://www.sjuluxetravel.com/blog/crucero-fluvial-duero-desde-puerto-rico",
-};
+});
 
 const Post = () => {
   const { localPath } = useLanguage();

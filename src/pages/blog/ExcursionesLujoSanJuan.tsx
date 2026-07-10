@@ -6,8 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/hero-beach-sunset.jpg";
 
-const schemaJson = {
-  "@context": "https://schema.org",
+const schemaJson = buildGraph({
   "@type": "BlogPosting",
   headline: "Excursiones de Lujo desde el Puerto de Cruceros de San Juan",
   description:
@@ -20,7 +19,7 @@ const schemaJson = {
   image: "https://www.sjuluxetravel.com/og/excursiones-lujo-san-juan.jpg",
   url: "https://www.sjuluxetravel.com/blog/excursiones-de-lujo-san-juan-puerto-cruceros",
   mainEntityOfPage: "https://www.sjuluxetravel.com/blog/excursiones-de-lujo-san-juan-puerto-cruceros",
-};
+});
 
 const Post = () => {
   const { localPath } = useLanguage();

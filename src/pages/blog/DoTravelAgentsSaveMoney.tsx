@@ -6,10 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import blogAgentImg from "@/assets/blog-travel-agent.jpg";
 
-const schemaJson = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
+const schemaJson = buildGraph({
       "@type": "BlogPosting",
       headline: "¿Los Agentes de Viaje Realmente Te Ayudan a Ahorrar Dinero?",
       description: "Una perspectiva honesta de un agente de viaje moderno sobre cómo la orientación profesional te ahorra dinero, tiempo y estrés.",
@@ -55,9 +52,7 @@ const schemaJson = {
           }
         }
       ]
-    }
-  ]
-};
+    });
 
 const DoTravelAgentsSaveMoney = () => {
   const { language, localPath } = useLanguage();

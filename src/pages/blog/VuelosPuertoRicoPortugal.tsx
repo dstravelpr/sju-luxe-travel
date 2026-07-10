@@ -6,8 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/destination-portugal.jpg";
 
-const schemaJson = {
-  "@context": "https://schema.org",
+const schemaJson = buildGraph({
   "@type": "BlogPosting",
   headline: "Vuelos de Puerto Rico a Portugal: Mejores Rutas y Aerolíneas",
   description: "Cómo volar de San Juan a Lisboa y Porto: rutas con menos escalas, mejores aerolíneas y consejos para clase ejecutiva.",
@@ -16,7 +15,7 @@ const schemaJson = {
   datePublished: "2026-05-29",
   inLanguage: "es-PR",
   url: "https://www.sjuluxetravel.com/blog/vuelos-puerto-rico-portugal",
-};
+});
 
 const Post = () => {
   const { language, localPath } = useLanguage();

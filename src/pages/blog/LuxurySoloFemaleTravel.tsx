@@ -6,8 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/blog-wellness-maldives.jpg";
 
-const schemaJson = {
-  "@context": "https://schema.org",
+const schemaJson = buildGraph({
   "@type": "BlogPosting",
   headline: "Luxury Solo Female Travel: Safest Bespoke Destinations for 2026",
   description: "The safest, most empowering luxury destinations for solo women travelers in 2026 — curated by SJU Luxe Travel.",
@@ -16,7 +15,7 @@ const schemaJson = {
   datePublished: "2026-05-29",
   inLanguage: "en-US",
   url: "https://www.sjuluxetravel.com/blog/luxury-solo-female-travel",
-};
+});
 
 const Post = () => {
   const { language, localPath } = useLanguage();

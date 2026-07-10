@@ -91,10 +91,7 @@ const WellnessTravel = () => {
     ? "El viaje de lujo intencional no es una tendencia, es una estrategia de salud mental. Descubre cómo retiros en Maldivas y Riviera Maya generan bienestar real."
     : "Intentional luxury travel isn't a trend — it's a mental health strategy. See how wellness retreats in the Maldives and Riviera Maya deliver lasting benefits.";
 
-  const schemaJson = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
+  const schemaJson = buildGraph({
         "@type": "BlogPosting",
         headline: title,
         description,
@@ -134,9 +131,7 @@ const WellnessTravel = () => {
           name: f.q,
           acceptedAnswer: { "@type": "Answer", text: f.a },
         })),
-      },
-    ],
-  };
+      });
 
   return (
     <Layout>
