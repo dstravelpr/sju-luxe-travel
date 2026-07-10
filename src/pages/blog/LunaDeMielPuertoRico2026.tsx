@@ -3,6 +3,7 @@ import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/honeymoon/maldives.png";
 import boraImg from "@/assets/honeymoon/bora-bora.png";
 import santoriniImg from "@/assets/honeymoon/santorini.png";
