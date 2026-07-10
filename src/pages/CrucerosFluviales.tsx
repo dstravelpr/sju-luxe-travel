@@ -24,34 +24,38 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-const schema = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Service",
-      "name": "Cruceros Fluviales de Lujo — Agente Certificado desde Puerto Rico",
-      "description": "Agente de viaje certificado por AmaWaterways, Avalon Waterways y Riverside Luxury Cruises. Planificación completa de cruceros fluviales de lujo para viajeros de Puerto Rico.",
-      "provider": {
-        "@type": "TravelAgency",
-        "name": "SJU Luxe Travel",
-        "url": "https://www.sjuluxetravel.com",
-        "address": { "@type": "PostalAddress", "addressLocality": "San Juan", "addressRegion": "PR", "addressCountry": "US" },
-        "sameAs": ["https://www.instagram.com/sjuluxetravel", "https://www.facebook.com/sjuluxetravel"]
-      },
-      "areaServed": { "@type": "State", "name": "Puerto Rico" },
-      "serviceType": "River Cruise Planning",
-      "url": "https://www.sjuluxetravel.com/cruceros-fluviales-de-lujo-desde-puerto-rico"
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        { "@type": "Question", "name": "¿En qué se diferencia un crucero fluvial de uno oceánico?", "acceptedAnswer": { "@type": "Answer", "text": "Los cruceros fluviales tienen barcos más pequeños (100–190 pasajeros), navegan ríos históricos y atracan en el centro de las ciudades." } },
-        { "@type": "Question", "name": "¿Por qué reservar con un agente certificado?", "acceptedAnswer": { "@type": "Answer", "text": "Las certificaciones oficiales dan acceso a tarifas preferenciales, beneficios a bordo exclusivos y soporte directo." } },
-        { "@type": "Question", "name": "¿Cuál es la mejor época para un crucero fluvial en Europa?", "acceptedAnswer": { "@type": "Answer", "text": "Primavera y otoño son las temporadas más populares. El mercado navideño de diciembre es una experiencia única." } }
-      ]
-    }
-  ]
-};
+import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
+
+const PAGE_URL = "https://www.sjuluxetravel.com/cruceros-fluviales-de-lujo-desde-puerto-rico";
+const schema = buildGraph(
+  {
+    "@type": "WebPage",
+    "@id": `${PAGE_URL}#webpage`,
+    url: PAGE_URL,
+    name: "Cruceros Fluviales de Lujo desde PR",
+    isPartOf: WEBSITE_REF,
+    inLanguage: "es",
+  },
+  {
+    "@type": "Service",
+    name: "Cruceros Fluviales de Lujo — Agente Certificado desde Puerto Rico",
+    description:
+      "Agente de viaje certificado por AmaWaterways, Avalon Waterways y Riverside Luxury Cruises. Planificación completa de cruceros fluviales de lujo para viajeros de Puerto Rico.",
+    provider: ORG_REF,
+    areaServed: { "@type": "State", name: "Puerto Rico" },
+    serviceType: "River Cruise Planning",
+    url: PAGE_URL,
+  },
+  {
+    "@type": "FAQPage",
+    mainEntity: [
+      { "@type": "Question", name: "¿En qué se diferencia un crucero fluvial de uno oceánico?", acceptedAnswer: { "@type": "Answer", text: "Los cruceros fluviales tienen barcos más pequeños (100–190 pasajeros), navegan ríos históricos y atracan en el centro de las ciudades." } },
+      { "@type": "Question", name: "¿Por qué reservar con un agente certificado?", acceptedAnswer: { "@type": "Answer", text: "Las certificaciones oficiales dan acceso a tarifas preferenciales, beneficios a bordo exclusivos y soporte directo." } },
+      { "@type": "Question", name: "¿Cuál es la mejor época para un crucero fluvial en Europa?", acceptedAnswer: { "@type": "Answer", text: "Primavera y otoño son las temporadas más populares. El mercado navideño de diciembre es una experiencia única." } },
+    ],
+  }
+);
+
 
 const CrucerosFluviales = () => {
   const { t, localPath } = useLanguage();

@@ -3,10 +3,15 @@ import { ArrowRight, MapPin, Clock, Users } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { Picture } from "@/components/Picture";
 import maldivesImg from "@/assets/destination-maldives.jpg";
+import maldivesImgWebp from "@/assets/destination-maldives.webp";
 import portugalImg from "@/assets/destination-portugal.jpg";
+import portugalImgWebp from "@/assets/destination-portugal.webp";
 import mexicoImg from "@/assets/destination-mexico.jpg";
+import mexicoImgWebp from "@/assets/destination-mexico.webp";
 import koveliBadge from "@/assets/koveli-maldives-expert.png";
+
 
 const DestinationCard = ({
   destination,
@@ -15,6 +20,8 @@ const DestinationCard = ({
     subtitle: string;
     title: string;
     image: string;
+    imageWebp: string;
+
     imageAlt: string;
     description: string;
     location: string;
@@ -35,7 +42,7 @@ const DestinationCard = ({
       <div className={`grid grid-cols-1 md:grid-cols-2 gap-10 items-start ${imageOnLeft ? "" : "md:[direction:rtl]"}`}>
         <div className={`${imageOnLeft ? "" : "md:[direction:ltr]"}`}>
           <div className="aspect-[4/3] overflow-hidden gold-border rounded-sm">
-            <img src={destination.image} alt={destination.imageAlt} className="w-full h-full object-cover" loading="lazy" />
+            <Picture src={destination.image} webpSrc={destination.imageWebp} alt={destination.imageAlt} className="w-full h-full object-cover" loading="lazy" />
           </div>
           <p className="text-muted-foreground text-xs mt-2 italic">{destination.imageAlt}</p>
         </div>
@@ -78,7 +85,7 @@ const Destinations = () => {
     {
       subtitle: dp.paradiseOnEarth,
       title: t.home.maldives,
-      image: maldivesImg,
+      image: maldivesImg, imageWebp: maldivesImgWebp,
       imageAlt: "The Maldives — luxury travel destination by SJU Luxe Travel",
       description: dp.maldivesDesc,
       location: dp.indianOcean,
@@ -97,7 +104,7 @@ const Destinations = () => {
     {
       subtitle: dp.oldWorldCharm,
       title: t.home.portugal,
-      image: portugalImg,
+      image: portugalImg, imageWebp: portugalImgWebp,
       imageAlt: "Portugal — luxury travel destination by SJU Luxe Travel",
       description: dp.portugalDesc,
       location: dp.westernEurope,
@@ -111,7 +118,7 @@ const Destinations = () => {
     {
       subtitle: dp.richCulture,
       title: t.home.mexico,
-      image: mexicoImg,
+      image: mexicoImg, imageWebp: mexicoImgWebp,
       imageAlt: "Mexico — luxury travel destination by SJU Luxe Travel",
       description: dp.mexicoDesc,
       location: dp.northAmerica,

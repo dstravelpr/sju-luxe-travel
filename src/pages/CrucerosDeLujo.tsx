@@ -22,6 +22,41 @@ import ritzCarltonImg from "@/assets/ocean/ritz-carlton.jpg";
 import virginImg from "@/assets/ocean/virgin.jpg";
 import virginCertImg from "@/assets/ocean/virgin-cert.png";
 
+import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
+
+const PAGE_URL = "https://www.sjuluxetravel.com/cruceros-de-lujo-desde-san-juan";
+const schema = buildGraph(
+  {
+    "@type": "WebPage",
+    "@id": `${PAGE_URL}#webpage`,
+    url: PAGE_URL,
+    name: "Cruceros de Lujo desde San Juan, PR",
+    isPartOf: WEBSITE_REF,
+    inLanguage: "es",
+  },
+  {
+    "@type": "Service",
+    name: "Cruceros de Lujo desde San Juan Puerto Rico",
+    provider: ORG_REF,
+    areaServed: "San Juan, Puerto Rico",
+    description: "Planificación VIP de cruceros de lujo que salen desde el puerto de San Juan, Puerto Rico, con beneficios exclusivos NCM Concierge.",
+    url: PAGE_URL,
+  },
+  {
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "¿Cuáles son las mejores líneas de cruceros de lujo que salen de San Juan en 2026?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "En 2026, San Juan cuenta con salidas de las principales líneas de lujo del mundo: Ritz-Carlton Yacht Collection, Explora Journeys, Virgin Voyages, Azamara, Crystal Cruises, Oceania, Regent Seven Seas, Silversea, Viking Ocean, Seabourn y SeaDream Yacht Club.",
+        },
+      },
+    ],
+  }
+);
+
 const CrucerosDeLujo = () => {
   const { t, localPath } = useLanguage();
   const d = t.crucerosDeLujo;
@@ -46,34 +81,10 @@ const CrucerosDeLujo = () => {
       <SEOHead
         title="Cruceros de Lujo desde San Juan, PR | SJU Luxe Travel"
         description="Planifica tu crucero de lujo desde San Juan, PR. Cabinas exclusivas, excursiones privadas y beneficios VIP de NCM Concierge."
-        canonical="https://www.sjuluxetravel.com/cruceros-de-lujo-desde-san-juan"
-        schemaJson={{
-          "@context": "https://schema.org",
-          "@graph": [
-            {
-              "@type": "Service",
-              "name": "Cruceros de Lujo desde San Juan Puerto Rico",
-              "provider": { "@type": "TravelAgency", "name": "SJU Luxe Travel", "url": "https://www.sjuluxetravel.com", "sameAs": ["https://www.instagram.com/sjuluxetravel", "https://www.facebook.com/sjuluxetravel"] },
-              "areaServed": "San Juan, Puerto Rico",
-              "description": "Planificación VIP de cruceros de lujo que salen desde el puerto de San Juan, Puerto Rico, con beneficios exclusivos NCM Concierge.",
-              "url": "https://www.sjuluxetravel.com/cruceros-de-lujo-desde-san-juan"
-            },
-            {
-              "@type": "FAQPage",
-              "mainEntity": [
-                {
-                  "@type": "Question",
-                  "name": "¿Cuáles son las mejores líneas de cruceros de lujo que salen de San Juan en 2026?",
-                  "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "En 2026, San Juan cuenta con salidas de las principales líneas de lujo del mundo: Ritz-Carlton Yacht Collection, Explora Journeys, Virgin Voyages, Azamara, Crystal Cruises, Oceania, Regent Seven Seas, Silversea, Viking Ocean, Seabourn y SeaDream Yacht Club."
-                  }
-                }
-              ]
-            }
-          ]
-        }}
+        canonical={PAGE_URL}
+        schemaJson={schema}
       />
+
 
       <article className="pt-32 pb-20 bg-background">
         <div className="container mx-auto px-6 max-w-3xl">

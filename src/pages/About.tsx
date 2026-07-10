@@ -1,6 +1,7 @@
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { ORG_ID, ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 
 const aboutImages = [
   { src: "/about/IMG_2975.jpg", alt: "Daniel Santiago Díaz exploring international destinations" },
@@ -12,6 +13,28 @@ const aboutImages = [
   { src: "/about/IMG_2086.jpg", alt: "Daniel Santiago Díaz founder of SJU Luxe Travel" },
 ];
 
+const ABOUT_URL = "https://www.sjuluxetravel.com/about";
+const aboutSchema = buildGraph(
+  {
+    "@type": "AboutPage",
+    "@id": `${ABOUT_URL}#webpage`,
+    url: ABOUT_URL,
+    name: "Daniel Santiago Díaz — Agente de Viaje de Lujo PR",
+    isPartOf: WEBSITE_REF,
+    mainEntity: ORG_REF,
+    inLanguage: "es",
+  },
+  {
+    "@type": "Person",
+    name: "Daniel Santiago Díaz",
+    jobTitle: "Luxury Travel Agent",
+    worksFor: { "@id": ORG_ID },
+    address: { "@type": "PostalAddress", addressLocality: "San Juan", addressRegion: "PR", addressCountry: "US" },
+    knowsLanguage: ["Spanish", "English"],
+    url: ABOUT_URL,
+  }
+);
+
 const About = () => {
   const { t } = useLanguage();
 
@@ -20,18 +43,10 @@ const About = () => {
       <SEOHead
         title="Daniel Santiago Díaz — Agente de Viaje de Lujo PR"
         description="Agente bilingüe de viajes de lujo en San Juan, PR. +10 años de experiencia, beneficios NCM Concierge, itinerarios a medida. Consulta gratuita."
-        canonical="https://www.sjuluxetravel.com/about"
-        schemaJson={{
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Daniel Santiago Díaz",
-          "jobTitle": "Luxury Travel Agent",
-          "worksFor": { "@type": "TravelAgency", "name": "SJU Luxe Travel", "url": "https://www.sjuluxetravel.com", "sameAs": ["https://www.instagram.com/sjuluxetravel", "https://www.facebook.com/sjuluxetravel"] },
-          "address": { "@type": "PostalAddress", "addressLocality": "San Juan", "addressRegion": "PR", "addressCountry": "US" },
-          "knowsLanguage": ["Spanish", "English"],
-          "url": "https://www.sjuluxetravel.com/about"
-        }}
+        canonical={ABOUT_URL}
+        schemaJson={aboutSchema}
       />
+
 
       <section className="pt-32 pb-16 bg-background text-center">
         <div className="container mx-auto px-6">

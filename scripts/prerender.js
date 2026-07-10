@@ -12,7 +12,7 @@ const template = fs.readFileSync(path.join(DIST, "index.html"), "utf-8");
 const HOSTNAME = "https://www.sjuluxetravel.com";
 const ORG_ID = `${HOSTNAME}/#org`;
 const WEBSITE_ID = `${HOSTNAME}/#website`;
-const LOGO_URL = `${HOSTNAME}/favicon.png`;
+const LOGO_URL = `${HOSTNAME}/logo.png`;
 const DEFAULT_OG = `${HOSTNAME}/og-image.jpg`;
 
 const ROUTE_IMAGES = {
@@ -398,7 +398,7 @@ const ORG_SCHEMA = {
   },
   geo: { "@type": "GeoCoordinates", latitude: 18.4655, longitude: -66.1057 },
   sameAs: [
-    "https://www.instagram.com/sjuluxetravel/",
+    "https://www.instagram.com/sjuluxetravel",
     "https://www.facebook.com/sjuluxetravel",
     "https://www.linkedin.com/company/sju-luxe-travel",
   ],

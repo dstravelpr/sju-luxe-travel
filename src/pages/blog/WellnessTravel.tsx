@@ -3,6 +3,7 @@ import { ArrowLeft, User, Calendar, Clock, Sparkles } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/blog-wellness-maldives.jpg";
 
 const POST_URL = "https://www.sjuluxetravel.com/blog/wellness-travel-intentional-luxury";
@@ -90,10 +91,7 @@ const WellnessTravel = () => {
     ? "El viaje de lujo intencional no es una tendencia, es una estrategia de salud mental. Descubre cómo retiros en Maldivas y Riviera Maya generan bienestar real."
     : "Intentional luxury travel isn't a trend — it's a mental health strategy. See how wellness retreats in the Maldives and Riviera Maya deliver lasting benefits.";
 
-  const schemaJson = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
+  const schemaJson = buildGraph({
         "@type": "BlogPosting",
         headline: title,
         description,
@@ -103,15 +101,7 @@ const WellnessTravel = () => {
           name: "Daniel Santiago Díaz",
           url: "https://www.sjuluxetravel.com/about",
         },
-        publisher: {
-          "@type": "Organization",
-          name: "SJU Luxe Travel",
-          url: "https://www.sjuluxetravel.com",
-          logo: {
-            "@type": "ImageObject",
-            url: "https://www.sjuluxetravel.com/favicon.png",
-          },
-        },
+        publisher: ORG_REF,
         datePublished: "2026-05-15",
         dateModified: "2026-05-15",
         inLanguage: isEs ? "es-PR" : "en-US",
@@ -141,9 +131,7 @@ const WellnessTravel = () => {
           name: f.q,
           acceptedAnswer: { "@type": "Answer", text: f.a },
         })),
-      },
-    ],
-  };
+      });
 
   return (
     <Layout>

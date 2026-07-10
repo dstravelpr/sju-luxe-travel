@@ -4,11 +4,17 @@ import { ArrowRight, Compass, Heart, Users, Globe, Shield, Star, ChevronDown } f
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { Picture } from "@/components/Picture";
 import heroBg from "@/assets/hero-beach-sunset.jpg";
+import heroBgWebp from "@/assets/hero-beach-sunset.webp";
 import logo from "@/assets/logo.png";
 import maldivesImg from "@/assets/destination-maldives.jpg";
+import maldivesImgWebp from "@/assets/destination-maldives.webp";
 import portugalImg from "@/assets/destination-portugal.jpg";
+import portugalImgWebp from "@/assets/destination-portugal.webp";
 import mexicoImg from "@/assets/destination-mexico.jpg";
+import mexicoImgWebp from "@/assets/destination-mexico.webp";
+
 
 const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -33,97 +39,78 @@ const FAQItem = ({ question, answer }: { question: string; answer: string }) => 
   );
 };
 
-const schemaJson = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "TravelAgency",
-      "@id": "https://www.sjuluxetravel.com/#org",
-      name: "SJU Luxe Travel",
-      url: "https://www.sjuluxetravel.com",
-      logo: "https://www.sjuluxetravel.com/logo.png",
-      image: "https://www.sjuluxetravel.com/logo.png",
-      description:
-        "SJU Luxe Travel is a boutique luxury travel agency based in San Juan, Puerto Rico. We craft bespoke international itineraries to the Maldives, Portugal, Mexico, and beyond — with exclusive NCM Concierge perks you can't get booking online. Bilingual luxury travel agent serving the US, Caribbean, and Latin America.",
-      telephone: "+16179355714",
-      email: "info@sjuluxetravel.com",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "San Juan",
-        addressRegion: "PR",
-        addressCountry: "US",
-      },
-      sameAs: [
-        "https://www.instagram.com/sjuluxetravel",
-        "https://www.facebook.com/sjuluxetravel",
-      ],
-      founder: {
-        "@type": "Person",
-        name: "Daniel Santiago Díaz",
-        jobTitle: "Founder & Lead Travel Agent",
-      },
-      areaServed: { "@type": "Place", name: "Worldwide" },
-      priceRange: "$$-$$$$",
+import { ORG_ID, WEBSITE_REF, buildGraph } from "@/lib/schema";
+
+const schemaJson = buildGraph(
+  {
+    "@type": "WebPage",
+    "@id": "https://www.sjuluxetravel.com/#webpage",
+    url: "https://www.sjuluxetravel.com/",
+    name: "SJU Luxe Travel — Luxury Travel Agency in San Juan, Puerto Rico",
+    isPartOf: WEBSITE_REF,
+    about: { "@id": ORG_ID },
+    inLanguage: "en",
+  },
+  {
+    "@type": "LocalBusiness",
+    "@id": "https://www.sjuluxetravel.com/#localbusiness",
+    name: "SJU Luxe Travel",
+    image: "https://www.sjuluxetravel.com/og-image.jpg",
+    telephone: "+16179355714",
+    email: "info@sjuluxetravel.com",
+    url: "https://www.sjuluxetravel.com",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "San Juan",
+      addressRegion: "PR",
+      addressCountry: "US",
     },
-    {
-      "@type": "LocalBusiness",
-      name: "SJU Luxe Travel",
-      image: "https://www.sjuluxetravel.com/og-image.jpg",
-      telephone: "+16179355714",
-      email: "info@sjuluxetravel.com",
-      url: "https://www.sjuluxetravel.com",
-      address: {
-        "@type": "PostalAddress",
-        addressLocality: "San Juan",
-        addressRegion: "PR",
-        addressCountry: "US",
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "09:00",
+        closes: "18:00",
       },
-      openingHoursSpecification: [
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-          opens: "09:00",
-          closes: "18:00",
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "10:00",
+        closes: "16:00",
+      },
+    ],
+  },
+  {
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "¿Vale la pena contratar un agente de viaje?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sí. Un agente de viaje te da acceso a mejoras de habitación gratuitas, créditos de resort, check-in anticipado y atención personalizada 24/7 que no puedes obtener reservando directamente en línea.",
         },
-        {
-          "@type": "OpeningHoursSpecification",
-          dayOfWeek: "Saturday",
-          opens: "10:00",
-          closes: "16:00",
+      },
+      {
+        "@type": "Question",
+        name: "¿Trabajan con clientes fuera de Puerto Rico?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sí, SJU Luxe Travel trabaja con clientes de todo Estados Unidos, el Caribe y América Latina. Somos completamente bilingües (inglés y español) y operamos de forma remota.",
         },
-      ],
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "¿Vale la pena contratar un agente de viaje?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Sí. Un agente de viaje te da acceso a mejoras de habitación gratuitas, créditos de resort, check-in anticipado y atención personalizada 24/7 que no puedes obtener reservando directamente en línea.",
-          },
+      },
+      {
+        "@type": "Question",
+        name: "Do you offer services in English?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes, SJU Luxe Travel is fully bilingual. We serve English-speaking clients throughout the US, Caribbean, and Latin America with the same level of personalized luxury travel planning.",
         },
-        {
-          "@type": "Question",
-          name: "¿Trabajan con clientes fuera de Puerto Rico?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Sí, SJU Luxe Travel trabaja con clientes de todo Estados Unidos, el Caribe y América Latina. Somos completamente bilingües (inglés y español) y operamos de forma remota.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Do you offer services in English?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes, SJU Luxe Travel is fully bilingual. We serve English-speaking clients throughout the US, Caribbean, and Latin America with the same level of personalized luxury travel planning.",
-          },
-        },
-      ],
-    },
-  ],
-};
+      },
+    ],
+  }
+);
+
 
 const Index = () => {
   const { t, localPath } = useLanguage();
@@ -138,9 +125,10 @@ const Index = () => {
   ];
 
   const destinations = [
-    { image: maldivesImg, title: t.home.maldives, subtitle: t.home.maldivesSub },
-    { image: portugalImg, title: t.home.portugal, subtitle: t.home.portugalSub },
-    { image: mexicoImg, title: t.home.mexico, subtitle: t.home.mexicoSub },
+    { image: maldivesImg, imageWebp: maldivesImgWebp, title: t.home.maldives, subtitle: t.home.maldivesSub },
+    { image: portugalImg, imageWebp: portugalImgWebp, title: t.home.portugal, subtitle: t.home.portugalSub },
+    { image: mexicoImg, imageWebp: mexicoImgWebp, title: t.home.mexico, subtitle: t.home.mexicoSub },
+
   ];
 
   return (
@@ -154,7 +142,7 @@ const Index = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-10">
-        <img src={heroBg} alt="Luxury beach sunset — SJU Luxe Travel" width="1920" height="1080" className="absolute inset-0 w-full h-full object-cover object-center" fetchPriority="high" decoding="async" />
+        <Picture src={heroBg} webpSrc={heroBgWebp} alt="Luxury beach sunset — SJU Luxe Travel" width={1920} height={1080} className="absolute inset-0 w-full h-full object-cover object-center" fetchPriority="high" decoding="async" />
         <div className="absolute inset-0 hero-overlay" />
         <div className="relative z-10 container mx-auto px-6 text-center">
           <img src={logo} alt="SJU Luxe Travel" className="hidden md:block h-24 w-24 mx-auto mb-6 animate-fade-in object-contain" />
@@ -248,7 +236,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {destinations.map((dest, index) => (
               <Link key={index} to={`/destinations/${dest.title.toLowerCase().replace(/^(the |las |los )/, "")}`} className="group relative aspect-[4/5] overflow-hidden rounded-lg gold-border gold-border-hover">
-                <img src={dest.image} alt={`${dest.title} — luxury travel destination curated by SJU Luxe Travel`} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
+                <Picture src={dest.image} webpSrc={dest.imageWebp} alt={`${dest.title} — luxury travel destination curated by SJU Luxe Travel`} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <p className="text-gold text-xs tracking-widest uppercase mb-2">{dest.subtitle}</p>

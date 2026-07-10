@@ -3,6 +3,7 @@ import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/honeymoon/maldives.png";
 import boraImg from "@/assets/honeymoon/bora-bora.png";
 import santoriniImg from "@/assets/honeymoon/santorini.png";
@@ -11,18 +12,14 @@ import portugalImg from "@/assets/honeymoon/portugal.png";
 import tuscanyImg from "@/assets/honeymoon/tuscany.png";
 import safariImg from "@/assets/honeymoon/safari.jpg";
 
-const schemaJson = {
-  "@context": "https://schema.org",
+const schemaJson = buildGraph({
   "@type": "BlogPosting",
   headline: "Mejores Destinos de Luna de Miel 2026 desde Puerto Rico",
   description:
     "Los 7 mejores destinos de luna de miel 2026 desde San Juan: Maldivas, Bora Bora, Amalfi, Santorini, Portugal. Itinerarios, vuelos, presupuestos y temporadas por agente de lujo.",
   author: { "@type": "Person", name: "Daniel Santiago Díaz" },
-  publisher: {
-    "@type": "Organization",
-    name: "SJU Luxe Travel",
-    url: "https://www.sjuluxetravel.com",
-  },
+  publisher: ORG_REF,
+
   datePublished: "2026-06-01",
   dateModified: "2026-06-01",
   inLanguage: "es-PR",
@@ -38,7 +35,7 @@ const schemaJson = {
     "honeymoon from San Juan",
   ],
   url: "https://www.sjuluxetravel.com/blog/luna-de-miel-puerto-rico-2026",
-};
+});
 
 const faqSchema = {
   "@context": "https://schema.org",

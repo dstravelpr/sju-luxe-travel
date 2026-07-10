@@ -3,17 +3,15 @@ import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import blogMicrocationsImg from "@/assets/blog-microcations.jpg";
 
-const schemaJson = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
+const schemaJson = buildGraph({
       "@type": "BlogPosting",
       headline: "¿Son las Microvacaciones el Futuro de los Viajes desde Puerto Rico?",
       description: "Las microvacaciones —escapadas de 2 a 5 días bien planificadas desde San Juan— son una nueva forma de viajar más consciente, flexible y de lujo.",
       author: { "@type": "Person", name: "Daniel Santiago Díaz", url: "https://www.sjuluxetravel.com/about" },
-      publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
+      publisher: ORG_REF,
       datePublished: "2026-04-11",
       dateModified: "2026-06-02",
       inLanguage: "es-PR",
@@ -30,9 +28,7 @@ const schemaJson = {
         { "@type": "Question", name: "¿Son las microvacaciones más sostenibles?", acceptedAnswer: { "@type": "Answer", text: "Pueden serlo cuando se planifican bien: vuelos directos, hoteles eficientes, soporte a negocios locales. Múltiples escapadas mal planificadas pueden ser menos sostenibles que un solo viaje bien diseñado." } },
         { "@type": "Question", name: "¿Vale la pena un agente para un viaje de 3 días?", acceptedAnswer: { "@type": "Answer", text: "Sí, porque un viaje corto no perdona errores: hotel mal ubicado, vuelo con escala innecesaria o reserva de restaurante negada queman porciones grandes del viaje. Un agente maximiza cada hora — y al mismo precio te suma beneficios de hotel." } },
       ],
-    },
-  ],
-};
+    });
 
 
 const MicroVacaciones = () => {

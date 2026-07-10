@@ -3,18 +3,16 @@ import { ArrowLeft, User, Calendar, Clock, Sparkles } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/blog-river-cruise.jpg";
 
-const schemaJson = {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
+const schemaJson = buildGraph({
       "@type": "BlogPosting",
       headline: "River Cruising Isn't Just for Your Parents Anymore — And That Changes Everything",
       description: "84% of travelers under 35 want to take a river cruise. A luxury travel agent explains why — and how to get the most out of the experience.",
       image: "https://www.sjuluxetravel.com/og/river-cruising-new-generation.jpg",
       author: { "@type": "Person", name: "Daniel Santiago Díaz", url: "https://www.sjuluxetravel.com/about" },
-      publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
+      publisher: ORG_REF,
       datePublished: "2026-05-13",
       dateModified: "2026-06-02",
       inLanguage: "en",
@@ -31,9 +29,7 @@ const schemaJson = {
         { "@type": "Question", name: "What are the best river cruise destinations?", acceptedAnswer: { "@type": "Answer", text: "The Danube (Vienna, Budapest, Bratislava), the Rhine (Cologne, Strasbourg, Basel), the Douro in Portugal (Porto wine country), and the Mekong (Vietnam and Cambodia) are the most-requested itineraries. The Seine (Paris to Normandy) and Rhône (Burgundy/Provence) are excellent secondary choices." } },
         { "@type": "Question", name: "How do I book a river cruise from Puerto Rico?", acceptedAnswer: { "@type": "Answer", text: "Most river cruises depart from European cities, so the booking starts with finding the right SJU flight routing (typically via JFK, MIA or ATL) and a pre-cruise hotel night. A certified river cruise agent coordinates flights, hotels, transfers and the cruise as one package — often with extra perks on top." } },
       ],
-    },
-  ],
-};
+    });
 
 
 const RiverCruisingNewGeneration = () => {
