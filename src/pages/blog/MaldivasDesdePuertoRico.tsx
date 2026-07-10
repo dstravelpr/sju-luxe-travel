@@ -3,6 +3,7 @@ import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/destination-maldives.jpg";
 
 const schemaJson = {
@@ -11,7 +12,7 @@ const schemaJson = {
   headline: "Maldivas desde Puerto Rico: Guía Completa de Ruta, Costo y Resorts",
   description: "Cómo llegar a Maldivas desde San Juan, cuánto cuesta un viaje de lujo y los mejores resorts según tu estilo.",
   author: { "@type": "Person", name: "Daniel Santiago Díaz" },
-  publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
+  publisher: ORG_REF,
   datePublished: "2026-05-29",
   inLanguage: "es-PR",
   url: "https://www.sjuluxetravel.com/blog/maldivas-desde-puerto-rico-guia",

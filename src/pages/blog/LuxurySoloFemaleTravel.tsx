@@ -3,6 +3,7 @@ import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/blog-wellness-maldives.jpg";
 
 const schemaJson = {
@@ -11,7 +12,7 @@ const schemaJson = {
   headline: "Luxury Solo Female Travel: Safest Bespoke Destinations for 2026",
   description: "The safest, most empowering luxury destinations for solo women travelers in 2026 — curated by SJU Luxe Travel.",
   author: { "@type": "Person", name: "Daniel Santiago Díaz" },
-  publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
+  publisher: ORG_REF,
   datePublished: "2026-05-29",
   inLanguage: "en-US",
   url: "https://www.sjuluxetravel.com/blog/luxury-solo-female-travel",

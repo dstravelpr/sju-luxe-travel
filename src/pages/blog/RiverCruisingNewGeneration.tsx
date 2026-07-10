@@ -3,6 +3,7 @@ import { ArrowLeft, User, Calendar, Clock, Sparkles } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/blog-river-cruise.jpg";
 
 const schemaJson = {
@@ -14,7 +15,7 @@ const schemaJson = {
       description: "84% of travelers under 35 want to take a river cruise. A luxury travel agent explains why — and how to get the most out of the experience.",
       image: "https://www.sjuluxetravel.com/og/river-cruising-new-generation.jpg",
       author: { "@type": "Person", name: "Daniel Santiago Díaz", url: "https://www.sjuluxetravel.com/about" },
-      publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
+      publisher: ORG_REF,
       datePublished: "2026-05-13",
       dateModified: "2026-06-02",
       inLanguage: "en",

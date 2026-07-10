@@ -3,6 +3,7 @@ import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/hero-beach-sunset.jpg";
 
 const schemaJson = {
@@ -12,7 +13,7 @@ const schemaJson = {
   description:
     "Excursiones privadas de lujo para pasajeros de cruceros que atracan en San Juan: tours privados del Viejo San Juan, El Yunque, catamarán y gastronomía coordinados por un concierge local.",
   author: { "@type": "Person", name: "Daniel Santiago Díaz", url: "https://www.sjuluxetravel.com/about" },
-  publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
+  publisher: ORG_REF,
   datePublished: "2026-07-08",
   dateModified: "2026-07-08",
   inLanguage: "es-PR",

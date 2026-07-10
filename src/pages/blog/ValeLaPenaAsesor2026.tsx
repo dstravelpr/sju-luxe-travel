@@ -3,6 +3,7 @@ import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/travel-agent-desk.jpg";
 
 const schemaJson = {
@@ -11,7 +12,7 @@ const schemaJson = {
   headline: "¿Vale la Pena un Agente de Viaje en 2026?",
   description: "Análisis honesto desde Puerto Rico: cuándo un agente de viaje te conviene en 2026 y cuándo es mejor reservar tú mismo.",
   author: { "@type": "Person", name: "Daniel Santiago Díaz" },
-  publisher: { "@type": "Organization", name: "SJU Luxe Travel", url: "https://www.sjuluxetravel.com" },
+  publisher: ORG_REF,
   datePublished: "2026-05-29",
   inLanguage: "es-PR",
   url: "https://www.sjuluxetravel.com/blog/vale-la-pena-asesor-viajes-2026",
