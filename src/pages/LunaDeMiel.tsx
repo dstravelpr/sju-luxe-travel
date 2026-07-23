@@ -30,6 +30,35 @@ const FAQ_ITEMS = [
   },
 ];
 
+import { ORG_REF, WEBSITE_REF, buildGraph, breadcrumbList } from "@/lib/schema";
+
+const PAGE_URL = "https://www.sjuluxetravel.com/luna-de-miel-de-lujo";
+const schema = buildGraph(
+  {
+    "@type": "WebPage",
+    "@id": `${PAGE_URL}#webpage`,
+    url: PAGE_URL,
+    name: "Luna de Miel de Lujo desde Puerto Rico",
+    isPartOf: WEBSITE_REF,
+    inLanguage: "es",
+  },
+  {
+    "@type": "Service",
+    "@id": `${PAGE_URL}#service`,
+    name: "Luxury Honeymoon Travel Planning",
+    description:
+      "Personalized luxury honeymoon itineraries from Puerto Rico to top romantic destinations worldwide.",
+    provider: ORG_REF,
+    areaServed: { "@type": "State", name: "Puerto Rico" },
+    serviceType: "Honeymoon Travel Planning",
+    url: PAGE_URL,
+  },
+  breadcrumbList([
+    { name: "Home", url: "https://www.sjuluxetravel.com" },
+    { name: "Luna de Miel de Lujo", url: PAGE_URL },
+  ])
+);
+
 const LunaDeMiel = () => {
   const { t, localPath } = useLanguage();
   const d = t.lunaDeMiel;
@@ -49,6 +78,7 @@ const LunaDeMiel = () => {
         title="Luna de Miel de Lujo desde PR | SJU Luxe Travel"
         description="Planifica tu luna de miel de lujo desde San Juan, PR. Maldivas, Amalfi, Santorini, Bora Bora y más — itinerarios románticos a medida."
         canonical="https://www.sjuluxetravel.com/luna-de-miel-de-lujo"
+        schemaJson={schema}
       />
 
       <article className="pt-32 pb-20 bg-background">
