@@ -193,9 +193,18 @@ const Footer = () => {
                   { icon: Instagram, href: "https://www.instagram.com/sjuluxetravel/", label: "Follow SJU Luxe Travel on Instagram" },
                   { icon: Facebook, href: "https://www.facebook.com/sjuluxetravel", label: "Follow SJU Luxe Travel on Facebook" },
                   { icon: Linkedin, href: "https://www.linkedin.com/company/sju-luxe-travel", label: "Follow SJU Luxe Travel on LinkedIn" },
+                  {
+                    icon: (props: { size?: number; "aria-hidden"?: boolean }) => (
+                      <svg width={props.size} height={props.size} viewBox="0 0 24 24" fill="currentColor" aria-hidden={props["aria-hidden"]}>
+                        <path d="M21.35 11.1h-9.17v2.98h5.27c-.23 1.48-1.72 4.34-5.27 4.34-3.17 0-5.76-2.62-5.76-5.86s2.59-5.86 5.76-5.86c1.8 0 3.01.77 3.7 1.43l2.53-2.44C16.9 4.2 14.76 3.3 12.18 3.3 6.98 3.3 2.8 7.48 2.8 12.56s4.18 9.26 9.38 9.26c5.42 0 9.01-3.8 9.01-9.16 0-.62-.07-1.09-.14-1.56z"/>
+                      </svg>
+                    ),
+                    href: "https://share.google/ahCukdIzbzs4A57sc",
+                    label: "SJU Luxe Travel on Google",
+                  },
                 ].map(({ icon: Icon, href, label }) => (
                   <a key={href} href={href} target="_blank" rel="noopener noreferrer" aria-label={label} className="w-9 h-9 rounded-full gold-border flex items-center justify-center text-muted-foreground hover:text-gold hover:border-gold transition-colors">
-                    <Icon size={16} aria-hidden="true" />
+                    <Icon size={16} aria-hidden={true} />
                   </a>
                 ))}
               </div>

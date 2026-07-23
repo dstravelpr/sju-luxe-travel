@@ -31,6 +31,7 @@ export const ORG_SCHEMA = {
     "https://www.instagram.com/sjuluxetravel",
     "https://www.facebook.com/sjuluxetravel",
     "https://www.linkedin.com/company/sju-luxe-travel",
+    "https://share.google/ahCukdIzbzs4A57sc",
   ],
   founder: {
     "@type": "Person",
