@@ -3,7 +3,7 @@ import { ArrowLeft, User, Calendar, Clock, Sparkles } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
+import { AUTHOR, ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/blog-river-cruise.jpg";
 
 const schemaJson = buildGraph({
@@ -11,10 +11,10 @@ const schemaJson = buildGraph({
       headline: "River Cruising Isn't Just for Your Parents Anymore — And That Changes Everything",
       description: "84% of travelers under 35 want to take a river cruise. A luxury travel agent explains why — and how to get the most out of the experience.",
       image: "https://www.sjuluxetravel.com/og/river-cruising-new-generation.jpg",
-      author: { "@type": "Person", name: "Daniel Santiago Díaz", url: "https://www.sjuluxetravel.com/about" },
+      author: AUTHOR,
       publisher: ORG_REF,
       datePublished: "2026-05-13",
-      dateModified: "2026-06-02",
+      dateModified: "2026-07-23",
       inLanguage: "en",
       keywords: ["luxury river cruise", "river cruising Puerto Rico", "Danube river cruise", "Rhine river cruise", "Douro river cruise", "AmaWaterways", "Avalon Waterways", "Riverside Luxury Cruises", "river cruise for young travelers"],
       url: "https://www.sjuluxetravel.com/blog/river-cruising-new-generation",
@@ -85,10 +85,11 @@ const RiverCruisingNewGeneration = () => {
                 : "Why a new generation is discovering the smartest way to travel"}
             </p>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
-              <span className="flex items-center gap-1.5"><User size={12} className="text-gold" />Daniel Santiago Díaz</span>
+              <Link to={localPath("/about")} className="flex items-center gap-1.5 hover:text-gold transition-colors"><User size={12} className="text-gold" />Daniel Santiago Díaz<span className="text-muted-foreground/70"> — {isEs ? "Agente de Viajes de Lujo" : "Luxury Travel Advisor"}</span></Link>
               <span className="flex items-center gap-1.5"><Calendar size={12} className="text-gold" />{isEs ? "Mayo 2026" : "May 2026"}</span>
               <span className="flex items-center gap-1.5"><Clock size={12} className="text-gold" />{isEs ? "6 min de lectura" : "6 min read"}</span>
             </div>
+            <p className="text-muted-foreground/70 text-xs mt-3 italic">{isEs ? "Última actualización: 23 de julio de 2026" : "Last updated: July 23, 2026"}</p>
           </div>
 
           {/* Hero image */}

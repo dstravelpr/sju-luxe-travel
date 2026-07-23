@@ -3,7 +3,7 @@ import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
+import { AUTHOR, ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/honeymoon/maldives.png";
 import boraImg from "@/assets/honeymoon/bora-bora.png";
 import santoriniImg from "@/assets/honeymoon/santorini.png";
@@ -17,11 +17,11 @@ const schemaJson = buildGraph({
   headline: "Mejores Destinos de Luna de Miel 2026 desde Puerto Rico",
   description:
     "Los 7 mejores destinos de luna de miel 2026 desde San Juan: Maldivas, Bora Bora, Amalfi, Santorini, Portugal. Itinerarios, vuelos, presupuestos y temporadas por agente de lujo.",
-  author: { "@type": "Person", name: "Daniel Santiago Díaz" },
+  author: AUTHOR,
   publisher: ORG_REF,
 
   datePublished: "2026-06-01",
-  dateModified: "2026-06-01",
+  dateModified: "2026-07-23",
   inLanguage: "es-PR",
   image: "https://www.sjuluxetravel.com/og/honeymoon-2026.png",
   keywords: [
@@ -115,10 +115,11 @@ const Post = () => {
                 : "Best Honeymoon Destinations 2026 — 7 Luxury Escapes from Puerto Rico"}
             </h1>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
-              <span className="flex items-center gap-1.5"><User size={12} className="text-gold" />Daniel Santiago Díaz</span>
+              <Link to={localPath("/about")} className="flex items-center gap-1.5 hover:text-gold transition-colors"><User size={12} className="text-gold" />Daniel Santiago Díaz<span className="text-muted-foreground/70"> — {isEs ? "Agente de Viajes de Lujo" : "Luxury Travel Advisor"}</span></Link>
               <span className="flex items-center gap-1.5"><Calendar size={12} className="text-gold" />{isEs ? "1 de junio de 2026" : "June 1, 2026"}</span>
               <span className="flex items-center gap-1.5"><Clock size={12} className="text-gold" />{isEs ? "14 min de lectura" : "14 min read"}</span>
             </div>
+            <p className="text-muted-foreground/70 text-xs mt-3 italic">{isEs ? "Última actualización: 23 de julio de 2026" : "Last updated: July 23, 2026"}</p>
           </div>
 
           <div className="aspect-[16/9] overflow-hidden rounded-lg gold-border mb-12">

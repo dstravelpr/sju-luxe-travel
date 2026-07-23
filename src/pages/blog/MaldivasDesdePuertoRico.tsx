@@ -3,16 +3,17 @@ import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
+import { AUTHOR, ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/destination-maldives.jpg";
 
 const schemaJson = buildGraph({
   "@type": "BlogPosting",
   headline: "Maldivas desde Puerto Rico: Guía Completa de Ruta, Costo y Resorts",
   description: "Cómo llegar a Maldivas desde San Juan, cuánto cuesta un viaje de lujo y los mejores resorts según tu estilo.",
-  author: { "@type": "Person", name: "Daniel Santiago Díaz" },
+  author: AUTHOR,
   publisher: ORG_REF,
   datePublished: "2026-05-29",
+  dateModified: "2026-07-23",
   inLanguage: "es-PR",
   url: "https://www.sjuluxetravel.com/blog/maldivas-desde-puerto-rico-guia",
 });
@@ -45,10 +46,11 @@ const Post = () => {
             <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{isEs ? "Destinos" : "Destinations"}</span>
             <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">{isEs ? "Maldivas desde Puerto Rico: Guía Completa 2026" : "Maldives from Puerto Rico: Complete 2026 Guide"}</h1>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
-              <span className="flex items-center gap-1.5"><User size={12} className="text-gold" />Daniel Santiago Díaz</span>
+              <Link to={localPath("/about")} className="flex items-center gap-1.5 hover:text-gold transition-colors"><User size={12} className="text-gold" />Daniel Santiago Díaz<span className="text-muted-foreground/70"> — {isEs ? "Agente de Viajes de Lujo" : "Luxury Travel Advisor"}</span></Link>
               <span className="flex items-center gap-1.5"><Calendar size={12} className="text-gold" />{isEs ? "29 de mayo de 2026" : "May 29, 2026"}</span>
               <span className="flex items-center gap-1.5"><Clock size={12} className="text-gold" />{isEs ? "9 min de lectura" : "9 min read"}</span>
             </div>
+            <p className="text-muted-foreground/70 text-xs mt-3 italic">{isEs ? "Última actualización: 23 de julio de 2026" : "Last updated: July 23, 2026"}</p>
           </div>
           <div className="aspect-[16/9] overflow-hidden rounded-lg gold-border mb-12">
             <img src={heroImg} alt={isEs ? "Maldivas desde Puerto Rico" : "Maldives from Puerto Rico"} className="w-full h-full object-cover" />

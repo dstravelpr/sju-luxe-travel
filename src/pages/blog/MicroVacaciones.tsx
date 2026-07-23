@@ -3,17 +3,17 @@ import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
+import { AUTHOR, ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import blogMicrocationsImg from "@/assets/blog-microcations.jpg";
 
 const schemaJson = buildGraph({
       "@type": "BlogPosting",
       headline: "¿Son las Microvacaciones el Futuro de los Viajes desde Puerto Rico?",
       description: "Las microvacaciones —escapadas de 2 a 5 días bien planificadas desde San Juan— son una nueva forma de viajar más consciente, flexible y de lujo.",
-      author: { "@type": "Person", name: "Daniel Santiago Díaz", url: "https://www.sjuluxetravel.com/about" },
+      author: AUTHOR,
       publisher: ORG_REF,
       datePublished: "2026-04-11",
-      dateModified: "2026-06-02",
+      dateModified: "2026-07-23",
       inLanguage: "es-PR",
       keywords: ["microvacaciones", "micro-cation", "escapadas cortas desde Puerto Rico", "long weekend luxury", "viajes cortos de lujo", "weekend getaways from San Juan", "luxury short trips"],
       url: "https://www.sjuluxetravel.com/blog/micro-vacaciones-futuro-del-viaje",
@@ -84,10 +84,11 @@ const MicroVacaciones = () => {
                 : "Shorter, more mindful, and more meaningful getaways"}
             </p>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
-              <span className="flex items-center gap-1.5">
+              <Link to={localPath("/about")} className="flex items-center gap-1.5 hover:text-gold transition-colors">
                 <User size={12} className="text-gold" />
                 Daniel Santiago Díaz
-              </span>
+                <span className="text-muted-foreground/70"> — {isEs ? "Agente de Viajes de Lujo" : "Luxury Travel Advisor"}</span>
+              </Link>
               <span className="flex items-center gap-1.5">
                 <Calendar size={12} className="text-gold" />
                 {isEs ? "11 de abril de 2026" : "April 11, 2026"}
@@ -97,6 +98,7 @@ const MicroVacaciones = () => {
                 {isEs ? "6 min de lectura" : "6 min read"}
               </span>
             </div>
+            <p className="text-muted-foreground/70 text-xs mt-3 italic">{isEs ? "Última actualización: 23 de julio de 2026" : "Last updated: July 23, 2026"}</p>
           </div>
 
           <div className="aspect-[16/9] overflow-hidden rounded-lg gold-border mb-12">

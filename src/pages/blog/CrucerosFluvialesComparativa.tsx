@@ -3,16 +3,17 @@ import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
+import { AUTHOR, ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/blog-river-cruise.jpg";
 
 const schemaJson = buildGraph({
   "@type": "BlogPosting",
   headline: "Cruceros Fluviales de Lujo: AmaWaterways vs Avalon vs Riverside",
   description: "Comparativa completa entre AmaWaterways, Avalon Waterways y Riverside Luxury Cruises para viajeros desde Puerto Rico.",
-  author: { "@type": "Person", name: "Daniel Santiago Díaz" },
+  author: AUTHOR,
   publisher: ORG_REF,
   datePublished: "2026-05-29",
+  dateModified: "2026-07-23",
   inLanguage: "es-PR",
   url: "https://www.sjuluxetravel.com/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside",
 });
@@ -47,10 +48,11 @@ const Post = () => {
               {isEs ? "Cruceros Fluviales de Lujo: AmaWaterways vs Avalon vs Riverside" : "Luxury River Cruises: AmaWaterways vs Avalon vs Riverside"}
             </h1>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
-              <span className="flex items-center gap-1.5"><User size={12} className="text-gold" />Daniel Santiago Díaz</span>
+              <Link to={localPath("/about")} className="flex items-center gap-1.5 hover:text-gold transition-colors"><User size={12} className="text-gold" />Daniel Santiago Díaz<span className="text-muted-foreground/70"> — {isEs ? "Agente de Viajes de Lujo" : "Luxury Travel Advisor"}</span></Link>
               <span className="flex items-center gap-1.5"><Calendar size={12} className="text-gold" />{isEs ? "29 de mayo de 2026" : "May 29, 2026"}</span>
               <span className="flex items-center gap-1.5"><Clock size={12} className="text-gold" />{isEs ? "9 min de lectura" : "9 min read"}</span>
             </div>
+            <p className="text-muted-foreground/70 text-xs mt-3 italic">{isEs ? "Última actualización: 23 de julio de 2026" : "Last updated: July 23, 2026"}</p>
           </div>
           <div className="aspect-[16/9] overflow-hidden rounded-lg gold-border mb-12">
             <img src={heroImg} alt={isEs ? "Crucero fluvial de lujo" : "Luxury river cruise"} className="w-full h-full object-cover" />
