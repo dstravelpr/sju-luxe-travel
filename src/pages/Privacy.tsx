@@ -8,6 +8,10 @@ const Privacy = () => {
         title="Privacy Policy | SJU Luxe Travel"
         description="Privacy policy for SJU Luxe Travel. Learn how we collect, use, and protect your personal information."
         canonical="https://www.sjuluxetravel.com/privacy"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: 'Privacy Policy', url: "https://www.sjuluxetravel.com/privacy" },
+        ]}
       />
 
       <section className="pt-32 pb-20 bg-background">

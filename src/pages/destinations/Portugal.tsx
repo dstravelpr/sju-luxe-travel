@@ -27,6 +27,11 @@ const Portugal = () => {
         title="Viajes de Lujo a Portugal | SJU Luxe Travel"
         description="Descubre Portugal con un itinerario de lujo a medida. Cenas en Belem, quintas históricas y experiencias culturales exclusivas — desde San Juan, PR."
         canonical="https://www.sjuluxetravel.com/destinations/portugal"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: 'Destinations', url: "https://www.sjuluxetravel.com/destinations" },
+          { name: 'Portugal', url: "https://www.sjuluxetravel.com/destinations/portugal" },
+        ]}
         schemaJson={schemaJson}
       />
 
