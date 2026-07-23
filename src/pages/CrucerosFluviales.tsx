@@ -157,20 +157,11 @@ const CrucerosFluviales = () => {
             </ol>
             <p className="text-muted-foreground text-base leading-relaxed mt-4">{d.logisticsP}</p>
 
-            <h2 className="font-heading text-2xl text-foreground mt-10">{d.h2FAQ}</h2>
-            <Accordion type="single" collapsible className="mt-4">
-              {d.faqItems.map((faq, i) => (
-                <AccordionItem key={i} value={`q${i + 1}`} className="border-border/30">
-                  <AccordionTrigger className="text-foreground font-body text-base hover:text-gold">
-                    {faq.q}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground text-base leading-relaxed">
-                    {faq.a}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
+            <h2 className="font-heading text-2xl text-foreground mt-10 sr-only">FAQ</h2>
           </div>
+
+          <FAQSection heading="Preguntas Frecuentes sobre Cruceros Fluviales" items={FAQ_ITEMS} />
+
 
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">
