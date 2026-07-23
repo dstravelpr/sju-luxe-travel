@@ -462,7 +462,9 @@ const buildSchema = (route, content, canonical, lang) => {
     primary = { "@type": "WebPage", name: content.h1, description: content.description, url: canonical, inLanguage, isPartOf: { "@id": WEBSITE_ID } };
   }
 
-  const graph = [ORG_SCHEMA, WEBSITE_SCHEMA, primary];
+  // #organization and #website are emitted statically in index.html — do not
+  // duplicate them here. Only page-specific nodes go into the prerender graph.
+  const graph = [primary];
 
   // Breadcrumbs: never on the homepage
   const bc = buildBreadcrumbs(content.breadcrumbs);
