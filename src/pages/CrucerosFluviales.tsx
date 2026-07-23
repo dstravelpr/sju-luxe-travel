@@ -17,12 +17,26 @@ import avalonPhoto from "@/assets/rivers/avalon-waterways.png";
 import riversidePhoto from "@/assets/rivers/riverside-luxury-cruises.png";
 
 const riverImages = [danubeImg, rhineImg, seineImg, douroImg, nileImg, mekongImg];
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { FAQSection } from "@/components/FAQSection";
+
+const FAQ_ITEMS = [
+  {
+    q: "¿Qué es un crucero fluvial de lujo y en qué se diferencia de un crucero de mar?",
+    a: "Los cruceros fluviales navegan por ríos icónicos como el Danubio, el Rin o el Duero en barcos más pequeños y elegantes, con acceso a ciudades históricas del interior de Europa que los cruceros marítimos no pueden alcanzar.",
+  },
+  {
+    q: "¿Desde dónde salen los cruceros fluviales si vivo en Puerto Rico?",
+    a: "Coordinaremos tu vuelo desde San Juan (SJU) hasta el puerto de embarque europeo —típicamente Ámsterdam, Budapest, Viena o Oporto— con trasferencias incluidas.",
+  },
+  {
+    q: "¿Qué río o itinerario fluvial me recomiendas para un primer crucero fluvial?",
+    a: "El Danubio (Budapest a Ámsterdam) o el Duero en Portugal son ideales para quienes viajan por primera vez en crucero fluvial: paisajes espectaculares, gastronomía de primera, y puertos manejables a pie.",
+  },
+  {
+    q: "¿Las excursiones en tierra están incluidas en el precio?",
+    a: "En las líneas de lujo fluviales como AmaWaterways, Avalon, y Riverside Luxury Cruises, las excursiones guiadas en cada puerto de escala suelen estar incluidas. Lo confirmamos según la línea y categoría seleccionada.",
+  },
+];
 
 import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 
