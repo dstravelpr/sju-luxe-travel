@@ -56,6 +56,7 @@ const Post = () => {
               <span className="flex items-center gap-1.5"><Calendar size={12} className="text-gold" />8 de julio de 2026</span>
               <span className="flex items-center gap-1.5"><Clock size={12} className="text-gold" />7 min de lectura</span>
             </div>
+            <p className="text-muted-foreground/70 text-xs mt-3 italic">Última actualización: 23 de julio de 2026</p>
           </div>
 
           <div className="aspect-[16/9] overflow-hidden rounded-lg gold-border mb-12">
