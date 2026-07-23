@@ -115,10 +115,11 @@ const Post = () => {
                 : "Best Honeymoon Destinations 2026 — 7 Luxury Escapes from Puerto Rico"}
             </h1>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
-              <span className="flex items-center gap-1.5"><User size={12} className="text-gold" />Daniel Santiago Díaz</span>
+              <Link to={localPath("/about")} className="flex items-center gap-1.5 hover:text-gold transition-colors"><User size={12} className="text-gold" />Daniel Santiago Díaz<span className="text-muted-foreground/70"> — {isEs ? "Agente de Viajes de Lujo" : "Luxury Travel Advisor"}</span></Link>
               <span className="flex items-center gap-1.5"><Calendar size={12} className="text-gold" />{isEs ? "1 de junio de 2026" : "June 1, 2026"}</span>
               <span className="flex items-center gap-1.5"><Clock size={12} className="text-gold" />{isEs ? "14 min de lectura" : "14 min read"}</span>
             </div>
+            <p className="text-muted-foreground/70 text-xs mt-3 italic">{isEs ? "Última actualización: 23 de julio de 2026" : "Last updated: July 23, 2026"}</p>
           </div>
 
           <div className="aspect-[16/9] overflow-hidden rounded-lg gold-border mb-12">

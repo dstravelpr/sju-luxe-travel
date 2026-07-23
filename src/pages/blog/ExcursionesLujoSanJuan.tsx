@@ -52,7 +52,7 @@ const Post = () => {
               Excursiones de Lujo desde el Puerto de Cruceros de San Juan
             </h1>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
-              <span className="flex items-center gap-1.5"><User size={12} className="text-gold" />Daniel Santiago Díaz</span>
+              <Link to={localPath("/about")} className="flex items-center gap-1.5 hover:text-gold transition-colors"><User size={12} className="text-gold" />Daniel Santiago Díaz<span className="text-muted-foreground/70"> — {isEs ? "Agente de Viajes de Lujo" : "Luxury Travel Advisor"}</span></Link>
               <span className="flex items-center gap-1.5"><Calendar size={12} className="text-gold" />8 de julio de 2026</span>
               <span className="flex items-center gap-1.5"><Clock size={12} className="text-gold" />7 min de lectura</span>
             </div>

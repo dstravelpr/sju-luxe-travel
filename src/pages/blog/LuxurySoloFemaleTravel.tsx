@@ -46,10 +46,11 @@ const Post = () => {
             <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{isEs ? "Audiencia" : "Audience"}</span>
             <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">{isEs ? "Viajes de Lujo para Mujeres Solas: Destinos Más Seguros 2026" : "Luxury Solo Female Travel: Safest Destinations for 2026"}</h1>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
-              <span className="flex items-center gap-1.5"><User size={12} className="text-gold" />Daniel Santiago Díaz</span>
+              <Link to={localPath("/about")} className="flex items-center gap-1.5 hover:text-gold transition-colors"><User size={12} className="text-gold" />Daniel Santiago Díaz<span className="text-muted-foreground/70"> — {isEs ? "Agente de Viajes de Lujo" : "Luxury Travel Advisor"}</span></Link>
               <span className="flex items-center gap-1.5"><Calendar size={12} className="text-gold" />{isEs ? "29 de mayo de 2026" : "May 29, 2026"}</span>
               <span className="flex items-center gap-1.5"><Clock size={12} className="text-gold" />{isEs ? "7 min de lectura" : "7 min read"}</span>
             </div>
+            <p className="text-muted-foreground/70 text-xs mt-3 italic">{isEs ? "Última actualización: 23 de julio de 2026" : "Last updated: July 23, 2026"}</p>
           </div>
           <div className="aspect-[16/9] overflow-hidden rounded-lg gold-border mb-12">
             <img src={heroImg} alt={isEs ? "Viajes de lujo para mujeres solas" : "Luxury solo female travel"} className="w-full h-full object-cover" />

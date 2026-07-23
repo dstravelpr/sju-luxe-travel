@@ -86,10 +86,11 @@ const Post = () => {
             <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{isEs ? "Servicios" : "Services"}</span>
             <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">{isEs ? "Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena" : "Travel Concierge Services: What They Are, What's Included & Why They're Worth It"}</h1>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
-              <span className="flex items-center gap-1.5"><User size={12} className="text-gold" />Daniel Santiago Díaz</span>
+              <Link to={localPath("/about")} className="flex items-center gap-1.5 hover:text-gold transition-colors"><User size={12} className="text-gold" />Daniel Santiago Díaz<span className="text-muted-foreground/70"> — {isEs ? "Agente de Viajes de Lujo" : "Luxury Travel Advisor"}</span></Link>
               <span className="flex items-center gap-1.5"><Calendar size={12} className="text-gold" />{isEs ? "29 de mayo de 2026" : "May 29, 2026"}</span>
               <span className="flex items-center gap-1.5"><Clock size={12} className="text-gold" />{isEs ? "5 min de lectura" : "5 min read"}</span>
             </div>
+            <p className="text-muted-foreground/70 text-xs mt-3 italic">{isEs ? "Última actualización: 23 de julio de 2026" : "Last updated: July 23, 2026"}</p>
           </div>
           <div className="aspect-[16/9] overflow-hidden rounded-lg gold-border mb-12">
             <img src={heroImg} alt={isEs ? "Servicios de concierge de viaje" : "Travel concierge services"} className="w-full h-full object-cover" />

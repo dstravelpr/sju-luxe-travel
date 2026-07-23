@@ -166,10 +166,11 @@ const WellnessTravel = () => {
                 : "Intentional luxury travel as a mental health investment"}
             </p>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
-              <span className="flex items-center gap-1.5"><User size={12} className="text-gold" />Daniel Santiago Díaz</span>
+              <Link to={localPath("/about")} className="flex items-center gap-1.5 hover:text-gold transition-colors"><User size={12} className="text-gold" />Daniel Santiago Díaz<span className="text-muted-foreground/70"> — {isEs ? "Agente de Viajes de Lujo" : "Luxury Travel Advisor"}</span></Link>
               <span className="flex items-center gap-1.5"><Calendar size={12} className="text-gold" />{isEs ? "Mayo 2026" : "May 2026"}</span>
               <span className="flex items-center gap-1.5"><Clock size={12} className="text-gold" />{isEs ? "7 min de lectura" : "7 min read"}</span>
             </div>
+            <p className="text-muted-foreground/70 text-xs mt-3 italic">{isEs ? "Última actualización: 23 de julio de 2026" : "Last updated: July 23, 2026"}</p>
           </div>
 
           {/* Hero image */}
