@@ -100,6 +100,9 @@ export const SEOHead = ({
       {schemaJson && (
         <script type="application/ld+json">{JSON.stringify(schemaJson)}</script>
       )}
+      {breadcrumbSchema && (
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+      )}
     </Helmet>
   );
 };
