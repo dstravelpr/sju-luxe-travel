@@ -10,7 +10,7 @@ const DIST = path.resolve("dist");
 const template = fs.readFileSync(path.join(DIST, "index.html"), "utf-8");
 
 const HOSTNAME = "https://www.sjuluxetravel.com";
-const ORG_ID = `${HOSTNAME}/#org`;
+const ORG_ID = `${HOSTNAME}/#organization`;
 const WEBSITE_ID = `${HOSTNAME}/#website`;
 const LOGO_URL = `${HOSTNAME}/logo.png`;
 const DEFAULT_OG = `${HOSTNAME}/og-image.jpg`;
