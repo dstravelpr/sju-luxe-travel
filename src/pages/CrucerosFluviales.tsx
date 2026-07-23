@@ -157,7 +157,7 @@ const CrucerosFluviales = () => {
             </ol>
             <p className="text-muted-foreground text-base leading-relaxed mt-4">{d.logisticsP}</p>
 
-            <h2 className="font-heading text-2xl text-foreground mt-10 sr-only">FAQ</h2>
+            
           </div>
 
           <FAQSection heading="Preguntas Frecuentes sobre Cruceros Fluviales" items={FAQ_ITEMS} />
