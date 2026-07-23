@@ -3,16 +3,17 @@ import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
+import { AUTHOR, ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/blog-river-cruise.jpg";
 
 const schemaJson = buildGraph({
   "@type": "BlogPosting",
   headline: "Cruceros Fluviales de Lujo: AmaWaterways vs Avalon vs Riverside",
   description: "Comparativa completa entre AmaWaterways, Avalon Waterways y Riverside Luxury Cruises para viajeros desde Puerto Rico.",
-  author: { "@type": "Person", name: "Daniel Santiago Díaz" },
+  author: AUTHOR,
   publisher: ORG_REF,
   datePublished: "2026-05-29",
+  dateModified: "2026-07-23",
   inLanguage: "es-PR",
   url: "https://www.sjuluxetravel.com/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside",
 });

@@ -3,16 +3,17 @@ import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
+import { AUTHOR, ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/hero-beach-sunset.jpg";
 
 const schemaJson = buildGraph({
   "@type": "BlogPosting",
   headline: "Viajes de Lujo sin Pasaporte desde Puerto Rico",
   description: "Los mejores destinos de lujo sin pasaporte para residentes de Puerto Rico: Islas Vírgenes, Hawaii, Florida Keys y más.",
-  author: { "@type": "Person", name: "Daniel Santiago Díaz" },
+  author: AUTHOR,
   publisher: ORG_REF,
   datePublished: "2026-05-29",
+  dateModified: "2026-07-23",
   inLanguage: "es-PR",
   url: "https://www.sjuluxetravel.com/blog/viajes-sin-pasaporte-desde-pr",
 });

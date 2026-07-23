@@ -3,16 +3,17 @@ import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
+import { AUTHOR, ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import blogAgentImg from "@/assets/blog-travel-agent.jpg";
 
 const schemaJson = buildGraph({
       "@type": "BlogPosting",
       headline: "¿Los Agentes de Viaje Realmente Te Ayudan a Ahorrar Dinero?",
       description: "Una perspectiva honesta de un agente de viaje moderno sobre cómo la orientación profesional te ahorra dinero, tiempo y estrés.",
-      author: { "@type": "Person", name: "Daniel Santiago Díaz" },
+      author: AUTHOR,
       publisher: ORG_REF,
       datePublished: "2026-04-07",
+  dateModified: "2026-07-23",
       inLanguage: "es-PR",
       url: "https://www.sjuluxetravel.com/blog/do-travel-agents-really-help-save-money",
     },

@@ -3,14 +3,14 @@ import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
+import { AUTHOR, ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import blogLuxuryImg from "@/assets/blog-luxury-travel.jpg";
 
 const schemaJson = buildGraph({
       "@type": "BlogPosting",
       headline: "Lo Que Realmente Significa el Viaje de Lujo desde Puerto Rico",
       description: "El verdadero lujo en los viajes no se trata de cuánto gastas, sino de cómo te hace sentir la experiencia. Filosofía de un agente de viaje en San Juan, PR.",
-      author: { "@type": "Person", name: "Daniel Santiago Díaz", url: "https://www.sjuluxetravel.com/about" },
+      author: AUTHOR,
       publisher: ORG_REF,
       datePublished: "2026-04-08",
       dateModified: "2026-06-02",

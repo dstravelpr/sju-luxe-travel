@@ -3,14 +3,14 @@ import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
+import { AUTHOR, ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import blogMicrocationsImg from "@/assets/blog-microcations.jpg";
 
 const schemaJson = buildGraph({
       "@type": "BlogPosting",
       headline: "¿Son las Microvacaciones el Futuro de los Viajes desde Puerto Rico?",
       description: "Las microvacaciones —escapadas de 2 a 5 días bien planificadas desde San Juan— son una nueva forma de viajar más consciente, flexible y de lujo.",
-      author: { "@type": "Person", name: "Daniel Santiago Díaz", url: "https://www.sjuluxetravel.com/about" },
+      author: AUTHOR,
       publisher: ORG_REF,
       datePublished: "2026-04-11",
       dateModified: "2026-06-02",

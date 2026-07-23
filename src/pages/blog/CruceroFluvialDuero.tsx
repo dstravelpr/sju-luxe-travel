@@ -3,7 +3,7 @@ import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
+import { AUTHOR, ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/rivers/douro.png";
 
 const schemaJson = buildGraph({
@@ -11,7 +11,7 @@ const schemaJson = buildGraph({
   headline: "Crucero Fluvial por el Duero desde Puerto Rico: Portugal desde el Río",
   description:
     "Guía completa para hacer un crucero fluvial por el Duero desde Puerto Rico: navieras, rutas de vuelo, mejor temporada y experiencias de bodega en el valle vinícola más antiguo del mundo.",
-  author: { "@type": "Person", name: "Daniel Santiago Díaz", url: "https://www.sjuluxetravel.com/about" },
+  author: AUTHOR,
   publisher: ORG_REF,
   datePublished: "2026-07-08",
   dateModified: "2026-07-08",
