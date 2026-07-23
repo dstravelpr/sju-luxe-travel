@@ -5,6 +5,26 @@ import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
 import travelAgentDesk from "@/assets/travel-agent-desk.jpg";
 import travelerAirport from "@/assets/traveler-airport.jpg";
+import { FAQSection } from "@/components/FAQSection";
+
+const FAQ_ITEMS = [
+  {
+    q: "¿Cuáles son los mejores destinos de lujo para viajar desde Puerto Rico?",
+    a: "Ofrecemos itinerarios a las Maldivas, Portugal, México, Italia y más. Todos los paquetes parten desde el Aeropuerto Internacional Luis Muñoz Marín (SJU), con conexiones optimizadas para minimizar el tiempo de viaje.",
+  },
+  {
+    q: "¿Cómo reservo un viaje de lujo con SJU Luxe Travel?",
+    a: "Completa el formulario de consulta en nuestra página de contacto y coordinaremos una llamada para conocer tus preferencias, fechas y presupuesto. No cobramos por la consulta inicial.",
+  },
+  {
+    q: "¿Qué ventajas tiene contratar una agencia de viajes de lujo en lugar de reservar en línea?",
+    a: "Como afiliados de NCM Concierge y Travel Leaders, tenemos acceso a upgrades gratuitos, créditos en resort y amenidades VIP que no están disponibles al reservar directamente.",
+  },
+  {
+    q: "¿Cuánto tiempo antes debo planificar mi viaje de lujo?",
+    a: "Recomendamos comenzar la planificación con al menos 3 a 6 meses de anticipación para los mejores destinos y categorías de habitación. Algunos cruceros de temporada alta requieren reserva con hasta un año de antelación.",
+  },
+];
 
 import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 
