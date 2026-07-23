@@ -29,6 +29,11 @@ const Post = () => {
         title="Maldivas desde Puerto Rico: Ruta, Costo y Mejores Resorts"
         description="Guía completa para planificar Maldivas desde San Juan: vuelos, presupuesto realista, mejor temporada y resorts top según tu estilo."
         canonical="https://www.sjuluxetravel.com/blog/maldivas-desde-puerto-rico-guia"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
+          { name: 'Maldivas desde Puerto Rico: Guía Completa de Ruta, Costo y Resorts', url: "https://www.sjuluxetravel.com/blog/maldivas-desde-puerto-rico-guia" },
+        ]}
         schemaJson={schemaJson}
       />
       <article className="pt-28 pb-20 bg-background">

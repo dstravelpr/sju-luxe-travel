@@ -42,6 +42,11 @@ const WhatLuxuryTravelMeans = () => {
         title="What Luxury Travel Really Means | SJU Luxe Travel"
         description="Luxury travel isn't about spending more — it's about intentional, bespoke experiences. SJU Luxe Travel redefines luxury from San Juan, PR."
         canonical="https://www.sjuluxetravel.com/blog/what-luxury-travel-really-means"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
+          { name: 'Lo Que Realmente Significa el Viaje de Lujo desde Puerto Rico', url: "https://www.sjuluxetravel.com/blog/what-luxury-travel-really-means" },
+        ]}
         schemaJson={schemaJson}
       />
 

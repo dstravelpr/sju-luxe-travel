@@ -29,6 +29,11 @@ const Post = () => {
         title="Luxury Solo Female Travel — Safest Destinations 2026"
         description="The safest, most empowering luxury destinations for solo women travelers in 2026: Iceland, Japan, Portugal, NZ — curated by SJU Luxe Travel."
         canonical="https://www.sjuluxetravel.com/blog/luxury-solo-female-travel"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
+          { name: 'Luxury Solo Female Travel: Safest Bespoke Destinations for 2026', url: "https://www.sjuluxetravel.com/blog/luxury-solo-female-travel" },
+        ]}
         schemaJson={schemaJson}
       />
       <article className="pt-28 pb-20 bg-background">

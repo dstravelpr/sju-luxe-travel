@@ -44,6 +44,10 @@ const About = () => {
         title="Daniel Santiago Díaz — Agente de Viaje de Lujo PR"
         description="Agente bilingüe de viajes de lujo en San Juan, PR. +10 años de experiencia, beneficios NCM Concierge, itinerarios a medida. Consulta gratuita."
         canonical={ABOUT_URL}
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: 'About Daniel Santiago Díaz', url: "https://www.sjuluxetravel.com/about" },
+        ]}
         schemaJson={aboutSchema}
       />
 

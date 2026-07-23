@@ -29,6 +29,11 @@ const Post = () => {
         title="Vuelos de Puerto Rico a Portugal — Mejores Rutas 2026"
         description="Guía completa de vuelos SJU a Lisboa y Porto: rutas con menos escalas, mejores aerolíneas, consejos para business class y honeymoons."
         canonical="https://www.sjuluxetravel.com/blog/vuelos-puerto-rico-portugal"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
+          { name: 'Vuelos de Puerto Rico a Portugal: Mejores Rutas y Aerolíneas', url: "https://www.sjuluxetravel.com/blog/vuelos-puerto-rico-portugal" },
+        ]}
         schemaJson={schemaJson}
       />
       <article className="pt-28 pb-20 bg-background">

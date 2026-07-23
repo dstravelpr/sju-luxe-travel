@@ -38,7 +38,7 @@ const FAQ_ITEMS = [
   },
 ];
 
-import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
+import { ORG_REF, WEBSITE_REF, buildGraph, breadcrumbList } from "@/lib/schema";
 
 const PAGE_URL = "https://www.sjuluxetravel.com/cruceros-fluviales-de-lujo-desde-puerto-rico";
 const schema = buildGraph(
@@ -52,14 +52,19 @@ const schema = buildGraph(
   },
   {
     "@type": "Service",
-    name: "Cruceros Fluviales de Lujo — Agente Certificado desde Puerto Rico",
+    "@id": `${PAGE_URL}#service`,
+    name: "Luxury River Cruise Planning from Puerto Rico",
     description:
-      "Agente de viaje certificado por AmaWaterways, Avalon Waterways y Riverside Luxury Cruises. Planificación completa de cruceros fluviales de lujo para viajeros de Puerto Rico.",
+      "Expertly planned luxury river cruise itineraries along Europe's iconic rivers for Puerto Rico travelers.",
     provider: ORG_REF,
     areaServed: { "@type": "State", name: "Puerto Rico" },
     serviceType: "River Cruise Planning",
     url: PAGE_URL,
-  }
+  },
+  breadcrumbList([
+    { name: "Home", url: "https://www.sjuluxetravel.com" },
+    { name: "Cruceros Fluviales de Lujo desde Puerto Rico", url: PAGE_URL },
+  ])
 );
 
 

@@ -27,6 +27,10 @@ const Blog = () => {
         title="Blog SJU Luxe Travel — Lujo, Cruceros, Honeymoons PR"
         description="Guías de viajes de lujo desde Puerto Rico: lunas de miel, cruceros fluviales, Maldivas, Portugal y más. Por Daniel Santiago Díaz."
         canonical="https://www.sjuluxetravel.com/blog"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: 'Blog', url: "https://www.sjuluxetravel.com/blog" },
+        ]}
       />
 
       <div className="pt-24 bg-background">

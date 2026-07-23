@@ -8,6 +8,10 @@ const Terms = () => {
         title="Terms of Service | SJU Luxe Travel"
         description="Terms of service for SJU Luxe Travel. Review our policies on travel bookings, cancellations, liability, and service agreements."
         canonical="https://www.sjuluxetravel.com/terms"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: 'Terms of Service', url: "https://www.sjuluxetravel.com/terms" },
+        ]}
       />
 
       <section className="pt-32 pb-20 bg-background">

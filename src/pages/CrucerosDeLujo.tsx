@@ -17,7 +17,7 @@ import ritzCarltonImg from "@/assets/ocean/ritz-carlton.jpg";
 import virginImg from "@/assets/ocean/virgin.jpg";
 import virginCertImg from "@/assets/ocean/virgin-cert.png";
 
-import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
+import { ORG_REF, WEBSITE_REF, buildGraph, breadcrumbList } from "@/lib/schema";
 
 const PAGE_URL = "https://www.sjuluxetravel.com/cruceros-de-lujo-desde-san-juan";
 const schema = buildGraph(
@@ -31,12 +31,19 @@ const schema = buildGraph(
   },
   {
     "@type": "Service",
-    name: "Cruceros de Lujo desde San Juan Puerto Rico",
+    "@id": `${PAGE_URL}#service`,
+    name: "Luxury Cruise Planning from San Juan",
+    description:
+      "Curated luxury cruise packages departing from the Port of San Juan, Puerto Rico.",
     provider: ORG_REF,
-    areaServed: "San Juan, Puerto Rico",
-    description: "Planificación VIP de cruceros de lujo que salen desde el puerto de San Juan, Puerto Rico, con beneficios exclusivos NCM Concierge.",
+    areaServed: { "@type": "State", name: "Puerto Rico" },
+    serviceType: "Luxury Cruise Planning",
     url: PAGE_URL,
-  }
+  },
+  breadcrumbList([
+    { name: "Home", url: "https://www.sjuluxetravel.com" },
+    { name: "Cruceros de Lujo desde San Juan", url: PAGE_URL },
+  ])
 );
 
 const FAQ_ITEMS = [

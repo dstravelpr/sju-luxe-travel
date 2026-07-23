@@ -137,6 +137,10 @@ const Destinations = () => {
         title="Destinos de Lujo Personalizados | SJU Luxe Travel"
         description="Explora destinos de lujo curados desde San Juan, PR: Maldivas, Portugal, México y más. Beneficios exclusivos de NCM Concierge."
         canonical="https://www.sjuluxetravel.com/destinations"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: 'Destinations', url: "https://www.sjuluxetravel.com/destinations" },
+        ]}
       />
       <section className="pt-32 pb-8 bg-background">
         <div className="container mx-auto px-6 max-w-5xl">

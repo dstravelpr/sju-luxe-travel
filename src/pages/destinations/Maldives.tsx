@@ -28,6 +28,11 @@ const Maldives = () => {
         title="Vacaciones de Lujo en Maldivas | SJU Luxe Travel"
         description="Planifica tus vacaciones de lujo en Maldivas: villas sobre el agua, cenas privadas, buceo y beneficios exclusivos de resort — desde San Juan, PR."
         canonical="https://www.sjuluxetravel.com/destinations/maldives"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: 'Destinations', url: "https://www.sjuluxetravel.com/destinations" },
+          { name: 'Maldives', url: "https://www.sjuluxetravel.com/destinations/maldives" },
+        ]}
         schemaJson={schemaJson}
       />
 

@@ -1,11 +1,18 @@
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 
+interface BreadcrumbCrumb {
+  name: string;
+  url: string;
+}
+
 interface SEOHeadProps {
   title: string;
   description: string;
   canonical?: string;
   schemaJson?: Record<string, unknown>;
+  /** Optional breadcrumb trail emitted as a BreadcrumbList JSON-LD block. */
+  breadcrumbs?: BreadcrumbCrumb[];
   ogImage?: string;
   ogType?: "website" | "article";
   noindex?: boolean;
@@ -23,12 +30,26 @@ export const SEOHead = ({
   description,
   canonical,
   schemaJson,
+  breadcrumbs,
   ogImage,
   ogType = "website",
   noindex,
   emitHreflang = false,
   suppressCanonical = false,
 }: SEOHeadProps) => {
+  const breadcrumbSchema =
+    breadcrumbs && breadcrumbs.length >= 2
+      ? {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: breadcrumbs.map((c, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: c.name,
+            item: c.url,
+          })),
+        }
+      : null;
   const image = ogImage || DEFAULT_OG_IMAGE;
   const location = useLocation();
   const lang = typeof document !== "undefined" ? document.documentElement.lang : "en";
@@ -78,6 +99,9 @@ export const SEOHead = ({
 
       {schemaJson && (
         <script type="application/ld+json">{JSON.stringify(schemaJson)}</script>
+      )}
+      {breadcrumbSchema && (
+        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
       )}
     </Helmet>
   );

@@ -29,6 +29,11 @@ const Post = () => {
         title="¿Vale la Pena un Agente de Viaje en 2026?"
         description="Cuándo vale la pena contratar un agente de viaje en 2026 y cuándo no — análisis honesto desde Puerto Rico por SJU Luxe Travel."
         canonical="https://www.sjuluxetravel.com/blog/vale-la-pena-asesor-viajes-2026"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
+          { name: '¿Vale la Pena un Agente de Viaje en 2026?', url: "https://www.sjuluxetravel.com/blog/vale-la-pena-asesor-viajes-2026" },
+        ]}
         schemaJson={schemaJson}
       />
       <article className="pt-28 pb-20 bg-background">

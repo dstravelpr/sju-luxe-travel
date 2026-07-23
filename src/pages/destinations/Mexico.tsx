@@ -27,6 +27,11 @@ const Mexico = () => {
         title="Viajes de Lujo a México | SJU Luxe Travel"
         description="Desde Tulum hasta CDMX — itinerarios de lujo personalizados para viajeros de PR. Resorts boutique, cultura y gastronomía de clase mundial."
         canonical="https://www.sjuluxetravel.com/destinations/mexico"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: 'Destinations', url: "https://www.sjuluxetravel.com/destinations" },
+          { name: 'Mexico', url: "https://www.sjuluxetravel.com/destinations/mexico" },
+        ]}
         schemaJson={schemaJson}
       />
 

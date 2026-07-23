@@ -17,6 +17,10 @@ const Contact = () => {
         title="Free Luxury Travel Consultation | SJU Luxe Travel"
         description="Schedule a free luxury travel consultation with your boutique agent in San Juan, PR. Private tours, cruises & bespoke itineraries with NCM Concierge perks."
         canonical="https://www.sjuluxetravel.com/contact"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: 'Contact', url: "https://www.sjuluxetravel.com/contact" },
+        ]}
       />
 
       <section className="pt-28 pb-16 bg-background text-center">

@@ -66,6 +66,11 @@ const DoTravelAgentsSaveMoney = () => {
         title="Is a Travel Agent Worth It? Do They Really Save You Money? | SJU Luxe Travel"
         description="Is it worth using a travel agent for a luxury vacation? How an agent saves you money, time & stress. Travel agent vs booking online — an honest take."
         canonical="https://www.sjuluxetravel.com/blog/do-travel-agents-really-help-save-money"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
+          { name: '¿Los Agentes de Viaje Realmente Te Ayudan a Ahorrar Dinero?', url: "https://www.sjuluxetravel.com/blog/do-travel-agents-really-help-save-money" },
+        ]}
         schemaJson={schemaJson}
       />
 
