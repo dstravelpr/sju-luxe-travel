@@ -59,7 +59,6 @@ const schema = buildGraph(
     areaServed: { "@type": "State", name: "Puerto Rico" },
     serviceType: "River Cruise Planning",
     url: PAGE_URL,
-  },
   }
 );
 
