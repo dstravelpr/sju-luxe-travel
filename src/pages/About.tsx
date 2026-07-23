@@ -62,6 +62,7 @@ const About = () => {
             Agente de Viajes en San Juan, Puerto Rico
           </p>
           <p className="text-muted-foreground text-base md:text-lg mt-4 max-w-xl mx-auto">{t.about.subtitle}</p>
+          <p className="font-body text-gold text-xs tracking-[0.25em] uppercase mt-3">Serving travelers since 2024</p>
           <div className="mt-10 max-w-md mx-auto">
             <img src="/about/hero-portrait.jpg" alt="Daniel Santiago Díaz, founder of SJU Luxe Travel, luxury travel agent in Puerto Rico" className="w-full rounded-lg shadow-2xl object-cover aspect-[3/4]" loading="eager" />
           </div>
