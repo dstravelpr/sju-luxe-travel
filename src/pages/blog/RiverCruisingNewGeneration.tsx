@@ -53,6 +53,11 @@ const RiverCruisingNewGeneration = () => {
             : "84% of travelers under 35 want to take a river cruise. A luxury travel agent explains why — and how to get the most out of the experience."
         }
         canonical="https://www.sjuluxetravel.com/blog/river-cruising-new-generation"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
+          { name: "River Cruising Isn't Just for Your Parents Anymore — And That Changes Everything", url: "https://www.sjuluxetravel.com/blog/river-cruising-new-generation" },
+        ]}
       />
 
       <article className="pt-28 pb-20 bg-background">

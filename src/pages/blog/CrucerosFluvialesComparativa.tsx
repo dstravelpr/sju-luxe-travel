@@ -29,6 +29,11 @@ const Post = () => {
         title="Cruceros Fluviales: AmaWaterways vs Avalon vs Riverside"
         description="Compara AmaWaterways, Avalon Waterways y Riverside Luxury Cruises. Diferencias en barcos, itinerarios, gastronomía y precio para viajeros de PR."
         canonical="https://www.sjuluxetravel.com/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
+          { name: 'Cruceros Fluviales de Lujo: AmaWaterways vs Avalon vs Riverside', url: "https://www.sjuluxetravel.com/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside" },
+        ]}
         schemaJson={schemaJson}
       />
       <article className="pt-28 pb-20 bg-background">

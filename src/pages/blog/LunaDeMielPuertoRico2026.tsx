@@ -88,6 +88,11 @@ const Post = () => {
         title="Mejores Destinos de Luna de Miel 2026 desde Puerto Rico"
         description="Los 7 mejores destinos de luna de miel 2026 desde San Juan: Maldivas, Bora Bora, Amalfi, Santorini, Portugal. Itinerarios y vuelos por agente de lujo."
         canonical="https://www.sjuluxetravel.com/blog/luna-de-miel-puerto-rico-2026"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
+          { name: 'Mejores Destinos de Luna de Miel 2026 desde Puerto Rico', url: "https://www.sjuluxetravel.com/blog/luna-de-miel-puerto-rico-2026" },
+        ]}
         schemaJson={schemaJson}
       />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />

@@ -32,6 +32,11 @@ const Post = () => {
         title="Excursiones de Lujo desde el Puerto de Cruceros de San Juan | SJU Luxe Travel"
         description="Guía de excursiones privadas de lujo para pasajeros de crucero en San Juan: tours privados del Viejo San Juan, El Yunque, catamarán y experiencias gastronómicas coordinadas por un concierge local."
         canonical="https://www.sjuluxetravel.com/blog/excursiones-de-lujo-san-juan-puerto-cruceros"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
+          { name: 'Excursiones de Lujo desde el Puerto de Cruceros de San Juan', url: "https://www.sjuluxetravel.com/blog/excursiones-de-lujo-san-juan-puerto-cruceros" },
+        ]}
         schemaJson={schemaJson}
       />
 

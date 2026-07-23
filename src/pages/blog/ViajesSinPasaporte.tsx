@@ -29,6 +29,11 @@ const Post = () => {
         title="Viajes de Lujo sin Pasaporte desde Puerto Rico"
         description="Los mejores destinos de lujo sin pasaporte para residentes de PR: USVI, Hawaii, Florida Keys, Napa y más — sin trámites internacionales."
         canonical="https://www.sjuluxetravel.com/blog/viajes-sin-pasaporte-desde-pr"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
+          { name: 'Viajes de Lujo sin Pasaporte desde Puerto Rico', url: "https://www.sjuluxetravel.com/blog/viajes-sin-pasaporte-desde-pr" },
+        ]}
         schemaJson={schemaJson}
       />
       <article className="pt-28 pb-20 bg-background">

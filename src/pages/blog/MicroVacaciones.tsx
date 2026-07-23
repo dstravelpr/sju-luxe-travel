@@ -51,6 +51,11 @@ const MicroVacaciones = () => {
             : "Micro-cations are short, well-planned 2–5 day getaways. Discover why they're the future of luxury, mindful, and flexible travel."
         }
         canonical="https://www.sjuluxetravel.com/blog/micro-vacaciones-futuro-del-viaje"
+        breadcrumbs={[
+          { name: "Home", url: "https://www.sjuluxetravel.com" },
+          { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
+          { name: '¿Son las Microvacaciones el Futuro de los Viajes desde Puerto Rico?', url: "https://www.sjuluxetravel.com/blog/micro-vacaciones-futuro-del-viaje" },
+        ]}
         schemaJson={schemaJson}
       />
 
