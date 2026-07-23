@@ -156,20 +156,8 @@ const CrucerosDeLujo = () => {
             </ul>
           </div>
 
-          {/* FAQ */}
-          <div className="prose-custom space-y-6 mt-10">
-            <h2 className="font-heading text-2xl text-foreground">{d.h2FAQ}</h2>
-            <Accordion type="single" collapsible className="mt-4">
-              <AccordionItem value="q1" className="border-border/30">
-                <AccordionTrigger className="text-foreground font-body text-base hover:text-gold">
-                  {d.faqQ1}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-base leading-relaxed">
-                  {d.faqA1}
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
-          </div>
+          <FAQSection heading="Preguntas Frecuentes sobre Cruceros de Lujo" items={FAQ_ITEMS} />
+
 
           <div className="mt-10 text-center">
             <p className="text-muted-foreground text-sm">
