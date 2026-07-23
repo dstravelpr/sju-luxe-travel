@@ -1,11 +1,18 @@
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 
+interface BreadcrumbCrumb {
+  name: string;
+  url: string;
+}
+
 interface SEOHeadProps {
   title: string;
   description: string;
   canonical?: string;
   schemaJson?: Record<string, unknown>;
+  /** Optional breadcrumb trail emitted as a BreadcrumbList JSON-LD block. */
+  breadcrumbs?: BreadcrumbCrumb[];
   ogImage?: string;
   ogType?: "website" | "article";
   noindex?: boolean;
