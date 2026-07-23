@@ -132,6 +132,8 @@ const ViajesDeLujo = () => {
             </p>
           </div>
 
+          <FAQSection heading="Preguntas Frecuentes" items={FAQ_ITEMS} />
+
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">
               {d.ctaTitle} <span className="text-gold-gradient italic">{d.ctaTitleHighlight}</span>
