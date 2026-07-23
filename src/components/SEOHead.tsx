@@ -30,12 +30,26 @@ export const SEOHead = ({
   description,
   canonical,
   schemaJson,
+  breadcrumbs,
   ogImage,
   ogType = "website",
   noindex,
   emitHreflang = false,
   suppressCanonical = false,
 }: SEOHeadProps) => {
+  const breadcrumbSchema =
+    breadcrumbs && breadcrumbs.length >= 2
+      ? {
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          itemListElement: breadcrumbs.map((c, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: c.name,
+            item: c.url,
+          })),
+        }
+      : null;
   const image = ogImage || DEFAULT_OG_IMAGE;
   const location = useLocation();
   const lang = typeof document !== "undefined" ? document.documentElement.lang : "en";
