@@ -17,12 +17,26 @@ import avalonPhoto from "@/assets/rivers/avalon-waterways.png";
 import riversidePhoto from "@/assets/rivers/riverside-luxury-cruises.png";
 
 const riverImages = [danubeImg, rhineImg, seineImg, douroImg, nileImg, mekongImg];
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { FAQSection } from "@/components/FAQSection";
+
+const FAQ_ITEMS = [
+  {
+    q: "¿Qué es un crucero fluvial de lujo y en qué se diferencia de un crucero de mar?",
+    a: "Los cruceros fluviales navegan por ríos icónicos como el Danubio, el Rin o el Duero en barcos más pequeños y elegantes, con acceso a ciudades históricas del interior de Europa que los cruceros marítimos no pueden alcanzar.",
+  },
+  {
+    q: "¿Desde dónde salen los cruceros fluviales si vivo en Puerto Rico?",
+    a: "Coordinaremos tu vuelo desde San Juan (SJU) hasta el puerto de embarque europeo —típicamente Ámsterdam, Budapest, Viena o Oporto— con trasferencias incluidas.",
+  },
+  {
+    q: "¿Qué río o itinerario fluvial me recomiendas para un primer crucero fluvial?",
+    a: "El Danubio (Budapest a Ámsterdam) o el Duero en Portugal son ideales para quienes viajan por primera vez en crucero fluvial: paisajes espectaculares, gastronomía de primera, y puertos manejables a pie.",
+  },
+  {
+    q: "¿Las excursiones en tierra están incluidas en el precio?",
+    a: "En las líneas de lujo fluviales como AmaWaterways, Avalon, y Riverside Luxury Cruises, las excursiones guiadas en cada puerto de escala suelen estar incluidas. Lo confirmamos según la línea y categoría seleccionada.",
+  },
+];
 
 import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 
@@ -45,14 +59,6 @@ const schema = buildGraph(
     areaServed: { "@type": "State", name: "Puerto Rico" },
     serviceType: "River Cruise Planning",
     url: PAGE_URL,
-  },
-  {
-    "@type": "FAQPage",
-    mainEntity: [
-      { "@type": "Question", name: "¿En qué se diferencia un crucero fluvial de uno oceánico?", acceptedAnswer: { "@type": "Answer", text: "Los cruceros fluviales tienen barcos más pequeños (100–190 pasajeros), navegan ríos históricos y atracan en el centro de las ciudades." } },
-      { "@type": "Question", name: "¿Por qué reservar con un agente certificado?", acceptedAnswer: { "@type": "Answer", text: "Las certificaciones oficiales dan acceso a tarifas preferenciales, beneficios a bordo exclusivos y soporte directo." } },
-      { "@type": "Question", name: "¿Cuál es la mejor época para un crucero fluvial en Europa?", acceptedAnswer: { "@type": "Answer", text: "Primavera y otoño son las temporadas más populares. El mercado navideño de diciembre es una experiencia única." } },
-    ],
   }
 );
 
@@ -151,20 +157,11 @@ const CrucerosFluviales = () => {
             </ol>
             <p className="text-muted-foreground text-base leading-relaxed mt-4">{d.logisticsP}</p>
 
-            <h2 className="font-heading text-2xl text-foreground mt-10">{d.h2FAQ}</h2>
-            <Accordion type="single" collapsible className="mt-4">
-              {d.faqItems.map((faq, i) => (
-                <AccordionItem key={i} value={`q${i + 1}`} className="border-border/30">
-                  <AccordionTrigger className="text-foreground font-body text-base hover:text-gold">
-                    {faq.q}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground text-base leading-relaxed">
-                    {faq.a}
-                  </AccordionContent>
-                </AccordionItem>
-              ))}
-            </Accordion>
+            
           </div>
+
+          <FAQSection heading="Preguntas Frecuentes sobre Cruceros Fluviales" items={FAQ_ITEMS} />
+
 
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">

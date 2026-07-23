@@ -9,6 +9,26 @@ import amalfiImg from "@/assets/honeymoon/amalfi.png";
 import boraBoraImg from "@/assets/honeymoon/bora-bora.png";
 import portugalImg from "@/assets/honeymoon/portugal.png";
 import tuscanyImg from "@/assets/honeymoon/tuscany.png";
+import { FAQSection } from "@/components/FAQSection";
+
+const FAQ_ITEMS = [
+  {
+    q: "¿Cuándo debo empezar a planificar mi luna de miel de lujo?",
+    a: "Lo ideal es comenzar entre 6 y 12 meses antes de tu boda. Esto garantiza disponibilidad en los mejores resorts y suites, y nos da tiempo para personalizar cada detalle de tu experiencia.",
+  },
+  {
+    q: "¿Qué destinos recomiendas para una luna de miel desde Puerto Rico?",
+    a: "Las Maldivas, Portugal, Santorini, Italia y el Caribe de lujo son nuestros destinos más solicitados para parejas. Seleccionamos propiedades que ofrecen detalles románticos exclusivos para nuestra clientela.",
+  },
+  {
+    q: "¿Está incluida la decoración romántica y los detalles especiales?",
+    a: "Coordinamos con los hoteles para arreglos de flores, cenas privadas en la playa, tratamientos de spa, y sorpresas personalizadas según tus preferencias.",
+  },
+  {
+    q: "¿Trabajan con parejas que tienen fechas de viaje flexibles?",
+    a: "Sí. La flexibilidad de fechas nos permite conseguir mejores tarifas y disponibilidad en propiedades exclusivas. Cuéntanos tu rango de fechas y lo optimizamos.",
+  },
+];
 
 const LunaDeMiel = () => {
   const { t, localPath } = useLanguage();
@@ -82,6 +102,8 @@ const LunaDeMiel = () => {
               ¿Quieres ideas concretas por destino? Lee nuestros <Link to={localPath("/blog/luna-de-miel-puerto-rico-2026")} className="text-gold hover:text-gold-light underline">mejores destinos de luna de miel 2026 desde Puerto Rico</Link> con itinerarios, rutas de vuelo y presupuestos.
             </p>
           </div>
+
+          <FAQSection heading="Preguntas Frecuentes sobre Lunas de Miel" items={FAQ_ITEMS} />
 
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">

@@ -3,12 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { FAQSection } from "@/components/FAQSection";
 import azamaraImg from "@/assets/ocean/azamara.png";
 import crystalImg from "@/assets/ocean/crystal.png";
 import exploraImg from "@/assets/ocean/explora.png";
@@ -41,21 +36,27 @@ const schema = buildGraph(
     areaServed: "San Juan, Puerto Rico",
     description: "Planificación VIP de cruceros de lujo que salen desde el puerto de San Juan, Puerto Rico, con beneficios exclusivos NCM Concierge.",
     url: PAGE_URL,
-  },
-  {
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "¿Cuáles son las mejores líneas de cruceros de lujo que salen de San Juan en 2026?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "En 2026, San Juan cuenta con salidas de las principales líneas de lujo del mundo: Ritz-Carlton Yacht Collection, Explora Journeys, Virgin Voyages, Azamara, Crystal Cruises, Oceania, Regent Seven Seas, Silversea, Viking Ocean, Seabourn y SeaDream Yacht Club.",
-        },
-      },
-    ],
   }
 );
+
+const FAQ_ITEMS = [
+  {
+    q: "¿Qué líneas de cruceros de lujo salen desde San Juan, Puerto Rico?",
+    a: "Desde el Puerto de San Juan operan itinerarios de líneas como Regent Seven Seas, Silversea, Oceania Cruises y Celebrity Cruises, con destinos al Caribe, Sudamérica y el Atlántico.",
+  },
+  {
+    q: "¿Cuál es la diferencia entre un crucero regular y un crucero de lujo?",
+    a: "Los cruceros de lujo incluyen todo incluido auténtico: vinos y licores de calidad, excursiones en tierra, propinas, internet, y menor cantidad de pasajeros por barco para una experiencia más íntima.",
+  },
+  {
+    q: "¿Necesito pasaporte para hacer un crucero desde San Juan?",
+    a: "Para itinerarios con paradas fuera de EE. UU. se recomienda pasaporte válido. Los ciudadanos estadounidenses en itinerarios de vuelta al mismo puerto americano pueden usar identificación oficial, pero el pasaporte es siempre la mejor opción.",
+  },
+  {
+    q: "¿Pueden reservar mi cabina, vuelos de conexión y hotel pre-crucero?",
+    a: "Sí. Coordinamos el paquete completo: vuelos, hotel antes de embarque, traslados y la cabina del crucero, para que solo tengas que llegar y disfrutar.",
+  },
+];
 
 const CrucerosDeLujo = () => {
   const { t, localPath } = useLanguage();
@@ -155,20 +156,8 @@ const CrucerosDeLujo = () => {
             </ul>
           </div>
 
-          {/* FAQ */}
-          <div className="prose-custom space-y-6 mt-10">
-            <h2 className="font-heading text-2xl text-foreground">{d.h2FAQ}</h2>
-            <Accordion type="single" collapsible className="mt-4">
-              <AccordionItem value="q1" className="border-border/30">
-                <AccordionTrigger className="text-foreground font-body text-base hover:text-gold">
-                  {d.faqQ1}
-                </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground text-base leading-relaxed">
-                  {d.faqA1}
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
-          </div>
+          <FAQSection heading="Preguntas Frecuentes sobre Cruceros de Lujo" items={FAQ_ITEMS} />
+
 
           <div className="mt-10 text-center">
             <p className="text-muted-foreground text-sm">
