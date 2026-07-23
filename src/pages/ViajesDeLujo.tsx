@@ -26,7 +26,7 @@ const FAQ_ITEMS = [
   },
 ];
 
-import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
+import { ORG_REF, WEBSITE_REF, buildGraph, breadcrumbList } from "@/lib/schema";
 
 const PAGE_URL = "https://www.sjuluxetravel.com/viajes-de-lujo-desde-puerto-rico";
 const schema = buildGraph(
@@ -40,13 +40,19 @@ const schema = buildGraph(
   },
   {
     "@type": "Service",
-    name: "Viajes de Lujo desde Puerto Rico",
+    "@id": `${PAGE_URL}#service`,
+    name: "Luxury Travel Planning from Puerto Rico",
+    description:
+      "Bespoke luxury travel planning for international destinations departing from San Juan, Puerto Rico.",
     provider: ORG_REF,
-    areaServed: "Puerto Rico",
-    description: "Planificación de viajes de lujo saliendo desde Puerto Rico a destinos internacionales exclusivos.",
+    areaServed: { "@type": "State", name: "Puerto Rico" },
+    serviceType: "Luxury Travel Planning",
     url: PAGE_URL,
-    availableLanguage: ["Spanish", "English"],
-  }
+  },
+  breadcrumbList([
+    { name: "Home", url: "https://www.sjuluxetravel.com" },
+    { name: "Viajes de Lujo desde Puerto Rico", url: PAGE_URL },
+  ])
 );
 
 const ViajesDeLujo = () => {
