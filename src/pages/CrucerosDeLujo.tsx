@@ -3,12 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { FAQSection } from "@/components/FAQSection";
 import azamaraImg from "@/assets/ocean/azamara.png";
 import crystalImg from "@/assets/ocean/crystal.png";
 import exploraImg from "@/assets/ocean/explora.png";
