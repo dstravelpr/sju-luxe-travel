@@ -14,7 +14,7 @@ const schemaJson = buildGraph({
       author: AUTHOR,
       publisher: ORG_REF,
       datePublished: "2026-05-13",
-      dateModified: "2026-06-02",
+      dateModified: "2026-07-23",
       inLanguage: "en",
       keywords: ["luxury river cruise", "river cruising Puerto Rico", "Danube river cruise", "Rhine river cruise", "Douro river cruise", "AmaWaterways", "Avalon Waterways", "Riverside Luxury Cruises", "river cruise for young travelers"],
       url: "https://www.sjuluxetravel.com/blog/river-cruising-new-generation",

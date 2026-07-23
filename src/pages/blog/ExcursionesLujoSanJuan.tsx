@@ -14,7 +14,7 @@ const schemaJson = buildGraph({
   author: AUTHOR,
   publisher: ORG_REF,
   datePublished: "2026-07-08",
-  dateModified: "2026-07-08",
+  dateModified: "2026-07-23",
   inLanguage: "es-PR",
   image: "https://www.sjuluxetravel.com/og/excursiones-lujo-san-juan.jpg",
   url: "https://www.sjuluxetravel.com/blog/excursiones-de-lujo-san-juan-puerto-cruceros",

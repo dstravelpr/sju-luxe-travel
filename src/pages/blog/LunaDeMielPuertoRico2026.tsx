@@ -21,7 +21,7 @@ const schemaJson = buildGraph({
   publisher: ORG_REF,
 
   datePublished: "2026-06-01",
-  dateModified: "2026-06-01",
+  dateModified: "2026-07-23",
   inLanguage: "es-PR",
   image: "https://www.sjuluxetravel.com/og/honeymoon-2026.png",
   keywords: [

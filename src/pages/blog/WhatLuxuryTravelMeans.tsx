@@ -13,7 +13,7 @@ const schemaJson = buildGraph({
       author: AUTHOR,
       publisher: ORG_REF,
       datePublished: "2026-04-08",
-      dateModified: "2026-06-02",
+      dateModified: "2026-07-23",
       inLanguage: "es-PR",
       keywords: ["viaje de lujo desde Puerto Rico", "luxury travel from San Juan", "agente de viaje", "Virtuoso agent", "Four Seasons Preferred Partner", "viajes bespoke", "luxury travel philosophy"],
       url: "https://www.sjuluxetravel.com/blog/what-luxury-travel-really-means",

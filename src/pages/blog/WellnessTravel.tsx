@@ -3,7 +3,7 @@ import { ArrowLeft, User, Calendar, Clock, Sparkles } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
+import { AUTHOR, ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/blog-wellness-maldives.jpg";
 
 const POST_URL = "https://www.sjuluxetravel.com/blog/wellness-travel-intentional-luxury";

@@ -13,7 +13,7 @@ const schemaJson = buildGraph({
       author: AUTHOR,
       publisher: ORG_REF,
       datePublished: "2026-04-11",
-      dateModified: "2026-06-02",
+      dateModified: "2026-07-23",
       inLanguage: "es-PR",
       keywords: ["microvacaciones", "micro-cation", "escapadas cortas desde Puerto Rico", "long weekend luxury", "viajes cortos de lujo", "weekend getaways from San Juan", "luxury short trips"],
       url: "https://www.sjuluxetravel.com/blog/micro-vacaciones-futuro-del-viaje",
