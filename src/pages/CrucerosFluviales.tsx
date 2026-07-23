@@ -60,13 +60,6 @@ const schema = buildGraph(
     serviceType: "River Cruise Planning",
     url: PAGE_URL,
   },
-  {
-    "@type": "FAQPage",
-    mainEntity: [
-      { "@type": "Question", name: "¿En qué se diferencia un crucero fluvial de uno oceánico?", acceptedAnswer: { "@type": "Answer", text: "Los cruceros fluviales tienen barcos más pequeños (100–190 pasajeros), navegan ríos históricos y atracan en el centro de las ciudades." } },
-      { "@type": "Question", name: "¿Por qué reservar con un agente certificado?", acceptedAnswer: { "@type": "Answer", text: "Las certificaciones oficiales dan acceso a tarifas preferenciales, beneficios a bordo exclusivos y soporte directo." } },
-      { "@type": "Question", name: "¿Cuál es la mejor época para un crucero fluvial en Europa?", acceptedAnswer: { "@type": "Answer", text: "Primavera y otoño son las temporadas más populares. El mercado navideño de diciembre es una experiencia única." } },
-    ],
   }
 );
 
