@@ -106,6 +106,7 @@ const App = () => (
       <TooltipProvider>
         <BrowserRouter>
           <LanguageProvider>
+            <GAPageViewTracker />
             <Toaster />
             <Sonner />
             <Suspense fallback={<div className="min-h-screen bg-background" />}>
