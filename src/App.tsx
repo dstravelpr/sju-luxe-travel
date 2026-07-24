@@ -1,11 +1,21 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Route, Routes, Navigate, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useEffect } from "react";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { LanguageProvider } from "@/i18n/LanguageContext";
+
+const GAPageViewTracker = () => {
+  const location = useLocation();
+  useEffect(() => {
+    if (typeof window !== "undefined" && typeof window.gtag === "function") {
+      window.gtag("event", "page_view", { page_path: window.location.pathname });
+    }
+  }, [location]);
+  return null;
+};
 
 // Eager: only the homepage (LCP-critical)
 import Index from "./pages/Index.tsx";
@@ -96,6 +106,7 @@ const App = () => (
       <TooltipProvider>
         <BrowserRouter>
           <LanguageProvider>
+            <GAPageViewTracker />
             <Toaster />
             <Sonner />
             <Suspense fallback={<div className="min-h-screen bg-background" />}>
