@@ -254,7 +254,6 @@ const Privacy = () => {
               <h2 className="font-heading text-2xl text-foreground mb-3">
                 {t.cookiesTitle}
               </h2>
-              <p className="mb-3">{t.cookiesTitle}</p>
               <h3 className="font-heading text-lg text-foreground mt-4 mb-2">
                 {t.metaTitle}
               </h3>
