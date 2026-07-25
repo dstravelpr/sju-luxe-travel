@@ -112,10 +112,18 @@ const App = () => (
                 {appRoutes.map((r) => (
                   <Route key={r.path} path={r.path} element={r.element} />
                 ))}
+                {/* Mirror every route under /es so /es/xxx renders the same component
+                    (LanguageContext detects the prefix and switches copy to Spanish). */}
+                {appRoutes.map((r) => (
+                  <Route
+                    key={`es-${r.path}`}
+                    path={r.path === "/" ? "/es" : `/es${r.path}`}
+                    element={r.element}
+                  />
+                ))}
                 <Route path="/blog/do-travel-agents-really-" element={<RedirectBlog to="/blog/do-travel-agents-really-help-save-money" />} />
                 <Route path="/blog/do-travel-agents-really" element={<RedirectBlog to="/blog/do-travel-agents-really-help-save-money" />} />
-                <Route path="/en/*" element={<LangRedirect />} />
-                <Route path="/es/*" element={<LangRedirect />} />
+                <Route path="/en/*" element={<EnRedirect />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>
