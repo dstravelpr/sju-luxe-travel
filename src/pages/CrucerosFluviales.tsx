@@ -166,6 +166,14 @@ const CrucerosFluviales = () => {
             
           </div>
 
+          <RelatedArticles
+            items={[
+              { title: "AmaWaterways vs Avalon vs Riverside: comparativa", href: "/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside", category: "Comparativa" },
+              { title: "Crucero fluvial por el Duero desde Puerto Rico", href: "/blog/crucero-fluvial-duero-desde-puerto-rico", category: "Duero" },
+              { title: "River cruising: la nueva generación", href: "/blog/river-cruising-new-generation", category: "Tendencias" },
+            ]}
+          />
+
           <FAQSection heading="Preguntas Frecuentes sobre Cruceros Fluviales" items={FAQ_ITEMS} />
 
 

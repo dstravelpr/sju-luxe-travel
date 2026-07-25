@@ -134,6 +134,14 @@ const LunaDeMiel = () => {
             </p>
           </div>
 
+          <RelatedArticles
+            items={[
+              { title: "Luna de miel en Puerto Rico 2026: mejores destinos", href: "/blog/luna-de-miel-puerto-rico-2026", category: "Luna de Miel" },
+              { title: "Maldivas desde Puerto Rico: guía completa", href: "/blog/maldivas-desde-puerto-rico-guia", category: "Destinos" },
+              { title: "Luxury solo female travel from Puerto Rico", href: "/blog/luxury-solo-female-travel", category: "Guía" },
+            ]}
+          />
+
           <FAQSection heading="Preguntas Frecuentes sobre Lunas de Miel" items={FAQ_ITEMS} />
 
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
