@@ -41,14 +41,16 @@ const About = () => {
   return (
     <Layout>
       <SEOHead
-        title="Daniel Santiago Díaz — Agente de Viaje de Lujo PR"
-        description="Agente bilingüe de viajes de lujo en San Juan, PR. +10 años de experiencia, beneficios NCM Concierge, itinerarios a medida. Consulta gratuita."
-        canonical={ABOUT_URL}
+        title="About Daniel Santiago Díaz — Luxury Travel Agent in San Juan, PR"
+        description="Meet Daniel Santiago Díaz — bilingual luxury travel agent in San Juan, PR. 10+ years of experience, NCM Concierge perks, bespoke itineraries. Free consultation."
+        titleEs="Sobre Daniel Santiago Díaz — Agente de Viajes de Lujo en San Juan, PR"
+        descriptionEs="Conoce a Daniel Santiago Díaz, agente bilingüe de viajes de lujo en San Juan, PR. +10 años de experiencia, beneficios NCM Concierge, itinerarios a medida."
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           { name: 'About Daniel Santiago Díaz', url: "https://www.sjuluxetravel.com/about" },
         ]}
         schemaJson={aboutSchema}
+        emitHreflang
       />
 
 
