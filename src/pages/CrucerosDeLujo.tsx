@@ -88,10 +88,12 @@ const CrucerosDeLujo = () => {
   return (
     <Layout>
       <SEOHead
-        title="Cruceros de Lujo desde San Juan, PR | SJU Luxe Travel"
-        description="Planifica tu crucero de lujo desde San Juan, PR. Cabinas exclusivas, excursiones privadas y beneficios VIP de NCM Concierge."
-        canonical={PAGE_URL}
+        title="Luxury Cruises from San Juan, PR | SJU Luxe Travel"
+        description="Plan your luxury cruise from San Juan, PR. Exclusive suites, private shore excursions and VIP perks through NCM Concierge."
+        titleEs="Cruceros de Lujo desde San Juan, PR | SJU Luxe Travel"
+        descriptionEs="Planifica tu crucero de lujo desde San Juan, PR. Cabinas exclusivas, excursiones privadas y beneficios VIP de NCM Concierge."
         schemaJson={schema}
+        emitHreflang
       />
 
 
