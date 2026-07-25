@@ -7,6 +7,7 @@ import { Picture } from "@/components/Picture";
 import maldivesImg from "@/assets/destination-maldives.jpg";
 import maldivesImgWebp from "@/assets/destination-maldives.webp";
 import koveliBadge from "@/assets/koveli-maldives-expert.png";
+import { RelatedArticles } from "@/components/RelatedArticles";
 
 
 const schemaJson = {

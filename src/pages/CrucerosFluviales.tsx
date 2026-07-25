@@ -18,6 +18,7 @@ import riversidePhoto from "@/assets/rivers/riverside-luxury-cruises.png";
 
 const riverImages = [danubeImg, rhineImg, seineImg, douroImg, nileImg, mekongImg];
 import { FAQSection } from "@/components/FAQSection";
+import { RelatedArticles } from "@/components/RelatedArticles";
 
 const FAQ_ITEMS = [
   {

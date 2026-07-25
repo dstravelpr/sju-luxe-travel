@@ -6,6 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { Picture } from "@/components/Picture";
 import portugalImg from "@/assets/destination-portugal.jpg";
 import portugalImgWebp from "@/assets/destination-portugal.webp";
+import { RelatedArticles } from "@/components/RelatedArticles";
 
 
 const schemaJson = {
