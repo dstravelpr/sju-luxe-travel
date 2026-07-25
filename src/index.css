@@ -63,6 +63,24 @@
     font-weight: 500;
     line-height: 1.7;
   }
+
+  h1 { font-weight: 700; }
+  h2 { font-weight: 600; }
+  h3 { font-weight: 600; }
+  h4, h5, h6 { font-weight: 600; }
+  p { font-weight: 400; }
+  nav a { font-weight: 600; }
+
+  /* Improve contrast: brighten muted foreground slightly and drop text opacity tricks */
+  .text-muted-foreground { color: hsl(40 20% 78%); }
+
+  @media (max-width: 767px) {
+    h1 { font-size: max(28px, 1.75rem); }
+    nav a, nav button { font-size: 14px !important; }
+    p, li { font-size: 16px; }
+    .text-xs { font-size: 14px !important; }
+    .text-\[11px\], .text-\[12px\] { font-size: 14px !important; }
+  }
 }
 
 @layer components {
