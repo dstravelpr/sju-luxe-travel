@@ -139,6 +139,14 @@ const ViajesDeLujo = () => {
             </p>
           </div>
 
+          <RelatedArticles
+            items={[
+              { title: "¿Vale la pena un agente de viajes en 2026?", href: "/blog/vale-la-pena-asesor-viajes-2026", category: "Guía" },
+              { title: "Viajes sin pasaporte desde Puerto Rico", href: "/blog/viajes-sin-pasaporte-desde-pr", category: "Destinos" },
+              { title: "Wellness travel: el lujo intencional", href: "/blog/wellness-travel-intentional-luxury", category: "Tendencias" },
+            ]}
+          />
+
           <FAQSection heading="Preguntas Frecuentes" items={FAQ_ITEMS} />
 
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
