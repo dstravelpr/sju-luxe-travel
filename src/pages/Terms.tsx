@@ -4,6 +4,7 @@ import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const Terms = () => {
+  const { language, localPath } = useLanguage();
   return (
     <Layout>
       <SEOHead
