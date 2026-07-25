@@ -143,30 +143,32 @@ const Index = () => {
       />
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-10">
+      <section className="hero-section relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-10">
         <Picture src={heroBg} webpSrc={heroBgWebp} alt="Luxury beach sunset — SJU Luxe Travel" width={1920} height={1080} className="absolute inset-0 w-full h-full object-cover object-center" fetchPriority="high" decoding="async" />
         <div className="absolute inset-0 hero-overlay" />
         <div className="relative z-10 container mx-auto px-6 text-center">
           <img src={logo} alt="SJU Luxe Travel" className="hidden md:block h-24 w-24 mx-auto mb-6 animate-fade-in object-contain" />
           <p className="font-body text-sm tracking-[0.4em] uppercase mb-4 md:mb-6 animate-fade-in text-destructive-foreground"></p>
           <h1 className="sr-only">Boutique Luxury Travel Agency in San Juan, Puerto Rico</h1>
-          <div aria-hidden="true" className="font-heading text-3xl md:text-6xl lg:text-7xl text-foreground mb-3 md:mb-4 animate-fade-in-up">
+          <div aria-hidden="true" className="hero-title font-heading text-3xl md:text-6xl lg:text-7xl text-foreground mb-3 md:mb-4 animate-fade-in-up">
             {t.home.heroTitle1}
             <br />
             <span className="text-gold-gradient italic">{t.home.heroTitle2}</span>
           </div>
-          <h2 className="font-body text-[11px] md:text-base tracking-[0.3em] uppercase text-gold mb-4 md:mb-6 animate-fade-in-up drop-shadow-[0_2px_6px_rgba(0,0,0,0.9)]">
+          <h2 className="hero-subtitle font-body text-[11px] md:text-base tracking-[0.3em] uppercase text-gold mb-4 md:mb-6 animate-fade-in-up">
             {t.home.heroSubtitle}
           </h2>
-          <p className="font-body text-base md:text-xl text-cream max-w-2xl mx-auto mb-8 md:mb-10 animate-fade-in-delay drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
-            {t.home.heroDescription}
-          </p>
+          <div className="hero-body">
+            <p className="font-body text-base md:text-xl text-cream max-w-2xl mx-auto mb-8 md:mb-10 animate-fade-in-delay">
+              {t.home.heroDescription}
+            </p>
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-delay">
             <Link to={localPath("/destinations")} className="inline-flex items-center gap-2 px-8 py-4 bg-gold-gradient text-primary-foreground font-body text-sm font-semibold tracking-wide uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_40px_-5px_hsl(43,74%,49%,0.6)] hover:scale-105">
               {t.home.exploreDestinations}
               <ArrowRight size={18} />
             </Link>
-            <Link to={localPath("/contact")} className="inline-flex items-center gap-2 px-8 py-4 gold-border text-gold font-body text-sm font-semibold tracking-wide uppercase rounded-sm transition-all duration-300 hover:bg-gold/10">
+            <Link to={localPath("/contact")} className="hero-ghost-btn inline-flex items-center gap-2 px-8 py-4 gold-border text-gold font-body text-sm font-semibold tracking-wide uppercase rounded-sm transition-all duration-300 hover:bg-gold/10">
               {t.home.startPlanning}
             </Link>
           </div>

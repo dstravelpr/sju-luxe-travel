@@ -113,6 +113,32 @@
   }
 }
 
+/* Mobile hero readability fixes */
+@media (max-width: 767px) {
+  .hero-section .hero-title {
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  }
+
+  .hero-section .hero-subtitle {
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.8);
+    font-weight: 600 !important;
+    color: #FFFFFF !important;
+  }
+
+  .hero-section .hero-body p {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+    font-weight: 400;
+  }
+
+  .hero-section .hero-ghost-btn {
+    border-width: 2px !important;
+    border-color: #D9A520 !important;
+    color: #D9A520 !important;
+    font-weight: 600 !important;
+    background: rgba(0, 0, 0, 0.3) !important;
+  }
+}
+
 @layer utilities {
   .animate-fade-in {
     animation: fadeIn 1s ease-out forwards;
