@@ -6,6 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import travelAgentDesk from "@/assets/travel-agent-desk.jpg";
 import travelerAirport from "@/assets/traveler-airport.jpg";
 import { FAQSection } from "@/components/FAQSection";
+import { RelatedArticles } from "@/components/RelatedArticles";
 
 const FAQ_ITEMS = [
   {
