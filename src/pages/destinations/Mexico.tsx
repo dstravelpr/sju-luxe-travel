@@ -73,7 +73,14 @@ const Mexico = () => {
               </div>
             ))}
           </div>
-          <div className="text-center py-12 gold-border rounded-lg">
+          <RelatedArticles
+            items={[
+              { title: "Viajes sin pasaporte desde Puerto Rico", href: "/blog/viajes-sin-pasaporte-desde-pr", category: "Guía" },
+              { title: "Viajes de lujo: qué significa realmente", href: "/blog/what-luxury-travel-really-means", category: "Lujo" },
+            ]}
+          />
+
+          <div className="text-center py-12 gold-border rounded-lg mt-16">
             <h3 className="font-heading text-2xl text-foreground mb-3">
               {d.ctaTitle} <span className="text-gold-gradient italic">{d.ctaTitleHighlight}</span>
             </h3>

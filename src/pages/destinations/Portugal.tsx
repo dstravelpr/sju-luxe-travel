@@ -76,7 +76,14 @@ const Portugal = () => {
               </div>
             ))}
           </div>
-          <div className="text-center py-12 gold-border rounded-lg">
+          <RelatedArticles
+            items={[
+              { title: "Vuelos de Puerto Rico a Portugal: mejores rutas", href: "/blog/vuelos-puerto-rico-portugal", category: "Vuelos" },
+              { title: "Crucero fluvial por el Duero desde Puerto Rico", href: "/blog/crucero-fluvial-duero-desde-puerto-rico", category: "Cruceros" },
+            ]}
+          />
+
+          <div className="text-center py-12 gold-border rounded-lg mt-16">
             <h3 className="font-heading text-2xl text-foreground mb-3">
               {d.ctaTitle} <span className="text-gold-gradient italic">{d.ctaTitleHighlight}</span>
             </h3>
