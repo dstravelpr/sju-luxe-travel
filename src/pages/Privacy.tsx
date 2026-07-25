@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -203,7 +204,7 @@ const HtmlList = ({ items }: { items: string[] }) => (
 );
 
 const Privacy = () => {
-  const { language } = useLanguage();
+  const { language, localPath } = useLanguage();
   const t = content[language];
 
   return (
@@ -347,6 +348,15 @@ const Privacy = () => {
                   </a>
                 </li>
               </ul>
+            </div>
+            <div className="mt-12 pt-6 border-t border-gold/20 text-sm text-muted-foreground">
+              <Link to={localPath("/")} className="text-gold hover:text-gold-light underline">
+                {language === "es" ? "← Volver al inicio" : "← Back to home"}
+              </Link>
+              {" · "}
+              <Link to={localPath("/contact")} className="text-gold hover:text-gold-light underline">
+                {language === "es" ? "Contáctanos" : "Contact us"}
+              </Link>
             </div>
           </div>
         </div>

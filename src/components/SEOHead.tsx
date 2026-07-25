@@ -9,16 +9,18 @@ interface BreadcrumbCrumb {
 interface SEOHeadProps {
   title: string;
   description: string;
+  /** Optional Spanish overrides — applied automatically when the URL is under /es. */
+  titleEs?: string;
+  descriptionEs?: string;
+  /** Optional English override URL (defaults to `${BASE}${strippedPath}`). Kept for legacy calls; canonical is now URL-derived by default. */
   canonical?: string;
   schemaJson?: Record<string, unknown>;
-  /** Optional breadcrumb trail emitted as a BreadcrumbList JSON-LD block. */
   breadcrumbs?: BreadcrumbCrumb[];
   ogImage?: string;
   ogType?: "website" | "article";
   noindex?: boolean;
-  /** Suppress hreflang tags (e.g. blog posts with no translations). Defaults true; set false only where full en/es/x-default set exists. */
+  /** Emit hreflang alternates (only where full en/es/x-default set exists). */
   emitHreflang?: boolean;
-  /** Suppress canonical tag entirely (used on 404). */
   suppressCanonical?: boolean;
 }
 
@@ -28,6 +30,8 @@ const BASE = "https://www.sjuluxetravel.com";
 export const SEOHead = ({
   title,
   description,
+  titleEs,
+  descriptionEs,
   canonical,
   schemaJson,
   breadcrumbs,
@@ -37,6 +41,33 @@ export const SEOHead = ({
   emitHreflang = false,
   suppressCanonical = false,
 }: SEOHeadProps) => {
+  const location = useLocation();
+  const isEs = /^\/es(\/|$)/.test(location.pathname);
+  const lang: "en" | "es" = isEs ? "es" : "en";
+
+  const strippedPath =
+    location.pathname.replace(/^\/(en|es)(\/|$)/, "/").replace(/\/$/, "") || "/";
+
+  // Canonical rule:
+  //   /es/*  -> self-canonical (https://.../es/...)
+  //   root & /en/* -> https://.../<stripped>
+  const effectiveCanonical = (() => {
+    if (isEs) {
+      return strippedPath === "/"
+        ? `${BASE}/es`
+        : `${BASE}/es${strippedPath}`;
+    }
+    // If a caller passed an explicit canonical, honor it (for root or non-es).
+    if (canonical) return canonical;
+    return strippedPath === "/" ? `${BASE}/` : `${BASE}${strippedPath}`;
+  })();
+
+  const enUrl = strippedPath === "/" ? `${BASE}/` : `${BASE}${strippedPath}`;
+  const esUrl = strippedPath === "/" ? `${BASE}/es` : `${BASE}/es${strippedPath}`;
+
+  const finalTitle = isEs && titleEs ? titleEs : title;
+  const finalDescription = isEs && descriptionEs ? descriptionEs : description;
+
   const breadcrumbSchema =
     breadcrumbs && breadcrumbs.length >= 2
       ? {
@@ -51,19 +82,14 @@ export const SEOHead = ({
         }
       : null;
   const image = ogImage || DEFAULT_OG_IMAGE;
-  const location = useLocation();
-  const lang = typeof document !== "undefined" ? document.documentElement.lang : "en";
-  const ogLocale = lang.startsWith("es") ? "es_PR" : "en_US";
-  const ogLocaleAlt = lang.startsWith("es") ? "en_US" : "es_PR";
-
-  const currentPath = location.pathname.replace(/^\/(en|es)(\/|$)/, "/") || "/";
-  const pageUrl = `${BASE}${currentPath === "/" ? "/" : currentPath}`;
-  const effectiveCanonical = canonical || pageUrl;
+  const ogLocale = lang === "es" ? "es_PR" : "en_US";
+  const ogLocaleAlt = lang === "es" ? "en_US" : "es_PR";
 
   return (
     <Helmet>
-      <title>{title}</title>
-      <meta name="description" content={description} />
+      <html lang={lang === "es" ? "es-PR" : "en"} />
+      <title>{finalTitle}</title>
+      <meta name="description" content={finalDescription} />
       {noindex && <meta name="robots" content="noindex,nofollow" />}
 
       <meta name="geo.region" content="US-PR" />
@@ -71,8 +97,8 @@ export const SEOHead = ({
       <meta name="geo.position" content="18.4655;-66.1057" />
       <meta name="ICBM" content="18.4655, -66.1057" />
 
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
+      <meta property="og:title" content={finalTitle} />
+      <meta property="og:description" content={finalDescription} />
       <meta property="og:type" content={ogType} />
       <meta property="og:image" content={image} />
       {!suppressCanonical && <meta property="og:url" content={effectiveCanonical} />}
@@ -81,20 +107,20 @@ export const SEOHead = ({
       <meta property="og:locale:alternate" content={ogLocaleAlt} />
 
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content={title} />
-      <meta name="twitter:description" content={description} />
+      <meta name="twitter:title" content={finalTitle} />
+      <meta name="twitter:description" content={finalDescription} />
       <meta name="twitter:image" content={image} />
 
       {!suppressCanonical && <link rel="canonical" href={effectiveCanonical} />}
 
       {emitHreflang && !suppressCanonical && (
-        <link rel="alternate" hrefLang="es-PR" href={`${BASE}/es${currentPath === "/" ? "" : currentPath}`} />
+        <link rel="alternate" hrefLang="es-PR" href={esUrl} />
       )}
       {emitHreflang && !suppressCanonical && (
-        <link rel="alternate" hrefLang="en" href={`${BASE}/en${currentPath === "/" ? "" : currentPath}`} />
+        <link rel="alternate" hrefLang="en" href={enUrl} />
       )}
       {emitHreflang && !suppressCanonical && (
-        <link rel="alternate" hrefLang="x-default" href={pageUrl} />
+        <link rel="alternate" hrefLang="x-default" href={enUrl} />
       )}
 
       {schemaJson && (

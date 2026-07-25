@@ -1,4 +1,4 @@
-import { createContext, useContext, useMemo, useState, useEffect, type ReactNode } from "react";
+import { createContext, useContext, useMemo, useEffect, type ReactNode } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { en } from "./translations/en";
 import { es } from "./translations/es";
@@ -17,29 +17,41 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 
 const translations: Record<Language, Translations> = { en, es };
 
+const detectLangFromPath = (pathname: string): Language =>
+  /^\/es(\/|$)/.test(pathname) ? "es" : "en";
+
+const stripPrefix = (pathname: string): string =>
+  pathname.replace(/^\/(en|es)(\/|$)/, "/").replace(/\/$/, "") || "/";
+
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  const [language, setLanguageState] = useState<Language>(() => {
-    const saved = localStorage.getItem("lang");
-    return saved === "en" ? "en" : "es";
-  });
+  // Language is derived from the URL — single source of truth.
+  const language: Language = detectLangFromPath(location.pathname);
 
   useEffect(() => {
-    document.documentElement.lang = language === "en" ? "en" : "es-PR";
+    document.documentElement.lang = language === "es" ? "es-PR" : "en";
+    try { localStorage.setItem("lang", language); } catch { /* noop */ }
   }, [language]);
 
   const setLanguage = (lang: Language) => {
-    setLanguageState(lang);
-    localStorage.setItem("lang", lang);
+    const base = stripPrefix(location.pathname);
+    const target = lang === "es" ? (base === "/" ? "/es" : `/es${base}`) : base;
+    if (target !== location.pathname) {
+      navigate(target + location.search + location.hash, { replace: false });
+    }
   };
 
-  // No prefix needed — all routes are canonical
-  const localPath = (path: string) => path;
+  const localPath = (path: string) => {
+    if (language !== "es") return path;
+    if (path === "/") return "/es";
+    return path.startsWith("/es/") || path === "/es" ? path : `/es${path}`;
+  };
 
   const value = useMemo(
     () => ({ language, setLanguage, t: translations[language], localPath }),
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     [language, location.pathname]
   );
 

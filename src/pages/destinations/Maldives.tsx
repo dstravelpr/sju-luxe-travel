@@ -20,21 +20,23 @@ const schemaJson = {
 };
 
 const Maldives = () => {
-  const { t, localPath } = useLanguage();
+  const { t, localPath, language } = useLanguage();
   const d = t.destinations.maldives;
 
   return (
     <Layout>
       <SEOHead
-        title="Vacaciones de Lujo en Maldivas | SJU Luxe Travel"
-        description="Planifica tus vacaciones de lujo en Maldivas: villas sobre el agua, cenas privadas, buceo y beneficios exclusivos de resort — desde San Juan, PR."
-        canonical="https://www.sjuluxetravel.com/destinations/maldives"
+        title="Luxury Maldives Vacations from Puerto Rico | SJU Luxe Travel"
+        description="Plan your luxury Maldives vacation from San Juan, PR: overwater villas, private dining, diving and exclusive resort perks."
+        titleEs="Vacaciones de Lujo en Maldivas desde PR | SJU Luxe Travel"
+        descriptionEs="Planifica tus vacaciones de lujo en Maldivas: villas sobre el agua, cenas privadas, buceo y beneficios exclusivos de resort — desde San Juan, PR."
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           { name: 'Destinations', url: "https://www.sjuluxetravel.com/destinations" },
           { name: 'Maldives', url: "https://www.sjuluxetravel.com/destinations/maldives" },
         ]}
         schemaJson={schemaJson}
+        emitHreflang
       />
 
       <section className="relative pt-24">
@@ -64,6 +66,15 @@ const Maldives = () => {
             <p>{d.p2}</p>
             <p>{d.p3}</p>
             <p>{d.p4}</p>
+            <p>
+              {language === "es"
+                ? "Desde San Juan (SJU) coordinamos la ruta más eficiente hacia Malé (MLE), típicamente con conexiones vía Miami o Nueva York a Doha (Qatar Airways) o Dubái (Emirates). La mejor temporada va de noviembre a abril, cuando el clima está seco y el mar cristalino. Cada paquete SJU Luxe incluye traslado en hidroavión o lancha rápida al resort, upgrade de villa cuando está disponible, crédito de spa o cena romántica bajo las estrellas, y coordinación de excursiones privadas —snorkel con mantas, cenas en la playa, y experiencias culturales locales."
+                : "From San Juan (SJU) we coordinate the most efficient routing to Malé (MLE), typically via Miami or New York with a connection through Doha (Qatar Airways) or Dubai (Emirates). Peak season runs November through April with dry weather and glass-clear water. Every SJU Luxe package includes seaplane or speedboat transfer to your resort, a villa upgrade when available, spa credit or a private beach dinner, and hand-picked private excursions — manta snorkel, sandbank picnics, and quiet cultural encounters."}
+              {" "}
+              {language === "es"
+                ? <>Si aún no decides fechas, empieza por nuestra <Link to={localPath("/luna-de-miel-de-lujo")} className="text-gold hover:text-gold-light underline">guía de lunas de miel de lujo desde PR</Link> o <Link to={localPath("/contact")} className="text-gold hover:text-gold-light underline">agenda una consulta gratuita</Link>.</>
+                : <>Not sure on dates? Start with our <Link to={localPath("/luna-de-miel-de-lujo")} className="text-gold hover:text-gold-light underline">luxury honeymoons from PR guide</Link> or <Link to={localPath("/contact")} className="text-gold hover:text-gold-light underline">book a free consultation</Link>.</>}
+            </p>
           </div>
           <h2 className="font-heading text-2xl text-foreground mb-6">
             {d.highlightsTitle} <span className="text-gold-gradient italic">{d.highlightsTitleHighlight}</span>

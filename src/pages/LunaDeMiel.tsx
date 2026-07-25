@@ -76,10 +76,12 @@ const LunaDeMiel = () => {
   return (
     <Layout>
       <SEOHead
-        title="Luna de Miel de Lujo desde PR | SJU Luxe Travel"
-        description="Planifica tu luna de miel de lujo desde San Juan, PR. Maldivas, Amalfi, Santorini, Bora Bora y más — itinerarios románticos a medida."
-        canonical="https://www.sjuluxetravel.com/luna-de-miel-de-lujo"
+        title="Luxury Honeymoons from Puerto Rico — Bespoke Itineraries | SJU Luxe Travel"
+        description="Plan your luxury honeymoon from San Juan, PR: Maldives, Amalfi, Santorini, Bora Bora & more. Bespoke romantic itineraries with concierge perks."
+        titleEs="Luna de Miel de Lujo desde PR | SJU Luxe Travel"
+        descriptionEs="Planifica tu luna de miel de lujo desde San Juan, PR. Maldivas, Amalfi, Santorini, Bora Bora y más — itinerarios románticos a medida."
         schemaJson={schema}
+        emitHreflang
       />
 
       <article className="pt-32 pb-20 bg-background">

@@ -1,51 +1,48 @@
 
-## Context
+This is a large, cross-cutting change. Approve before I execute.
 
-The current app is a single-URL SPA with a client-side language toggle. Any `/en/*` or `/es/*` URL is redirected to the base path via `LangRedirect` in `src/App.tsx`, and `SEOHead` strips those prefixes from canonicals. That means today **there is no real `/es/…` page** — every `/es/` request bounces to `/` and inherits the currently-toggled language's title/description.
+## Section 1 — Canonicals & /es routing
 
-Your request treats `/es/` as a distinct indexable variant with its own unique Spanish title, meta description, and self-canonical. To honor Sections 1 & 2 as written, `/es/` must become a real route that renders Spanish content directly (no redirect) and emits Spanish metadata server-side (via prerender). This is an architectural change, so I'm confirming scope before I implement.
+**Problem:** `/en/*` and `/es/*` currently redirect to root, and `SEOHead` emits a fixed canonical no matter the URL. `/es/` pages don't exist as real routes at runtime.
 
-## Plan
+**Changes**
+- `src/App.tsx`: Remove the `/es/*` `LangRedirect`. Mount the full `appRoutes` array a second time under a `/es` parent route so every page renders at both `/xxx` and `/es/xxx`. Keep `/en/*` redirect → root (English is the default; `/en/` is only a prerendered variant crawlers reach directly).
+- `src/i18n/LanguageContext.tsx`: Detect language from `location.pathname` (`/es/` prefix ⇒ `es`, otherwise `en`). Update `setLanguage` to `navigate()` between prefixed/unprefixed URLs instead of just toggling state. `localPath("/foo")` returns `/es/foo` when the current URL is under `/es`, `/foo` otherwise.
+- `src/components/SEOHead.tsx`: Compute canonical dynamically:
+  - `/es/[page]` → `https://www.sjuluxetravel.com/es/[page]` (self)
+  - root & `/en/[page]` → `https://www.sjuluxetravel.com/[page]`
+  - Keep hreflang alternates from what's already emitted; add `titleEs` / `descriptionEs` props so pages can supply Spanish metadata used when language === "es".
 
-### Section 1 & 2 — Make `/es/` a real indexable variant
+## Section 2 — Unique /es titles & descriptions
 
-1. Remove the `/es/*` → base redirect in `src/App.tsx`. Keep `/en/*` redirecting to base (English is the canonical/default).
-2. Duplicate every `appRoutes` entry under an `/es/…` path. The same route components render, but a new `LocaleContext` forces `lang="es"` for `/es/*` routes (independent of the user's localStorage toggle).
-3. Extend `SEOHead`:
-   - Detect `/es/` prefix from `useLocation`.
-   - Canonical rules exactly as specified:
-     - `/es/[page]` → self-canonical `https://www.sjuluxetravel.com/es/[page]`
-     - `/en/[page]` and `/[page]` → canonical `https://www.sjuluxetravel.com/[page]`
-   - Emit correct `hreflang` alternates (`en`, `es`, `x-default`).
-4. Add a `titleEs` / `descriptionEs` prop to `SEOHead`. When rendering under `/es/`, use those instead of the English `title`/`description`. Populate them on:
-   - `/` (Index), `/about`, `/contact`
-   - `/viajes-de-lujo-desde-puerto-rico`, `/luna-de-miel-de-lujo`, `/cruceros-de-lujo-desde-san-juan`, `/cruceros-fluviales-de-lujo-desde-puerto-rico`
-   - `/destinations/maldives`, `/destinations/portugal`, `/destinations/mexico`
-   Using the exact strings you supplied, plus equivalent Spanish strings for the three destination pages.
-5. Update `scripts/generate-sitemap.js` to emit both `/[page]` and `/es/[page]` entries with `<xhtml:link rel="alternate" hreflang>` pairs. Update `scripts/prerender.js` to prerender the `/es/` routes with `lang="es"` and the Spanish metadata baked into `index.html`, so Googlebot and social crawlers see unique per-locale head tags.
-6. Blog posts stay at their existing single URLs (no `/es/` variant) — they're already language-specific by slug, and duplicating them would create real duplicate content. Their canonicals remain self-referential.
+Wire the Spanish strings the user provided into `SEOHead` on each page that has a `/es/` variant: Home, About, Contact, Blog index, `/destinations`, `/destinations/maldives`, `/destinations/portugal`, `/destinations/mexico`, and the four service pages. Blog posts stay single-language.
 
-### Section 3 — Expand thin pages
+## Section 3 — Thin-content expansion
 
-- `/destinations/maldives`, `/portugal`, `/mexico`: read the current copy, then add 3+ paragraphs each covering the topics you listed (why it's ideal from PR, best time, what's included, flight connections from SJU, no-passport note for Mexico), plus a visible CTA linking to `/contact`. Spanish copy renders on `/es/destinations/…` via the existing `useLanguage` translations pattern.
-- `/about`: audit word count; if under 300 words, extend the bio with Daniel's background, NCM Concierge + Travel Leaders affiliation, agency specialties, and the boutique-vs-DIY value section.
+Add 3+ substantive paragraphs (bilingual via translations file) to:
+- `src/pages/destinations/Maldives.tsx` — Ideal for PR travelers, best season, SJU Luxe package inclusions, flight routing SJU→MLE via MIA/JFK+DOH/DXB.
+- `src/pages/destinations/Portugal.tsx` — Why PR travelers love it, Lisbon/Porto/Algarve/Duero highlights, SJU→LIS/OPO options (TAP via MIA, United via EWR).
+- `src/pages/destinations/Mexico.tsx` — Options from PR, direct flights SJU→CUN/MEX, no-passport note for U.S. citizens on domestic-adjacent scenarios (with correct caveat: MX still requires passport; PR→USVI/USA is the no-passport option — clarified accurately).
+- `src/pages/About.tsx` — Expanded bio: Daniel's background, NCM Concierge / Travel Leaders host affiliation, specializations, boutique value.
 
-### Section 4 — Internal linking
+## Section 4 — Internal linking
 
-- Destination pages → add contextual links to `/contact` and to the most relevant service page (Maldives→Luna de Miel, Portugal→Cruceros Fluviales, Mexico→Viajes de Lujo).
-- `/about` → add contextual links to `/viajes-de-lujo-desde-puerto-rico` and `/contact` inside the bio prose.
-- `/blog` → verify the index links to the 3 most recent posts (it renders all cards; I'll confirm the top-3 are visually prominent and linked).
-- Blog posts → confirm the previously-added service-page CTA is present on every post; add where missing.
-- `/privacy` and `/terms` → add a "Back to home" link in the first paragraph pointing to `/`.
+Add ≥2 contextual links per page where currently sparse:
+- Destination pages → `/contact` + relevant service page (Maldives→luna-de-miel; Portugal→cruceros-fluviales; Mexico→viajes-de-lujo).
+- `/about` → `/viajes-de-lujo-desde-puerto-rico` + `/contact` inline in the bio.
+- `/blog` index already features latest posts; add explicit "Latest" trio confirmed.
+- `/privacy` and `/terms` → back-to-home link in intro (bilingual for Privacy; English for Terms since Terms is EN-only).
 
-## Technical notes
+## Section 5 — Build scripts
 
-- No changes to navigation, images, or existing page structure beyond adding paragraphs, CTAs, and links.
-- `LangRedirect` stays for `/en/*` only (SEO wants a single English canonical). `/es/*` stops redirecting.
-- Toggling the language in the header will navigate between `/[page]` and `/es/[page]` so the URL always matches the visible language — this is required for the canonical/hreflang logic to be accurate.
-- Prerender + sitemap changes are the piece that actually makes `/es/` indexable by Google; without them, the Spanish head tags only exist client-side.
+`scripts/prerender.js` already emits `/es/xxx` static HTML with correct canonicals — no script changes needed. `generate-sitemap.js` already reads the manifest.
 
-## Confirm before I build
+## Out of scope
 
-1. **OK to stop redirecting `/es/*` and render it as a real Spanish route?** This is the only way "unique /es/ titles + self-canonical" is honest for crawlers. If you'd rather keep the SPA-with-toggle model, I'd instead implement a narrower fix: keep the redirect, and drop the /en/ + /es/ variants from any place they still surface (sitemap, internal links). Say which you prefer.
-2. Blog posts stay single-URL (not duplicated under `/es/`) — confirm.
+- No navigation, image, or visual redesign changes.
+- Blog posts remain single-language (they already are).
+- Terms page stays English-only (no ES prerender variant exists).
+
+## Verification
+
+After edits: run typecheck, then Playwright-check `/es/about` and `/es/destinations/maldives` for correct Spanish `<title>`, self-canonical, and rendered Spanish body.

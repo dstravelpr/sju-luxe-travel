@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -36,19 +37,21 @@ const aboutSchema = buildGraph(
 );
 
 const About = () => {
-  const { t } = useLanguage();
+  const { t, localPath, language } = useLanguage();
 
   return (
     <Layout>
       <SEOHead
-        title="Daniel Santiago Díaz — Agente de Viaje de Lujo PR"
-        description="Agente bilingüe de viajes de lujo en San Juan, PR. +10 años de experiencia, beneficios NCM Concierge, itinerarios a medida. Consulta gratuita."
-        canonical={ABOUT_URL}
+        title="About Daniel Santiago Díaz — Luxury Travel Agent in San Juan, PR"
+        description="Meet Daniel Santiago Díaz — bilingual luxury travel agent in San Juan, PR. 10+ years of experience, NCM Concierge perks, bespoke itineraries. Free consultation."
+        titleEs="Sobre Daniel Santiago Díaz — Agente de Viajes de Lujo en San Juan, PR"
+        descriptionEs="Conoce a Daniel Santiago Díaz, agente bilingüe de viajes de lujo en San Juan, PR. +10 años de experiencia, beneficios NCM Concierge, itinerarios a medida."
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           { name: 'About Daniel Santiago Díaz', url: "https://www.sjuluxetravel.com/about" },
         ]}
         schemaJson={aboutSchema}
+        emitHreflang
       />
 
 
@@ -98,6 +101,16 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start mb-16">
             <div className="text-muted-foreground text-sm leading-relaxed space-y-5">
               <p>{t.about.bioP5}</p>
+              <p>
+                {language === "es"
+                  ? "Como agente de viajes en Puerto Rico afiliado a NCM Concierge, tengo acceso directo a programas de hoteles y cruceros que benefician al viajero: upgrades de habitación cuando estén disponibles, desayuno diario, créditos de resort/spa, check-in temprano y check-out tardío, y prioridad en reservas de restaurantes y experiencias privadas. Cada itinerario se arma pieza por pieza — no vendo paquetes prefabricados."
+                  : "As a Puerto Rico–based travel agent affiliated with NCM Concierge, I have direct access to hotel and cruise programs built for the traveler: room upgrades when available, daily breakfast, resort/spa credits, early check-in and late check-out, and priority for restaurant bookings and private experiences. Every itinerary is built piece by piece — no prefab packages."}
+              </p>
+              <p>
+                {language === "es"
+                  ? <>Cuando estés listo, revisa los <Link to={localPath("/services")} className="text-gold hover:text-gold-light underline">servicios que ofrecemos</Link>, explora los <Link to={localPath("/destinations")} className="text-gold hover:text-gold-light underline">destinos curados</Link> o <Link to={localPath("/contact")} className="text-gold hover:text-gold-light underline">agenda una consulta gratuita</Link>.</>
+                  : <>When you're ready, review the <Link to={localPath("/services")} className="text-gold hover:text-gold-light underline">services we offer</Link>, explore our <Link to={localPath("/destinations")} className="text-gold hover:text-gold-light underline">curated destinations</Link>, or <Link to={localPath("/contact")} className="text-gold hover:text-gold-light underline">book a free consultation</Link>.</>}
+              </p>
             </div>
             <img src="/about/Image_18.jpg" alt="Daniel Santiago Díaz travel agent SJU Luxe Travel" className="w-full rounded-lg shadow-xl object-cover aspect-[4/3]" loading="lazy" />
           </div>

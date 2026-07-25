@@ -16,11 +16,13 @@ const Contact = () => {
       <SEOHead
         title="Free Luxury Travel Consultation | SJU Luxe Travel"
         description="Schedule a free luxury travel consultation with your boutique agent in San Juan, PR. Private tours, cruises & bespoke itineraries with NCM Concierge perks."
-        canonical="https://www.sjuluxetravel.com/contact"
+        titleEs="Consulta Gratis con tu Agente de Viajes de Lujo | SJU Luxe Travel"
+        descriptionEs="Agenda una consulta gratis con tu agente de viajes de lujo en San Juan, PR. Tours privados, cruceros e itinerarios a medida con beneficios NCM Concierge."
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           { name: 'Contact', url: "https://www.sjuluxetravel.com/contact" },
         ]}
+        emitHreflang
       />
 
       <section className="pt-28 pb-16 bg-background text-center">

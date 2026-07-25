@@ -24,13 +24,15 @@ const Blog = () => {
   return (
     <Layout>
       <SEOHead
-        title="Blog SJU Luxe Travel — Lujo, Cruceros, Honeymoons PR"
-        description="Guías de viajes de lujo desde Puerto Rico: lunas de miel, cruceros fluviales, Maldivas, Portugal y más. Por Daniel Santiago Díaz."
-        canonical="https://www.sjuluxetravel.com/blog"
+        title="SJU Luxe Travel Blog — Luxury Travel Tips & Guides from Puerto Rico"
+        description="Luxury travel guides from San Juan, PR: honeymoons, river cruises, Maldives, Portugal & more. Expert insights by Daniel Santiago Díaz."
+        titleEs="Blog SJU Luxe Travel — Lujo, Cruceros y Honeymoons PR"
+        descriptionEs="Guías de viajes de lujo desde Puerto Rico: lunas de miel, cruceros fluviales, Maldivas, Portugal y más. Por Daniel Santiago Díaz."
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           { name: 'Blog', url: "https://www.sjuluxetravel.com/blog" },
         ]}
+        emitHreflang
       />
 
       <div className="pt-24 bg-background">

@@ -19,21 +19,23 @@ const schemaJson = {
 };
 
 const Portugal = () => {
-  const { t, localPath } = useLanguage();
+  const { t, localPath, language } = useLanguage();
   const d = t.destinations.portugal;
 
   return (
     <Layout>
       <SEOHead
-        title="Viajes de Lujo a Portugal | SJU Luxe Travel"
-        description="Descubre Portugal con un itinerario de lujo a medida. Cenas en Belem, quintas históricas y experiencias culturales exclusivas — desde San Juan, PR."
-        canonical="https://www.sjuluxetravel.com/destinations/portugal"
+        title="Luxury Portugal Travel from Puerto Rico | SJU Luxe Travel"
+        description="Discover Portugal with a bespoke luxury itinerary from San Juan, PR — Lisbon, Porto, the Algarve and the Douro Valley."
+        titleEs="Viajes de Lujo a Portugal desde PR | SJU Luxe Travel"
+        descriptionEs="Descubre Portugal con un itinerario de lujo a medida. Cenas en Belém, quintas históricas y experiencias culturales exclusivas — desde San Juan, PR."
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           { name: 'Destinations', url: "https://www.sjuluxetravel.com/destinations" },
           { name: 'Portugal', url: "https://www.sjuluxetravel.com/destinations/portugal" },
         ]}
         schemaJson={schemaJson}
+        emitHreflang
       />
 
       <section className="relative pt-24">
@@ -62,9 +64,25 @@ const Portugal = () => {
             <p>{d.p2}</p>
             <p>{d.p3}</p>
             <p>{d.p4}</p>
+            <p>
+              {language === "es"
+                ? "Portugal es uno de los destinos europeos más buscados por viajeros de Puerto Rico por su cercanía cultural, gastronomía de clase mundial y precios más razonables que otros destinos de lujo. Desde San Juan (SJU) volamos vía Miami o Newark: TAP Air Portugal opera vuelos directos MIA–LIS y EWR–LIS/OPO, y United tiene servicio estacional desde EWR. Los highlights incluyen Lisboa (Belém, Alfama, cenas privadas con fadista), Porto y el valle del Duero (bodegas históricas de Oporto y crucero fluvial opcional), y la costa del Algarve (playas de acantilado, resorts boutique como Vila Vita Parc y Bela Vista)."
+                : "Portugal is one of the most requested European destinations for Puerto Rico travelers thanks to cultural closeness, world-class food and better value than other luxury European trips. From San Juan (SJU) we route via Miami or Newark: TAP Air Portugal runs nonstop MIA–LIS and EWR–LIS/OPO, and United flies seasonal EWR–LIS. Highlights include Lisbon (Belém, Alfama, private fado dinners), Porto and the Douro Valley (historic Port wine lodges plus optional river cruise), and the Algarve coast (cliff beaches, boutique resorts like Vila Vita Parc and Bela Vista)."}
+            </p>
           </div>
           <p className="text-muted-foreground text-sm leading-relaxed mb-12">
-            ¿Planificando la ruta desde San Juan? Consulta nuestra guía de <Link to={localPath("/blog/vuelos-puerto-rico-portugal")} className="text-gold hover:text-gold-light underline">vuelos de Puerto Rico a Portugal — mejores rutas y aerolíneas</Link>.
+            {language === "es" ? "¿Planificando la ruta desde San Juan? Consulta nuestra guía de " : "Planning the route from San Juan? See our "}
+            <Link to={localPath("/blog/vuelos-puerto-rico-portugal")} className="text-gold hover:text-gold-light underline">
+              {language === "es" ? "vuelos de Puerto Rico a Portugal — mejores rutas y aerolíneas" : "Puerto Rico to Portugal flights — best routes and airlines"}
+            </Link>
+            {language === "es" ? ", pásate por " : ", explore our "}
+            <Link to={localPath("/cruceros-fluviales-de-lujo-desde-puerto-rico")} className="text-gold hover:text-gold-light underline">
+              {language === "es" ? "cruceros fluviales de lujo desde PR" : "luxury river cruises from PR"}
+            </Link>
+            {language === "es" ? " o " : " or "}
+            <Link to={localPath("/contact")} className="text-gold hover:text-gold-light underline">
+              {language === "es" ? "agenda una consulta gratuita" : "book a free consultation"}
+            </Link>.
           </p>
           <h2 className="font-heading text-2xl text-foreground mb-6">
             {d.highlightsTitle} <span className="text-gold-gradient italic">{d.highlightsTitleHighlight}</span>

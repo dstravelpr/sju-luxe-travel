@@ -134,13 +134,15 @@ const Destinations = () => {
   return (
     <Layout>
       <SEOHead
-        title="Destinos de Lujo Personalizados | SJU Luxe Travel"
-        description="Explora destinos de lujo curados desde San Juan, PR: Maldivas, Portugal, México y más. Beneficios exclusivos de NCM Concierge."
-        canonical="https://www.sjuluxetravel.com/destinations"
+        title="Luxury Destinations from Puerto Rico | SJU Luxe Travel"
+        description="Curated luxury destinations from San Juan, PR: Maldives, Portugal, Mexico & more. Exclusive NCM Concierge perks on every itinerary."
+        titleEs="Destinos de Lujo desde Puerto Rico | SJU Luxe Travel"
+        descriptionEs="Explora destinos de lujo curados desde San Juan, PR: Maldivas, Portugal, México y más. Beneficios exclusivos de NCM Concierge."
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           { name: 'Destinations', url: "https://www.sjuluxetravel.com/destinations" },
         ]}
+        emitHreflang
       />
       <section className="pt-32 pb-8 bg-background">
         <div className="container mx-auto px-6 max-w-5xl">

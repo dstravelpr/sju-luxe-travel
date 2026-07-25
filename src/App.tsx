@@ -51,13 +51,11 @@ const LunaDeMiel = lazy(() => import("./pages/LunaDeMiel.tsx"));
 const CrucerosDeLujo = lazy(() => import("./pages/CrucerosDeLujo.tsx"));
 const CrucerosFluviales = lazy(() => import("./pages/CrucerosFluviales.tsx"));
 
-const LangRedirect = () => {
+// /en/* prefixes are prerendered variants only — at runtime we redirect to root
+// so the SPA doesn't serve a duplicate. /es/* is a real, indexable variant.
+const EnRedirect = () => {
   const location = useLocation();
-  const match = location.pathname.match(/^\/(en|es)(\/|$)/);
-  if (match) {
-    try { localStorage.setItem("lang", match[1]); } catch { /* noop */ }
-  }
-  const canonical = location.pathname.replace(/^\/(en|es)(\/|$)/, "/") || "/";
+  const canonical = location.pathname.replace(/^\/en(\/|$)/, "/") || "/";
   return <Navigate to={canonical + location.search + location.hash} replace />;
 };
 
@@ -114,10 +112,18 @@ const App = () => (
                 {appRoutes.map((r) => (
                   <Route key={r.path} path={r.path} element={r.element} />
                 ))}
+                {/* Mirror every route under /es so /es/xxx renders the same component
+                    (LanguageContext detects the prefix and switches copy to Spanish). */}
+                {appRoutes.map((r) => (
+                  <Route
+                    key={`es-${r.path}`}
+                    path={r.path === "/" ? "/es" : `/es${r.path}`}
+                    element={r.element}
+                  />
+                ))}
                 <Route path="/blog/do-travel-agents-really-" element={<RedirectBlog to="/blog/do-travel-agents-really-help-save-money" />} />
                 <Route path="/blog/do-travel-agents-really" element={<RedirectBlog to="/blog/do-travel-agents-really-help-save-money" />} />
-                <Route path="/en/*" element={<LangRedirect />} />
-                <Route path="/es/*" element={<LangRedirect />} />
+                <Route path="/en/*" element={<EnRedirect />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
             </Suspense>

@@ -1,7 +1,10 @@
+import { Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 const Terms = () => {
+  const { language, localPath } = useLanguage();
   return (
     <Layout>
       <SEOHead
@@ -157,6 +160,15 @@ const Terms = () => {
                 <li>Email: <a href="mailto:info@sjuluxetravel.com" className="text-gold underline">info@sjuluxetravel.com</a></li>
                 <li>Phone: <a href="tel:+16179355714" className="text-gold underline">(617) 935-5714</a></li>
               </ul>
+            </div>
+            <div className="mt-12 pt-6 border-t border-gold/20 text-sm text-muted-foreground">
+              <Link to={localPath("/")} className="text-gold hover:text-gold-light underline">
+                {language === "es" ? "← Volver al inicio" : "← Back to home"}
+              </Link>
+              {" · "}
+              <Link to={localPath("/contact")} className="text-gold hover:text-gold-light underline">
+                {language === "es" ? "Contáctanos" : "Contact us"}
+              </Link>
             </div>
           </div>
         </div>

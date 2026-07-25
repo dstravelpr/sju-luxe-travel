@@ -19,21 +19,23 @@ const schemaJson = {
 };
 
 const Mexico = () => {
-  const { t, localPath } = useLanguage();
+  const { t, localPath, language } = useLanguage();
   const d = t.destinations.mexico;
 
   return (
     <Layout>
       <SEOHead
-        title="Viajes de Lujo a México | SJU Luxe Travel"
-        description="Desde Tulum hasta CDMX — itinerarios de lujo personalizados para viajeros de PR. Resorts boutique, cultura y gastronomía de clase mundial."
-        canonical="https://www.sjuluxetravel.com/destinations/mexico"
+        title="Luxury Mexico Vacations from Puerto Rico | SJU Luxe Travel"
+        description="Bespoke Mexico luxury trips from San Juan, PR: Riviera Maya, Tulum, Oaxaca & CDMX with boutique resorts and cultural experiences."
+        titleEs="Viajes de Lujo a México desde PR | SJU Luxe Travel"
+        descriptionEs="Desde Tulum hasta CDMX — itinerarios de lujo personalizados para viajeros de PR. Resorts boutique, cultura y gastronomía de clase mundial."
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           { name: 'Destinations', url: "https://www.sjuluxetravel.com/destinations" },
           { name: 'Mexico', url: "https://www.sjuluxetravel.com/destinations/mexico" },
         ]}
         schemaJson={schemaJson}
+        emitHreflang
       />
 
       <section className="relative pt-24">
@@ -62,6 +64,15 @@ const Mexico = () => {
             <p>{d.p2}</p>
             <p>{d.p3}</p>
             <p>{d.p4}</p>
+            <p>
+              {language === "es"
+                ? "México es uno de los destinos favoritos para viajeros de Puerto Rico por una razón importante: los ciudadanos americanos (incluidos residentes de PR) pueden viajar con pasaporte estadounidense sin visa, y desde SJU hay vuelos directos a Cancún (CUN) con JetBlue y Frontier, además de conexiones cortas a CDMX vía Miami o Houston. La mejor temporada va de noviembre a mayo (temporada seca)."
+                : "Mexico is one of the top destinations for Puerto Rico travelers for one big reason: U.S. citizens (including PR residents) travel with just a U.S. passport — no visa — and SJU has nonstop service to Cancún (CUN) on JetBlue and Frontier, plus short one-stop routes to CDMX via Miami or Houston. Best season is November through May (dry season)."}
+              {" "}
+              {language === "es"
+                ? <>Explora también nuestros <Link to={localPath("/viajes-de-lujo-desde-puerto-rico")} className="text-gold hover:text-gold-light underline">viajes de lujo desde PR</Link> o <Link to={localPath("/contact")} className="text-gold hover:text-gold-light underline">agenda una consulta gratuita</Link>.</>
+                : <>See also our <Link to={localPath("/viajes-de-lujo-desde-puerto-rico")} className="text-gold hover:text-gold-light underline">luxury travel from PR</Link> or <Link to={localPath("/contact")} className="text-gold hover:text-gold-light underline">book a free consultation</Link>.</>}
+            </p>
           </div>
           <h2 className="font-heading text-2xl text-foreground mb-6">
             {d.highlightsTitle} <span className="text-gold-gradient italic">{d.highlightsTitleHighlight}</span>
