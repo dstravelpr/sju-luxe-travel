@@ -37,7 +37,7 @@ const aboutSchema = buildGraph(
 );
 
 const About = () => {
-  const { t } = useLanguage();
+  const { t, localPath, language } = useLanguage();
 
   return (
     <Layout>
