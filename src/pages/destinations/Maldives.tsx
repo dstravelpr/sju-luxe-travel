@@ -26,15 +26,17 @@ const Maldives = () => {
   return (
     <Layout>
       <SEOHead
-        title="Vacaciones de Lujo en Maldivas | SJU Luxe Travel"
-        description="Planifica tus vacaciones de lujo en Maldivas: villas sobre el agua, cenas privadas, buceo y beneficios exclusivos de resort — desde San Juan, PR."
-        canonical="https://www.sjuluxetravel.com/destinations/maldives"
+        title="Luxury Maldives Vacations from Puerto Rico | SJU Luxe Travel"
+        description="Plan your luxury Maldives vacation from San Juan, PR: overwater villas, private dining, diving and exclusive resort perks."
+        titleEs="Vacaciones de Lujo en Maldivas desde PR | SJU Luxe Travel"
+        descriptionEs="Planifica tus vacaciones de lujo en Maldivas: villas sobre el agua, cenas privadas, buceo y beneficios exclusivos de resort — desde San Juan, PR."
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           { name: 'Destinations', url: "https://www.sjuluxetravel.com/destinations" },
           { name: 'Maldives', url: "https://www.sjuluxetravel.com/destinations/maldives" },
         ]}
         schemaJson={schemaJson}
+        emitHreflang
       />
 
       <section className="relative pt-24">
