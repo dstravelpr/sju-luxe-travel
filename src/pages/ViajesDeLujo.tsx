@@ -63,10 +63,12 @@ const ViajesDeLujo = () => {
   return (
     <Layout>
       <SEOHead
-        title="Viajes de Lujo desde Puerto Rico | SJU Luxe Travel"
-        description="Itinerarios de lujo personalizados desde PR a las Maldivas, Europa, México y más. Servicio bilingüe, sin pasaporte para destinos US."
-        canonical={PAGE_URL}
+        title="Luxury Travel from Puerto Rico — Bespoke Itineraries | SJU Luxe Travel"
+        description="Bespoke luxury itineraries from San Juan, PR to the Maldives, Europe, Mexico and beyond. Bilingual service, no-passport U.S. destinations available."
+        titleEs="Viajes de Lujo desde Puerto Rico | SJU Luxe Travel"
+        descriptionEs="Itinerarios de lujo personalizados desde PR a las Maldivas, Europa, México y más. Servicio bilingüe, sin pasaporte para destinos US."
         schemaJson={schema}
+        emitHreflang
       />
 
 
