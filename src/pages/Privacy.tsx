@@ -204,7 +204,7 @@ const HtmlList = ({ items }: { items: string[] }) => (
 );
 
 const Privacy = () => {
-  const { language } = useLanguage();
+  const { language, localPath } = useLanguage();
   const t = content[language];
 
   return (
