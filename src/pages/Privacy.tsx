@@ -349,6 +349,15 @@ const Privacy = () => {
                 </li>
               </ul>
             </div>
+            <div className="mt-12 pt-6 border-t border-gold/20 text-sm text-muted-foreground">
+              <Link to={localPath("/")} className="text-gold hover:text-gold-light underline">
+                {language === "es" ? "← Volver al inicio" : "← Back to home"}
+              </Link>
+              {" · "}
+              <Link to={localPath("/contact")} className="text-gold hover:text-gold-light underline">
+                {language === "es" ? "Contáctanos" : "Contact us"}
+              </Link>
+            </div>
           </div>
         </div>
       </section>
