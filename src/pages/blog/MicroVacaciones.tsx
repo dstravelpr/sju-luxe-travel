@@ -42,7 +42,7 @@ const MicroVacaciones = () => {
         ogImage="https://www.sjuluxetravel.com/og/micro-vacaciones.jpg"
         title={
           isEs
-            ? "¿Son las Microvacaciones el Futuro de los Viajes? — SJU Luxe Travel"
+            ? "¿Son las Microvacaciones el Futuro de los Viajes?"
             : "Are Micro-Cations the Future of Travel? — SJU Luxe Travel"
         }
         description={
