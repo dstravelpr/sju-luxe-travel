@@ -4,6 +4,7 @@ import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { FAQSection } from "@/components/FAQSection";
+import { RelatedArticles } from "@/components/RelatedArticles";
 import azamaraImg from "@/assets/ocean/azamara.png";
 import crystalImg from "@/assets/ocean/crystal.png";
 import exploraImg from "@/assets/ocean/explora.png";

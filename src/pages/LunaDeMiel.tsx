@@ -10,6 +10,7 @@ import boraBoraImg from "@/assets/honeymoon/bora-bora.png";
 import portugalImg from "@/assets/honeymoon/portugal.png";
 import tuscanyImg from "@/assets/honeymoon/tuscany.png";
 import { FAQSection } from "@/components/FAQSection";
+import { RelatedArticles } from "@/components/RelatedArticles";
 
 const FAQ_ITEMS = [
   {
