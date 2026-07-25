@@ -29,8 +29,8 @@ const Post = () => {
       <SEOHead
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/excursiones-lujo-san-juan.jpg"
-        title="Excursiones de Lujo desde el Puerto de Cruceros de San Juan | SJU Luxe Travel"
-        description="Guía de excursiones privadas de lujo para pasajeros de crucero en San Juan: tours privados del Viejo San Juan, El Yunque, catamarán y experiencias gastronómicas coordinadas por un concierge local."
+        title="Excursiones de Lujo del Puerto de San Juan | SJU Luxe"
+        description="Excursiones privadas de lujo para cruceristas en San Juan: tours del Viejo San Juan, El Yunque, catamarán y gastronomía con concierge local."
         canonical="https://www.sjuluxetravel.com/blog/excursiones-de-lujo-san-juan-puerto-cruceros"
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
