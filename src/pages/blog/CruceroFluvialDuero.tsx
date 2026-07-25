@@ -29,8 +29,8 @@ const Post = () => {
       <SEOHead
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/crucero-fluvial-duero.jpg"
-        title="Crucero Fluvial por el Duero desde Puerto Rico: Portugal desde el Río | SJU Luxe Travel"
-        description="Cómo planificar un crucero fluvial de lujo por el Duero desde San Juan: navieras (AmaWaterways, Scenic, Uniworld), rutas de vuelo, mejor temporada y experiencias de bodega en Portugal."
+        title="Crucero Fluvial por el Duero desde Puerto Rico | SJU Luxe"
+        description="Planifica un crucero de lujo por el Duero desde San Juan: navieras, rutas de vuelo, mejor temporada y experiencias de bodega en Portugal."
         canonical="https://www.sjuluxetravel.com/blog/crucero-fluvial-duero-desde-puerto-rico"
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
