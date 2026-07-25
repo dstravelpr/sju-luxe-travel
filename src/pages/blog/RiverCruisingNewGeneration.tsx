@@ -288,6 +288,7 @@ const RiverCruisingNewGeneration = () => {
 
 
           {/* CTA */}
+          <p data-cta="contextual-service-cta" className="mt-12 mb-4 text-center text-muted-foreground text-base leading-relaxed">{isEs ? "¿Prefieres cruceros oceánicos desde San Juan? " : "Prefer ocean cruises from San Juan? "}<Link to={localPath("/cruceros-de-lujo-desde-san-juan")} className="text-gold hover:text-gold-light underline font-semibold">{isEs ? "Ver cruceros de lujo desde San Juan →" : "See luxury cruises from San Juan →"}</Link></p>
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">
               {isEs ? "¿Te ha dado curiosidad?" : "Curious but haven't booked yet?"}

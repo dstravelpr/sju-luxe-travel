@@ -79,6 +79,7 @@ const Post = () => {
             <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "¿Y crucero sin pasaporte?" : "What about cruises without a passport?"}</h2>
             <p>{isEs ? "Sí — cruceros de \"closed loop\" que salen y regresan a San Juan permiten viajar solo con licencia (Royal Caribbean, Celebrity y otros operan desde SJU)." : "Yes — \"closed loop\" cruises departing and returning to San Juan allow travel with just a license (Royal Caribbean, Celebrity and others operate from SJU)."}</p>
           </div>
+          <p data-cta="contextual-service-cta" className="mt-12 mb-4 text-center text-muted-foreground text-base leading-relaxed">{isEs ? "¿Listo para tu próxima escapada sin pasaporte? " : "Ready for your next no-passport escape? "}<Link to={localPath("/viajes-de-lujo-desde-puerto-rico")} className="text-gold hover:text-gold-light underline font-semibold">{isEs ? "Explora nuestros servicios de viajes de lujo →" : "Explore our luxury travel services →"}</Link></p>
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">{isEs ? "Planifica sin Trámites" : "Plan Without the Paperwork"}</h3>
             <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">{isEs ? "Te diseñamos el viaje perfecto sin necesidad de pasaporte." : "We'll design the perfect trip — no passport required."}</p>

@@ -6,6 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import travelAgentDesk from "@/assets/travel-agent-desk.jpg";
 import travelerAirport from "@/assets/traveler-airport.jpg";
 import { FAQSection } from "@/components/FAQSection";
+import { RelatedArticles } from "@/components/RelatedArticles";
 
 const FAQ_ITEMS = [
   {
@@ -137,6 +138,14 @@ const ViajesDeLujo = () => {
               <Link to={localPath("/cruceros-fluviales-de-lujo-desde-puerto-rico")} className="text-gold hover:underline">{d.riverCruises}</Link>.
             </p>
           </div>
+
+          <RelatedArticles
+            items={[
+              { title: "¿Vale la pena un agente de viajes en 2026?", href: "/blog/vale-la-pena-asesor-viajes-2026", category: "Guía" },
+              { title: "Viajes sin pasaporte desde Puerto Rico", href: "/blog/viajes-sin-pasaporte-desde-pr", category: "Destinos" },
+              { title: "Wellness travel: el lujo intencional", href: "/blog/wellness-travel-intentional-luxury", category: "Tendencias" },
+            ]}
+          />
 
           <FAQSection heading="Preguntas Frecuentes" items={FAQ_ITEMS} />
 

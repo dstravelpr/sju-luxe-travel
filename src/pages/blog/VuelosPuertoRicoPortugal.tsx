@@ -76,6 +76,7 @@ const Post = () => {
 
             <p>{isEs ? "Una vez que aterrizas, arma el itinerario con nuestra " : "Once you land, plan the itinerary with our "}<Link to={localPath("/destinations/portugal")} className="text-gold hover:text-gold-light underline">{isEs ? "guía de viajes de lujo a Portugal desde Puerto Rico" : "luxury Portugal travel guide from Puerto Rico"}</Link>{isEs ? " — hoteles boutique en Lisboa y Oporto, quintas del Douro y experiencias privadas seleccionadas." : " — boutique hotels in Lisbon and Porto, Douro quintas and curated private experiences."}</p>
           </div>
+          <p data-cta="contextual-service-cta" className="mt-12 mb-4 text-center text-muted-foreground text-base leading-relaxed">{isEs ? "¿Planificando Portugal desde Puerto Rico? " : "Planning Portugal from Puerto Rico? "}<Link to={localPath("/destinations/portugal")} className="text-gold hover:text-gold-light underline font-semibold">{isEs ? "Ver guía de Portugal de lujo →" : "See our luxury Portugal guide →"}</Link></p>
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">{isEs ? "Planifica Tu Viaje a Portugal" : "Plan Your Portugal Trip"}</h3>
             <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">{isEs ? "Combinamos vuelos, hoteles boutique y experiencias privadas." : "We combine flights, boutique hotels and private experiences."}</p>

@@ -7,6 +7,7 @@ import { Picture } from "@/components/Picture";
 import maldivesImg from "@/assets/destination-maldives.jpg";
 import maldivesImgWebp from "@/assets/destination-maldives.webp";
 import koveliBadge from "@/assets/koveli-maldives-expert.png";
+import { RelatedArticles } from "@/components/RelatedArticles";
 
 
 const schemaJson = {
@@ -86,7 +87,15 @@ const Maldives = () => {
             </div>
           </div>
 
-          <div className="text-center py-12 gold-border rounded-lg">
+          <RelatedArticles
+            items={[
+              { title: "Maldivas desde Puerto Rico: guía completa", href: "/blog/maldivas-desde-puerto-rico-guia", category: "Guía" },
+              { title: "¿Vale la pena un agente de viajes en 2026?", href: "/blog/vale-la-pena-asesor-viajes-2026", category: "Agente" },
+              { title: "Viajes de lujo: qué significa realmente", href: "/blog/what-luxury-travel-really-means", category: "Lujo" },
+            ]}
+          />
+
+          <div className="text-center py-12 gold-border rounded-lg mt-16">
             <h3 className="font-heading text-2xl text-foreground mb-3">
               {d.ctaTitle} <span className="text-gold-gradient italic">{d.ctaTitleHighlight}</span>
             </h3>

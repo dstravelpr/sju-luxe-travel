@@ -523,6 +523,7 @@ const WellnessTravel = () => {
           </section>
 
           {/* CTA */}
+          <p data-cta="contextual-service-cta" className="mt-12 mb-4 text-center text-muted-foreground text-base leading-relaxed">{isEs ? "¿Listo para un viaje wellness a tu medida? " : "Ready for a wellness trip built around you? "}<Link to={localPath("/viajes-de-lujo-desde-puerto-rico")} className="text-gold hover:text-gold-light underline font-semibold">{isEs ? "Explora nuestros servicios de viajes de lujo →" : "Explore our luxury travel services →"}</Link></p>
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
 
             <h3 className="font-heading text-2xl text-foreground mb-3">

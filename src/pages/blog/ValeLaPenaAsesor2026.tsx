@@ -74,6 +74,7 @@ const Post = () => {
             <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "El factor humano" : "The human factor"}</h2>
             <p>{isEs ? "Cuando tu vuelo se cancela a las 2 AM en Frankfurt, ¿prefieres esperar 90 minutos en el chat de Expedia o que tu consultor ya esté reaccionando? Eso es lo que en realidad pagas." : "When your flight cancels at 2 AM in Frankfurt, do you prefer waiting 90 minutes in the Expedia chat — or your agent already on it? That's what you're really paying for."}</p>
           </div>
+          <p data-cta="contextual-service-cta" className="mt-12 mb-4 text-center text-muted-foreground text-base leading-relaxed">{isEs ? "¿Listo para trabajar con un agente de viajes de lujo? " : "Ready to work with a luxury travel agent? "}<Link to={localPath("/viajes-de-lujo-desde-puerto-rico")} className="text-gold hover:text-gold-light underline font-semibold">{isEs ? "Explora nuestros servicios de viajes de lujo →" : "Explore our luxury travel services →"}</Link></p>
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">{isEs ? "Consulta Gratuita" : "Complimentary Consultation"}</h3>
             <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">{isEs ? "Si tu viaje encaja, conversemos. Si no, te lo decimos." : "If your trip fits, let's talk. If not, we'll tell you."}</p>

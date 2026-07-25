@@ -4,6 +4,7 @@ import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { FAQSection } from "@/components/FAQSection";
+import { RelatedArticles } from "@/components/RelatedArticles";
 import azamaraImg from "@/assets/ocean/azamara.png";
 import crystalImg from "@/assets/ocean/crystal.png";
 import exploraImg from "@/assets/ocean/explora.png";
@@ -162,6 +163,14 @@ const CrucerosDeLujo = () => {
               ))}
             </ul>
           </div>
+
+          <RelatedArticles
+            items={[
+              { title: "Excursiones de lujo en San Juan para cruceristas", href: "/blog/excursiones-de-lujo-san-juan-puerto-cruceros", category: "Excursiones" },
+              { title: "Crucero fluvial por el Duero desde Puerto Rico", href: "/blog/crucero-fluvial-duero-desde-puerto-rico", category: "Cruceros Fluviales" },
+              { title: "¿Vale la pena un agente de viajes en 2026?", href: "/blog/vale-la-pena-asesor-viajes-2026", category: "Guía" },
+            ]}
+          />
 
           <FAQSection heading="Preguntas Frecuentes sobre Cruceros de Lujo" items={FAQ_ITEMS} />
 

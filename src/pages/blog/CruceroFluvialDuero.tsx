@@ -78,6 +78,8 @@ const Post = () => {
 
             <h2 className="font-heading text-2xl text-foreground mt-10">Las tres navieras que recomendamos</h2>
 
+            <p>Para una comparativa lado a lado con las otras líneas fluviales del mercado, lee nuestra <Link to={localPath("/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside")} className="text-gold hover:text-gold-light underline">comparativa AmaWaterways vs Avalon vs Riverside</Link>.</p>
+
             <p><strong className="text-foreground">AmaWaterways — AmaVida y AmaDouro:</strong> nuestra recomendación por defecto para viajeros de Puerto Rico que quieren gastronomía fuerte y excursiones activas. Bicicletas a bordo, cenas maridadas con vinos del Duero, chef ejecutivo con reconocimiento internacional. El AmaVida tiene solo 106 huéspedes.</p>
 
             <p><strong className="text-foreground">Scenic — Scenic Azure:</strong> el más "todo-incluido premium". Butler para cada suite, excursiones privadas incluidas (no en grupo), vuelos en helicóptero opcionales sobre las viñas. Ideal para lunas de miel y aniversarios importantes.</p>

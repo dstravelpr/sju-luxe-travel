@@ -161,6 +161,7 @@ const Post = () => {
             </ul>
           </div>
 
+          <p data-cta="contextual-service-cta" className="mt-12 mb-4 text-center text-muted-foreground text-base leading-relaxed">¿Vas a hacer un crucero desde San Juan? <Link to={localPath("/cruceros-de-lujo-desde-san-juan")} className="text-gold hover:text-gold-light underline font-semibold">Ver cruceros de lujo desde San Juan →</Link></p>
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">Reserva tu excursión privada en San Juan</h3>
             <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">

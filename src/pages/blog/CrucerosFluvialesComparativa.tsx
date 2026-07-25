@@ -78,6 +78,7 @@ const Post = () => {
 
             <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "¿Cuál es para ti?" : "Which one is right for you?"}</h2>
             <p>{isEs ? "Si quieres actividad y gastronomía: AmaWaterways. Si quieres vistas y flexibilidad: Avalon. Si quieres el máximo lujo y servicio personalizado: Riverside. Como agente certificado de las tres líneas, podemos comparar precios reales y beneficios exclusivos para tu fecha." : "If you want activity and food: AmaWaterways. If you want views and flexibility: Avalon. If you want max luxury and personal service: Riverside. As a certified agent for all three lines, we compare real pricing and exclusive perks for your dates."}</p>
+            <p>{isEs ? "¿Por qué el cruce fluvial está creciendo tanto? Lee " : "Why is river cruising growing so fast? Read "}<Link to={localPath("/blog/river-cruising-new-generation")} className="text-gold hover:text-gold-light underline">{isEs ? "river cruising: la nueva generación" : "river cruising: the new generation"}</Link>{isEs ? "." : "."}</p>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "Lecturas Relacionadas" : "Related Reading"}</h2>
             <ul className="space-y-2 list-none">

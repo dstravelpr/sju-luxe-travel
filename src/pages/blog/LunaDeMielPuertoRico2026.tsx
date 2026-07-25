@@ -330,6 +330,7 @@ const Post = () => {
             </p>
           </div>
 
+          <p data-cta="contextual-service-cta" className="mt-12 mb-4 text-center text-muted-foreground text-base leading-relaxed">{isEs ? "¿Empezando a planificar tu luna de miel de lujo? " : "Starting to plan your luxury honeymoon? "}<Link to={localPath("/luna-de-miel-de-lujo")} className="text-gold hover:text-gold-light underline font-semibold">{isEs ? "Ver planificación de luna de miel de lujo →" : "See our luxury honeymoon planning →"}</Link></p>
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">{isEs ? "Planifica Tu Luna de Miel" : "Plan Your Honeymoon"}</h3>
             <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">

@@ -302,6 +302,13 @@ const DoTravelAgentsSaveMoney = () => {
             <p className="text-muted-foreground text-base leading-relaxed italic">
               {isEs ? "Reservar el mismo hotel en Expedia o Booking.com paga el mismo precio — sin un solo beneficio de estos." : "Booking the same hotel on Expedia or Booking.com costs the same price — without a single one of these perks."}
             </p>
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {isEs ? "Estos beneficios son parte de nuestro " : "These perks are part of our "}
+              <Link to={localPath("/blog/servicios-concierge-viaje")} className="text-gold hover:text-gold-light underline">
+                {isEs ? "servicio concierge de viaje" : "travel concierge service"}
+              </Link>
+              {isEs ? " — así es como funciona en la práctica." : " — here's how it works in practice."}
+            </p>
 
             {/* Related Reading */}
             <h2 className="font-heading text-2xl text-foreground mt-12">{isEs ? "Lecturas Relacionadas" : "Related Reading"}</h2>
@@ -315,6 +322,7 @@ const DoTravelAgentsSaveMoney = () => {
           </div>
 
           {/* CTA */}
+          <p data-cta="contextual-service-cta" className="mt-12 mb-4 text-center text-muted-foreground text-base leading-relaxed">{isEs ? "¿Listo para planificar tu próximo viaje de lujo desde Puerto Rico? " : "Ready to plan your next luxury trip from Puerto Rico? "}<Link to={localPath("/viajes-de-lujo-desde-puerto-rico")} className="text-gold hover:text-gold-light underline font-semibold">{isEs ? "Explora nuestros servicios de viajes de lujo →" : "Explore our luxury travel services →"}</Link></p>
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">
               {isEs ? "¿Listo para Planificar Tu Viaje?" : "Ready to Plan Your Journey?"}

@@ -10,6 +10,7 @@ import boraBoraImg from "@/assets/honeymoon/bora-bora.png";
 import portugalImg from "@/assets/honeymoon/portugal.png";
 import tuscanyImg from "@/assets/honeymoon/tuscany.png";
 import { FAQSection } from "@/components/FAQSection";
+import { RelatedArticles } from "@/components/RelatedArticles";
 
 const FAQ_ITEMS = [
   {
@@ -132,6 +133,14 @@ const LunaDeMiel = () => {
               ¿Quieres ideas concretas por destino? Lee nuestros <Link to={localPath("/blog/luna-de-miel-puerto-rico-2026")} className="text-gold hover:text-gold-light underline">mejores destinos de luna de miel 2026 desde Puerto Rico</Link> con itinerarios, rutas de vuelo y presupuestos.
             </p>
           </div>
+
+          <RelatedArticles
+            items={[
+              { title: "Luna de miel en Puerto Rico 2026: mejores destinos", href: "/blog/luna-de-miel-puerto-rico-2026", category: "Luna de Miel" },
+              { title: "Maldivas desde Puerto Rico: guía completa", href: "/blog/maldivas-desde-puerto-rico-guia", category: "Destinos" },
+              { title: "Luxury solo female travel from Puerto Rico", href: "/blog/luxury-solo-female-travel", category: "Guía" },
+            ]}
+          />
 
           <FAQSection heading="Preguntas Frecuentes sobre Lunas de Miel" items={FAQ_ITEMS} />
 

@@ -60,6 +60,7 @@ const Post = () => {
 
             <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "Cómo llegar (la mejor ruta)" : "How to get there (best routing)"}</h2>
             <p>{isEs ? "Recomendada: SJU → MIA → DOH → MLE en Qatar Airways. ~22h totales. Alternativa: SJU → JFK → DXB → MLE con Emirates. Ambas tienen la mejor business class del mundo y vale la pena en este viaje." : "Recommended: SJU → MIA → DOH → MLE on Qatar Airways. ~22h total. Alternative: SJU → JFK → DXB → MLE with Emirates. Both have the world's top business class — worth it for this trip."}</p>
+            <p>{isEs ? "¿Combinas Portugal con Maldivas u otra parada europea? Revisa nuestra guía de " : "Combining Portugal with Maldives or another European stop? See our guide to "}<Link to={localPath("/blog/vuelos-puerto-rico-portugal")} className="text-gold hover:text-gold-light underline">{isEs ? "vuelos de Puerto Rico a Portugal" : "flights from Puerto Rico to Portugal"}</Link>{isEs ? " para rutas y aerolíneas premium." : " for routes and premium carriers."}</p>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "Mejor temporada" : "Best season"}</h2>
             <p>{isEs ? "Noviembre a abril (estación seca). Diciembre y enero son los más caros. Mayo, junio y septiembre dan los mejores precios con muy buen clima la mayoría de los días." : "November to April (dry season). December and January are the priciest. May, June and September offer best pricing with great weather most days."}</p>
@@ -79,6 +80,7 @@ const Post = () => {
 
             <p>{isEs ? "Cuando tengas claro el estilo, revisa nuestra " : "Once you've narrowed the style, see our full "}<Link to={localPath("/destinations/maldives")} className="text-gold hover:text-gold-light underline">{isEs ? "guía de vacaciones de lujo en Maldivas desde Puerto Rico" : "luxury Maldives vacations from Puerto Rico guide"}</Link>{isEs ? " con villas sobre el agua, cenas privadas y beneficios exclusivos de resort." : " with overwater villas, private dining and exclusive resort perks."}</p>
           </div>
+          <p data-cta="contextual-service-cta" className="mt-12 mb-4 text-center text-muted-foreground text-base leading-relaxed">{isEs ? "¿Lista tu Maldivas desde San Juan? " : "Ready to plan your Maldives trip from San Juan? "}<Link to={localPath("/destinations/maldives")} className="text-gold hover:text-gold-light underline font-semibold">{isEs ? "Ver guía de Maldivas de lujo →" : "See our luxury Maldives guide →"}</Link></p>
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">{isEs ? "Cotiza Tu Maldivas" : "Quote Your Maldives Trip"}</h3>
             <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">{isEs ? "Te enviamos 3 opciones de resort según tu presupuesto y estilo." : "We'll send 3 resort options matched to your budget and style."}</p>
