@@ -6,6 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { Picture } from "@/components/Picture";
 import mexicoImg from "@/assets/destination-mexico.jpg";
 import mexicoImgWebp from "@/assets/destination-mexico.webp";
+import { RelatedArticles } from "@/components/RelatedArticles";
 
 
 const schemaJson = {
