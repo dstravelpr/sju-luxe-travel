@@ -19,21 +19,23 @@ const schemaJson = {
 };
 
 const Portugal = () => {
-  const { t, localPath } = useLanguage();
+  const { t, localPath, language } = useLanguage();
   const d = t.destinations.portugal;
 
   return (
     <Layout>
       <SEOHead
-        title="Viajes de Lujo a Portugal | SJU Luxe Travel"
-        description="Descubre Portugal con un itinerario de lujo a medida. Cenas en Belem, quintas históricas y experiencias culturales exclusivas — desde San Juan, PR."
-        canonical="https://www.sjuluxetravel.com/destinations/portugal"
+        title="Luxury Portugal Travel from Puerto Rico | SJU Luxe Travel"
+        description="Discover Portugal with a bespoke luxury itinerary from San Juan, PR — Lisbon, Porto, the Algarve and the Douro Valley."
+        titleEs="Viajes de Lujo a Portugal desde PR | SJU Luxe Travel"
+        descriptionEs="Descubre Portugal con un itinerario de lujo a medida. Cenas en Belém, quintas históricas y experiencias culturales exclusivas — desde San Juan, PR."
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           { name: 'Destinations', url: "https://www.sjuluxetravel.com/destinations" },
           { name: 'Portugal', url: "https://www.sjuluxetravel.com/destinations/portugal" },
         ]}
         schemaJson={schemaJson}
+        emitHreflang
       />
 
       <section className="relative pt-24">
