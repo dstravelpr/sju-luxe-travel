@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
