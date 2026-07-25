@@ -140,6 +140,7 @@ const Post = () => {
               </div>
             </div>
           </div>
+          <p data-cta="contextual-service-cta" className="mt-12 mb-4 text-center text-muted-foreground text-base leading-relaxed">{isEs ? "¿Listo para viajar con servicio concierge real? " : "Ready to travel with real concierge service? "}<Link to={localPath("/viajes-de-lujo-desde-puerto-rico")} className="text-gold hover:text-gold-light underline font-semibold">{isEs ? "Explora nuestros servicios de viajes de lujo →" : "Explore our luxury travel services →"}</Link></p>
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">{isEs ? "Consulta tu Caso" : "Discuss Your Trip"}</h3>
             <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">{isEs ? "30 minutos gratis para evaluar si el concierge tiene sentido para tu viaje." : "Complimentary 30 minutes to evaluate if concierge makes sense for your trip."}</p>

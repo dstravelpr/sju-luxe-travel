@@ -79,6 +79,7 @@ const Post = () => {
 
             <p>{isEs ? "Cuando tengas claro el estilo, revisa nuestra " : "Once you've narrowed the style, see our full "}<Link to={localPath("/destinations/maldives")} className="text-gold hover:text-gold-light underline">{isEs ? "guía de vacaciones de lujo en Maldivas desde Puerto Rico" : "luxury Maldives vacations from Puerto Rico guide"}</Link>{isEs ? " con villas sobre el agua, cenas privadas y beneficios exclusivos de resort." : " with overwater villas, private dining and exclusive resort perks."}</p>
           </div>
+          <p data-cta="contextual-service-cta" className="mt-12 mb-4 text-center text-muted-foreground text-base leading-relaxed">{isEs ? "¿Lista tu Maldivas desde San Juan? " : "Ready to plan your Maldives trip from San Juan? "}<Link to={localPath("/destinations/maldives")} className="text-gold hover:text-gold-light underline font-semibold">{isEs ? "Ver guía de Maldivas de lujo →" : "See our luxury Maldives guide →"}</Link></p>
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">{isEs ? "Cotiza Tu Maldivas" : "Quote Your Maldives Trip"}</h3>
             <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">{isEs ? "Te enviamos 3 opciones de resort según tu presupuesto y estilo." : "We'll send 3 resort options matched to your budget and style."}</p>
