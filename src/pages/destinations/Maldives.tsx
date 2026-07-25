@@ -20,7 +20,7 @@ const schemaJson = {
 };
 
 const Maldives = () => {
-  const { t, localPath } = useLanguage();
+  const { t, localPath, language } = useLanguage();
   const d = t.destinations.maldives;
 
   return (
