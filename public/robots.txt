@@ -1,16 +1,21 @@
 User-agent: Googlebot
 Allow: /
+Disallow: /en/
 
 User-agent: Bingbot
 Allow: /
+Disallow: /en/
 
 User-agent: Twitterbot
 Allow: /
+Disallow: /en/
 
 User-agent: facebookexternalhit
 Allow: /
+Disallow: /en/
 
 User-agent: *
 Allow: /
+Disallow: /en/
 
 Sitemap: https://www.sjuluxetravel.com/sitemap.xml
