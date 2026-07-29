@@ -133,11 +133,27 @@ const Index = () => {
   ];
 
   const destinations = [
-    { image: maldivesImg, imageWebp: maldivesImgWebp, title: t.home.maldives, subtitle: t.home.maldivesSub },
-    { image: portugalImg, imageWebp: portugalImgWebp, title: t.home.portugal, subtitle: t.home.portugalSub },
-    { image: mexicoImg, imageWebp: mexicoImgWebp, title: t.home.mexico, subtitle: t.home.mexicoSub },
-
+    { image: maldivesImg, imageWebp: maldivesImgWebp, title: t.home.maldives, subtitle: t.home.maldivesSub, to: localPath("/destinations/maldives") },
+    { image: portugalImg, imageWebp: portugalImgWebp, title: t.home.portugal, subtitle: t.home.portugalSub, to: localPath("/destinations/portugal") },
+    { image: mexicoImg, imageWebp: mexicoImgWebp, title: t.home.mexico, subtitle: t.home.mexicoSub, to: localPath("/destinations/mexico") },
+    { image: cruiseImg, imageWebp: undefined, title: t.home.cruises, subtitle: t.home.cruisesSub, to: localPath("/cruceros-de-lujo-desde-san-juan") },
   ];
+
+  const trustLogos = [
+    { src: amaLogo, alt: t.home.trustAma },
+    { src: avalonLogo, alt: t.home.trustAvalon },
+    { src: riversideLogo, alt: t.home.trustRiverside },
+    { src: maldivesExpertLogo, alt: t.home.trustMaldives },
+  ];
+
+  const perks = [
+    { icon: Crown, title: t.home.perk1Title, description: t.home.perk1Desc },
+    { icon: Gift, title: t.home.perk2Title, description: t.home.perk2Desc },
+    { icon: Sparkles, title: t.home.perk3Title, description: t.home.perk3Desc },
+    { icon: LifeBuoy, title: t.home.perk4Title, description: t.home.perk4Desc },
+  ];
+
+
 
   return (
     <Layout>
