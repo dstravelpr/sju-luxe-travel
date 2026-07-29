@@ -240,20 +240,20 @@ const Index = () => {
 
 
       {/* Services Section */}
-      <section className="py-24 bg-charcoal">
+      <Reveal as="section" className="py-28 md:py-36 bg-charcoal">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <span className="font-body text-gold text-sm tracking-[0.3em] uppercase">{t.home.servicesLabel}</span>
-            <h2 className="font-heading text-3xl md:text-5xl text-foreground mt-4">
+          <div className="text-center mb-20">
+            <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{t.home.servicesLabel}</span>
+            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-tight text-foreground mt-6">
               {t.home.servicesTitle} <span className="text-gold-gradient italic">{t.home.servicesTitleHighlight}</span>
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto mt-6">{t.home.servicesDescription}</p>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto mt-8">{t.home.servicesDescription}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="p-8 bg-background gold-border gold-border-hover rounded-lg text-center group">
-                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gold/10 flex items-center justify-center group-hover:bg-gold/20 transition-colors duration-300">
-                  <service.icon size={28} className="text-gold" />
+              <div key={index} className="p-10 bg-background gold-border gold-border-hover rounded-sm text-center group transition-colors duration-500">
+                <div className="w-14 h-14 mx-auto mb-8 rounded-full border border-gold/40 flex items-center justify-center group-hover:border-gold transition-colors duration-500">
+                  <service.icon size={22} className="text-gold" strokeWidth={1.25} />
                 </div>
                 <h3 className="font-heading text-xl text-foreground mb-4">{service.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
@@ -261,38 +261,90 @@ const Index = () => {
             ))}
           </div>
         </div>
-      </section>
+      </Reveal>
 
-      {/* Featured Destinations */}
-      <section className="py-24 bg-background">
+      {/* Destination Showcase */}
+      <Reveal as="section" className="py-28 md:py-36 bg-background">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
             <div>
-              <span className="font-body text-gold text-sm tracking-[0.3em] uppercase">{t.home.destinationsLabel}</span>
-              <h2 className="font-heading text-3xl md:text-5xl text-foreground mt-4">
-                {t.home.destinationsTitle} <span className="text-gold-gradient italic">{t.home.destinationsTitleHighlight}</span>
+              <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{t.home.showcaseLabel}</span>
+              <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-tight text-foreground mt-6">
+                {t.home.showcaseTitle} <span className="text-gold-gradient italic">{t.home.showcaseTitleHighlight}</span>
               </h2>
-              <p className="text-muted-foreground text-lg mt-4 max-w-xl">{t.home.destinationsDescription}</p>
+              <p className="text-muted-foreground text-lg mt-6 max-w-xl">{t.home.destinationsDescription}</p>
             </div>
             <Link to={localPath("/destinations")} className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors font-body tracking-wide">
               {t.home.viewAll}
               <ArrowRight size={18} />
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {destinations.map((dest, index) => (
-              <Link key={index} to={`/destinations/${dest.title.toLowerCase().replace(/^(the |las |los )/, "")}`} className="group relative aspect-[4/5] overflow-hidden rounded-lg gold-border gold-border-hover">
-                <Picture src={dest.image} webpSrc={dest.imageWebp} alt={`${dest.title} — luxury travel destination curated by SJU Luxe Travel`} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
+              <Link key={index} to={dest.to} className="group relative aspect-[3/4] overflow-hidden rounded-sm gold-border gold-border-hover">
+                <Picture src={dest.image} webpSrc={dest.imageWebp} alt={`${dest.title} — luxury travel destination curated by SJU Luxe Travel`} className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-105" loading="lazy" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/25 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <p className="text-gold text-xs tracking-widest uppercase mb-2">{dest.subtitle}</p>
+                  <p className="text-gold text-[11px] tracking-[0.25em] uppercase mb-2 opacity-70 group-hover:opacity-100 transition-opacity duration-700">{dest.subtitle}</p>
                   <h3 className="font-heading text-2xl text-foreground">{dest.title}</h3>
+                  <span className="mt-4 block h-px w-0 bg-gold transition-all duration-700 group-hover:w-14" />
                 </div>
               </Link>
             ))}
           </div>
         </div>
-      </section>
+      </Reveal>
+
+      {/* Concierge Perks */}
+      <Reveal as="section" className="py-28 md:py-36 bg-charcoal">
+        <div className="container mx-auto px-6">
+          <div className="text-center max-w-2xl mx-auto mb-20">
+            <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{t.home.perksLabel}</span>
+            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-tight text-foreground mt-6">
+              {t.home.perksTitle} <span className="text-gold-gradient italic">{t.home.perksTitleHighlight}</span>
+            </h2>
+            <p className="text-muted-foreground text-lg mt-8">{t.home.perksDescription}</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-14 max-w-6xl mx-auto">
+            {perks.map((perk, index) => (
+              <div key={index} className="text-center px-2">
+                <perk.icon size={26} strokeWidth={1} className="text-gold mx-auto" />
+                <span className="block h-px w-10 bg-gold/40 mx-auto my-6" />
+                <h3 className="font-heading text-xl text-foreground mb-3">{perk.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{perk.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Reveal>
+
+      {/* Meet Your Travel Agent */}
+      <Reveal as="section" className="py-28 md:py-36 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-20 items-center max-w-5xl mx-auto">
+            <img
+              src="/about/hero-portrait.jpg"
+              alt={t.home.founderPhotoAlt}
+              loading="lazy"
+              className="w-full aspect-[3/4] object-cover rounded-sm gold-border"
+            />
+            <div>
+              <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{t.home.founderLabel}</span>
+              <h2 className="font-heading text-4xl md:text-5xl leading-tight text-foreground mt-6">{t.home.founderName}</h2>
+              <p className="font-body text-xs tracking-[0.2em] uppercase text-muted-foreground mt-4">{t.home.founderRole}</p>
+              <div className="text-muted-foreground text-lg leading-relaxed mt-8 space-y-5">
+                <p>{t.home.founderP1}</p>
+                <p>{t.home.founderP2}</p>
+              </div>
+              <Link to={localPath("/contact")} className="pill-cta mt-10 inline-flex items-center gap-3 px-8 py-3.5 border border-gold/60 text-gold font-body text-xs font-semibold tracking-[0.25em] uppercase hover:bg-gold/10 hover:border-gold">
+                {t.home.founderCta}
+                <ArrowRight size={16} />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </Reveal>
+
 
       {/* Why Choose Us */}
       <section className="py-24 bg-charcoal">
