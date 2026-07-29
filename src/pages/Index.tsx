@@ -143,48 +143,65 @@ const Index = () => {
       />
 
       {/* Hero Section */}
-      <section className="hero-section relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-10">
-        <Picture src={heroBg} webpSrc={heroBgWebp} alt="Luxury beach sunset — SJU Luxe Travel" width={1920} height={1080} className="absolute inset-0 w-full h-full object-cover object-center" fetchPriority="high" decoding="async" />
+      <section className="hero-section relative min-h-[92vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16">
+        <div className="absolute inset-0 overflow-hidden">
+          <Picture src={heroBg} webpSrc={heroBgWebp} alt="Overwater villas at sunset — luxury travel curated by SJU Luxe Travel" width={1920} height={1080} className="ken-burns absolute inset-0 w-full h-full object-cover object-center" fetchPriority="high" decoding="async" />
+        </div>
         <div className="absolute inset-0 hero-overlay" />
+        <div className="absolute inset-0 bg-background/40" />
         <div className="relative z-10 container mx-auto px-6 text-center">
-          <img src={logo} alt="SJU Luxe Travel" className="hidden md:block h-24 w-24 mx-auto mb-6 animate-fade-in object-contain" />
-          <p className="font-body text-sm tracking-[0.4em] uppercase mb-4 md:mb-6 animate-fade-in text-destructive-foreground"></p>
+          <img src={logo} alt="SJU Luxe Travel" className="hidden md:block h-20 w-20 mx-auto mb-10 animate-fade-in object-contain" />
           <h1 className="sr-only">Boutique Luxury Travel Agency in San Juan, Puerto Rico</h1>
-          <div aria-hidden="true" className="hero-title font-heading text-3xl md:text-6xl lg:text-7xl text-foreground mb-3 md:mb-4 animate-fade-in-up">
+          <div aria-hidden="true" className="hero-title font-heading text-4xl md:text-6xl lg:text-7xl leading-[1.15] text-foreground mb-6 md:mb-8 animate-fade-in-up">
             {t.home.heroTitle1}
             <br />
             <span className="text-gold-gradient italic">{t.home.heroTitle2}</span>
           </div>
-          <h2 className="hero-subtitle font-body text-[11px] md:text-base tracking-[0.3em] uppercase text-gold mb-4 md:mb-6 animate-fade-in-up">
+          <h2 className="hero-subtitle font-body text-[12px] md:text-sm tracking-[0.32em] uppercase text-gold mb-10 md:mb-12 animate-fade-in-up">
             {t.home.heroSubtitle}
           </h2>
-          <div className="hero-body">
-            <p className="font-body text-base md:text-xl text-cream max-w-2xl mx-auto mb-8 md:mb-10 animate-fade-in-delay">
-              {t.home.heroDescription}
-            </p>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-delay">
-            <Link to={localPath("/destinations")} className="inline-flex items-center gap-2 px-8 py-4 bg-gold-gradient text-primary-foreground font-body text-sm font-semibold tracking-wide uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_40px_-5px_hsl(43,74%,49%,0.6)] hover:scale-105">
-              {t.home.exploreDestinations}
-              <ArrowRight size={18} />
-            </Link>
-            <Link to={localPath("/contact")} className="hero-ghost-btn inline-flex items-center gap-2 px-8 py-4 gold-border text-gold font-body text-sm font-semibold tracking-wide uppercase rounded-sm transition-all duration-300 hover:bg-gold/10">
+          <div className="flex justify-center animate-fade-in-delay">
+            <Link to={localPath("/contact")} className="hero-ghost-btn pill-cta inline-flex items-center gap-3 px-10 py-4 border border-gold text-gold font-body text-xs font-semibold tracking-[0.25em] uppercase hover:bg-gold/10">
               {t.home.startPlanning}
+              <ArrowRight size={16} />
             </Link>
           </div>
         </div>
       </section>
 
+      {/* Trust Bar */}
+      <section className="py-10 bg-charcoal border-y border-border/40" aria-label={t.home.trustLabel}>
+        <div className="container mx-auto px-6">
+          <p className="text-center font-body text-[11px] tracking-[0.3em] uppercase text-muted-foreground/80 mb-8">
+            {t.home.trustLabel}
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8">
+            <span className="font-heading text-base md:text-lg text-muted-foreground">{t.home.trustTravelLeaders}</span>
+            <span className="font-heading text-base md:text-lg text-muted-foreground">{t.home.trustNcm}</span>
+            {trustLogos.map((item) => (
+              <img
+                key={item.alt}
+                src={item.src}
+                alt={item.alt}
+                loading="lazy"
+                className="h-10 md:h-12 w-auto object-contain opacity-50 hover:opacity-80 transition-opacity duration-500"
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
-      <section className="py-24 bg-background">
+      <Reveal as="section" className="py-28 md:py-36 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="font-body text-gold text-sm tracking-[0.3em] uppercase">{t.home.philosophyLabel}</span>
-            <h2 className="font-heading text-3xl md:text-5xl text-foreground mt-4 mb-8">
+            <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{t.home.philosophyLabel}</span>
+            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-tight text-foreground mt-6 mb-10">
               {t.home.philosophyTitle1}{" "}
               <span className="text-gold-gradient italic">{t.home.philosophyTitle2}</span>
             </h2>
-            <div className="text-muted-foreground text-lg leading-relaxed mb-8 space-y-5">
+            <div className="text-muted-foreground text-lg leading-relaxed mb-10 space-y-6">
+              <p>{t.home.heroDescription}</p>
               <p>{t.home.philosophyP1}</p>
               <p>{t.home.philosophyP2}</p>
               <p>{t.home.philosophyP3}</p>
@@ -195,7 +212,8 @@ const Index = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </Reveal>
+
 
       {/* Services Section */}
       <section className="py-24 bg-charcoal">
