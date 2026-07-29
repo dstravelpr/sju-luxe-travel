@@ -45,6 +45,12 @@ const DestinationCard = ({
             <Picture src={destination.image} webpSrc={destination.imageWebp} alt={destination.imageAlt} className="w-full h-full object-cover" loading="lazy" />
           </div>
           <p className="text-muted-foreground text-xs mt-2 italic">{destination.imageAlt}</p>
+          <p className="font-body text-gold text-xs tracking-[0.2em] uppercase mt-6 mb-3">{destination.highlightsLabel}</p>
+          <div className="flex flex-wrap gap-2">
+            {destination.highlights.map((h) => (
+              <span key={h} className="px-3 py-1.5 gold-border rounded-full text-xs text-muted-foreground hover:border-gold transition-colors">{h}</span>
+            ))}
+          </div>
         </div>
         <div className={`${imageOnLeft ? "" : "md:[direction:ltr]"}`}>
           <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{destination.subtitle}</span>
@@ -60,12 +66,6 @@ const DestinationCard = ({
             <span className="flex items-center gap-1.5"><MapPin size={14} className="text-gold" />{destination.location}</span>
             <span className="flex items-center gap-1.5"><Clock size={14} className="text-gold" />{destination.duration}</span>
             <span className="flex items-center gap-1.5"><Users size={14} className="text-gold" />{destination.guests}</span>
-          </div>
-          <p className="font-body text-gold text-xs tracking-[0.2em] uppercase mb-3">{destination.highlightsLabel}</p>
-          <div className="flex flex-wrap gap-2 mb-8">
-            {destination.highlights.map((h) => (
-              <span key={h} className="px-3 py-1.5 gold-border rounded-full text-xs text-muted-foreground hover:border-gold transition-colors">{h}</span>
-            ))}
           </div>
           <Link to={localPath("/contact")} className="inline-flex items-center gap-2 px-6 py-3 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-[0.15em] uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105">
             {destination.inquireNow}
