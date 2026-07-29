@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Compass, Heart, Users, Globe, Shield, Star, ChevronDown } from "lucide-react";
+import { ArrowRight, Compass, Heart, Users, Globe, Shield, Star, ChevronDown, Sparkles, Gift, Crown, LifeBuoy } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Picture } from "@/components/Picture";
+import { Reveal } from "@/components/Reveal";
 import heroBg from "@/assets/hero-beach-sunset.jpg";
 import heroBgWebp from "@/assets/hero-beach-sunset.webp";
 import logo from "@/assets/logo.png";
@@ -14,6 +15,13 @@ import portugalImg from "@/assets/destination-portugal.jpg";
 import portugalImgWebp from "@/assets/destination-portugal.webp";
 import mexicoImg from "@/assets/destination-mexico.jpg";
 import mexicoImgWebp from "@/assets/destination-mexico.webp";
+import cruiseImg from "@/assets/ocean/ritz-carlton.jpg";
+import amaLogo from "@/assets/amawaterways-certified_logo.jpg";
+import avalonLogo from "@/assets/avalon-certified_logo.png";
+import riversideLogo from "@/assets/riverside-certified_logo.jpg";
+import maldivesExpertLogo from "@/assets/koveli-maldives-expert.png";
+
+
 
 
 const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
@@ -125,11 +133,27 @@ const Index = () => {
   ];
 
   const destinations = [
-    { image: maldivesImg, imageWebp: maldivesImgWebp, title: t.home.maldives, subtitle: t.home.maldivesSub },
-    { image: portugalImg, imageWebp: portugalImgWebp, title: t.home.portugal, subtitle: t.home.portugalSub },
-    { image: mexicoImg, imageWebp: mexicoImgWebp, title: t.home.mexico, subtitle: t.home.mexicoSub },
-
+    { image: maldivesImg, imageWebp: maldivesImgWebp, title: t.home.maldives, subtitle: t.home.maldivesSub, to: localPath("/destinations/maldives") },
+    { image: portugalImg, imageWebp: portugalImgWebp, title: t.home.portugal, subtitle: t.home.portugalSub, to: localPath("/destinations/portugal") },
+    { image: mexicoImg, imageWebp: mexicoImgWebp, title: t.home.mexico, subtitle: t.home.mexicoSub, to: localPath("/destinations/mexico") },
+    { image: cruiseImg, imageWebp: undefined, title: t.home.cruises, subtitle: t.home.cruisesSub, to: localPath("/cruceros-de-lujo-desde-san-juan") },
   ];
+
+  const trustLogos = [
+    { src: amaLogo, alt: t.home.trustAma },
+    { src: avalonLogo, alt: t.home.trustAvalon },
+    { src: riversideLogo, alt: t.home.trustRiverside },
+    { src: maldivesExpertLogo, alt: t.home.trustMaldives },
+  ];
+
+  const perks = [
+    { icon: Crown, title: t.home.perk1Title, description: t.home.perk1Desc },
+    { icon: Gift, title: t.home.perk2Title, description: t.home.perk2Desc },
+    { icon: Sparkles, title: t.home.perk3Title, description: t.home.perk3Desc },
+    { icon: LifeBuoy, title: t.home.perk4Title, description: t.home.perk4Desc },
+  ];
+
+
 
   return (
     <Layout>
@@ -143,48 +167,65 @@ const Index = () => {
       />
 
       {/* Hero Section */}
-      <section className="hero-section relative min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-10">
-        <Picture src={heroBg} webpSrc={heroBgWebp} alt="Luxury beach sunset — SJU Luxe Travel" width={1920} height={1080} className="absolute inset-0 w-full h-full object-cover object-center" fetchPriority="high" decoding="async" />
+      <section className="hero-section relative min-h-[92vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16">
+        <div className="absolute inset-0 overflow-hidden">
+          <Picture src={heroBg} webpSrc={heroBgWebp} alt="Overwater villas at sunset — luxury travel curated by SJU Luxe Travel" width={1920} height={1080} className="ken-burns absolute inset-0 w-full h-full object-cover object-center" fetchPriority="high" decoding="async" />
+        </div>
         <div className="absolute inset-0 hero-overlay" />
+        <div className="absolute inset-0 bg-background/40" />
         <div className="relative z-10 container mx-auto px-6 text-center">
-          <img src={logo} alt="SJU Luxe Travel" className="hidden md:block h-24 w-24 mx-auto mb-6 animate-fade-in object-contain" />
-          <p className="font-body text-sm tracking-[0.4em] uppercase mb-4 md:mb-6 animate-fade-in text-destructive-foreground"></p>
+          <img src={logo} alt="SJU Luxe Travel" className="hidden md:block h-20 w-20 mx-auto mb-10 animate-fade-in object-contain" />
           <h1 className="sr-only">Boutique Luxury Travel Agency in San Juan, Puerto Rico</h1>
-          <div aria-hidden="true" className="hero-title font-heading text-3xl md:text-6xl lg:text-7xl text-foreground mb-3 md:mb-4 animate-fade-in-up">
+          <div aria-hidden="true" className="hero-title font-heading text-4xl md:text-6xl lg:text-7xl leading-[1.15] text-foreground mb-6 md:mb-8 animate-fade-in-up">
             {t.home.heroTitle1}
             <br />
             <span className="text-gold-gradient italic">{t.home.heroTitle2}</span>
           </div>
-          <h2 className="hero-subtitle font-body text-[11px] md:text-base tracking-[0.3em] uppercase text-gold mb-4 md:mb-6 animate-fade-in-up">
+          <h2 className="hero-subtitle font-body text-[12px] md:text-sm tracking-[0.32em] uppercase text-gold mb-10 md:mb-12 animate-fade-in-up">
             {t.home.heroSubtitle}
           </h2>
-          <div className="hero-body">
-            <p className="font-body text-base md:text-xl text-cream max-w-2xl mx-auto mb-8 md:mb-10 animate-fade-in-delay">
-              {t.home.heroDescription}
-            </p>
-          </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-delay">
-            <Link to={localPath("/destinations")} className="inline-flex items-center gap-2 px-8 py-4 bg-gold-gradient text-primary-foreground font-body text-sm font-semibold tracking-wide uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_40px_-5px_hsl(43,74%,49%,0.6)] hover:scale-105">
-              {t.home.exploreDestinations}
-              <ArrowRight size={18} />
-            </Link>
-            <Link to={localPath("/contact")} className="hero-ghost-btn inline-flex items-center gap-2 px-8 py-4 gold-border text-gold font-body text-sm font-semibold tracking-wide uppercase rounded-sm transition-all duration-300 hover:bg-gold/10">
+          <div className="flex justify-center animate-fade-in-delay">
+            <Link to={localPath("/contact")} className="hero-ghost-btn pill-cta inline-flex items-center gap-3 px-10 py-4 border border-gold text-gold font-body text-xs font-semibold tracking-[0.25em] uppercase hover:bg-gold/10">
               {t.home.startPlanning}
+              <ArrowRight size={16} />
             </Link>
           </div>
         </div>
       </section>
 
+      {/* Trust Bar */}
+      <section className="py-10 bg-charcoal border-y border-border/40" aria-label={t.home.trustLabel}>
+        <div className="container mx-auto px-6">
+          <p className="text-center font-body text-[11px] tracking-[0.3em] uppercase text-muted-foreground/80 mb-8">
+            {t.home.trustLabel}
+          </p>
+          <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8">
+            <span className="font-heading text-base md:text-lg text-muted-foreground">{t.home.trustTravelLeaders}</span>
+            <span className="font-heading text-base md:text-lg text-muted-foreground">{t.home.trustNcm}</span>
+            {trustLogos.map((item) => (
+              <img
+                key={item.alt}
+                src={item.src}
+                alt={item.alt}
+                loading="lazy"
+                className="h-10 md:h-12 w-auto object-contain opacity-50 hover:opacity-80 transition-opacity duration-500"
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* About Section */}
-      <section className="py-24 bg-background">
+      <Reveal as="section" className="py-28 md:py-36 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
-            <span className="font-body text-gold text-sm tracking-[0.3em] uppercase">{t.home.philosophyLabel}</span>
-            <h2 className="font-heading text-3xl md:text-5xl text-foreground mt-4 mb-8">
+            <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{t.home.philosophyLabel}</span>
+            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-tight text-foreground mt-6 mb-10">
               {t.home.philosophyTitle1}{" "}
               <span className="text-gold-gradient italic">{t.home.philosophyTitle2}</span>
             </h2>
-            <div className="text-muted-foreground text-lg leading-relaxed mb-8 space-y-5">
+            <div className="text-muted-foreground text-lg leading-relaxed mb-10 space-y-6">
+              <p>{t.home.heroDescription}</p>
               <p>{t.home.philosophyP1}</p>
               <p>{t.home.philosophyP2}</p>
               <p>{t.home.philosophyP3}</p>
@@ -195,23 +236,24 @@ const Index = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </Reveal>
+
 
       {/* Services Section */}
-      <section className="py-24 bg-charcoal">
+      <Reveal as="section" className="py-28 md:py-36 bg-charcoal">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <span className="font-body text-gold text-sm tracking-[0.3em] uppercase">{t.home.servicesLabel}</span>
-            <h2 className="font-heading text-3xl md:text-5xl text-foreground mt-4">
+          <div className="text-center mb-20">
+            <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{t.home.servicesLabel}</span>
+            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-tight text-foreground mt-6">
               {t.home.servicesTitle} <span className="text-gold-gradient italic">{t.home.servicesTitleHighlight}</span>
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto mt-6">{t.home.servicesDescription}</p>
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto mt-8">{t.home.servicesDescription}</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div key={index} className="p-8 bg-background gold-border gold-border-hover rounded-lg text-center group">
-                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-gold/10 flex items-center justify-center group-hover:bg-gold/20 transition-colors duration-300">
-                  <service.icon size={28} className="text-gold" />
+              <div key={index} className="p-10 bg-background gold-border gold-border-hover rounded-sm text-center group transition-colors duration-500">
+                <div className="w-14 h-14 mx-auto mb-8 rounded-full border border-gold/40 flex items-center justify-center group-hover:border-gold transition-colors duration-500">
+                  <service.icon size={22} className="text-gold" strokeWidth={1.25} />
                 </div>
                 <h3 className="font-heading text-xl text-foreground mb-4">{service.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
@@ -219,38 +261,90 @@ const Index = () => {
             ))}
           </div>
         </div>
-      </section>
+      </Reveal>
 
-      {/* Featured Destinations */}
-      <section className="py-24 bg-background">
+      {/* Destination Showcase */}
+      <Reveal as="section" className="py-28 md:py-36 bg-background">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
             <div>
-              <span className="font-body text-gold text-sm tracking-[0.3em] uppercase">{t.home.destinationsLabel}</span>
-              <h2 className="font-heading text-3xl md:text-5xl text-foreground mt-4">
-                {t.home.destinationsTitle} <span className="text-gold-gradient italic">{t.home.destinationsTitleHighlight}</span>
+              <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{t.home.showcaseLabel}</span>
+              <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-tight text-foreground mt-6">
+                {t.home.showcaseTitle} <span className="text-gold-gradient italic">{t.home.showcaseTitleHighlight}</span>
               </h2>
-              <p className="text-muted-foreground text-lg mt-4 max-w-xl">{t.home.destinationsDescription}</p>
+              <p className="text-muted-foreground text-lg mt-6 max-w-xl">{t.home.destinationsDescription}</p>
             </div>
             <Link to={localPath("/destinations")} className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors font-body tracking-wide">
               {t.home.viewAll}
               <ArrowRight size={18} />
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {destinations.map((dest, index) => (
-              <Link key={index} to={`/destinations/${dest.title.toLowerCase().replace(/^(the |las |los )/, "")}`} className="group relative aspect-[4/5] overflow-hidden rounded-lg gold-border gold-border-hover">
-                <Picture src={dest.image} webpSrc={dest.imageWebp} alt={`${dest.title} — luxury travel destination curated by SJU Luxe Travel`} className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy" />
-                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/20 to-transparent" />
+              <Link key={index} to={dest.to} className="group relative aspect-[3/4] overflow-hidden rounded-sm gold-border gold-border-hover">
+                <Picture src={dest.image} webpSrc={dest.imageWebp} alt={`${dest.title} — luxury travel destination curated by SJU Luxe Travel`} className="absolute inset-0 w-full h-full object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-105" loading="lazy" />
+                <div className="absolute inset-0 bg-gradient-to-t from-background via-background/25 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
-                  <p className="text-gold text-xs tracking-widest uppercase mb-2">{dest.subtitle}</p>
+                  <p className="text-gold text-[11px] tracking-[0.25em] uppercase mb-2 opacity-70 group-hover:opacity-100 transition-opacity duration-700">{dest.subtitle}</p>
                   <h3 className="font-heading text-2xl text-foreground">{dest.title}</h3>
+                  <span className="mt-4 block h-px w-0 bg-gold transition-all duration-700 group-hover:w-14" />
                 </div>
               </Link>
             ))}
           </div>
         </div>
-      </section>
+      </Reveal>
+
+      {/* Concierge Perks */}
+      <Reveal as="section" className="py-28 md:py-36 bg-charcoal">
+        <div className="container mx-auto px-6">
+          <div className="text-center max-w-2xl mx-auto mb-20">
+            <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{t.home.perksLabel}</span>
+            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-tight text-foreground mt-6">
+              {t.home.perksTitle} <span className="text-gold-gradient italic">{t.home.perksTitleHighlight}</span>
+            </h2>
+            <p className="text-muted-foreground text-lg mt-8">{t.home.perksDescription}</p>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-14 max-w-6xl mx-auto">
+            {perks.map((perk, index) => (
+              <div key={index} className="text-center px-2">
+                <perk.icon size={26} strokeWidth={1} className="text-gold mx-auto" />
+                <span className="block h-px w-10 bg-gold/40 mx-auto my-6" />
+                <h3 className="font-heading text-xl text-foreground mb-3">{perk.title}</h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">{perk.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Reveal>
+
+      {/* Meet Your Travel Agent */}
+      <Reveal as="section" className="py-28 md:py-36 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-20 items-center max-w-5xl mx-auto">
+            <img
+              src="/about/hero-portrait.jpg"
+              alt={t.home.founderPhotoAlt}
+              loading="lazy"
+              className="w-full aspect-[3/4] object-cover rounded-sm gold-border"
+            />
+            <div>
+              <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{t.home.founderLabel}</span>
+              <h2 className="font-heading text-4xl md:text-5xl leading-tight text-foreground mt-6">{t.home.founderName}</h2>
+              <p className="font-body text-xs tracking-[0.2em] uppercase text-muted-foreground mt-4">{t.home.founderRole}</p>
+              <div className="text-muted-foreground text-lg leading-relaxed mt-8 space-y-5">
+                <p>{t.home.founderP1}</p>
+                <p>{t.home.founderP2}</p>
+              </div>
+              <Link to={localPath("/contact")} className="pill-cta mt-10 inline-flex items-center gap-3 px-8 py-3.5 border border-gold/60 text-gold font-body text-xs font-semibold tracking-[0.25em] uppercase hover:bg-gold/10 hover:border-gold">
+                {t.home.founderCta}
+                <ArrowRight size={16} />
+              </Link>
+            </div>
+          </div>
+        </div>
+      </Reveal>
+
 
       {/* Why Choose Us */}
       <section className="py-24 bg-charcoal">
@@ -326,24 +420,25 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-background relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
+      {/* Final CTA Section */}
+      <Reveal as="section" className="py-32 md:py-40 bg-background relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.06]">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full border border-gold" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-gold" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full border border-gold" />
         </div>
         <div className="container mx-auto px-6 text-center relative z-10">
-          <h2 className="font-heading text-3xl md:text-5xl text-foreground mb-6">
+          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-tight text-foreground mb-8">
             {t.home.ctaTitle} <span className="text-gold-gradient italic">{t.home.ctaTitleHighlight}</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-10">{t.home.ctaDescription}</p>
-          <Link to={localPath("/contact")} className="inline-flex items-center gap-2 px-10 py-4 bg-gold-gradient text-primary-foreground font-body text-sm font-semibold tracking-wide uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_40px_-5px_hsl(43,74%,49%,0.6)] hover:scale-105">
-            {t.home.startPlanningToday}
-            <ArrowRight size={18} />
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-12">{t.home.ctaDescription}</p>
+          <Link to={localPath("/contact")} className="pill-cta inline-flex items-center gap-3 px-10 py-4 border border-gold text-gold font-body text-xs font-semibold tracking-[0.25em] uppercase hover:bg-gold/10">
+            {t.home.requestConsultation}
+            <ArrowRight size={16} />
           </Link>
         </div>
-      </section>
+      </Reveal>
+
     </Layout>
   );
 };
