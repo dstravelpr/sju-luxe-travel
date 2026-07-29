@@ -194,26 +194,35 @@ const Index = () => {
       </section>
 
       {/* Trust Bar */}
-      <section className="py-10 bg-charcoal border-y border-border/40" aria-label={t.home.trustLabel}>
+      <section className="py-14 md:py-16 bg-charcoal border-y border-border/40" aria-label={t.home.trustLabel}>
         <div className="container mx-auto px-6">
-          <p className="text-center font-body text-[11px] tracking-[0.3em] uppercase text-muted-foreground/80 mb-8">
-            {t.home.trustLabel}
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8">
-            <span className="font-heading text-base md:text-lg text-muted-foreground">{t.home.trustTravelLeaders}</span>
-            <span className="font-heading text-base md:text-lg text-muted-foreground">{t.home.trustNcm}</span>
-            {trustLogos.map((item) => (
-              <img
-                key={item.alt}
-                src={item.src}
-                alt={item.alt}
-                loading="lazy"
-                className="h-10 md:h-12 w-auto object-contain opacity-50 hover:opacity-80 transition-opacity duration-500"
-              />
-            ))}
+          <div className="flex items-center justify-center gap-5 mb-10">
+            <span className="h-px w-10 bg-gold/30" />
+            <p className="text-center font-body text-[11px] tracking-[0.3em] uppercase text-muted-foreground/80">
+              {t.home.trustLabel}
+            </p>
+            <span className="h-px w-10 bg-gold/30" />
           </div>
+          <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 max-w-6xl mx-auto">
+            {affiliations.map((item, index) => (
+              <li
+                key={item.name}
+                className={`group text-center px-4 py-6 border-border/40 ${index % 2 === 0 ? "border-r" : ""} md:border-r ${
+                  index < 2 ? "border-b" : ""
+                } md:border-b-0 lg:[&:nth-child(3n)]:border-r lg:last:border-r-0 md:[&:nth-child(3n)]:border-r-0 lg:[&:nth-child(-n+3)]:border-b-0 md:[&:nth-child(-n+3)]:border-b`}
+              >
+                <span className="block font-heading text-lg md:text-xl text-cream/90 group-hover:text-gold transition-colors duration-500">
+                  {item.name}
+                </span>
+                <span className="mt-3 block font-body text-[10px] md:text-[11px] tracking-[0.22em] uppercase text-muted-foreground/70">
+                  {item.qualifier}
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
+
 
       {/* About Section */}
       <Reveal as="section" className="py-28 md:py-36 bg-background">
