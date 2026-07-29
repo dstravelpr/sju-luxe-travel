@@ -420,24 +420,25 @@ const Index = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-24 bg-background relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
+      {/* Final CTA Section */}
+      <Reveal as="section" className="py-32 md:py-40 bg-background relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.06]">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full border border-gold" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border border-gold" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full border border-gold" />
         </div>
         <div className="container mx-auto px-6 text-center relative z-10">
-          <h2 className="font-heading text-3xl md:text-5xl text-foreground mb-6">
+          <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-tight text-foreground mb-8">
             {t.home.ctaTitle} <span className="text-gold-gradient italic">{t.home.ctaTitleHighlight}</span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-10">{t.home.ctaDescription}</p>
-          <Link to={localPath("/contact")} className="inline-flex items-center gap-2 px-10 py-4 bg-gold-gradient text-primary-foreground font-body text-sm font-semibold tracking-wide uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_40px_-5px_hsl(43,74%,49%,0.6)] hover:scale-105">
-            {t.home.startPlanningToday}
-            <ArrowRight size={18} />
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-12">{t.home.ctaDescription}</p>
+          <Link to={localPath("/contact")} className="pill-cta inline-flex items-center gap-3 px-10 py-4 border border-gold text-gold font-body text-xs font-semibold tracking-[0.25em] uppercase hover:bg-gold/10">
+            {t.home.requestConsultation}
+            <ArrowRight size={16} />
           </Link>
         </div>
-      </section>
+      </Reveal>
+
     </Layout>
   );
 };
