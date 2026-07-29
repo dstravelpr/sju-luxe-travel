@@ -55,7 +55,7 @@ const Header = () => {
               <div key={link.to} className="relative group">
                 <Link
                   to={link.to}
-                  className="font-body text-xs tracking-[0.25em] uppercase text-foreground/70 hover:text-gold transition-colors"
+                  className="nav-underline font-body text-xs tracking-[0.25em] uppercase text-foreground/70 hover:text-gold transition-colors"
                 >
                   {link.label}
                 </Link>
@@ -77,14 +77,20 @@ const Header = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                className="font-body text-xs tracking-[0.25em] uppercase text-foreground/70 hover:text-gold transition-colors"
+                className="nav-underline font-body text-xs tracking-[0.25em] uppercase text-foreground/70 hover:text-gold transition-colors"
               >
                 {link.label}
               </Link>
             )
           )}
         </nav>
-        <div className="hidden md:flex items-center">
+        <div className="hidden md:flex items-center gap-5">
+          <Link
+            to={localPath("/contact")}
+            className="pill-cta px-5 py-2 border border-gold/60 text-gold font-body text-[11px] font-semibold tracking-[0.2em] uppercase hover:bg-gold/10 hover:border-gold"
+          >
+            {t.home.requestConsultation}
+          </Link>
           <LanguageToggle />
         </div>
         {/* Mobile controls */}
