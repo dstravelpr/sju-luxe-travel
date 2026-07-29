@@ -16,10 +16,6 @@ import portugalImgWebp from "@/assets/destination-portugal.webp";
 import mexicoImg from "@/assets/destination-mexico.jpg";
 import mexicoImgWebp from "@/assets/destination-mexico.webp";
 import cruiseImg from "@/assets/ocean/ritz-carlton.jpg";
-import amaLogo from "@/assets/amawaterways-certified_logo.jpg";
-import avalonLogo from "@/assets/avalon-certified_logo.png";
-import riversideLogo from "@/assets/riverside-certified_logo.jpg";
-import maldivesExpertLogo from "@/assets/koveli-maldives-expert.png";
 
 
 
@@ -139,11 +135,13 @@ const Index = () => {
     { image: cruiseImg, imageWebp: undefined, title: t.home.cruises, subtitle: t.home.cruisesSub, to: localPath("/cruceros-de-lujo-desde-san-juan") },
   ];
 
-  const trustLogos = [
-    { src: amaLogo, alt: t.home.trustAma },
-    { src: avalonLogo, alt: t.home.trustAvalon },
-    { src: riversideLogo, alt: t.home.trustRiverside },
-    { src: maldivesExpertLogo, alt: t.home.trustMaldives },
+  const affiliations = [
+    { name: t.home.trustNameTravelLeaders, qualifier: t.home.trustQualNetwork },
+    { name: t.home.trustNameNcm, qualifier: t.home.trustQualConcierge },
+    { name: t.home.trustNameAma, qualifier: t.home.trustQualCertified },
+    { name: t.home.trustNameAvalon, qualifier: t.home.trustQualCertified },
+    { name: t.home.trustNameRiverside, qualifier: t.home.trustQualCertified },
+    { name: t.home.trustNameKoveli, qualifier: t.home.trustQualExpert },
   ];
 
   const perks = [
@@ -194,26 +192,33 @@ const Index = () => {
       </section>
 
       {/* Trust Bar */}
-      <section className="py-10 bg-charcoal border-y border-border/40" aria-label={t.home.trustLabel}>
+      <section className="py-14 md:py-16 bg-charcoal border-y border-border/40" aria-label={t.home.trustLabel}>
         <div className="container mx-auto px-6">
-          <p className="text-center font-body text-[11px] tracking-[0.3em] uppercase text-muted-foreground/80 mb-8">
-            {t.home.trustLabel}
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8">
-            <span className="font-heading text-base md:text-lg text-muted-foreground">{t.home.trustTravelLeaders}</span>
-            <span className="font-heading text-base md:text-lg text-muted-foreground">{t.home.trustNcm}</span>
-            {trustLogos.map((item) => (
-              <img
-                key={item.alt}
-                src={item.src}
-                alt={item.alt}
-                loading="lazy"
-                className="h-10 md:h-12 w-auto object-contain opacity-50 hover:opacity-80 transition-opacity duration-500"
-              />
-            ))}
+          <div className="flex items-center justify-center gap-5 mb-10">
+            <span className="h-px w-10 bg-gold/30" />
+            <p className="text-center font-body text-[11px] tracking-[0.3em] uppercase text-muted-foreground/80">
+              {t.home.trustLabel}
+            </p>
+            <span className="h-px w-10 bg-gold/30" />
           </div>
+          <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 max-w-6xl mx-auto">
+            {affiliations.map((item, index) => (
+              <li
+                key={item.name}
+                className="group flex flex-col items-center justify-center text-center min-h-[7rem] px-4 py-6 border-b border-r border-border/40 [&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(6n)]:border-r-0 lg:border-b-0"
+              >
+                <span className="block font-heading text-lg md:text-xl text-cream/90 group-hover:text-gold transition-colors duration-500">
+                  {item.name}
+                </span>
+                <span className="mt-3 block max-w-[9rem] font-body text-[10px] md:text-[11px] tracking-[0.22em] uppercase text-muted-foreground/70">
+                  {item.qualifier}
+                </span>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
+
 
       {/* About Section */}
       <Reveal as="section" className="py-28 md:py-36 bg-background">
