@@ -205,12 +205,12 @@ const Index = () => {
             {affiliations.map((item, index) => (
               <li
                 key={item.name}
-                className="group text-center px-4 py-6 border-b border-r border-border/40 sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(6n)]:border-r-0 lg:border-b-0"
+                className="group flex flex-col items-center justify-center text-center min-h-[7rem] px-4 py-6 border-b border-r border-border/40 [&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(6n)]:border-r-0 lg:border-b-0"
               >
                 <span className="block font-heading text-lg md:text-xl text-cream/90 group-hover:text-gold transition-colors duration-500">
                   {item.name}
                 </span>
-                <span className="mt-3 block font-body text-[10px] md:text-[11px] tracking-[0.22em] uppercase text-muted-foreground/70">
+                <span className="mt-3 block max-w-[9rem] font-body text-[10px] md:text-[11px] tracking-[0.22em] uppercase text-muted-foreground/70">
                   {item.qualifier}
                 </span>
               </li>
