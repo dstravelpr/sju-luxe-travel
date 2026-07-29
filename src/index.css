@@ -158,7 +158,82 @@
   .animate-float {
     animation: float 3s ease-in-out infinite;
   }
+
+  /* Calm scroll reveal */
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 1.2s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+
+  .reveal-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Slow cinematic ken-burns for hero imagery */
+  .ken-burns {
+    animation: kenBurns 28s ease-in-out infinite alternate;
+    transform-origin: center 55%;
+  }
+
+  /* Gold underline animation for nav links */
+  .nav-underline {
+    position: relative;
+  }
+
+  .nav-underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    height: 1px;
+    width: 100%;
+    background-color: hsl(var(--gold));
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  .nav-underline:hover::after,
+  .nav-underline:focus-visible::after {
+    transform: scaleX(1);
+  }
+
+  .pill-cta {
+    border-radius: 9999px;
+    transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease;
+  }
 }
+
+@keyframes kenBurns {
+  from { transform: scale(1); }
+  to { transform: scale(1.12); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ken-burns,
+  .animate-fade-in,
+  .animate-fade-in-up,
+  .animate-fade-in-delay,
+  .animate-float {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .nav-underline::after {
+    transition: none;
+  }
+}
+
 
 @keyframes fadeIn {
   from { opacity: 0; }
