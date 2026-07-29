@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, Compass, Heart, Users, Globe, Shield, Star, ChevronDown } from "lucide-react";
+import { ArrowRight, Compass, Heart, Users, Globe, Shield, Star, ChevronDown, Sparkles, Gift, Crown, LifeBuoy } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { Picture } from "@/components/Picture";
+import { Reveal } from "@/components/Reveal";
 import heroBg from "@/assets/hero-beach-sunset.jpg";
 import heroBgWebp from "@/assets/hero-beach-sunset.webp";
 import logo from "@/assets/logo.png";
@@ -14,6 +15,13 @@ import portugalImg from "@/assets/destination-portugal.jpg";
 import portugalImgWebp from "@/assets/destination-portugal.webp";
 import mexicoImg from "@/assets/destination-mexico.jpg";
 import mexicoImgWebp from "@/assets/destination-mexico.webp";
+import cruiseImg from "@/assets/ocean/ritz-carlton.jpg";
+import amaLogo from "@/assets/amawaterways-certified_logo.jpg";
+import avalonLogo from "@/assets/avalon-certified_logo.png";
+import riversideLogo from "@/assets/riverside-certified_logo.jpg";
+import maldivesExpertLogo from "@/assets/koveli-maldives-expert.png";
+
+
 
 
 const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
