@@ -139,11 +139,13 @@ const Index = () => {
     { image: cruiseImg, imageWebp: undefined, title: t.home.cruises, subtitle: t.home.cruisesSub, to: localPath("/cruceros-de-lujo-desde-san-juan") },
   ];
 
-  const trustLogos = [
-    { src: amaLogo, alt: t.home.trustAma },
-    { src: avalonLogo, alt: t.home.trustAvalon },
-    { src: riversideLogo, alt: t.home.trustRiverside },
-    { src: maldivesExpertLogo, alt: t.home.trustMaldives },
+  const affiliations = [
+    { name: t.home.trustNameTravelLeaders, qualifier: t.home.trustQualNetwork },
+    { name: t.home.trustNameNcm, qualifier: t.home.trustQualConcierge },
+    { name: t.home.trustNameAma, qualifier: t.home.trustQualCertified },
+    { name: t.home.trustNameAvalon, qualifier: t.home.trustQualCertified },
+    { name: t.home.trustNameRiverside, qualifier: t.home.trustQualCertified },
+    { name: t.home.trustNameKoveli, qualifier: t.home.trustQualExpert },
   ];
 
   const perks = [
@@ -207,9 +209,7 @@ const Index = () => {
             {affiliations.map((item, index) => (
               <li
                 key={item.name}
-                className={`group text-center px-4 py-6 border-border/40 ${index % 2 === 0 ? "border-r" : ""} md:border-r ${
-                  index < 2 ? "border-b" : ""
-                } md:border-b-0 lg:[&:nth-child(3n)]:border-r lg:last:border-r-0 md:[&:nth-child(3n)]:border-r-0 lg:[&:nth-child(-n+3)]:border-b-0 md:[&:nth-child(-n+3)]:border-b`}
+                className="group text-center px-4 py-6 border-b border-r border-border/40 sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(6n)]:border-r-0 lg:border-b-0"
               >
                 <span className="block font-heading text-lg md:text-xl text-cream/90 group-hover:text-gold transition-colors duration-500">
                   {item.name}
