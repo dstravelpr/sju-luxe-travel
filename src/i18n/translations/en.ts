@@ -240,7 +240,6 @@ export const en = {
         "Riviera Maya beachfront resort stays",
         "Private cenote swimming excursions",
         "Guided Mayan ruins tours (Tulum & Chichén Itzá)",
-        "Oaxaca culinary & mezcal experiences",
         "San Miguel de Allende cultural immersion",
         "Mexico City art, food & architecture tours",
         "Exclusive resort credits & VIP amenities",
@@ -274,7 +273,7 @@ export const en = {
       ovwHighlights: {
         maldives: ["Overwater villas", "Snorkeling & diving", "Private beach dinners", "Spa retreats", "Dolphin cruises", "Underwater restaurants"],
         portugal: ["Historic Lisbon tours", "Port wine tastings", "Algarve beaches", "Sintra palaces", "Fado music experiences", "Douro Valley cruises"],
-        mexico: ["Riviera Maya beaches", "Mayan ruins at Tulum", "Cenote swimming", "Mexico City exploration", "Authentic cuisine tours", "Oaxaca cultural experiences"],
+        mexico: ["Riviera Maya beaches", "Mayan ruins at Tulum", "Cenote swimming", "Mexico City exploration", "Authentic cuisine tours"],
       },
     },
   },

@@ -242,7 +242,6 @@ export const es: typeof en = {
         "Estadías en resorts frente al mar en la Riviera Maya",
         "Excursiones privadas de nado en cenotes",
         "Tours guiados por ruinas mayas (Tulum y Chichén Itzá)",
-        "Experiencias culinarias y de mezcal en Oaxaca",
         "Inmersión cultural en San Miguel de Allende",
         "Tours de arte, comida y arquitectura en Ciudad de México",
         "Créditos exclusivos de resort y amenidades VIP",
@@ -276,7 +275,7 @@ export const es: typeof en = {
       ovwHighlights: {
         maldives: ["Villas sobre el agua", "Snorkel y buceo", "Cenas privadas en la playa", "Retiros de spa", "Cruceros de delfines", "Restaurantes submarinos"],
         portugal: ["Tours históricos por Lisboa", "Degustaciones de vino de Oporto", "Playas del Algarve", "Palacios de Sintra", "Experiencias de música Fado", "Cruceros por el Valle del Duero"],
-        mexico: ["Playas de la Riviera Maya", "Ruinas mayas en Tulum", "Nado en cenotes", "Exploración de Ciudad de México", "Tours de cocina auténtica", "Experiencias culturales en Oaxaca"],
+        mexico: ["Playas de la Riviera Maya", "Ruinas mayas en Tulum", "Nado en cenotes", "Exploración de Ciudad de México", "Tours de cocina auténtica"],
       },
     },
   },
