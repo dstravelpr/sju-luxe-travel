@@ -252,6 +252,14 @@ const pages = {
     service: { name: "Cruceros fluviales de lujo desde Puerto Rico", serviceType: "Luxury river cruise planning" },
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Cruceros Fluviales de Lujo", path: "/cruceros-fluviales-de-lujo-desde-puerto-rico" }],
   },
+  "/agencia-de-viajes-puerto-rico": {
+    title: "Agencia de Viajes de Lujo en Puerto Rico — SJU Luxe Travel",
+    description: "¿Buscas una agencia de viajes en Puerto Rico que realmente entienda el lujo? SJU Luxe Travel diseña itinerarios exclusivos, cruceros y lunas de miel desde San Juan.",
+    h1: "Agencia de Viajes de Lujo en Puerto Rico",
+    body: "En SJU Luxe Travel somos una agencia boutique con base en San Juan, Puerto Rico, especializada exclusivamente en viajes de lujo a medida — desde las Maldivas hasta los ríos de Europa, pasando por los mejores cruceros que salen desde San Juan. Como afiliados de NCM Concierge y Travel Leaders, nuestros clientes acceden a upgrades de habitación gratuitos, créditos en resort y amenidades VIP.",
+    service: { name: "Agencia de Viajes de Lujo en Puerto Rico", serviceType: "Luxury Travel Planning" },
+    breadcrumbs: [{ name: "Home", path: "/" }, { name: "Agencia de Viajes Puerto Rico", path: "/agencia-de-viajes-puerto-rico" }],
+  },
 };
 
 // English translations (only where a real EN variant exists)
