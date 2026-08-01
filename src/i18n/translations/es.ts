@@ -41,8 +41,10 @@ export const es: typeof en = {
     bilingual: "Agente de viaje bilingüe — Inglés y Español",
   },
   home: {
-    heroTitle1: "La Agencia de Viajes de Puerto Rico",
-    heroTitle2: "Hecha a tu Medida",
+    heroTitle1: "Viajar no es un Lujo,",
+    heroTitle2: "Es una Oportunidad",
+    heroAgencyLine1: "La Agencia de Viajes de Puerto Rico",
+    heroAgencyLine2: "Hecha a tu Medida",
     heroSubtitle: "Agencia de viajes boutique — San Juan, Puerto Rico",
     heroDescription:
       "En SJU Luxe Travel somos la agencia de viajes boutique de San Juan, Puerto Rico especializada en experiencias a medida. Desde villas overwater en las Maldivas hasta cruceros que salen desde San Juan — cada viaje lo diseñamos pensando en ti.",
