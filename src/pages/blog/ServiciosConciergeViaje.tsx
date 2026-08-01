@@ -8,13 +8,15 @@ import heroImg from "@/assets/traveler-airport.jpg";
 
 const schemaJson = buildGraph({
   "@type": "BlogPosting",
-  headline: "Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena",
-  description: "Guía completa de servicios de concierge de viaje: qué es un travel concierge, qué incluye (reservas VIP, upgrades, asistencia 24/7) y cómo acceder gratis con un agente de lujo en Puerto Rico.",
+  headline:
+    "Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena",
+  description:
+    "Guía completa de servicios de concierge de viaje: qué es un travel concierge, qué incluye (reservas VIP, upgrades, asistencia 24/7) y cómo acceder gratis con un agente en Puerto Rico.",
   author: AUTHOR,
   publisher: ORG_REF,
   datePublished: "2026-05-29",
   dateModified: "2026-07-23",
-  inLanguage: "es-PR",
+  inLanguage: "Es-PR",
   url: "https://www.sjuluxetravel.com/blog/servicios-concierge-viaje",
 });
 
@@ -27,34 +29,34 @@ const faqSchema = {
       name: "¿Qué es un servicio de concierge de viaje?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Un servicio de concierge de viaje es un profesional que se encarga de planificar, coordinar y resolver cada detalle de tu viaje —desde el diseño del itinerario hasta la asistencia 24/7 mientras estás fuera. En vez de que tú corras detrás de reservas, vuelos y cambios de última hora, un concierge lo hace por ti con acceso a contactos y beneficios que no aparecen en las páginas públicas."
-      }
+        text: "Un servicio de concierge de viaje es un profesional que se encarga de planificar, coordinar y resolver cada detalle de tu viaje —desde el diseño del itinerario hasta la asistencia 24/7 mientras estás fuera. En vez de que tú corras detrás de reservas, vuelos y cambios de última hora, un concierge lo hace por ti con acceso a contactos y beneficios que no aparecen en las páginas públicas.",
+      },
     },
     {
       "@type": "Question",
       name: "¿Qué incluye un servicio de concierge de viaje?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Incluye diseño de itinerario a la medida, reservas VIP en hoteles y restaurantes con estrella Michelin, tours privados con guías locales, coordinación de visados y documentación, transferencias privadas y asistencia 24/7 en español e inglés durante el viaje. También cubre upgrades de habitación, amenidades de cortesía y re-booking inmediato si hay cancelaciones o cambios."
-      }
+        text: "Incluye diseño de itinerario a la medida, reservas VIP en hoteles y restaurantes con estrella Michelin, tours privados con guías locales, coordinación de visados y documentación, transferencias privadas y asistencia 24/7 en español e inglés durante el viaje. También cubre upgrades de habitación, amenidades de cortesía y re-booking inmediato si hay cancelaciones o cambios.",
+      },
     },
     {
       "@type": "Question",
       name: "¿Cuánto cuesta un travel concierge?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "En SJU Luxe Travel el servicio de concierge está incluido —no cobramos honorarios para itinerarios de lujo porque somos compensados directamente por nuestros hoteles y cruceros partners. Ofrecemos una consulta inicial gratuita para evaluar tu viaje, y solo en casos de itinerarios extremadamente complejos aplicamos un fee de planificación, siempre confirmado al inicio."
-      }
+        text: "En SJU Luxe Travel el servicio de concierge está incluido —no cobramos honorarios para itinerarios a medida porque somos compensados directamente por nuestros hoteles y cruceros partners. Ofrecemos una consulta inicial gratuita para evaluar tu viaje, y solo en casos de itinerarios extremadamente complejos aplicamos un fee de planificación, siempre confirmado al inicio.",
+      },
     },
     {
       "@type": "Question",
       name: "¿Cuál es la diferencia entre un concierge y un agente de viaje?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Un agente de viaje tradicional se enfoca principalmente en reservar vuelos, hoteles y paquetes al mejor precio. Un concierge de viaje va mucho más allá: diseña la experiencia completa, negocia beneficios exclusivos, coordina cada detalle en tierra y te acompaña 24/7 durante el viaje. En la práctica, todo buen concierge también es agente de viaje, pero no todo agente de viaje ofrece servicio de concierge real."
-      }
-    }
-  ]
+        text: "Un agente de viaje tradicional se enfoca principalmente en reservar vuelos, hoteles y paquetes al mejor precio. Un concierge de viaje va mucho más allá: diseña la experiencia completa, negocia beneficios exclusivos, coordina cada detalle en tierra y te acompaña 24/7 durante el viaje. En la práctica, todo buen concierge también es agente de viaje, pero no todo agente de viaje ofrece servicio de concierge real.",
+      },
+    },
+  ],
 };
 
 const Post = () => {
@@ -72,79 +74,276 @@ const Post = () => {
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
-          { name: 'Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena', url: "https://www.sjuluxetravel.com/blog/servicios-concierge-viaje" },
+          {
+            name: "Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena",
+            url: "https://www.sjuluxetravel.com/blog/servicios-concierge-viaje",
+          },
         ]}
         schemaJson={schemaJson}
       />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <article className="pt-28 pb-20 bg-background">
         <div className="container mx-auto px-6 max-w-3xl">
-          <Link to={localPath("/blog")} className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors font-body text-sm tracking-wide mb-8">
-            <ArrowLeft size={16} />{isEs ? "Volver al Blog" : "Back to Blog"}
+          <Link
+            to={localPath("/blog")}
+            className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors font-body text-sm tracking-wide mb-8"
+          >
+            <ArrowLeft size={16} />
+            {isEs ? "Volver al Blog" : "Back to Blog"}
           </Link>
           <div className="mb-10">
-            <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{isEs ? "Servicios" : "Services"}</span>
-            <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">{isEs ? "Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena" : "Travel Concierge Services: What They Are, What's Included & Why They're Worth It"}</h1>
+            <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">
+              {isEs ? "Servicios" : "Services"}
+            </span>
+            <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">
+              {isEs
+                ? "Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena"
+                : "Travel Concierge Services: What They Are, What's Included & Why They're Worth It"}
+            </h1>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
-              <Link to={localPath("/about")} className="flex items-center gap-1.5 hover:text-gold transition-colors"><User size={12} className="text-gold" />Daniel Santiago Díaz<span className="text-muted-foreground/70"> — {isEs ? "Agente de Viajes de Lujo" : "Luxury Travel Advisor"}</span></Link>
-              <span className="flex items-center gap-1.5"><Calendar size={12} className="text-gold" />{isEs ? "29 de mayo de 2026" : "May 29, 2026"}</span>
-              <span className="flex items-center gap-1.5"><Clock size={12} className="text-gold" />{isEs ? "5 min de lectura" : "5 min read"}</span>
+              <Link
+                to={localPath("/about")}
+                className="flex items-center gap-1.5 hover:text-gold transition-colors"
+              >
+                <User size={12} className="text-gold" />
+                Daniel Santiago Díaz
+                <span className="text-muted-foreground/70">
+                  {" "}
+                  — {isEs ? "Agente de viajes a medida" : "Travel Advisor"}
+                </span>
+              </Link>
+              <span className="flex items-center gap-1.5">
+                <Calendar size={12} className="text-gold" />
+                {isEs ? "29 de mayo de 2026" : "May 29, 2026"}
+              </span>
+              <span className="flex items-center gap-1.5">
+                <Clock size={12} className="text-gold" />
+                {isEs ? "5 min de lectura" : "5 min read"}
+              </span>
             </div>
-            <p className="text-muted-foreground/70 text-xs mt-3 italic">{isEs ? "Última actualización: 23 de julio de 2026" : "Last updated: July 23, 2026"}</p>
+            <p className="text-muted-foreground/70 text-xs mt-3 italic">
+              {isEs
+                ? "Última actualización: 23 de julio de 2026"
+                : "Last updated: July 23, 2026"}
+            </p>
           </div>
           <div className="aspect-[16/9] overflow-hidden rounded-lg gold-border mb-12">
-            <img src={heroImg} alt={isEs ? "Servicios de concierge de viaje" : "Travel concierge services"} className="w-full h-full object-cover" />
+            <img
+              src={heroImg}
+              alt={
+                isEs
+                  ? "Servicios de concierge de viaje"
+                  : "Travel concierge services"
+              }
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="prose-custom space-y-6 text-muted-foreground text-base leading-relaxed">
-            <p>{isEs ? "\"Servicio de concierge de viaje\" suena a lujo abstracto, pero significa algo muy concreto: alguien que se encarga de los detalles antes, durante y después de tu viaje. Esto es lo que realmente incluye un buen concierge desde Puerto Rico." : "\"Travel concierge\" sounds like abstract luxury, but it means something very concrete: someone who handles the details before, during and after your trip. Here's what a good concierge actually includes from Puerto Rico."}</p>
+            <p>
+              {isEs
+                ? '"Servicio de concierge de viaje" suena abstracto, pero significa algo muy concreto: alguien que se encarga de los detalles antes, durante y después de tu viaje. Esto es lo que realmente incluye un buen concierge desde Puerto Rico.'
+                : '"Travel concierge" sounds abstract, but it means something very concrete: someone who handles the details before, during and after your trip. Here\'s what a good concierge actually includes from Puerto Rico.'}
+            </p>
 
-            <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "Antes del viaje" : "Before the trip"}</h2>
+            <h2 className="font-heading text-2xl text-foreground mt-10">
+              {isEs ? "Antes del viaje" : "Before the trip"}
+            </h2>
             <ul className="space-y-2 list-none">
-              {(isEs ? ["Diseño del itinerario completo","Reservas en restaurantes con estrella Michelin (acceso real, no \"sin disponibilidad\")","Tours privados con guías locales pre-seleccionados","Coordinación de visados, seguros y documentación","Transferencias VIP, choferes y vehículos privados"] : ["Full itinerary design","Michelin-star restaurant reservations (real access, not \"unavailable\")","Private tours with pre-vetted local guides","Visa, insurance, documentation coordination","VIP transfers, drivers and private vehicles"]).map((it, i) => (
-                <li key={i} className="flex items-start gap-3"><span className="text-gold mt-1">•</span>{it}</li>
+              {(isEs
+                ? [
+                    "Diseño del itinerario completo",
+                    'Reservas en restaurantes con estrella Michelin (acceso real, no "sin disponibilidad")',
+                    "Tours privados con guías locales pre-seleccionados",
+                    "Coordinación de visados, seguros y documentación",
+                    "Transferencias VIP, choferes y vehículos privados",
+                  ]
+                : [
+                    "Full itinerary design",
+                    'Michelin-star restaurant reservations (real access, not "unavailable")',
+                    "Private tours with pre-vetted local guides",
+                    "Visa, insurance, documentation coordination",
+                    "VIP transfers, drivers and private vehicles",
+                  ]
+              ).map((it, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="text-gold mt-1">•</span>
+                  {it}
+                </li>
               ))}
             </ul>
 
-            <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "Durante el viaje" : "During the trip"}</h2>
+            <h2 className="font-heading text-2xl text-foreground mt-10">
+              {isEs ? "Durante el viaje" : "During the trip"}
+            </h2>
             <ul className="space-y-2 list-none">
-              {(isEs ? ["Asistencia 24/7 en español e inglés","Cambios de última hora resueltos sin que tú llames","Detalles sorpresa: champagne en habitación, cena privada en la playa","Contacto directo con los gerentes de tus hoteles","Re-booking de vuelos cancelados antes de que tú te enteres"] : ["24/7 assistance in Spanish and English","Last-minute changes solved without you calling","Surprise touches: in-room champagne, private beach dinner","Direct line to your hotel managers","Re-booking cancelled flights before you find out"]).map((it, i) => (
-                <li key={i} className="flex items-start gap-3"><span className="text-gold mt-1">•</span>{it}</li>
+              {(isEs
+                ? [
+                    "Asistencia 24/7 en español e inglés",
+                    "Cambios de última hora resueltos sin que tú llames",
+                    "Detalles sorpresa: champagne en habitación, cena privada en la playa",
+                    "Contacto directo con los gerentes de tus hoteles",
+                    "Re-booking de vuelos cancelados antes de que tú te enteres",
+                  ]
+                : [
+                    "24/7 assistance in Spanish and English",
+                    "Last-minute changes solved without you calling",
+                    "Surprise touches: in-room champagne, private beach dinner",
+                    "Direct line to your hotel managers",
+                    "Re-booking cancelled flights before you find out",
+                  ]
+              ).map((it, i) => (
+                <li key={i} className="flex items-start gap-3">
+                  <span className="text-gold mt-1">•</span>
+                  {it}
+                </li>
               ))}
             </ul>
 
-            <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "¿Cuándo vale la pena?" : "When is it worth it?"}</h2>
-            <p>{isEs ? "Vale cuando el viaje es lo suficientemente complejo (multi-destino, lunas de miel, aniversarios importantes, viajes de negocios de alto valor) o cuando simplemente no quieres dedicarle 20+ horas a planificarlo. Para fines de semana en Miami, no." : "Worth it when the trip is complex enough (multi-destination, honeymoons, major anniversaries, high-value business travel) or when you simply don't want to spend 20+ hours planning. For Miami weekends, no."}</p>
+            <h2 className="font-heading text-2xl text-foreground mt-10">
+              {isEs ? "¿Cuándo vale la pena?" : "When is it worth it?"}
+            </h2>
+            <p>
+              {isEs
+                ? "Vale cuando el viaje es lo suficientemente complejo (multi-destino, lunas de miel, aniversarios importantes, viajes de negocios de alto valor) o cuando simplemente no quieres dedicarle 20+ horas a planificarlo. Para fines de semana en Miami, no."
+                : "Worth it when the trip is complex enough (multi-destination, honeymoons, major anniversaries, high-value business travel) or when you simply don't want to spend 20+ hours planning. For Miami weekends, no."}
+            </p>
 
-            <h2 className="font-heading text-2xl text-foreground mt-10">{isEs ? "¿Cuánto cuesta?" : "How much does it cost?"}</h2>
-            <p>{isEs ? "En SJU Luxe Travel no cobramos honorarios de concierge para itinerarios de lujo — somos compensados por nuestros hoteles y cruceros partners. Solo para itinerarios muy complejos cobramos un fee de planificación, siempre confirmado al inicio." : "At SJU Luxe Travel we don't charge concierge fees for luxury itineraries — we're compensated by our hotel and cruise partners. Only for highly complex itineraries do we charge a planning fee, always confirmed up front."}</p>
+            <h2 className="font-heading text-2xl text-foreground mt-10">
+              {isEs ? "¿Cuánto cuesta?" : "How much does it cost?"}
+            </h2>
+            <p>
+              {isEs
+                ? "En SJU Luxe Travel no cobramos honorarios de concierge para itinerarios a medida — somos compensados por nuestros hoteles y cruceros partners. Solo para itinerarios muy complejos cobramos un fee de planificación, siempre confirmado al inicio."
+                : "At SJU Luxe Travel we don't charge concierge fees for itineraries — we're compensated by our hotel and cruise partners. Only for highly complex itineraries do we charge a planning fee, always confirmed up front."}
+            </p>
 
-            <p>{isEs ? "Si estás evaluando un viaje complejo, agenda una " : "If you're evaluating a complex trip, book a "}<Link to={localPath("/contact")} className="text-gold hover:text-gold-light underline">{isEs ? "consulta gratis con nuestro concierge de viajes" : "free consultation with our travel concierge"}</Link>{isEs ? " o explora nuestros " : " or explore our "}<Link to={localPath("/viajes-de-lujo-desde-puerto-rico")} className="text-gold hover:text-gold-light underline">{isEs ? "viajes de lujo a medida desde Puerto Rico" : "bespoke luxury trips from Puerto Rico"}</Link>{isEs ? "." : "."}</p>
+            <p>
+              {isEs
+                ? "Si estás evaluando un viaje complejo, agenda una "
+                : "If you're evaluating a complex trip, book a "}
+              <Link
+                to={localPath("/contact")}
+                className="text-gold hover:text-gold-light underline"
+              >
+                {isEs
+                  ? "consulta gratis con nuestro concierge de viajes"
+                  : "Free consultation with our travel concierge"}
+              </Link>
+              {isEs ? " o explora nuestros " : " or explore our "}
+              <Link
+                to={localPath("/viajes-de-lujo-desde-puerto-rico")}
+                className="text-gold hover:text-gold-light underline"
+              >
+                {isEs
+                  ? "viajes a medida desde Puerto Rico"
+                  : "Bespoke luxury trips from Puerto Rico"}
+              </Link>
+              {isEs ? "." : "."}
+            </p>
 
-            <h2 className="font-heading text-2xl text-foreground mt-12">Preguntas Frecuentes sobre Servicios de Concierge de Viaje</h2>
+            <h2 className="font-heading text-2xl text-foreground mt-12">
+              Preguntas Frecuentes sobre Servicios de Concierge de Viaje
+            </h2>
             <div className="space-y-6">
               <div>
-                <h3 className="font-heading text-lg text-foreground mb-2">¿Qué es un servicio de concierge de viaje?</h3>
-                <p>Un servicio de concierge de viaje es un profesional que se encarga de planificar, coordinar y resolver cada detalle de tu viaje —desde el diseño del itinerario hasta la asistencia 24/7 mientras estás fuera. En vez de que tú corras detrás de reservas, vuelos y cambios de última hora, un concierge lo hace por ti con acceso a contactos y beneficios que no aparecen en las páginas públicas.</p>
+                <h3 className="font-heading text-lg text-foreground mb-2">
+                  ¿Qué es un servicio de concierge de viaje?
+                </h3>
+                <p>
+                  Un servicio de concierge de viaje es un profesional que se
+                  encarga de planificar, coordinar y resolver cada detalle de tu
+                  viaje —desde el diseño del itinerario hasta la asistencia 24/7
+                  mientras estás fuera. En vez de que tú corras detrás de
+                  reservas, vuelos y cambios de última hora, un concierge lo
+                  hace por ti con acceso a contactos y beneficios que no
+                  aparecen en las páginas públicas.
+                </p>
               </div>
               <div>
-                <h3 className="font-heading text-lg text-foreground mb-2">¿Qué incluye un servicio de concierge de viaje?</h3>
-                <p>Incluye diseño de itinerario a la medida, reservas VIP en hoteles y restaurantes con estrella Michelin, tours privados con guías locales, coordinación de visados y documentación, transferencias privadas y asistencia 24/7 en español e inglés durante el viaje. También cubre upgrades de habitación, amenidades de cortesía y re-booking inmediato si hay cancelaciones o cambios.</p>
+                <h3 className="font-heading text-lg text-foreground mb-2">
+                  ¿Qué incluye un servicio de concierge de viaje?
+                </h3>
+                <p>
+                  Incluye diseño de itinerario a la medida, reservas VIP en
+                  hoteles y restaurantes con estrella Michelin, tours privados
+                  con guías locales, coordinación de visados y documentación,
+                  transferencias privadas y asistencia 24/7 en español e inglés
+                  durante el viaje. También cubre upgrades de habitación,
+                  amenidades de cortesía y re-booking inmediato si hay
+                  cancelaciones o cambios.
+                </p>
               </div>
               <div>
-                <h3 className="font-heading text-lg text-foreground mb-2">¿Cuánto cuesta un travel concierge?</h3>
-                <p>En SJU Luxe Travel el servicio de concierge está incluido —no cobramos honorarios para itinerarios de lujo porque somos compensados directamente por nuestros hoteles y cruceros partners. Ofrecemos una <Link to={localPath("/contact")} className="text-gold hover:text-gold-light underline">consulta inicial gratuita</Link> para evaluar tu viaje, y solo en casos de itinerarios extremadamente complejos aplicamos un fee de planificación, siempre confirmado al inicio.</p>
+                <h3 className="font-heading text-lg text-foreground mb-2">
+                  ¿Cuánto cuesta un travel concierge?
+                </h3>
+                <p>
+                  En SJU Luxe Travel el servicio de concierge está incluido —no
+                  cobramos honorarios para itinerarios a medida porque somos
+                  compensados directamente por nuestros hoteles y cruceros
+                  partners. Ofrecemos una{" "}
+                  <Link
+                    to={localPath("/contact")}
+                    className="text-gold hover:text-gold-light underline"
+                  >
+                    consulta inicial gratuita
+                  </Link>{" "}
+                  para evaluar tu viaje, y solo en casos de itinerarios
+                  extremadamente complejos aplicamos un fee de planificación,
+                  siempre confirmado al inicio.
+                </p>
               </div>
               <div>
-                <h3 className="font-heading text-lg text-foreground mb-2">¿Cuál es la diferencia entre un concierge y un agente de viaje?</h3>
-                <p>Un agente de viaje tradicional se enfoca principalmente en reservar vuelos, hoteles y paquetes al mejor precio. Un concierge de viaje va mucho más allá: diseña la experiencia completa, negocia beneficios exclusivos, coordina cada detalle en tierra y te acompaña 24/7 durante el viaje. En la práctica, todo buen concierge también es agente de viaje, pero no todo agente de viaje ofrece servicio de concierge real.</p>
+                <h3 className="font-heading text-lg text-foreground mb-2">
+                  ¿Cuál es la diferencia entre un concierge y un agente de
+                  viaje?
+                </h3>
+                <p>
+                  Un agente de viaje tradicional se enfoca principalmente en
+                  reservar vuelos, hoteles y paquetes al mejor precio. Un
+                  concierge de viaje va mucho más allá: diseña la experiencia
+                  completa, negocia beneficios exclusivos, coordina cada detalle
+                  en tierra y te acompaña 24/7 durante el viaje. En la práctica,
+                  todo buen concierge también es agente de viaje, pero no todo
+                  agente de viaje ofrece servicio de concierge real.
+                </p>
               </div>
             </div>
           </div>
-          <p data-cta="contextual-service-cta" className="mt-12 mb-4 text-center text-muted-foreground text-base leading-relaxed">{isEs ? "¿Listo para viajar con servicio concierge real? " : "Ready to travel with real concierge service? "}<Link to={localPath("/viajes-de-lujo-desde-puerto-rico")} className="text-gold hover:text-gold-light underline font-semibold">{isEs ? "Explora nuestros servicios de viajes de lujo →" : "Explore our luxury travel services →"}</Link></p>
+          <p
+            data-cta="contextual-service-cta"
+            className="mt-12 mb-4 text-center text-muted-foreground text-base leading-relaxed"
+          >
+            {isEs
+              ? "¿Listo para viajar con servicio concierge real? "
+              : "Ready to travel with real concierge service? "}
+            <Link
+              to={localPath("/viajes-de-lujo-desde-puerto-rico")}
+              className="text-gold hover:text-gold-light underline font-semibold"
+            >
+              {isEs
+                ? "Explora nuestros servicios de viajes a medida →"
+                : "Explore our luxury travel services →"}
+            </Link>
+          </p>
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
-            <h3 className="font-heading text-2xl text-foreground mb-3">{isEs ? "Consulta tu Caso" : "Discuss Your Trip"}</h3>
-            <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">{isEs ? "30 minutos gratis para evaluar si el concierge tiene sentido para tu viaje." : "Complimentary 30 minutes to evaluate if concierge makes sense for your trip."}</p>
-            <Link to={localPath("/contact")} className="inline-flex items-center gap-2 px-8 py-4 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-[0.15em] uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105">{isEs ? "Agendar Consulta" : "Book Consultation"}</Link>
+            <h3 className="font-heading text-2xl text-foreground mb-3">
+              {isEs ? "Consulta tu Caso" : "Discuss Your Trip"}
+            </h3>
+            <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">
+              {isEs
+                ? "30 minutos gratis para evaluar si el concierge tiene sentido para tu viaje."
+                : "Complimentary 30 minutes to evaluate if concierge makes sense for your trip."}
+            </p>
+            <Link
+              to={localPath("/contact")}
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-[0.15em] uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105"
+            >
+              {isEs ? "Agendar Consulta" : "Book Consultation"}
+            </Link>
           </div>
         </div>
       </article>

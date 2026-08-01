@@ -13,7 +13,7 @@ const FAQ_ITEMS = [
     a: "No es necesario residir en la isla. Trabajamos con clientes en Puerto Rico y con la diáspora puertorriqueña en Estados Unidos. Planificamos en español e inglés.",
   },
   {
-    q: "¿Cuánto cuesta contratar una agencia de viajes de lujo?",
+    q: "¿Cuánto cuesta contratar una agencia de viajes boutique?",
     a: "Nuestra consulta inicial es completamente gratuita. Nuestros honorarios varían según el tipo y complejidad del viaje. En muchos casos, los beneficios exclusivos que obtienes como cliente — upgrades, créditos, amenidades — compensan ampliamente el costo del servicio.",
   },
   {
@@ -22,7 +22,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "¿Cuál es la diferencia entre SJU Luxe Travel y una agencia de viajes regular?",
-    a: "Nos especializamos exclusivamente en viajes de lujo. No vendemos paquetes masivos ni tours grupales. Cada itinerario es diseñado desde cero para un cliente específico.",
+    a: "Nos especializamos exclusivamente en viajes a medida. No vendemos paquetes masivos ni tours grupales. Cada itinerario es diseñado desde cero para un cliente específico.",
   },
   {
     q: "¿Ofrecen servicios en español?",
@@ -32,12 +32,12 @@ const FAQ_ITEMS = [
 
 const SERVICES = [
   {
-    title: "Viajes de lujo internacionales",
+    title: "Viajes a medida internacionales",
     to: "/viajes-de-lujo-desde-puerto-rico",
     desc: "Itinerarios privados a medida a las Maldivas, Portugal, México, Europa y más allá.",
   },
   {
-    title: "Cruceros de lujo desde San Juan",
+    title: "Cruceros desde San Juan",
     to: "/cruceros-de-lujo-desde-san-juan",
     desc: "Regent, Silversea, Seabourn y Crystal — zarpando directamente desde Puerto Rico.",
   },
@@ -58,32 +58,32 @@ const schema = buildGraph(
     "@type": "WebPage",
     "@id": `${PAGE_URL}#webpage`,
     url: PAGE_URL,
-    name: "Agencia de Viajes de Lujo en Puerto Rico",
+    name: "Agencia de viajes boutique en Puerto Rico",
     isPartOf: WEBSITE_REF,
     inLanguage: "es",
   },
   {
     "@type": "Service",
     "@id": `${PAGE_URL}#service`,
-    name: "Agencia de Viajes de Lujo en Puerto Rico",
+    name: "Agencia de viajes boutique en Puerto Rico",
     description:
-      "Servicio de planificación de viajes de lujo a medida desde San Juan, Puerto Rico. Especialistas en itinerarios internacionales, cruceros de lujo y lunas de miel exclusivas.",
+      "Servicio de planificación de viajes a medida desde San Juan, Puerto Rico. Especialistas en itinerarios internacionales, cruceros y lunas de miel exclusivas.",
     provider: ORG_REF,
     areaServed: { "@type": "State", name: "Puerto Rico" },
-    serviceType: "Luxury Travel Planning",
+    serviceType: "Travel Planning",
     url: PAGE_URL,
     availableLanguage: ["Spanish", "English"],
   },
   breadcrumbList([
     { name: "Home", url: "https://www.sjuluxetravel.com" },
     { name: "Agencia de Viajes Puerto Rico", url: PAGE_URL },
-  ])
+  ]),
 );
 
 const AgenciaDeViajesPuertoRico = () => (
   <Layout>
     <SEOHead
-      title="Agencia de Viajes de Lujo en Puerto Rico — SJU Luxe Travel"
+      title="Agencia de Viajes Boutique en Puerto Rico — SJU Luxe Travel"
       description="¿Buscas una agencia de viajes en Puerto Rico que realmente entienda el lujo? SJU Luxe Travel diseña itinerarios exclusivos, cruceros y lunas de miel desde San Juan."
       canonical={PAGE_URL}
       schemaJson={schema}
@@ -95,26 +95,32 @@ const AgenciaDeViajesPuertoRico = () => (
           San Juan, Puerto Rico
         </span>
         <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-8">
-          Agencia de Viajes de <span className="text-gold-gradient italic">Lujo en Puerto Rico</span>
+          Agencia de Viajes{" "}
+          <span className="text-gold-gradient italic">
+            Boutique en Puerto Rico
+          </span>
         </h1>
 
         <div className="space-y-6">
           <p className="text-muted-foreground text-base leading-relaxed">
-            Si buscas una agencia de viajes en Puerto Rico que vaya más allá del paquete estándar,
-            llegaste al lugar correcto. En SJU Luxe Travel somos una agencia boutique con base en San
-            Juan, especializada exclusivamente en viajes de lujo a medida — desde las Maldivas hasta
-            los ríos de Europa, pasando por los mejores cruceros que salen desde Puerto Rico.
+            Si buscas una agencia de viajes en Puerto Rico que vaya más allá del
+            paquete estándar, llegaste al lugar correcto. En SJU Luxe Travel
+            somos una agencia boutique con base en San Juan, especializada
+            exclusivamente en viajes a medida — desde las Maldivas hasta los
+            ríos de Europa, pasando por los mejores cruceros que salen desde
+            Puerto Rico.
           </p>
 
           <h2 className="font-heading text-2xl text-foreground mt-12">
-            ¿Qué hace diferente a una agencia de viajes de lujo?
+            ¿Qué hace diferente a una agencia de viajes boutique?
           </h2>
           <p className="text-muted-foreground text-base leading-relaxed">
-            A diferencia de las agencias tradicionales o las plataformas de reservas en línea,
-            trabajamos con un número selecto de clientes para garantizar atención personalizada en
-            cada detalle. Como afiliados de NCM Concierge y Travel Leaders, nuestros clientes acceden
-            a upgrades de habitación gratuitos, créditos en resort y amenidades VIP que simplemente no
-            están disponibles al reservar por cuenta propia.
+            A diferencia de las agencias tradicionales o las plataformas de
+            reservas en línea, trabajamos con un número selecto de clientes para
+            garantizar atención personalizada en cada detalle. Como afiliados de
+            NCM Concierge y Travel Leaders, nuestros clientes acceden a upgrades
+            de habitación gratuitos, créditos en resort y amenidades VIP que
+            simplemente no están disponibles al reservar por cuenta propia.
           </p>
 
           <h2 className="font-heading text-2xl text-foreground mt-12">
@@ -130,7 +136,9 @@ const AgenciaDeViajesPuertoRico = () => (
                 <h3 className="font-heading text-lg text-foreground group-hover:text-gold transition-colors">
                   {s.title}
                 </h3>
-                <p className="mt-2 text-muted-foreground text-sm leading-relaxed">{s.desc}</p>
+                <p className="mt-2 text-muted-foreground text-sm leading-relaxed">
+                  {s.desc}
+                </p>
                 <span className="mt-4 inline-flex items-center gap-2 font-body text-xs uppercase tracking-[0.2em] text-gold">
                   Ver más <ArrowRight className="h-3 w-3" />
                 </span>

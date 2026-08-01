@@ -6,54 +6,57 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { AUTHOR, ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import blogAgentImg from "@/assets/blog-travel-agent.jpg";
 
-const schemaJson = buildGraph({
-      "@type": "BlogPosting",
-      headline: "¿Los Agentes de Viaje Realmente Te Ayudan a Ahorrar Dinero?",
-      description: "Una perspectiva honesta de un agente de viaje moderno sobre cómo la orientación profesional te ahorra dinero, tiempo y estrés.",
-      author: AUTHOR,
-      publisher: ORG_REF,
-      datePublished: "2026-04-07",
-  dateModified: "2026-07-23",
-      inLanguage: "es-PR",
-      url: "https://www.sjuluxetravel.com/blog/do-travel-agents-really-help-save-money",
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Does a travel agent save you money?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Yes — a professional travel agent can save you money through preferred partner rates, complimentary resort credits, room upgrades, and by preventing costly booking mistakes. The real value goes beyond price: time saved, expert support, and personalized planning."
-          }
+const schemaJson = buildGraph(
+  {
+    "@type": "BlogPosting",
+    headline: "¿Los Agentes de Viaje Realmente Te Ayudan a Ahorrar Dinero?",
+    description:
+      "Una perspectiva honesta de un agente de viaje moderno sobre cómo la orientación profesional te ahorra dinero, tiempo y estrés.",
+    author: AUTHOR,
+    publisher: ORG_REF,
+    datePublished: "2026-04-07",
+    dateModified: "2026-07-23",
+    inLanguage: "Es-PR",
+    url: "https://www.sjuluxetravel.com/blog/do-travel-agents-really-help-save-money",
+  },
+  {
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "Does a travel agent save you money?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes — a professional travel agent can save you money through preferred partner rates, complimentary resort credits, room upgrades, and by preventing costly booking mistakes. The real value goes beyond price: time saved, expert support, and personalized planning.",
         },
-        {
-          "@type": "Question",
-          name: "Is it worth using a travel agent in 2026?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "For international travel, multi-destination trips, honeymoons, and luxury vacations, yes. An agent handles complex logistics, advocates for you when things go wrong, and unlocks perks unavailable on booking sites."
-          }
+      },
+      {
+        "@type": "Question",
+        name: "Is it worth using a travel agent in 2026?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "For international travel, multi-destination trips, honeymoons, and vacations, yes. An agent handles complex logistics, advocates for you when things go wrong, and unlocks perks unavailable on booking sites.",
         },
-        {
-          "@type": "Question",
-          name: "What does a luxury travel agent actually do?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "A modern travel agent designs custom itineraries, recommends destinations and hotels that fit your style, handles logistics, secures exclusive perks, and provides human support before and during your trip."
-          }
+      },
+      {
+        "@type": "Question",
+        name: "What does a travel agent actually do?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A modern travel agent designs custom itineraries, recommends destinations and hotels that fit your style, handles logistics, secures exclusive perks, and provides human support before and during your trip.",
         },
-        {
-          "@type": "Question",
-          name: "Do travel agents charge a fee?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Most luxury travel agents are compensated by their hotel and cruise partners, not by you. Some charge a planning fee for highly complex itineraries — always confirmed upfront."
-          }
-        }
-      ]
-    });
+      },
+      {
+        "@type": "Question",
+        name: "Do travel agents charge a fee?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Most travel agents are compensated by their hotel and cruise partners, not by you. Some charge a planning fee for highly complex itineraries — always confirmed upfront.",
+        },
+      },
+    ],
+  },
+);
 
 const DoTravelAgentsSaveMoney = () => {
   const { language, localPath } = useLanguage();
@@ -64,20 +67,26 @@ const DoTravelAgentsSaveMoney = () => {
       <SEOHead
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/do-travel-agents-save-money.jpg"
-        title="Is a Travel Agent Worth It? Do They Save Money? | SJU Luxe"
-        description="Is it worth using a travel agent for a luxury vacation? How an agent saves you money, time & stress. Travel agent vs booking online — an honest take."
+        title="Is a travel agent Worth It? Do They Save Money? | SJU Luxe"
+        description="Is it worth using a travel agent for a vacation? How an agent saves you money, time & stress. Travel agent vs booking online — an honest take."
         canonical="https://www.sjuluxetravel.com/blog/do-travel-agents-really-help-save-money"
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
-          { name: '¿Los Agentes de Viaje Realmente Te Ayudan a Ahorrar Dinero?', url: "https://www.sjuluxetravel.com/blog/do-travel-agents-really-help-save-money" },
+          {
+            name: "¿Los Agentes de Viaje Realmente Te Ayudan a Ahorrar Dinero?",
+            url: "https://www.sjuluxetravel.com/blog/do-travel-agents-really-help-save-money",
+          },
         ]}
         schemaJson={schemaJson}
       />
 
       <article className="pt-28 pb-20 bg-background">
         <div className="container mx-auto px-6 max-w-3xl">
-          <Link to={localPath("/blog")} className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors font-body text-sm tracking-wide mb-8">
+          <Link
+            to={localPath("/blog")}
+            className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors font-body text-sm tracking-wide mb-8"
+          >
             <ArrowLeft size={16} />
             {isEs ? "Volver al Blog" : "Back to Blog"}
           </Link>
@@ -89,23 +98,47 @@ const DoTravelAgentsSaveMoney = () => {
             <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">
               {isEs
                 ? "¿Los Agentes de Viaje Realmente Te Ayudan a Ahorrar Dinero?"
-                : "Is a Travel Agent Worth It? Do They Really Save You Money?"}
+                : "Is a travel agent Worth It? Do They Really Save You Money?"}
             </h1>
             <p className="font-heading text-xl md:text-2xl text-muted-foreground italic mb-6">
               {isEs
                 ? "Una Perspectiva Honesta de un Agente de Viaje Moderno"
-                : "An Honest Perspective from a Modern Travel Agent"}
+                : "An Honest Perspective from a Modern travel agent"}
             </p>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
-              <Link to={localPath("/about")} className="flex items-center gap-1.5 hover:text-gold transition-colors"><User size={12} className="text-gold" />Daniel Santiago Díaz<span className="text-muted-foreground/70"> — {isEs ? "Agente de Viajes de Lujo" : "Luxury Travel Advisor"}</span></Link>
-              <span className="flex items-center gap-1.5"><Calendar size={12} className="text-gold" />{isEs ? "7 de abril de 2026" : "April 7, 2026"}</span>
-              <span className="flex items-center gap-1.5"><Clock size={12} className="text-gold" />{isEs ? "7 min de lectura" : "7 min read"}</span>
+              <Link
+                to={localPath("/about")}
+                className="flex items-center gap-1.5 hover:text-gold transition-colors"
+              >
+                <User size={12} className="text-gold" />
+                Daniel Santiago Díaz
+                <span className="text-muted-foreground/70">
+                  {" "}
+                  — {isEs ? "Agente de viajes a medida" : "Travel Advisor"}
+                </span>
+              </Link>
+              <span className="flex items-center gap-1.5">
+                <Calendar size={12} className="text-gold" />
+                {isEs ? "7 de abril de 2026" : "April 7, 2026"}
+              </span>
+              <span className="flex items-center gap-1.5">
+                <Clock size={12} className="text-gold" />
+                {isEs ? "7 min de lectura" : "7 min read"}
+              </span>
             </div>
-            <p className="text-muted-foreground/70 text-xs mt-3 italic">{isEs ? "Última actualización: 23 de julio de 2026" : "Last updated: July 23, 2026"}</p>
+            <p className="text-muted-foreground/70 text-xs mt-3 italic">
+              {isEs
+                ? "Última actualización: 23 de julio de 2026"
+                : "Last updated: July 23, 2026"}
+            </p>
           </div>
 
           <div className="aspect-[16/9] overflow-hidden rounded-lg gold-border mb-12">
-            <img src={blogAgentImg} alt="Do Travel Agents Really Help You Save Money — SJU Luxe Travel" className="w-full h-full object-cover" />
+            <img
+              src={blogAgentImg}
+              alt="Do travel agents Really Help You Save Money — SJU Luxe Travel"
+              className="w-full h-full object-cover"
+            />
           </div>
 
           <div className="prose-custom space-y-6">
@@ -129,7 +162,9 @@ const DoTravelAgentsSaveMoney = () => {
 
             {/* Section 1 */}
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "¿Qué Hace Realmente un Agente de Viaje?" : "What Does a Travel Agent Really Do?"}
+              {isEs
+                ? "¿Qué Hace Realmente un Agente de Viaje?"
+                : "What Does a travel agent Really Do?"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
@@ -156,7 +191,8 @@ const DoTravelAgentsSaveMoney = () => {
                   ]
               ).map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className="text-gold mt-1">•</span>{item}
+                  <span className="text-gold mt-1">•</span>
+                  {item}
                 </li>
               ))}
             </ul>
@@ -171,7 +207,7 @@ const DoTravelAgentsSaveMoney = () => {
             <h2 className="font-heading text-2xl text-foreground mt-10">
               {isEs
                 ? "Cómo los Consultores de Viajes Te Ayudan a Ahorrar (Sin Recortar Calidad)"
-                : "How Travel Agents Help You Save Money (Without Cutting Corners)"}
+                : "How travel agents Help You Save Money (Without Cutting Corners)"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
@@ -182,29 +218,48 @@ const DoTravelAgentsSaveMoney = () => {
 
             {/* Sub-section: Exclusive Perks */}
             <h3 className="font-heading text-xl text-foreground mt-8">
-              {isEs ? "✅ Acceso a Beneficios Exclusivos y Valor Agregado" : "✅ Access to Exclusive Perks & Added Value"}
+              {isEs
+                ? "✅ Acceso a Beneficios Exclusivos y Valor Agregado"
+                : "✅ Access to Exclusive Perks & Added Value"}
             </h3>
 
             <p className="text-muted-foreground text-base leading-relaxed">
-              {isEs ? "Los agentes de viaje a menudo tienen acceso a:" : "Travel agents often have access to:"}
+              {isEs
+                ? "Los agentes de viaje a menudo tienen acceso a:"
+                : "Travel agents often have access to:"}
             </p>
 
             <ul className="space-y-2 text-muted-foreground text-base leading-relaxed list-none">
               {(isEs
-                ? ["Tarifas de socios preferidos", "Desayuno gratuito, créditos de resort o mejoras de habitación", "Amenidades adicionales que las reservas en línea no incluyen"]
-                : ["Preferred partner rates", "Complimentary breakfast, resort credits, or room upgrades", "Added amenities that online bookings don't include"]
+                ? [
+                    "Tarifas de socios preferidos",
+                    "Desayuno gratuito, créditos de resort o mejoras de habitación",
+                    "Amenidades adicionales que las reservas en línea no incluyen",
+                  ]
+                : [
+                    "Preferred partner rates",
+                    "Complimentary breakfast, resort credits, or room upgrades",
+                    "Added amenities that online bookings don't include",
+                  ]
               ).map((item, i) => (
-                <li key={i} className="flex items-start gap-3"><span className="text-gold mt-1">•</span>{item}</li>
+                <li key={i} className="flex items-start gap-3">
+                  <span className="text-gold mt-1">•</span>
+                  {item}
+                </li>
               ))}
             </ul>
 
             <p className="text-muted-foreground text-base leading-relaxed italic">
-              {isEs ? "Puedes pagar el mismo precio—pero recibir más." : "You may pay the same price—but receive more."}
+              {isEs
+                ? "Puedes pagar el mismo precio—pero recibir más."
+                : "You may pay the same price—but receive more."}
             </p>
 
             {/* Sub-section: Avoiding Mistakes */}
             <h3 className="font-heading text-xl text-foreground mt-8">
-              {isEs ? "✅ Evitando Errores Costosos" : "✅ Avoiding Costly Mistakes"}
+              {isEs
+                ? "✅ Evitando Errores Costosos"
+                : "✅ Avoiding Costly Mistakes"}
             </h3>
 
             <p className="text-muted-foreground text-base leading-relaxed">
@@ -215,7 +270,9 @@ const DoTravelAgentsSaveMoney = () => {
 
             {/* Sub-section: Time Savings */}
             <h3 className="font-heading text-xl text-foreground mt-8">
-              {isEs ? "✅ Ahorro de Tiempo = Ahorro Real" : "✅ Time Savings = Real Savings"}
+              {isEs
+                ? "✅ Ahorro de Tiempo = Ahorro Real"
+                : "✅ Time Savings = Real Savings"}
             </h3>
 
             <p className="text-muted-foreground text-base leading-relaxed">
@@ -226,7 +283,9 @@ const DoTravelAgentsSaveMoney = () => {
 
             {/* Section 3 */}
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "Cuándo Tiene Más Sentido Usar un Consultor de Viajes" : "When Using a Travel Agent Makes the Most Sense"}
+              {isEs
+                ? "Cuándo Tiene Más Sentido Usar un Consultor de Viajes"
+                : "When Using a travel agent Makes the Most Sense"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
@@ -240,19 +299,22 @@ const DoTravelAgentsSaveMoney = () => {
                 ? [
                     "Estás planeando un viaje internacional",
                     "Tu viaje incluye múltiples destinos",
-                    "Estás reservando una luna de miel, vacaciones de lujo u ocasión especial",
+                    "Estás reservando una luna de miel, vacaciones a medida u ocasión especial",
                     "Quieres experiencias personalizadas—no viajes genéricos",
                     "Valoras la tranquilidad y el apoyo experto",
                   ]
                 : [
                     "You're planning international travel",
                     "Your trip includes multiple destinations",
-                    "You're booking a honeymoon, luxury vacation, or special occasion",
+                    "You're booking a honeymoon, vacation, or special occasion",
                     "You want personalized experiences—not cookie‑cutter travel",
                     "You value peace of mind and expert support",
                   ]
               ).map((item, i) => (
-                <li key={i} className="flex items-start gap-3"><span className="text-gold mt-1">•</span>{item}</li>
+                <li key={i} className="flex items-start gap-3">
+                  <span className="text-gold mt-1">•</span>
+                  {item}
+                </li>
               ))}
             </ul>
 
@@ -264,7 +326,9 @@ const DoTravelAgentsSaveMoney = () => {
 
             {/* Section 4 */}
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "Viajar No Es un Lujo—Es una Oportunidad" : "Travel Is Not a Luxury—It's an Opportunity"}
+              {isEs
+                ? "Viajar No Es un Lujo—Es una Oportunidad"
+                : "Travel Is Not a Luxury—It's an Opportunity"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
@@ -287,7 +351,9 @@ const DoTravelAgentsSaveMoney = () => {
 
             {/* Real Examples */}
             <h2 className="font-heading text-2xl text-foreground mt-12">
-              {isEs ? "Ejemplos Reales: Cuánto Suma el Valor Agregado" : "Real Examples: How Much the Added Value Adds Up"}
+              {isEs
+                ? "Ejemplos Reales: Cuánto Suma el Valor Agregado"
+                : "Real Examples: How Much the Added Value Adds Up"}
             </h2>
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
@@ -295,44 +361,163 @@ const DoTravelAgentsSaveMoney = () => {
                 : "These are real scenarios from Puerto Rico clients — same hotel, same price, different benefits depending on where you booked:"}
             </p>
             <ul className="space-y-3 list-none">
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">•</span><span><strong className="text-foreground">{isEs ? "Four Seasons Maui (7 noches):" : "Four Seasons Maui (7 nights):"}</strong> {isEs ? "via Four Seasons Preferred Partner — desayuno diario para 2 ($1,400 valor), $100 crédito de spa, upgrade a Ocean View sujeto a disponibilidad. Total: ~$1,800 en beneficios sin costo extra." : "via Four Seasons Preferred Partner — daily breakfast for 2 ($1,400 value), $100 spa credit, Ocean View upgrade subject to availability. Total: ~$1,800 in perks at no extra cost."}</span></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">•</span><span><strong className="text-foreground">{isEs ? "Soneva Fushi Maldivas (luna de miel 7 noches):" : "Soneva Fushi Maldives (7-night honeymoon):"}</strong> {isEs ? "via Virtuoso — cena privada en la playa ($800 valor), 60 min de spa por persona ($400 valor), upgrade y amenidad de luna de miel. Total: ~$1,500–$2,000." : "via Virtuoso — private beach dinner ($800 value), 60-min spa per person ($400 value), upgrade and honeymoon amenity. Total: ~$1,500–$2,000."}</span></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">•</span><span><strong className="text-foreground">{isEs ? "Belmond Hotel Caruso, Amalfi (5 noches):" : "Belmond Hotel Caruso, Amalfi (5 nights):"}</strong> {isEs ? "via Belmond Bellini Club — desayuno, €100 crédito por estadía, early check-in. Total: ~$700 en valor agregado." : "via Belmond Bellini Club — breakfast, €100 per-stay credit, early check-in. Total: ~$700 in added value."}</span></li>
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">•</span>
+                <span>
+                  <strong className="text-foreground">
+                    {isEs
+                      ? "Four Seasons Maui (7 noches):"
+                      : "Four Seasons Maui (7 nights):"}
+                  </strong>{" "}
+                  {isEs
+                    ? "via Four Seasons Preferred Partner — desayuno diario para 2 ($1,400 valor), $100 crédito de spa, upgrade a Ocean View sujeto a disponibilidad. Total: ~$1,800 en beneficios sin costo extra."
+                    : "Via Four Seasons Preferred Partner — daily breakfast for 2 ($1,400 value), $100 spa credit, Ocean View upgrade subject to availability. Total: ~$1,800 in perks at no extra cost."}
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">•</span>
+                <span>
+                  <strong className="text-foreground">
+                    {isEs
+                      ? "Soneva Fushi Maldivas (luna de miel 7 noches):"
+                      : "Soneva Fushi Maldives (7-night honeymoon):"}
+                  </strong>{" "}
+                  {isEs
+                    ? "via Virtuoso — cena privada en la playa ($800 valor), 60 min de spa por persona ($400 valor), upgrade y amenidad de luna de miel. Total: ~$1,500–$2,000."
+                    : "Via Virtuoso — private beach dinner ($800 value), 60-min spa per person ($400 value), upgrade and honeymoon amenity. Total: ~$1,500–$2,000."}
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">•</span>
+                <span>
+                  <strong className="text-foreground">
+                    {isEs
+                      ? "Belmond Hotel Caruso, Amalfi (5 noches):"
+                      : "Belmond Hotel Caruso, Amalfi (5 nights):"}
+                  </strong>{" "}
+                  {isEs
+                    ? "via Belmond Bellini Club — desayuno, €100 crédito por estadía, early check-in. Total: ~$700 en valor agregado."
+                    : "Via Belmond Bellini Club — breakfast, €100 per-stay credit, early check-in. Total: ~$700 in added value."}
+                </span>
+              </li>
             </ul>
             <p className="text-muted-foreground text-base leading-relaxed italic">
-              {isEs ? "Reservar el mismo hotel en Expedia o Booking.com paga el mismo precio — sin un solo beneficio de estos." : "Booking the same hotel on Expedia or Booking.com costs the same price — without a single one of these perks."}
+              {isEs
+                ? "Reservar el mismo hotel en Expedia o Booking.com paga el mismo precio — sin un solo beneficio de estos."
+                : "Booking the same hotel on Expedia or Booking.com costs the same price — without a single one of these perks."}
             </p>
             <p className="text-muted-foreground text-base leading-relaxed">
-              {isEs ? "Estos beneficios son parte de nuestro " : "These perks are part of our "}
-              <Link to={localPath("/blog/servicios-concierge-viaje")} className="text-gold hover:text-gold-light underline">
-                {isEs ? "servicio concierge de viaje" : "travel concierge service"}
+              {isEs
+                ? "Estos beneficios son parte de nuestro "
+                : "These perks are part of our "}
+              <Link
+                to={localPath("/blog/servicios-concierge-viaje")}
+                className="text-gold hover:text-gold-light underline"
+              >
+                {isEs
+                  ? "servicio concierge de viaje"
+                  : "Travel concierge service"}
               </Link>
-              {isEs ? " — así es como funciona en la práctica." : " — here's how it works in practice."}
+              {isEs
+                ? " — así es como funciona en la práctica."
+                : " — here's how it works in practice."}
             </p>
 
             {/* Related Reading */}
-            <h2 className="font-heading text-2xl text-foreground mt-12">{isEs ? "Lecturas Relacionadas" : "Related Reading"}</h2>
+            <h2 className="font-heading text-2xl text-foreground mt-12">
+              {isEs ? "Lecturas Relacionadas" : "Related Reading"}
+            </h2>
             <ul className="space-y-2 list-none">
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/what-luxury-travel-really-means")} className="text-gold hover:text-gold-light underline">{isEs ? "Lo que realmente significa el viaje de lujo" : "What luxury travel really means"}</Link></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/luna-de-miel-puerto-rico-2026")} className="text-gold hover:text-gold-light underline">{isEs ? "Mejores destinos de luna de miel 2026" : "Best honeymoon destinations 2026"}</Link></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/river-cruising-new-generation")} className="text-gold hover:text-gold-light underline">{isEs ? "Cruceros fluviales: la nueva generación" : "River cruising: the new generation"}</Link></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/micro-vacaciones-futuro-del-viaje")} className="text-gold hover:text-gold-light underline">{isEs ? "Microvacaciones: viajes cortos bien planificados" : "Micro-cations: short trips done right"}</Link></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/about")} className="text-gold hover:text-gold-light underline">{isEs ? "Sobre Daniel Santiago Díaz — Agente de Lujo" : "About Daniel Santiago Díaz — Luxury Agent"}</Link></li>
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">→</span>
+                <Link
+                  to={localPath("/blog/what-luxury-travel-really-means")}
+                  className="text-gold hover:text-gold-light underline"
+                >
+                  {isEs
+                    ? "Lo que realmente significa el viaje a medida"
+                    : "What travel really means"}
+                </Link>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">→</span>
+                <Link
+                  to={localPath("/blog/luna-de-miel-puerto-rico-2026")}
+                  className="text-gold hover:text-gold-light underline"
+                >
+                  {isEs
+                    ? "Mejores destinos de luna de miel 2026"
+                    : "Best honeymoon destinations 2026"}
+                </Link>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">→</span>
+                <Link
+                  to={localPath("/blog/river-cruising-new-generation")}
+                  className="text-gold hover:text-gold-light underline"
+                >
+                  {isEs
+                    ? "Cruceros fluviales: la nueva generación"
+                    : "River cruising: the new generation"}
+                </Link>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">→</span>
+                <Link
+                  to={localPath("/blog/micro-vacaciones-futuro-del-viaje")}
+                  className="text-gold hover:text-gold-light underline"
+                >
+                  {isEs
+                    ? "Microvacaciones: viajes cortos bien planificados"
+                    : "Micro-cations: short trips done right"}
+                </Link>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">→</span>
+                <Link
+                  to={localPath("/about")}
+                  className="text-gold hover:text-gold-light underline"
+                >
+                  {isEs
+                    ? "Sobre Daniel Santiago Díaz — Agente"
+                    : "About Daniel Santiago Díaz — Agent"}
+                </Link>
+              </li>
             </ul>
           </div>
 
           {/* CTA */}
-          <p data-cta="contextual-service-cta" className="mt-12 mb-4 text-center text-muted-foreground text-base leading-relaxed">{isEs ? "¿Listo para planificar tu próximo viaje de lujo desde Puerto Rico? " : "Ready to plan your next luxury trip from Puerto Rico? "}<Link to={localPath("/viajes-de-lujo-desde-puerto-rico")} className="text-gold hover:text-gold-light underline font-semibold">{isEs ? "Explora nuestros servicios de viajes de lujo →" : "Explore our luxury travel services →"}</Link></p>
+          <p
+            data-cta="contextual-service-cta"
+            className="mt-12 mb-4 text-center text-muted-foreground text-base leading-relaxed"
+          >
+            {isEs
+              ? "¿Listo para planificar tu próximo viaje a medida desde Puerto Rico? "
+              : "Ready to plan your next luxury trip from Puerto Rico? "}
+            <Link
+              to={localPath("/viajes-de-lujo-desde-puerto-rico")}
+              className="text-gold hover:text-gold-light underline font-semibold"
+            >
+              {isEs
+                ? "Explora nuestros servicios de viajes a medida →"
+                : "Explore our luxury travel services →"}
+            </Link>
+          </p>
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">
-              {isEs ? "¿Listo para Planificar Tu Viaje?" : "Ready to Plan Your Journey?"}
+              {isEs
+                ? "¿Listo para Planificar Tu Viaje?"
+                : "Ready to Plan Your Journey?"}
             </h3>
             <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">
               {isEs
                 ? "Podemos ayudarte a crear una experiencia de viaje personalizada adaptada a tus objetivos y presupuesto."
                 : "We can help craft a personalized travel experience tailored to your goals and budget."}
             </p>
-            <Link to={localPath("/contact")} className="inline-flex items-center gap-2 px-8 py-4 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-[0.15em] uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105">
+            <Link
+              to={localPath("/contact")}
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-[0.15em] uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105"
+            >
               {isEs ? "Comenzar a Planificar" : "Start Planning"}
             </Link>
           </div>

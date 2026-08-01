@@ -9,7 +9,12 @@ interface RevealProps {
 }
 
 /** Slow, calm scroll reveal (soft fade + slight rise). Honors prefers-reduced-motion. */
-export const Reveal = ({ children, className, delay = 0, as = "div" }: RevealProps) => {
+export const Reveal = ({
+  children,
+  className,
+  delay = 0,
+  as = "div",
+}: RevealProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
 
@@ -29,7 +34,7 @@ export const Reveal = ({ children, className, delay = 0, as = "div" }: RevealPro
           }
         });
       },
-      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" }
+      { threshold: 0.12, rootMargin: "0px 0px -8% 0px" },
     );
     observer.observe(node);
     return () => observer.disconnect();

@@ -6,13 +6,14 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { AUTHOR, ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/blog-wellness-maldives.jpg";
 
-const POST_URL = "https://www.sjuluxetravel.com/blog/wellness-travel-intentional-luxury";
+const POST_URL =
+  "https://www.sjuluxetravel.com/blog/wellness-travel-intentional-luxury";
 const OG_IMAGE = "https://www.sjuluxetravel.com/og/wellness-travel.jpg";
 
 const FAQS_EN = [
   {
-    q: "What is intentional luxury travel?",
-    a: "Intentional luxury travel is a trip designed around restoring your nervous system — silence, nature, nourishing food, movement and real rest — rather than packing in sightseeing. Every element (flights, hotel, guides, spa) is chosen to support that wellness outcome.",
+    q: "What is intentional travel?",
+    a: "Intentional travel is a trip designed around restoring your nervous system — silence, nature, nourishing food, movement and real rest — rather than packing in sightseeing. Every element (flights, hotel, guides, spa) is chosen to support that wellness outcome.",
   },
   {
     q: "Is wellness travel actually good for mental health?",
@@ -27,7 +28,7 @@ const FAQS_EN = [
     a: "A minimum of four full days at the destination is the sweet spot. Three nights is usually too short to fully decompress; seven to ten days delivers the deepest, longest-lasting benefits.",
   },
   {
-    q: "How much does a luxury wellness retreat cost from San Juan?",
+    q: "How much does a wellness retreat cost from San Juan?",
     a: "A four-night curated wellness retreat in the Riviera Maya typically runs $4,500–$9,000 per person all-in (flights, transfers, 5-star resort, spa program, private guide). A seven-night Maldives wellness program at Joali Being or Six Senses Laamu starts around $12,000 per person and scales with villa category and treatments.",
   },
   {
@@ -46,8 +47,8 @@ const FAQS_EN = [
 
 const FAQS_ES = [
   {
-    q: "¿Qué es el viaje de lujo intencional?",
-    a: "El viaje de lujo intencional es un viaje diseñado para restaurar tu sistema nervioso — silencio, naturaleza, comida nutritiva, movimiento y descanso real — en lugar de acumular turismo. Cada elemento (vuelos, hotel, guías, spa) se elige para reforzar ese objetivo de bienestar.",
+    q: "¿Qué es el viaje a medida intencional?",
+    a: "El viaje a medida intencional es un viaje diseñado para restaurar tu sistema nervioso — silencio, naturaleza, comida nutritiva, movimiento y descanso real — en lugar de acumular turismo. Cada elemento (vuelos, hotel, guías, spa) se elige para reforzar ese objetivo de bienestar.",
   },
   {
     q: "¿El turismo de bienestar realmente ayuda a la salud mental?",
@@ -62,7 +63,7 @@ const FAQS_ES = [
     a: "Un mínimo de cuatro días completos en el destino es ideal. Tres noches suele ser muy poco para desconectar; de siete a diez días entrega los beneficios más profundos y duraderos.",
   },
   {
-    q: "¿Cuánto cuesta un retiro de bienestar de lujo desde San Juan?",
+    q: "¿Cuánto cuesta un retiro de bienestar desde San Juan?",
     a: "Un retiro de bienestar curado de cuatro noches en la Riviera Maya cuesta típicamente $4,500–$9,000 por persona todo incluido (vuelos, traslados, resort 5 estrellas, programa de spa, guía privado). Un programa de siete noches en Maldivas en Joali Being o Six Senses Laamu comienza alrededor de $12,000 por persona.",
   },
   {
@@ -88,46 +89,58 @@ const WellnessTravel = () => {
     ? "Viajes de Bienestar: Por Qué Tu Médico Tiene Razón (Guía 2026)"
     : "Wellness Travel: Why Your Doctor Might Be Right (2026 Guide)";
   const description = isEs
-    ? "El viaje de lujo intencional no es una tendencia, es una estrategia de salud mental. Descubre cómo retiros en Maldivas y Riviera Maya generan bienestar real."
-    : "Intentional luxury travel isn't a trend — it's a mental health strategy. See how wellness retreats in the Maldives and Riviera Maya deliver lasting benefits.";
+    ? "El viaje a medida intencional no es una tendencia, es una estrategia de salud mental. Descubre cómo retiros en Maldivas y Riviera Maya generan bienestar real."
+    : "Intentional travel isn't a trend — it's a mental health strategy. See how wellness retreats in the Maldives and Riviera Maya deliver lasting benefits.";
 
-  const schemaJson = buildGraph({
-        "@type": "BlogPosting",
-        headline: title,
-        description,
-        image: OG_IMAGE,
-        author: AUTHOR,
-        publisher: ORG_REF,
-        datePublished: "2026-05-15",
-        dateModified: "2026-07-23",
-        inLanguage: isEs ? "es-PR" : "en-US",
-        mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
-        url: POST_URL,
-        keywords: isEs
-          ? "viajes de bienestar, lujo intencional, Maldivas, Riviera Maya, salud mental, Puerto Rico"
-          : "wellness travel, intentional luxury, Maldives, Riviera Maya, mental health, Puerto Rico",
-        about: [
-          { "@type": "Thing", name: "Wellness tourism" },
-          { "@type": "Place", name: "Maldives" },
-          { "@type": "Place", name: "Riviera Maya, Mexico" },
-        ],
-      },
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Home", item: "https://www.sjuluxetravel.com/" },
-          { "@type": "ListItem", position: 2, name: "Blog", item: "https://www.sjuluxetravel.com/blog" },
-          { "@type": "ListItem", position: 3, name: title, item: POST_URL },
-        ],
-      },
-      {
-        "@type": "FAQPage",
-        mainEntity: faqs.map((f) => ({
-          "@type": "Question",
-          name: f.q,
-          acceptedAnswer: { "@type": "Answer", text: f.a },
-        })),
-      });
+  const schemaJson = buildGraph(
+    {
+      "@type": "BlogPosting",
+      headline: title,
+      description,
+      image: OG_IMAGE,
+      author: AUTHOR,
+      publisher: ORG_REF,
+      datePublished: "2026-05-15",
+      dateModified: "2026-07-23",
+      inLanguage: isEs ? "es-PR" : "En-US",
+      mainEntityOfPage: { "@type": "WebPage", "@id": POST_URL },
+      url: POST_URL,
+      keywords: isEs
+        ? "viajes de bienestar, bienestar intencional, Maldivas, Riviera Maya, salud mental, Puerto Rico"
+        : "Wellness travel, intentional wellness, Maldives, Riviera Maya, mental health, Puerto Rico",
+      about: [
+        { "@type": "Thing", name: "Wellness tourism" },
+        { "@type": "Place", name: "Maldives" },
+        { "@type": "Place", name: "Riviera Maya, Mexico" },
+      ],
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        {
+          "@type": "ListItem",
+          position: 1,
+          name: "Home",
+          item: "https://www.sjuluxetravel.com/",
+        },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: "Blog",
+          item: "https://www.sjuluxetravel.com/blog",
+        },
+        { "@type": "ListItem", position: 3, name: title, item: POST_URL },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    },
+  );
 
   return (
     <Layout>
@@ -139,7 +152,6 @@ const WellnessTravel = () => {
         canonical={POST_URL}
         schemaJson={schemaJson}
       />
-
 
       <article className="pt-28 pb-20 bg-background">
         <div className="container mx-auto px-6 max-w-3xl">
@@ -162,15 +174,35 @@ const WellnessTravel = () => {
             </h1>
             <p className="font-heading text-xl md:text-2xl text-muted-foreground italic mb-6">
               {isEs
-                ? "El viaje de lujo intencional como inversión en salud mental"
-                : "Intentional luxury travel as a mental health investment"}
+                ? "El viaje a medida intencional como inversión en salud mental"
+                : "Intentional travel as a mental health investment"}
             </p>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
-              <Link to={localPath("/about")} className="flex items-center gap-1.5 hover:text-gold transition-colors"><User size={12} className="text-gold" />Daniel Santiago Díaz<span className="text-muted-foreground/70"> — {isEs ? "Agente de Viajes de Lujo" : "Luxury Travel Advisor"}</span></Link>
-              <span className="flex items-center gap-1.5"><Calendar size={12} className="text-gold" />{isEs ? "Mayo 2026" : "May 2026"}</span>
-              <span className="flex items-center gap-1.5"><Clock size={12} className="text-gold" />{isEs ? "7 min de lectura" : "7 min read"}</span>
+              <Link
+                to={localPath("/about")}
+                className="flex items-center gap-1.5 hover:text-gold transition-colors"
+              >
+                <User size={12} className="text-gold" />
+                Daniel Santiago Díaz
+                <span className="text-muted-foreground/70">
+                  {" "}
+                  — {isEs ? "Agente de viajes a medida" : "Travel Advisor"}
+                </span>
+              </Link>
+              <span className="flex items-center gap-1.5">
+                <Calendar size={12} className="text-gold" />
+                {isEs ? "Mayo 2026" : "May 2026"}
+              </span>
+              <span className="flex items-center gap-1.5">
+                <Clock size={12} className="text-gold" />
+                {isEs ? "7 min de lectura" : "7 min read"}
+              </span>
             </div>
-            <p className="text-muted-foreground/70 text-xs mt-3 italic">{isEs ? "Última actualización: 23 de julio de 2026" : "Last updated: July 23, 2026"}</p>
+            <p className="text-muted-foreground/70 text-xs mt-3 italic">
+              {isEs
+                ? "Última actualización: 23 de julio de 2026"
+                : "Last updated: July 23, 2026"}
+            </p>
           </div>
 
           {/* Hero image */}
@@ -179,8 +211,8 @@ const WellnessTravel = () => {
               src={heroImg}
               alt={
                 isEs
-                  ? "Villa de bienestar sobre el agua en Maldivas al atardecer — viaje de lujo intencional"
-                  : "Overwater wellness villa in the Maldives at sunset — intentional luxury travel"
+                  ? "Villa de bienestar sobre el agua en Maldivas al atardecer — viaje a medida intencional"
+                  : "Overwater wellness villa in the Maldives at sunset — intentional travel"
               }
               className="w-full h-full object-cover"
               width={1600}
@@ -199,15 +231,15 @@ const WellnessTravel = () => {
             <ul className="space-y-2 text-muted-foreground text-sm leading-relaxed list-none">
               {(isEs
                 ? [
-                    "El viaje de lujo intencional es una estrategia de salud mental respaldada por la ciencia.",
+                    "El viaje a medida intencional es una estrategia de salud mental respaldada por la ciencia.",
                     "La industria global del wellness travel supera los $830 mil millones (Global Wellness Institute).",
-                    "Destinos como Maldivas y Riviera Maya combinan lujo con bienestar real.",
+                    "Destinos como Maldivas y Riviera Maya combinan servicio excepcional con bienestar real.",
                     "El beneficio dura mucho más allá del viaje — si está bien planificado.",
                   ]
                 : [
-                    "Intentional luxury travel is a science-backed mental health strategy.",
+                    "Intentional travel is a science-backed mental health strategy.",
                     "Global wellness tourism is now an $830B+ industry (Global Wellness Institute).",
-                    "Destinations like the Maldives and Riviera Maya pair luxury with real wellness.",
+                    "Destinations like the Maldives and Riviera Maya pair with real wellness.",
                     "Benefits last long after you unpack — when the trip is planned right.",
                   ]
               ).map((item, i) => (
@@ -222,14 +254,12 @@ const WellnessTravel = () => {
           <div className="prose-custom space-y-6">
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Tu médico podría tener razón: tomarse un descanso real ya no es un capricho. El viaje de lujo intencional —el tipo que se planifica con propósito en lugar de reservar por impulso— se está convirtiendo en una de las inversiones más inteligentes que puedes hacer en tu salud mental este año."
-                : "Your doctor might be right: taking a real break isn't indulgent anymore. Intentional luxury travel — the kind planned with purpose rather than booked on impulse — is becoming one of the smartest investments you can make in your mental health this year."}
+                ? "Tu médico podría tener razón: tomarse un descanso real ya no es un capricho. El viaje a medida intencional —el tipo que se planifica con propósito en lugar de reservar por impulso— se está convirtiendo en una de las inversiones más inteligentes que puedes hacer en tu salud mental este año."
+                : "Your doctor might be right: taking a real break isn't indulgent anymore. Intentional travel — the kind planned with purpose rather than booked on impulse — is becoming one of the smartest investments you can make in your mental health this year."}
             </p>
 
             <p className="text-muted-foreground text-base leading-relaxed">
-              {isEs
-                ? "Según el "
-                : "According to the "}
+              {isEs ? "Según el " : "According to the "}
               <a
                 href="https://globalwellnessinstitute.org/press-room/statistics-and-facts/"
                 target="_blank"
@@ -244,15 +274,20 @@ const WellnessTravel = () => {
             </p>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "Qué es realmente el viaje de lujo intencional" : "What intentional luxury travel really is"}
+              {isEs
+                ? "Qué es realmente el viaje a medida intencional"
+                : "What intentional travel really is"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "El viaje de lujo intencional no se trata de hoteles caros. Se trata de diseñar una experiencia que restaure tu sistema nervioso: silencio, naturaleza, comida nutritiva, movimiento y descanso real. Cuando trabajamos en "
-                : "Intentional luxury travel isn't about expensive hotels. It's about designing an experience that restores your nervous system: silence, nature, nourishing food, movement, and real rest. When we craft "}
-              <Link to={localPath("/viajes-de-lujo-desde-puerto-rico")} className="text-gold hover:text-gold-light underline-offset-4 hover:underline">
-                {isEs ? "itinerarios a la medida" : "bespoke itineraries"}
+                ? "El viaje a medida intencional no se trata de hoteles caros. Se trata de diseñar una experiencia que restaure tu sistema nervioso: silencio, naturaleza, comida nutritiva, movimiento y descanso real. Cuando trabajamos en "
+                : "Intentional travel isn't about expensive hotels. It's about designing an experience that restores your nervous system: silence, nature, nourishing food, movement, and real rest. When we craft "}
+              <Link
+                to={localPath("/viajes-de-lujo-desde-puerto-rico")}
+                className="text-gold hover:text-gold-light underline-offset-4 hover:underline"
+              >
+                {isEs ? "itinerarios a la medida" : "Bespoke itineraries"}
               </Link>
               {isEs
                 ? ", cada elección — el vuelo, el spa, el guía privado — refuerza ese objetivo."
@@ -260,32 +295,44 @@ const WellnessTravel = () => {
             </p>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "Maldivas: el destino más subestimado de bienestar" : "The Maldives: the most underrated wellness destination"}
+              {isEs
+                ? "Maldivas: el destino más subestimado de bienestar"
+                : "The Maldives: the most underrated wellness destination"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Cuando piensas en Maldivas, piensas en lunas de miel. Pero los resorts de bienestar de Maldivas — pensemos en Joali Being o Six Senses Laamu — están redefiniendo el retiro de lujo: programas de sueño, inmersión en el océano, ayurveda, y silencio absoluto sobre el agua. Es uno de los pocos lugares en el mundo donde puedes dejar de mirar tu teléfono sin esfuerzo."
-                : "When you think of the Maldives, you think honeymoons. But the Maldives' wellness resorts — think Joali Being or Six Senses Laamu — are redefining the luxury retreat: sleep programs, ocean immersion, ayurveda, and absolute silence over water. It's one of the few places on earth where you stop checking your phone without trying."}
+                ? "Cuando piensas en Maldivas, piensas en lunas de miel. Pero los resorts de bienestar de Maldivas — pensemos en Joali Being o Six Senses Laamu — están redefiniendo el retiro: programas de sueño, inmersión en el océano, ayurveda, y silencio absoluto sobre el agua. Es uno de los pocos lugares en el mundo donde puedes dejar de mirar tu teléfono sin esfuerzo."
+                : "When you think of the Maldives, you think honeymoons. But the Maldives' wellness resorts — think Joali Being or Six Senses Laamu — are redefining the retreat: sleep programs, ocean immersion, ayurveda, and absolute silence over water. It's one of the few places on earth where you stop checking your phone without trying."}
             </p>
 
             <p className="text-muted-foreground text-base leading-relaxed">
-              {isEs ? "Explora el destino completo en nuestra guía de " : "Explore the full destination in our "}
-              <Link to={localPath("/destinations/maldives")} className="text-gold hover:text-gold-light underline-offset-4 hover:underline">
+              {isEs
+                ? "Explora el destino completo en nuestra guía de "
+                : "Explore the full destination in our "}
+              <Link
+                to={localPath("/destinations/maldives")}
+                className="text-gold hover:text-gold-light underline-offset-4 hover:underline"
+              >
                 {isEs ? "Maldivas" : "Maldives guide"}
               </Link>
               .
             </p>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "Riviera Maya: bienestar más cerca de casa" : "Riviera Maya: wellness closer to home"}
+              {isEs
+                ? "Riviera Maya: bienestar más cerca de casa"
+                : "Riviera Maya: wellness closer to home"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
                 ? "Para clientes desde San Juan, "
                 : "For clients flying from San Juan, "}
-              <Link to={localPath("/destinations/mexico")} className="text-gold hover:text-gold-light underline-offset-4 hover:underline">
+              <Link
+                to={localPath("/destinations/mexico")}
+                className="text-gold hover:text-gold-light underline-offset-4 hover:underline"
+              >
                 {isEs ? "México" : "Mexico's Riviera Maya"}
               </Link>
               {isEs
@@ -294,11 +341,15 @@ const WellnessTravel = () => {
             </p>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "La ciencia detrás del descanso real" : "The science behind real rest"}
+              {isEs
+                ? "La ciencia detrás del descanso real"
+                : "The science behind real rest"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
-              {isEs ? "La investigación publicada en " : "Research published in "}
+              {isEs
+                ? "La investigación publicada en "
+                : "Research published in "}
               <a
                 href="https://www.cntraveler.com/story/the-science-of-wellness-travel"
                 target="_blank"
@@ -307,9 +358,7 @@ const WellnessTravel = () => {
               >
                 Condé Nast Traveler
               </a>
-              {isEs
-                ? " y el trabajo de "
-                : " and the work of "}
+              {isEs ? " y el trabajo de " : " and the work of "}
               <a
                 href="https://visitsweden.com/what-to-do/nature-outdoors/nature/"
                 target="_blank"
@@ -324,15 +373,20 @@ const WellnessTravel = () => {
             </p>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "Por qué la planificación importa más que el destino" : "Why planning matters more than destination"}
+              {isEs
+                ? "Por qué la planificación importa más que el destino"
+                : "Why planning matters more than destination"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
                 ? "Un retiro de bienestar mal planificado es solo un viaje cansado con yoga. Como "
                 : "A poorly planned wellness retreat is just a tired trip with yoga. As a "}
-              <Link to={localPath("/about")} className="text-gold hover:text-gold-light underline-offset-4 hover:underline">
-                {isEs ? "agencia boutique de viajes" : "boutique travel agency"}
+              <Link
+                to={localPath("/about")}
+                className="text-gold hover:text-gold-light underline-offset-4 hover:underline"
+              >
+                {isEs ? "agencia boutique de viajes" : "Boutique travel agency"}
               </Link>
               {isEs
                 ? ", construimos cada itinerario alrededor de tu sistema nervioso, no solo de tu calendario."
@@ -340,13 +394,15 @@ const WellnessTravel = () => {
             </p>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "Top 5 destinos de bienestar desde San Juan en 2026" : "Top 5 wellness destinations from San Juan in 2026"}
+              {isEs
+                ? "Top 5 destinos de bienestar desde San Juan en 2026"
+                : "Top 5 wellness destinations from San Juan in 2026"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Estos son los destinos que actualmente recomendamos a clientes en Puerto Rico que buscan un retiro de bienestar de lujo con vuelo eficiente desde SJU:"
-                : "These are the destinations we currently recommend to Puerto Rico clients looking for a luxury wellness retreat with an efficient flight out of SJU:"}
+                ? "Estos son los destinos que actualmente recomendamos a clientes en Puerto Rico que buscan un retiro de bienestar con vuelo eficiente desde SJU:"
+                : "These are the destinations we currently recommend to Puerto Rico clients looking for a wellness retreat with an efficient flight out of SJU:"}
             </p>
 
             <ol className="space-y-3 text-muted-foreground text-base leading-relaxed list-decimal pl-6 marker:text-gold marker:font-heading">
@@ -359,25 +415,41 @@ const WellnessTravel = () => {
                   : "— 3h 45min nonstop, same time zone, Mayan cenotes, temazcal and resorts like Chablé Yucatán, Maroma (Belmond) and Rosewood Mayakoba. Ideal for 4–5 nights."}
               </li>
               <li>
-                <strong className="text-foreground">{isEs ? "Maldivas (Joali Being / Six Senses Laamu)" : "Maldives (Joali Being / Six Senses Laamu)"}</strong>{" "}
+                <strong className="text-foreground">
+                  {isEs
+                    ? "Maldivas (Joali Being / Six Senses Laamu)"
+                    : "Maldives (Joali Being / Six Senses Laamu)"}
+                </strong>{" "}
                 {isEs
                   ? "— el estándar de oro mundial en wellness. Programas de sueño, ayurveda, terapia de respiración y silencio absoluto sobre el agua. Mínimo 7 noches."
                   : "— the global gold standard for wellness. Sleep programs, ayurveda, breathwork, and absolute silence over water. Minimum 7 nights."}
               </li>
               <li>
-                <strong className="text-foreground">{isEs ? "Costa Rica (Nayara Tented Camp, Kura Boutique)" : "Costa Rica (Nayara Tented Camp, Kura Boutique)"}</strong>{" "}
+                <strong className="text-foreground">
+                  {isEs
+                    ? "Costa Rica (Nayara Tented Camp, Kura Boutique)"
+                    : "Costa Rica (Nayara Tented Camp, Kura Boutique)"}
+                </strong>{" "}
                 {isEs
                   ? "— inmersión en selva tropical, baños de bosque (shinrin-yoku), aguas termales volcánicas. Vuelo directo desde SJU."
                   : "— rainforest immersion, forest bathing (shinrin-yoku), volcanic hot springs. Nonstop from SJU."}
               </li>
               <li>
-                <strong className="text-foreground">{isEs ? "Sedona, Arizona (Mii amo, Enchantment Resort)" : "Sedona, Arizona (Mii amo, Enchantment Resort)"}</strong>{" "}
+                <strong className="text-foreground">
+                  {isEs
+                    ? "Sedona, Arizona (Mii amo, Enchantment Resort)"
+                    : "Sedona, Arizona (Mii amo, Enchantment Resort)"}
+                </strong>{" "}
                 {isEs
                   ? "— retiros de vortex energético, all-inclusive de spa de 3 a 7 noches. No requiere pasaporte."
                   : "— vortex energy retreats, 3–7 night all-inclusive spa programs. No passport required."}
               </li>
               <li>
-                <strong className="text-foreground">{isEs ? "Toscana, Italia (Borgo Santo Pietro, COMO Castello del Nero)" : "Tuscany, Italy (Borgo Santo Pietro, COMO Castello del Nero)"}</strong>{" "}
+                <strong className="text-foreground">
+                  {isEs
+                    ? "Toscana, Italia (Borgo Santo Pietro, COMO Castello del Nero)"
+                    : "Tuscany, Italy (Borgo Santo Pietro, COMO Castello del Nero)"}
+                </strong>{" "}
                 {isEs
                   ? "— bienestar mediterráneo: cocina de granja a mesa, caminatas en viñedos y spas históricos. Ideal de 7 a 10 noches."
                   : "— Mediterranean wellness: farm-to-table cuisine, vineyard walks, and heritage spas. Ideal for 7–10 nights."}
@@ -385,7 +457,9 @@ const WellnessTravel = () => {
             </ol>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "7 señales de que necesitas un viaje de bienestar (no unas vacaciones)" : "7 signs you need a wellness trip — not a vacation"}
+              {isEs
+                ? "7 señales de que necesitas un viaje de bienestar (no unas vacaciones)"
+                : "7 signs you need a wellness trip — not a vacation"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
@@ -423,7 +497,9 @@ const WellnessTravel = () => {
             </ul>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "Itinerario ejemplo: 5 noches de bienestar en Riviera Maya desde SJU" : "Sample itinerary: 5-night wellness reset in Riviera Maya from SJU"}
+              {isEs
+                ? "Itinerario ejemplo: 5 noches de bienestar en Riviera Maya desde SJU"
+                : "Sample itinerary: 5-night wellness reset in Riviera Maya from SJU"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
@@ -435,31 +511,71 @@ const WellnessTravel = () => {
             <ul className="space-y-3 text-muted-foreground text-base leading-relaxed list-none pl-0">
               {(isEs
                 ? [
-                    ["Día 1", "Vuelo directo SJU → CUN en la mañana. Traslado privado a Chablé Yucatán. Cena ligera maya, sin Wi-Fi después de las 8 pm."],
-                    ["Día 2", "Ceremonia de cenote al amanecer. Masaje sound-healing de 90 min. Caminata silenciosa al atardecer."],
-                    ["Día 3", "Temazcal (cabaña de sudor maya) con chamán. Almuerzo plant-based. Yoga restaurativo nocturno."],
-                    ["Día 4", "Día abierto: spa privado, lectura, siesta. Solo se permite movimiento gentil."],
-                    ["Día 5", "Sesión de respiración al amanecer. Almuerzo de transición. Vuelo de regreso a SJU."],
-                    ["Día 6", "Regreso a casa renovado, no agotado. Recomendamos 24 h de buffer antes de volver al trabajo."],
+                    [
+                      "Día 1",
+                      "Vuelo directo SJU → CUN en la mañana. Traslado privado a Chablé Yucatán. Cena ligera maya, sin Wi-Fi después de las 8 pm.",
+                    ],
+                    [
+                      "Día 2",
+                      "Ceremonia de cenote al amanecer. Masaje sound-healing de 90 min. Caminata silenciosa al atardecer.",
+                    ],
+                    [
+                      "Día 3",
+                      "Temazcal (cabaña de sudor maya) con chamán. Almuerzo plant-based. Yoga restaurativo nocturno.",
+                    ],
+                    [
+                      "Día 4",
+                      "Día abierto: spa privado, lectura, siesta. Solo se permite movimiento gentil.",
+                    ],
+                    [
+                      "Día 5",
+                      "Sesión de respiración al amanecer. Almuerzo de transición. Vuelo de regreso a SJU.",
+                    ],
+                    [
+                      "Día 6",
+                      "Regreso a casa renovado, no agotado. Recomendamos 24 h de buffer antes de volver al trabajo.",
+                    ],
                   ]
                 : [
-                    ["Day 1", "Morning nonstop SJU → CUN. Private transfer to Chablé Yucatán. Light Mayan dinner, no Wi-Fi after 8 pm."],
-                    ["Day 2", "Sunrise cenote ceremony. 90-min sound-healing massage. Silent walk at sunset."],
-                    ["Day 3", "Temazcal (Mayan sweat lodge) with a shaman. Plant-based lunch. Restorative yoga in the evening."],
-                    ["Day 4", "Open day: private spa, reading, naps. Only gentle movement allowed."],
-                    ["Day 5", "Sunrise breathwork. Transition lunch. Return flight to SJU."],
-                    ["Day 6", "Home — restored, not wrecked. We recommend a 24-hour buffer before returning to work."],
+                    [
+                      "Day 1",
+                      "Morning nonstop SJU → CUN. Private transfer to Chablé Yucatán. Light Mayan dinner, no Wi-Fi after 8 pm.",
+                    ],
+                    [
+                      "Day 2",
+                      "Sunrise cenote ceremony. 90-min sound-healing massage. Silent walk at sunset.",
+                    ],
+                    [
+                      "Day 3",
+                      "Temazcal (Mayan sweat lodge) with a shaman. Plant-based lunch. Restorative yoga in the evening.",
+                    ],
+                    [
+                      "Day 4",
+                      "Open day: private spa, reading, naps. Only gentle movement allowed.",
+                    ],
+                    [
+                      "Day 5",
+                      "Sunrise breathwork. Transition lunch. Return flight to SJU.",
+                    ],
+                    [
+                      "Day 6",
+                      "Home — restored, not wrecked. We recommend a 24-hour buffer before returning to work.",
+                    ],
                   ]
               ).map(([day, desc], i) => (
                 <li key={i} className="flex items-start gap-4">
-                  <span className="font-heading text-gold text-sm tracking-[0.2em] uppercase shrink-0 w-16 pt-0.5">{day}</span>
+                  <span className="font-heading text-gold text-sm tracking-[0.2em] uppercase shrink-0 w-16 pt-0.5">
+                    {day}
+                  </span>
                   <span>{desc}</span>
                 </li>
               ))}
             </ul>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "Qué empacar (y qué dejar en casa)" : "What to pack — and what to leave at home"}
+              {isEs
+                ? "Qué empacar (y qué dejar en casa)"
+                : "What to pack — and what to leave at home"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
@@ -469,7 +585,9 @@ const WellnessTravel = () => {
             </p>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "¿Cuánto cuesta un retiro de bienestar de lujo en 2026?" : "What does a luxury wellness retreat cost in 2026?"}
+              {isEs
+                ? "¿Cuánto cuesta un retiro de bienestar en 2026?"
+                : "What does a wellness retreat cost in 2026?"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
@@ -479,21 +597,53 @@ const WellnessTravel = () => {
             </p>
 
             <ul className="space-y-2 text-muted-foreground text-base leading-relaxed list-none pl-0">
-              <li><span className="text-gold">•</span> <strong className="text-foreground">{isEs ? "Riviera Maya, 4 noches" : "Riviera Maya, 4 nights"}:</strong> $4,500 – $9,000 {isEs ? "por persona" : "per person"}</li>
-              <li><span className="text-gold">•</span> <strong className="text-foreground">{isEs ? "Costa Rica, 5 noches" : "Costa Rica, 5 nights"}:</strong> $5,800 – $11,000 {isEs ? "por persona" : "per person"}</li>
-              <li><span className="text-gold">•</span> <strong className="text-foreground">{isEs ? "Sedona, 5 noches" : "Sedona, 5 nights"}:</strong> $6,500 – $12,500 {isEs ? "por persona" : "per person"}</li>
-              <li><span className="text-gold">•</span> <strong className="text-foreground">{isEs ? "Maldivas, 7 noches" : "Maldives, 7 nights"}:</strong> $12,000 – $28,000+ {isEs ? "por persona" : "per person"}</li>
-              <li><span className="text-gold">•</span> <strong className="text-foreground">{isEs ? "Toscana, 7 noches" : "Tuscany, 7 nights"}:</strong> $9,500 – $18,000 {isEs ? "por persona" : "per person"}</li>
+              <li>
+                <span className="text-gold">•</span>{" "}
+                <strong className="text-foreground">
+                  {isEs ? "Riviera Maya, 4 noches" : "Riviera Maya, 4 nights"}:
+                </strong>{" "}
+                $4,500 – $9,000 {isEs ? "por persona" : "Per person"}
+              </li>
+              <li>
+                <span className="text-gold">•</span>{" "}
+                <strong className="text-foreground">
+                  {isEs ? "Costa Rica, 5 noches" : "Costa Rica, 5 nights"}:
+                </strong>{" "}
+                $5,800 – $11,000 {isEs ? "por persona" : "Per person"}
+              </li>
+              <li>
+                <span className="text-gold">•</span>{" "}
+                <strong className="text-foreground">
+                  {isEs ? "Sedona, 5 noches" : "Sedona, 5 nights"}:
+                </strong>{" "}
+                $6,500 – $12,500 {isEs ? "por persona" : "Per person"}
+              </li>
+              <li>
+                <span className="text-gold">•</span>{" "}
+                <strong className="text-foreground">
+                  {isEs ? "Maldivas, 7 noches" : "Maldives, 7 nights"}:
+                </strong>{" "}
+                $12,000 – $28,000+ {isEs ? "por persona" : "Per person"}
+              </li>
+              <li>
+                <span className="text-gold">•</span>{" "}
+                <strong className="text-foreground">
+                  {isEs ? "Toscana, 7 noches" : "Tuscany, 7 nights"}:
+                </strong>{" "}
+                $9,500 – $18,000 {isEs ? "por persona" : "Per person"}
+              </li>
             </ul>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "Por qué Puerto Rico es el punto de partida ideal" : "Why Puerto Rico is the ideal launchpad"}
+              {isEs
+                ? "Por qué Puerto Rico es el punto de partida ideal"
+                : "Why Puerto Rico is the ideal launchpad"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "San Juan (SJU) está geográficamente posicionado de forma única: a 4 horas o menos de la mayoría de los destinos de bienestar del Caribe, México y Centroamérica, con conexiones directas a Europa y excelente acceso a Estados Unidos. Eso significa menos horas en aviones, menos jetlag, y más horas en la hamaca. Como agencia de viajes de lujo boutique con base en Puerto Rico, conocemos cada conexión, cada lounge en SJU y cada chofer privado en el destino."
-                : "San Juan (SJU) is uniquely positioned: within 4 hours of most Caribbean, Mexican and Central American wellness destinations, with nonstop access to Europe and excellent connectivity to the U.S. mainland. That means fewer hours on planes, less jet lag, and more hours in the hammock. As a Puerto Rico–based luxury boutique travel agency, we know every connection, every SJU lounge and every private driver on the ground."}
+                ? "San Juan (SJU) está geográficamente posicionado de forma única: a 4 horas o menos de la mayoría de los destinos de bienestar del Caribe, México y Centroamérica, con conexiones directas a Europa y excelente acceso a Estados Unidos. Eso significa menos horas en aviones, menos jetlag, y más horas en la hamaca. Como agencia de viajes boutique con base en Puerto Rico, conocemos cada conexión, cada lounge en SJU y cada chofer privado en el destino."
+                : "San Juan (SJU) is uniquely positioned: within 4 hours of most Caribbean, Mexican and Central American wellness destinations, with nonstop access to Europe and excellent connectivity to the U.S. mainland. That means fewer hours on planes, less jet lag, and more hours in the hammock. As a Puerto Rico–based boutique travel agency, we know every connection, every SJU lounge and every private driver on the ground."}
             </p>
 
             <p className="text-foreground text-lg leading-relaxed font-heading italic mt-8">
@@ -501,12 +651,14 @@ const WellnessTravel = () => {
                 ? "El mejor viaje de bienestar es el que sigue trabajando para ti mucho después de regresar a casa."
                 : "The best wellness trip is the one that keeps working for you long after you come home."}
             </p>
-
           </div>
 
           {/* FAQ — AEO */}
           <section className="mt-16" aria-labelledby="wellness-faq-heading">
-            <h2 id="wellness-faq-heading" className="font-heading text-2xl md:text-3xl text-foreground mb-6">
+            <h2
+              id="wellness-faq-heading"
+              className="font-heading text-2xl md:text-3xl text-foreground mb-6"
+            >
               {isEs ? "Preguntas frecuentes" : "Frequently asked questions"}
             </h2>
             <div className="space-y-4">
@@ -514,20 +666,40 @@ const WellnessTravel = () => {
                 <details key={i} className="gold-border rounded-lg p-5 group">
                   <summary className="font-heading text-lg text-foreground cursor-pointer list-none flex justify-between items-center gap-4">
                     {f.q}
-                    <span className="text-gold transition-transform group-open:rotate-45 text-2xl leading-none">+</span>
+                    <span className="text-gold transition-transform group-open:rotate-45 text-2xl leading-none">
+                      +
+                    </span>
                   </summary>
-                  <p className="text-muted-foreground text-sm leading-relaxed mt-3">{f.a}</p>
+                  <p className="text-muted-foreground text-sm leading-relaxed mt-3">
+                    {f.a}
+                  </p>
                 </details>
               ))}
             </div>
           </section>
 
           {/* CTA */}
-          <p data-cta="contextual-service-cta" className="mt-12 mb-4 text-center text-muted-foreground text-base leading-relaxed">{isEs ? "¿Listo para un viaje wellness a tu medida? " : "Ready for a wellness trip built around you? "}<Link to={localPath("/viajes-de-lujo-desde-puerto-rico")} className="text-gold hover:text-gold-light underline font-semibold">{isEs ? "Explora nuestros servicios de viajes de lujo →" : "Explore our luxury travel services →"}</Link></p>
+          <p
+            data-cta="contextual-service-cta"
+            className="mt-12 mb-4 text-center text-muted-foreground text-base leading-relaxed"
+          >
+            {isEs
+              ? "¿Listo para un viaje wellness a tu medida? "
+              : "Ready for a wellness trip built around you? "}
+            <Link
+              to={localPath("/viajes-de-lujo-desde-puerto-rico")}
+              className="text-gold hover:text-gold-light underline font-semibold"
+            >
+              {isEs
+                ? "Explora nuestros servicios de viajes a medida →"
+                : "Explore our luxury travel services →"}
+            </Link>
+          </p>
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
-
             <h3 className="font-heading text-2xl text-foreground mb-3">
-              {isEs ? "¿Listo para invertir en tu bienestar?" : "Ready to invest in your wellbeing?"}
+              {isEs
+                ? "¿Listo para invertir en tu bienestar?"
+                : "Ready to invest in your wellbeing?"}
             </h3>
             <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">
               {isEs

@@ -16,13 +16,20 @@ import amaPhoto from "@/assets/rivers/ama-waterways.png";
 import avalonPhoto from "@/assets/rivers/avalon-waterways.png";
 import riversidePhoto from "@/assets/rivers/riverside-luxury-cruises.png";
 
-const riverImages = [danubeImg, rhineImg, seineImg, douroImg, nileImg, mekongImg];
+const riverImages = [
+  danubeImg,
+  rhineImg,
+  seineImg,
+  douroImg,
+  nileImg,
+  mekongImg,
+];
 import { FAQSection } from "@/components/FAQSection";
 import { RelatedArticles } from "@/components/RelatedArticles";
 
 const FAQ_ITEMS = [
   {
-    q: "¿Qué es un crucero fluvial de lujo y en qué se diferencia de un crucero de mar?",
+    q: "¿Qué es un crucero fluvial y en qué se diferencia de un crucero de mar?",
     a: "Los cruceros fluviales navegan por ríos icónicos como el Danubio, el Rin o el Duero en barcos más pequeños y elegantes, con acceso a ciudades históricas del interior de Europa que los cruceros marítimos no pueden alcanzar.",
   },
   {
@@ -35,28 +42,29 @@ const FAQ_ITEMS = [
   },
   {
     q: "¿Las excursiones en tierra están incluidas en el precio?",
-    a: "En las líneas de lujo fluviales como AmaWaterways, Avalon, y Riverside Luxury Cruises, las excursiones guiadas en cada puerto de escala suelen estar incluidas. Lo confirmamos según la línea y categoría seleccionada.",
+    a: "En las líneas fluviales como AmaWaterways, Avalon, y Riverside Luxury cruises, las excursiones guiadas en cada puerto de escala suelen estar incluidas. Lo confirmamos según la línea y categoría seleccionada.",
   },
 ];
 
 import { ORG_REF, WEBSITE_REF, buildGraph, breadcrumbList } from "@/lib/schema";
 
-const PAGE_URL = "https://www.sjuluxetravel.com/cruceros-fluviales-de-lujo-desde-puerto-rico";
+const PAGE_URL =
+  "https://www.sjuluxetravel.com/cruceros-fluviales-de-lujo-desde-puerto-rico";
 const schema = buildGraph(
   {
     "@type": "WebPage",
     "@id": `${PAGE_URL}#webpage`,
     url: PAGE_URL,
-    name: "Cruceros Fluviales de Lujo desde PR",
+    name: "Cruceros Fluviales desde PR",
     isPartOf: WEBSITE_REF,
     inLanguage: "es",
   },
   {
     "@type": "Service",
     "@id": `${PAGE_URL}#service`,
-    name: "Luxury River Cruise Planning from Puerto Rico",
+    name: "River Cruise Planning from Puerto Rico",
     description:
-      "Expertly planned luxury river cruise itineraries along Europe's iconic rivers for Puerto Rico travelers.",
+      "Expertly planned river cruise itineraries along Europe's iconic rivers for Puerto Rico travelers.",
     provider: ORG_REF,
     areaServed: { "@type": "State", name: "Puerto Rico" },
     serviceType: "River Cruise Planning",
@@ -64,36 +72,41 @@ const schema = buildGraph(
   },
   breadcrumbList([
     { name: "Home", url: "https://www.sjuluxetravel.com" },
-    { name: "Cruceros Fluviales de Lujo desde Puerto Rico", url: PAGE_URL },
-  ])
+    { name: "Cruceros Fluviales desde Puerto Rico", url: PAGE_URL },
+  ]),
 );
 
-
-const CrucerosFluviales = () => {
+const crucerosFluviales = () => {
   const { t, localPath } = useLanguage();
   const d = t.crucerosFluviales;
 
   return (
     <Layout>
       <SEOHead
-        title="Luxury River Cruises from Puerto Rico | SJU Luxe Travel"
-        description="Plan your luxury river cruise from PR with a certified AmaWaterways, Avalon and Riverside Luxury Cruises travel agent."
-        titleEs="Cruceros Fluviales de Lujo desde PR | SJU Luxe Travel"
-        descriptionEs="Planifica tu crucero fluvial de lujo desde PR con un agente certificado por AmaWaterways, Avalon y Riverside Luxury Cruises."
+        title="River cruises from Puerto Rico | SJU Luxe Travel"
+        description="Plan your luxury river cruise from PR with a certified AmaWaterways, Avalon and Riverside Luxury cruises travel agent."
+        titleEs="Cruceros Fluviales desde PR | SJU Luxe Travel"
+        descriptionEs="Planifica tu crucero fluvial desde PR con un agente certificado por AmaWaterways, Avalon y Riverside Luxury cruises."
         schemaJson={schema}
         emitHreflang
       />
 
       <article className="pt-32 pb-20 bg-background">
         <div className="container mx-auto px-6 max-w-3xl">
-          <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{d.label}</span>
+          <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">
+            {d.label}
+          </span>
           <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-8">
-            {d.h1} <span className="text-gold-gradient italic">{d.h1Highlight}</span>
+            {d.h1}{" "}
+            <span className="text-gold-gradient italic">{d.h1Highlight}</span>
           </h1>
 
           <div className="flex flex-wrap gap-3 mb-10">
             {d.certifications.map((cert, i) => (
-              <span key={i} className="inline-flex items-center gap-2 px-4 py-2 gold-border rounded-full text-xs font-body tracking-wide text-gold">
+              <span
+                key={i}
+                className="inline-flex items-center gap-2 px-4 py-2 gold-border rounded-full text-xs font-body tracking-wide text-gold"
+              >
                 <Award size={14} />
                 {cert}
               </span>
@@ -101,90 +114,195 @@ const CrucerosFluviales = () => {
           </div>
 
           <div className="prose-custom space-y-6">
-            <p className="text-muted-foreground text-base leading-relaxed" dangerouslySetInnerHTML={{ __html: d.introP }} />
+            <p
+              className="text-muted-foreground text-base leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: d.introP }}
+            />
 
-            <h2 className="font-heading text-2xl text-foreground mt-10">{d.h2Different}</h2>
-            <p className="text-muted-foreground text-base leading-relaxed">{d.differentP}</p>
+            <h2 className="font-heading text-2xl text-foreground mt-10">
+              {d.h2Different}
+            </h2>
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {d.differentP}
+            </p>
 
-            <h2 className="font-heading text-2xl text-foreground mt-10">{d.h2Certifications}</h2>
-            <p className="text-muted-foreground text-base leading-relaxed">{d.certificationsIntro}</p>
+            <h2 className="font-heading text-2xl text-foreground mt-10">
+              {d.h2Certifications}
+            </h2>
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {d.certificationsIntro}
+            </p>
 
-            <h3 className="font-heading text-xl text-foreground mt-8">{d.amaTitle}</h3>
+            <h3 className="font-heading text-xl text-foreground mt-8">
+              {d.amaTitle}
+            </h3>
             <div className="aspect-[4/3] overflow-hidden rounded-lg border border-border/30 mt-3 mb-4">
-              <img src={amaPhoto} alt="AmaWaterways luxury river ship" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              <img
+                src={amaPhoto}
+                alt="AmaWaterways river ship"
+                loading="lazy"
+                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+              />
             </div>
-            <img src={amaLogo} alt="AmaWaterways Certified Agent" className="w-36 rounded border border-border/30 mb-4 mx-auto" />
-            <p className="text-muted-foreground text-base leading-relaxed">{d.amaDesc}</p>
+            <img
+              src={amaLogo}
+              alt="AmaWaterways Certified Agent"
+              className="w-36 rounded border border-border/30 mb-4 mx-auto"
+            />
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {d.amaDesc}
+            </p>
 
-            <h3 className="font-heading text-xl text-foreground mt-8">{d.avalonTitle}</h3>
+            <h3 className="font-heading text-xl text-foreground mt-8">
+              {d.avalonTitle}
+            </h3>
             <div className="aspect-[4/3] overflow-hidden rounded-lg border border-border/30 mt-3 mb-4">
-              <img src={avalonPhoto} alt="Avalon Waterways river ship sailing past a hilltop castle" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              <img
+                src={avalonPhoto}
+                alt="Avalon Waterways river ship sailing past a hilltop castle"
+                loading="lazy"
+                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+              />
             </div>
-            <img src={avalonLogo} alt="Avalon Waterways Specialist" className="w-28 mb-4 mx-auto" />
-            <p className="text-muted-foreground text-base leading-relaxed">{d.avalonDesc}</p>
+            <img
+              src={avalonLogo}
+              alt="Avalon Waterways Specialist"
+              className="w-28 mb-4 mx-auto"
+            />
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {d.avalonDesc}
+            </p>
 
-            <h3 className="font-heading text-xl text-foreground mt-8">{d.riversideTitle}</h3>
+            <h3 className="font-heading text-xl text-foreground mt-8">
+              {d.riversideTitle}
+            </h3>
             <div className="aspect-[4/3] overflow-hidden rounded-lg border border-border/30 mt-3 mb-4">
-              <img src={riversidePhoto} alt="Riverside Luxury Cruises panoramic suite with river view" loading="lazy" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+              <img
+                src={riversidePhoto}
+                alt="Riverside Luxury cruises panoramic suite with river view"
+                loading="lazy"
+                className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+              />
             </div>
-            <img src={riversideLogo} alt="Riverside Luxury Cruises Specialist" className="w-28 rounded-full mb-4 mx-auto" />
-            <p className="text-muted-foreground text-base leading-relaxed">{d.riversideDesc}</p>
+            <img
+              src={riversideLogo}
+              alt="Riverside Luxury cruises Specialist"
+              className="w-28 rounded-full mb-4 mx-auto"
+            />
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {d.riversideDesc}
+            </p>
 
-            <h2 className="font-heading text-2xl text-foreground mt-10">{d.h2OtherLines}</h2>
-            <p className="text-muted-foreground text-base leading-relaxed">{d.otherLinesIntro}</p>
+            <h2 className="font-heading text-2xl text-foreground mt-10">
+              {d.h2OtherLines}
+            </h2>
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {d.otherLinesIntro}
+            </p>
 
-            <h3 className="font-heading text-xl text-foreground mt-8">{d.vikingTitle}</h3>
-            <p className="text-muted-foreground text-base leading-relaxed">{d.vikingDesc}</p>
+            <h3 className="font-heading text-xl text-foreground mt-8">
+              {d.vikingTitle}
+            </h3>
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {d.vikingDesc}
+            </p>
 
-            <h3 className="font-heading text-xl text-foreground mt-8">{d.uniworldTitle}</h3>
-            <p className="text-muted-foreground text-base leading-relaxed">{d.uniworldDesc}</p>
+            <h3 className="font-heading text-xl text-foreground mt-8">
+              {d.uniworldTitle}
+            </h3>
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {d.uniworldDesc}
+            </p>
 
-            <h3 className="font-heading text-xl text-foreground mt-8">{d.scenicTitle}</h3>
-            <p className="text-muted-foreground text-base leading-relaxed">{d.scenicDesc}</p>
+            <h3 className="font-heading text-xl text-foreground mt-8">
+              {d.scenicTitle}
+            </h3>
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {d.scenicDesc}
+            </p>
 
-            <h2 className="font-heading text-2xl text-foreground mt-10">{d.h2Destinations}</h2>
+            <h2 className="font-heading text-2xl text-foreground mt-10">
+              {d.h2Destinations}
+            </h2>
             {d.riverDestinations.map(([title, desc], i) => (
               <div key={i} className="mt-8">
                 <div className="aspect-[4/3] overflow-hidden rounded-lg border border-border/30 mb-4">
-                  <img src={riverImages[i]} alt={title} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105" />
+                  <img
+                    src={riverImages[i]}
+                    alt={title}
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
+                  />
                 </div>
-                <h3 className="font-heading text-xl text-foreground">{title}</h3>
-                <p className="text-muted-foreground text-base leading-relaxed mt-2">{desc}</p>
+                <h3 className="font-heading text-xl text-foreground">
+                  {title}
+                </h3>
+                <p className="text-muted-foreground text-base leading-relaxed mt-2">
+                  {desc}
+                </p>
               </div>
             ))}
 
-            <h2 className="font-heading text-2xl text-foreground mt-10">{d.h2Logistics}</h2>
-            <p className="text-muted-foreground text-base leading-relaxed">{d.logisticsIntro}</p>
+            <h2 className="font-heading text-2xl text-foreground mt-10">
+              {d.h2Logistics}
+            </h2>
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {d.logisticsIntro}
+            </p>
             <ol className="space-y-2 text-muted-foreground text-base leading-relaxed list-none">
               {d.logisticsSteps.map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className="text-gold font-semibold mt-0.5 min-w-[20px]">{i + 1}.</span>
+                  <span className="text-gold font-semibold mt-0.5 min-w-[20px]">
+                    {i + 1}.
+                  </span>
                   <span>{item}</span>
                 </li>
               ))}
             </ol>
-            <p className="text-muted-foreground text-base leading-relaxed mt-4">{d.logisticsP}</p>
-
-            
+            <p className="text-muted-foreground text-base leading-relaxed mt-4">
+              {d.logisticsP}
+            </p>
           </div>
 
           <RelatedArticles
             items={[
-              { title: "AmaWaterways vs Avalon vs Riverside: comparativa", href: "/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside", category: "Comparativa" },
-              { title: "Crucero fluvial por el Duero desde Puerto Rico", href: "/blog/crucero-fluvial-duero-desde-puerto-rico", category: "Duero" },
-              { title: "River cruising: la nueva generación", href: "/blog/river-cruising-new-generation", category: "Tendencias" },
+              {
+                title: "AmaWaterways vs Avalon vs Riverside: comparativa",
+                href: "/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside",
+                category: "Comparativa",
+              },
+              {
+                title: "Crucero fluvial por el Duero desde Puerto Rico",
+                href: "/blog/crucero-fluvial-duero-desde-puerto-rico",
+                category: "Duero",
+              },
+              {
+                title: "River cruising: la nueva generación",
+                href: "/blog/river-cruising-new-generation",
+                category: "Tendencias",
+              },
             ]}
           />
 
-          <FAQSection heading="Preguntas Frecuentes sobre Cruceros Fluviales" items={FAQ_ITEMS} />
-
+          <FAQSection
+            heading="Preguntas Frecuentes sobre cruceros Fluviales"
+            items={FAQ_ITEMS}
+          />
 
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">
-              {d.ctaTitle} <span className="text-gold-gradient italic">{d.ctaTitleHighlight}</span>
+              {d.ctaTitle}{" "}
+              <span className="text-gold-gradient italic">
+                {d.ctaTitleHighlight}
+              </span>
             </h3>
-            <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">{d.ctaDescription}</p>
-            <Link to={localPath("/contact")} className="inline-flex items-center gap-2 px-8 py-4 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-[0.15em] uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105">
+            <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">
+              {d.ctaDescription}
+            </p>
+            <Link
+              to={localPath("/contact")}
+              className="inline-flex items-center gap-2 px-8 py-4 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-[0.15em] uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105"
+            >
               {d.ctaButton}
               <ArrowRight size={16} />
             </Link>
@@ -195,4 +313,4 @@ const CrucerosFluviales = () => {
   );
 };
 
-export default CrucerosFluviales;
+export default crucerosFluviales;
