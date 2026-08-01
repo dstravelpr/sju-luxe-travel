@@ -380,6 +380,8 @@ export const en = {
     formSuccessBody: "Your consultation request has been sent. A luxury travel agent will reach out within 24 hours.",
     formSuccessButton: "Send Another Message",
     locationBanner: "The heart of the Caribbean — Your luxury travel agent for international destinations",
+    mapTitle: "Find Us",
+    mapNote: "I work remotely from home at this address. NCM Concierge has an established office in Caguas — this map shows my independent agent location in San Juan.",
   },
   viajesDeLujo: {
     label: "Your Private Travel Agent",
