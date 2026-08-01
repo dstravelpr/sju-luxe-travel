@@ -217,12 +217,11 @@ const Index = () => {
         <div className="absolute inset-0 bg-background/40" />
         <div className="relative z-10 container mx-auto px-6 text-center">
           <img src={logo} alt="SJU Luxe Travel" className="hidden md:block h-28 w-28 mx-auto mb-10 animate-fade-in object-contain" />
-          <h1 className="sr-only">Boutique Luxury Travel Agency in San Juan, Puerto Rico</h1>
-          <div aria-hidden="true" className="hero-title font-heading text-4xl md:text-6xl lg:text-7xl leading-[1.15] text-foreground mb-6 md:mb-8 animate-fade-in-up">
+          <h1 className="hero-title font-heading text-4xl md:text-6xl lg:text-7xl leading-[1.15] text-foreground mb-6 md:mb-8 animate-fade-in-up">
             {t.home.heroTitle1}
             <br />
             <span className="text-gold-gradient italic">{t.home.heroTitle2}</span>
-          </div>
+          </h1>
           <h2 className="hero-subtitle font-body text-[12px] md:text-sm tracking-[0.32em] uppercase text-gold mb-10 md:mb-12 animate-fade-in-up">
             {t.home.heroSubtitle}
           </h2>
