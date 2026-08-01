@@ -43,7 +43,7 @@ export const es: typeof en = {
   home: {
     heroTitle1: "Viajar no es un Lujo,",
     heroTitle2: "Es una Oportunidad",
-    heroAgencyLine1: "La Agencia de Viajes de Puerto Rico",
+    heroAgencyLine1: "Agencia de Viajes en Puerto Rico",
     heroAgencyLine2: "Itinerarios Hechos a la Medida",
     heroSubtitle: "Agencia de viajes boutique — San Juan, Puerto Rico",
     heroDescription:
