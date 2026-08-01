@@ -382,6 +382,8 @@ export const es: typeof en = {
     formSuccessBody: "Tu solicitud de consulta ha sido enviada. Un agente de viaje se comunicará contigo dentro de 24 horas.",
     formSuccessButton: "Enviar Otro Mensaje",
     locationBanner: "El corazón del Caribe — Tu agente de viaje para destinos internacionales",
+    mapTitle: "Encuéntranos",
+    mapNote: "Trabajo remotamente desde casa en esta dirección. NCM Concierge tiene una oficina establecida en Caguas — este mapa muestra mi ubicación como agente independiente en San Juan.",
   },
   viajesDeLujo: {
     label: "Tu Agente de Viaje Privado",
