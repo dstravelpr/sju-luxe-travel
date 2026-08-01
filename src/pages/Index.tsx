@@ -45,79 +45,123 @@ const FAQItem = ({ question, answer }: { question: string; answer: string }) => 
 
 import { ORG_ID, WEBSITE_REF, buildGraph } from "@/lib/schema";
 
-const schemaJson = buildGraph(
-  {
-    "@type": "WebPage",
-    "@id": "https://www.sjuluxetravel.com/#webpage",
-    url: "https://www.sjuluxetravel.com/",
-    name: "SJU Luxe Travel — Luxury Travel Agency in San Juan, Puerto Rico",
-    isPartOf: WEBSITE_REF,
-    about: { "@id": ORG_ID },
-    inLanguage: "en",
+const webPageEn = {
+  "@type": "WebPage",
+  "@id": "https://www.sjuluxetravel.com/#webpage",
+  url: "https://www.sjuluxetravel.com/",
+  name: "SJU Luxe Travel — Luxury Travel Agency in San Juan, Puerto Rico",
+  isPartOf: WEBSITE_REF,
+  about: { "@id": ORG_ID },
+  inLanguage: "en",
+};
+
+const webPageEs = {
+  "@type": "WebPage",
+  "@id": "https://www.sjuluxetravel.com/es#webpage",
+  url: "https://www.sjuluxetravel.com/es",
+  name: "Agencia de Viajes de Lujo en Puerto Rico — SJU Luxe Travel",
+  isPartOf: WEBSITE_REF,
+  about: { "@id": ORG_ID },
+  inLanguage: "es-PR",
+};
+
+const localBusiness = {
+  "@type": "LocalBusiness",
+  "@id": "https://www.sjuluxetravel.com/#localbusiness",
+  name: "SJU Luxe Travel",
+  image: "https://www.sjuluxetravel.com/og-image.jpg",
+  telephone: "+16179355714",
+  email: "info@sjuluxetravel.com",
+  url: "https://www.sjuluxetravel.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "San Juan",
+    addressRegion: "PR",
+    addressCountry: "US",
   },
-  {
-    "@type": "LocalBusiness",
-    "@id": "https://www.sjuluxetravel.com/#localbusiness",
-    name: "SJU Luxe Travel",
-    image: "https://www.sjuluxetravel.com/og-image.jpg",
-    telephone: "+16179355714",
-    email: "info@sjuluxetravel.com",
-    url: "https://www.sjuluxetravel.com",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "San Juan",
-      addressRegion: "PR",
-      addressCountry: "US",
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "18:00",
     },
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "09:00",
-        closes: "18:00",
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Saturday",
+      opens: "10:00",
+      closes: "16:00",
+    },
+  ],
+};
+
+const faqPageEn = {
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "¿Vale la pena contratar un agente de viaje?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sí. Un agente de viaje te da acceso a mejoras de habitación gratuitas, créditos de resort, check-in anticipado y atención personalizada 24/7 que no puedes obtener reservando directamente en línea.",
       },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Saturday",
-        opens: "10:00",
-        closes: "16:00",
+    },
+    {
+      "@type": "Question",
+      name: "¿Trabajan con clientes fuera de Puerto Rico?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sí, SJU Luxe Travel trabaja con clientes de todo Estados Unidos, el Caribe y América Latina. Somos completamente bilingües (inglés y español) y operamos de forma remota.",
       },
-    ],
-  },
-  {
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "¿Vale la pena contratar un agente de viaje?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Sí. Un agente de viaje te da acceso a mejoras de habitación gratuitas, créditos de resort, check-in anticipado y atención personalizada 24/7 que no puedes obtener reservando directamente en línea.",
-        },
+    },
+    {
+      "@type": "Question",
+      name: "Do you offer services in English?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, SJU Luxe Travel is fully bilingual. We serve English-speaking clients throughout the US, Caribbean, and Latin America with the same level of personalized luxury travel planning.",
       },
-      {
-        "@type": "Question",
-        name: "¿Trabajan con clientes fuera de Puerto Rico?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Sí, SJU Luxe Travel trabaja con clientes de todo Estados Unidos, el Caribe y América Latina. Somos completamente bilingües (inglés y español) y operamos de forma remota.",
-        },
+    },
+  ],
+};
+
+const faqPageEs = {
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "¿Qué es SJU Luxe Travel?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "SJU Luxe Travel es una agencia de viajes de lujo boutique con base en San Juan, Puerto Rico, especializada en itinerarios internacionales exclusivos, cruceros de lujo y lunas de miel a medida.",
       },
-      {
-        "@type": "Question",
-        name: "Do you offer services in English?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes, SJU Luxe Travel is fully bilingual. We serve English-speaking clients throughout the US, Caribbean, and Latin America with the same level of personalized luxury travel planning.",
-        },
+    },
+    {
+      "@type": "Question",
+      name: "¿Dónde está ubicada la agencia de viajes SJU Luxe Travel?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Estamos ubicados en San Juan, Puerto Rico, y atendemos clientes en toda la isla y la diáspora puertorriqueña.",
       },
-    ],
-  }
-);
+    },
+    {
+      "@type": "Question",
+      name: "¿Qué tipos de viajes planifica SJU Luxe Travel?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Nos especializamos en viajes de lujo internacionales, cruceros de lujo desde San Juan, cruceros fluviales por Europa, lunas de miel exclusivas y viajes corporativos de incentivo.",
+      },
+    },
+  ],
+};
+
+const schemaJsonEn = buildGraph(webPageEn, localBusiness, faqPageEn);
+const schemaJsonEs = buildGraph(webPageEs, localBusiness, faqPageEs);
+
 
 
 const Index = () => {
-  const { t, localPath } = useLanguage();
+  const { t, localPath, language } = useLanguage();
 
   const services = [
     { icon: Compass, title: t.home.services.curatedItineraries, description: t.home.services.curatedItinerariesDesc },
@@ -158,9 +202,9 @@ const Index = () => {
       <SEOHead
         title="SJU Luxe Travel | Luxury Travel Agency San Juan Puerto Rico"
         description="Boutique luxury travel agency in San Juan, Puerto Rico. Bespoke itineraries to the Maldives, Portugal, Mexico & beyond with exclusive concierge perks."
-        titleEs="Agencia de Viajes de Lujo en San Juan, PR | SJU Luxe Travel"
-        descriptionEs="Agencia boutique de viajes de lujo en San Juan, PR. Itinerarios a medida a Maldivas, Portugal, México y más, con beneficios exclusivos de concierge."
-        schemaJson={schemaJson}
+        titleEs="Agencia de Viajes de Lujo en Puerto Rico | SJU Luxe Travel"
+        descriptionEs="SJU Luxe Travel es tu agencia de viajes de lujo boutique en Puerto Rico. Itinerarios exclusivos, cruceros de lujo desde San Juan, lunas de miel y más. Consulta gratis."
+        schemaJson={language === "es" ? schemaJsonEs : schemaJsonEn}
         emitHreflang
       />
 
@@ -173,12 +217,11 @@ const Index = () => {
         <div className="absolute inset-0 bg-background/40" />
         <div className="relative z-10 container mx-auto px-6 text-center">
           <img src={logo} alt="SJU Luxe Travel" className="hidden md:block h-28 w-28 mx-auto mb-10 animate-fade-in object-contain" />
-          <h1 className="sr-only">Boutique Luxury Travel Agency in San Juan, Puerto Rico</h1>
-          <div aria-hidden="true" className="hero-title font-heading text-4xl md:text-6xl lg:text-7xl leading-[1.15] text-foreground mb-6 md:mb-8 animate-fade-in-up">
+          <h1 className="hero-title font-heading text-4xl md:text-6xl lg:text-7xl leading-[1.15] text-foreground mb-6 md:mb-8 animate-fade-in-up">
             {t.home.heroTitle1}
             <br />
             <span className="text-gold-gradient italic">{t.home.heroTitle2}</span>
-          </div>
+          </h1>
           <h2 className="hero-subtitle font-body text-[12px] md:text-sm tracking-[0.32em] uppercase text-gold mb-10 md:mb-12 animate-fade-in-up">
             {t.home.heroSubtitle}
           </h2>
