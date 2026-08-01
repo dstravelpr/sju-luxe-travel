@@ -340,18 +340,21 @@ const ROOT_CONTENT_ES = {
 // Route manifest — single source of truth for hreflang + sitemap
 // locales: which language variants exist on disk (default = canonical URL)
 // ---------------------------------------------------------------
+const SINGLE_LOCALE_PAGES = new Set(["/agencia-de-viajes-puerto-rico"]);
+
 const ROUTE_MANIFEST = [
   { path: "/", locales: ["default", "en", "es"], type: "home", hreflang: true },
   ...Object.keys(pages).map((p) => {
     const isBlogPost = p.startsWith("/blog/");
+    const isSingle = isBlogPost || SINGLE_LOCALE_PAGES.has(p);
     const hasEn = !!pagesEn[p];
     return {
       path: p,
-      // Blog posts: single language, NO hreflang (per audit).
+      // Blog posts and Spanish-only landing pages: single language, NO hreflang.
       // Non-blog pages that have an EN translation get all three variants.
-      locales: isBlogPost ? ["default"] : hasEn ? ["default", "en", "es"] : ["default", "es"],
+      locales: isSingle ? ["default"] : hasEn ? ["default", "en", "es"] : ["default", "es"],
       type: isBlogPost ? "blog-post" : p === "/blog" ? "blog-list" : p === "/about" ? "about" : p === "/contact" ? "contact" : pages[p].service ? "service" : "webpage",
-      hreflang: !isBlogPost && hasEn, // only emit hreflang when a full EN/ES/x-default set exists
+      hreflang: !isSingle && hasEn, // only emit hreflang when a full EN/ES/x-default set exists
     };
   }),
 ];
