@@ -281,6 +281,24 @@ const Footer = () => {
                     href: "https://share.google/ahCukdIzbzs4A57sc",
                     label: "SJU Luxe Travel on Google",
                   },
+                  {
+                    icon: (props: {
+                      size?: number;
+                      "aria-hidden"?: boolean;
+                    }) => (
+                      <svg
+                        width={props.size}
+                        height={props.size}
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden={props["aria-hidden"]}
+                      >
+                        <path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.74 1.18 0 2.21-1.04 3.76-.74.81.16 2.05.55 2.76 1.45-2.26 1.39-1.91 5.05.22 6.13-.57 1.5-1.31 2.99-2.82 4.39zM12.03 7.25c-.15-2.73 2.9-4.86 5.45-4.11.39 1.72-.69 4.14-3.4 4.24-.61-.03-1.94-.04-2.05-.13z" />
+                      </svg>
+                    ),
+                    href: "https://maps.apple.com/p/.bHFuB9NFWe9Nz",
+                    label: "SJU Luxe Travel on Apple Maps",
+                  },
                 ].map(({ icon: Icon, href, label }) => (
                   <a
                     key={href}
