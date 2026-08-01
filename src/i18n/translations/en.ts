@@ -41,7 +41,7 @@ export const en = {
   home: {
     heroTitle1: "Travel is not a Luxury,",
     heroTitle2: "It's an Opportunity",
-    heroAgencyLine1: "The Travel Agency of Puerto Rico",
+    heroAgencyLine1: "Travel Agency in Puerto Rico",
     heroAgencyLine2: "Itineraries Made to Measure",
     heroSubtitle: "Boutique travel agency — San Juan, Puerto Rico",
     heroDescription:
