@@ -161,7 +161,7 @@ const schemaJsonEs = buildGraph(webPageEs, localBusiness, faqPageEs);
 
 
 const Index = () => {
-  const { t, localPath } = useLanguage();
+  const { t, localPath, language } = useLanguage();
 
   const services = [
     { icon: Compass, title: t.home.services.curatedItineraries, description: t.home.services.curatedItinerariesDesc },
