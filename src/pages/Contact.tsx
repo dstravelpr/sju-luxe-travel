@@ -79,22 +79,6 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="space-y-3 mb-10">
-              <h3 className="font-heading text-sm text-foreground">{t.contact.mapTitle}</h3>
-              <div className="gold-border rounded-lg overflow-hidden aspect-[4/3]">
-                <iframe
-                  title={t.contact.mapTitle}
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.6799285294637!2d-66.0635516!3d18.4528361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ad8ef8f5da6549%3A0x9dbe0247a3e3221a!2sSJU%20Luxe%20Travel%20%7C%20Agente%20Independiente%20de%20NCM%20Concierge!5e0!3m2!1sen!2spr!4v1785587099809!5m2!1sen!2spr"
-                  className="w-full h-full border-0"
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                />
-              </div>
-              <p className="text-muted-foreground text-[11px] leading-relaxed">
-                {t.contact.mapNote}
-              </p>
-            </div>
 
             <div className="gold-border rounded-lg p-5">
                 <h3 className="font-heading text-sm text-foreground mb-3">{t.contact.whyChoose}</h3>
@@ -187,6 +171,23 @@ const Contact = () => {
                   </button>
                 </form>
               )}
+
+              <div className="mt-10 space-y-3">
+                <h3 className="font-heading text-sm text-foreground">{t.contact.mapTitle}</h3>
+                <div className="gold-border rounded-lg overflow-hidden aspect-[4/3] md:aspect-[16/9]">
+                  <iframe
+                    title={t.contact.mapTitle}
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.6799285294637!2d-66.0635516!3d18.4528361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80ad8ef8f5da6549%3A0x9dbe0247a3e3221a!2sSJU%20Luxe%20Travel%20%7C%20Agente%20Independiente%20de%20NCM%20Concierge!5e0!3m2!1sen!2spr!4v1785587099809!5m2!1sen!2spr"
+                    className="w-full h-full border-0"
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                  />
+                </div>
+                <p className="text-muted-foreground text-[11px] leading-relaxed">
+                  {t.contact.mapNote}
+                </p>
+              </div>
             </div>
           </div>
         </div>
