@@ -123,6 +123,7 @@ const App = () => (
                   />
                 ))}
                 <Route path="/blog/do-travel-agents-really-" element={<RedirectBlog to="/blog/do-travel-agents-really-help-save-money" />} />
+                <Route path="/agencia-de-viajes-puerto-rico" element={<AgenciaDeViajesPuertoRico />} />
                 <Route path="/blog/do-travel-agents-really" element={<RedirectBlog to="/blog/do-travel-agents-really-help-save-money" />} />
                 <Route path="/en/*" element={<EnRedirect />} />
                 <Route path="*" element={<NotFound />} />
