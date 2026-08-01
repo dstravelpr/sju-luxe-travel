@@ -41,6 +41,8 @@ export const en = {
   home: {
     heroTitle1: "Travel is not a Luxury,",
     heroTitle2: "It's an Opportunity",
+    heroAgencyLine1: "The Travel Agency of Puerto Rico",
+    heroAgencyLine2: "Made to Measure",
     heroSubtitle: "Boutique travel agency — San Juan, Puerto Rico",
     heroDescription:
       "Your bespoke travel itinerary planner for extraordinary international destinations. We specialize in private guided tours and intentional, tailored travel experiences — from overwater villas in the Maldives to cruises departing from San Juan, the sun-kissed coasts of Portugal, and the vibrant culture of Mexico. A boutique travel agency, not a large tour operator.",
