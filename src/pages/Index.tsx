@@ -297,9 +297,16 @@ const Index = () => {
               {t.home.heroTitle2}
             </span>
           </h1>
-          <h2 className="hero-subtitle font-body text-[12px] md:text-sm tracking-[0.32em] uppercase text-gold mb-10 md:mb-12 animate-fade-in-up">
-            {t.home.heroSubtitle}
+          <h2 className="hero-subtitle font-heading text-2xl md:text-3xl lg:text-4xl leading-tight text-foreground mb-4 animate-fade-in-up">
+            {t.home.heroAgencyLine1}
+            <br />
+            <span className="text-gold-gradient italic">
+              {t.home.heroAgencyLine2}
+            </span>
           </h2>
+          <p className="hero-tagline font-body text-[12px] md:text-sm tracking-[0.32em] uppercase text-gold mb-10 md:mb-12 animate-fade-in-up">
+            {t.home.heroSubtitle}
+          </p>
           <div className="flex justify-center animate-fade-in-delay">
             <Link
               to={localPath("/contact")}
