@@ -202,9 +202,9 @@ const Index = () => {
       <SEOHead
         title="SJU Luxe Travel | Luxury Travel Agency San Juan Puerto Rico"
         description="Boutique luxury travel agency in San Juan, Puerto Rico. Bespoke itineraries to the Maldives, Portugal, Mexico & beyond with exclusive concierge perks."
-        titleEs="Agencia de Viajes de Lujo en San Juan, PR | SJU Luxe Travel"
-        descriptionEs="Agencia boutique de viajes de lujo en San Juan, PR. Itinerarios a medida a Maldivas, Portugal, México y más, con beneficios exclusivos de concierge."
-        schemaJson={schemaJson}
+        titleEs="Agencia de Viajes de Lujo en Puerto Rico | SJU Luxe Travel"
+        descriptionEs="SJU Luxe Travel es tu agencia de viajes de lujo boutique en Puerto Rico. Itinerarios exclusivos, cruceros de lujo desde San Juan, lunas de miel y más. Consulta gratis."
+        schemaJson={language === "es" ? schemaJsonEs : schemaJsonEn}
         emitHreflang
       />
 
