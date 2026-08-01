@@ -45,75 +45,119 @@ const FAQItem = ({ question, answer }: { question: string; answer: string }) => 
 
 import { ORG_ID, WEBSITE_REF, buildGraph } from "@/lib/schema";
 
-const schemaJson = buildGraph(
-  {
-    "@type": "WebPage",
-    "@id": "https://www.sjuluxetravel.com/#webpage",
-    url: "https://www.sjuluxetravel.com/",
-    name: "SJU Luxe Travel — Luxury Travel Agency in San Juan, Puerto Rico",
-    isPartOf: WEBSITE_REF,
-    about: { "@id": ORG_ID },
-    inLanguage: "en",
+const webPageEn = {
+  "@type": "WebPage",
+  "@id": "https://www.sjuluxetravel.com/#webpage",
+  url: "https://www.sjuluxetravel.com/",
+  name: "SJU Luxe Travel — Luxury Travel Agency in San Juan, Puerto Rico",
+  isPartOf: WEBSITE_REF,
+  about: { "@id": ORG_ID },
+  inLanguage: "en",
+};
+
+const webPageEs = {
+  "@type": "WebPage",
+  "@id": "https://www.sjuluxetravel.com/es#webpage",
+  url: "https://www.sjuluxetravel.com/es",
+  name: "Agencia de Viajes de Lujo en Puerto Rico — SJU Luxe Travel",
+  isPartOf: WEBSITE_REF,
+  about: { "@id": ORG_ID },
+  inLanguage: "es-PR",
+};
+
+const localBusiness = {
+  "@type": "LocalBusiness",
+  "@id": "https://www.sjuluxetravel.com/#localbusiness",
+  name: "SJU Luxe Travel",
+  image: "https://www.sjuluxetravel.com/og-image.jpg",
+  telephone: "+16179355714",
+  email: "info@sjuluxetravel.com",
+  url: "https://www.sjuluxetravel.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "San Juan",
+    addressRegion: "PR",
+    addressCountry: "US",
   },
-  {
-    "@type": "LocalBusiness",
-    "@id": "https://www.sjuluxetravel.com/#localbusiness",
-    name: "SJU Luxe Travel",
-    image: "https://www.sjuluxetravel.com/og-image.jpg",
-    telephone: "+16179355714",
-    email: "info@sjuluxetravel.com",
-    url: "https://www.sjuluxetravel.com",
-    address: {
-      "@type": "PostalAddress",
-      addressLocality: "San Juan",
-      addressRegion: "PR",
-      addressCountry: "US",
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "09:00",
+      closes: "18:00",
     },
-    openingHoursSpecification: [
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "09:00",
-        closes: "18:00",
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Saturday",
+      opens: "10:00",
+      closes: "16:00",
+    },
+  ],
+};
+
+const faqPageEn = {
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "¿Vale la pena contratar un agente de viaje?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sí. Un agente de viaje te da acceso a mejoras de habitación gratuitas, créditos de resort, check-in anticipado y atención personalizada 24/7 que no puedes obtener reservando directamente en línea.",
       },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Saturday",
-        opens: "10:00",
-        closes: "16:00",
+    },
+    {
+      "@type": "Question",
+      name: "¿Trabajan con clientes fuera de Puerto Rico?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sí, SJU Luxe Travel trabaja con clientes de todo Estados Unidos, el Caribe y América Latina. Somos completamente bilingües (inglés y español) y operamos de forma remota.",
       },
-    ],
-  },
-  {
-    "@type": "FAQPage",
-    mainEntity: [
-      {
-        "@type": "Question",
-        name: "¿Vale la pena contratar un agente de viaje?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Sí. Un agente de viaje te da acceso a mejoras de habitación gratuitas, créditos de resort, check-in anticipado y atención personalizada 24/7 que no puedes obtener reservando directamente en línea.",
-        },
+    },
+    {
+      "@type": "Question",
+      name: "Do you offer services in English?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes, SJU Luxe Travel is fully bilingual. We serve English-speaking clients throughout the US, Caribbean, and Latin America with the same level of personalized luxury travel planning.",
       },
-      {
-        "@type": "Question",
-        name: "¿Trabajan con clientes fuera de Puerto Rico?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Sí, SJU Luxe Travel trabaja con clientes de todo Estados Unidos, el Caribe y América Latina. Somos completamente bilingües (inglés y español) y operamos de forma remota.",
-        },
+    },
+  ],
+};
+
+const faqPageEs = {
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "¿Qué es SJU Luxe Travel?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "SJU Luxe Travel es una agencia de viajes de lujo boutique con base en San Juan, Puerto Rico, especializada en itinerarios internacionales exclusivos, cruceros de lujo y lunas de miel a medida.",
       },
-      {
-        "@type": "Question",
-        name: "Do you offer services in English?",
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: "Yes, SJU Luxe Travel is fully bilingual. We serve English-speaking clients throughout the US, Caribbean, and Latin America with the same level of personalized luxury travel planning.",
-        },
+    },
+    {
+      "@type": "Question",
+      name: "¿Dónde está ubicada la agencia de viajes SJU Luxe Travel?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Estamos ubicados en San Juan, Puerto Rico, y atendemos clientes en toda la isla y la diáspora puertorriqueña.",
       },
-    ],
-  }
-);
+    },
+    {
+      "@type": "Question",
+      name: "¿Qué tipos de viajes planifica SJU Luxe Travel?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Nos especializamos en viajes de lujo internacionales, cruceros de lujo desde San Juan, cruceros fluviales por Europa, lunas de miel exclusivas y viajes corporativos de incentivo.",
+      },
+    },
+  ],
+};
+
+const schemaJsonEn = buildGraph(webPageEn, localBusiness, faqPageEn);
+const schemaJsonEs = buildGraph(webPageEs, localBusiness, faqPageEs);
+
 
 
 const Index = () => {
