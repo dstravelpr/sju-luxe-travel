@@ -15,7 +15,7 @@ const content = {
     lastUpdated: "Last updated: April 12, 2026",
     introTitle: "1. Introduction",
     introBody:
-      'SJU Luxe Travel ("we," "us," or "our") is a boutique luxury travel agency based in San Juan, Puerto Rico. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website <a href="https://www.sjuluxetravel.com" class="text-gold underline">www.sjuluxetravel.com</a> or interact with our services.',
+      'SJU Luxe Travel ("we," "us," or "our") is a boutique travel agency based in San Juan, Puerto Rico. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website <a href="https://www.sjuluxetravel.com" class="text-gold underline">www.sjuluxetravel.com</a> or interact with our services.',
     infoCollectTitle: "2. Information We Collect",
     infoProvidedTitle: "Personal Information You Provide",
     infoProvidedIntro:
@@ -70,8 +70,7 @@ const content = {
     securityBody:
       "We implement reasonable security measures to protect your personal information. However, no method of transmission over the internet is 100% secure. We cannot guarantee absolute security of your data.",
     rightsTitle: "7. Your Rights",
-    rightsIntro:
-      "Depending on your location, you may have the right to:",
+    rightsIntro: "Depending on your location, you may have the right to:",
     rightsItems: [
       "Access the personal information we hold about you",
       "Request correction of inaccurate information",
@@ -88,7 +87,8 @@ const content = {
     changesBody:
       'We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last updated" date.',
     contactTitle: "10. Contact Us",
-    contactIntro: "If you have questions about this Privacy Policy, please contact us:",
+    contactIntro:
+      "If you have questions about this Privacy Policy, please contact us:",
     contactName: "SJU Luxe Travel",
     contactLocation: "San Juan, Puerto Rico",
     contactEmailLabel: "Email:",
@@ -107,7 +107,7 @@ const content = {
     lastUpdated: "Última actualización: 12 de abril de 2026",
     introTitle: "1. Introducción",
     introBody:
-      'SJU Luxe Travel ("nosotros") es una agencia de viajes de lujo boutique con sede en San Juan, Puerto Rico. Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos su información cuando visita nuestro sitio web <a href="https://www.sjuluxetravel.com" class="text-gold underline">www.sjuluxetravel.com</a> o interactúa con nuestros servicios.',
+      'SJU Luxe Travel ("nosotros") es una agencia de viajes boutique con sede en San Juan, Puerto Rico. Esta Política de Privacidad explica cómo recopilamos, usamos, divulgamos y protegemos su información cuando visita nuestro sitio web <a href="https://www.sjuluxetravel.com" class="text-gold underline">www.sjuluxetravel.com</a> o interactúa con nuestros servicios.',
     infoCollectTitle: "2. Información que Recopilamos",
     infoProvidedTitle: "Información Personal que Usted Proporciona",
     infoProvidedIntro:
@@ -162,8 +162,7 @@ const content = {
     securityBody:
       "Implementamos medidas de seguridad razonables para proteger su información personal. Sin embargo, ningún método de transmisión por internet es 100% seguro. No podemos garantizar la seguridad absoluta de sus datos.",
     rightsTitle: "7. Sus Derechos",
-    rightsIntro:
-      "Dependiendo de su ubicación, puede tener derecho a:",
+    rightsIntro: "Dependiendo de su ubicación, puede tener derecho a:",
     rightsItems: [
       "Acceder a la información personal que tenemos sobre usted",
       "Solicitar la corrección de información inexacta",
@@ -215,7 +214,10 @@ const Privacy = () => {
         canonical={t.canonical}
         breadcrumbs={[
           { name: t.breadcrumbHome, url: "https://www.sjuluxetravel.com" },
-          { name: t.breadcrumbPrivacy, url: "https://www.sjuluxetravel.com/privacy" },
+          {
+            name: t.breadcrumbPrivacy,
+            url: "https://www.sjuluxetravel.com/privacy",
+          },
         ]}
       />
 
@@ -340,21 +342,24 @@ const Privacy = () => {
                 </li>
                 <li>
                   {t.contactPhoneLabel}{" "}
-                  <a
-                    href={`tel:+16179355714`}
-                    className="text-gold underline"
-                  >
+                  <a href={`tel:+16179355714`} className="text-gold underline">
                     {t.contactPhone}
                   </a>
                 </li>
               </ul>
             </div>
             <div className="mt-12 pt-6 border-t border-gold/20 text-sm text-muted-foreground">
-              <Link to={localPath("/")} className="text-gold hover:text-gold-light underline">
+              <Link
+                to={localPath("/")}
+                className="text-gold hover:text-gold-light underline"
+              >
                 {language === "es" ? "← Volver al inicio" : "← Back to home"}
               </Link>
               {" · "}
-              <Link to={localPath("/contact")} className="text-gold hover:text-gold-light underline">
+              <Link
+                to={localPath("/contact")}
+                className="text-gold hover:text-gold-light underline"
+              >
                 {language === "es" ? "Contáctanos" : "Contact us"}
               </Link>
             </div>

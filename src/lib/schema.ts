@@ -33,7 +33,7 @@ export interface BreadcrumbCrumb {
 
 /** Build a BreadcrumbList node from an ordered list of crumbs. */
 export const breadcrumbList = (
-  crumbs: BreadcrumbCrumb[]
+  crumbs: BreadcrumbCrumb[],
 ): Record<string, unknown> => ({
   "@type": "BreadcrumbList",
   itemListElement: crumbs.map((c, i) => ({

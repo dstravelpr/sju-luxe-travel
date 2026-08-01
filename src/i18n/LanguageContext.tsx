@@ -1,4 +1,10 @@
-import { createContext, useContext, useMemo, useEffect, type ReactNode } from "react";
+import {
+  createContext,
+  useContext,
+  useMemo,
+  useEffect,
+  type ReactNode,
+} from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { en } from "./translations/en";
 import { es } from "./translations/es";
@@ -13,7 +19,9 @@ interface LanguageContextType {
   localPath: (path: string) => string;
 }
 
-const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
+const LanguageContext = createContext<LanguageContextType | undefined>(
+  undefined,
+);
 
 const translations: Record<Language, Translations> = { en, es };
 
@@ -32,7 +40,11 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     document.documentElement.lang = language === "es" ? "es-PR" : "en";
-    try { localStorage.setItem("lang", language); } catch { /* noop */ }
+    try {
+      localStorage.setItem("lang", language);
+    } catch {
+      /* noop */
+    }
   }, [language]);
 
   const setLanguage = (lang: Language) => {
@@ -52,7 +64,7 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const value = useMemo(
     () => ({ language, setLanguage, t: translations[language], localPath }),
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [language, location.pathname]
+    [language, location.pathname],
   );
 
   return (

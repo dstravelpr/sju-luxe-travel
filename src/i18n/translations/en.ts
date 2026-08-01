@@ -8,8 +8,8 @@ export const en = {
     planYourJourney: "Plan Your Journey",
     tripsFromPR: "Trips from Puerto Rico",
     honeymoon: "Honeymoon",
-    luxuryCruises: "Luxury Cruises",
-    riverCruises: "River Cruises",
+    luxuryCruises: "Cruises",
+    riverCruises: "River cruises",
     maldives: "Maldives",
     portugal: "Portugal",
     mexico: "Mexico",
@@ -17,7 +17,8 @@ export const en = {
   footer: {
     tagline: "Travel is not a Luxury, It's an",
     taglineHighlight: "Opportunity",
-    description: "Boutique luxury travel agency based in San Juan, Puerto Rico. We craft bespoke, intentional travel experiences with exclusive NCM Concierge perks for clients across the US, Caribbean, and Latin America.",
+    description:
+      "Boutique travel agency based in San Juan, Puerto Rico. We craft bespoke, intentional travel experiences with exclusive NCM Concierge perks for clients across the US, Caribbean, and Latin America.",
     explore: "Explore",
     contact: "Contact",
     location: "San Juan, Puerto Rico",
@@ -26,52 +27,67 @@ export const en = {
     fullName: "Full Name",
     emailAddress: "Email Address",
     subscribe: "Subscribe",
-    independentAgent: "Independent Agent of NCM Concierge, part of Travel Leaders",
-    boutiqueAgency: "Boutique Luxury Travel Agency — San Juan, Puerto Rico",
+    independentAgent:
+      "Independent Agent of NCM Concierge, part of Travel Leaders",
+    boutiqueAgency: "Boutique travel agency — San Juan, Puerto Rico",
     privacyPolicy: "Privacy Policy",
     termsOfService: "Terms of Service",
     allRightsReserved: "All rights reserved.",
     phoneWhatsapp: "Phone & WhatsApp",
     email: "Email",
     licensedIn: "Licensed in Florida, California, Washington & Iowa",
-    bilingual: "Bilingual luxury travel agent — English & Spanish",
+    bilingual: "Bilingual travel agent — English & Spanish",
   },
   home: {
     heroTitle1: "Travel is not a Luxury,",
     heroTitle2: "It's an Opportunity",
-    heroSubtitle: "Boutique Luxury Travel Agency — San Juan, Puerto Rico",
-    heroDescription: "Your bespoke travel itinerary planner for extraordinary international destinations. We specialize in private guided tours and intentional luxury travel experiences — from overwater villas in the Maldives to luxury cruises departing from San Juan, the sun-kissed coasts of Portugal, and the vibrant culture of Mexico. A boutique travel agency, not a large tour operator.",
+    heroSubtitle: "Boutique travel agency — San Juan, Puerto Rico",
+    heroDescription:
+      "Your bespoke travel itinerary planner for extraordinary international destinations. We specialize in private guided tours and intentional, tailored travel experiences — from overwater villas in the Maldives to cruises departing from San Juan, the sun-kissed coasts of Portugal, and the vibrant culture of Mexico. A boutique travel agency, not a large tour operator.",
+    budgetNote:
+      "Every budget, thoughtfully planned — from smart, affordable getaways to fully bespoke premium journeys. You set the budget; we make it go further.",
     exploreDestinations: "Explore Destinations",
     startPlanning: "Start Planning",
     philosophyLabel: "Our Philosophy",
     philosophyTitle1: "Intentional Travel,",
     philosophyTitle2: "Extraordinary Memories",
-    philosophyP1: "SJU Luxe Travel is a boutique luxury travel agency based in San Juan, Puerto Rico, specializing in intentional, experience-driven travel. We believe travel is not a luxury — it's an opportunity to slow down, connect, and live more fully.",
-    philosophyP2: "Our approach blends expert planning, insider knowledge, and firsthand experience to ensure every trip is thoughtfully designed — not rushed, generic, or overwhelming. From honeymoons and milestone celebrations to cultural immersions and wellness retreats, we tailor each bespoke itinerary around what matters most to you.",
-    philosophyP3: "With over a decade of luxury sales experience across six continents, founder Daniel Santiago Díaz is a certified bilingual travel professional and independent agent of NCM Concierge, part of Travel Leaders — one of the most respected concierge travel networks in the Americas. As a private travel concierge serving the Caribbean and beyond, Daniel brings unparalleled expertise to every journey — from luxury solo travel for women to luxury cruises departing from San Juan and exclusive destinations without mass tourism.",
+    philosophyP1:
+      "SJU Luxe Travel is a boutique travel agency based in San Juan, Puerto Rico, specializing in intentional, experience-driven travel. We believe travel is not a luxury — it's an opportunity to slow down, connect, and live more fully.",
+    philosophyP2:
+      "Our approach blends expert planning, insider knowledge, and firsthand experience to ensure every trip is thoughtfully designed — not rushed, generic, or overwhelming. From honeymoons and milestone celebrations to cultural immersions and wellness retreats, we tailor each bespoke itinerary around what matters most to you.",
+    philosophyP3:
+      "With over a decade of high-end sales experience across six continents, founder Daniel Santiago Díaz is a certified bilingual travel professional and independent agent of NCM Concierge, part of Travel Leaders — one of the most respected concierge travel networks in the Americas. As a private travel concierge serving the Caribbean and beyond, Daniel brings unparalleled expertise to every journey — from solo travel for women to cruises departing from San Juan and exclusive destinations without mass tourism.",
     learnMore: "Learn More About Us",
     servicesLabel: "What We Offer",
     servicesTitle: "Exceptional",
     servicesTitleHighlight: "Services",
-    servicesDescription: "From the first consultation to your return home, we provide end-to-end bespoke travel itinerary planning designed around your vision, budget, and schedule.",
+    servicesDescription:
+      "From the first consultation to your return home, we provide end-to-end bespoke travel itinerary planning designed around your vision, budget, and schedule.",
     services: {
-      curatedItineraries: "Bespoke Travel Itineraries",
-      curatedItinerariesDesc: "Thoughtfully designed travel plans that go beyond tourist spots to reveal authentic, immersive experiences — including exclusive destinations without mass tourism. Every bespoke itinerary is handcrafted based on your preferences, interests, and travel style — private guided tours, not group travel. No two journeys are ever the same.",
-      intentionalExperiences: "Intentional Luxury Experiences",
-      intentionalExperiencesDesc: "Every journey is crafted with purpose — creating memories that transform and inspire. Whether it's a private sunset dinner on a beach in the Maldives or a cultural walking tour through Lisbon, we design moments that matter.",
+      curatedItineraries: "Bespoke travel itineraries",
+      curatedItinerariesDesc:
+        "Thoughtfully designed travel plans that go beyond tourist spots to reveal authentic, immersive experiences — including exclusive destinations without mass tourism. Every bespoke itinerary is handcrafted based on your preferences, interests, and travel style — private guided tours, not group travel. No two journeys are ever the same.",
+      intentionalExperiences: "Intentional curated experiences",
+      intentionalExperiencesDesc:
+        "Every journey is crafted with purpose — creating memories that transform and inspire. Whether it's a private sunset dinner on a beach in the Maldives or a cultural walking tour through Lisbon, we design moments that matter.",
       personalConcierge: "Private Travel Concierge",
-      personalConciergeDesc: "Dedicated support from planning to return, ensuring every detail exceeds expectations. Your private travel concierge handles reservations, transfers, special requests, and real-time support throughout your trip — serving clients across the Caribbean and beyond.",
+      personalConciergeDesc:
+        "Dedicated support from planning to return, ensuring every detail exceeds expectations. Your private travel concierge handles reservations, transfers, special requests, and real-time support throughout your trip — serving clients across the Caribbean and beyond.",
       internationalExpertise: "International Expertise",
-      internationalExpertiseDesc: "With firsthand experience across six continents and deep relationships with global travel partners, we provide insider knowledge and exclusive access to the world's most captivating destinations.",
+      internationalExpertiseDesc:
+        "With firsthand experience across six continents and deep relationships with global travel partners, we provide insider knowledge and exclusive access to the world's most captivating destinations.",
       bookingProtection: "Booking Protection",
-      bookingProtectionDesc: "Travel with confidence knowing your investment is protected. We guide you through comprehensive travel insurance options and advocate on your behalf if plans change or issues arise during your trip.",
-      luxuryAccommodations: "Luxury Accommodations",
-      luxuryAccommodationsDesc: "Hand-selected boutique hotels, five-star resorts, and private villas chosen for exceptional service, stunning locations, and authentic character. We match you with accommodations that elevate every stay.",
+      bookingProtectionDesc:
+        "Travel with confidence knowing your investment is protected. We guide you through comprehensive travel insurance options and advocate on your behalf if plans change or issues arise during your trip.",
+      luxuryAccommodations: "Exceptional accommodations",
+      luxuryAccommodationsDesc:
+        "Hand-selected boutique hotels, five-star resorts, and private villas chosen for exceptional service, stunning locations, and authentic character. We match you with accommodations that elevate every stay.",
     },
     destinationsLabel: "Featured",
     destinationsTitle: "Popular",
     destinationsTitleHighlight: "Destinations",
-    destinationsDescription: "Explore our most sought-after international destinations, each handpicked for its unique blend of natural beauty, cultural richness, and world-class hospitality.",
+    destinationsDescription:
+      "Explore our most sought-after international destinations, each handpicked for its unique blend of natural beauty, cultural richness, and world-class hospitality.",
     viewAll: "View All Destinations",
     maldives: "The Maldives",
     maldivesSub: "Paradise on Earth",
@@ -82,31 +98,60 @@ export const en = {
     whyLabel: "Why SJU Luxe Travel",
     whyTitle: "The Difference Is in the",
     whyTitleHighlight: "Details",
-    whyP1: "What sets SJU Luxe Travel apart is our commitment to intentional, personalized service. We are a boutique travel agency, not a large tour operator or travel wholesaler. We don't sell cookie-cutter vacation packages or group tours. Instead, we take the time to understand your travel goals, design bespoke itineraries, and handle every logistical detail so you can focus entirely on the experience.",
-    whyP2: "As an independent agent of NCM Concierge, part of Travel Leaders, we have access to an extensive network of preferred travel partners, including luxury hotel chains, boutique properties, cruise lines, and destination management companies. From luxury cruises departing from San Juan to private guided tours across Europe and the Caribbean — we secure exclusive travel perks including complimentary room upgrades, resort credits, early check-in, spa credits, and VIP amenities that aren't available when booking directly online.",
-    whyP3: "Whether you're planning a romantic getaway, luxury solo travel for women, a family adventure, a destination wedding, or an incentive travel program, we bring the same level of care, expertise, and personal attention to every trip we design. Schedule a free luxury travel consultation today. As a bilingual luxury travel agent based in Puerto Rico, we proudly serve US mainland clients, Caribbean travelers, and Latin American guests alike — no passport required, same timezone, fully bilingual service.",
+    whyP1:
+      "What sets SJU Luxe Travel apart is our commitment to intentional, personalized service. We are a boutique travel agency, not a large tour operator or travel wholesaler. We don't sell cookie-cutter vacation packages or group tours. Instead, we take the time to understand your travel goals, design bespoke itineraries, and handle every logistical detail so you can focus entirely on the experience.",
+    whyP2:
+      "As an independent agent of NCM Concierge, part of Travel Leaders, we have access to an extensive network of preferred travel partners, including hotel chains, boutique properties, cruise lines, and destination management companies. From cruises departing from San Juan to private guided tours across Europe and the Caribbean — we secure exclusive travel perks including complimentary room upgrades, resort credits, early check-in, spa credits, and VIP amenities that aren't available when booking directly online.",
+    whyP3:
+      "Whether you're planning a romantic getaway, solo travel for women, a family adventure, a destination wedding, or an incentive travel program, we bring the same level of care, expertise, and personal attention to every trip we design. Schedule a free bespoke travel consultation today. As a bilingual travel agent based in Puerto Rico, we proudly serve US mainland clients, Caribbean travelers, and Latin American guests alike — no passport required, same timezone, fully bilingual service.",
     faqLabel: "Common Questions",
     faqTitle: "Frequently Asked",
     faqTitleHighlight: "Questions",
-    faqDescription: "Everything you need to know about working with SJU Luxe Travel.",
+    faqDescription:
+      "Everything you need to know about working with SJU Luxe Travel.",
     faqs: [
-      { question: "Is it worth using a travel agent for a luxury vacation?", answer: "Absolutely. A professional luxury travel agent saves you time, avoids costly mistakes, and unlocks exclusive perks you can't get booking online — like complimentary upgrades, resort credits, and VIP experiences. At SJU Luxe Travel, we handle every detail so you can focus on enjoying the journey, not managing logistics. The real value goes far beyond price." },
-      { question: "What exclusive perks does SJU Luxe Travel offer?", answer: "As an independent agent of NCM Concierge, part of Travel Leaders, we secure exclusive travel perks at top properties worldwide — complimentary room upgrades, resort credits, early check-in, spa credits, VIP amenities, and preferred partner rates. These benefits are not available when booking directly online." },
-      { question: "Do you work with clients outside Puerto Rico?", answer: "Yes! As a Puerto Rico-based luxury travel agent, we proudly serve US mainland clients, Caribbean travelers, and Latin American guests. Puerto Rico offers the convenience of no passport required for US citizens, the same timezone as the East Coast, and fully bilingual service in English and Spanish. We are licensed in Florida (ST15578), California, Washington, and Iowa." },
-      { question: "¿Ofrecen servicios en español?", answer: "¡Sí! SJU Luxe Travel es una agencia de viajes de lujo completamente bilingüe. Ofrecemos todos nuestros servicios en español e inglés. Como agente de viaje bilingüe de lujo basado en San Juan, Puerto Rico, atendemos a clientes de Puerto Rico, Estados Unidos, el Caribe y toda América Latina." },
-      { question: "How is SJU Luxe Travel different from booking online?", answer: "Unlike online booking platforms, we provide personalized service, insider access, and exclusive NCM Concierge perks such as complimentary room upgrades, resort credits, and VIP amenities. We handle every detail — from bespoke itinerary planning to real-time support during your trip — so you can focus on the experience." },
-      { question: "What destinations does SJU Luxe Travel offer?", answer: "We curate luxury travel experiences to destinations worldwide, including the Maldives, Portugal, Mexico, the Caribbean, Europe, Asia, and beyond. Each destination package includes exclusive perks and bespoke itinerary planning tailored to your preferences." },
+      {
+        question: "Is it worth using a travel agent for a vacation?",
+        answer:
+          "Absolutely. A professional travel agent saves you time, avoids costly mistakes, and unlocks exclusive perks you can't get booking online — like complimentary upgrades, resort credits, and VIP experiences. At SJU Luxe Travel, we handle every detail so you can focus on enjoying the journey, not managing logistics. The real value goes far beyond price.",
+      },
+      {
+        question: "What exclusive perks does SJU Luxe Travel offer?",
+        answer:
+          "As an independent agent of NCM Concierge, part of Travel Leaders, we secure exclusive travel perks at top properties worldwide — complimentary room upgrades, resort credits, early check-in, spa credits, VIP amenities, and preferred partner rates. These benefits are not available when booking directly online.",
+      },
+      {
+        question: "Do you work with clients outside Puerto Rico?",
+        answer:
+          "Yes! As a Puerto Rico-based travel agent, we proudly serve US mainland clients, Caribbean travelers, and Latin American guests. Puerto Rico offers the convenience of no passport required for US citizens, the same timezone as the East Coast, and fully bilingual service in English and Spanish. We are licensed in Florida (ST15578), California, Washington, and Iowa.",
+      },
+      {
+        question: "¿Ofrecen servicios en español?",
+        answer:
+          "¡Sí! SJU Luxe Travel es una agencia de viajes boutique completamente bilingüe. Ofrecemos todos nuestros servicios en español e inglés. Como agente de viaje bilingüe basado en San Juan, Puerto Rico, atendemos a clientes de Puerto Rico, Estados Unidos, el Caribe y toda América Latina.",
+      },
+      {
+        question: "How is SJU Luxe Travel different from booking online?",
+        answer:
+          "Unlike online booking platforms, we provide personalized service, insider access, and exclusive NCM Concierge perks such as complimentary room upgrades, resort credits, and VIP amenities. We handle every detail — from bespoke itinerary planning to real-time support during your trip — so you can focus on the experience.",
+      },
+      {
+        question: "What destinations does SJU Luxe Travel offer?",
+        answer:
+          "We curate tailored travel experiences to destinations worldwide, including the Maldives, Portugal, Mexico, the Caribbean, Europe, Asia, and beyond. Each destination package includes exclusive perks and bespoke itinerary planning tailored to your preferences.",
+      },
     ],
     ctaTitle: "Ready to Begin Your",
     ctaTitleHighlight: "Journey?",
-    ctaDescription: "Book a free luxury travel consultation today. Whether you have a destination in mind or need inspiration — from luxury cruises departing from San Juan to exclusive destinations without mass tourism — your private travel concierge is ready to design a bespoke journey tailored to your dreams.",
+    ctaDescription:
+      "Book a free bespoke travel consultation today. Whether you have a destination in mind or need inspiration — from cruises departing from San Juan to exclusive destinations without mass tourism — your private travel concierge is ready to design a bespoke journey tailored to your dreams.",
     startPlanningToday: "Free Consultation — Start Planning Today",
     trustLabel: "Trusted Affiliations",
     trustTravelLeaders: "Travel Leaders Network",
     trustNcm: "NCM Concierge",
     trustAma: "AmaWaterways Certified",
     trustAvalon: "Avalon Waterways Certified",
-    trustRiverside: "Riverside Luxury Cruises Certified",
+    trustRiverside: "Riverside cruises Certified",
     trustMaldives: "Koveli Maldives Expert",
     trustQualNetwork: "Affiliate Network",
     trustQualConcierge: "Concierge Partner",
@@ -116,49 +161,63 @@ export const en = {
     trustNameNcm: "NCM Concierge",
     trustNameAma: "AmaWaterways",
     trustNameAvalon: "Avalon Waterways",
-    trustNameRiverside: "Riverside Cruises",
+    trustNameRiverside: "Riverside cruises",
     trustNameKoveli: "Koveli Maldives",
     showcaseLabel: "Signature Journeys",
     showcaseTitle: "Where We Send",
     showcaseTitleHighlight: "Our Clients",
-    cruises: "Luxury Cruises",
+    cruises: "Cruises",
     cruisesSub: "Departing San Juan",
     perksLabel: "NCM Concierge Perks",
     perksTitle: "Benefits You Won't Find",
     perksTitleHighlight: "Booking Online",
-    perksDescription: "As an independent agent of NCM Concierge, part of Travel Leaders, we secure amenities reserved for preferred partners.",
+    perksDescription:
+      "As an independent agent of NCM Concierge, part of Travel Leaders, we secure amenities reserved for preferred partners.",
     perk1Title: "Complimentary Upgrades",
-    perk1Desc: "Room and suite upgrades at confirmation or on arrival, subject to availability.",
+    perk1Desc:
+      "Room and suite upgrades at confirmation or on arrival, subject to availability.",
     perk2Title: "Resort & Spa Credits",
-    perk2Desc: "Property credits to spend on dining, spa treatments, or experiences.",
+    perk2Desc:
+      "Property credits to spend on dining, spa treatments, or experiences.",
     perk3Title: "VIP Amenities",
-    perk3Desc: "Daily breakfast, early check-in, late check-out, and welcome touches.",
+    perk3Desc:
+      "Daily breakfast, early check-in, late check-out, and welcome touches.",
     perk4Title: "Personal Advocacy",
-    perk4Desc: "One agent who knows your trip and answers before, during, and after it.",
-    founderLabel: "Meet Your Travel Agent",
+    perk4Desc:
+      "One agent who knows your trip and answers before, during, and after it.",
+    founderLabel: "Meet Your travel agent",
     founderName: "Daniel Santiago Díaz",
     founderRole: "Founder — SJU Luxe Travel, San Juan, Puerto Rico",
-    founderP1: "Daniel has traveled six continents and spent over a decade in luxury sales before founding SJU Luxe Travel in San Juan.",
-    founderP2: "He plans every itinerary personally, in English or Spanish, so each journey is designed around how you actually want to travel.",
+    founderP1:
+      "Daniel has traveled six continents and spent over a decade in high-end sales before founding SJU Luxe Travel in San Juan.",
+    founderP2:
+      "He plans every itinerary personally, in English or Spanish, so each journey is designed around how you actually want to travel.",
     founderCta: "Book a Consultation",
-    founderPhotoAlt: "Daniel Santiago Díaz, founder and luxury travel agent of SJU Luxe Travel in San Juan, Puerto Rico",
+    founderPhotoAlt:
+      "Daniel Santiago Díaz, founder and travel agent of SJU Luxe Travel in San Juan, Puerto Rico",
     requestConsultation: "Request a Consultation",
-
   },
   about: {
     label: "Meet Your Agent",
     name: "Daniel Santiago",
     nameHighlight: "Díaz",
-    subtitle: "Luxury Travel Agent, San Juan, Puerto Rico — Bilingual Private Travel Concierge for the Caribbean & Beyond",
+    subtitle:
+      "Travel Agent, San Juan, Puerto Rico — Bilingual Private Travel Concierge for the Caribbean & Beyond",
     storyLabel: "About",
     storyTitle: "The Story Behind",
     storyTitleHighlight: "SJU Luxe Travel",
-    bioP1: "Daniel Santiago Díaz is a luxury travel agent based in San Juan, Puerto Rico, and the founder of SJU Luxe Travel — a boutique travel agency specializing in bespoke, intentional luxury travel. As a bilingual travel professional and independent agent of NCM Concierge, part of Travel Leaders, Daniel serves as a private travel concierge for clients across the Caribbean, the US mainland, and Latin America.",
-    bioP2: "His career in travel began with the Puerto Rico Tourism Company, where he worked in business development and gained deep insight into destination marketing and tourism strategy. He later transitioned into luxury travel sales and international sales management, building relationships with hotels, resorts, cruise lines, and tour operators across the globe.",
-    bioP3: "Holding an MBA in International Business, Daniel combines analytical rigor with creative vision. He specializes in curated cruises, immersive multi-destination itineraries, honeymoon travel planning, wellness retreats, and experience-driven travel that goes far beyond the typical vacation package.",
-    bioP4: "Daniel has traveled extensively across six continents — from the overwater villas of the Maldives and the historic streets of Lisbon to the temples of India, the outback of Australia, the deserts of Africa, and the cenotes of Mexico. This firsthand knowledge allows him to recommend destinations, properties, and experiences with genuine authority and personal insight.",
-    bioP5: "As an independent agent of NCM Concierge, part of Travel Leaders, Daniel has access to an extensive network of preferred travel partners, enabling him to secure exclusive NCM Concierge perks — complimentary upgrades, resort credits, and VIP amenities for his clients. As a bilingual luxury travel agent, Daniel proudly serves Spanish-speaking clients from Puerto Rico, the Dominican Republic, South Florida, and across Latin America — all with the same level of personalized, intentional service.",
-    quote: "Travel is not a luxury — it's an opportunity to explore the world with clarity, ease, and intention.",
+    bioP1:
+      "Daniel Santiago Díaz is a travel agent based in San Juan, Puerto Rico, and the founder of SJU Luxe Travel — a boutique travel agency specializing in bespoke, intentional, bespoke travel. As a bilingual travel professional and independent agent of NCM Concierge, part of Travel Leaders, Daniel serves as a private travel concierge for clients across the Caribbean, the US mainland, and Latin America.",
+    bioP2:
+      "His career in travel began with the Puerto Rico Tourism Company, where he worked in business development and gained deep insight into destination marketing and tourism strategy. He later transitioned into bespoke travel sales and international sales management, building relationships with hotels, resorts, cruise lines, and tour operators across the globe.",
+    bioP3:
+      "Holding an MBA in International Business, Daniel combines analytical rigor with creative vision. He specializes in curated cruises, immersive multi-destination itineraries, honeymoon travel planning, wellness retreats, and experience-driven travel that goes far beyond the typical vacation package.",
+    bioP4:
+      "Daniel has traveled extensively across six continents — from the overwater villas of the Maldives and the historic streets of Lisbon to the temples of India, the outback of Australia, the deserts of Africa, and the cenotes of Mexico. This firsthand knowledge allows him to recommend destinations, properties, and experiences with genuine authority and personal insight.",
+    bioP5:
+      "As an independent agent of NCM Concierge, part of Travel Leaders, Daniel has access to an extensive network of preferred travel partners, enabling him to secure exclusive NCM Concierge perks — complimentary upgrades, resort credits, and VIP amenities for his clients. As a bilingual travel agent, Daniel proudly serves Spanish-speaking clients from Puerto Rico, the Dominican Republic, South Florida, and across Latin America — all with the same level of personalized, intentional service.",
+    quote:
+      "Travel is not a luxury — it's an opportunity to explore the world with clarity, ease, and intention.",
     quoteAuthor: "— Daniel Santiago Díaz",
     galleryTitle: "Around the",
     galleryTitleHighlight: "World",
@@ -166,13 +225,13 @@ export const en = {
   destinations: {
     maldives: {
       label: "Featured Destination",
-      title: "Luxury Maldives Travel Packages",
+      title: "Maldives Travel Packages",
       curatedBy: "Curated by",
       locationLabel: "Indian Ocean",
       duration: "7–14 days recommended",
       guests: "Couples, families & groups",
       bestFor: "Best for honeymooners",
-      p1: "The Maldives is the ultimate luxury escape — a chain of 1,190 coral islands in the Indian Ocean known for crystal-clear turquoise lagoons, pristine white-sand beaches, and some of the most exclusive resorts on the planet. At SJU Luxe Travel, we design bespoke Maldives itineraries that go far beyond the typical resort booking.",
+      p1: "The Maldives is the ultimate exceptional escape — a chain of 1,190 coral islands in the Indian Ocean known for crystal-clear turquoise lagoons, pristine white-sand beaches, and some of the most exclusive resorts on the planet. At SJU Luxe Travel, we design bespoke Maldives itineraries that go far beyond the typical resort booking.",
       p2: "Imagine waking up in an overwater villa suspended above a vibrant coral reef, spending the morning snorkeling with manta rays, enjoying a private lunch on a secluded sandbank, and ending the day with a sunset dolphin cruise followed by dinner at an underwater restaurant. These are the kinds of intentional, once-in-a-lifetime experiences we curate for our clients.",
       p3: "As an independent agent of NCM Concierge, part of Travel Leaders, we secure exclusive travel perks at top Maldives properties including Ithaafushi, Huvawalhi, Conrad Rangali Island, St. Regis, and Soneva Fushi — complimentary room upgrades, resort credits, early check-in, spa credits, and VIP amenities that aren't available when booking directly online.",
       p4: "Whether you're planning a romantic honeymoon, an anniversary celebration, a wellness retreat, or a family adventure, the Maldives offers an unparalleled setting. Let us handle every detail — from seaplane transfers and island selection to restaurant reservations and excursion planning — so you can focus entirely on the experience.",
@@ -190,21 +249,23 @@ export const en = {
       ],
       ctaTitle: "Ready to Plan Your",
       ctaTitleHighlight: "Maldives Getaway?",
-      ctaDescription: "Contact us for a complimentary consultation. We'll design a personalized Maldives itinerary based on your preferences, budget, and travel dates.",
+      ctaDescription:
+        "Contact us for a complimentary consultation. We'll design a personalized Maldives itinerary based on your preferences, budget, and travel dates.",
       startPlanning: "Start Planning",
       koveliTitle: "Certified Koveli Maldives Expert",
-      koveliDescription: "Our lead agent holds the Koveli Maldives Expert certification — a distinction earned through in-depth destination training and firsthand resort knowledge. This means you get insider access, expert recommendations, and exclusive perks at top Maldives properties.",
+      koveliDescription:
+        "Our lead agent holds the Koveli Maldives Expert certification — a distinction earned through in-depth destination training and firsthand resort knowledge. This means you get insider access, expert recommendations, and exclusive perks at top Maldives properties.",
     },
     portugal: {
       label: "Featured Destination",
-      title: "Luxury Portugal Travel Itinerary",
+      title: "Portugal Travel Itinerary",
       curatedBy: "Curated by",
       locationLabel: "Western Europe",
       duration: "8–12 days recommended",
       guests: "Couples, families & solo travelers",
-      p1: "Portugal is one of Europe's most captivating destinations — a country where centuries of maritime history meet vibrant modern culture, world-class cuisine, and stunning coastal landscapes. At SJU Luxe Travel, we design immersive luxury Portugal travel itineraries that reveal the country's hidden gems alongside its iconic landmarks.",
+      p1: "Portugal is one of Europe's most captivating destinations — a country where centuries of maritime history meet vibrant modern culture, world-class cuisine, and stunning coastal landscapes. At SJU Luxe Travel, we design immersive Portugal travel itineraries that reveal the country's hidden gems alongside its iconic landmarks.",
       p2: "Explore Lisbon's historic cobblestone streets and iconic yellow trams, wander through the medieval alleyways of Porto, discover the fairy-tale palaces of Sintra, and unwind on the dramatic cliffs and golden beaches of the Algarve. In the Douro Valley, cruise along terraced vineyards and enjoy private Port wine tastings at centuries-old estates.",
-      p3: "Portugal offers extraordinary value compared to other Western European destinations without compromising on luxury. From boutique palace hotels in Sintra to five-star oceanfront properties in the Algarve, we secure exclusive perks including complimentary upgrades, resort credits, and VIP experiences through our preferred partner network.",
+      p3: "Portugal offers extraordinary value compared to other Western European destinations without compromising on quality. From boutique palace hotels in Sintra to five-star oceanfront properties in the Algarve, we secure exclusive perks including complimentary upgrades, resort credits, and VIP experiences through our preferred partner network.",
       p4: "Whether you're seeking a romantic escape through Lisbon and the Algarve, a culinary journey through Porto and the Douro Valley, or a multi-city cultural immersion, Portugal delivers on every front. Let us craft a bespoke itinerary that matches your pace, interests, and travel style.",
       highlightsTitle: "What's Included in Our",
       highlightsTitleHighlight: "Portugal Packages",
@@ -220,19 +281,20 @@ export const en = {
       ],
       ctaTitle: "Ready to Explore",
       ctaTitleHighlight: "Portugal?",
-      ctaDescription: "Contact us for a complimentary consultation. We'll design a personalized Portugal itinerary based on your preferences, budget, and travel dates.",
+      ctaDescription:
+        "Contact us for a complimentary consultation. We'll design a personalized Portugal itinerary based on your preferences, budget, and travel dates.",
       startPlanning: "Start Planning",
     },
     mexico: {
       label: "Featured Destination",
-      title: "Luxury Mexico Vacation Packages",
+      title: "Mexico Vacation Packages",
       curatedBy: "Curated by",
       locationLabel: "North America",
       duration: "7–14 days recommended",
       guests: "Couples, families & groups",
-      p1: "Mexico is one of the most diverse and rewarding luxury travel destinations in the world — a country where ancient civilizations, vibrant culture, UNESCO-recognized cuisine, and stunning natural landscapes come together in extraordinary fashion. At SJU Luxe Travel, we craft bespoke Mexico itineraries that go far beyond the all-inclusive resort experience.",
+      p1: "Mexico is one of the most diverse and rewarding bespoke travel destinations in the world — a country where ancient civilizations, vibrant culture, UNESCO-recognized cuisine, and stunning natural landscapes come together in extraordinary fashion. At SJU Luxe Travel, we craft bespoke Mexico itineraries that go far beyond the all-inclusive resort experience.",
       p2: "Dive into sacred cenotes hidden deep in the Yucatán jungle, explore the ancient Mayan ruins of Tulum perched above turquoise Caribbean waters, wander the colorful colonial streets of San Miguel de Allende, and discover Oaxaca's world-renowned culinary scene — from traditional mole workshops to mezcal distillery tours.",
-      p3: "Mexico's Pacific and Caribbean coastlines offer some of the finest luxury resorts in the Americas. Through our preferred partner network as an independent agent of NCM Concierge, part of Travel Leaders, we secure exclusive perks at top properties — complimentary upgrades, resort credits, spa treatments, and VIP dining experiences that aren't available through online booking.",
+      p3: "Mexico's Pacific and Caribbean coastlines offer some of the finest exceptional resorts in the Americas. Through our preferred partner network as an independent agent of NCM Concierge, part of Travel Leaders, we secure exclusive perks at top properties — complimentary upgrades, resort credits, spa treatments, and VIP dining experiences that aren't available through online booking.",
       p4: "Whether you're planning a honeymoon on the Riviera Maya, a family adventure through the Yucatán Peninsula, a culinary pilgrimage to Oaxaca, or a wellness retreat in Tulum, Mexico delivers on every front. Let us design a bespoke itinerary that captures the best of this incredible country.",
       highlightsTitle: "What's Included in Our",
       highlightsTitleHighlight: "Mexico Packages",
@@ -247,18 +309,22 @@ export const en = {
       ],
       ctaTitle: "Ready to Discover",
       ctaTitleHighlight: "Mexico?",
-      ctaDescription: "Contact us for a complimentary consultation. We'll design a personalized Mexico itinerary based on your preferences, budget, and travel dates.",
+      ctaDescription:
+        "Contact us for a complimentary consultation. We'll design a personalized Mexico itinerary based on your preferences, budget, and travel dates.",
       startPlanning: "Start Planning",
     },
     page: {
-      headingMain: "Luxury Travel Destinations —",
+      headingMain: "Bespoke travel Destinations —",
       headingHighlight: "Itineraries from Puerto Rico",
       paradiseOnEarth: "Paradise on Earth",
       oldWorldCharm: "Old World Charm",
       richCulture: "Rich Culture & Beauty",
-      maldivesDesc: "Crystal-clear turquoise waters meet pristine white sand beaches in one of the most breathtaking archipelagos on the planet. The Maldives offers an unparalleled escape into overwater villas perched above vibrant coral reefs, world-class snorkeling and scuba diving, private beach dinners under the stars, and some of the most exclusive luxury resorts in the world. Whether you're celebrating a honeymoon, an anniversary, or simply seeking total serenity, the Maldives delivers an experience that stays with you long after you leave. Resorts like Ithaafushi Maldives, Huvawalhi, and Conrad Rangali Island provide the perfect backdrop for unforgettable moments.",
-      portugalDesc: "From Lisbon's historic cobblestone streets and iconic tram lines to the sun-kissed beaches of the Algarve, Portugal is a destination that captivates every type of traveler. Savor world-renowned Port wines in the Douro Valley, explore the fairy-tale palaces of Sintra, wander through the medieval alleyways of Porto, and immerse yourself in the haunting melodies of Fado music. Portugal offers a perfect blend of rich maritime heritage, vibrant culture, exceptional cuisine, and warm hospitality—all at an incredible value compared to other European destinations. Whether you're a couple seeking romance, a family looking for adventure, or a solo traveler chasing inspiration, Portugal has something extraordinary to offer.",
-      mexicoDesc: "From the turquoise waters of the Riviera Maya and the ancient Mayan ruins of Tulum and Chichén Itzá to the colorful colonial cities of Oaxaca and San Miguel de Allende, Mexico offers an extraordinary tapestry of experiences. Dive into sacred cenotes hidden in the Yucatán jungle, savor world-class cuisine that earned UNESCO recognition, explore vibrant local markets, and experience a culture that seamlessly blends thousands of years of history with modern luxury. Mexico's diverse landscapes—from Pacific coast beaches to mountain highlands—make it one of the most versatile and rewarding destinations in the world. Whether you seek relaxation, adventure, or cultural immersion, Mexico delivers on every front.",
+      maldivesDesc:
+        "Crystal-clear turquoise waters meet pristine white sand beaches in one of the most breathtaking archipelagos on the planet. The Maldives offers an unparalleled escape into overwater villas perched above vibrant coral reefs, world-class snorkeling and scuba diving, private beach dinners under the stars, and some of the most exclusive exceptional resorts in the world. Whether you're celebrating a honeymoon, an anniversary, or simply seeking total serenity, the Maldives delivers an experience that stays with you long after you leave. Resorts like Ithaafushi Maldives, Huvawalhi, and Conrad Rangali Island provide the perfect backdrop for unforgettable moments.",
+      portugalDesc:
+        "From Lisbon's historic cobblestone streets and iconic tram lines to the sun-kissed beaches of the Algarve, Portugal is a destination that captivates every type of traveler. Savor world-renowned Port wines in the Douro Valley, explore the fairy-tale palaces of Sintra, wander through the medieval alleyways of Porto, and immerse yourself in the haunting melodies of Fado music. Portugal offers a perfect blend of rich maritime heritage, vibrant culture, exceptional cuisine, and warm hospitality—all at an incredible value compared to other European destinations. Whether you're a couple seeking romance, a family looking for adventure, or a solo traveler chasing inspiration, Portugal has something extraordinary to offer.",
+      mexicoDesc:
+        "From the turquoise waters of the Riviera Maya and the ancient Mayan ruins of Tulum and Chichén Itzá to the colorful colonial cities of Oaxaca and San Miguel de Allende, Mexico offers an extraordinary tapestry of experiences. Dive into sacred cenotes hidden in the Yucatán jungle, savor world-class cuisine that earned UNESCO recognition, explore vibrant local markets, and experience a culture that seamlessly blends thousands of years of history with modern elegance. Mexico's diverse landscapes—from Pacific coast beaches to mountain highlands—make it one of the most versatile and rewarding destinations in the world. Whether you seek relaxation, adventure, or cultural immersion, Mexico delivers on every front.",
       indianOcean: "Indian Ocean",
       westernEurope: "Western Europe",
       northAmerica: "North America",
@@ -269,21 +335,49 @@ export const en = {
       guests2_8: "2-8 guests",
       highlights: "Highlights",
       inquireNow: "Inquire Now",
-      koveliBadgeLabel: "Planned by a Certified Koveli Maldives Expert — insider access & exclusive resort perks",
+      koveliBadgeLabel:
+        "Planned by a Certified Koveli Maldives Expert — insider access & exclusive resort perks",
       ovwHighlights: {
-        maldives: ["Overwater villas", "Snorkeling & diving", "Private beach dinners", "Spa retreats", "Dolphin cruises", "Underwater restaurants"],
-        portugal: ["Historic Lisbon tours", "Port wine tastings", "Algarve beaches", "Sintra palaces", "Fado music experiences", "Douro Valley cruises"],
-        mexico: ["Riviera Maya beaches", "Mayan ruins at Tulum", "Cenote swimming", "Mexico City exploration", "Authentic cuisine tours"],
+        maldives: [
+          "Overwater villas",
+          "Snorkeling & diving",
+          "Private beach dinners",
+          "Spa retreats",
+          "Dolphin cruises",
+          "Underwater restaurants",
+        ],
+        portugal: [
+          "Historic Lisbon tours",
+          "Port wine tastings",
+          "Algarve beaches",
+          "Sintra palaces",
+          "Fado music experiences",
+          "Douro Valley cruises",
+        ],
+        mexico: [
+          "Riviera Maya beaches",
+          "Mayan ruins at Tulum",
+          "Cenote swimming",
+          "Mexico City exploration",
+          "Authentic cuisine tours",
+        ],
       },
     },
   },
   blog: {
-    categories: ["All", "Destinations", "Travel Tips", "Accommodations", "Culture"],
+    categories: [
+      "All",
+      "Destinations",
+      "Travel Tips",
+      "Accommodations",
+      "Culture",
+    ],
     featured: "Featured",
     featuredPost: {
       category: "Romance",
-      title: "Best Honeymoon Destinations 2026 from Puerto Rico",
-      excerpt: "The 7 best honeymoon destinations for 2026 from San Juan: Maldives, Bora Bora, Amalfi, Santorini, Portugal and more — with itineraries and recommended flights.",
+      title: "Best honeymoon Destinations 2026 from Puerto Rico",
+      excerpt:
+        "The 7 best honeymoon destinations for 2026 from San Juan: Maldives, Bora Bora, Amalfi, Santorini, Portugal and more — with itineraries and recommended flights.",
       date: "June 1, 2026",
       readTime: "8 min read",
     },
@@ -291,25 +385,29 @@ export const en = {
       {
         category: "River Cruising",
         title: "River Cruising Isn't Just for Your Parents Anymore",
-        excerpt: "84% of travelers under 35 are now interested in river cruising. A luxury travel agent explains why a new generation is discovering the smartest way to travel.",
+        excerpt:
+          "84% of travelers under 35 are now interested in river cruising. A Travel Agent explains why a new generation is discovering the smartest way to travel.",
         readTime: "6 min read",
       },
       {
         category: "Travel Philosophy",
-        title: "What Luxury Travel Really Means",
-        excerpt: "When people hear luxury travel, they picture something out of reach. But real luxury isn't about how much you spend—it's about how the experience…",
+        title: "What bespoke travel Really Means",
+        excerpt:
+          "When people hear bespoke travel, they picture something out of reach. But real isn't about how much you spend—it's about how the experience…",
         readTime: "8 min read",
       },
       {
         category: "Travel Tips",
-        title: "Do Travel Agents Really Help You Save Money?",
-        excerpt: "An honest perspective from a modern travel agent on how professional guidance saves you money, time, and stress—and why the real value goes far beyond…",
+        title: "Do travel agents Really Help You Save Money?",
+        excerpt:
+          "An honest perspective from a modern travel agent on how professional guidance saves you money, time, and stress—and why the real value goes far beyond…",
         readTime: "7 min read",
       },
       {
         category: "Travel Trends",
         title: "Are 'Micro-Cations' the Future of Travel?",
-        excerpt: "One of the biggest shifts in travel right now is the rise of micro-cations—shorter, more intentional getaways that fit into real life without sacrificing the experience.",
+        excerpt:
+          "One of the biggest shifts in travel right now is the rise of micro-cations—shorter, more intentional getaways that fit into real life without sacrificing the experience.",
         readTime: "6 min read",
       },
     ],
@@ -320,7 +418,8 @@ export const en = {
     stayInspired: "Stay Inspired",
     subscribeTitle: "Subscribe to Our",
     subscribeTitleHighlight: "Newsletter",
-    subscribeDescription: "Get travel inspiration, tips, and exclusive offers delivered to your inbox.",
+    subscribeDescription:
+      "Get travel inspiration, tips, and exclusive offers delivered to your inbox.",
     subscribePlaceholderName: "Full Name",
     subscribePlaceholderEmail: "Email Address",
     subscribeButton: "Subscribe",
@@ -328,7 +427,8 @@ export const en = {
   contact: {
     title: "Contact",
     titleHighlight: "Us",
-    description: "Ready for a free luxury travel consultation? Whether you're dreaming of luxury cruises departing from San Juan, private guided tours, luxury solo travel for women, or exclusive destinations without mass tourism — your boutique travel agent is ready to craft something extraordinary.",
+    description:
+      "Ready for a free bespoke travel consultation? Whether you're dreaming of cruises departing from San Juan, private guided tours, solo travel for women, or exclusive destinations without mass tourism — your boutique travel agent is ready to craft something extraordinary.",
     sidebarTitle: "Let's Start",
     sidebarTitleHighlight: "Planning",
     location: "Location",
@@ -341,19 +441,21 @@ export const en = {
     hoursSun: "Sunday: Closed",
     whyChoose: "Why Choose SJU Luxe Travel?",
     whyItems: [
+      "We plan for every budget — from affordable getaways to fully bespoke premium journeys",
       "Boutique travel agency — not a large tour operator or wholesaler",
       "Private guided tours & bespoke itineraries, never group travel",
       "Bilingual travel agent — English & Spanish",
-      "Free luxury travel consultation with personalized recommendations",
+      "Free bespoke travel consultation with personalized recommendations",
       "Exclusive NCM Concierge perks — upgrades, credits & VIP amenities",
       "Licensed and insured: FL, CA, WA & IA",
     ],
     formTitle: "Plan Your Journey",
-    formDescription: "Schedule your free luxury travel consultation. Fill out the form below with details about your dream trip and your luxury travel agent will get back to you within 24 hours with personalized recommendations and next steps.",
+    formDescription:
+      "Schedule your free bespoke travel consultation. Fill out the form below with details about your dream trip and your travel agent will get back to you within 24 hours with personalized recommendations and next steps.",
     fullName: "Full Name",
     fullNamePlaceholder: "Your name",
     emailAddressLabel: "Email Address",
-    emailPlaceholder: "your@email.com",
+    emailPlaceholder: "Your@email.com",
     phoneNumber: "Phone Number",
     phonePlaceholder: "(123) 456-7890",
     travelType: "Type of Travel",
@@ -364,143 +466,276 @@ export const en = {
       family: "Family Vacation",
       adventure: "Adventure",
       wellness: "Wellness Retreat",
-      cruise: "Luxury Cruise",
+      cruise: "Cruise",
       soloWomen: "Solo Women's Travel",
       incentive: "Corporate / Incentive Travel",
       other: "Other",
     },
     desiredDestinations: "Desired Destinations",
-    destinationsPlaceholder: "e.g. Maldives, Portugal, Mexico...",
+    destinationsPlaceholder: "E.g. Maldives, Portugal, Mexico...",
     preferredDates: "Preferred Travel Dates",
-    datesPlaceholder: "e.g. March 2026",
+    datesPlaceholder: "E.g. March 2026",
     dreamTrip: "Tell Us About Your Dream Trip",
-    dreamTripPlaceholder: "Share your travel dreams, preferences, budget range, and any special requirements or occasions you're celebrating...",
+    dreamTripPlaceholder:
+      "Share your travel dreams, preferences, budget range, and any special requirements or occasions you're celebrating...",
     sendMessage: "Send Message",
     formSuccessTitle: "Thank You",
-    formSuccessBody: "Your consultation request has been sent. A luxury travel agent will reach out within 24 hours.",
+    formSuccessBody:
+      "Your consultation request has been sent. A Travel Agent will reach out within 24 hours.",
     formSuccessButton: "Send Another Message",
-    locationBanner: "The heart of the Caribbean — Your luxury travel agent for international destinations",
+    locationBanner:
+      "The heart of the Caribbean — Your travel agent for international destinations",
     mapTitle: "Find Us",
-    mapNote: "I work remotely from home at this address. NCM Concierge has an established office in Caguas — this map shows my independent agent location in San Juan.",
+    mapNote:
+      "I work remotely from home at this address. NCM Concierge has an established office in Caguas — this map shows my independent agent location in San Juan.",
   },
   viajesDeLujo: {
-    label: "Your Private Travel Agent",
-    h1: "Luxury Travel from Puerto Rico —",
-    h1Highlight: "Your Travel Agent in San Juan",
+    label: "Your Private travel agent",
+    h1: "Bespoke travel from Puerto Rico —",
+    h1Highlight: "Your travel agent in San Juan",
     p1: "Living in Puerto Rico means having the world at your fingertips. From Luis Muñoz Marín International Airport, you can be in Europe, the Maldives, Mexico, or the Caribbean in a matter of hours — no passport, no immigration hassles, with all the advantages of traveling as an American citizen. All you need is someone who plans every detail with the level of care that trip deserves.",
-    p2: "At <strong>SJU Luxe Travel</strong>, we are your boutique luxury travel agency based in San Juan, Puerto Rico, specializing exclusively in outbound travel — that is, taking travelers from Puerto Rico to the most extraordinary destinations in the world.",
-    h2Why: "Why Choose a Luxury Travel Agent in Puerto Rico?",
-    whyP1: "Booking a luxury trip online may seem simple, but what you don't see on any website is the real value behind working with a certified agent with access to elite travel networks.",
-    whyP2: "As an independent agent of <strong>NCM Concierge</strong>, part of <strong>Travel Leaders</strong> — one of the most respected concierge travel networks in the Americas — Daniel Santiago Díaz has access to exclusive benefits that simply aren't available when booking directly:",
+    p2: "At <strong>SJU Luxe Travel</strong>, we are your boutique boutique travel agency based in San Juan, Puerto Rico, specializing exclusively in outbound travel — that is, taking travelers from Puerto Rico to the most extraordinary destinations in the world.",
+    h2Why: "Why Choose a travel agent in Puerto Rico?",
+    whyP1:
+      "Booking a trip online may seem simple, but what you don't see on any website is the real value behind working with a certified agent with access to elite travel networks.",
+    whyP2:
+      "As an independent agent of <strong>NCM Concierge</strong>, part of <strong>Travel Leaders</strong> — one of the most respected concierge travel networks in the Americas — Daniel Santiago Díaz has access to exclusive benefits that simply aren't available when booking directly:",
     whyItems: [
-      "Complimentary room upgrades at luxury hotels and boutique resorts",
+      "Complimentary room upgrades at hotels and boutique resorts",
       "Resort credits (spa, restaurants, activities) worth up to $100–$300 per stay",
       "Guaranteed early check-in and late check-out",
       "VIP welcome amenities in room",
       "Access to unpublished preferential rates and availability",
       "Personalized attention before, during, and after your trip",
     ],
-    whySummary: "All of this, at the same price you'd pay booking on your own. The difference is that we take care of absolutely everything.",
+    whySummary:
+      "All of this, at the same price you'd pay booking on your own. The difference is that we take care of absolutely everything.",
     h2Destinations: "Popular International Destinations from Puerto Rico",
-    destMaldives: "<strong>The Maldives</strong> — The ultimate destination for honeymoons and romantic getaways. Overwater villas, coral reefs, absolute privacy, and resorts like Conrad Rangali Island, Hurawalhi, and One&Only Reethi Rah.",
-    destPortugal: "<strong>Portugal</strong> — Lisbon, the Algarve, and the Douro Valley offer world-class gastronomy, historic hotels converted into boutique palaces, and unmatched cultural warmth.",
-    destMexico: "<strong>Mexico</strong> — From the cosmopolitan modernity of Mexico City to the discreet luxury of Tulum and the exclusive resorts of Los Cabos.",
-    destCaribbean: "<strong>The Caribbean</strong> — St. Barts, Anguilla, Turks & Caicos, Barbados, and the British Virgin Islands, each with its own luxury character.",
-    destEurope: "<strong>Europe</strong> — Italy, France, Greece, Spain — we design private itineraries that avoid the crowds and focus on authentic experiences.",
+    destMaldives:
+      "<strong>The Maldives</strong> — The ultimate destination for honeymoons and romantic getaways. Overwater villas, coral reefs, absolute privacy, and resorts like Conrad Rangali Island, Hurawalhi, and One&Only Reethi Rah.",
+    destPortugal:
+      "<strong>Portugal</strong> — Lisbon, the Algarve, and the Douro Valley offer world-class gastronomy, historic hotels converted into boutique palaces, and unmatched cultural warmth.",
+    destMexico:
+      "<strong>Mexico</strong> — From the cosmopolitan modernity of Mexico City to the discreet of Tulum and the exclusive resorts of Los Cabos.",
+    destCaribbean:
+      "<strong>The Caribbean</strong> — St. Barts, Anguilla, Turks & Caicos, Barbados, and the British Virgin Islands, each with its own character.",
+    destEurope:
+      "<strong>Europe</strong> — Italy, France, Greece, Spain — we design private itineraries that avoid the crowds and focus on authentic experiences.",
     h2HowItWorks: "How Working with SJU Luxe Travel Works",
     steps: [
-      ["Free consultation", "We schedule a 30-minute call to learn about your vision, dates, budget, and travel style."],
-      ["Itinerary proposal", "Within 48–72 hours, you receive a detailed proposal with accommodations, experiences, and logistics."],
-      ["Refinement and confirmation", "We adjust every detail until the itinerary is exactly what you envisioned."],
-      ["Total management", "We handle all bookings, transfers, special requests, and on-destination coordination."],
-      ["Real-time support", "During your trip, you have direct access to Daniel for any situation, change, or need."],
+      [
+        "Free consultation",
+        "We schedule a 30-minute call to learn about your vision, dates, budget, and travel style.",
+      ],
+      [
+        "Itinerary proposal",
+        "Within 48–72 hours, you receive a detailed proposal with accommodations, experiences, and logistics.",
+      ],
+      [
+        "Refinement and confirmation",
+        "We adjust every detail until the itinerary is exactly what you envisioned.",
+      ],
+      [
+        "Total management",
+        "We handle all bookings, transfers, special requests, and on-destination coordination.",
+      ],
+      [
+        "Real-time support",
+        "During your trip, you have direct access to Daniel for any situation, change, or need.",
+      ],
     ],
-    h2Occasions: "Luxury Travel for Every Occasion",
-    occasionsP: "From Puerto Rico, we plan luxury travel for: honeymoons, anniversaries and couples' getaways, destination weddings, luxury family adventures, wellness retreats, women-only trips, and corporate and incentive travel.",
+    h2Occasions: "Bespoke travel for Every Occasion",
+    occasionsP:
+      "From Puerto Rico, we plan bespoke travel for: honeymoons, anniversaries and couples' getaways, destination weddings, family adventures, wellness retreats, women-only trips, and corporate and incentive travel.",
     cruisesLink: "Interested in cruises? Explore our",
-    oceanCruises: "luxury ocean cruises",
-    andText: "and",
-    riverCruises: "luxury river cruises through Europe, Asia, and beyond",
+    oceanCruises: "Ocean cruises",
+    andText: "And",
+    riverCruises: "River cruises through Europe, Asia, and beyond",
     ctaTitle: "Ready to plan your next",
-    ctaTitleHighlight: "luxury trip from Puerto Rico?",
-    ctaDescription: "Schedule your free consultation today. No commitments, no cost — just a conversation to start building your dream trip.",
+    ctaTitleHighlight: "Trip from Puerto Rico?",
+    ctaDescription:
+      "Schedule your free consultation today. No commitments, no cost — just a conversation to start building your dream trip.",
     ctaButton: "Free Consultation",
   },
   lunaDeMiel: {
     label: "Romantic Experiences",
-    h1: "Luxury Honeymoon Planning",
-    h1Highlight: "from San Juan, Puerto Rico",
+    h1: "Honeymoon Planning",
+    h1Highlight: "From San Juan, Puerto Rico",
     p1: "Your honeymoon is, probably, the most important trip of your life. It doesn't deserve to be a generic package, a standard room, or an itinerary copied from the internet. It deserves attention, detail, and an agent who understands exactly what this moment means to both of you.",
-    p2: "At <strong>SJU Luxe Travel</strong>, we specialize in luxury honeymoons for couples departing from Puerto Rico to the most romantic destinations in the world. From the first call to your return home, we handle every detail so your only job is to enjoy.",
-    h2Destinations: "Most Requested Luxury Honeymoon Destinations",
-    destinationsIntro: "Every couple is different. That's why we don't believe in \"trendy\" destinations — we believe in finding the perfect destination <em>for you</em>. These are the most requested by our clients from Puerto Rico:",
-    destMaldives: { title: "The Maldives", desc: "The ultimate honeymoon destination. Private villas over turquoise lagoons, dinners under the stars on the beach, snorkeling among manta rays, and absolute privacy. Favorite resorts: Conrad Maldives Rangali Island, Hurawalhi, You&Me Maldives, Nala Maldives, and Ayada Maldives." },
-    destSantorini: { title: "Santorini, Greece", desc: "Sunsets over the Aegean Sea, caves turned into boutique suites, local wines, and the magic of the Mediterranean. We combine Santorini with Mykonos or Athens for a complete and unforgettable Greek itinerary." },
-    destAmalfi: { title: "Amalfi Coast, Italy", desc: "Positano, Ravello, Capri — the Italy of eternal romance. Private yachts along the coast, tastings at centuries-old wineries, dinners on terraces overlooking the Tyrrhenian Sea." },
-    destBoraBora: { title: "Bora Bora, French Polynesia", desc: "For those who dream of the South Pacific. Overwater bungalows at the Four Seasons or InterContinental, crystal-clear waters, and the feeling of being at the end of the world — in the best sense." },
-    destPortugal: { title: "Portugal", desc: "For the couple who prefers cultural romance over beach romance. Lisbon, the Douro Valley, and the Algarve offer palaces converted into boutique hotels, surprising gastronomy, and an intimacy that mass-tourism Europe can't offer." },
-    destTuscany: { title: "Tuscany, Italy", desc: "Private villas among vineyards, medieval villages, white truffle, and the most authentic Chianti. For the couple who loves fine dining as much as movie-like landscapes." },
-    h2Includes: "What's Included in Your Honeymoon Planned with SJU Luxe Travel",
-    includesIntro: "When you plan your honeymoon with us, you get much more than hotel bookings and flights:",
+    p2: "At <strong>SJU Luxe Travel</strong>, we specialize in honeymoons for couples departing from Puerto Rico to the most romantic destinations in the world. From the first call to your return home, we handle every detail so your only job is to enjoy.",
+    h2Destinations: "Most Requested honeymoon Destinations",
+    destinationsIntro:
+      "Every couple is different. That's why we don't believe in \"trendy\" destinations — we believe in finding the perfect destination <em>for you</em>. These are the most requested by our clients from Puerto Rico:",
+    destMaldives: {
+      title: "The Maldives",
+      desc: "The ultimate honeymoon destination. Private villas over turquoise lagoons, dinners under the stars on the beach, snorkeling among manta rays, and absolute privacy. Favorite resorts: Conrad Maldives Rangali Island, Hurawalhi, You&Me Maldives, Nala Maldives, and Ayada Maldives.",
+    },
+    destSantorini: {
+      title: "Santorini, Greece",
+      desc: "Sunsets over the Aegean Sea, caves turned into boutique suites, local wines, and the magic of the Mediterranean. We combine Santorini with Mykonos or Athens for a complete and unforgettable Greek itinerary.",
+    },
+    destAmalfi: {
+      title: "Amalfi Coast, Italy",
+      desc: "Positano, Ravello, Capri — the Italy of eternal romance. Private yachts along the coast, tastings at centuries-old wineries, dinners on terraces overlooking the Tyrrhenian Sea.",
+    },
+    destBoraBora: {
+      title: "Bora Bora, French Polynesia",
+      desc: "For those who dream of the South Pacific. Overwater bungalows at the Four Seasons or InterContinental, crystal-clear waters, and the feeling of being at the end of the world — in the best sense.",
+    },
+    destPortugal: {
+      title: "Portugal",
+      desc: "For the couple who prefers cultural romance over beach romance. Lisbon, the Douro Valley, and the Algarve offer palaces converted into boutique hotels, surprising gastronomy, and an intimacy that mass-tourism Europe can't offer.",
+    },
+    destTuscany: {
+      title: "Tuscany, Italy",
+      desc: "Private villas among vineyards, medieval villages, white truffle, and the most authentic Chianti. For the couple who loves fine dining as much as movie-like landscapes.",
+    },
+    h2Includes:
+      "What's Included in Your honeymoon Planned with SJU Luxe Travel",
+    includesIntro:
+      "When you plan your honeymoon with us, you get much more than hotel bookings and flights:",
     includesItems: [
-      ["Romantic welcome details", "rose petals, champagne, and special amenities coordinated with the resort before your arrival"],
-      ["Preferential room upgrades", "through our NCM Concierge network, we negotiate upgrades not normally available to the public"],
-      ["Coordinated private dinners", "on the beach, by the pool, on a private terrace — the ambiance you always imagined"],
-      ["Private transfers", "from the airport to the resort, no waiting or sharing transport with strangers"],
-      ["Hour-by-hour itinerary", "so you never have to worry about what's next, but with total flexibility to improvise"],
-      ["24/7 support during the trip", "any change, need, or surprise, Daniel is available in real time"],
+      [
+        "Romantic welcome details",
+        "rose petals, champagne, and special amenities coordinated with the resort before your arrival",
+      ],
+      [
+        "Preferential room upgrades",
+        "through our NCM Concierge network, we negotiate upgrades not normally available to the public",
+      ],
+      [
+        "Coordinated private dinners",
+        "on the beach, by the pool, on a private terrace — the ambiance you always imagined",
+      ],
+      [
+        "Private transfers",
+        "from the airport to the resort, no waiting or sharing transport with strangers",
+      ],
+      [
+        "Hour-by-hour itinerary",
+        "so you never have to worry about what's next, but with total flexibility to improvise",
+      ],
+      [
+        "24/7 support during the trip",
+        "any change, need, or surprise, Daniel is available in real time",
+      ],
     ],
     h2When: "When to Start Planning?",
-    whenP1: "We recommend starting your honeymoon planning <strong>6 to 12 months before</strong> the wedding, especially for destinations like the Maldives and French Polynesia where the most exclusive resorts have limited availability.",
-    whenP2: "However, we also work with quick-planning honeymoons — if your wedding is in 2–3 months, contact us immediately and we'll find the best available option.",
-    h2NoPassport: "Honeymoon Without a Passport — The Advantage of Traveling from Puerto Rico",
-    noPassportP: "As Puerto Rico residents, you travel with an American passport — which means visa-free access to the vast majority of European and Caribbean destinations, and facilitated entry to Asia and Oceania. From Luis Muñoz Marín Airport, you have direct flights or single-connection flights to virtually any dream destination.",
+    whenP1:
+      "We recommend starting your honeymoon planning <strong>6 to 12 months before</strong> the wedding, especially for destinations like the Maldives and French Polynesia where the most exclusive resorts have limited availability.",
+    whenP2:
+      "However, we also work with quick-planning honeymoons — if your wedding is in 2–3 months, contact us immediately and we'll find the best available option.",
+    h2NoPassport:
+      "Honeymoon Without a Passport — The Advantage of Traveling from Puerto Rico",
+    noPassportP:
+      "As Puerto Rico residents, you travel with an American passport — which means visa-free access to the vast majority of European and Caribbean destinations, and facilitated entry to Asia and Oceania. From Luis Muñoz Marín Airport, you have direct flights or single-connection flights to virtually any dream destination.",
     ctaTitle: "Are you ready to start dreaming about",
-    ctaTitleHighlight: "your honeymoon?",
-    ctaDescription: "Schedule a free consultation with Daniel. Tell us how you envision that first trip together — and we'll take care of the rest.",
+    ctaTitleHighlight: "Your honeymoon?",
+    ctaDescription:
+      "Schedule a free consultation with Daniel. Tell us how you envision that first trip together — and we'll take care of the rest.",
     ctaButton: "Schedule Your Free Consultation",
   },
   crucerosDeLujo: {
     label: "Sea Experiences",
-    h1: "Luxury Cruises from San Juan, Puerto Rico —",
+    h1: "Cruises from San Juan, Puerto Rico —",
     h1Highlight: "Your VIP Agent",
-    p1: "San Juan is one of the most important cruise ports in the Caribbean. Every week, dozens of ships depart from the Pan American Pier — but not all cruises are the same, and definitely not all onboard experiences are equal. The difference between an ordinary cruise and an extraordinary luxury cruise lies largely in how you plan it and who you plan it with.",
-    p2: "<strong>SJU Luxe Travel</strong> is your luxury cruise agent based in San Juan, Puerto Rico. As part of the <strong>NCM Concierge — Travel Leaders</strong> network, we have access to exclusive VIP benefits, preferential rates, and personalized attention you simply can't get booking directly with the cruise line.",
-    h2Why: "Why Plan Your Cruise with a Specialized Travel Agent?",
-    whyIntro: "When you work with SJU Luxe Travel through our NCM Concierge network, you receive:",
+    p1: "San Juan is one of the most important cruise ports in the Caribbean. Every week, dozens of ships depart from the Pan American Pier — but not all cruises are the same, and definitely not all onboard experiences are equal. The difference between an ordinary cruise and an extraordinary cruise lies largely in how you plan it and who you plan it with.",
+    p2: "<strong>SJU Luxe Travel</strong> is your cruise agent based in San Juan, Puerto Rico. As part of the <strong>NCM Concierge — Travel Leaders</strong> network, we have access to exclusive VIP benefits, preferential rates, and personalized attention you simply can't get booking directly with the cruise line.",
+    h2Why: "Why Plan Your cruise with a Specialized travel agent?",
+    whyIntro:
+      "When you work with SJU Luxe Travel through our NCM Concierge network, you receive:",
     whyItems: [
-      ["Onboard credit", "real money to spend on spa, excursions, or specialty restaurants"],
-      ["Welcome amenities in cabin", "champagne, fruits, flowers coordinated before boarding"],
+      [
+        "Onboard credit",
+        "real money to spend on spa, excursions, or specialty restaurants",
+      ],
+      [
+        "Welcome amenities in cabin",
+        "champagne, fruits, flowers coordinated before boarding",
+      ],
       ["Access to group rates and unpublished fares", ""],
       ["Optimal cabin selection based on your budget and preferences", ""],
-      ["Private excursions at each port", "private guides instead of mass excursions"],
-      ["Hotel coordination in San Juan the night before, transfers, and itinerary extensions", ""],
+      [
+        "Private excursions at each port",
+        "private guides instead of mass excursions",
+      ],
+      [
+        "Hotel coordination in San Juan the night before, transfers, and itinerary extensions",
+        "",
+      ],
     ],
-    h2Lines: "Luxury Cruise Lines Departing from San Juan in 2026",
-    linesIntro: "These are the luxury lines with confirmed or scheduled departures from the Port of San Juan this year — and the ones I work with as a specialized travel agent:",
+    h2Lines: "Cruise Lines Departing from San Juan in 2026",
+    linesIntro:
+      "These are the lines with confirmed or scheduled departures from the Port of San Juan this year — and the ones I work with as a specialized travel agent:",
     lines: {
-      ritzCarlton: { title: "Ritz-Carlton Yacht Collection", desc: "The newest and most exclusive to arrive in San Juan. Three ultra-luxury yachts (Evrima, Ilma, Luminara) with a maximum of 298 passengers, five-star hotel design, and a proposition that blurs the line between private yacht and cruise. Nearly 100% personalized service, Michelin-level gastronomy, and access to small ports that large cruise lines can't reach." },
-      explora: { title: "Explora Journeys", desc: "MSC's new luxury line, arriving in the Caribbean with a proposition designed for the modern high-end traveler. Their ships combine spacious areas, multiple signature restaurants, and an atmosphere that feels more like a beach resort than a traditional cruise. One of the freshest propositions in the segment for 2026." },
-      virgin: { title: "Virgin Voyages", desc: "Adults only. No buffet, no fixed schedules, no family-cruise atmosphere. Their Scarlet Lady-type ships offer more than 20 restaurants included in the fare, Redemption Spa, curated entertainment, and an atmosphere that appeals to millennial and Gen X luxury travelers who reject the traditional cruise. Their San Juan departures to the Caribbean are among the most sought-after in 2026." },
-      azamara: { title: "Azamara Cruises", desc: "Specialists in cultural immersion cruises with overnight port stays. Their mid-size ships (under 700 passengers) dock when everyone else has sailed, allowing you to experience the city at night. Excellent option for travelers who want depth at each destination." },
-      crystal: { title: "Crystal Cruises", desc: "Returned renovated in 2023 after their relaunch and are back in the Caribbean. A historic synonym for ultra-luxury at sea: butler service, premium all-inclusive, and a loyal clientele that has followed them for decades. Their cabins and suites are among the most spacious in the segment." },
-      oceania: { title: "Oceania Cruises", desc: "For the traveler who puts gastronomy first. Boutique ships, signature cuisine with the onboard Culinary Center program, and boutique destinations that large ships can't visit. Their routes from San Juan to the southern Caribbean are perfect for those who already know the conventional Caribbean." },
-      regent: { title: "Regent Seven Seas", desc: "The most comprehensive all-inclusive on the market: business class flights, excursions at every port, premium beverages, spa, and gratuities — all included. If you want the most hassle-free experience possible, Regent is the answer." },
-      silversea: { title: "Silversea", desc: "European elegance and ultra-personalized service. Their expedition ships open doors to Antarctica, Galápagos, and the Arctic, while their classic fleet covers the Caribbean with the refinement that distinguishes them. All-suite, all-inclusive." },
-      viking: { title: "Viking Ocean Cruises", desc: "No casinos, no massive shows, no children. Just destinations, history, and gastronomy. Their uniform 930-passenger ships offer onboard lectures, included cultural excursions, and a clientele that travels to learn, not just to rest." },
-      seabourn: { title: "Seabourn", desc: "Ultra-luxury at sea. Small ships (maximum 600 passengers), near-private-yacht service, champagne on deck, and access to intimate ports where large ships can't fit. Their Caribbean itineraries from San Juan are perfect for the traveler seeking absolute exclusivity." },
-      seadream: { title: "SeaDream Yacht Club", desc: "Two mega-yachts of only 112 passengers each. The closest experience to a private yacht available on the market: no fixed schedules, no strict dress code, no crowds. They dock at boutique Caribbean ports that no other cruise reaches. The favorite option for the client who has tried everything and wants something truly different." },
+      ritzCarlton: {
+        title: "Ritz-Carlton Yacht Collection",
+        desc: "The newest and most exclusive to arrive in San Juan. Three ultra-yachts (Evrima, Ilma, Luminara) with a maximum of 298 passengers, five-star hotel design, and a proposition that blurs the line between private yacht and cruise. Nearly 100% personalized service, Michelin-level gastronomy, and access to small ports that large cruise lines can't reach.",
+      },
+      explora: {
+        title: "Explora Journeys",
+        desc: "MSC's new line, arriving in the Caribbean with a proposition designed for the modern high-end traveler. Their ships combine spacious areas, multiple signature restaurants, and an atmosphere that feels more like a beach resort than a traditional cruise. One of the freshest propositions in the segment for 2026.",
+      },
+      virgin: {
+        title: "Virgin Voyages",
+        desc: "Adults only. No buffet, no fixed schedules, no family-cruise atmosphere. Their Scarlet Lady-type ships offer more than 20 restaurants included in the fare, Redemption Spa, curated entertainment, and an atmosphere that appeals to millennial and Gen X Discerning Travelers who reject the traditional cruise. Their San Juan departures to the Caribbean are among the most sought-after in 2026.",
+      },
+      azamara: {
+        title: "Azamara cruises",
+        desc: "Specialists in cultural immersion cruises with overnight port stays. Their mid-size ships (under 700 passengers) dock when everyone else has sailed, allowing you to experience the city at night. Excellent option for travelers who want depth at each destination.",
+      },
+      crystal: {
+        title: "Crystal cruises",
+        desc: "Returned renovated in 2023 after their relaunch and are back in the Caribbean. A historic synonym for ultra-at sea: butler service, premium all-inclusive, and a loyal clientele that has followed them for decades. Their cabins and suites are among the most spacious in the segment.",
+      },
+      oceania: {
+        title: "Oceania cruises",
+        desc: "For the traveler who puts gastronomy first. Boutique ships, signature cuisine with the onboard Culinary Center program, and boutique destinations that large ships can't visit. Their routes from San Juan to the southern Caribbean are perfect for those who already know the conventional Caribbean.",
+      },
+      regent: {
+        title: "Regent Seven Seas",
+        desc: "The most comprehensive all-inclusive on the market: business class flights, excursions at every port, premium beverages, spa, and gratuities — all included. If you want the most hassle-free experience possible, Regent is the answer.",
+      },
+      silversea: {
+        title: "Silversea",
+        desc: "European elegance and ultra-personalized service. Their expedition ships open doors to Antarctica, Galápagos, and the Arctic, while their classic fleet covers the Caribbean with the refinement that distinguishes them. All-suite, all-inclusive.",
+      },
+      viking: {
+        title: "Viking Ocean cruises",
+        desc: "No casinos, no massive shows, no children. Just destinations, history, and gastronomy. Their uniform 930-passenger ships offer onboard lectures, included cultural excursions, and a clientele that travels to learn, not just to rest.",
+      },
+      seabourn: {
+        title: "Seabourn",
+        desc: "Ultra-at sea. Small ships (maximum 600 passengers), near-private-yacht service, champagne on deck, and access to intimate ports where large ships can't fit. Their Caribbean itineraries from San Juan are perfect for the traveler seeking absolute exclusivity.",
+      },
+      seadream: {
+        title: "SeaDream Yacht Club",
+        desc: "Two mega-yachts of only 112 passengers each. The closest experience to a private yacht available on the market: no fixed schedules, no strict dress code, no crowds. They dock at boutique Caribbean ports that no other cruise reaches. The favorite option for the client who has tried everything and wants something truly different.",
+      },
     },
-    h2Itineraries: "Popular Cruise Itineraries from San Juan",
+    h2Itineraries: "Popular cruise Itineraries from San Juan",
     itineraries: [
-      ["Eastern & Southern Caribbean", "Barbados, St. Lucia, Grenada, Aruba, Curaçao"],
+      [
+        "Eastern & Southern Caribbean",
+        "Barbados, St. Lucia, Grenada, Aruba, Curaçao",
+      ],
       ["Western Caribbean", "Jamaica, Cayman Islands, Belize, Costa Maya"],
-      ["Northern Caribbean Islands", "St. Barts, St. Maarten, Antigua, St. Kitts"],
-      ["Transatlantic from San Juan", "Cross the Atlantic to Spain, Portugal, or the Canary Islands"],
-      ["Repositioning Cruises", "Reduced rates on long itineraries from San Juan to Europe or the Mediterranean"],
+      [
+        "Northern Caribbean Islands",
+        "St. Barts, St. Maarten, Antigua, St. Kitts",
+      ],
+      [
+        "Transatlantic from San Juan",
+        "Cross the Atlantic to Spain, Portugal, or the Canary Islands",
+      ],
+      [
+        "Repositioning cruises",
+        "Reduced rates on long itineraries from San Juan to Europe or the Mediterranean",
+      ],
     ],
-    h2Groups: "Luxury Group Cruises from Puerto Rico",
-    groupsIntro: "Celebrating a special birthday, honeymoon, anniversary, or family reunion? We coordinate luxury group cruises with:",
+    h2Groups: "Group cruises from Puerto Rico",
+    groupsIntro:
+      "Celebrating a special birthday, honeymoon, anniversary, or family reunion? We coordinate group cruises with:",
     groupItems: [
       "Cabin blocks in premium locations",
       "Private dinners at specialty restaurants onboard",
@@ -509,61 +744,93 @@ export const en = {
       "Individual attention for each group member",
     ],
     h2Port: "The Port of San Juan — Your Gateway to the World",
-    portIntro: "The San Juan Cruise Terminal operates from the historic Pan American Pier and the Old San Juan Cruise Port. Before sailing, we can coordinate:",
+    portIntro:
+      "The San Juan cruise Terminal operates from the historic Pan American Pier and the Old San Juan cruise Port. Before sailing, we can coordinate:",
     portItems: [
       "Stay at a boutique hotel in Old San Juan or Condado the night before",
       "Private transfer from your home to the port",
       "Pre-cruise dinner at one of San Juan's best restaurants",
     ],
-    h2FAQ: "Frequently Asked Questions About Luxury Cruises from San Juan",
-    faqQ1: "What are the best luxury cruise lines departing from San Juan in 2026?",
-    faqA1: "In 2026, San Juan features departures from the world's leading luxury lines: Ritz-Carlton Yacht Collection, Explora Journeys, Virgin Voyages, Azamara, Crystal Cruises, Oceania, Regent Seven Seas, Silversea, Viking Ocean, Seabourn, and SeaDream Yacht Club. As a travel agent specializing in luxury cruises from Puerto Rico, I help you compare options, access preferential rates, and choose the line that best fits your travel style and budget.",
+    h2FAQ: "Frequently Asked Questions About cruises from San Juan",
+    faqQ1: "What are the best cruise lines departing from San Juan in 2026?",
+    faqA1:
+      "In 2026, San Juan features departures from the world's leading lines: Ritz-Carlton Yacht Collection, Explora Journeys, Virgin Voyages, Azamara, Crystal cruises, Oceania, Regent Seven Seas, Silversea, Viking Ocean, Seabourn, and SeaDream Yacht Club. As a travel agent specializing in cruises from Puerto Rico, I help you compare options, access preferential rates, and choose the line that best fits your travel style and budget.",
     riverCruisesLink: "Prefer a cruise along historic rivers?",
-    riverCruisesLinkText: "Discover our luxury river cruises →",
+    riverCruisesLinkText: "Discover our river cruises →",
     ctaTitle: "Ready to set sail from San Juan",
-    ctaTitleHighlight: "on the cruise of your dreams?",
-    ctaDescription: "Contact us today for your free consultation. Tell us where you want to go, when, and with whom — and we'll find the perfect cruise with the best available benefits.",
-    ctaButton: "Free Cruise Consultation",
+    ctaTitleHighlight: "On the cruise of your dreams?",
+    ctaDescription:
+      "Contact us today for your free consultation. Tell us where you want to go, when, and with whom — and we'll find the perfect cruise with the best available benefits.",
+    ctaButton: "Free cruise Consultation",
   },
   crucerosFluviales: {
-    label: "River Cruises",
-    h1: "Luxury River Cruises from Puerto Rico —",
-    h1Highlight: "Your Certified Travel Agent",
+    label: "River cruises",
+    h1: "River cruises from Puerto Rico —",
+    h1Highlight: "Your Certified travel agent",
     certifications: [
       "AmaWaterways — Certified Agent",
       "Avalon Waterways — Certified Agent",
-      "Riverside Luxury Cruises — Certified Agent",
+      "Riverside cruises — Certified Agent",
     ],
-    introP: "River cruises are the most intimate and cultural way to explore Europe, Asia, Egypt, and South America. As a travel agent certified by <strong>AmaWaterways</strong>, <strong>Avalon Waterways</strong>, and <strong>Riverside Luxury Cruises</strong>, I have access to preferential rates, exclusive onboard benefits, and specialized knowledge to help you choose the perfect line and itinerary. From San Juan, I coordinate everything: flights, pre-cruise hotel, transfers, and the complete cruise.",
-    h2Different: "Why Are River Cruises Different?",
-    differentP: "A river cruise is not a small ocean cruise — it's a completely different experience. Ships have between 100 and 190 passengers maximum, meaning personalized service that large ships can't offer. You sail through the heart of historic cities — docking in the center of Vienna, Budapest, Amsterdam, or Paris, steps from museums, cathedrals, and local markets. There are no days at sea: every morning you wake up in a new port. And unlike ocean cruises, river cruises are designed for the curious traveler who wants cultural depth, not onboard entertainment.",
+    introP:
+      "River cruises are the most intimate and cultural way to explore Europe, Asia, Egypt, and South America. As a travel agent certified by <strong>AmaWaterways</strong>, <strong>Avalon Waterways</strong>, and <strong>Riverside cruises</strong>, I have access to preferential rates, exclusive onboard benefits, and specialized knowledge to help you choose the perfect line and itinerary. From San Juan, I coordinate everything: flights, pre-cruise hotel, transfers, and the complete cruise.",
+    h2Different: "Why Are River cruises Different?",
+    differentP:
+      "A river cruise is not a small ocean cruise — it's a completely different experience. Ships have between 100 and 190 passengers maximum, meaning personalized service that large ships can't offer. You sail through the heart of historic cities — docking in the center of Vienna, Budapest, Amsterdam, or Paris, steps from museums, cathedrals, and local markets. There are no days at sea: every morning you wake up in a new port. And unlike ocean cruises, river cruises are designed for the curious traveler who wants cultural depth, not onboard entertainment.",
     h2Certifications: "Lines I Work With — Official Certifications",
-    certificationsIntro: "I am a travel agent certified by the following three luxury river cruise lines, which allows me to offer you priority access, exclusive rates, and dedicated support:",
+    certificationsIntro:
+      "I am a travel agent certified by the following three river cruise lines, which allows me to offer you priority access, exclusive rates, and dedicated support:",
     amaTitle: "AmaWaterways — Official Certification",
-    amaDesc: "One of the most awarded river cruise lines in the world. Their state-of-the-art vessels sail the Danube, Rhine, Moselle, Seine, Rhône, Mekong, Chobe, and Nile. Known for their signature cuisine, cycling excursions, and dual-use balcony cabins (panoramic window and French balcony). Their Eastern Europe itineraries — Budapest, Vienna, Bratislava, Passau — are the most requested by our Puerto Rico clients.",
+    amaDesc:
+      "One of the most awarded river cruise lines in the world. Their state-of-the-art vessels sail the Danube, Rhine, Moselle, Seine, Rhône, Mekong, Chobe, and Nile. Known for their signature cuisine, cycling excursions, and dual-use balcony cabins (panoramic window and French balcony). Their Eastern Europe itineraries — Budapest, Vienna, Bratislava, Passau — are the most requested by our Puerto Rico clients.",
     avalonTitle: "Avalon Waterways — Official Certification",
-    avalonDesc: "Pioneers of the \"Suite Ship\" concept with cabins that transform into a wall-to-wall open balcony. Itineraries in Europe, South America (Galápagos and Amazon), and Asia (Mekong). Their ships on the Danube and Rhine combine contemporary design with a focus on authentic local experiences. Excellent option for travelers seeking modernity and flexibility.",
-    riversideTitle: "Riverside Luxury Cruises — Official Certification",
-    riversideDesc: "The most recent and exclusive proposition in the segment. Vessels designed to a superior luxury standard: larger suites, superior gastronomy, and one of the highest crew-to-passenger ratios on the market. Their European itineraries on the Rhine and Danube are ideal for the Puerto Rico traveler seeking the most refined river experience available.",
+    avalonDesc:
+      'Pioneers of the "Suite Ship" concept with cabins that transform into a wall-to-wall open balcony. Itineraries in Europe, South America (Galápagos and Amazon), and Asia (Mekong). Their ships on the Danube and Rhine combine contemporary design with a focus on authentic local experiences. Excellent option for travelers seeking modernity and flexibility.',
+    riversideTitle: "Riverside cruises — Official Certification",
+    riversideDesc:
+      "The most recent and exclusive proposition in the segment. Vessels designed to a superior standard: larger suites, superior gastronomy, and one of the highest crew-to-passenger ratios on the market. Their European itineraries on the Rhine and Danube are ideal for the Puerto Rico traveler seeking the most refined river experience available.",
     h2OtherLines: "Other Top-Tier River Lines",
-    otherLinesIntro: "In addition to my certifications, I work with the full spectrum of river luxury:",
-    vikingTitle: "Viking River Cruises",
-    vikingDesc: "The market leader by volume. Competitive all-inclusive pricing, itineraries on almost every major river in the world, and a very solid cultural experience. Ideal for a first river cruise experience.",
-    uniworldTitle: "Uniworld Boutique River Cruises",
-    uniworldDesc: "Each ship is a unique floating boutique hotel, with original artworks and personalized décor. Their Seine (Paris to Normandy) and Ganges routes are the most exclusive on the market.",
-    scenicTitle: "Scenic Luxury Cruises",
-    scenicDesc: "The largest cabins in the European river segment, with jacuzzi and private balcony. All-inclusive pricing with premium beverages, excursions, and gratuities included.",
+    otherLinesIntro:
+      "In addition to my certifications, I work with the full spectrum of premium river cruising:",
+    vikingTitle: "Viking River cruises",
+    vikingDesc:
+      "The market leader by volume. Competitive all-inclusive pricing, itineraries on almost every major river in the world, and a very solid cultural experience. Ideal for a first river cruise experience.",
+    uniworldTitle: "Uniworld Boutique River cruises",
+    uniworldDesc:
+      "Each ship is a unique floating boutique hotel, with original artworks and personalized décor. Their Seine (Paris to Normandy) and Ganges routes are the most exclusive on the market.",
+    scenicTitle: "Scenic cruises",
+    scenicDesc:
+      "The largest cabins in the European river segment, with jacuzzi and private balcony. All-inclusive pricing with premium beverages, excursions, and gratuities included.",
     h2Destinations: "Must-Visit River Destinations",
     riverDestinations: [
-      ["Central Europe — The Danube", "The most popular route among Puerto Rico travelers. Budapest, Vienna, Bratislava, and Passau in 7 to 14 nights. AmaWaterways, Avalon, and Riverside operate this route with departures during spring, summer, and fall."],
-      ["Western Europe — The Rhine & Moselle", "Amsterdam, Cologne, the Rhine Valley with its medieval castles, and Basel. The autumn version with harvest-season vineyards is particularly spectacular. AmaWaterways and Avalon are my recommendations for this route."],
-      ["France — The Seine & Rhône", "The Seine connects Paris with the historic beaches of Normandy. The Rhône links Lyon, Avignon, and Provence. Ideal for Francophile travelers or those wanting to combine the cruise with a Paris stay."],
-      ["Portugal — The Douro", "One of the most romantic routes in Europe. Sail among Porto vineyards, historic estates, and medieval villages that don't appear in any travel guide. Avalon Waterways offers excellent itineraries on this route."],
-      ["Egypt — The Nile", "From Luxor to Aswan, passing through the temples of Karnak, the Valley of the Kings, and Abu Simbel. An experience combining ancient history with the modern luxury of lines like AmaWaterways."],
-      ["Asia — The Mekong", "Cambodia and Vietnam from the river: Angkor temples, floating markets, villages that will never receive a tour bus. AmaWaterways and Avalon operate this route with ships designed specifically for the Mekong."],
+      [
+        "Central Europe — The Danube",
+        "The most popular route among Puerto Rico travelers. Budapest, Vienna, Bratislava, and Passau in 7 to 14 nights. AmaWaterways, Avalon, and Riverside operate this route with departures during spring, summer, and fall.",
+      ],
+      [
+        "Western Europe — The Rhine & Moselle",
+        "Amsterdam, Cologne, the Rhine Valley with its medieval castles, and Basel. The autumn version with harvest-season vineyards is particularly spectacular. AmaWaterways and Avalon are my recommendations for this route.",
+      ],
+      [
+        "France — The Seine & Rhône",
+        "The Seine connects Paris with the historic beaches of Normandy. The Rhône links Lyon, Avignon, and Provence. Ideal for Francophile travelers or those wanting to combine the cruise with a Paris stay.",
+      ],
+      [
+        "Portugal — The Douro",
+        "One of the most romantic routes in Europe. Sail among Porto vineyards, historic estates, and medieval villages that don't appear in any travel guide. Avalon Waterways offers excellent itineraries on this route.",
+      ],
+      [
+        "Egypt — The Nile",
+        "From Luxor to Aswan, passing through the temples of Karnak, the Valley of the Kings, and Abu Simbel. An experience combining ancient history with the modern of lines like AmaWaterways.",
+      ],
+      [
+        "Asia — The Mekong",
+        "Cambodia and Vietnam from the river: Angkor temples, floating markets, villages that will never receive a tour bus. AmaWaterways and Avalon operate this route with ships designed specifically for the Mekong.",
+      ],
     ],
     h2Logistics: "How Logistics Work from Puerto Rico",
-    logisticsIntro: "No river cruise departs from San Juan — all embarkations are in Europe, Asia, or Africa. I take care of coordinating the complete trip:",
+    logisticsIntro:
+      "No river cruise departs from San Juan — all embarkations are in Europe, Asia, or Africa. I take care of coordinating the complete trip:",
     logisticsSteps: [
       "Flight from SJU connecting in Miami, New York, Atlanta, or Philadelphia to the European or Asian embarkation port",
       "Hotel the night before embarkation to avoid mishaps",
@@ -572,18 +839,35 @@ export const en = {
       "Disembarkation transfer and return flight to SJU",
       "Specialized travel insurance for river cruises",
     ],
-    logisticsP: "You can book just the cruise if you prefer to manage flights on your own, or let me put together the complete package. Most of my clients prefer the package — it eliminates logistical stress and often ends up being more economical than booking each component separately.",
-    h2FAQ: "Frequently Asked Questions About River Cruises",
+    logisticsP:
+      "You can book just the cruise if you prefer to manage flights on your own, or let me put together the complete package. Most of my clients prefer the package — it eliminates logistical stress and often ends up being more economical than booking each component separately.",
+    h2FAQ: "Frequently Asked Questions About River cruises",
     faqItems: [
-      { q: "How is a river cruise different from an ocean cruise?", a: "River cruises have much smaller ships (100–190 passengers vs. 300–700 on luxury ocean cruises), sail historic rivers instead of oceans, and dock in city centers. The experience is more intimate, more cultural, and with no days at sea." },
-      { q: "Why book with a certified AmaWaterways, Avalon, and Riverside agent?", a: "Official certifications give me access to rates not available to the general public, onboard benefits like credits or upgrades when available, and direct support from each line's sales teams. You don't pay more by working with me — in most cases the price is the same or better than booking directly." },
-      { q: "What is the best time for a river cruise in Europe?", a: "Spring (April–May) and fall (September–October) are the most popular seasons for weather and local events. Summer (June–August) is peak season with the best hours but higher demand. The Christmas market season (December) on the Danube and Rhine is a unique and highly sought-after experience." },
-      { q: "How far in advance should I book?", a: "For peak season in Europe (summer and Christmas), book 12 to 18 months in advance. Private balcony cabins and suites sell out first. For spring and fall, 10 to 12 months is sufficient." },
-      { q: "Can I combine the river cruise with city stays?", a: "Yes, and I recommend it. Most of my clients add 2 to 3 nights at the embarkation or disembarkation port — Paris, Amsterdam, Budapest, or Lisbon are perfect destinations to extend the trip." },
+      {
+        q: "How is a river cruise different from an ocean cruise?",
+        a: "River cruises have much smaller ships (100–190 passengers vs. 300–700 on ocean cruises), sail historic rivers instead of oceans, and dock in city centers. The experience is more intimate, more cultural, and with no days at sea.",
+      },
+      {
+        q: "Why book with a certified AmaWaterways, Avalon, and Riverside agent?",
+        a: "Official certifications give me access to rates not available to the general public, onboard benefits like credits or upgrades when available, and direct support from each line's sales teams. You don't pay more by working with me — in most cases the price is the same or better than booking directly.",
+      },
+      {
+        q: "What is the best time for a river cruise in Europe?",
+        a: "Spring (April–May) and fall (September–October) are the most popular seasons for weather and local events. Summer (June–August) is peak season with the best hours but higher demand. The Christmas market season (December) on the Danube and Rhine is a unique and highly sought-after experience.",
+      },
+      {
+        q: "How far in advance should I book?",
+        a: "For peak season in Europe (summer and Christmas), book 12 to 18 months in advance. Private balcony cabins and suites sell out first. For spring and fall, 10 to 12 months is sufficient.",
+      },
+      {
+        q: "Can I combine the river cruise with city stays?",
+        a: "Yes, and I recommend it. Most of my clients add 2 to 3 nights at the embarkation or disembarkation port — Paris, Amsterdam, Budapest, or Lisbon are perfect destinations to extend the trip.",
+      },
     ],
     ctaTitle: "Interested in a",
     ctaTitleHighlight: "River Cruise?",
-    ctaDescription: "Tell me your dates, the destination that calls to you, and your budget. I'll prepare a proposal comparing the best options from AmaWaterways, Avalon, Riverside, and more.",
+    ctaDescription:
+      "Tell me your dates, the destination that calls to you, and your budget. I'll prepare a proposal comparing the best options from AmaWaterways, Avalon, Riverside, and more.",
     ctaButton: "Request Free Consultation",
   },
   notFound: {

@@ -6,30 +6,77 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { AUTHOR, ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import blogMicrocationsImg from "@/assets/blog-microcations.jpg";
 
-const schemaJson = buildGraph({
-      "@type": "BlogPosting",
-      headline: "¿Son las Microvacaciones el Futuro de los Viajes desde Puerto Rico?",
-      description: "Las microvacaciones —escapadas de 2 a 5 días bien planificadas desde San Juan— son una nueva forma de viajar más consciente, flexible y de lujo.",
-      author: AUTHOR,
-      publisher: ORG_REF,
-      datePublished: "2026-04-11",
-      dateModified: "2026-07-23",
-      inLanguage: "es-PR",
-      keywords: ["microvacaciones", "micro-cation", "escapadas cortas desde Puerto Rico", "long weekend luxury", "viajes cortos de lujo", "weekend getaways from San Juan", "luxury short trips"],
-      url: "https://www.sjuluxetravel.com/blog/micro-vacaciones-futuro-del-viaje",
-      mainEntityOfPage: "https://www.sjuluxetravel.com/blog/micro-vacaciones-futuro-del-viaje",
-    },
-    {
-      "@type": "FAQPage",
-      mainEntity: [
-        { "@type": "Question", name: "¿Qué es una microvacación?", acceptedAnswer: { "@type": "Answer", text: "Una microvacación es una escapada breve y bien planificada de 2 a 5 días — típicamente un fin de semana largo o una pausa estratégica entre semana. Está diseñada para encajar en tu vida sin alterarla." } },
-        { "@type": "Question", name: "¿Cuáles son las mejores microvacaciones desde San Juan, Puerto Rico?", acceptedAnswer: { "@type": "Answer", text: "Desde SJU funcionan especialmente bien: Miami (vuelos directos, 2h30), Nueva York (4h), Cartagena (3h), Aruba/Curaçao (1h30), Bahamas, Punta Cana, y vuelos nocturnos a Madrid o Lisboa para un long weekend europeo de 4 días." } },
-        { "@type": "Question", name: "¿Cuánto debería durar una microvacación?", acceptedAnswer: { "@type": "Answer", text: "Entre 2 y 5 días. Menos de 2 noches se siente apresurado; más de 5 deja de ser micro. El sweet spot son 3–4 noches: tiempo real para desconectar sin agotar tus PTO." } },
-        { "@type": "Question", name: "¿Son las microvacaciones más sostenibles?", acceptedAnswer: { "@type": "Answer", text: "Pueden serlo cuando se planifican bien: vuelos directos, hoteles eficientes, soporte a negocios locales. Múltiples escapadas mal planificadas pueden ser menos sostenibles que un solo viaje bien diseñado." } },
-        { "@type": "Question", name: "¿Vale la pena un agente para un viaje de 3 días?", acceptedAnswer: { "@type": "Answer", text: "Sí, porque un viaje corto no perdona errores: hotel mal ubicado, vuelo con escala innecesaria o reserva de restaurante negada queman porciones grandes del viaje. Un agente maximiza cada hora — y al mismo precio te suma beneficios de hotel." } },
-      ],
-    });
-
+const schemaJson = buildGraph(
+  {
+    "@type": "BlogPosting",
+    headline:
+      "¿Son las Microvacaciones el Futuro de los Viajes desde Puerto Rico?",
+    description:
+      "Las microvacaciones —escapadas de 2 a 5 días bien planificadas desde San Juan— son una nueva forma de viajar más consciente, flexible y.",
+    author: AUTHOR,
+    publisher: ORG_REF,
+    datePublished: "2026-04-11",
+    dateModified: "2026-07-23",
+    inLanguage: "Es-PR",
+    keywords: [
+      "microvacaciones",
+      "micro-cation",
+      "escapadas cortas desde Puerto Rico",
+      "long weekend getaways",
+      "viajes cortos",
+      "weekend getaways from San Juan",
+      "short trips",
+    ],
+    url: "https://www.sjuluxetravel.com/blog/micro-vacaciones-futuro-del-viaje",
+    mainEntityOfPage:
+      "https://www.sjuluxetravel.com/blog/micro-vacaciones-futuro-del-viaje",
+  },
+  {
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "¿Qué es una microvacación?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Una microvacación es una escapada breve y bien planificada de 2 a 5 días — típicamente un fin de semana largo o una pausa estratégica entre semana. Está diseñada para encajar en tu vida sin alterarla.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Cuáles son las mejores microvacaciones desde San Juan, Puerto Rico?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Desde SJU funcionan especialmente bien: Miami (vuelos directos, 2h30), Nueva York (4h), Cartagena (3h), Aruba/Curaçao (1h30), Bahamas, Punta Cana, y vuelos nocturnos a Madrid o Lisboa para un long weekend europeo de 4 días.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Cuánto debería durar una microvacación?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Entre 2 y 5 días. Menos de 2 noches se siente apresurado; más de 5 deja de ser micro. El sweet spot son 3–4 noches: tiempo real para desconectar sin agotar tus PTO.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Son las microvacaciones más sostenibles?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Pueden serlo cuando se planifican bien: vuelos directos, hoteles eficientes, soporte a negocios locales. Múltiples escapadas mal planificadas pueden ser menos sostenibles que un solo viaje bien diseñado.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "¿Vale la pena un agente para un viaje de 3 días?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Sí, porque un viaje corto no perdona errores: hotel mal ubicado, vuelo con escala innecesaria o reserva de restaurante negada queman porciones grandes del viaje. Un agente maximiza cada hora — y al mismo precio te suma beneficios de hotel.",
+        },
+      },
+    ],
+  },
+);
 
 const MicroVacaciones = () => {
   const { language, localPath } = useLanguage();
@@ -47,14 +94,17 @@ const MicroVacaciones = () => {
         }
         description={
           isEs
-            ? "Las microvacaciones son escapadas cortas y bien planificadas de 2 a 5 días. Descubre por qué son el futuro del viaje de lujo, consciente y flexible."
-            : "Micro-cations are short, well-planned 2–5 day getaways. Discover why they're the future of luxury, mindful, and flexible travel."
+            ? "Las microvacaciones son escapadas cortas y bien planificadas de 2 a 5 días. Descubre por qué son el futuro del viaje a medida, consciente y flexible."
+            : "Micro-cations are short, well-planned 2–5 day getaways. Discover why they're the future of mindful, flexible travel."
         }
         canonical="https://www.sjuluxetravel.com/blog/micro-vacaciones-futuro-del-viaje"
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
-          { name: '¿Son las Microvacaciones el Futuro de los Viajes desde Puerto Rico?', url: "https://www.sjuluxetravel.com/blog/micro-vacaciones-futuro-del-viaje" },
+          {
+            name: "¿Son las Microvacaciones el Futuro de los Viajes desde Puerto Rico?",
+            url: "https://www.sjuluxetravel.com/blog/micro-vacaciones-futuro-del-viaje",
+          },
         ]}
         schemaJson={schemaJson}
       />
@@ -84,10 +134,16 @@ const MicroVacaciones = () => {
                 : "Shorter, more mindful, and more meaningful getaways"}
             </p>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
-              <Link to={localPath("/about")} className="flex items-center gap-1.5 hover:text-gold transition-colors">
+              <Link
+                to={localPath("/about")}
+                className="flex items-center gap-1.5 hover:text-gold transition-colors"
+              >
                 <User size={12} className="text-gold" />
                 Daniel Santiago Díaz
-                <span className="text-muted-foreground/70"> — {isEs ? "Agente de Viajes de Lujo" : "Luxury Travel Advisor"}</span>
+                <span className="text-muted-foreground/70">
+                  {" "}
+                  — {isEs ? "Agente de viajes a medida" : "Travel Advisor"}
+                </span>
               </Link>
               <span className="flex items-center gap-1.5">
                 <Calendar size={12} className="text-gold" />
@@ -98,7 +154,11 @@ const MicroVacaciones = () => {
                 {isEs ? "6 min de lectura" : "6 min read"}
               </span>
             </div>
-            <p className="text-muted-foreground/70 text-xs mt-3 italic">{isEs ? "Última actualización: 23 de julio de 2026" : "Last updated: July 23, 2026"}</p>
+            <p className="text-muted-foreground/70 text-xs mt-3 italic">
+              {isEs
+                ? "Última actualización: 23 de julio de 2026"
+                : "Last updated: July 23, 2026"}
+            </p>
           </div>
 
           <div className="aspect-[16/9] overflow-hidden rounded-lg gold-border mb-12">
@@ -106,8 +166,8 @@ const MicroVacaciones = () => {
               src={blogMicrocationsImg}
               alt={
                 isEs
-                  ? "Microvacaciones de lujo — escapadas cortas planificadas por SJU Luxe Travel"
-                  : "Luxury micro-cations — short curated getaways by SJU Luxe Travel"
+                  ? "Microvacaciones a medida — escapadas cortas planificadas por SJU Luxe Travel"
+                  : "Micro-cations — short curated getaways by SJU Luxe Travel"
               }
               className="w-full h-full object-cover"
             />
@@ -146,12 +206,12 @@ const MicroVacaciones = () => {
                 ? [
                     "Un fin de semana largo en Europa",
                     "Una escapada rápida al Caribe",
-                    "Una breve estancia en un complejo turístico de lujo",
+                    "Una breve estancia en un complejo turístico",
                   ]
                 : [
                     "A long weekend in Europe",
                     "A quick Caribbean escape",
-                    "A short stay at a luxury resort",
+                    "A short stay at a resort",
                   ]
               ).map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
@@ -240,7 +300,9 @@ const MicroVacaciones = () => {
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
-              {isEs ? "Hoy en día, los viajeros buscan:" : "Today's travelers want:"}
+              {isEs
+                ? "Hoy en día, los viajeros buscan:"
+                : "Today's travelers want:"}
             </p>
 
             <ul className="space-y-2 text-muted-foreground text-base leading-relaxed list-none">
@@ -312,13 +374,13 @@ const MicroVacaciones = () => {
             <h2 className="font-heading text-2xl text-foreground mt-10">
               {isEs
                 ? "El lujo no tiene que ver con la duración, sino con la experiencia"
-                : "Luxury isn't about length—it's about experience"}
+                : "Isn't about length—it's about experience"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
                 ? "Es aquí donde está cambiando el concepto de viaje. Hoy en día, el lujo no tiene que ver con cuánto tiempo estás fuera, sino con:"
-                : "This is where travel is changing. Today, luxury isn't about how long you're away—it's about:"}
+                : "This is where travel is changing. Today, isn't about how long you're away—it's about:"}
             </p>
 
             <ul className="space-y-2 text-muted-foreground text-base leading-relaxed list-none">
@@ -366,53 +428,217 @@ const MicroVacaciones = () => {
 
             {/* Suggested micro-cations from SJU */}
             <h2 className="font-heading text-2xl text-foreground mt-12">
-              {isEs ? "Mejores Microvacaciones desde San Juan, Puerto Rico" : "Best Micro-Cations from San Juan, Puerto Rico"}
+              {isEs
+                ? "Mejores Microvacaciones desde San Juan, Puerto Rico"
+                : "Best Micro-Cations from San Juan, Puerto Rico"}
             </h2>
             <p className="text-muted-foreground text-base leading-relaxed">
-              {isEs ? "Estas son las escapadas cortas que funcionan mejor desde SJU — por distancia, vuelos directos y densidad de experiencia:" : "These are the short escapes that work best from SJU — by distance, direct flights and experience density:"}
+              {isEs
+                ? "Estas son las escapadas cortas que funcionan mejor desde SJU — por distancia, vuelos directos y densidad de experiencia:"
+                : "These are the short escapes that work best from SJU — by distance, direct flights and experience density:"}
             </p>
             <ul className="space-y-3 list-none">
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">•</span><span><strong className="text-foreground">{isEs ? "Miami (3 noches):" : "Miami (3 nights):"}</strong> {isEs ? "vuelo directo 2h30. The Setai South Beach o Faena para una escapada cultural-playera. Cena en Stubborn Seed, día de yate privado en Biscayne Bay." : "direct flight 2h30. The Setai South Beach or Faena for a culture-meets-beach escape. Dinner at Stubborn Seed, private yacht day on Biscayne Bay."}</span></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">•</span><span><strong className="text-foreground">{isEs ? "Nueva York (4 noches):" : "New York (4 nights):"}</strong> {isEs ? "vuelo 4h. The Mark o Aman New York. Broadway, MoMA, cena en Le Bernardin o Daniel — formato fin de semana largo de jueves a domingo." : "4h flight. The Mark or Aman New York. Broadway, MoMA, dinner at Le Bernardin or Daniel — Thursday-to-Sunday long weekend format."}</span></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">•</span><span><strong className="text-foreground">{isEs ? "Cartagena (3 noches):" : "Cartagena (3 nights):"}</strong> {isEs ? "vuelo directo 3h. Casa San Agustín o Sofitel Santa Clara. Cena en El Boliche Cebichería, día de chalupa privada por las Islas del Rosario." : "direct 3h flight. Casa San Agustín or Sofitel Santa Clara. Dinner at El Boliche Cebichería, private boat day to the Rosario Islands."}</span></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">•</span><span><strong className="text-foreground">{isEs ? "Aruba o Curaçao (3 noches):" : "Aruba or Curaçao (3 nights):"}</strong> {isEs ? "vuelo 1h30. Bucuti & Tara (Aruba, adults-only) o Baoase Luxury Resort (Curaçao). Playa + cena privada, totalmente desenchufado." : "1h30 flight. Bucuti & Tara (Aruba, adults-only) or Baoase Luxury Resort (Curaçao). Beach + private dinner, fully unplugged."}</span></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">•</span><span><strong className="text-foreground">{isEs ? "Lisboa o Madrid (5 noches, long weekend europeo):" : "Lisbon or Madrid (5 nights, European long weekend):"}</strong> {isEs ? "vuelo nocturno directo desde MIA (TAP a LIS, Iberia a MAD). Sales jueves noche, regresas lunes — 4 días completos en Europa con solo 2 días de PTO." : "direct overnight from MIA (TAP to LIS, Iberia to MAD). Leave Thursday night, return Monday — 4 full European days using only 2 PTO days."}</span></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">•</span><span><strong className="text-foreground">{isEs ? "Napa o Aspen (4 noches):" : "Napa or Aspen (4 nights):"}</strong> {isEs ? "Auberge du Soleil, Meadowood (Napa); The Little Nell (Aspen, invierno). Sin pasaporte — ideal para escapadas gastronómicas o de esquí." : "Auberge du Soleil, Meadowood (Napa); The Little Nell (Aspen, winter). No passport needed — ideal for food or ski escapes."}</span></li>
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">•</span>
+                <span>
+                  <strong className="text-foreground">
+                    {isEs ? "Miami (3 noches):" : "Miami (3 nights):"}
+                  </strong>{" "}
+                  {isEs
+                    ? "vuelo directo 2h30. The Setai South Beach o Faena para una escapada cultural-playera. Cena en Stubborn Seed, día de yate privado en Biscayne Bay."
+                    : "Direct flight 2h30. The Setai South Beach or Faena for a culture-meets-beach escape. Dinner at Stubborn Seed, private yacht day on Biscayne Bay."}
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">•</span>
+                <span>
+                  <strong className="text-foreground">
+                    {isEs ? "Nueva York (4 noches):" : "New York (4 nights):"}
+                  </strong>{" "}
+                  {isEs
+                    ? "vuelo 4h. The Mark o Aman New York. Broadway, MoMA, cena en Le Bernardin o Daniel — formato fin de semana largo de jueves a domingo."
+                    : "4h flight. The Mark or Aman New York. Broadway, MoMA, dinner at Le Bernardin or Daniel — Thursday-to-Sunday long weekend format."}
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">•</span>
+                <span>
+                  <strong className="text-foreground">
+                    {isEs ? "Cartagena (3 noches):" : "Cartagena (3 nights):"}
+                  </strong>{" "}
+                  {isEs
+                    ? "vuelo directo 3h. Casa San Agustín o Sofitel Santa Clara. Cena en El Boliche Cebichería, día de chalupa privada por las Islas del Rosario."
+                    : "Direct 3h flight. Casa San Agustín or Sofitel Santa Clara. Dinner at El Boliche Cebichería, private boat day to the Rosario Islands."}
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">•</span>
+                <span>
+                  <strong className="text-foreground">
+                    {isEs
+                      ? "Aruba o Curaçao (3 noches):"
+                      : "Aruba or Curaçao (3 nights):"}
+                  </strong>{" "}
+                  {isEs
+                    ? "vuelo 1h30. Bucuti & Tara (Aruba, adults-only) o Baoase Resort (Curaçao). Playa + cena privada, totalmente desenchufado."
+                    : "1h30 flight. Bucuti & Tara (Aruba, adults-only) or Baoase Resort (Curaçao). Beach + private dinner, fully unplugged."}
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">•</span>
+                <span>
+                  <strong className="text-foreground">
+                    {isEs
+                      ? "Lisboa o Madrid (5 noches, long weekend europeo):"
+                      : "Lisbon or Madrid (5 nights, European long weekend):"}
+                  </strong>{" "}
+                  {isEs
+                    ? "vuelo nocturno directo desde MIA (TAP a LIS, Iberia a MAD). Sales jueves noche, regresas lunes — 4 días completos en Europa con solo 2 días de PTO."
+                    : "Direct overnight from MIA (TAP to LIS, Iberia to MAD). Leave Thursday night, return Monday — 4 full European days using only 2 PTO days."}
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">•</span>
+                <span>
+                  <strong className="text-foreground">
+                    {isEs
+                      ? "Napa o Aspen (4 noches):"
+                      : "Napa or Aspen (4 nights):"}
+                  </strong>{" "}
+                  {isEs
+                    ? "Auberge du Soleil, Meadowood (Napa); The Little Nell (Aspen, invierno). Sin pasaporte — ideal para escapadas gastronómicas o de esquí."
+                    : "Auberge du Soleil, Meadowood (Napa); The Little Nell (Aspen, winter). No passport needed — ideal for food or ski escapes."}
+                </span>
+              </li>
             </ul>
 
             {/* FAQ */}
             <h2 className="font-heading text-2xl text-foreground mt-12">
-              {isEs ? "Preguntas Frecuentes sobre Microvacaciones" : "Micro-Cation FAQs"}
+              {isEs
+                ? "Preguntas Frecuentes sobre Microvacaciones"
+                : "Micro-Cation FAQs"}
             </h2>
             <div className="space-y-5">
               <div>
-                <h3 className="font-heading text-lg text-foreground mb-2">{isEs ? "¿Cuánto debería durar una microvacación?" : "How long should a micro-cation be?"}</h3>
-                <p className="text-muted-foreground text-base leading-relaxed">{isEs ? "Entre 2 y 5 días — el sweet spot son 3–4 noches: desconectas de verdad sin quemar tus PTO." : "Between 2 and 5 days — the sweet spot is 3–4 nights: real disconnect without burning your PTO."}</p>
+                <h3 className="font-heading text-lg text-foreground mb-2">
+                  {isEs
+                    ? "¿Cuánto debería durar una microvacación?"
+                    : "How long should a micro-cation be?"}
+                </h3>
+                <p className="text-muted-foreground text-base leading-relaxed">
+                  {isEs
+                    ? "Entre 2 y 5 días — el sweet spot son 3–4 noches: desconectas de verdad sin quemar tus PTO."
+                    : "Between 2 and 5 days — the sweet spot is 3–4 nights: real disconnect without burning your PTO."}
+                </p>
               </div>
               <div>
-                <h3 className="font-heading text-lg text-foreground mb-2">{isEs ? "¿Vale la pena un agente para 3 días?" : "Is an agent worth it for 3 days?"}</h3>
-                <p className="text-muted-foreground text-base leading-relaxed">{isEs ? "Sí — un viaje corto no perdona errores. Hotel mal ubicado, escala innecesaria o reserva negada queman porciones grandes. Un agente maximiza cada hora al mismo precio que reservar online." : "Yes — a short trip doesn't forgive mistakes. A poorly located hotel, unnecessary connection or denied reservation burn large chunks. An agent maximizes every hour at the same price as online."}</p>
+                <h3 className="font-heading text-lg text-foreground mb-2">
+                  {isEs
+                    ? "¿Vale la pena un agente para 3 días?"
+                    : "Is an agent worth it for 3 days?"}
+                </h3>
+                <p className="text-muted-foreground text-base leading-relaxed">
+                  {isEs
+                    ? "Sí — un viaje corto no perdona errores. Hotel mal ubicado, escala innecesaria o reserva negada queman porciones grandes. Un agente maximiza cada hora al mismo precio que reservar online."
+                    : "Yes — a short trip doesn't forgive mistakes. A poorly located hotel, unnecessary connection or denied reservation burn large chunks. An agent maximizes every hour at the same price as online."}
+                </p>
               </div>
               <div>
-                <h3 className="font-heading text-lg text-foreground mb-2">{isEs ? "¿Son sostenibles las microvacaciones?" : "Are micro-cations sustainable?"}</h3>
-                <p className="text-muted-foreground text-base leading-relaxed">{isEs ? "Cuando se planifican bien: vuelos directos, hoteles eficientes, soporte a negocios locales. Múltiples viajes mal planificados no lo son." : "When planned well: direct flights, efficient hotels, support for local businesses. Multiple poorly-planned trips are not."}</p>
+                <h3 className="font-heading text-lg text-foreground mb-2">
+                  {isEs
+                    ? "¿Son sostenibles las microvacaciones?"
+                    : "Are micro-cations sustainable?"}
+                </h3>
+                <p className="text-muted-foreground text-base leading-relaxed">
+                  {isEs
+                    ? "Cuando se planifican bien: vuelos directos, hoteles eficientes, soporte a negocios locales. Múltiples viajes mal planificados no lo son."
+                    : "When planned well: direct flights, efficient hotels, support for local businesses. Multiple poorly-planned trips are not."}
+                </p>
               </div>
             </div>
 
             {/* Related Reading */}
-            <h2 className="font-heading text-2xl text-foreground mt-12">{isEs ? "Lecturas Relacionadas" : "Related Reading"}</h2>
+            <h2 className="font-heading text-2xl text-foreground mt-12">
+              {isEs ? "Lecturas Relacionadas" : "Related Reading"}
+            </h2>
             <ul className="space-y-2 list-none">
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/what-luxury-travel-really-means")} className="text-gold hover:text-gold-light underline">{isEs ? "Lo que realmente significa el viaje de lujo" : "What luxury travel really means"}</Link></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/do-travel-agents-really-help-save-money")} className="text-gold hover:text-gold-light underline">{isEs ? "¿Los agentes de viaje ayudan a ahorrar?" : "Do travel agents help save money?"}</Link></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/luna-de-miel-puerto-rico-2026")} className="text-gold hover:text-gold-light underline">{isEs ? "Mejores destinos de luna de miel 2026" : "Best honeymoon destinations 2026"}</Link></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/blog/river-cruising-new-generation")} className="text-gold hover:text-gold-light underline">{isEs ? "Cruceros fluviales: la nueva generación" : "River cruising: the new generation"}</Link></li>
-              <li className="flex items-start gap-3"><span className="text-gold mt-1">→</span><Link to={localPath("/viajes-de-lujo")} className="text-gold hover:text-gold-light underline">{isEs ? "Servicios de viajes de lujo desde San Juan" : "Luxury travel services from San Juan"}</Link></li>
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">→</span>
+                <Link
+                  to={localPath("/blog/what-luxury-travel-really-means")}
+                  className="text-gold hover:text-gold-light underline"
+                >
+                  {isEs
+                    ? "Lo que realmente significa el viaje a medida"
+                    : "What travel really means"}
+                </Link>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">→</span>
+                <Link
+                  to={localPath(
+                    "/blog/do-travel-agents-really-help-save-money",
+                  )}
+                  className="text-gold hover:text-gold-light underline"
+                >
+                  {isEs
+                    ? "¿Los agentes de viaje ayudan a ahorrar?"
+                    : "Do travel agents help save money?"}
+                </Link>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">→</span>
+                <Link
+                  to={localPath("/blog/luna-de-miel-puerto-rico-2026")}
+                  className="text-gold hover:text-gold-light underline"
+                >
+                  {isEs
+                    ? "Mejores destinos de luna de miel 2026"
+                    : "Best honeymoon destinations 2026"}
+                </Link>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">→</span>
+                <Link
+                  to={localPath("/blog/river-cruising-new-generation")}
+                  className="text-gold hover:text-gold-light underline"
+                >
+                  {isEs
+                    ? "Cruceros fluviales: la nueva generación"
+                    : "River cruising: the new generation"}
+                </Link>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">→</span>
+                <Link
+                  to={localPath("/viajes-de-lujo")}
+                  className="text-gold hover:text-gold-light underline"
+                >
+                  {isEs
+                    ? "Servicios de viajes a medida desde San Juan"
+                    : "Luxury travel services from San Juan"}
+                </Link>
+              </li>
             </ul>
           </div>
 
-
           {/* CTA */}
-          <p data-cta="contextual-service-cta" className="mt-12 mb-4 text-center text-muted-foreground text-base leading-relaxed">{isEs ? "¿Quieres una escapada de lujo bien planificada? " : "Want a well-planned luxury escape? "}<Link to={localPath("/viajes-de-lujo-desde-puerto-rico")} className="text-gold hover:text-gold-light underline font-semibold">{isEs ? "Explora nuestros servicios de viajes de lujo →" : "Explore our luxury travel services →"}</Link></p>
+          <p
+            data-cta="contextual-service-cta"
+            className="mt-12 mb-4 text-center text-muted-foreground text-base leading-relaxed"
+          >
+            {isEs
+              ? "¿Quieres una escapada excepcional bien planificada? "
+              : "Want a well-planned luxury escape? "}
+            <Link
+              to={localPath("/viajes-de-lujo-desde-puerto-rico")}
+              className="text-gold hover:text-gold-light underline font-semibold"
+            >
+              {isEs
+                ? "Explora nuestros servicios de viajes a medida →"
+                : "Explore our luxury travel services →"}
+            </Link>
+          </p>
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
             <h3 className="font-heading text-2xl text-foreground mb-3">
               {isEs
@@ -421,8 +647,8 @@ const MicroVacaciones = () => {
             </h3>
             <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">
               {isEs
-                ? "Ya sea una escapada rápida al Caribe, un fin de semana largo en Europa o una estancia corta de lujo perfectamente organizada, una buena planificación marca la diferencia."
-                : "Whether it's a quick Caribbean escape, a long European weekend, or a perfectly curated short luxury stay, great planning makes all the difference."}
+                ? "Ya sea una escapada rápida al Caribe, un fin de semana largo en Europa o una estancia corta perfectamente organizada, una buena planificación marca la diferencia."
+                : "Whether it's a quick Caribbean escape, a long European weekend, or a perfectly curated short stay, great planning makes all the difference."}
             </p>
             <Link
               to={localPath("/contact")}

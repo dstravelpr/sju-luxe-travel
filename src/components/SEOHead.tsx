@@ -46,16 +46,15 @@ export const SEOHead = ({
   const lang: "en" | "es" = isEs ? "es" : "en";
 
   const strippedPath =
-    location.pathname.replace(/^\/(en|es)(\/|$)/, "/").replace(/\/$/, "") || "/";
+    location.pathname.replace(/^\/(en|es)(\/|$)/, "/").replace(/\/$/, "") ||
+    "/";
 
   // Canonical rule:
   //   /es/*  -> self-canonical (https://.../es/...)
   //   root & /en/* -> https://.../<stripped>
   const effectiveCanonical = (() => {
     if (isEs) {
-      return strippedPath === "/"
-        ? `${BASE}/es`
-        : `${BASE}/es${strippedPath}`;
+      return strippedPath === "/" ? `${BASE}/es` : `${BASE}/es${strippedPath}`;
     }
     // If a caller passed an explicit canonical, honor it (for root or non-es).
     if (canonical) return canonical;
@@ -63,7 +62,8 @@ export const SEOHead = ({
   })();
 
   const enUrl = strippedPath === "/" ? `${BASE}/` : `${BASE}${strippedPath}`;
-  const esUrl = strippedPath === "/" ? `${BASE}/es` : `${BASE}/es${strippedPath}`;
+  const esUrl =
+    strippedPath === "/" ? `${BASE}/es` : `${BASE}/es${strippedPath}`;
 
   const finalTitle = isEs && titleEs ? titleEs : title;
   const finalDescription = isEs && descriptionEs ? descriptionEs : description;
@@ -101,7 +101,9 @@ export const SEOHead = ({
       <meta property="og:description" content={finalDescription} />
       <meta property="og:type" content={ogType} />
       <meta property="og:image" content={image} />
-      {!suppressCanonical && <meta property="og:url" content={effectiveCanonical} />}
+      {!suppressCanonical && (
+        <meta property="og:url" content={effectiveCanonical} />
+      )}
       <meta property="og:site_name" content="SJU Luxe Travel" />
       <meta property="og:locale" content={ogLocale} />
       <meta property="og:locale:alternate" content={ogLocaleAlt} />
@@ -127,7 +129,9 @@ export const SEOHead = ({
         <script type="application/ld+json">{JSON.stringify(schemaJson)}</script>
       )}
       {breadcrumbSchema && (
-        <script type="application/ld+json">{JSON.stringify(breadcrumbSchema)}</script>
+        <script type="application/ld+json">
+          {JSON.stringify(breadcrumbSchema)}
+        </script>
       )}
     </Helmet>
   );

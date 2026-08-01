@@ -15,10 +15,14 @@ interface RelatedArticlesProps {
 
 export const RelatedArticles = ({ heading, items }: RelatedArticlesProps) => {
   const { localPath, language } = useLanguage();
-  const label = heading ?? (language === "es" ? "Sigue Leyendo" : "Related Articles");
+  const label =
+    heading ?? (language === "es" ? "Sigue Leyendo" : "Related Articles");
 
   return (
-    <section aria-label={label} className="mt-16 pt-10 border-t border-border/40">
+    <section
+      aria-label={label}
+      className="mt-16 pt-10 border-t border-border/40"
+    >
       <h2 className="font-heading text-2xl text-foreground mb-6">{label}</h2>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {items.map((item) => (

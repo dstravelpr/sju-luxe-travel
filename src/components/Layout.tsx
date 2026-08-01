@@ -1,6 +1,15 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Instagram, Facebook, Linkedin, Mail, Phone, MapPin, Menu, X } from "lucide-react";
+import {
+  Instagram,
+  Facebook,
+  Linkedin,
+  Mail,
+  Phone,
+  MapPin,
+  Menu,
+  X,
+} from "lucide-react";
 import { useLanguage } from "@/i18n/LanguageContext";
 import logo from "@/assets/logo.png";
 import footerSeal from "@/assets/footer-seal.png";
@@ -13,9 +22,13 @@ const LanguageToggle = () => {
       className="flex items-center gap-1 px-2.5 py-1 gold-border rounded-full text-xs tracking-wide text-muted-foreground hover:text-gold hover:border-gold transition-colors font-body uppercase"
       aria-label="Toggle language"
     >
-      <span className={language === "en" ? "text-gold font-semibold" : ""}>EN</span>
+      <span className={language === "en" ? "text-gold font-semibold" : ""}>
+        EN
+      </span>
       <span className="text-border">/</span>
-      <span className={language === "es" ? "text-gold font-semibold" : ""}>ES</span>
+      <span className={language === "es" ? "text-gold font-semibold" : ""}>
+        ES
+      </span>
     </button>
   );
 };
@@ -30,10 +43,19 @@ const Header = () => {
       label: t.nav.destinations,
       to: localPath("/destinations"),
       children: [
-        { label: t.nav.tripsFromPR, to: localPath("/viajes-de-lujo-desde-puerto-rico") },
+        {
+          label: t.nav.tripsFromPR,
+          to: localPath("/viajes-de-lujo-desde-puerto-rico"),
+        },
         { label: t.nav.honeymoon, to: localPath("/luna-de-miel-de-lujo") },
-        { label: t.nav.luxuryCruises, to: localPath("/cruceros-de-lujo-desde-san-juan") },
-        { label: t.nav.riverCruises, to: localPath("/cruceros-fluviales-de-lujo-desde-puerto-rico") },
+        {
+          label: t.nav.luxuryCruises,
+          to: localPath("/cruceros-de-lujo-desde-san-juan"),
+        },
+        {
+          label: t.nav.riverCruises,
+          to: localPath("/cruceros-fluviales-de-lujo-desde-puerto-rico"),
+        },
         { label: t.nav.maldives, to: localPath("/destinations/maldives") },
         { label: t.nav.portugal, to: localPath("/destinations/portugal") },
         { label: t.nav.mexico, to: localPath("/destinations/mexico") },
@@ -47,7 +69,11 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/30">
       <div className="container mx-auto px-6 flex items-center justify-between h-16">
         <Link to={localPath("/")} className="flex-shrink-0">
-          <img src={logo} alt="SJU Luxe Travel" className="h-12 w-12 object-contain" />
+          <img
+            src={logo}
+            alt="SJU Luxe Travel"
+            className="h-12 w-12 object-contain"
+          />
         </Link>
         <nav className="hidden md:flex items-center gap-10">
           {navLinks.map((link) =>
@@ -81,7 +107,7 @@ const Header = () => {
               >
                 {link.label}
               </Link>
-            )
+            ),
           )}
         </nav>
         <div className="hidden md:flex items-center gap-5">
@@ -156,10 +182,17 @@ const Footer = () => {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
             <div>
-              <img src={logo} alt="SJU Luxe Travel" className="h-14 w-14 object-contain mb-4" />
+              <img
+                src={logo}
+                alt="SJU Luxe Travel"
+                className="h-14 w-14 object-contain mb-4"
+              />
               <p className="font-heading text-lg text-foreground italic leading-snug mb-3">
                 "{t.footer.tagline}{" "}
-                <span className="text-gold-gradient">{t.footer.taglineHighlight}</span>"
+                <span className="text-gold-gradient">
+                  {t.footer.taglineHighlight}
+                </span>
+                "
               </p>
               <p className="text-muted-foreground text-xs leading-relaxed">
                 {t.footer.description}
@@ -167,10 +200,16 @@ const Footer = () => {
             </div>
 
             <div>
-              <h4 className="font-body text-gold text-sm tracking-[0.2em] uppercase mb-5">{t.footer.explore}</h4>
+              <h4 className="font-body text-gold text-sm tracking-[0.2em] uppercase mb-5">
+                {t.footer.explore}
+              </h4>
               <div className="space-y-3">
                 {navLinks.map((link) => (
-                  <Link key={link.to} to={link.to} className="block text-muted-foreground text-sm hover:text-gold transition-colors">
+                  <Link
+                    key={link.to}
+                    to={link.to}
+                    className="block text-muted-foreground text-sm hover:text-gold transition-colors"
+                  >
                     {link.label}
                   </Link>
                 ))}
@@ -178,48 +217,102 @@ const Footer = () => {
             </div>
 
             <div>
-              <h4 className="font-body text-gold text-sm tracking-[0.2em] uppercase mb-5">{t.footer.contact}</h4>
+              <h4 className="font-body text-gold text-sm tracking-[0.2em] uppercase mb-5">
+                {t.footer.contact}
+              </h4>
               <div className="space-y-3 text-sm text-muted-foreground">
                 <span className="flex items-center gap-2">
-                  <MapPin size={14} className="text-gold flex-shrink-0" /> {t.footer.location}
+                  <MapPin size={14} className="text-gold flex-shrink-0" />{" "}
+                  {t.footer.location}
                 </span>
-                <a href="tel:+16179355714" className="flex items-center gap-2 hover:text-gold transition-colors">
-                  <Phone size={14} className="text-gold flex-shrink-0" /> (617) 935-5714
+                <a
+                  href="tel:+16179355714"
+                  className="flex items-center gap-2 hover:text-gold transition-colors"
+                >
+                  <Phone size={14} className="text-gold flex-shrink-0" /> (617)
+                  935-5714
                 </a>
-                <a href="mailto:info@sjuluxetravel.com" className="flex items-center gap-2 hover:text-gold transition-colors">
-                  <Mail size={14} className="text-gold flex-shrink-0" /> info@sjuluxetravel.com
+                <a
+                  href="mailto:info@sjuluxetravel.com"
+                  className="flex items-center gap-2 hover:text-gold transition-colors"
+                >
+                  <Mail size={14} className="text-gold flex-shrink-0" />{" "}
+                  info@sjuluxetravel.com
                 </a>
               </div>
             </div>
 
             <div>
-              <h4 className="font-body text-gold text-sm tracking-[0.2em] uppercase mb-5">{t.footer.followUs}</h4>
+              <h4 className="font-body text-gold text-sm tracking-[0.2em] uppercase mb-5">
+                {t.footer.followUs}
+              </h4>
               <div className="flex gap-3 mb-8">
                 {[
-                  { icon: Instagram, href: "https://www.instagram.com/sjuluxetravel/", label: "Follow SJU Luxe Travel on Instagram" },
-                  { icon: Facebook, href: "https://www.facebook.com/sjuluxetravel", label: "Follow SJU Luxe Travel on Facebook" },
-                  { icon: Linkedin, href: "https://www.linkedin.com/company/sju-luxe-travel", label: "Follow SJU Luxe Travel on LinkedIn" },
                   {
-                    icon: (props: { size?: number; "aria-hidden"?: boolean }) => (
-                      <svg width={props.size} height={props.size} viewBox="0 0 24 24" fill="currentColor" aria-hidden={props["aria-hidden"]}>
-                        <path d="M21.35 11.1h-9.17v2.98h5.27c-.23 1.48-1.72 4.34-5.27 4.34-3.17 0-5.76-2.62-5.76-5.86s2.59-5.86 5.76-5.86c1.8 0 3.01.77 3.7 1.43l2.53-2.44C16.9 4.2 14.76 3.3 12.18 3.3 6.98 3.3 2.8 7.48 2.8 12.56s4.18 9.26 9.38 9.26c5.42 0 9.01-3.8 9.01-9.16 0-.62-.07-1.09-.14-1.56z"/>
+                    icon: Instagram,
+                    href: "https://www.instagram.com/sjuluxetravel/",
+                    label: "Follow SJU Luxe Travel on Instagram",
+                  },
+                  {
+                    icon: Facebook,
+                    href: "https://www.facebook.com/sjuluxetravel",
+                    label: "Follow SJU Luxe Travel on Facebook",
+                  },
+                  {
+                    icon: Linkedin,
+                    href: "https://www.linkedin.com/company/sju-luxe-travel",
+                    label: "Follow SJU Luxe Travel on LinkedIn",
+                  },
+                  {
+                    icon: (props: {
+                      size?: number;
+                      "aria-hidden"?: boolean;
+                    }) => (
+                      <svg
+                        width={props.size}
+                        height={props.size}
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        aria-hidden={props["aria-hidden"]}
+                      >
+                        <path d="M21.35 11.1h-9.17v2.98h5.27c-.23 1.48-1.72 4.34-5.27 4.34-3.17 0-5.76-2.62-5.76-5.86s2.59-5.86 5.76-5.86c1.8 0 3.01.77 3.7 1.43l2.53-2.44C16.9 4.2 14.76 3.3 12.18 3.3 6.98 3.3 2.8 7.48 2.8 12.56s4.18 9.26 9.38 9.26c5.42 0 9.01-3.8 9.01-9.16 0-.62-.07-1.09-.14-1.56z" />
                       </svg>
                     ),
                     href: "https://share.google/ahCukdIzbzs4A57sc",
                     label: "SJU Luxe Travel on Google",
                   },
                 ].map(({ icon: Icon, href, label }) => (
-                  <a key={href} href={href} target="_blank" rel="noopener noreferrer" aria-label={label} className="w-9 h-9 rounded-full gold-border flex items-center justify-center text-muted-foreground hover:text-gold hover:border-gold transition-colors">
+                  <a
+                    key={href}
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                    className="w-9 h-9 rounded-full gold-border flex items-center justify-center text-muted-foreground hover:text-gold hover:border-gold transition-colors"
+                  >
                     <Icon size={16} aria-hidden={true} />
                   </a>
                 ))}
               </div>
 
-              <h4 className="font-body text-gold text-sm tracking-[0.2em] uppercase mb-4">{t.footer.newsletter}</h4>
+              <h4 className="font-body text-gold text-sm tracking-[0.2em] uppercase mb-4">
+                {t.footer.newsletter}
+              </h4>
               <form onSubmit={(e) => e.preventDefault()} className="space-y-2">
-                <input type="text" placeholder={t.footer.fullName} className="w-full px-3 py-2 bg-background gold-border rounded-sm text-foreground text-xs placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors" />
-                <input type="email" placeholder={t.footer.emailAddress} className="w-full px-3 py-2 bg-background gold-border rounded-sm text-foreground text-xs placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors" />
-                <button type="submit" className="w-full py-2 bg-gold-gradient text-primary-foreground font-body text-[10px] font-semibold tracking-[0.2em] uppercase rounded-sm">
+                <input
+                  type="text"
+                  placeholder={t.footer.fullName}
+                  className="w-full px-3 py-2 bg-background gold-border rounded-sm text-foreground text-xs placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors"
+                />
+                <input
+                  type="email"
+                  placeholder={t.footer.emailAddress}
+                  className="w-full px-3 py-2 bg-background gold-border rounded-sm text-foreground text-xs placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors"
+                />
+                <button
+                  type="submit"
+                  className="w-full py-2 bg-gold-gradient text-primary-foreground font-body text-[10px] font-semibold tracking-[0.2em] uppercase rounded-sm"
+                >
                   {t.footer.subscribe}
                 </button>
               </form>
@@ -232,7 +325,9 @@ const Footer = () => {
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 items-end">
             <div className="text-muted-foreground text-[10px] leading-relaxed space-y-1">
-              <p className="font-semibold text-foreground text-xs">SJU Luxe Travel</p>
+              <p className="font-semibold text-foreground text-xs">
+                SJU Luxe Travel
+              </p>
               <p>{t.footer.boutiqueAgency}</p>
               <p>{t.footer.independentAgent}</p>
               <p>{t.footer.bilingual}</p>
@@ -243,15 +338,30 @@ const Footer = () => {
               <p>Iowa Registered Agency # 1202</p>
             </div>
             <div className="flex flex-col items-end gap-3">
-              <img src={footerSeal} alt="SJU Luxe Travel seal" className="h-28 w-auto object-contain" />
+              <img
+                src={footerSeal}
+                alt="SJU Luxe Travel seal"
+                className="h-28 w-auto object-contain"
+              />
               <div className="flex gap-6 text-muted-foreground text-xs">
-                <Link to={localPath("/privacy")} className="hover:text-gold transition-colors">{t.footer.privacyPolicy}</Link>
-                <Link to={localPath("/terms")} className="hover:text-gold transition-colors">{t.footer.termsOfService}</Link>
+                <Link
+                  to={localPath("/privacy")}
+                  className="hover:text-gold transition-colors"
+                >
+                  {t.footer.privacyPolicy}
+                </Link>
+                <Link
+                  to={localPath("/terms")}
+                  className="hover:text-gold transition-colors"
+                >
+                  {t.footer.termsOfService}
+                </Link>
               </div>
             </div>
           </div>
           <div className="mt-6 text-center text-muted-foreground text-[10px] tracking-wide">
-            © {new Date().getFullYear()} SJU Luxe Travel. {t.footer.allRightsReserved}
+            © {new Date().getFullYear()} SJU Luxe Travel.{" "}
+            {t.footer.allRightsReserved}
           </div>
         </div>
       </div>

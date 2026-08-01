@@ -40,7 +40,11 @@ export const FAQSection = ({ heading, items }: FAQSectionProps) => {
       <h2 className="font-heading text-2xl text-foreground mb-4">{heading}</h2>
       <Accordion type="single" collapsible className="mt-4">
         {items.map((it, i) => (
-          <AccordionItem key={i} value={`q${i + 1}`} className="border-border/30">
+          <AccordionItem
+            key={i}
+            value={`q${i + 1}`}
+            className="border-border/30"
+          >
             <AccordionTrigger className="text-foreground font-body text-base hover:text-gold text-left">
               {it.q}
             </AccordionTrigger>
