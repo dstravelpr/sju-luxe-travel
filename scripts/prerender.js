@@ -252,6 +252,14 @@ const pages = {
     service: { name: "Cruceros fluviales de lujo desde Puerto Rico", serviceType: "Luxury river cruise planning" },
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Cruceros Fluviales de Lujo", path: "/cruceros-fluviales-de-lujo-desde-puerto-rico" }],
   },
+  "/agencia-de-viajes-puerto-rico": {
+    title: "Agencia de Viajes de Lujo en Puerto Rico — SJU Luxe Travel",
+    description: "¿Buscas una agencia de viajes en Puerto Rico que realmente entienda el lujo? SJU Luxe Travel diseña itinerarios exclusivos, cruceros y lunas de miel desde San Juan.",
+    h1: "Agencia de Viajes de Lujo en Puerto Rico",
+    body: "En SJU Luxe Travel somos una agencia boutique con base en San Juan, Puerto Rico, especializada exclusivamente en viajes de lujo a medida — desde las Maldivas hasta los ríos de Europa, pasando por los mejores cruceros que salen desde San Juan. Como afiliados de NCM Concierge y Travel Leaders, nuestros clientes acceden a upgrades de habitación gratuitos, créditos en resort y amenidades VIP.",
+    service: { name: "Agencia de Viajes de Lujo en Puerto Rico", serviceType: "Luxury Travel Planning" },
+    breadcrumbs: [{ name: "Home", path: "/" }, { name: "Agencia de Viajes Puerto Rico", path: "/agencia-de-viajes-puerto-rico" }],
+  },
 };
 
 // English translations (only where a real EN variant exists)
@@ -340,18 +348,21 @@ const ROOT_CONTENT_ES = {
 // Route manifest — single source of truth for hreflang + sitemap
 // locales: which language variants exist on disk (default = canonical URL)
 // ---------------------------------------------------------------
+const SINGLE_LOCALE_PAGES = new Set(["/agencia-de-viajes-puerto-rico"]);
+
 const ROUTE_MANIFEST = [
   { path: "/", locales: ["default", "en", "es"], type: "home", hreflang: true },
   ...Object.keys(pages).map((p) => {
     const isBlogPost = p.startsWith("/blog/");
+    const isSingle = isBlogPost || SINGLE_LOCALE_PAGES.has(p);
     const hasEn = !!pagesEn[p];
     return {
       path: p,
-      // Blog posts: single language, NO hreflang (per audit).
+      // Blog posts and Spanish-only landing pages: single language, NO hreflang.
       // Non-blog pages that have an EN translation get all three variants.
-      locales: isBlogPost ? ["default"] : hasEn ? ["default", "en", "es"] : ["default", "es"],
+      locales: isSingle ? ["default"] : hasEn ? ["default", "en", "es"] : ["default", "es"],
       type: isBlogPost ? "blog-post" : p === "/blog" ? "blog-list" : p === "/about" ? "about" : p === "/contact" ? "contact" : pages[p].service ? "service" : "webpage",
-      hreflang: !isBlogPost && hasEn, // only emit hreflang when a full EN/ES/x-default set exists
+      hreflang: !isSingle && hasEn, // only emit hreflang when a full EN/ES/x-default set exists
     };
   }),
 ];

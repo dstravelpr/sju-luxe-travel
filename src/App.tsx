@@ -50,6 +50,7 @@ const ViajesDeLujo = lazy(() => import("./pages/ViajesDeLujo.tsx"));
 const LunaDeMiel = lazy(() => import("./pages/LunaDeMiel.tsx"));
 const CrucerosDeLujo = lazy(() => import("./pages/CrucerosDeLujo.tsx"));
 const CrucerosFluviales = lazy(() => import("./pages/CrucerosFluviales.tsx"));
+const AgenciaDeViajesPuertoRico = lazy(() => import("./pages/AgenciaDeViajesPuertoRico.tsx"));
 
 // /en/* prefixes are prerendered variants only — at runtime we redirect to root
 // so the SPA doesn't serve a duplicate. /es/* is a real, indexable variant.
@@ -122,6 +123,7 @@ const App = () => (
                   />
                 ))}
                 <Route path="/blog/do-travel-agents-really-" element={<RedirectBlog to="/blog/do-travel-agents-really-help-save-money" />} />
+                <Route path="/agencia-de-viajes-puerto-rico" element={<AgenciaDeViajesPuertoRico />} />
                 <Route path="/blog/do-travel-agents-really" element={<RedirectBlog to="/blog/do-travel-agents-really-help-save-money" />} />
                 <Route path="/en/*" element={<EnRedirect />} />
                 <Route path="*" element={<NotFound />} />
