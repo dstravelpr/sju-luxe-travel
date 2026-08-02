@@ -68,8 +68,8 @@ const Post = () => {
       <SEOHead
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/servicios-concierge-viaje.jpg"
-        title="Servicios de Concierge de Viaje: Qué Son y Qué Incluyen"
-        description="Qué es un travel concierge, qué incluye (reservas VIP, upgrades, asistencia 24/7) y cómo acceder gratis con un agente de viaje en Puerto Rico."
+        title="Servicio de Concierge de Viaje: Qué Es y Cómo Funciona | SJU Luxe Travel"
+        description="¿Qué es un servicio de concierge de viaje y cómo puede transformar tu próxima experiencia? Descubre cómo SJU Luxe Travel gestiona cada detalle de tu viaje desde Puerto Rico."
         canonical="https://www.sjuluxetravel.com/blog/servicios-concierge-viaje"
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
