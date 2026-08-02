@@ -25,10 +25,10 @@ const Portugal = () => {
   return (
     <Layout>
       <SEOHead
-        title="Portugal Travel from Puerto Rico | SJU Luxe Travel"
-        description="Discover Portugal with a bespoke itinerary from San Juan, PR — Lisbon, Porto, the Algarve and the Douro Valley."
-        titleEs="Viajes a Portugal desde PR | SJU Luxe Travel"
-        descriptionEs="Descubre Portugal con un itinerario a medida. Cenas en Belém, quintas históricas y experiencias culturales exclusivas — desde San Juan, PR."
+        title="Viajes a Portugal desde Puerto Rico — Itinerarios a Medida | SJU Luxe Travel"
+        description="Planifica tu viaje a Portugal desde Puerto Rico con SJU Luxe Travel. Lisboa, Valle del Duero, Algarve y más — itinerarios personalizados con beneficios exclusivos incluidos."
+        titleEs="Viajes a Portugal desde Puerto Rico — Itinerarios a Medida | SJU Luxe Travel"
+        descriptionEs="Planifica tu viaje a Portugal desde Puerto Rico con SJU Luxe Travel. Lisboa, Valle del Duero, Algarve y más — itinerarios personalizados con beneficios exclusivos incluidos."
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           {
