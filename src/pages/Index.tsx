@@ -258,6 +258,7 @@ const Index = () => {
       name: t.home.trustNameNcm,
       qualifier: t.home.trustQualConcierge,
       logo: ncmLogo,
+      logoClass: "h-20 max-w-[11rem]",
     },
     {
       name: t.home.trustNameAma,
@@ -268,6 +269,7 @@ const Index = () => {
       name: t.home.trustNameAvalon,
       qualifier: t.home.trustQualCertified,
       logo: avalonLogo,
+      logoClass: "h-20 max-w-[11rem]",
     },
     {
       name: t.home.trustNameRiverside,
@@ -287,8 +289,10 @@ const Index = () => {
     {
       name: t.home.trustNameSwitzerland,
       qualifier: t.home.trustQualExpert,
+      logo: switzerlandLogo.url,
     },
   ];
+
 
 
   const perks = [
