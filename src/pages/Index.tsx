@@ -247,13 +247,39 @@ const Index = () => {
   ];
 
   const affiliations = [
-    { name: t.home.trustNameTravelLeaders, qualifier: t.home.trustQualNetwork },
+    {
+      name: t.home.trustNameTravelLeaders,
+      qualifier: t.home.trustQualNetwork,
+      logo: travelLeadersLogo.url,
+    },
     { name: t.home.trustNameNcm, qualifier: t.home.trustQualConcierge },
-    { name: t.home.trustNameAma, qualifier: t.home.trustQualCertified },
-    { name: t.home.trustNameAvalon, qualifier: t.home.trustQualCertified },
-    { name: t.home.trustNameRiverside, qualifier: t.home.trustQualCertified },
-    { name: t.home.trustNameKoveli, qualifier: t.home.trustQualExpert },
+    {
+      name: t.home.trustNameAma,
+      qualifier: t.home.trustQualCertified,
+      logo: amaLogo,
+    },
+    {
+      name: t.home.trustNameAvalon,
+      qualifier: t.home.trustQualCertified,
+      logo: avalonLogo,
+    },
+    {
+      name: t.home.trustNameRiverside,
+      qualifier: t.home.trustQualCertified,
+      logo: riversideLogo,
+    },
+    {
+      name: t.home.trustNameKoveli,
+      qualifier: t.home.trustQualExpert,
+      logo: koveliLogo,
+    },
+    { name: t.home.trustNameGlobus, qualifier: t.home.trustQualCertified },
+    {
+      name: t.home.trustNameSwitzerland,
+      qualifier: t.home.trustQualExpert,
+    },
   ];
+
 
   const perks = [
     { icon: Crown, title: t.home.perk1Title, description: t.home.perk1Desc },
