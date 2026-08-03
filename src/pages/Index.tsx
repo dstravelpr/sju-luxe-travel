@@ -29,6 +29,11 @@ import portugalImgWebp from "@/assets/destination-portugal.webp";
 import mexicoImg from "@/assets/destination-mexico.jpg";
 import mexicoImgWebp from "@/assets/destination-mexico.webp";
 import cruiseImg from "@/assets/ocean/ritz-carlton.jpg";
+import travelLeadersLogo from "@/assets/travel-leaders-icon.png.asset.json";
+import amaLogo from "@/assets/amawaterways-certified_logo.jpg";
+import avalonLogo from "@/assets/avalon-certified_logo.png";
+import riversideLogo from "@/assets/riverside-certified_logo.jpg";
+import koveliLogo from "@/assets/koveli-maldives-expert.png";
 
 const FAQItem = ({
   question,
