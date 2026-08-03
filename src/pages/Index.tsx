@@ -32,6 +32,8 @@ import cruiseImg from "@/assets/ocean/ritz-carlton.jpg";
 import travelLeadersLogo from "@/assets/travel-leaders-icon.png.asset.json";
 import amaLogo from "@/assets/amawaterways-logo.png";
 import ncmLogo from "@/assets/ncm-concierge-logo.png";
+import switzerlandLogo from "@/assets/switzerland-logo.png.asset.json";
+
 import globusLogo from "@/assets/globus-logo.png";
 import avalonLogo from "@/assets/avalon-logo.png";
 import riversideLogo from "@/assets/riverside-logo.png";
