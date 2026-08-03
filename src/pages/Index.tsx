@@ -363,12 +363,21 @@ const Index = () => {
             </p>
             <span className="h-px w-10 bg-gold/30" />
           </div>
-          <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 max-w-6xl mx-auto">
-            {affiliations.map((item, index) => (
+          <ul className="grid grid-cols-2 md:grid-cols-4 max-w-6xl mx-auto">
+            {affiliations.map((item) => (
               <li
                 key={item.name}
-                className="group flex flex-col items-center justify-center text-center min-h-[7rem] px-4 py-6 border-b border-r border-border/40 [&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(6n)]:border-r-0 lg:border-b-0"
+                className="group flex flex-col items-center justify-center text-center min-h-[10rem] px-4 py-6 border-b border-r border-border/40 [&:nth-child(2n)]:border-r-0 md:[&:nth-child(2n)]:border-r md:[&:nth-child(4n)]:border-r-0"
               >
+                {item.logo && (
+                  <img
+                    src={item.logo}
+                    alt={`${item.name} — ${item.qualifier}`}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-14 w-auto max-w-[8.5rem] object-contain mb-4 opacity-70 group-hover:opacity-100 transition-opacity duration-500"
+                  />
+                )}
                 <span className="block font-heading text-lg md:text-xl text-cream/90 group-hover:text-gold transition-colors duration-500">
                   {item.name}
                 </span>
@@ -377,6 +386,7 @@ const Index = () => {
                 </span>
               </li>
             ))}
+
           </ul>
         </div>
       </section>
