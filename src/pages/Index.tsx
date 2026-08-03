@@ -32,6 +32,8 @@ import cruiseImg from "@/assets/ocean/ritz-carlton.jpg";
 import travelLeadersLogo from "@/assets/travel-leaders-icon.png.asset.json";
 import amaLogo from "@/assets/amawaterways-logo.png";
 import ncmLogo from "@/assets/ncm-concierge-logo.png";
+import switzerlandLogo from "@/assets/switzerland-logo.png.asset.json";
+
 import globusLogo from "@/assets/globus-logo.png";
 import avalonLogo from "@/assets/avalon-logo.png";
 import riversideLogo from "@/assets/riverside-logo.png";
@@ -258,6 +260,7 @@ const Index = () => {
       name: t.home.trustNameNcm,
       qualifier: t.home.trustQualConcierge,
       logo: ncmLogo,
+      logoClass: "h-20 max-w-[11rem]",
     },
     {
       name: t.home.trustNameAma,
@@ -268,6 +271,7 @@ const Index = () => {
       name: t.home.trustNameAvalon,
       qualifier: t.home.trustQualCertified,
       logo: avalonLogo,
+      logoClass: "h-20 max-w-[11rem]",
     },
     {
       name: t.home.trustNameRiverside,
@@ -287,8 +291,10 @@ const Index = () => {
     {
       name: t.home.trustNameSwitzerland,
       qualifier: t.home.trustQualExpert,
+      logo: switzerlandLogo.url,
     },
   ];
+
 
 
   const perks = [
@@ -385,7 +391,7 @@ const Index = () => {
                     alt={`${item.name} — ${item.qualifier}`}
                     loading="lazy"
                     decoding="async"
-                    className="h-14 w-auto max-w-[8.5rem] object-contain mb-4 opacity-70 group-hover:opacity-100 transition-opacity duration-500"
+                    className={`w-auto object-contain mb-4 opacity-70 group-hover:opacity-100 transition-opacity duration-500 ${item.logoClass ?? "h-14 max-w-[8.5rem]"}`}
                   />
                 )}
                 <span className="block font-heading text-lg md:text-xl text-cream/90 group-hover:text-gold transition-colors duration-500">
