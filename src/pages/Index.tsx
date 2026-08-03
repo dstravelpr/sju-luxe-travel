@@ -33,7 +33,7 @@ import travelLeadersLogo from "@/assets/travel-leaders-icon.png.asset.json";
 import amaLogo from "@/assets/amawaterways-logo.png";
 import ncmLogo from "@/assets/ncm-concierge-logo.png";
 import globusLogo from "@/assets/globus-logo.png";
-import avalonLogo from "@/assets/avalon-certified_logo.png";
+import avalonLogo from "@/assets/avalon-logo.png";
 import riversideLogo from "@/assets/riverside-logo.png";
 import koveliLogo from "@/assets/koveli-maldives-expert.png";
 

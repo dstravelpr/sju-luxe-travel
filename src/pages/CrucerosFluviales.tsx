@@ -5,7 +5,7 @@ import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
 import amaLogo from "@/assets/amawaterways-logo.png";
 import riversideLogo from "@/assets/riverside-logo.png";
-import avalonLogo from "@/assets/avalon-certified_logo.png";
+import avalonLogo from "@/assets/avalon-logo.png";
 import danubeImg from "@/assets/rivers/danube.png";
 import rhineImg from "@/assets/rivers/rhine.png";
 import seineImg from "@/assets/rivers/seine.png";
