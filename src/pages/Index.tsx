@@ -30,9 +30,11 @@ import mexicoImg from "@/assets/destination-mexico.jpg";
 import mexicoImgWebp from "@/assets/destination-mexico.webp";
 import cruiseImg from "@/assets/ocean/ritz-carlton.jpg";
 import travelLeadersLogo from "@/assets/travel-leaders-icon.png.asset.json";
-import amaLogo from "@/assets/amawaterways-certified_logo.jpg";
-import avalonLogo from "@/assets/avalon-certified_logo.png";
-import riversideLogo from "@/assets/riverside-certified_logo.jpg";
+import amaLogo from "@/assets/amawaterways-logo.png";
+import ncmLogo from "@/assets/ncm-concierge-logo.png";
+import globusLogo from "@/assets/globus-logo.png";
+import avalonLogo from "@/assets/avalon-logo.png";
+import riversideLogo from "@/assets/riverside-logo.png";
 import koveliLogo from "@/assets/koveli-maldives-expert.png";
 
 const FAQItem = ({
@@ -252,7 +254,11 @@ const Index = () => {
       qualifier: t.home.trustQualNetwork,
       logo: travelLeadersLogo.url,
     },
-    { name: t.home.trustNameNcm, qualifier: t.home.trustQualConcierge },
+    {
+      name: t.home.trustNameNcm,
+      qualifier: t.home.trustQualConcierge,
+      logo: ncmLogo,
+    },
     {
       name: t.home.trustNameAma,
       qualifier: t.home.trustQualCertified,
@@ -273,7 +279,11 @@ const Index = () => {
       qualifier: t.home.trustQualExpert,
       logo: koveliLogo,
     },
-    { name: t.home.trustNameGlobus, qualifier: t.home.trustQualCertified },
+    {
+      name: t.home.trustNameGlobus,
+      qualifier: t.home.trustQualCertified,
+      logo: globusLogo,
+    },
     {
       name: t.home.trustNameSwitzerland,
       qualifier: t.home.trustQualExpert,
