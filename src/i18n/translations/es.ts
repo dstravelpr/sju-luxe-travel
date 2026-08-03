@@ -168,6 +168,8 @@ export const es: typeof en = {
     trustNameAvalon: "Avalon Waterways",
     trustNameRiverside: "Riverside cruises",
     trustNameKoveli: "Koveli Maldivas",
+    trustNameGlobus: "Globus",
+    trustNameSwitzerland: "Suiza",
     showcaseLabel: "Viajes Insignia",
     showcaseTitle: "A Dónde Viajan",
     showcaseTitleHighlight: "Nuestros Clientes",
