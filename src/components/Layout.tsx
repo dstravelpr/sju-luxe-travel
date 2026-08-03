@@ -13,7 +13,7 @@ import {
 import { useLanguage } from "@/i18n/LanguageContext";
 import logo from "@/assets/logo.png";
 import footerSeal from "@/assets/footer-seal.png";
-import travelLeadersIcon from "@/assets/travel-leaders-icon.png.asset.json";
+import travelLeadersIcon from "@/assets/travel-leaders-icon.png";
 
 const LanguageToggle = () => {
   const { language, setLanguage } = useLanguage();
@@ -320,7 +320,7 @@ const Footer = () => {
                 className="inline-flex items-center gap-3 px-4 py-3 gold-border rounded-sm text-muted-foreground text-xs hover:text-gold hover:border-gold hover:bg-gold/5 transition-colors mb-6"
               >
                 <img
-                  src={travelLeadersIcon.url}
+                  src={travelLeadersIcon}
                   alt=""
                   className="h-10 w-auto object-contain"
                   aria-hidden="true"
