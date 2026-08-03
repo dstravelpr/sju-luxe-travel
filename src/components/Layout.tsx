@@ -317,12 +317,12 @@ const Footer = () => {
                 href="https://www.travelleaders.com/agent/501399?ref=search&slctState=PR"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-muted-foreground text-xs hover:text-gold transition-colors mb-6"
+                className="inline-flex items-center gap-3 px-4 py-3 gold-border rounded-sm text-muted-foreground text-xs hover:text-gold hover:border-gold hover:bg-gold/5 transition-colors mb-6"
               >
                 <img
                   src={travelLeadersIcon.url}
                   alt=""
-                  className="h-4 w-auto object-contain"
+                  className="h-10 w-auto object-contain"
                   aria-hidden="true"
                 />
                 {t.footer.travelLeadersProfile}
