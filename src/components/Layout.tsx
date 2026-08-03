@@ -312,6 +312,14 @@ const Footer = () => {
                   </a>
                 ))}
               </div>
+              <a
+                href="https://www.travelleaders.com/agent/501399?ref=search&slctState=PR"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-muted-foreground text-xs hover:text-gold transition-colors mb-6"
+              >
+                {t.footer.travelLeadersProfile}
+              </a>
 
               <h4 className="font-body text-gold text-sm tracking-[0.2em] uppercase mb-4">
                 {t.footer.newsletter}

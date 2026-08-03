@@ -25,6 +25,7 @@ export const es: typeof en = {
     contact: "Contacto",
     location: "San Juan, Puerto Rico",
     followUs: "Síguenos",
+    travelLeadersProfile: "Perfil de Travel Leaders",
     newsletter: "Boletín",
     fullName: "Nombre Completo",
     emailAddress: "Correo Electrónico",

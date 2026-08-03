@@ -23,6 +23,7 @@ export const en = {
     contact: "Contact",
     location: "San Juan, Puerto Rico",
     followUs: "Follow Us",
+    travelLeadersProfile: "Travel Leaders Profile",
     newsletter: "Newsletter",
     fullName: "Full Name",
     emailAddress: "Email Address",
