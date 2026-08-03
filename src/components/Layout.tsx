@@ -13,6 +13,7 @@ import {
 import { useLanguage } from "@/i18n/LanguageContext";
 import logo from "@/assets/logo.png";
 import footerSeal from "@/assets/footer-seal.png";
+import travelLeadersIcon from "@/assets/travel-leaders-icon.png.asset.json";
 
 const LanguageToggle = () => {
   const { language, setLanguage } = useLanguage();
