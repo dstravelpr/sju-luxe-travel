@@ -166,6 +166,8 @@ export const en = {
     trustNameAvalon: "Avalon Waterways",
     trustNameRiverside: "Riverside cruises",
     trustNameKoveli: "Koveli Maldives",
+    trustNameGlobus: "Globus",
+    trustNameSwitzerland: "Switzerland",
     showcaseLabel: "Signature Journeys",
     showcaseTitle: "Where We Send",
     showcaseTitleHighlight: "Our Clients",

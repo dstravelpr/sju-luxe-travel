@@ -29,6 +29,11 @@ import portugalImgWebp from "@/assets/destination-portugal.webp";
 import mexicoImg from "@/assets/destination-mexico.jpg";
 import mexicoImgWebp from "@/assets/destination-mexico.webp";
 import cruiseImg from "@/assets/ocean/ritz-carlton.jpg";
+import travelLeadersLogo from "@/assets/travel-leaders-icon.png.asset.json";
+import amaLogo from "@/assets/amawaterways-certified_logo.jpg";
+import avalonLogo from "@/assets/avalon-certified_logo.png";
+import riversideLogo from "@/assets/riverside-certified_logo.jpg";
+import koveliLogo from "@/assets/koveli-maldives-expert.png";
 
 const FAQItem = ({
   question,
@@ -242,13 +247,39 @@ const Index = () => {
   ];
 
   const affiliations = [
-    { name: t.home.trustNameTravelLeaders, qualifier: t.home.trustQualNetwork },
+    {
+      name: t.home.trustNameTravelLeaders,
+      qualifier: t.home.trustQualNetwork,
+      logo: travelLeadersLogo.url,
+    },
     { name: t.home.trustNameNcm, qualifier: t.home.trustQualConcierge },
-    { name: t.home.trustNameAma, qualifier: t.home.trustQualCertified },
-    { name: t.home.trustNameAvalon, qualifier: t.home.trustQualCertified },
-    { name: t.home.trustNameRiverside, qualifier: t.home.trustQualCertified },
-    { name: t.home.trustNameKoveli, qualifier: t.home.trustQualExpert },
+    {
+      name: t.home.trustNameAma,
+      qualifier: t.home.trustQualCertified,
+      logo: amaLogo,
+    },
+    {
+      name: t.home.trustNameAvalon,
+      qualifier: t.home.trustQualCertified,
+      logo: avalonLogo,
+    },
+    {
+      name: t.home.trustNameRiverside,
+      qualifier: t.home.trustQualCertified,
+      logo: riversideLogo,
+    },
+    {
+      name: t.home.trustNameKoveli,
+      qualifier: t.home.trustQualExpert,
+      logo: koveliLogo,
+    },
+    { name: t.home.trustNameGlobus, qualifier: t.home.trustQualCertified },
+    {
+      name: t.home.trustNameSwitzerland,
+      qualifier: t.home.trustQualExpert,
+    },
   ];
+
 
   const perks = [
     { icon: Crown, title: t.home.perk1Title, description: t.home.perk1Desc },
@@ -332,12 +363,21 @@ const Index = () => {
             </p>
             <span className="h-px w-10 bg-gold/30" />
           </div>
-          <ul className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 max-w-6xl mx-auto">
-            {affiliations.map((item, index) => (
+          <ul className="grid grid-cols-2 md:grid-cols-4 max-w-6xl mx-auto">
+            {affiliations.map((item) => (
               <li
                 key={item.name}
-                className="group flex flex-col items-center justify-center text-center min-h-[7rem] px-4 py-6 border-b border-r border-border/40 [&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(6n)]:border-r-0 lg:border-b-0"
+                className="group flex flex-col items-center justify-center text-center min-h-[10rem] px-4 py-6 border-b border-r border-border/40 [&:nth-child(2n)]:border-r-0 md:[&:nth-child(2n)]:border-r md:[&:nth-child(4n)]:border-r-0"
               >
+                {item.logo && (
+                  <img
+                    src={item.logo}
+                    alt={`${item.name} — ${item.qualifier}`}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-14 w-auto max-w-[8.5rem] object-contain mb-4 opacity-70 group-hover:opacity-100 transition-opacity duration-500"
+                  />
+                )}
                 <span className="block font-heading text-lg md:text-xl text-cream/90 group-hover:text-gold transition-colors duration-500">
                   {item.name}
                 </span>
@@ -346,6 +386,7 @@ const Index = () => {
                 </span>
               </li>
             ))}
+
           </ul>
         </div>
       </section>
