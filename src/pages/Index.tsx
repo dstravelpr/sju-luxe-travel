@@ -391,7 +391,7 @@ const Index = () => {
                     alt={`${item.name} — ${item.qualifier}`}
                     loading="lazy"
                     decoding="async"
-                    className="h-14 w-auto max-w-[8.5rem] object-contain mb-4 opacity-70 group-hover:opacity-100 transition-opacity duration-500"
+                    className={`w-auto object-contain mb-4 opacity-70 group-hover:opacity-100 transition-opacity duration-500 ${item.logoClass ?? "h-14 max-w-[8.5rem]"}`}
                   />
                 )}
                 <span className="block font-heading text-lg md:text-xl text-cream/90 group-hover:text-gold transition-colors duration-500">
