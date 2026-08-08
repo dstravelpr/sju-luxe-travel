@@ -380,12 +380,12 @@ export const en = {
     ],
     featured: "Featured",
     featuredPost: {
-      category: "Romance",
-      title: "Best honeymoon Destinations 2026 from Puerto Rico",
+      category: "Cruises",
+      title: "Repositioning Cruises from Puerto Rico: The Complete 2026–2028 Guide",
       excerpt:
-        "The 7 best honeymoon destinations for 2026 from San Juan: Maldives, Bora Bora, Amalfi, Santorini, Portugal and more — with itineraries and recommended flights.",
-      date: "June 1, 2026",
-      readTime: "8 min read",
+        "Cross the Atlantic from San Juan on a repositioning cruise. Discover 15 sailings to Spain, Portugal, Italy, England, Panama and Costa Rica — with insider tips on cabins, seasons and flights.",
+      date: "August 8, 2026",
+      readTime: "7 min read",
     },
     posts: [
       {

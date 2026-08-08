@@ -84,7 +84,7 @@ const Blog = () => {
                 {t.blog.featured}
               </div>
               <img
-                src={blogHoneymoonImg}
+                src={blogRiverCruiseImg}
                 alt={t.blog.featuredPost.title}
                 className="w-full h-full object-cover"
               />
@@ -114,7 +114,7 @@ const Blog = () => {
                 </span>
               </div>
               <Link
-                to={localPath("/blog/luna-de-miel-puerto-rico-2026")}
+                to={localPath("/blog/cruceros-de-reposicionamiento-desde-puerto-rico")}
                 className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors font-body text-sm tracking-wide"
               >
                 {t.blog.readArticle}

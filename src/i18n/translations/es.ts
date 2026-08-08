@@ -382,12 +382,12 @@ export const es: typeof en = {
     ],
     featured: "Destacado",
     featuredPost: {
-      category: "Romance",
-      title: "Mejores Destinos de Luna de Miel 2026 desde Puerto Rico",
+      category: "Cruceros",
+      title: "Cruceros de Reposicionamiento desde Puerto Rico: Guía Completa 2026–2028",
       excerpt:
-        "Los 7 mejores destinos de luna de miel para 2026 desde San Juan: Maldivas, Bora Bora, Amalfi, Santorini, Portugal y más — con itinerarios y vuelos recomendados.",
-      date: "1 de junio de 2026",
-      readTime: "8 min de lectura",
+        "Cruza el Atlántico desde San Juan en un crucero de reposicionamiento. Descubre 15 travesías hacia España, Portugal, Italia, Inglaterra, Panamá y Costa Rica — con consejos de cabina, temporada y vuelos.",
+      date: "8 de agosto de 2026",
+      readTime: "7 min de lectura",
     },
     posts: [
       {
