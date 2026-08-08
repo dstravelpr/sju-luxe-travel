@@ -1,27 +1,16 @@
-import {
-  createContext,
-  useContext,
-  useMemo,
-  useEffect,
-  type ReactNode,
-} from "react";
+import { useMemo, useEffect, type ReactNode } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { en } from "./translations/en";
 import { es } from "./translations/es";
+import {
+  LanguageContext,
+  useLanguage,
+  type Language,
+  type Translations,
+} from "./languageContext";
 
-type Language = "en" | "es";
-type Translations = typeof en;
-
-interface LanguageContextType {
-  language: Language;
-  setLanguage: (lang: Language) => void;
-  t: Translations;
-  localPath: (path: string) => string;
-}
-
-const LanguageContext = createContext<LanguageContextType | undefined>(
-  undefined,
-);
+export { useLanguage };
+export type { Language };
 
 const translations: Record<Language, Translations> = { en, es };
 
@@ -73,9 +62,3 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     </LanguageContext.Provider>
   );
 };
-
-export function useLanguage() {
-  const ctx = useContext(LanguageContext);
-  if (!ctx) throw new Error("useLanguage must be used within LanguageProvider");
-  return ctx;
-}
