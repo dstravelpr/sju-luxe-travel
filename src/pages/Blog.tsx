@@ -7,6 +7,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import blogMicrocationsImg from "@/assets/blog-microcations.jpg";
 import blogLuxuryImg from "@/assets/blog-luxury-travel.jpg";
 import blogAgentImg from "@/assets/blog-travel-agent.jpg";
+import blogRiverCruiseImg from "@/assets/blog-river-cruise.jpg";
 import blogRepositioningImg from "@/assets/blog-repositioning-cruise.jpg";
 import blogRepositioningImgWebp from "@/assets/blog-repositioning-cruise.webp";
 import blogHoneymoonImg from "@/assets/honeymoon/maldives.png";
