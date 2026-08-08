@@ -310,7 +310,7 @@ const Blog = () => {
               <article>
                 <div className="aspect-[16/9] bg-charcoal relative overflow-hidden">
                   <div className="absolute top-3 left-3 px-2.5 py-1 bg-gold-gradient text-primary-foreground text-[10px] tracking-[0.15em] uppercase font-semibold rounded-sm z-10">
-                    {t.blog.featured}
+                    {language === "es" ? "Tendencias de Viaje" : "Travel Trends"}
                   </div>
                   <img
                     src={blogWellnessImg}
