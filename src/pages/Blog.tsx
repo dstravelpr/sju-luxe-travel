@@ -185,45 +185,6 @@ const Blog = () => {
             </Link>
             <Link
               to={localPath(
-                "/blog/excursiones-de-lujo-san-juan-puerto-cruceros",
-              )}
-              className="gold-border gold-border-hover rounded-sm overflow-hidden group block"
-            >
-              <article>
-                <div className="aspect-[16/9] bg-charcoal relative overflow-hidden">
-                  <div className="absolute top-3 left-3 px-2.5 py-1 bg-gold-gradient text-primary-foreground text-[10px] tracking-[0.15em] uppercase font-semibold rounded-sm z-10">
-                    {language === "es" ? "Cruceros" : "Cruises"}
-                  </div>
-                  <img
-                    src={blogSanJuanImg}
-                    alt="Excursiones privadas desde el puerto de cruceros de San Juan"
-                    className="w-full h-full object-cover"
-                    loading="lazy"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="font-heading text-lg text-foreground mb-3 group-hover:text-gold transition-colors">
-                    Excursiones desde el Puerto de cruceros de San Juan
-                  </h3>
-                  <p className="text-muted-foreground text-xs leading-relaxed mb-4">
-                    Tours privados del Viejo San Juan, El Yunque, catamarán y
-                    gastronomía para pasajeros de crucero — coordinados por un
-                    concierge local.
-                  </p>
-                  <div className="flex items-center justify-between text-muted-foreground text-[11px]">
-                    <span className="flex items-center gap-1.5">
-                      <User size={11} className="text-gold" />
-                      Daniel Santiago Díaz
-                    </span>
-                    <span className="flex items-center gap-1.5">
-                      <Clock size={11} className="text-gold" />7 min
-                    </span>
-                  </div>
-                </div>
-              </article>
-            </Link>
-            <Link
-              to={localPath(
                 "/blog/cruceros-de-reposicionamiento-desde-puerto-rico",
               )}
               className="gold-border gold-border-hover rounded-sm overflow-hidden group block"
