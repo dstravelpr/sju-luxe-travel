@@ -163,14 +163,16 @@ const Blog = () => {
                 </div>
                 <div className="p-6">
                   <h3 className="font-heading text-lg text-foreground mb-3 group-hover:text-gold transition-colors">
-                    Crucero Fluvial por el Duero desde Puerto Rico: Portugal
-                    desde el Río
+                    {language === "es"
+                      ? "Crucero Fluvial por el Duero desde Puerto Rico: Portugal desde el Río"
+                      : "Douro River Cruise from Puerto Rico: Portugal from the River"}
                   </h3>
                   <p className="text-muted-foreground text-xs leading-relaxed mb-4">
-                    Navieras (Ama, Scenic, Uniworld), rutas de vuelo desde SJU,
-                    mejor temporada y experiencias privadas de bodega en el
-                    valle vinícola más antiguo del mundo.
+                    {language === "es"
+                      ? "Navieras (Ama, Scenic, Uniworld), rutas de vuelo desde SJU, mejor temporada y experiencias privadas de bodega en el valle vinícola más antiguo del mundo."
+                      : "Cruise lines (Ama, Scenic, Uniworld), flight routes from SJU, best season and private winery experiences in the world's oldest wine valley."}
                   </p>
+
                   <div className="flex items-center justify-between text-muted-foreground text-[11px]">
                     <span className="flex items-center gap-1.5">
                       <User size={11} className="text-gold" />
