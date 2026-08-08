@@ -163,7 +163,7 @@ const Blog = () => {
                 </div>
                 <div className="p-6">
                   <h3 className="font-heading text-lg text-foreground mb-3 group-hover:text-gold transition-colors">
-                    crucero Fluvial por el Duero desde Puerto Rico: Portugal
+                    Crucero Fluvial por el Duero desde Puerto Rico: Portugal
                     desde el Río
                   </h3>
                   <p className="text-muted-foreground text-xs leading-relaxed mb-4">
