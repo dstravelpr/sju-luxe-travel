@@ -245,12 +245,16 @@ const Blog = () => {
                 </div>
                 <div className="p-6">
                   <h3 className="font-heading text-lg text-foreground mb-3 group-hover:text-gold transition-colors">
-                    Cruceros de Reposicionamiento desde Puerto Rico 2026–2028
+                    {language === "es"
+                      ? "Cruceros de Reposicionamiento desde Puerto Rico 2026–2028"
+                      : "Repositioning Cruises from Puerto Rico 2026–2028"}
                   </h3>
                   <p className="text-muted-foreground text-xs leading-relaxed mb-4">
-                    Cruza el Atlántico desde San Juan: 15 travesías hacia
-                    España, Portugal, Italia, Inglaterra, Panamá y Costa Rica.
+                    {language === "es"
+                      ? "Cruza el Atlántico desde San Juan: 15 travesías hacia España, Portugal, Italia, Inglaterra, Panamá y Costa Rica."
+                      : "Cross the Atlantic from San Juan: 15 sailings to Spain, Portugal, Italy, England, Panama and Costa Rica."}
                   </p>
+
                   <div className="flex items-center justify-between text-muted-foreground text-[11px]">
                     <span className="flex items-center gap-1.5">
                       <User size={11} className="text-gold" />
