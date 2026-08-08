@@ -2,13 +2,15 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
+import { Picture } from "@/components/Picture";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { AUTHOR, ORG_REF, buildGraph } from "@/lib/schema";
-import heroImg from "@/assets/blog-river-cruise.jpg";
+import heroImg from "@/assets/blog-repositioning-cruise.jpg";
+import heroImgWebp from "@/assets/blog-repositioning-cruise.webp";
 
 const URL =
   "https://www.sjuluxetravel.com/blog/cruceros-de-reposicionamiento-desde-puerto-rico";
-const OG_IMAGE = "https://www.sjuluxetravel.com/og/cruceros-fluviales.jpg";
+const OG_IMAGE = "https://www.sjuluxetravel.com/og/cruceros-reposicionamiento.jpg";
 
 const faqs = [
   {
