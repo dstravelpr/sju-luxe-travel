@@ -223,11 +223,6 @@ const crucerosDeLujo = () => {
           <RelatedArticles
             items={[
               {
-                title: "Excursiones privadas en San Juan para cruceristas",
-                href: "/blog/excursiones-de-lujo-san-juan-puerto-cruceros",
-                category: "Excursiones",
-              },
-              {
                 title: "Crucero fluvial por el Duero desde Puerto Rico",
                 href: "/blog/crucero-fluvial-duero-desde-puerto-rico",
                 category: "Cruceros Fluviales",
