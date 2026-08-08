@@ -132,12 +132,13 @@ const Post = () => {
           </div>
 
           <div className="aspect-[16/9] overflow-hidden rounded-lg gold-border mb-12">
-            <img
+            <Picture
               src={heroImg}
-              alt="Crucero de reposicionamiento saliendo del Puerto de San Juan, Puerto Rico"
+              webpSrc={heroImgWebp}
+              alt="Crucero de reposicionamiento en alta mar, navegando el Atlántico al atardecer"
               className="w-full h-full object-cover"
-              width={1600}
-              height={900}
+              width={1536}
+              height={1152}
             />
           </div>
 
