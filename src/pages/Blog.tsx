@@ -233,10 +233,13 @@ const Blog = () => {
                   <div className="absolute top-3 left-3 px-2.5 py-1 gold-border text-[10px] tracking-[0.15em] uppercase text-muted-foreground rounded-sm z-10">
                     {language === "es" ? "Cruceros" : "Cruises"}
                   </div>
-                  <img
-                    src={blogRiverCruiseImg}
-                    alt="Crucero de reposicionamiento saliendo del Puerto de San Juan"
+                  <Picture
+                    src={blogRepositioningImg}
+                    webpSrc={blogRepositioningImgWebp}
+                    alt="Crucero de reposicionamiento en alta mar navegando el Atlántico"
                     className="w-full h-full object-cover"
+                    width={1536}
+                    height={1152}
                     loading="lazy"
                   />
                 </div>
