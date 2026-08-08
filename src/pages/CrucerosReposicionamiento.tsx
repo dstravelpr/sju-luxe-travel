@@ -1,3 +1,4 @@
+import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Printer } from "lucide-react";
 import { Layout } from "@/components/Layout";
@@ -283,8 +284,8 @@ const CrucerosReposicionamiento = () => {
               </thead>
               <tbody>
                 {GROUPS.map((group) => (
-                  <>
-                    <tr key={group.tier}>
+                  <Fragment key={group.tier}>
+                    <tr>
                       <th
                         colSpan={5}
                         className="pt-8 pb-3 text-left font-body text-[11px] tracking-[0.25em] uppercase text-muted-foreground border-b border-border/40"
@@ -321,7 +322,7 @@ const CrucerosReposicionamiento = () => {
                         </tr>
                       ),
                     )}
-                  </>
+                  </Fragment>
                 ))}
               </tbody>
             </table>
