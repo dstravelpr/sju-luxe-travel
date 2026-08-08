@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 import { ArrowRight, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
+import { Picture } from "@/components/Picture";
 import { useLanguage } from "@/i18n/LanguageContext";
 import blogMicrocationsImg from "@/assets/blog-microcations.jpg";
 import blogLuxuryImg from "@/assets/blog-luxury-travel.jpg";
 import blogAgentImg from "@/assets/blog-travel-agent.jpg";
 import blogRiverCruiseImg from "@/assets/blog-river-cruise.jpg";
+import blogRepositioningImg from "@/assets/blog-repositioning-cruise.jpg";
+import blogRepositioningImgWebp from "@/assets/blog-repositioning-cruise.webp";
 import blogHoneymoonImg from "@/assets/honeymoon/maldives.png";
 import blogWellnessImg from "@/assets/blog-wellness-maldives.jpg";
 import blogDueroImg from "@/assets/rivers/douro.png";
@@ -83,10 +86,13 @@ const Blog = () => {
               <div className="absolute top-4 left-4 px-3 py-1 bg-gold-gradient text-primary-foreground text-[10px] tracking-[0.15em] uppercase font-semibold rounded-sm z-10">
                 {t.blog.featured}
               </div>
-              <img
-                src={blogRiverCruiseImg}
+              <Picture
+                src={blogRepositioningImg}
+                webpSrc={blogRepositioningImgWebp}
                 alt={t.blog.featuredPost.title}
                 className="w-full h-full object-cover"
+                width={1536}
+                height={1152}
               />
             </div>
             <div>
@@ -227,10 +233,13 @@ const Blog = () => {
                   <div className="absolute top-3 left-3 px-2.5 py-1 gold-border text-[10px] tracking-[0.15em] uppercase text-muted-foreground rounded-sm z-10">
                     {language === "es" ? "Cruceros" : "Cruises"}
                   </div>
-                  <img
-                    src={blogRiverCruiseImg}
-                    alt="Crucero de reposicionamiento saliendo del Puerto de San Juan"
+                  <Picture
+                    src={blogRepositioningImg}
+                    webpSrc={blogRepositioningImgWebp}
+                    alt="Crucero de reposicionamiento en alta mar navegando el Atlántico"
                     className="w-full h-full object-cover"
+                    width={1536}
+                    height={1152}
                     loading="lazy"
                   />
                 </div>

@@ -2,13 +2,15 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
+import { Picture } from "@/components/Picture";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { AUTHOR, ORG_REF, buildGraph } from "@/lib/schema";
-import heroImg from "@/assets/blog-river-cruise.jpg";
+import heroImg from "@/assets/blog-repositioning-cruise.jpg";
+import heroImgWebp from "@/assets/blog-repositioning-cruise.webp";
 
 const URL =
   "https://www.sjuluxetravel.com/blog/cruceros-de-reposicionamiento-desde-puerto-rico";
-const OG_IMAGE = "https://www.sjuluxetravel.com/og/cruceros-fluviales.jpg";
+const OG_IMAGE = "https://www.sjuluxetravel.com/og/cruceros-reposicionamiento.jpg";
 
 const faqs = [
   {
@@ -130,12 +132,13 @@ const Post = () => {
           </div>
 
           <div className="aspect-[16/9] overflow-hidden rounded-lg gold-border mb-12">
-            <img
+            <Picture
               src={heroImg}
-              alt="Crucero de reposicionamiento saliendo del Puerto de San Juan, Puerto Rico"
+              webpSrc={heroImgWebp}
+              alt="Crucero de reposicionamiento en alta mar, navegando el Atlántico al atardecer"
               className="w-full h-full object-cover"
-              width={1600}
-              height={900}
+              width={1536}
+              height={1152}
             />
           </div>
 

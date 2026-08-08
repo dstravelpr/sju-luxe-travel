@@ -31,7 +31,7 @@ const ROUTE_IMAGES = {
   "/blog/micro-vacaciones-futuro-del-viaje": `${HOSTNAME}/og/micro-vacaciones.jpg`,
   "/blog/crucero-fluvial-duero-desde-puerto-rico": `${HOSTNAME}/og/crucero-fluvial-duero.jpg`,
   "/blog/excursiones-de-lujo-san-juan-puerto-cruceros": `${HOSTNAME}/og/excursiones-lujo-san-juan.jpg`,
-  "/blog/cruceros-de-reposicionamiento-desde-puerto-rico": `${HOSTNAME}/og/cruceros-fluviales.jpg`,
+  "/blog/cruceros-de-reposicionamiento-desde-puerto-rico": `${HOSTNAME}/og/cruceros-reposicionamiento.jpg`,
 };
 
 // ---------------------------------------------------------------
