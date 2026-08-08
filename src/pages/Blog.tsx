@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
+import { Picture } from "@/components/Picture";
 import { useLanguage } from "@/i18n/LanguageContext";
 import blogMicrocationsImg from "@/assets/blog-microcations.jpg";
 import blogLuxuryImg from "@/assets/blog-luxury-travel.jpg";
