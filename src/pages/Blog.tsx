@@ -151,7 +151,7 @@ const Blog = () => {
             >
               <article>
                 <div className="aspect-[16/9] bg-charcoal relative overflow-hidden">
-                  <div className="absolute top-3 left-3 px-2.5 py-1 gold-border text-[10px] tracking-[0.15em] uppercase text-muted-foreground rounded-sm z-10">
+                  <div className="absolute top-3 left-3 px-2.5 py-1 bg-gold-gradient text-primary-foreground text-[10px] tracking-[0.15em] uppercase font-semibold rounded-sm z-10">
                     {language === "es" ? "Cruceros Fluviales" : "River cruises"}
                   </div>
                   <img
@@ -191,7 +191,7 @@ const Blog = () => {
             >
               <article>
                 <div className="aspect-[16/9] bg-charcoal relative overflow-hidden">
-                  <div className="absolute top-3 left-3 px-2.5 py-1 gold-border text-[10px] tracking-[0.15em] uppercase text-muted-foreground rounded-sm z-10">
+                  <div className="absolute top-3 left-3 px-2.5 py-1 bg-gold-gradient text-primary-foreground text-[10px] tracking-[0.15em] uppercase font-semibold rounded-sm z-10">
                     {language === "es" ? "Cruceros" : "Cruises"}
                   </div>
                   <img
@@ -230,7 +230,7 @@ const Blog = () => {
             >
               <article>
                 <div className="aspect-[16/9] bg-charcoal relative overflow-hidden">
-                  <div className="absolute top-3 left-3 px-2.5 py-1 gold-border text-[10px] tracking-[0.15em] uppercase text-muted-foreground rounded-sm z-10">
+                  <div className="absolute top-3 left-3 px-2.5 py-1 bg-gold-gradient text-primary-foreground text-[10px] tracking-[0.15em] uppercase font-semibold rounded-sm z-10">
                     {language === "es" ? "Cruceros" : "Cruises"}
                   </div>
                   <Picture
@@ -270,7 +270,7 @@ const Blog = () => {
             >
               <article>
                 <div className="aspect-[16/9] bg-charcoal relative overflow-hidden">
-                  <div className="absolute top-3 left-3 px-2.5 py-1 gold-border text-[10px] tracking-[0.15em] uppercase text-muted-foreground rounded-sm z-10">
+                  <div className="absolute top-3 left-3 px-2.5 py-1 bg-gold-gradient text-primary-foreground text-[10px] tracking-[0.15em] uppercase font-semibold rounded-sm z-10">
                     {language === "es" ? "Servicios" : "Services"}
                   </div>
                   <img
@@ -350,7 +350,7 @@ const Blog = () => {
               >
                 <article>
                   <div className="aspect-[16/9] bg-charcoal relative overflow-hidden">
-                    <div className="absolute top-3 left-3 px-2.5 py-1 gold-border text-[10px] tracking-[0.15em] uppercase text-muted-foreground rounded-sm z-10">
+                    <div className="absolute top-3 left-3 px-2.5 py-1 bg-gold-gradient text-primary-foreground text-[10px] tracking-[0.15em] uppercase font-semibold rounded-sm z-10">
                       {post.category}
                     </div>
                     <img
