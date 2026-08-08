@@ -14,7 +14,6 @@ import blogRepositioningImgWebp from "@/assets/blog-repositioning-cruise.webp";
 import blogHoneymoonImg from "@/assets/honeymoon/maldives.png";
 import blogWellnessImg from "@/assets/blog-wellness-maldives.jpg";
 import blogDueroImg from "@/assets/rivers/douro.png";
-import blogSanJuanImg from "@/assets/hero-beach-sunset.jpg";
 import blogConciergeImg from "@/assets/traveler-airport.jpg";
 
 const Blog = () => {

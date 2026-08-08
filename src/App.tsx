@@ -75,9 +75,6 @@ const LuxurySoloFemaleTravel = lazy(
 const CruceroFluvialDuero = lazy(
   () => import("./pages/blog/CruceroFluvialDuero.tsx"),
 );
-const ExcursionesLujoSanJuan = lazy(
-  () => import("./pages/blog/ExcursionesLujoSanJuan.tsx"),
-);
 const CrucerosReposicionamientoBlog = lazy(
   () => import("./pages/blog/CrucerosReposicionamientoDesdePuertoRico.tsx"),
 );
@@ -172,10 +169,6 @@ const appRoutes = [
   {
     path: "/blog/crucero-fluvial-duero-desde-puerto-rico",
     element: <CruceroFluvialDuero />,
-  },
-  {
-    path: "/blog/excursiones-de-lujo-san-juan-puerto-cruceros",
-    element: <ExcursionesLujoSanJuan />,
   },
   {
     path: "/blog/cruceros-de-reposicionamiento-desde-puerto-rico",
