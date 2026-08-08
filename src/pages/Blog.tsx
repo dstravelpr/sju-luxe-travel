@@ -85,10 +85,13 @@ const Blog = () => {
               <div className="absolute top-4 left-4 px-3 py-1 bg-gold-gradient text-primary-foreground text-[10px] tracking-[0.15em] uppercase font-semibold rounded-sm z-10">
                 {t.blog.featured}
               </div>
-              <img
-                src={blogRiverCruiseImg}
+              <Picture
+                src={blogRepositioningImg}
+                webpSrc={blogRepositioningImgWebp}
                 alt={t.blog.featuredPost.title}
                 className="w-full h-full object-cover"
+                width={1536}
+                height={1152}
               />
             </div>
             <div>
