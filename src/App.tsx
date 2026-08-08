@@ -78,6 +78,9 @@ const CruceroFluvialDuero = lazy(
 const ExcursionesLujoSanJuan = lazy(
   () => import("./pages/blog/ExcursionesLujoSanJuan.tsx"),
 );
+const CrucerosReposicionamientoBlog = lazy(
+  () => import("./pages/blog/CrucerosReposicionamientoDesdePuertoRico.tsx"),
+);
 const Privacy = lazy(() => import("./pages/Privacy.tsx"));
 const Terms = lazy(() => import("./pages/Terms.tsx"));
 const ViajesDeLujo = lazy(() => import("./pages/ViajesDeLujo.tsx"));
@@ -173,6 +176,10 @@ const appRoutes = [
   {
     path: "/blog/excursiones-de-lujo-san-juan-puerto-cruceros",
     element: <ExcursionesLujoSanJuan />,
+  },
+  {
+    path: "/blog/cruceros-de-reposicionamiento-desde-puerto-rico",
+    element: <CrucerosReposicionamientoBlog />,
   },
   { path: "/contact", element: <Contact /> },
   { path: "/privacy", element: <Privacy /> },
