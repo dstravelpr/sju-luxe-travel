@@ -31,6 +31,7 @@ const ROUTE_IMAGES = {
   "/blog/micro-vacaciones-futuro-del-viaje": `${HOSTNAME}/og/micro-vacaciones.jpg`,
   "/blog/crucero-fluvial-duero-desde-puerto-rico": `${HOSTNAME}/og/crucero-fluvial-duero.jpg`,
   "/blog/excursiones-de-lujo-san-juan-puerto-cruceros": `${HOSTNAME}/og/excursiones-lujo-san-juan.jpg`,
+  "/blog/cruceros-de-reposicionamiento-desde-puerto-rico": `${HOSTNAME}/og/cruceros-fluviales.jpg`,
 };
 
 // ---------------------------------------------------------------
@@ -198,6 +199,14 @@ const pages = {
     body: "Guía para pasajeros de crucero que atracan en San Juan: por qué reservar excursiones privadas en vez de las oficiales del barco, las cinco excursiones de lujo que más reservamos (Viejo San Juan con historiador, El Yunque privado, catamarán a Icacos, tour gastronómico farm-to-table, combo Bacardí Reserva) y cómo un concierge local coordina cada detalle con vehículo privado, guía bilingüe y reservas confirmadas.",
     datePublished: "2026-07-08", dateModified: "2026-07-08",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }, { name: "Excursiones de Lujo San Juan", path: "/blog/excursiones-de-lujo-san-juan-puerto-cruceros" }],
+  },
+  "/blog/cruceros-de-reposicionamiento-desde-puerto-rico": {
+    title: "Cruceros de Reposicionamiento desde Puerto Rico: La Guía Completa para 2026–2028",
+    description: "¿Sabías que puedes cruzar el Atlántico desde San Juan en un crucero de lujo? Descubre qué son los cruceros de reposicionamiento y los 15 viajes disponibles desde Puerto Rico.",
+    h1: "Cruceros de Reposicionamiento desde Puerto Rico: La Guía Completa para 2026–2028",
+    body: "Guía completa de cruceros de reposicionamiento desde el Puerto de San Juan hacia España (Barcelona, Málaga), Portugal (Lisboa), Italia (Roma/Civitavecchia), Inglaterra (Southampton), Panamá y Costa Rica. Explicamos qué son las travesías de reposicionamiento, por qué Puerto Rico es el punto de partida ideal para ciudadanos americanos, las siete líneas que operan desde San Juan (Celebrity, Windstar, Norwegian, Viking, SeaDream, MSC Explora Journeys, Silversea y Ritz-Carlton Yacht Collection), qué incluye el precio y preguntas frecuentes sobre pasaporte, duración y temporada.",
+    datePublished: "2026-08-08", dateModified: "2026-08-08",
+    breadcrumbs: [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }, { name: "Cruceros de Reposicionamiento desde Puerto Rico", path: "/blog/cruceros-de-reposicionamiento-desde-puerto-rico" }],
   },
   "/contact": {
     title: "Consulta Gratis de Viajes de Lujo — Contacto | SJU Luxe Travel",
