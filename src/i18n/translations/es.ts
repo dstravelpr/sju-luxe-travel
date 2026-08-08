@@ -12,6 +12,7 @@ export const es: typeof en = {
     honeymoon: "Luna de Miel",
     luxuryCruises: "Cruceros",
     riverCruises: "Cruceros Fluviales",
+    repositioningCruises: "Cruceros de Reposicionamiento",
     maldives: "Maldivas",
     portugal: "Portugal",
     mexico: "México",

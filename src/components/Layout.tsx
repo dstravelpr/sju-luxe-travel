@@ -57,6 +57,10 @@ const Header = () => {
           label: t.nav.riverCruises,
           to: localPath("/cruceros-fluviales-de-lujo-desde-puerto-rico"),
         },
+        {
+          label: t.nav.repositioningCruises,
+          to: localPath("/cruceros-reposicionamiento"),
+        },
         { label: t.nav.maldives, to: localPath("/destinations/maldives") },
         { label: t.nav.portugal, to: localPath("/destinations/portugal") },
         { label: t.nav.mexico, to: localPath("/destinations/mexico") },

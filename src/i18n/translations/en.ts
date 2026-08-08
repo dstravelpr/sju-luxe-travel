@@ -10,6 +10,7 @@ export const en = {
     honeymoon: "Honeymoon",
     luxuryCruises: "Cruises",
     riverCruises: "River cruises",
+    repositioningCruises: "Repositioning cruises",
     maldives: "Maldives",
     portugal: "Portugal",
     mexico: "Mexico",

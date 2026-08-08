@@ -252,6 +252,14 @@ const pages = {
     service: { name: "Cruceros fluviales de lujo desde Puerto Rico", serviceType: "Luxury river cruise planning" },
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Cruceros Fluviales de Lujo", path: "/cruceros-fluviales-de-lujo-desde-puerto-rico" }],
   },
+  "/cruceros-reposicionamiento": {
+    title: "Cruceros de Reposicionamiento desde San Juan | SJU Luxe Travel",
+    description: "Descubre las 15 travesías de reposicionamiento disponibles desde San Juan, Puerto Rico — desde Mejor Valor hasta Ultra-Lujo. Agencia de viajes a medida en todo presupuesto.",
+    h1: "Cruceros de Reposicionamiento desde San Juan",
+    body: "Las líneas de cruceros mueven sus barcos entre regiones al cambio de temporada y venden esas travesías en sentido único a precios reducidos. Desde San Juan, Puerto Rico, los viajeros americanos embarcan sin pasaporte y sin vuelo previo a Miami o Nueva York. 15 travesías disponibles entre noviembre 2026 y abril 2028 con 7 líneas de cruceros, desde Mejor Valor hasta Ultra-Lujo.",
+    service: { name: "Cruceros de reposicionamiento desde San Juan", serviceType: "Repositioning cruise planning" },
+    breadcrumbs: [{ name: "Home", path: "/" }, { name: "Cruceros de Reposicionamiento desde San Juan", path: "/cruceros-reposicionamiento" }],
+  },
   "/agencia-de-viajes-puerto-rico": {
     title: "Agencia de Viajes de Lujo en Puerto Rico — SJU Luxe Travel",
     description: "¿Buscas una agencia de viajes en Puerto Rico que realmente entienda el lujo? SJU Luxe Travel diseña itinerarios exclusivos, cruceros y lunas de miel desde San Juan.",
