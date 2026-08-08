@@ -84,6 +84,9 @@ const ViajesDeLujo = lazy(() => import("./pages/ViajesDeLujo.tsx"));
 const LunaDeMiel = lazy(() => import("./pages/LunaDeMiel.tsx"));
 const CrucerosDeLujo = lazy(() => import("./pages/CrucerosDeLujo.tsx"));
 const CrucerosFluviales = lazy(() => import("./pages/CrucerosFluviales.tsx"));
+const CrucerosReposicionamiento = lazy(
+  () => import("./pages/CrucerosReposicionamiento.tsx"),
+);
 const AgenciaDeViajesPuertoRico = lazy(
   () => import("./pages/AgenciaDeViajesPuertoRico.tsx"),
 );
@@ -180,6 +183,10 @@ const appRoutes = [
   {
     path: "/cruceros-fluviales-de-lujo-desde-puerto-rico",
     element: <CrucerosFluviales />,
+  },
+  {
+    path: "/cruceros-reposicionamiento",
+    element: <CrucerosReposicionamiento />,
   },
 ];
 
