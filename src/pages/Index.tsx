@@ -29,6 +29,8 @@ import portugalImgWebp from "@/assets/destination-portugal.webp";
 import mexicoImg from "@/assets/destination-mexico.jpg";
 import mexicoImgWebp from "@/assets/destination-mexico.webp";
 import cruiseImg from "@/assets/ocean/ritz-carlton.jpg";
+import sampleItineraryImg from "@/assets/sample-itinerary-silk-road.jpg";
+import sampleItineraryImgWebp from "@/assets/sample-itinerary-silk-road.webp";
 import travelLeadersLogo from "@/assets/travel-leaders-icon.png";
 import amaLogo from "@/assets/amawaterways-logo.png";
 import ncmLogo from "@/assets/ncm-concierge-logo.png";
@@ -497,6 +499,22 @@ const Index = () => {
             <p className="text-muted-foreground text-lg mt-6 leading-relaxed">
               {t.home.sampleItineraryIntro}
             </p>
+          </div>
+
+          <div className="max-w-5xl mx-auto mb-12 md:mb-16">
+            <div className="relative aspect-[16/9] overflow-hidden rounded-sm gold-border">
+              <Picture
+                src={sampleItineraryImg}
+                webpSrc={sampleItineraryImgWebp}
+                alt="Registan Square in Samarkand, Uzbekistan — a highlight of the Five Stans Silk Road itinerary"
+                width={1920}
+                height={1088}
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent pointer-events-none" />
+            </div>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-12">
