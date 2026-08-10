@@ -501,6 +501,22 @@ const Index = () => {
             </p>
           </div>
 
+          <div className="max-w-5xl mx-auto mb-12 md:mb-16">
+            <div className="relative aspect-[16/9] overflow-hidden rounded-sm gold-border">
+              <Picture
+                src={sampleItineraryImg}
+                webpSrc={sampleItineraryImgWebp}
+                alt="Registan Square in Samarkand, Uzbekistan — a highlight of the Five Stans Silk Road itinerary"
+                width={1920}
+                height={1088}
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/40 to-transparent pointer-events-none" />
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-12">
             {[
               {
