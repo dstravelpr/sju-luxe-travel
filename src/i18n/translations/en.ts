@@ -202,6 +202,34 @@ export const en = {
     founderPhotoAlt:
       "Daniel Santiago Díaz, founder and travel agent of SJU Luxe Travel in San Juan, Puerto Rico",
     requestConsultation: "Request a Consultation",
+    sampleItineraryLabel: "Sample Itinerary",
+    sampleItineraryTitle: "The Five Stans: 19 Days Along the Silk Road",
+    sampleItinerarySubtitle:
+      "Turkmenistan · Uzbekistan · Tajikistan · Kyrgyzstan · Kazakhstan — 19 days · 5 countries · Silk Road",
+    sampleItineraryIntro:
+      "This is the kind of itinerary we organize — complex, authentic, fully tailor-made journeys.",
+    sampleItineraryCard1Label: "Turkmenistan · Day 3",
+    sampleItineraryCard1Title: "The Gates of Hell",
+    sampleItineraryCard1Desc:
+      "A blazing gas crater in the heart of the Karakum Desert — one of the most extraordinary landscapes on Earth, visited at sunset.",
+    sampleItineraryCard2Label: "Uzbekistan · Day 9",
+    sampleItineraryCard2Title: "Samarkand by Night",
+    sampleItineraryCard2Desc:
+      "Exclusive after-hours access to the Gur-e-Amir Mausoleum — the tomb of Tamerlane, opened only for you after public closing.",
+    sampleItineraryCard3Label: "Uzbekistan · Day 8",
+    sampleItineraryCard3Title: "Suzani Silk Road Art",
+    sampleItineraryCard3Desc:
+      "Visit a hand-embroidery silk suzani cooperative — a centuries-old tradition preserved by local women artisans.",
+    sampleItineraryCard4Label: "Kyrgyzstan · Day 15",
+    sampleItineraryCard4Title: "Kyrgyz Equestrian Games",
+    sampleItineraryCard4Desc:
+      "An afternoon in the Kyrgyz countryside with a local family, witnessing traditional Central Asian horseback games.",
+    sampleItinerarySummary:
+      "19 Days  |  5 Countries  |  Private guides included  |  5★ & boutique hotels  |  Transfers & trains included",
+    sampleItineraryCtaHeading: "Have a destination in mind?",
+    sampleItineraryCtaText:
+      "At SJU Luxe Travel we organize tailor-made itineraries for every budget — from one week to multi-country expeditions.",
+    sampleItineraryCtaButton: "Contact Us",
   },
   about: {
     label: "Meet Your Agent",
