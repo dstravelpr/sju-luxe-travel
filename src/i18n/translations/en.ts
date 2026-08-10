@@ -55,12 +55,8 @@ export const en = {
     philosophyLabel: "Our Philosophy",
     philosophyTitle1: "Intentional Travel,",
     philosophyTitle2: "Extraordinary Memories",
-    philosophyP1:
-      "SJU Luxe Travel is a boutique travel agency based in San Juan, Puerto Rico, specializing in intentional, experience-driven travel. We believe travel is not a luxury — it's an opportunity to slow down, connect, and live more fully.",
-    philosophyP2:
-      "Our approach blends expert planning, insider knowledge, and firsthand experience to ensure every trip is thoughtfully designed — not rushed, generic, or overwhelming. From honeymoons and milestone celebrations to cultural immersions and wellness retreats, we tailor each bespoke itinerary around what matters most to you.",
-    philosophyP3:
-      "With over a decade of high-end sales experience across six continents, founder Daniel Santiago Díaz is a certified bilingual travel professional and independent agent of NCM Concierge, part of Travel Leaders — one of the most respected concierge travel networks in the Americas. As a private travel concierge serving the Caribbean and beyond, Daniel brings unparalleled expertise to every journey — from solo travel for women to cruises departing from San Juan and exclusive destinations without mass tourism.",
+    philosophyBody:
+      "SJU Luxe Travel is a boutique travel agency based in San Juan, Puerto Rico, specializing in bespoke, experience-driven itineraries for every budget. We don't sell packages — we design each journey around you, in English or Spanish, from a single week to multi-country expeditions across six continents.",
     learnMore: "Learn More About Us",
     servicesLabel: "What We Offer",
     servicesTitle: "Exceptional",
@@ -199,6 +195,19 @@ export const en = {
     founderP2:
       "He plans every itinerary personally, in English or Spanish, so each journey is designed around how you actually want to travel.",
     founderCta: "Book a Consultation",
+    quickFactsTitle: "Quick",
+    quickFactsTitleHighlight: "Facts",
+    quickFactsBase: "Base",
+    quickFactsBaseValue: "San Juan, Puerto Rico",
+    quickFactsSpecialty: "Specialty",
+    quickFactsSpecialtyValue: "Trips departing from Puerto Rico",
+    quickFactsDestinations: "Destinations",
+    quickFactsDestinationsValue: "Maldives, Portugal, Mexico, Europe & more",
+    quickFactsLanguages: "Languages",
+    quickFactsLanguagesValue: "English & Spanish",
+    quickFactsNetwork: "Network",
+    quickFactsNetworkValue: "NCM Concierge — Travel Leaders",
+    quickFactsPhone: "Phone",
     founderPhotoAlt:
       "Daniel Santiago Díaz, founder and travel agent of SJU Luxe Travel in San Juan, Puerto Rico",
     requestConsultation: "Request a Consultation",

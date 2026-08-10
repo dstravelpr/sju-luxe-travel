@@ -195,11 +195,6 @@ const Index = () => {
       description: t.home.services.curatedItinerariesDesc,
     },
     {
-      icon: Heart,
-      title: t.home.services.intentionalExperiences,
-      description: t.home.services.intentionalExperiencesDesc,
-    },
-    {
       icon: Users,
       title: t.home.services.personalConcierge,
       description: t.home.services.personalConciergeDesc,
@@ -213,11 +208,6 @@ const Index = () => {
       icon: Shield,
       title: t.home.services.bookingProtection,
       description: t.home.services.bookingProtectionDesc,
-    },
-    {
-      icon: Star,
-      title: t.home.services.luxuryAccommodations,
-      description: t.home.services.luxuryAccommodationsDesc,
     },
   ];
 
@@ -422,14 +412,9 @@ const Index = () => {
                 {t.home.philosophyTitle2}
               </span>
             </h2>
-            <div className="text-muted-foreground text-lg leading-relaxed mb-10 space-y-6">
-              <p>{t.home.heroDescription}</p>
-              <p>{t.home.philosophyP1}</p>
-              <p className="text-foreground">{t.home.budgetNote}</p>
-
-              <p>{t.home.philosophyP2}</p>
-              <p>{t.home.philosophyP3}</p>
-            </div>
+            <p className="text-muted-foreground text-lg leading-relaxed mb-10">
+              {t.home.philosophyBody}
+            </p>
             <Link
               to={localPath("/about")}
               className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors font-body tracking-wide"
@@ -699,6 +684,66 @@ const Index = () => {
                 <p>{t.home.founderP1}</p>
                 <p>{t.home.founderP2}</p>
               </div>
+
+              {/* Quick Facts */}
+              <div className="mt-10 gold-border rounded-lg p-6 bg-charcoal">
+                <h3 className="font-heading text-xl text-foreground mb-4 text-center">
+                  {t.home.quickFactsTitle}{" "}
+                  <span className="text-gold-gradient italic">
+                    {t.home.quickFactsTitleHighlight}
+                  </span>
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+                  <div className="flex items-start gap-3">
+                    <span className="text-lg">📍</span>
+                    <div>
+                      <span className="text-foreground font-semibold">{t.home.quickFactsBase}:</span>{" "}
+                      <span className="text-muted-foreground">{t.home.quickFactsBaseValue}</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-lg">✈️</span>
+                    <div>
+                      <span className="text-foreground font-semibold">{t.home.quickFactsSpecialty}:</span>{" "}
+                      <span className="text-muted-foreground">{t.home.quickFactsSpecialtyValue}</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-lg">🌍</span>
+                    <div>
+                      <span className="text-foreground font-semibold">{t.home.quickFactsDestinations}:</span>{" "}
+                      <span className="text-muted-foreground">{t.home.quickFactsDestinationsValue}</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-lg">🗣️</span>
+                    <div>
+                      <span className="text-foreground font-semibold">{t.home.quickFactsLanguages}:</span>{" "}
+                      <span className="text-muted-foreground">{t.home.quickFactsLanguagesValue}</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-lg">🏆</span>
+                    <div>
+                      <span className="text-foreground font-semibold">{t.home.quickFactsNetwork}:</span>{" "}
+                      <span className="text-muted-foreground">{t.home.quickFactsNetworkValue}</span>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="text-lg">📞</span>
+                    <div>
+                      <span className="text-foreground font-semibold">{t.home.quickFactsPhone}:</span>{" "}
+                      <a
+                        href="tel:+16179355714"
+                        className="text-gold hover:text-gold-light transition-colors"
+                      >
+                        (617) 935-5714
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <Link
                 to={localPath("/contact")}
                 className="pill-cta mt-10 inline-flex items-center gap-3 px-8 py-3.5 border border-gold/60 text-gold font-body text-xs font-semibold tracking-[0.25em] uppercase hover:bg-gold/10 hover:border-gold"
@@ -710,106 +755,6 @@ const Index = () => {
           </div>
         </div>
       </Reveal>
-
-      {/* Why Choose Us */}
-      <section className="py-24 bg-charcoal">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto text-center">
-            <span className="font-body text-gold text-sm tracking-[0.3em] uppercase">
-              {t.home.whyLabel}
-            </span>
-            <h2 className="font-heading text-3xl md:text-5xl text-foreground mt-4 mb-8">
-              {t.home.whyTitle}{" "}
-              <span className="text-gold-gradient italic">
-                {t.home.whyTitleHighlight}
-              </span>
-            </h2>
-            <div className="text-muted-foreground text-lg leading-relaxed space-y-5">
-              <p>{t.home.whyP1}</p>
-              <p>{t.home.whyP2}</p>
-              <p>{t.home.whyP3}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Quick Facts — GEO Optimization */}
-      <section className="py-16 bg-background">
-        <div className="container mx-auto px-6">
-          <div className="max-w-3xl mx-auto gold-border rounded-lg p-8 bg-charcoal">
-            <h2 className="font-heading text-2xl text-foreground mb-6 text-center">
-              Quick <span className="text-gold-gradient italic">Facts</span>
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
-              <div className="flex items-start gap-3">
-                <span className="text-lg">📍</span>
-                <div>
-                  <span className="text-foreground font-semibold">Base:</span>{" "}
-                  <span className="text-muted-foreground">
-                    San Juan, Puerto Rico
-                  </span>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-lg">✈️</span>
-                <div>
-                  <span className="text-foreground font-semibold">
-                    Especialidad:
-                  </span>{" "}
-                  <span className="text-muted-foreground">
-                    Viajes saliendo de Puerto Rico
-                  </span>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-lg">🌍</span>
-                <div>
-                  <span className="text-foreground font-semibold">
-                    Destinos:
-                  </span>{" "}
-                  <span className="text-muted-foreground">
-                    Maldivas, Portugal, México, Europa y más
-                  </span>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-lg">🗣️</span>
-                <div>
-                  <span className="text-foreground font-semibold">
-                    Idiomas:
-                  </span>{" "}
-                  <span className="text-muted-foreground">
-                    Español e inglés
-                  </span>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-lg">🏆</span>
-                <div>
-                  <span className="text-foreground font-semibold">Red:</span>{" "}
-                  <span className="text-muted-foreground">
-                    NCM Concierge — Travel Leaders
-                  </span>
-                </div>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-lg">📞</span>
-                <div>
-                  <span className="text-foreground font-semibold">
-                    Teléfono:
-                  </span>{" "}
-                  <a
-                    href="tel:+16179355714"
-                    className="text-gold hover:text-gold-light transition-colors"
-                  >
-                    (617) 935-5714
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* FAQ Section */}
       <section className="py-24 bg-background">
