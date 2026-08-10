@@ -29,6 +29,8 @@ import portugalImgWebp from "@/assets/destination-portugal.webp";
 import mexicoImg from "@/assets/destination-mexico.jpg";
 import mexicoImgWebp from "@/assets/destination-mexico.webp";
 import cruiseImg from "@/assets/ocean/ritz-carlton.jpg";
+import sampleItineraryImg from "@/assets/sample-itinerary-silk-road.jpg";
+import sampleItineraryImgWebp from "@/assets/sample-itinerary-silk-road.webp";
 import travelLeadersLogo from "@/assets/travel-leaders-icon.png";
 import amaLogo from "@/assets/amawaterways-logo.png";
 import ncmLogo from "@/assets/ncm-concierge-logo.png";
