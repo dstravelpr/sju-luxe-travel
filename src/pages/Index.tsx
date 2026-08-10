@@ -308,7 +308,7 @@ const Index = () => {
       />
 
       {/* Hero Section */}
-      <section className="hero-section relative min-h-[92vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-24 pb-16">
+      <section className="hero-section relative min-h-[88vh] md:min-h-screen flex items-center justify-center overflow-hidden pt-20 pb-12">
         <div className="absolute inset-0 overflow-hidden">
           <Picture
             src={heroBg}
@@ -343,7 +343,7 @@ const Index = () => {
               {t.home.heroAgencyLine2}
             </span>
           </h2>
-          <p className="hero-tagline font-body text-[12px] md:text-sm tracking-[0.32em] uppercase text-gold mb-10 md:mb-12 animate-fade-in-up">
+          <p className="hero-tagline font-body text-[12px] md:text-sm tracking-[0.32em] uppercase text-gold mb-8 md:mb-10 animate-fade-in-up">
             {t.home.heroSubtitle}
           </p>
           <div className="flex justify-center animate-fade-in-delay">
@@ -360,11 +360,11 @@ const Index = () => {
 
       {/* Trust Bar */}
       <section
-        className="py-14 md:py-16 bg-charcoal border-y border-border/40"
+        className="py-10 md:py-12 bg-charcoal border-y border-border/40"
         aria-label={t.home.trustLabel}
       >
         <div className="container mx-auto px-6">
-          <div className="flex items-center justify-center gap-5 mb-10">
+          <div className="flex items-center justify-center gap-5 mb-8">
             <span className="h-px w-10 bg-gold/30" />
             <p className="text-center font-body text-[11px] tracking-[0.3em] uppercase text-muted-foreground/80">
               {t.home.trustLabel}
@@ -400,19 +400,19 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <Reveal as="section" className="py-20 md:py-28 bg-background">
+      <Reveal as="section" className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
             <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">
               {t.home.philosophyLabel}
             </span>
-            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-tight text-foreground mt-6 mb-10">
+            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-tight text-foreground mt-5 mb-8">
               {t.home.philosophyTitle1}{" "}
               <span className="text-gold-gradient italic">
                 {t.home.philosophyTitle2}
               </span>
             </h2>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-10">
+            <p className="text-muted-foreground text-lg leading-relaxed mb-8">
               {t.home.philosophyBody}
             </p>
             <Link
@@ -427,9 +427,9 @@ const Index = () => {
       </Reveal>
 
       {/* Services Section */}
-      <Reveal as="section" className="py-20 md:py-28 bg-charcoal">
+      <Reveal as="section" className="py-16 md:py-24 bg-charcoal">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-14">
+          <div className="text-center mb-10">
             <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">
               {t.home.servicesLabel}
             </span>
@@ -469,9 +469,9 @@ const Index = () => {
       </Reveal>
 
       {/* Sample Itinerary */}
-      <Reveal as="section" className="py-20 md:py-28 bg-background">
+      <Reveal as="section" className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6">
-          <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
+          <div className="text-center max-w-3xl mx-auto mb-10 md:mb-12">
             <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">
               {t.home.sampleItineraryLabel}
             </span>
@@ -486,7 +486,7 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="max-w-5xl mx-auto mb-12 md:mb-16">
+          <div className="max-w-5xl mx-auto mb-10 md:mb-12">
             <div className="relative aspect-[16/9] overflow-hidden rounded-sm gold-border">
               <Picture
                 src={sampleItineraryImg}
@@ -502,7 +502,7 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-10">
             {[
               {
                 label: t.home.sampleItineraryCard1Label,
@@ -542,7 +542,7 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="max-w-5xl mx-auto gold-border rounded-sm px-6 py-4 bg-charcoal mb-12 md:mb-16">
+          <div className="max-w-5xl mx-auto gold-border rounded-sm px-6 py-4 bg-charcoal mb-10 md:mb-12">
             <p className="text-center text-muted-foreground text-sm tracking-wide leading-relaxed">
               {t.home.sampleItinerarySummary}
             </p>
@@ -567,9 +567,9 @@ const Index = () => {
       </Reveal>
 
       {/* Destination Showcase */}
-      <Reveal as="section" className="py-20 md:py-28 bg-background">
+      <Reveal as="section" className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-8">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-10 gap-8">
             <div>
               <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">
                 {t.home.showcaseLabel}
@@ -623,9 +623,9 @@ const Index = () => {
       </Reveal>
 
       {/* Concierge Perks */}
-      <Reveal as="section" className="py-20 md:py-28 bg-charcoal">
+      <Reveal as="section" className="py-16 md:py-24 bg-charcoal">
         <div className="container mx-auto px-6">
-          <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="text-center max-w-2xl mx-auto mb-10">
             <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">
               {t.home.perksLabel}
             </span>
@@ -639,7 +639,7 @@ const Index = () => {
               {t.home.perksDescription}
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-10 gap-y-14 max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10 max-w-6xl mx-auto">
             {perks.map((perk, index) => (
               <div key={index} className="text-center px-2">
                 <perk.icon
@@ -661,9 +661,9 @@ const Index = () => {
       </Reveal>
 
       {/* Meet Your travel agent */}
-      <Reveal as="section" className="py-20 md:py-28 bg-background">
+      <Reveal as="section" className="py-16 md:py-24 bg-background">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-center max-w-5xl mx-auto">
             <img
               src="/about/hero-portrait.jpg"
               alt={t.home.founderPhotoAlt}
@@ -680,13 +680,13 @@ const Index = () => {
               <p className="font-body text-xs tracking-[0.2em] uppercase text-muted-foreground mt-4">
                 {t.home.founderRole}
               </p>
-              <div className="text-muted-foreground text-lg leading-relaxed mt-8 space-y-5">
+              <div className="text-muted-foreground text-lg leading-relaxed mt-6 space-y-4">
                 <p>{t.home.founderP1}</p>
                 <p>{t.home.founderP2}</p>
               </div>
 
               {/* Quick Facts */}
-              <div className="mt-8 gold-border rounded-lg p-6 bg-charcoal">
+              <div className="mt-6 gold-border rounded-lg p-6 bg-charcoal">
                 <h3 className="font-heading text-xl text-foreground mb-4 text-center">
                   {t.home.quickFactsTitle}{" "}
                   <span className="text-gold-gradient italic">
@@ -759,10 +759,10 @@ const Index = () => {
       </Reveal>
 
       {/* FAQ Section */}
-      <section className="pt-12 md:pt-16 pb-20 md:pb-24 bg-background">
+      <section className="pt-10 md:pt-12 pb-16 md:pb-20 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-12">
+            <div className="text-center mb-10">
               <span className="font-body text-gold text-sm tracking-[0.3em] uppercase">
                 {t.home.faqLabel}
               </span>
@@ -776,7 +776,7 @@ const Index = () => {
                 {t.home.faqDescription}
               </p>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-3">
               {t.home.faqs.map((faq, index) => (
                 <FAQItem
                   key={index}
@@ -792,7 +792,7 @@ const Index = () => {
       {/* Final CTA Section */}
       <Reveal
         as="section"
-        className="py-24 md:py-32 bg-background relative overflow-hidden"
+        className="py-20 md:py-24 bg-background relative overflow-hidden"
       >
         <div className="absolute inset-0 opacity-[0.06]">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full border border-gold" />
@@ -806,7 +806,7 @@ const Index = () => {
               {t.home.ctaTitleHighlight}
             </span>
           </h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-12">
+          <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-10">
             {t.home.ctaDescription}
           </p>
           <Link
