@@ -66,7 +66,7 @@ export const es: typeof en = {
     servicesDescription:
       "Desde la primera consulta hasta tu regreso a casa, ofrecemos planificación integral de viajes personalizados diseñada en torno a tu visión, presupuesto y horario.",
     services: {
-      curatedItineraries: "Itinerarios de Viaje Personalizados",
+      curatedItineraries: "Itinerarios a la Medida",
       curatedItinerariesDesc:
         "Planes de viaje personalizados que van más allá de los lugares turísticos para revelar experiencias auténticas e inmersivas — incluyendo destinos exclusivos sin turismo masivo. Cada itinerario personalizado se elabora según tus preferencias, intereses y estilo de viaje — viajes privados, no viajes en grupo. Ningún viaje es igual a otro.",
       intentionalExperiences: "Experiencias intencionales",
