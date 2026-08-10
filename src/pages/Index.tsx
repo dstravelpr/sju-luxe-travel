@@ -443,7 +443,7 @@ const Index = () => {
               {t.home.servicesDescription}
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch max-w-4xl mx-auto">
             {services.map((service, index) => (
               <div
                 key={index}
