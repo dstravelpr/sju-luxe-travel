@@ -204,6 +204,34 @@ export const es: typeof en = {
     founderPhotoAlt:
       "Daniel Santiago Díaz, fundador y agente de viajes de SJU Luxe Travel en San Juan, Puerto Rico",
     requestConsultation: "Solicita una Consulta",
+    sampleItineraryLabel: "Itinerario de Ejemplo",
+    sampleItineraryTitle: "Los Cinco Stans: 19 Días en la Ruta de la Seda",
+    sampleItinerarySubtitle:
+      "Turkmenistán · Uzbekistán · Tayikistán · Kirguistán · Kazajistán — 19 días · 5 países · Ruta de la Seda",
+    sampleItineraryIntro:
+      "Este es el tipo de itinerario que organizamos — viajes complejos, auténticos, hechos completamente a medida.",
+    sampleItineraryCard1Label: "Turkmenistán · Día 3",
+    sampleItineraryCard1Title: "Las Puertas del Infierno",
+    sampleItineraryCard1Desc:
+      "Un cráter de gas en llamas en medio del desierto de Karakum — uno de los paisajes más extraordinarios del planeta, visitado al anochecer.",
+    sampleItineraryCard2Label: "Uzbekistán · Día 9",
+    sampleItineraryCard2Title: "Samarcanda de Noche",
+    sampleItineraryCard2Desc:
+      "Acceso exclusivo fuera de horario al Mausoleo Gur-e-Amir — la tumba de Tamerlán, abierta solo para ti después del cierre al público.",
+    sampleItineraryCard3Label: "Uzbekistán · Día 8",
+    sampleItineraryCard3Title: "Arte Suzani en la Ruta de la Seda",
+    sampleItineraryCard3Desc:
+      "Visita a una cooperativa de bordado a mano de seda suzani — una tradición centenaria preservada por artesanas locales.",
+    sampleItineraryCard4Label: "Kirguistán · Día 15",
+    sampleItineraryCard4Title: "Juegos Ecuestres Kirguises",
+    sampleItineraryCard4Desc:
+      "Una tarde en la campiña kirguís con una familia local, presenciando los tradicionales juegos a caballo de Asia Central.",
+    sampleItinerarySummary:
+      "19 Días  |  5 Países  |  Guías privados incluidos  |  Hoteles 5★ y boutique  |  Traslados y trenes incluidos",
+    sampleItineraryCtaHeading: "¿Tienes un destino en mente?",
+    sampleItineraryCtaText:
+      "En SJU Luxe Travel organizamos itinerarios a medida para todo presupuesto — desde una semana hasta expediciones de varios países.",
+    sampleItineraryCtaButton: "Contáctanos",
   },
   about: {
     label: "Conoce a Tu Agente",

@@ -481,6 +481,88 @@ const Index = () => {
         </div>
       </Reveal>
 
+      {/* Sample Itinerary */}
+      <Reveal as="section" className="py-28 md:py-36 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
+            <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">
+              {t.home.sampleItineraryLabel}
+            </span>
+            <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl leading-tight text-foreground mt-6">
+              {t.home.sampleItineraryTitle}
+            </h2>
+            <p className="text-gold text-sm tracking-[0.2em] uppercase mt-4">
+              {t.home.sampleItinerarySubtitle}
+            </p>
+            <p className="text-muted-foreground text-lg mt-6 leading-relaxed">
+              {t.home.sampleItineraryIntro}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-12">
+            {[
+              {
+                label: t.home.sampleItineraryCard1Label,
+                title: t.home.sampleItineraryCard1Title,
+                description: t.home.sampleItineraryCard1Desc,
+              },
+              {
+                label: t.home.sampleItineraryCard2Label,
+                title: t.home.sampleItineraryCard2Title,
+                description: t.home.sampleItineraryCard2Desc,
+              },
+              {
+                label: t.home.sampleItineraryCard3Label,
+                title: t.home.sampleItineraryCard3Title,
+                description: t.home.sampleItineraryCard3Desc,
+              },
+              {
+                label: t.home.sampleItineraryCard4Label,
+                title: t.home.sampleItineraryCard4Title,
+                description: t.home.sampleItineraryCard4Desc,
+              },
+            ].map((card, index) => (
+              <div
+                key={index}
+                className="p-8 md:p-10 bg-charcoal gold-border rounded-sm group hover:bg-gold/5 transition-colors duration-500"
+              >
+                <span className="text-gold text-[11px] tracking-[0.2em] uppercase">
+                  {card.label}
+                </span>
+                <h3 className="font-heading text-2xl text-foreground mt-3 mb-4 group-hover:text-gold transition-colors duration-500">
+                  {card.title}
+                </h3>
+                <p className="text-muted-foreground text-sm leading-relaxed">
+                  {card.description}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="max-w-5xl mx-auto gold-border rounded-sm px-6 py-4 bg-charcoal mb-16 md:mb-20">
+            <p className="text-center text-muted-foreground text-sm tracking-wide leading-relaxed">
+              {t.home.sampleItinerarySummary}
+            </p>
+          </div>
+
+          <div className="text-center max-w-2xl mx-auto">
+            <h3 className="font-heading text-3xl md:text-4xl text-foreground mb-4">
+              {t.home.sampleItineraryCtaHeading}
+            </h3>
+            <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
+              {t.home.sampleItineraryCtaText}
+            </p>
+            <Link
+              to={localPath("/contact")}
+              className="pill-cta inline-flex items-center gap-3 px-10 py-4 border border-gold text-gold font-body text-xs font-semibold tracking-[0.25em] uppercase hover:bg-gold/10"
+            >
+              {t.home.sampleItineraryCtaButton}
+              <ArrowRight size={16} />
+            </Link>
+          </div>
+        </div>
+      </Reveal>
+
       {/* Destination Showcase */}
       <Reveal as="section" className="py-28 md:py-36 bg-background">
         <div className="container mx-auto px-6">
