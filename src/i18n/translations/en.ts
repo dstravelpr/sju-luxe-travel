@@ -64,7 +64,7 @@ export const en = {
     servicesDescription:
       "From the first consultation to your return home, we provide end-to-end bespoke travel itinerary planning designed around your vision, budget, and schedule.",
     services: {
-      curatedItineraries: "Bespoke travel itineraries",
+      curatedItineraries: "Tailored Itineraries",
       curatedItinerariesDesc:
         "Thoughtfully designed travel plans that go beyond tourist spots to reveal authentic, immersive experiences — including exclusive destinations without mass tourism. Every bespoke itinerary is handcrafted based on your preferences, interests, and travel style — private guided tours, not group travel. No two journeys are ever the same.",
       intentionalExperiences: "Intentional curated experiences",
