@@ -744,20 +744,22 @@ const Index = () => {
                 </div>
               </div>
 
-              <Link
-                to={localPath("/contact")}
-                className="pill-cta mt-8 inline-flex items-center gap-3 px-8 py-3.5 border border-gold/60 text-gold font-body text-xs font-semibold tracking-[0.25em] uppercase hover:bg-gold/10 hover:border-gold"
-              >
-                {t.home.founderCta}
-                <ArrowRight size={16} />
-              </Link>
+              <div className="text-center mt-8">
+                <Link
+                  to={localPath("/contact")}
+                  className="pill-cta inline-flex items-center gap-3 px-8 py-3.5 border border-gold/60 text-gold font-body text-xs font-semibold tracking-[0.25em] uppercase hover:bg-gold/10 hover:border-gold"
+                >
+                  {t.home.founderCta}
+                  <ArrowRight size={16} />
+                </Link>
+              </div>
             </div>
           </div>
         </div>
       </Reveal>
 
       {/* FAQ Section */}
-      <section className="py-20 md:py-24 bg-background">
+      <section className="pt-12 md:pt-16 pb-20 md:pb-24 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
             <div className="text-center mb-12">
