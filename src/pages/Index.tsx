@@ -400,7 +400,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <Reveal as="section" className="py-28 md:py-36 bg-background">
+      <Reveal as="section" className="py-20 md:py-28 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
             <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">
@@ -427,9 +427,9 @@ const Index = () => {
       </Reveal>
 
       {/* Services Section */}
-      <Reveal as="section" className="py-28 md:py-36 bg-charcoal">
+      <Reveal as="section" className="py-20 md:py-28 bg-charcoal">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-20">
+          <div className="text-center mb-14">
             <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">
               {t.home.servicesLabel}
             </span>
@@ -469,9 +469,9 @@ const Index = () => {
       </Reveal>
 
       {/* Sample Itinerary */}
-      <Reveal as="section" className="py-28 md:py-36 bg-background">
+      <Reveal as="section" className="py-20 md:py-28 bg-background">
         <div className="container mx-auto px-6">
-          <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
+          <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
             <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">
               {t.home.sampleItineraryLabel}
             </span>
@@ -542,7 +542,7 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="max-w-5xl mx-auto gold-border rounded-sm px-6 py-4 bg-charcoal mb-16 md:mb-20">
+          <div className="max-w-5xl mx-auto gold-border rounded-sm px-6 py-4 bg-charcoal mb-12 md:mb-16">
             <p className="text-center text-muted-foreground text-sm tracking-wide leading-relaxed">
               {t.home.sampleItinerarySummary}
             </p>
@@ -567,9 +567,9 @@ const Index = () => {
       </Reveal>
 
       {/* Destination Showcase */}
-      <Reveal as="section" className="py-28 md:py-36 bg-background">
+      <Reveal as="section" className="py-20 md:py-28 bg-background">
         <div className="container mx-auto px-6">
-          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-8">
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 gap-8">
             <div>
               <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">
                 {t.home.showcaseLabel}
@@ -623,9 +623,9 @@ const Index = () => {
       </Reveal>
 
       {/* Concierge Perks */}
-      <Reveal as="section" className="py-28 md:py-36 bg-charcoal">
+      <Reveal as="section" className="py-20 md:py-28 bg-charcoal">
         <div className="container mx-auto px-6">
-          <div className="text-center max-w-2xl mx-auto mb-20">
+          <div className="text-center max-w-2xl mx-auto mb-14">
             <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">
               {t.home.perksLabel}
             </span>
@@ -661,9 +661,9 @@ const Index = () => {
       </Reveal>
 
       {/* Meet Your travel agent */}
-      <Reveal as="section" className="py-28 md:py-36 bg-background">
+      <Reveal as="section" className="py-20 md:py-28 bg-background">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-14 md:gap-20 items-center max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center max-w-5xl mx-auto">
             <img
               src="/about/hero-portrait.jpg"
               alt={t.home.founderPhotoAlt}
@@ -686,7 +686,7 @@ const Index = () => {
               </div>
 
               {/* Quick Facts */}
-              <div className="mt-10 gold-border rounded-lg p-6 bg-charcoal">
+              <div className="mt-8 gold-border rounded-lg p-6 bg-charcoal">
                 <h3 className="font-heading text-xl text-foreground mb-4 text-center">
                   {t.home.quickFactsTitle}{" "}
                   <span className="text-gold-gradient italic">
@@ -746,7 +746,7 @@ const Index = () => {
 
               <Link
                 to={localPath("/contact")}
-                className="pill-cta mt-10 inline-flex items-center gap-3 px-8 py-3.5 border border-gold/60 text-gold font-body text-xs font-semibold tracking-[0.25em] uppercase hover:bg-gold/10 hover:border-gold"
+                className="pill-cta mt-8 inline-flex items-center gap-3 px-8 py-3.5 border border-gold/60 text-gold font-body text-xs font-semibold tracking-[0.25em] uppercase hover:bg-gold/10 hover:border-gold"
               >
                 {t.home.founderCta}
                 <ArrowRight size={16} />
@@ -757,10 +757,10 @@ const Index = () => {
       </Reveal>
 
       {/* FAQ Section */}
-      <section className="py-24 bg-background">
+      <section className="py-20 md:py-24 bg-background">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto">
-            <div className="text-center mb-16">
+            <div className="text-center mb-12">
               <span className="font-body text-gold text-sm tracking-[0.3em] uppercase">
                 {t.home.faqLabel}
               </span>
@@ -790,7 +790,7 @@ const Index = () => {
       {/* Final CTA Section */}
       <Reveal
         as="section"
-        className="py-32 md:py-40 bg-background relative overflow-hidden"
+        className="py-24 md:py-32 bg-background relative overflow-hidden"
       >
         <div className="absolute inset-0 opacity-[0.06]">
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full border border-gold" />
