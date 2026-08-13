@@ -18,6 +18,7 @@ const Terms = () => {
             url: "https://www.sjuluxetravel.com/terms",
           },
         ]}
+        noindex
       />
 
       <section className="pt-32 pb-20 bg-background">
