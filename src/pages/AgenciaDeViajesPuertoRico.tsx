@@ -89,6 +89,15 @@ const AgenciaDeViajesPuertoRico = () => (
       canonical={PAGE_URL}
       schemaJson={schema}
     />
+    <Helmet>
+      <link
+        rel="alternate"
+        hrefLang="es"
+        href="https://www.sjuluxetravel.com/es/agencia-de-viajes-puerto-rico"
+      />
+      <link rel="alternate" hrefLang="x-default" href={PAGE_URL} />
+    </Helmet>
+
 
     <article className="pt-32 pb-20 bg-background">
       <div className="container mx-auto px-6 max-w-3xl">
