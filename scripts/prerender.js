@@ -379,7 +379,7 @@ const ROUTE_MANIFEST = [
 // Helpers
 // ---------------------------------------------------------------
 const getCanonicalUrl = (route, lang) => {
-  const prefix = lang === "en" ? "/en" : lang === "es" ? "/es" : "";
+  const prefix = lang === "es" ? "/es" : "";
   if (route === "/") return `${HOSTNAME}${prefix || "/"}`;
   return `${HOSTNAME}${prefix}${route}`;
 };

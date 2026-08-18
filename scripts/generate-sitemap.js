@@ -17,7 +17,7 @@ const HOSTNAME = "https://www.sjuluxetravel.com";
 const manifest = JSON.parse(fs.readFileSync(path.join(DIST, "route-manifest.json"), "utf-8"));
 
 const urlFor = (route, lang) => {
-  const prefix = lang === "en" ? "/en" : lang === "es" ? "/es" : "";
+  const prefix = lang === "es" ? "/es" : "";
   if (route === "/") return `${HOSTNAME}${prefix || "/"}`;
   return `${HOSTNAME}${prefix}${route}`;
 };

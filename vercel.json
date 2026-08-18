@@ -20,6 +20,31 @@
       "source": "/blog/do-travel-agents-really",
       "destination": "/blog/do-travel-agents-really-help-save-money",
       "permanent": true
+    },
+    {
+      "source": "/viajes-de-lujo-desde-puerto-rico",
+      "destination": "/es/viajes-de-lujo-desde-puerto-rico",
+      "permanent": true
+    },
+    {
+      "source": "/cruceros-de-lujo-desde-san-juan",
+      "destination": "/es/cruceros-de-lujo-desde-san-juan",
+      "permanent": true
+    },
+    {
+      "source": "/luna-de-miel-de-lujo",
+      "destination": "/es/luna-de-miel-de-lujo",
+      "permanent": true
+    },
+    {
+      "source": "/cruceros-fluviales-de-lujo-desde-puerto-rico",
+      "destination": "/es/cruceros-fluviales-de-lujo-desde-puerto-rico",
+      "permanent": true
+    },
+    {
+      "source": "/cruceros-reposicionamiento",
+      "destination": "/es/cruceros-reposicionamiento",
+      "permanent": true
     }
   ],
   "rewrites": [

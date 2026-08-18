@@ -537,7 +537,7 @@ export const en = {
     h1: "Bespoke travel from Puerto Rico —",
     h1Highlight: "Your travel agent in San Juan",
     p1: "Living in Puerto Rico means having the world at your fingertips. From Luis Muñoz Marín International Airport, you can be in Europe, the Maldives, Mexico, or the Caribbean in a matter of hours — no passport, no immigration hassles, with all the advantages of traveling as an American citizen. All you need is someone who plans every detail with the level of care that trip deserves.",
-    p2: "At <strong>SJU Luxe Travel</strong>, we are your boutique boutique travel agency based in San Juan, Puerto Rico, specializing exclusively in outbound travel — that is, taking travelers from Puerto Rico to the most extraordinary destinations in the world.",
+    p2: "At <strong>SJU Luxe Travel</strong>, we are your boutique travel agency based in San Juan, Puerto Rico, specializing exclusively in outbound travel — that is, taking travelers from Puerto Rico to the most extraordinary destinations in the world.",
     h2Why: "Why Choose a travel agent in Puerto Rico?",
     whyP1:
       "Booking a trip online may seem simple, but what you don't see on any website is the real value behind working with a certified agent with access to elite travel networks.",

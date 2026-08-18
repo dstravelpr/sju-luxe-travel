@@ -94,8 +94,8 @@ export const SEOHead = ({
 
       <meta name="geo.region" content="US-PR" />
       <meta name="geo.placename" content="San Juan, Puerto Rico" />
-      <meta name="geo.position" content="18.4655;-66.1057" />
-      <meta name="ICBM" content="18.4655, -66.1057" />
+      <meta name="geo.position" content="18.4528361;-66.0635516" />
+      <meta name="ICBM" content="18.4528361, -66.0635516" />
 
       <meta property="og:title" content={finalTitle} />
       <meta property="og:description" content={finalDescription} />
