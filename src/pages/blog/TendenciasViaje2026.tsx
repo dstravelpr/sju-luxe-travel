@@ -2,7 +2,11 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
+import { Picture } from "@/components/Picture";
 import { useLanguage } from "@/i18n/LanguageContext";
+import heroImg from "@/assets/blog-tendencias-2026.jpg";
+import heroImgWebp from "@/assets/blog-tendencias-2026.webp";
+
 
 /**
  * DRAFT — no publicado.
