@@ -178,6 +178,11 @@ const appRoutes = [
     path: "/blog/cruceros-de-reposicionamiento-desde-puerto-rico",
     element: <CrucerosReposicionamientoBlog />,
   },
+  {
+    // DRAFT — accessible by direct URL only, noindex
+    path: "/blog/tendencias-viaje-2026-puerto-rico",
+    element: <TendenciasViaje2026 />,
+  },
   { path: "/contact", element: <Contact /> },
   { path: "/privacy", element: <Privacy /> },
   { path: "/terms", element: <Terms /> },
