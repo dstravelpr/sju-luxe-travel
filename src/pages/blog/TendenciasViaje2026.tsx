@@ -58,6 +58,19 @@ const Post = () => {
             </div>
           </div>
 
+          <figure className="mb-12 overflow-hidden rounded-lg gold-border">
+            <Picture
+              src={heroImg}
+              webpSrc={heroImgWebp}
+              alt="Viajera contemplando un valle europeo con neblina en otoño, ejemplo de coolcation desde Puerto Rico"
+              width={1600}
+              height={912}
+              className="w-full h-auto object-cover"
+            />
+          </figure>
+
+
+
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
               Todos los años salen las mismas listas de tendencias de viaje. Y
