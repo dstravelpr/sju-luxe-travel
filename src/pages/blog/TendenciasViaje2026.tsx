@@ -2,7 +2,11 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
+import { Picture } from "@/components/Picture";
 import { useLanguage } from "@/i18n/LanguageContext";
+import heroImg from "@/assets/blog-tendencias-2026.jpg";
+import heroImgWebp from "@/assets/blog-tendencias-2026.webp";
+
 
 /**
  * DRAFT — no publicado.
@@ -53,6 +57,19 @@ const Post = () => {
               </span>
             </div>
           </div>
+
+          <figure className="mb-12 overflow-hidden rounded-lg gold-border">
+            <Picture
+              src={heroImg}
+              webpSrc={heroImgWebp}
+              alt="Viajera contemplando un valle europeo con neblina en otoño, ejemplo de coolcation desde Puerto Rico"
+              width={1600}
+              height={912}
+              className="w-full h-auto object-cover"
+            />
+          </figure>
+
+
 
           <div className="space-y-6 text-muted-foreground leading-relaxed">
             <p>
