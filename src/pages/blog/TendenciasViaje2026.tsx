@@ -186,7 +186,7 @@ const Post = () => {
             <p>
               Esto aplica a casi todo. En un{" "}
               <Link
-                to={localPath("/crucero-fluvial-duero-desde-puerto-rico")}
+                to={localPath("/blog/crucero-fluvial-duero-desde-puerto-rico")}
                 className="text-gold hover:text-gold-light underline"
               >
                 crucero fluvial
