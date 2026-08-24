@@ -62,7 +62,7 @@ const Post = () => {
             <Picture
               src={heroImg}
               webpSrc={heroImgWebp}
-              alt="Viajera contemplando un valle europeo con neblina en otoño, ejemplo de coolcation desde Puerto Rico"
+              alt="Pareja contemplando un valle europeo con neblina en otoño, ejemplo de coolcation desde Puerto Rico"
               width={1600}
               height={912}
               className="w-full h-auto object-cover"
