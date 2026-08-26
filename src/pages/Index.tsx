@@ -32,7 +32,8 @@ import cruiseImg from "@/assets/ocean/ritz-carlton.jpg";
 import sampleItineraryImg from "@/assets/sample-itinerary-silk-road.jpg";
 import sampleItineraryImgWebp from "@/assets/sample-itinerary-silk-road.webp";
 import travelLeadersLogo from "@/assets/travel-leaders-icon.png";
-import amaLogo from "@/assets/amawaterways-logo.png";
+import amaLogoAsset from "@/assets/amawaterways-certified-advisor.png.asset.json";
+const amaLogo = amaLogoAsset.url;
 import ncmLogo from "@/assets/ncm-concierge-logo.png";
 import switzerlandLogo from "@/assets/switzerland-logo.png";
 
