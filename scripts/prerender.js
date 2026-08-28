@@ -624,13 +624,15 @@ for (const entry of ROUTE_MANIFEST) {
   // Determine default-variant language from content or forcedLang
   const defaultLang = content.forcedLang === "en" ? "en" : "es";
 
-  // x-default (canonical, no /en /es prefix)
-  {
+  // x-default (canonical, no /en /es prefix) — skipped for pages whose
+  // unprefixed URL redirects to /es/...
+  if (entry.locales.includes("default")) {
     const canonical = getCanonicalUrl(entry.path, "default");
     const html = renderPageHtml({ route: entry.path, content, lang: defaultLang, canonical });
     writeHtmlFile(routeToDir(entry.path), html);
     count++;
   }
+
   // /es variant
   if (entry.locales.includes("es")) {
     const canonical = getCanonicalUrl(entry.path, "es");
