@@ -23,6 +23,7 @@ const urlFor = (route, lang) => {
 };
 
 const rows = [];
+const seenUrls = new Set();
 for (const entry of manifest) {
   const alternates = entry.hreflang
     ? [
@@ -34,6 +35,8 @@ for (const entry of manifest) {
 
   for (const loc of entry.locales) {
     const url = urlFor(entry.path, loc);
+    if (seenUrls.has(url)) continue;
+    seenUrls.add(url);
     const lastmod = entry.lastmod ? `<lastmod>${entry.lastmod}</lastmod>` : "";
     rows.push(`  <url><loc>${url}</loc>${lastmod}${alternates}</url>`);
   }
