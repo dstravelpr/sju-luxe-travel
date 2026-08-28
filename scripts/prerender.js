@@ -358,22 +358,41 @@ const ROOT_CONTENT_ES = {
 // ---------------------------------------------------------------
 const SINGLE_LOCALE_PAGES = new Set(["/agencia-de-viajes-puerto-rico"]);
 
+// Spanish landing pages whose unprefixed URL 301/308-redirects to /es/... in
+// vercel.json. Only the /es/ URL is canonical and indexable — never advertise
+// the redirecting unprefixed URL in the sitemap.
+const ES_ONLY_PREFIXED_PAGES = new Set([
+  "/viajes-de-lujo-desde-puerto-rico",
+  "/luna-de-miel-de-lujo",
+  "/cruceros-de-lujo-desde-san-juan",
+  "/cruceros-fluviales-de-lujo-desde-puerto-rico",
+  "/cruceros-reposicionamiento",
+]);
+
 const ROUTE_MANIFEST = [
   { path: "/", locales: ["default", "en", "es"], type: "home", hreflang: true },
   ...Object.keys(pages).map((p) => {
     const isBlogPost = p.startsWith("/blog/");
     const isSingle = isBlogPost || SINGLE_LOCALE_PAGES.has(p);
+    const isEsOnly = ES_ONLY_PREFIXED_PAGES.has(p);
     const hasEn = !!pagesEn[p];
     return {
       path: p,
       // Blog posts and Spanish-only landing pages: single language, NO hreflang.
       // Non-blog pages that have an EN translation get all three variants.
-      locales: isSingle ? ["default"] : hasEn ? ["default", "en", "es"] : ["default", "es"],
+      locales: isEsOnly
+        ? ["es"]
+        : isSingle
+          ? ["default"]
+          : hasEn
+            ? ["default", "en", "es"]
+            : ["default", "es"],
       type: isBlogPost ? "blog-post" : p === "/blog" ? "blog-list" : p === "/about" ? "about" : p === "/contact" ? "contact" : pages[p].service ? "service" : "webpage",
-      hreflang: !isSingle && hasEn, // only emit hreflang when a full EN/ES/x-default set exists
+      hreflang: !isSingle && !isEsOnly && hasEn, // only emit hreflang when a full EN/ES/x-default set exists
     };
   }),
 ];
+
 
 // ---------------------------------------------------------------
 // Helpers
