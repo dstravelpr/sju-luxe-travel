@@ -119,6 +119,9 @@ export const SEOHead = ({
         <link rel="alternate" hrefLang="es-PR" href={esUrl} />
       )}
       {emitHreflang && !suppressCanonical && (
+        <link rel="alternate" hrefLang="es" href={esUrl} />
+      )}
+      {emitHreflang && !suppressCanonical && (
         <link rel="alternate" hrefLang="en" href={enUrl} />
       )}
       {emitHreflang && !suppressCanonical && (
