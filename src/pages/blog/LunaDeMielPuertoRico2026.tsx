@@ -131,7 +131,7 @@ const Post = () => {
                 Daniel Santiago Díaz
                 <span className="text-muted-foreground/70">
                   {" "}
-                  — {isEs ? "Agente de viajes a medida" : "Travel Advisor"}
+                  — {isEs ? "Agente de viajes personalizados" : "Travel Advisor"}
                 </span>
               </Link>
               <span className="flex items-center gap-1.5">

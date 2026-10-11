@@ -94,7 +94,7 @@ const MicroVacaciones = () => {
         }
         description={
           isEs
-            ? "Las microvacaciones son escapadas cortas y bien planificadas de 2 a 5 días. Descubre por qué son el futuro del viaje a medida, consciente y flexible."
+            ? "Las microvacaciones son escapadas cortas y bien planificadas de 2 a 5 días. Descubre por qué son el futuro del viaje personalizado, consciente y flexible."
             : "Micro-cations are short, well-planned 2–5 day getaways. Discover why they're the future of mindful, flexible travel."
         }
         canonical="https://www.sjuluxetravel.com/blog/micro-vacaciones-futuro-del-viaje"
@@ -142,7 +142,7 @@ const MicroVacaciones = () => {
                 Daniel Santiago Díaz
                 <span className="text-muted-foreground/70">
                   {" "}
-                  — {isEs ? "Agente de viajes a medida" : "Travel Advisor"}
+                  — {isEs ? "Agente de viajes personalizados" : "Travel Advisor"}
                 </span>
               </Link>
               <span className="flex items-center gap-1.5">
@@ -166,7 +166,7 @@ const MicroVacaciones = () => {
               src={blogMicrocationsImg}
               alt={
                 isEs
-                  ? "Microvacaciones a medida — escapadas cortas planificadas por SJU Luxe Travel"
+                  ? "Microvacaciones personalizadas — escapadas cortas planificadas por SJU Luxe Travel"
                   : "Micro-cations — short curated getaways by SJU Luxe Travel"
               }
               className="w-full h-full object-cover"
@@ -569,7 +569,7 @@ const MicroVacaciones = () => {
                   className="text-gold hover:text-gold-light underline"
                 >
                   {isEs
-                    ? "Lo que realmente significa el viaje a medida"
+                    ? "Lo que realmente significa el viaje personalizado"
                     : "What travel really means"}
                 </Link>
               </li>
@@ -615,7 +615,7 @@ const MicroVacaciones = () => {
                   className="text-gold hover:text-gold-light underline"
                 >
                   {isEs
-                    ? "Servicios de viajes a medida desde San Juan"
+                    ? "Servicios de viajes personalizados desde San Juan"
                     : "Luxury travel services from San Juan"}
                 </Link>
               </li>
@@ -635,7 +635,7 @@ const MicroVacaciones = () => {
               className="text-gold hover:text-gold-light underline font-semibold"
             >
               {isEs
-                ? "Explora nuestros servicios de viajes a medida →"
+                ? "Explora nuestros servicios de viajes personalizados →"
                 : "Explore our luxury travel services →"}
             </Link>
           </p>

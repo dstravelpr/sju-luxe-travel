@@ -47,8 +47,8 @@ const FAQS_EN = [
 
 const FAQS_ES = [
   {
-    q: "¿Qué es el viaje a medida intencional?",
-    a: "El viaje a medida intencional es un viaje diseñado para restaurar tu sistema nervioso — silencio, naturaleza, comida nutritiva, movimiento y descanso real — en lugar de acumular turismo. Cada elemento (vuelos, hotel, guías, spa) se elige para reforzar ese objetivo de bienestar.",
+    q: "¿Qué es el viaje personalizado intencional?",
+    a: "El viaje personalizado intencional es un viaje diseñado para restaurar tu sistema nervioso — silencio, naturaleza, comida nutritiva, movimiento y descanso real — en lugar de acumular turismo. Cada elemento (vuelos, hotel, guías, spa) se elige para reforzar ese objetivo de bienestar.",
   },
   {
     q: "¿El turismo de bienestar realmente ayuda a la salud mental?",
@@ -89,7 +89,7 @@ const WellnessTravel = () => {
     ? "Viajes de Bienestar: Por Qué Tu Médico Tiene Razón (Guía 2026)"
     : "Wellness Travel: Why Your Doctor Might Be Right (2026 Guide)";
   const description = isEs
-    ? "El viaje a medida intencional no es una tendencia, es una estrategia de salud mental. Descubre cómo retiros en Maldivas y Riviera Maya generan bienestar real."
+    ? "El viaje personalizado intencional no es una tendencia, es una estrategia de salud mental. Descubre cómo retiros en Maldivas y Riviera Maya generan bienestar real."
     : "Intentional travel isn't a trend — it's a mental health strategy. See how wellness retreats in the Maldives and Riviera Maya deliver lasting benefits.";
 
   const schemaJson = buildGraph(
@@ -174,7 +174,7 @@ const WellnessTravel = () => {
             </h1>
             <p className="font-heading text-xl md:text-2xl text-muted-foreground italic mb-6">
               {isEs
-                ? "El viaje a medida intencional como inversión en salud mental"
+                ? "El viaje personalizado intencional como inversión en salud mental"
                 : "Intentional travel as a mental health investment"}
             </p>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
@@ -186,7 +186,7 @@ const WellnessTravel = () => {
                 Daniel Santiago Díaz
                 <span className="text-muted-foreground/70">
                   {" "}
-                  — {isEs ? "Agente de viajes a medida" : "Travel Advisor"}
+                  — {isEs ? "Agente de viajes personalizados" : "Travel Advisor"}
                 </span>
               </Link>
               <span className="flex items-center gap-1.5">
@@ -211,7 +211,7 @@ const WellnessTravel = () => {
               src={heroImg}
               alt={
                 isEs
-                  ? "Villa de bienestar sobre el agua en Maldivas al atardecer — viaje a medida intencional"
+                  ? "Villa de bienestar sobre el agua en Maldivas al atardecer — viaje personalizado intencional"
                   : "Overwater wellness villa in the Maldives at sunset — intentional travel"
               }
               className="w-full h-full object-cover"
@@ -231,7 +231,7 @@ const WellnessTravel = () => {
             <ul className="space-y-2 text-muted-foreground text-sm leading-relaxed list-none">
               {(isEs
                 ? [
-                    "El viaje a medida intencional es una estrategia de salud mental respaldada por la ciencia.",
+                    "El viaje personalizado intencional es una estrategia de salud mental respaldada por la ciencia.",
                     "La industria global del wellness travel supera los $830 mil millones (Global Wellness Institute).",
                     "Destinos como Maldivas y Riviera Maya combinan servicio excepcional con bienestar real.",
                     "El beneficio dura mucho más allá del viaje — si está bien planificado.",
@@ -254,7 +254,7 @@ const WellnessTravel = () => {
           <div className="prose-custom space-y-6">
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Tu médico podría tener razón: tomarse un descanso real ya no es un capricho. El viaje a medida intencional —el tipo que se planifica con propósito en lugar de reservar por impulso— se está convirtiendo en una de las inversiones más inteligentes que puedes hacer en tu salud mental este año."
+                ? "Tu médico podría tener razón: tomarse un descanso real ya no es un capricho. El viaje personalizado intencional —el tipo que se planifica con propósito en lugar de reservar por impulso— se está convirtiendo en una de las inversiones más inteligentes que puedes hacer en tu salud mental este año."
                 : "Your doctor might be right: taking a real break isn't indulgent anymore. Intentional travel — the kind planned with purpose rather than booked on impulse — is becoming one of the smartest investments you can make in your mental health this year."}
             </p>
 
@@ -275,13 +275,13 @@ const WellnessTravel = () => {
 
             <h2 className="font-heading text-2xl text-foreground mt-10">
               {isEs
-                ? "Qué es realmente el viaje a medida intencional"
+                ? "Qué es realmente el viaje personalizado intencional"
                 : "What intentional travel really is"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "El viaje a medida intencional no se trata de hoteles caros. Se trata de diseñar una experiencia que restaure tu sistema nervioso: silencio, naturaleza, comida nutritiva, movimiento y descanso real. Cuando trabajamos en "
+                ? "El viaje personalizado intencional no se trata de hoteles caros. Se trata de diseñar una experiencia que restaure tu sistema nervioso: silencio, naturaleza, comida nutritiva, movimiento y descanso real. Cuando trabajamos en "
                 : "Intentional travel isn't about expensive hotels. It's about designing an experience that restores your nervous system: silence, nature, nourishing food, movement, and real rest. When we craft "}
               <Link
                 to={localPath("/viajes-de-lujo-desde-puerto-rico")}
@@ -691,7 +691,7 @@ const WellnessTravel = () => {
               className="text-gold hover:text-gold-light underline font-semibold"
             >
               {isEs
-                ? "Explora nuestros servicios de viajes a medida →"
+                ? "Explora nuestros servicios de viajes personalizados →"
                 : "Explore our luxury travel services →"}
             </Link>
           </p>

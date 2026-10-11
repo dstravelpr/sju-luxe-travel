@@ -9,7 +9,7 @@ import blogLuxuryImg from "@/assets/blog-luxury-travel.jpg";
 const schemaJson = buildGraph(
   {
     "@type": "BlogPosting",
-    headline: "Lo Que Realmente Significa el viaje a medida desde Puerto Rico",
+    headline: "Lo Que Realmente Significa el viaje personalizado desde Puerto Rico",
     description:
       "El verdadero lujo en los viajes no se trata de cuánto gastas, sino de cómo te hace sentir la experiencia. Filosofía de un agente de viaje en San Juan, PR.",
     author: AUTHOR,
@@ -18,7 +18,7 @@ const schemaJson = buildGraph(
     dateModified: "2026-07-23",
     inLanguage: "Es-PR",
     keywords: [
-      "viaje a medida desde Puerto Rico",
+      "viaje personalizado desde Puerto Rico",
       "travel from San Juan",
       "agente de viaje",
       "Virtuoso agent",
@@ -35,18 +35,18 @@ const schemaJson = buildGraph(
     mainEntity: [
       {
         "@type": "Question",
-        name: "¿Qué significa realmente el viaje a medida?",
+        name: "¿Qué significa realmente el viaje personalizado?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "El viaje a medida no se define por cuánto gastas, sino por la intención, el servicio personalizado y los momentos significativos. Significa tener cada detalle resuelto para que puedas estar presente, sin logística que manejar.",
+          text: "El viaje personalizado no se define por cuánto gastas, sino por la intención, el servicio personalizado y los momentos significativos. Significa tener cada detalle resuelto para que puedas estar presente, sin logística que manejar.",
         },
       },
       {
         "@type": "Question",
-        name: "¿Cuál es la diferencia entre un viaje caro y un viaje a medida?",
+        name: "¿Cuál es la diferencia entre un viaje caro y un viaje personalizado?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "Un viaje caro acumula servicios costosos; un viaje a medida es intencional, bespoke, y diseñado alrededor de tu estilo. La diferencia se siente en el flujo: hoteles correctos para ti, transferencias privadas, beneficios de hotel (desayuno, upgrades, créditos), y un agente disponible 24/7.",
+          text: "Un viaje caro acumula servicios costosos; un viaje personalizado es intencional, bespoke, y diseñado alrededor de tu estilo. La diferencia se siente en el flujo: hoteles correctos para ti, transferencias privadas, beneficios de hotel (desayuno, upgrades, créditos), y un agente disponible 24/7.",
         },
       },
       {
@@ -85,7 +85,7 @@ const WhatLuxuryTravelMeans = () => {
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
           {
-            name: "Lo Que Realmente Significa el viaje a medida desde Puerto Rico",
+            name: "Lo Que Realmente Significa el viaje personalizado desde Puerto Rico",
             url: "https://www.sjuluxetravel.com/blog/what-luxury-travel-really-means",
           },
         ]}
@@ -110,7 +110,7 @@ const WhatLuxuryTravelMeans = () => {
             </span>
             <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">
               {isEs
-                ? "Lo Que Realmente Significa el viaje a medida"
+                ? "Lo Que Realmente Significa el viaje personalizado"
                 : "What Travel Really Means"}
             </h1>
             <p className="font-heading text-xl md:text-2xl text-muted-foreground italic mb-6">
@@ -127,7 +127,7 @@ const WhatLuxuryTravelMeans = () => {
                 Daniel Santiago Díaz
                 <span className="text-muted-foreground/70">
                   {" "}
-                  — {isEs ? "Agente de viajes a medida" : "Travel Advisor"}
+                  — {isEs ? "Agente de viajes personalizados" : "Travel Advisor"}
                 </span>
               </Link>
               <span className="flex items-center gap-1.5">
@@ -159,7 +159,7 @@ const WhatLuxuryTravelMeans = () => {
           <div className="prose-custom space-y-6">
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Cuando la gente escucha la frase viaje a medida, a menudo imagina algo fuera de alcance—resorts cinco estrellas, jets privados y precios que parecen irreales."
+                ? "Cuando la gente escucha la frase viaje personalizado, a menudo imagina algo fuera de alcance—resorts cinco estrellas, jets privados y precios que parecen irreales."
                 : "When people hear the phrase travel, they often picture something out of reach—five‑star resorts, private jets, and price tags that feel unrealistic."}
             </p>
 
@@ -177,7 +177,7 @@ const WhatLuxuryTravelMeans = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "El viaje a medida no se define por el exceso. Se define por la intención, la comodidad y los momentos significativos."
+                ? "El viaje personalizado no se define por el exceso. Se define por la intención, la comodidad y los momentos significativos."
                 : "Travel is not defined by excess. It's defined by intention, comfort, and meaningful moments."}
             </p>
 
@@ -190,7 +190,7 @@ const WhatLuxuryTravelMeans = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "El verdadero viaje a medida puede verse muy diferente de un viajero a otro. Puede significar:"
+                ? "El verdadero viaje personalizado puede verse muy diferente de un viajero a otro. Puede significar:"
                 : "True travel can look very different from one traveler to another. It might mean:"}
             </p>
 
@@ -341,7 +341,7 @@ const WhatLuxuryTravelMeans = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed font-semibold">
               {isEs
-                ? "El viaje a medida no se trata de gastar más—se trata de viajar mejor."
+                ? "El viaje personalizado no se trata de gastar más—se trata de viajar mejor."
                 : "Travel isn't about spending more—it's about traveling better."}
             </p>
 
@@ -367,14 +367,14 @@ const WhatLuxuryTravelMeans = () => {
             {/* FAQ */}
             <h2 className="font-heading text-2xl text-foreground mt-12">
               {isEs
-                ? "Preguntas Frecuentes sobre viajes a medida"
+                ? "Preguntas Frecuentes sobre viajes personalizados"
                 : "Frequently Asked Questions About Travel"}
             </h2>
             <div className="space-y-5">
               <div>
                 <h3 className="font-heading text-lg text-foreground mb-2">
                   {isEs
-                    ? "¿Qué significa realmente el viaje a medida?"
+                    ? "¿Qué significa realmente el viaje personalizado?"
                     : "What does travel really mean?"}
                 </h3>
                 <p className="text-muted-foreground text-base leading-relaxed">
@@ -467,7 +467,7 @@ const WhatLuxuryTravelMeans = () => {
                   className="text-gold hover:text-gold-light underline"
                 >
                   {isEs
-                    ? "Servicios de viajes a medida desde San Juan"
+                    ? "Servicios de viajes personalizados desde San Juan"
                     : "Luxury travel services from San Juan"}
                 </Link>
               </li>
@@ -487,7 +487,7 @@ const WhatLuxuryTravelMeans = () => {
               className="text-gold hover:text-gold-light underline font-semibold"
             >
               {isEs
-                ? "Explora nuestros servicios de viajes a medida →"
+                ? "Explora nuestros servicios de viajes personalizados →"
                 : "Explore our luxury travel services →"}
             </Link>
           </p>

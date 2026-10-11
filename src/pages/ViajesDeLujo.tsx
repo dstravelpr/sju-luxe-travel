@@ -14,7 +14,7 @@ const FAQ_ITEMS = [
     a: "Ofrecemos itinerarios a las Maldivas, Portugal, México, Italia y más. Todos los paquetes parten desde el Aeropuerto Internacional Luis Muñoz Marín (SJU), con conexiones optimizadas para minimizar el tiempo de viaje.",
   },
   {
-    q: "¿Cómo reservo un viaje a medida con SJU Luxe Travel?",
+    q: "¿Cómo reservo un viaje personalizado con SJU Luxe Travel?",
     a: "Completa el formulario de consulta en nuestra página de contacto y coordinaremos una llamada para conocer tus preferencias, fechas y presupuesto. No cobramos por la consulta inicial.",
   },
   {
@@ -22,7 +22,7 @@ const FAQ_ITEMS = [
     a: "Como afiliados de NCM Concierge y Travel Leaders, tenemos acceso a upgrades gratuitos, créditos en resort y amenidades VIP que no están disponibles al reservar directamente.",
   },
   {
-    q: "¿Cuánto tiempo antes debo planificar mi viaje a medida?",
+    q: "¿Cuánto tiempo antes debo planificar mi viaje personalizado?",
     a: "Recomendamos comenzar la planificación con al menos 3 a 6 meses de anticipación para los mejores destinos y categorías de habitación. Algunos cruceros de temporada alta requieren reserva con hasta un año de antelación.",
   },
 ];
@@ -36,7 +36,7 @@ const schema = buildGraph(
     "@type": "WebPage",
     "@id": `${PAGE_URL}#webpage`,
     url: PAGE_URL,
-    name: "Viajes a medida desde Puerto Rico",
+    name: "Viajes Personalizados desde Puerto Rico",
     isPartOf: WEBSITE_REF,
     inLanguage: "es",
   },
@@ -53,7 +53,7 @@ const schema = buildGraph(
   },
   breadcrumbList([
     { name: "Home", url: "https://www.sjuluxetravel.com" },
-    { name: "Viajes a medida desde Puerto Rico", url: PAGE_URL },
+    { name: "Viajes Personalizados desde Puerto Rico", url: PAGE_URL },
   ]),
 );
 
@@ -66,7 +66,7 @@ const ViajesDeLujo = () => {
       <SEOHead
         title="Travel from Puerto Rico — Bespoke Itineraries | SJU Luxe Travel"
         description="Bespoke itineraries from San Juan, PR to the Maldives, Europe, Mexico and beyond. Bilingual service, no-passport U.S. destinations available."
-        titleEs="viajes a medida desde Puerto Rico | SJU Luxe Travel"
+        titleEs="viajes personalizados desde Puerto Rico | SJU Luxe Travel"
         descriptionEs="itinerarios a medida personalizados desde PR a las Maldivas, Europa, México y más. Servicio bilingüe, sin pasaporte para destinos US."
         schemaJson={schema}
         emitHreflang
@@ -94,7 +94,7 @@ const ViajesDeLujo = () => {
             <figure className="my-8 overflow-hidden rounded-lg gold-border">
               <img
                 src={travelAgentDesk}
-                alt="Planificación de viaje a medida: pasaporte, mapa y folletos sobre escritorio"
+                alt="Planificación de viaje personalizado: pasaporte, mapa y folletos sobre escritorio"
                 loading="lazy"
                 width={1280}
                 height={832}

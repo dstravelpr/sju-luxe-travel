@@ -11,7 +11,7 @@ const schemaJson = buildGraph({
   headline:
     "Maldivas desde Puerto Rico: Guía Completa de Ruta, Costo y Resorts",
   description:
-    "Cómo llegar a Maldivas desde San Juan, cuánto cuesta un viaje a medida y los mejores resorts según tu estilo.",
+    "Cómo llegar a Maldivas desde San Juan, cuánto cuesta un viaje personalizado y los mejores resorts según tu estilo.",
   author: AUTHOR,
   publisher: ORG_REF,
   datePublished: "2026-05-29",
@@ -69,7 +69,7 @@ const Post = () => {
                 Daniel Santiago Díaz
                 <span className="text-muted-foreground/70">
                   {" "}
-                  — {isEs ? "Agente de viajes a medida" : "Travel Advisor"}
+                  — {isEs ? "Agente de viajes personalizados" : "Travel Advisor"}
                 </span>
               </Link>
               <span className="flex items-center gap-1.5">
@@ -209,7 +209,7 @@ const Post = () => {
                 className="text-gold hover:text-gold-light underline"
               >
                 {isEs
-                  ? "guía de vacaciones a medida en Maldivas desde Puerto Rico"
+                  ? "guía de vacaciones personalizadas en Maldivas desde Puerto Rico"
                   : "Maldives vacations from Puerto Rico guide"}
               </Link>
               {isEs

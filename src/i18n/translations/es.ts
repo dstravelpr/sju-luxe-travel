@@ -154,13 +154,13 @@ export const es: typeof en = {
       {
         question: "¿Qué destinos ofrece SJU Luxe Travel?",
         answer:
-          "Curamos experiencias de viaje a la medida a destinos de todo el mundo, incluyendo las Maldivas, Portugal, México, el Caribe, Europa, Asia y más. Cada paquete de destino incluye beneficios exclusivos y planificación de itinerarios personalizados adaptados a tus preferencias.",
+          "Curamos experiencias de viaje personalizado a destinos de todo el mundo, incluyendo las Maldivas, Portugal, México, el Caribe, Europa, Asia y más. Cada paquete de destino incluye beneficios exclusivos y planificación de itinerarios personalizados adaptados a tus preferencias.",
       },
     ],
     ctaTitle: "¿Listo para Comenzar Tu",
     ctaTitleHighlight: "Viaje?",
     ctaDescription:
-      "Solicita tu consulta gratuita de viajes a medida hoy. Ya sea que sueñes con cruceros desde San Juan, destinos exclusivos sin turismo masivo o viajes privados personalizados desde Puerto Rico — tu concierge de viajes privado está listo para diseñar un viaje personalizado adaptado a tus sueños.",
+      "Solicita tu consulta gratuita de viajes personalizados hoy. Ya sea que sueñes con cruceros desde San Juan, destinos exclusivos sin turismo masivo o viajes privados personalizados desde Puerto Rico — tu concierge de viajes privado está listo para diseñar un viaje personalizado adaptado a tus sueños.",
     startPlanningToday: "Consulta Gratuita — Comienza a Planificar",
     trustLabel: "Afiliaciones de Confianza",
     trustTravelLeaders: "Red Travel Leaders",
@@ -284,7 +284,7 @@ export const es: typeof en = {
   destinations: {
     maldives: {
       label: "Destino Destacado",
-      title: "Vacaciones a medida Maldivas Todo Incluido",
+      title: "Vacaciones personalizadas Maldivas Todo Incluido",
       curatedBy: "Curado por",
       locationLabel: "Océano Índico",
       duration: "7–14 días recomendados",
@@ -351,7 +351,7 @@ export const es: typeof en = {
       locationLabel: "Norteamérica",
       duration: "7–14 días recomendados",
       guests: "Parejas, familias y grupos",
-      p1: "México es uno de los destinos de viaje a la medida más diversos y gratificantes del mundo — un país donde civilizaciones antiguas, cultura vibrante, gastronomía reconocida por la UNESCO y paisajes naturales impresionantes se unen de manera extraordinaria. En SJU Luxe Travel, creamos itinerarios personalizados para México que van mucho más allá de la experiencia de resort todo incluido.",
+      p1: "México es uno de los destinos de viaje personalizado más diversos y gratificantes del mundo — un país donde civilizaciones antiguas, cultura vibrante, gastronomía reconocida por la UNESCO y paisajes naturales impresionantes se unen de manera extraordinaria. En SJU Luxe Travel, creamos itinerarios personalizados para México que van mucho más allá de la experiencia de resort todo incluido.",
       p2: "Sumérgete en cenotes sagrados escondidos en la selva del Yucatán, explora las antiguas ruinas mayas de Tulum sobre aguas turquesas del Caribe, recorre las coloridas calles coloniales de San Miguel de Allende y descubre la escena culinaria de renombre mundial de Oaxaca — desde talleres tradicionales de mole hasta tours por destilerías de mezcal.",
       p3: "Las costas del Pacífico y el Caribe de México ofrecen algunos de los mejores resorts excepcionales de las Américas. A través de nuestra red de socios preferidos como agente independiente de NCM Concierge, parte de Travel Leaders, aseguramos beneficios exclusivos en las mejores propiedades — mejoras gratuitas, créditos de resort, tratamientos de spa y experiencias gastronómicas VIP.",
       p4: "Ya sea que estés planeando una luna de miel en la Riviera Maya, una aventura familiar por la Península de Yucatán, una peregrinación culinaria a Oaxaca o un retiro de bienestar en Tulum, México cumple en todos los aspectos. Permítenos diseñar un itinerario personalizado que capture lo mejor de este increíble país.",
@@ -450,9 +450,9 @@ export const es: typeof en = {
       },
       {
         category: "Filosofía de Viaje",
-        title: "Lo Que Realmente Significa el Viaje a la Medida",
+        title: "Lo Que Realmente Significa el Viaje Personalizado",
         excerpt:
-          "Cuando la gente escucha viaje a la medida, se imaginan algo fuera de alcance. Pero el verdadero lujo no se trata de cuánto gastas — se trata de cómo la experiencia…",
+          "Cuando la gente escucha viaje personalizado, se imaginan algo fuera de alcance. Pero el verdadero lujo no se trata de cuánto gastas — se trata de cómo la experiencia…",
         readTime: "8 min de lectura",
       },
       {
@@ -487,7 +487,7 @@ export const es: typeof en = {
     title: "Contáctanos",
     titleHighlight: "",
     description:
-      "¿Listo para una consulta gratuita de viajes a medida? Ya sea que sueñes con cruceros desde San Juan, viajes privados personalizados desde Puerto Rico, viajes para mujeres solas o destinos exclusivos sin turismo masivo — tu agente de viaje boutique está listo para crear algo extraordinario.",
+      "¿Listo para una consulta gratuita de viajes personalizados? Ya sea que sueñes con cruceros desde San Juan, viajes privados personalizados desde Puerto Rico, viajes para mujeres solas o destinos exclusivos sin turismo masivo — tu agente de viaje boutique está listo para crear algo extraordinario.",
     sidebarTitle: "Comencemos a",
     sidebarTitleHighlight: "Planificar",
     location: "Ubicación",
@@ -510,7 +510,7 @@ export const es: typeof en = {
     ],
     formTitle: "Planifica Tu Viaje",
     formDescription:
-      "Solicita tu consulta gratuita de viajes a medida. Completa el formulario con detalles sobre tu viaje soñado y tu agente de viaje te responderá dentro de 24 horas con recomendaciones personalizadas y próximos pasos.",
+      "Solicita tu consulta gratuita de viajes personalizados. Completa el formulario con detalles sobre tu viaje soñado y tu agente de viaje te responderá dentro de 24 horas con recomendaciones personalizadas y próximos pasos.",
     fullName: "Nombre Completo",
     fullNamePlaceholder: "Tu nombre",
     emailAddressLabel: "Correo Electrónico",
@@ -550,13 +550,13 @@ export const es: typeof en = {
   },
   viajesDeLujo: {
     label: "Tu Agente de Viaje Privado",
-    h1: "Viajes a Medida desde Puerto Rico —",
+    h1: "Viajes Personalizados desde Puerto Rico —",
     h1Highlight: "Tu Agente de Viaje en San Juan",
     p1: "Vivir en Puerto Rico es tener el mundo al alcance de la mano. Desde el Aeropuerto Internacional Luis Muñoz Marín, puedes estar en Europa, las Maldivas, México o el Caribe en cuestión de horas — sin pasaporte, sin complicaciones migratorias, con todas las ventajas de viajar como ciudadano americano. Lo único que necesitas es a alguien que planifique cada detalle con el nivel de cuidado que ese viaje merece.",
     p2: "En <strong>SJU Luxe Travel</strong>, somos tu agencia de viajes boutique con base en San Juan, Puerto Rico, especializada exclusivamente en viajes de salida — es decir, en llevar a viajeros de Puerto Rico a los destinos más extraordinarios del mundo.",
     h2Why: "¿Por Qué Elegir un Agente de Viaje en Puerto Rico?",
     whyP1:
-      "Reservar un viaje a la medida en línea puede parecer sencillo, pero lo que no ves en ninguna página web es el valor real detrás de trabajar con un agente certificado con acceso a redes de viaje de élite.",
+      "Reservar un viaje personalizado en línea puede parecer sencillo, pero lo que no ves en ninguna página web es el valor real detrás de trabajar con un agente certificado con acceso a redes de viaje de élite.",
     whyP2:
       "Como agente independiente de <strong>NCM Concierge</strong>, parte de <strong>Travel Leaders</strong> — una de las redes de viaje concierge más respetadas de las Américas — Daniel Santiago Díaz tiene acceso a beneficios exclusivos que simplemente no están disponibles al reservar directamente:",
     whyItems: [
@@ -611,7 +611,7 @@ export const es: typeof en = {
     andText: "Y",
     riverCruises: "Cruceros fluviales por Europa, Asia y más",
     ctaTitle: "¿Listo para planificar tu próximo",
-    ctaTitleHighlight: "Viaje a la Medida desde Puerto Rico?",
+    ctaTitleHighlight: "Viaje Personalizado desde Puerto Rico?",
     ctaDescription:
       "Agenda tu consulta gratuita hoy. Sin compromisos, sin costo — solo una conversación para empezar a construir el viaje de tus sueños.",
     ctaButton: "Consulta Gratuita",

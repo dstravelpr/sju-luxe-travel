@@ -56,7 +56,7 @@ const Post = () => {
             </span>
             <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">
               {isEs
-                ? "viajes a medida para Mujeres Solas: Destinos Más Seguros 2026"
+                ? "viajes personalizados para Mujeres Solas: Destinos Más Seguros 2026"
                 : "Solo Female Travel: Safest Destinations for 2026"}
             </h1>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
@@ -68,7 +68,7 @@ const Post = () => {
                 Daniel Santiago Díaz
                 <span className="text-muted-foreground/70">
                   {" "}
-                  — {isEs ? "Agente de viajes a medida" : "Travel Advisor"}
+                  — {isEs ? "Agente de viajes personalizados" : "Travel Advisor"}
                 </span>
               </Link>
               <span className="flex items-center gap-1.5">
@@ -91,7 +91,7 @@ const Post = () => {
               src={heroImg}
               alt={
                 isEs
-                  ? "viajes a medida para mujeres solas"
+                  ? "viajes personalizados para mujeres solas"
                   : "Solo female travel"
               }
               className="w-full h-full object-cover"

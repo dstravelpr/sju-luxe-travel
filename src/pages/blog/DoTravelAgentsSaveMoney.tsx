@@ -114,7 +114,7 @@ const DoTravelAgentsSaveMoney = () => {
                 Daniel Santiago Díaz
                 <span className="text-muted-foreground/70">
                   {" "}
-                  — {isEs ? "Agente de viajes a medida" : "Travel Advisor"}
+                  — {isEs ? "Agente de viajes personalizados" : "Travel Advisor"}
                 </span>
               </Link>
               <span className="flex items-center gap-1.5">
@@ -299,7 +299,7 @@ const DoTravelAgentsSaveMoney = () => {
                 ? [
                     "Estás planeando un viaje internacional",
                     "Tu viaje incluye múltiples destinos",
-                    "Estás reservando una luna de miel, vacaciones a medida u ocasión especial",
+                    "Estás reservando una luna de miel, vacaciones personalizadas u ocasión especial",
                     "Quieres experiencias personalizadas—no viajes genéricos",
                     "Valoras la tranquilidad y el apoyo experto",
                   ]
@@ -435,7 +435,7 @@ const DoTravelAgentsSaveMoney = () => {
                   className="text-gold hover:text-gold-light underline"
                 >
                   {isEs
-                    ? "Lo que realmente significa el viaje a medida"
+                    ? "Lo que realmente significa el viaje personalizado"
                     : "What travel really means"}
                 </Link>
               </li>
@@ -492,14 +492,14 @@ const DoTravelAgentsSaveMoney = () => {
             className="mt-12 mb-4 text-center text-muted-foreground text-base leading-relaxed"
           >
             {isEs
-              ? "¿Listo para planificar tu próximo viaje a medida desde Puerto Rico? "
+              ? "¿Listo para planificar tu próximo viaje personalizado desde Puerto Rico? "
               : "Ready to plan your next luxury trip from Puerto Rico? "}
             <Link
               to={localPath("/viajes-de-lujo-desde-puerto-rico")}
               className="text-gold hover:text-gold-light underline font-semibold"
             >
               {isEs
-                ? "Explora nuestros servicios de viajes a medida →"
+                ? "Explora nuestros servicios de viajes personalizados →"
                 : "Explore our luxury travel services →"}
             </Link>
           </p>
