@@ -101,6 +101,8 @@ const localBusiness = {
   telephone: "+16179355714",
   email: "Info@sjuluxetravel.com",
   url: "https://www.sjuluxetravel.com",
+  serviceType: "Travel agency",
+  areaServed: { "@type": "State", name: "Puerto Rico" },
   address: {
     "@type": "PostalAddress",
     addressLocality: "San Juan",
@@ -189,28 +191,8 @@ const schemaJsonEs = buildGraph(webPageEs, localBusiness, faqPageEs);
 const Index = () => {
   const { t, localPath, language } = useLanguage();
 
-  const services = [
-    {
-      icon: Compass,
-      title: t.home.services.curatedItineraries,
-      description: t.home.services.curatedItinerariesDesc,
-    },
-    {
-      icon: Users,
-      title: t.home.services.personalConcierge,
-      description: t.home.services.personalConciergeDesc,
-    },
-    {
-      icon: Globe,
-      title: t.home.services.internationalExpertise,
-      description: t.home.services.internationalExpertiseDesc,
-    },
-    {
-      icon: Shield,
-      title: t.home.services.bookingProtection,
-      description: t.home.services.bookingProtectionDesc,
-    },
-  ];
+  const serviceIcons = [Compass, Heart, Users, Globe, Shield, Sparkles, Star];
+  const services = t.home.offer.map((o, i) => ({ icon: serviceIcons[i], title: o.t, description: o.d }));
 
   const destinations = [
     {
@@ -300,10 +282,10 @@ const Index = () => {
   return (
     <Layout>
       <SEOHead
-        title="SJU Luxe Travel | Boutique Travel Agency San Juan Puerto Rico"
-        description="boutique travel agency in San Juan, Puerto Rico. Bespoke itineraries to the Maldives, Portugal, Mexico & beyond with exclusive concierge perks."
-        titleEs="Agencia de Viajes en Puerto Rico | SJU Luxe Travel"
-        descriptionEs="SJU Luxe Travel es tu agencia de viajes boutique en Puerto Rico. Itinerarios exclusivos, cruceros desde San Juan, lunas de miel y más. Consulta gratis."
+        title="SJU Luxe Travel | Travel is not a luxury, it's an opportunity"
+        description="Travel agency in Puerto Rico. Cruises, honeymoons, family trips and adventures around the world, planned around you and your budget."
+        titleEs="SJU Luxe Travel | Viajar no es un lujo, es una oportunidad"
+        descriptionEs="Agencia de viajes en Puerto Rico. Cruceros, lunas de miel, viajes en familia y aventuras por el mundo, planificados a tu medida y a tu presupuesto."
         schemaJson={language === "es" ? schemaJsonEs : schemaJsonEn}
         emitHreflang
       />
@@ -314,7 +296,7 @@ const Index = () => {
           <Picture
             src={heroBg}
             webpSrc={heroBgWebp}
-            alt="Overwater villas at sunset — bespoke travel curated by SJU Luxe Travel"
+            alt="Overwater villas in the Maldives at sunset, a trip planned from Puerto Rico by SJU Luxe Travel"
             width={1920}
             height={1080}
             className="ken-burns absolute inset-0 w-full h-full object-cover object-center"
@@ -424,6 +406,24 @@ const Index = () => {
               <ArrowRight size={18} />
             </Link>
           </div>
+        </div>
+      </Reveal>
+
+      {/* Who I am */}
+      <Reveal as="section" className="py-16 md:py-20 bg-background">
+        <div className="container mx-auto px-6 max-w-2xl text-center">
+          <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">{t.home.whoLabel}</span>
+          <h2 className="font-heading text-3xl md:text-4xl text-foreground mt-5 mb-6">{t.home.whoName}</h2>
+          <p className="text-muted-foreground text-lg leading-relaxed mb-8">{t.home.whoBody}</p>
+          <a
+            href="https://wa.me/16179355714"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="pill-cta inline-flex items-center gap-3 px-8 py-3 border border-gold text-gold font-body text-xs font-semibold tracking-[0.25em] uppercase hover:bg-gold/10"
+          >
+            {t.home.whoCta}
+            <ArrowRight size={16} />
+          </a>
         </div>
       </Reveal>
 
