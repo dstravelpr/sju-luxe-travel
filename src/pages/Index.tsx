@@ -448,8 +448,14 @@ const Index = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="p-10 bg-background gold-border gold-border-hover rounded-sm text-center group transition-colors duration-500"
+                className={
+                  "p-10 bg-background gold-border gold-border-hover rounded-sm text-center group transition-colors duration-500" +
+                  (index === services.length - 1 && services.length % 2 === 1
+                    ? " md:col-span-2 md:mx-auto md:w-[calc(50%-1rem)]"
+                    : "")
+                }
               >
+
                 <div className="w-14 h-14 mx-auto mb-8 rounded-full border border-gold/40 flex items-center justify-center group-hover:border-gold transition-colors duration-500">
                   <service.icon
                     size={22}
