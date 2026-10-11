@@ -4,7 +4,7 @@ import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
 import amaLogoAsset from "@/assets/amawaterways-certified-advisor.png.asset.json";
-const amaLogo = amaLogoAsset.url;
+const amaLogo = new URL(amaLogoAsset.url, "https://sju-luxe-travel.lovable.app").href;
 import riversideLogo from "@/assets/riverside-logo.png";
 import avalonLogo from "@/assets/avalon-logo.png";
 import danubeImg from "@/assets/rivers/danube.png";
