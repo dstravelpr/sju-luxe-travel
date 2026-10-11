@@ -33,7 +33,7 @@ import sampleItineraryImg from "@/assets/sample-itinerary-silk-road.jpg";
 import sampleItineraryImgWebp from "@/assets/sample-itinerary-silk-road.webp";
 import travelLeadersLogo from "@/assets/travel-leaders-icon.png";
 import amaLogoAsset from "@/assets/amawaterways-certified-advisor.png.asset.json";
-const amaLogo = amaLogoAsset.url;
+const amaLogo = new URL(amaLogoAsset.url, "https://sju-luxe-travel.lovable.app").href;
 import ncmLogo from "@/assets/ncm-concierge-logo.png";
 import switzerlandLogo from "@/assets/switzerland-logo.png";
 
