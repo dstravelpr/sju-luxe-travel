@@ -45,7 +45,21 @@ export const en = {
     heroTitle2: "It's an Opportunity",
     heroAgencyLine1: "Travel Agency in Puerto Rico",
     heroAgencyLine2: "Itineraries Made to Measure",
-    heroSubtitle: "Boutique travel agency — San Juan, Puerto Rico",
+    heroSubtitle: "We plan your next trip out into the world, starting from Puerto Rico",
+    slogan: "Travel is not a luxury, it's an opportunity",
+    whoLabel: "Who I am",
+    whoName: "Daniel Santiago Díaz",
+    whoBody: "I'm a travel agent based in San Juan, and my job is helping Puerto Ricans travel smarter: better routes, better prices and zero headaches.",
+    whoCta: "Message me on WhatsApp",
+    offer: [
+      { t: "Cruises", d: "Caribbean sailings from San Juan or river cruises through Europe. I help you pick the ship and route that fit you." },
+      { t: "Honeymoons", d: "The Maldives, Mexico, Europe or wherever you dream of. We plan it together so you can just enjoy it." },
+      { t: "Family trips", d: "Easy trips for grown ups and little ones, with hotels and activities that work for everyone." },
+      { t: "Adventure and safaris", d: "From Africa to Patagonia. Once in a lifetime experiences, well organized and safe." },
+      { t: "Solo female travel", d: "Safe destinations, well chosen hotels and support the whole way so you can travel with peace of mind." },
+      { t: "Custom itineraries", d: "Tell me what you want and what you want to spend. I build the trip around your taste and your budget." },
+      { t: "Groups and corporate travel", d: "Incentive trips, retreats and groups of friends or family, all coordinated from start to finish." },
+    ],
     heroDescription:
       "Your bespoke travel itinerary planner for extraordinary international destinations. We specialize in private guided tours and intentional, tailored travel experiences — from overwater villas in the Maldives to cruises departing from San Juan, the sun-kissed coasts of Portugal, and the vibrant culture of Mexico. A boutique travel agency, not a large tour operator.",
     budgetNote:
@@ -59,8 +73,8 @@ export const en = {
       "SJU Luxe Travel is a boutique travel agency based in San Juan, Puerto Rico, specializing in bespoke, experience-driven itineraries for every budget. We don't sell packages — we design each journey around you, in English or Spanish, from a single week to multi-country expeditions across six continents.",
     learnMore: "Learn More About Us",
     servicesLabel: "What We Offer",
-    servicesTitle: "Exceptional",
-    servicesTitleHighlight: "Services",
+    servicesTitle: "Trips for",
+    servicesTitleHighlight: "Everyone",
     servicesDescription:
       "From the first consultation to your return home, we provide end-to-end bespoke travel itinerary planning designed around your vision, budget, and schedule.",
     services: {

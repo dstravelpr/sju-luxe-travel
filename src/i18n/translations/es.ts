@@ -47,7 +47,21 @@ export const es: typeof en = {
     heroTitle2: "Es una Oportunidad",
     heroAgencyLine1: "Agencia de Viajes en Puerto Rico",
     heroAgencyLine2: "Itinerarios Hechos a la Medida",
-    heroSubtitle: "Agencia de viajes boutique — San Juan, Puerto Rico",
+    heroSubtitle: "Diseñamos tu próximo viaje al mundo, saliendo desde Puerto Rico",
+    slogan: "Viajar no es un lujo, es una oportunidad",
+    whoLabel: "Quién soy",
+    whoName: "Daniel Santiago Díaz",
+    whoBody: "Soy agente de viaje en San Juan y mi trabajo es ayudar a los boricuas a viajar más inteligente: mejores rutas, mejores precios y cero dolores de cabeza.",
+    whoCta: "Escríbeme por WhatsApp",
+    offer: [
+      { t: "Cruceros", d: "Por el Caribe saliendo desde San Juan, o cruceros de río por Europa. Te ayudo a escoger el barco y la ruta que van contigo." },
+      { t: "Lunas de miel", d: "Maldivas, México, Europa o donde sueñen. Lo planificamos juntos para que solo se ocupen de disfrutar." },
+      { t: "Viajes en familia", d: "Viajes cómodos para grandes y chiquitos, con hoteles y actividades que funcionan para todos." },
+      { t: "Aventuras y safaris", d: "De África a la Patagonia. Experiencias que se recuerdan toda la vida, bien organizadas y seguras." },
+      { t: "Mujeres que viajan solas", d: "Destinos seguros, hoteles bien escogidos y apoyo en todo momento para que viajes tranquila." },
+      { t: "Itinerarios a la medida", d: "Tú me dices qué quieres y cuánto quieres gastar. Yo armo el viaje a tu gusto y a tu presupuesto." },
+      { t: "Grupos y viajes corporativos", d: "Viajes de incentivo, retiros y grupos de amigos o familia, con todo coordinado de principio a fin." },
+    ],
     heroDescription:
       "En SJU Luxe Travel somos la agencia de viajes boutique de San Juan, Puerto Rico especializada en experiencias a medida. Desde villas overwater en las Maldivas hasta cruceros que salen desde San Juan — cada viaje lo diseñamos pensando en ti.",
     budgetNote:
@@ -62,7 +76,7 @@ export const es: typeof en = {
     learnMore: "Conoce Más Sobre Nosotros",
     servicesLabel: "Lo Que Ofrecemos",
     servicesTitle: "Servicios",
-    servicesTitleHighlight: "Excepcionales",
+    servicesTitleHighlight: "para Todos",
     servicesDescription:
       "Desde la primera consulta hasta tu regreso a casa, ofrecemos planificación integral de viajes personalizados diseñada en torno a tu visión, presupuesto y horario.",
     services: {
