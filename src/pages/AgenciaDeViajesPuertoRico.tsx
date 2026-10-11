@@ -23,7 +23,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "¿Cuál es la diferencia entre SJU Luxe Travel y una agencia de viajes regular?",
-    a: "Nos especializamos exclusivamente en viajes a medida. No vendemos paquetes masivos ni tours grupales. Cada itinerario es diseñado desde cero para un cliente específico.",
+    a: "Nos especializamos exclusivamente en viajes personalizados. No vendemos paquetes masivos ni tours grupales. Cada itinerario es diseñado desde cero para un cliente específico.",
   },
   {
     q: "¿Ofrecen servicios en español?",
@@ -33,7 +33,7 @@ const FAQ_ITEMS = [
 
 const SERVICES = [
   {
-    title: "Viajes a medida internacionales",
+    title: "Viajes Personalizados internacionales",
     to: "/viajes-de-lujo-desde-puerto-rico",
     desc: "Itinerarios privados a medida a las Maldivas, Portugal, México, Europa y más allá.",
   },
@@ -68,7 +68,7 @@ const schema = buildGraph(
     "@id": `${PAGE_URL}#service`,
     name: "Agencia de viajes boutique en Puerto Rico",
     description:
-      "Servicio de planificación de viajes a medida desde San Juan, Puerto Rico. Especialistas en itinerarios internacionales, cruceros y lunas de miel exclusivas.",
+      "Servicio de planificación de viajes personalizados desde San Juan, Puerto Rico. Especialistas en itinerarios internacionales, cruceros y lunas de miel exclusivas.",
     provider: ORG_REF,
     areaServed: { "@type": "State", name: "Puerto Rico" },
     serviceType: "Travel Planning",
@@ -116,7 +116,7 @@ const AgenciaDeViajesPuertoRico = () => (
             Si buscas una agencia de viajes en Puerto Rico que vaya más allá del
             paquete estándar, llegaste al lugar correcto. En SJU Luxe Travel
             somos una agencia boutique con base en San Juan, especializada
-            exclusivamente en viajes a medida — desde las Maldivas hasta los
+            exclusivamente en viajes personalizados — desde las Maldivas hasta los
             ríos de Europa, pasando por los mejores cruceros que salen desde
             Puerto Rico.
           </p>

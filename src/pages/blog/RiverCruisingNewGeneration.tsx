@@ -98,7 +98,7 @@ const RiverCruisingNewGeneration = () => {
         }
         description={
           isEs
-            ? "El 84% de viajeros menores de 35 quiere hacer un crucero fluvial. Un agente de viaje a medida explica por qué y cómo aprovecharlo."
+            ? "El 84% de viajeros menores de 35 quiere hacer un crucero fluvial. Un agente de viaje personalizado explica por qué y cómo aprovecharlo."
             : "84% of travelers under 35 want to take a river cruise. A travel agent explains why — and how to get the most out of the experience."
         }
         canonical="https://www.sjuluxetravel.com/blog/river-cruising-new-generation"
@@ -145,7 +145,7 @@ const RiverCruisingNewGeneration = () => {
                 Daniel Santiago Díaz
                 <span className="text-muted-foreground/70">
                   {" "}
-                  — {isEs ? "Agente de viajes a medida" : "Travel Advisor"}
+                  — {isEs ? "Agente de viajes personalizados" : "Travel Advisor"}
                 </span>
               </Link>
               <span className="flex items-center gap-1.5">
@@ -337,7 +337,7 @@ const RiverCruisingNewGeneration = () => {
 
             <p className="text-foreground text-lg leading-relaxed font-heading italic">
               {isEs
-                ? "Esto es lo que sé después de una década planificando viajes a medida por seis continentes: los mejores viajes son los que no te hacen pensar en logística. Simplemente estás ahí, presente, disfrutando cada momento. Los cruceros fluviales logran eso mejor que casi cualquier otra experiencia que he visto — y el hecho de que una nueva generación lo esté descubriendo es algo que me entusiasma de verdad."
+                ? "Esto es lo que sé después de una década planificando viajes personalizados por seis continentes: los mejores viajes son los que no te hacen pensar en logística. Simplemente estás ahí, presente, disfrutando cada momento. Los cruceros fluviales logran eso mejor que casi cualquier otra experiencia que he visto — y el hecho de que una nueva generación lo esté descubriendo es algo que me entusiasma de verdad."
                 : "The best trips are the ones where you're not thinking about logistics. You're just there, fully present. River cruising does that better than almost anything else."}
             </p>
 
@@ -470,7 +470,7 @@ const RiverCruisingNewGeneration = () => {
                   className="text-gold hover:text-gold-light underline"
                 >
                   {isEs
-                    ? "Lo que realmente significa el viaje a medida"
+                    ? "Lo que realmente significa el viaje personalizado"
                     : "What travel really means"}
                 </Link>
               </li>

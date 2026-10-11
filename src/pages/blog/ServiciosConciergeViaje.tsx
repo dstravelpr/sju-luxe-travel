@@ -112,7 +112,7 @@ const Post = () => {
                 Daniel Santiago Díaz
                 <span className="text-muted-foreground/70">
                   {" "}
-                  — {isEs ? "Agente de viajes a medida" : "Travel Advisor"}
+                  — {isEs ? "Agente de viajes personalizados" : "Travel Advisor"}
                 </span>
               </Link>
               <span className="flex items-center gap-1.5">
@@ -238,7 +238,7 @@ const Post = () => {
                 className="text-gold hover:text-gold-light underline"
               >
                 {isEs
-                  ? "viajes a medida desde Puerto Rico"
+                  ? "viajes personalizados desde Puerto Rico"
                   : "Bespoke luxury trips from Puerto Rico"}
               </Link>
               {isEs ? "." : "."}
@@ -325,7 +325,7 @@ const Post = () => {
               className="text-gold hover:text-gold-light underline font-semibold"
             >
               {isEs
-                ? "Explora nuestros servicios de viajes a medida →"
+                ? "Explora nuestros servicios de viajes personalizados →"
                 : "Explore our luxury travel services →"}
             </Link>
           </p>

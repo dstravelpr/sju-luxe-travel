@@ -202,9 +202,9 @@ const CrucerosReposicionamiento = () => {
     <Layout>
       <SEOHead
         title="Cruceros de Reposicionamiento desde San Juan | SJU Luxe Travel"
-        description="Descubre las 15 travesías de reposicionamiento disponibles desde San Juan, Puerto Rico — desde Mejor Valor hasta Ultra-Lujo. Agencia de viajes a medida en todo presupuesto."
+        description="Descubre las 15 travesías de reposicionamiento disponibles desde San Juan, Puerto Rico — desde Mejor Valor hasta Ultra-Lujo. Agencia de viajes personalizados en todo presupuesto."
         titleEs="Cruceros de Reposicionamiento desde San Juan | SJU Luxe Travel"
-        descriptionEs="Descubre las 15 travesías de reposicionamiento disponibles desde San Juan, Puerto Rico — desde Mejor Valor hasta Ultra-Lujo. Agencia de viajes a medida en todo presupuesto."
+        descriptionEs="Descubre las 15 travesías de reposicionamiento disponibles desde San Juan, Puerto Rico — desde Mejor Valor hasta Ultra-Lujo. Agencia de viajes personalizados en todo presupuesto."
         canonical={PAGE_URL}
         schemaJson={schema}
       />
@@ -341,7 +341,7 @@ const CrucerosReposicionamiento = () => {
               </span>
             </h2>
             <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">
-              Viajes a medida · Todo presupuesto · Itinerarios personalizados
+              Viajes Personalizados · Todo presupuesto · Itinerarios personalizados
               desde San Juan
             </p>
             <Link

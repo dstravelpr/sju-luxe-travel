@@ -218,7 +218,7 @@ const Post = () => {
                     to={localPath("/destinations/portugal")}
                     className="text-gold hover:text-gold-light underline"
                   >
-                    viajes a medida a Portugal
+                    viajes personalizados a Portugal
                   </Link>
                   .
                 </span>
@@ -373,7 +373,7 @@ const Post = () => {
               ¿Listo para planificar tu travesía?
             </h3>
             <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">
-              Viajes a medida · Todo presupuesto · Itinerarios personalizados
+              Viajes Personalizados · Todo presupuesto · Itinerarios personalizados
               desde San Juan
             </p>
             <Link

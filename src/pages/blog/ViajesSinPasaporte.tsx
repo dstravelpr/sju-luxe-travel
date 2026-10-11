@@ -8,7 +8,7 @@ import heroImg from "@/assets/hero-beach-sunset.jpg";
 
 const schemaJson = buildGraph({
   "@type": "BlogPosting",
-  headline: "Viajes a medida sin Pasaporte desde Puerto Rico",
+  headline: "Viajes Personalizados sin Pasaporte desde Puerto Rico",
   description:
     "Los mejores destinos sin pasaporte para residentes de Puerto Rico: Islas Vírgenes, Hawaii, Florida Keys y más.",
   author: AUTHOR,
@@ -28,14 +28,14 @@ const Post = () => {
       <SEOHead
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/viajes-sin-pasaporte.jpg"
-        title="viajes a medida sin Pasaporte desde Puerto Rico"
+        title="viajes personalizados sin Pasaporte desde Puerto Rico"
         description="Los mejores destinos sin pasaporte para residentes de PR: USVI, Hawaii, Florida Keys, Napa y más — sin trámites internacionales."
         canonical="https://www.sjuluxetravel.com/blog/viajes-sin-pasaporte-desde-pr"
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
           {
-            name: "viajes a medida sin Pasaporte desde Puerto Rico",
+            name: "viajes personalizados sin Pasaporte desde Puerto Rico",
             url: "https://www.sjuluxetravel.com/blog/viajes-sin-pasaporte-desde-pr",
           },
         ]}
@@ -56,7 +56,7 @@ const Post = () => {
             </span>
             <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">
               {isEs
-                ? "viajes a medida sin Pasaporte desde Puerto Rico"
+                ? "viajes personalizados sin Pasaporte desde Puerto Rico"
                 : "Trips Without a Passport from Puerto Rico"}
             </h1>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
@@ -68,7 +68,7 @@ const Post = () => {
                 Daniel Santiago Díaz
                 <span className="text-muted-foreground/70">
                   {" "}
-                  — {isEs ? "Agente de viajes a medida" : "Travel Advisor"}
+                  — {isEs ? "Agente de viajes personalizados" : "Travel Advisor"}
                 </span>
               </Link>
               <span className="flex items-center gap-1.5">
@@ -185,7 +185,7 @@ const Post = () => {
               className="text-gold hover:text-gold-light underline font-semibold"
             >
               {isEs
-                ? "Explora nuestros servicios de viajes a medida →"
+                ? "Explora nuestros servicios de viajes personalizados →"
                 : "Explore our luxury travel services →"}
             </Link>
           </p>
