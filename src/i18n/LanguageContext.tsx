@@ -27,6 +27,29 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   // Language is derived from the URL — single source of truth.
   const language: Language = detectLangFromPath(location.pathname);
 
+  // First visit: if the visitor's device is in Spanish and they haven't picked
+  // a language yet, open the Spanish version. The toggle then switches to English.
+  useEffect(() => {
+    try {
+      if (localStorage.getItem("langChosen")) return;
+      const prefersEs = (navigator.languages?.[0] || navigator.language || "")
+        .toLowerCase()
+        .startsWith("es");
+      if (
+        prefersEs &&
+        detectLangFromPath(location.pathname) === "en" &&
+        !location.pathname.startsWith("/agencia-de-viajes-puerto-rico")
+      ) {
+        const base = stripPrefix(location.pathname);
+        const target = base === "/" ? "/es" : `/es${base}`;
+        navigate(target + location.search + location.hash, { replace: true });
+      }
+    } catch {
+      /* noop */
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   useEffect(() => {
     document.documentElement.lang = language === "es" ? "es-PR" : "en";
     try {
@@ -37,6 +60,11 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   }, [language]);
 
   const setLanguage = (lang: Language) => {
+    try {
+      localStorage.setItem("langChosen", lang);
+    } catch {
+      /* noop */
+    }
     const base = stripPrefix(location.pathname);
     const target = lang === "es" ? (base === "/" ? "/es" : `/es${base}`) : base;
     if (target !== location.pathname) {
