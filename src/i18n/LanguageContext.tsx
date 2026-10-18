@@ -35,7 +35,11 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
       const prefersEs = (navigator.languages?.[0] || navigator.language || "")
         .toLowerCase()
         .startsWith("es");
-      if (prefersEs && detectLangFromPath(location.pathname) === "en") {
+      if (
+        prefersEs &&
+        detectLangFromPath(location.pathname) === "en" &&
+        !location.pathname.startsWith("/agencia-de-viajes-puerto-rico")
+      ) {
         const base = stripPrefix(location.pathname);
         const target = base === "/" ? "/es" : `/es${base}`;
         navigate(target + location.search + location.hash, { replace: true });
