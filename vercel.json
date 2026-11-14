@@ -12,6 +12,16 @@
       "permanent": true
     },
     {
+      "source": "/en",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/en/:path*",
+      "destination": "/:path*",
+      "permanent": true
+    },
+    {
       "source": "/blog/do-travel-agents-really-",
       "destination": "/blog/do-travel-agents-really-help-save-money",
       "permanent": true
