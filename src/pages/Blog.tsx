@@ -20,13 +20,15 @@ import blogConciergeImg from "@/assets/traveler-airport.jpg";
 
 const Blog = () => {
   const { t, localPath, language } = useLanguage();
-  const [activeCategory, setActiveCategory] = useState(t.blog.categories[0]);
+  const [activeCategoryIndex, setActiveCategoryIndex] = useState(0);
+  const activeCategory = t.blog.categories[activeCategoryIndex];
 
   const filterCards = (node: HTMLDivElement | null) => {
     if (!node) return;
     for (const card of Array.from(node.children)) {
-      const category = card.querySelector("article > div > div")?.textContent?.trim();
-      (card as HTMLElement).hidden = activeCategory !== t.blog.categories[0] && category !== activeCategory;
+      const href = card.getAttribute("href") ?? "";
+      const groups = [[], ["duero", "reposicionamiento", "micro-vacaciones"], ["concierge", "save-money", "what-luxury"], ["river-cruising", "duero", "wellness"], ["duero", "what-luxury"]];
+      (card as HTMLElement).hidden = activeCategoryIndex !== 0 && !groups[activeCategoryIndex]?.some(slug => href.includes(slug));
     }
   };
 
@@ -71,11 +73,11 @@ const Blog = () => {
       <section className="py-8 bg-background">
         <div className="container mx-auto px-6">
           <div className="flex flex-wrap justify-center gap-3">
-            {t.blog.categories.map((cat) => (
+            {t.blog.categories.map((cat, index) => (
               <Button variant="outline"
                 aria-pressed={activeCategory === cat}
                 key={cat}
-                onClick={() => setActiveCategory(cat)}
+                onClick={() => setActiveCategoryIndex(index)}
                 className={`px-5 py-2 rounded-full text-xs tracking-[0.15em] uppercase font-body transition-all duration-300 ${
                   activeCategory === cat
                     ? "bg-gold-gradient text-primary-foreground"
