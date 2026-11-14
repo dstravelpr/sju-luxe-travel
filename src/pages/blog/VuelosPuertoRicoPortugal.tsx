@@ -28,8 +28,8 @@ const Post = () => {
       <SEOHead
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/vuelos-puerto-rico-portugal.jpg"
-        title="Vuelos de Puerto Rico a Portugal — Mejores Rutas 2026"
-        description="Guía completa de vuelos SJU a Lisboa y Porto: rutas con menos escalas, mejores aerolíneas, consejos para business class y honeymoons."
+        title="Vuelos de Puerto Rico a Portugal 2026: Rutas y Precios"
+        description="Cómo volar de San Juan a Lisboa u Oporto: rutas con menos escalas, aerolíneas, cuánto cuesta y cuándo comprar. Guía de un agente de viaje en PR."
         canonical="https://www.sjuluxetravel.com/blog/vuelos-puerto-rico-portugal"
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
