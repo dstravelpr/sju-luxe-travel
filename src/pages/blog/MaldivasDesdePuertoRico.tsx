@@ -29,8 +29,8 @@ const Post = () => {
       <SEOHead
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/maldivas-desde-puerto-rico.jpg"
-        title="Maldivas desde Puerto Rico: Ruta, Costo y Mejores Resorts"
-        description="Guía completa para planificar Maldivas desde San Juan: vuelos, presupuesto realista, mejor temporada y resorts top según tu estilo."
+        title="Maldivas desde Puerto Rico: Cuánto Cuesta y Cómo Llegar"
+        description="Vuelos desde San Juan, presupuesto real, mejor temporada y resorts para cada bolsillo. Planifica tu viaje a Maldivas con un agente de viaje en PR."
         canonical="https://www.sjuluxetravel.com/blog/maldivas-desde-puerto-rico-guia"
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
