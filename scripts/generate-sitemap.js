@@ -25,8 +25,10 @@ const urlFor = (route, lang) => {
 const rows = [];
 const seenUrls = new Set();
 for (const entry of manifest) {
+  if (entry.noindex) continue;
   const alternates = entry.hreflang
     ? [
+        `<xhtml:link rel="alternate" hreflang="es" href="${urlFor(entry.path, "es")}"/>`,
         `<xhtml:link rel="alternate" hreflang="es-PR" href="${urlFor(entry.path, "es")}"/>`,
         `<xhtml:link rel="alternate" hreflang="en" href="${urlFor(entry.path, "en")}"/>`,
         `<xhtml:link rel="alternate" hreflang="x-default" href="${urlFor(entry.path, "default")}"/>`,
