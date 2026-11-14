@@ -1,3 +1,5 @@
+import { NewsletterForm } from "@/components/NewsletterForm";
+import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, User, Calendar, Clock } from "lucide-react";
@@ -20,6 +22,14 @@ const Blog = () => {
   const { t, localPath, language } = useLanguage();
   const [activeCategory, setActiveCategory] = useState(t.blog.categories[0]);
 
+  const filterCards = (node: HTMLDivElement | null) => {
+    if (!node) return;
+    for (const card of Array.from(node.children)) {
+      const category = card.querySelector("article > div > div")?.textContent?.trim();
+      (card as HTMLElement).hidden = activeCategory !== t.blog.categories[0] && category !== activeCategory;
+    }
+  };
+
   const postImages = [
     blogRiverCruiseImg,
     blogLuxuryImg,
@@ -36,9 +46,9 @@ const Blog = () => {
   return (
     <Layout>
       <SEOHead
-        title="SJU Luxe Travel Blog — bespoke travel Tips & Guides from Puerto Rico"
+        title="Travel Blog from Puerto Rico | SJU Luxe Travel"
         description="bespoke travel guides from San Juan, PR: honeymoons, river cruises, Maldives, Portugal & more. Expert insights by Daniel Santiago Díaz."
-        titleEs="Blog SJU Luxe Travel — Lujo, cruceros y honeymoons PR"
+        titleEs="Blog de Viajes desde Puerto Rico | SJU Luxe Travel"
         descriptionEs="Guías de viajes desde Puerto Rico: lunas de miel, cruceros fluviales, Maldivas, Portugal y más. Por Daniel Santiago Díaz."
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
@@ -50,9 +60,9 @@ const Blog = () => {
       <div className="pt-24 bg-background">
         <div className="container mx-auto px-6">
           <h1 className="font-heading text-4xl md:text-5xl text-foreground text-center pt-8 pb-4">
-            Blog de Viajes —{" "}
+            {language === "es" ? "Blog de Viajes — " : "Travel Blog — "}
             <span className="text-gold-gradient italic">
-              Consejos e Inspiración desde San Juan
+              {language === "es" ? "Consejos e Inspiración desde San Juan" : "Tips and Inspiration from San Juan"}
             </span>
           </h1>
         </div>
@@ -62,7 +72,8 @@ const Blog = () => {
         <div className="container mx-auto px-6">
           <div className="flex flex-wrap justify-center gap-3">
             {t.blog.categories.map((cat) => (
-              <button
+              <Button variant="outline"
+                aria-pressed={activeCategory === cat}
                 key={cat}
                 onClick={() => setActiveCategory(cat)}
                 className={`px-5 py-2 rounded-full text-xs tracking-[0.15em] uppercase font-body transition-all duration-300 ${
@@ -72,7 +83,7 @@ const Blog = () => {
                 }`}
               >
                 {cat}
-              </button>
+              </Button>
             ))}
           </div>
         </div>
@@ -143,7 +154,7 @@ const Blog = () => {
               </span>
             </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div ref={filterCards} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Link
               to={localPath("/blog/crucero-fluvial-duero-desde-puerto-rico")}
               className="gold-border gold-border-hover rounded-sm overflow-hidden group block"
@@ -254,8 +265,8 @@ const Blog = () => {
                   </h3>
                   <p className="text-muted-foreground text-xs leading-relaxed mb-4">
                     {language === "es"
-                      ? "Qué hace un travel concierge, qué incluye (reservas VIP, upgrades, asistencia 24/7) y cuándo realmente vale la pena."
-                      : "What a travel concierge does, what's included (VIP bookings, upgrades, 24/7 support) and when it's actually worth it."}
+                      ? "Qué hace un travel concierge, qué incluye (reservas, traslados y coordinación) y cuándo realmente vale la pena."
+                      : "What a travel concierge does, what's included (bookings, transfers and coordination) and when it's actually worth it."}
                   </p>
                   <div className="flex items-center justify-between text-muted-foreground text-[11px]">
                     <span className="flex items-center gap-1.5">
@@ -365,24 +376,7 @@ const Blog = () => {
           <p className="text-muted-foreground text-sm mb-8">
             {t.blog.subscribeDescription}
           </p>
-          <form onSubmit={(e) => e.preventDefault()} className="space-y-3">
-            <input
-              type="text"
-              placeholder={t.blog.subscribePlaceholderName}
-              className="w-full px-4 py-3 bg-background gold-border rounded-sm text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors"
-            />
-            <input
-              type="email"
-              placeholder={t.blog.subscribePlaceholderEmail}
-              className="w-full px-4 py-3 bg-background gold-border rounded-sm text-foreground text-sm placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors"
-            />
-            <button
-              type="submit"
-              className="w-full py-3 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-[0.2em] uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)]"
-            >
-              {t.blog.subscribeButton}
-            </button>
-          </form>
+          <NewsletterForm source="blog" />
         </div>
       </section>
     </Layout>

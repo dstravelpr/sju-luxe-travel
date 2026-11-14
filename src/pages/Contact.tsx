@@ -6,7 +6,7 @@ import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 
 const Contact = () => {
-  const { t } = useLanguage();
+  const { t, language, localPath } = useLanguage();
   const [submitting, setSubmitting] = useState(false);
   const [searchParams] = useSearchParams();
   const sent = searchParams.get("sent") === "1";
@@ -17,7 +17,7 @@ const Contact = () => {
         title="Free Travel Consultation | SJU Luxe Travel"
         description="Schedule a free bespoke travel consultation with your boutique agent in San Juan, PR. Private tours, cruises & bespoke itineraries with NCM Concierge perks."
         titleEs="Consulta Gratis con tu Agente de Viajes | SJU Luxe Travel"
-        descriptionEs="Agenda una consulta gratis con tu agente de viajes en San Juan, PR. Tours privados, cruceros e itinerarios a medida con beneficios NCM Concierge."
+        descriptionEs="Agenda una consulta gratis con tu agente de viajes en San Juan, PR. Tours privados, cruceros e itinerarios personalizados con beneficios NCM Concierge."
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           { name: "Contact", url: "https://www.sjuluxetravel.com/contact" },
@@ -72,7 +72,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-foreground text-sm font-semibold">
-                      {t.contact.phoneWhatsapp}
+                      {language === "es" ? "Teléfono" : "Phone"}
                     </p>
                     <a
                       href="tel:+16179355714"
@@ -151,7 +151,7 @@ const Contact = () => {
                     {t.contact.formSuccessBody}
                   </p>
                   <a
-                    href="/contact"
+                    href={localPath("/contact")}
                     className="inline-flex items-center gap-2 px-6 py-2.5 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-[0.15em] uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105"
                   >
                     {t.contact.formSuccessButton}
@@ -174,7 +174,7 @@ const Contact = () => {
                   <input
                     type="hidden"
                     name="_next"
-                    value={`${window.location.origin}/contact?sent=1`}
+                    value={`${window.location.origin}${localPath("/contact")}?sent=1`}
                   />
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div>

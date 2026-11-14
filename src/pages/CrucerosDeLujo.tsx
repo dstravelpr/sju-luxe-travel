@@ -1,3 +1,4 @@
+import { HolidayTravel } from "@/components/HolidayTravel";
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Layout } from "@/components/Layout";
@@ -54,8 +55,8 @@ const FAQ_ITEMS = [
     a: "Desde el Puerto de San Juan operan itinerarios de líneas como Regent Seven Seas, Silversea, Oceania cruises y Celebrity cruises, con destinos al Caribe, Sudamérica y el Atlántico.",
   },
   {
-    q: "¿Cuál es la diferencia entre un crucero regular y un Crucero?",
-    a: "Los cruceros incluyen todo incluido auténtico: vinos y licores de calidad, excursiones en tierra, propinas, internet, y menor cantidad de pasajeros por barco para una experiencia más íntima.",
+    q: "¿Qué incluye la tarifa de un crucero?",
+    a: "Depende de la naviera, el itinerario y la tarifa. Bebidas, excursiones, propinas e internet pueden estar incluidos o cobrarse por separado. Confirmamos por escrito lo que incluye tu reserva antes de comprar.",
   },
   {
     q: "¿Necesito pasaporte para hacer un crucero desde San Juan?",
@@ -102,9 +103,9 @@ const crucerosDeLujo = () => {
     <Layout>
       <SEOHead
         title="Cruises from San Juan, PR | SJU Luxe Travel"
-        description="Plan your cruise from San Juan, PR. Exclusive suites, private shore excursions and VIP perks through NCM Concierge."
+        description="Plan cruises from San Juan around your dates and budget. Compare cabins, itineraries and fare inclusions with SJU Luxe Travel."
         titleEs="Cruceros desde San Juan, PR | SJU Luxe Travel"
-        descriptionEs="Planifica tu crucero desde San Juan, PR. Cabinas exclusivas, excursiones privadas y beneficios VIP de NCM Concierge."
+        descriptionEs="Planifica cruceros desde San Juan según tus fechas y presupuesto. Compara cabinas, itinerarios y lo que incluye cada tarifa con SJU Luxe Travel."
         schemaJson={schema}
         emitHreflang
       />
@@ -219,6 +220,8 @@ const crucerosDeLujo = () => {
               ))}
             </ul>
           </div>
+
+          <HolidayTravel />
 
           <RelatedArticles
             items={[

@@ -90,7 +90,7 @@ export const SEOHead = ({
       <html lang={lang === "es" ? "es-PR" : "en"} />
       <title>{finalTitle}</title>
       <meta name="description" content={finalDescription} />
-      {noindex && <meta name="robots" content="noindex, follow" />}
+      <meta name="robots" content={noindex ? "noindex, follow" : "index, follow"} />
 
       <meta name="geo.region" content="US-PR" />
       <meta name="geo.placename" content="San Juan, Puerto Rico" />

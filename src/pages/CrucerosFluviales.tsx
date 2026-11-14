@@ -1,3 +1,4 @@
+import { HolidayTravel } from "@/components/HolidayTravel";
 import { Link } from "react-router-dom";
 import { ArrowRight, Award } from "lucide-react";
 import { Layout } from "@/components/Layout";
@@ -85,7 +86,7 @@ const crucerosFluviales = () => {
     <Layout>
       <SEOHead
         title="River cruises from Puerto Rico | SJU Luxe Travel"
-        description="Plan your luxury river cruise from PR with a certified AmaWaterways, Avalon and Riverside Luxury cruises travel agent."
+        description="Plan your river cruise from PR with a certified AmaWaterways, Avalon and Riverside Luxury cruises travel agent."
         titleEs="Cruceros Fluviales desde PR | SJU Luxe Travel"
         descriptionEs="Planifica tu crucero fluvial desde PR con un agente certificado por AmaWaterways, Avalon y Riverside Luxury cruises."
         schemaJson={schema}
@@ -264,6 +265,8 @@ const crucerosFluviales = () => {
               {d.logisticsP}
             </p>
           </div>
+
+          <HolidayTravel river />
 
           <RelatedArticles
             items={[
