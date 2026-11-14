@@ -68,8 +68,11 @@ const Post = () => {
       <SEOHead
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/servicios-concierge-viaje.jpg"
-        title="Travel Concierge: Qué Incluye y Cuánto Cuesta | SJU Luxe"
-        description="Qué hace un travel concierge: reservas, upgrades, traslados y ayuda 24/7 durante tu viaje. Descubre si te conviene y cómo funciona desde Puerto Rico."
+        title="Travel Concierge: Services and Costs | SJU Luxe Travel"
+        titleEs="Travel Concierge: Qué Incluye y Cuánto Cuesta | SJU Luxe"
+        descriptionEs="Qué hace un travel concierge: reservas, upgrades, traslados y ayuda 24/7 durante tu viaje. Descubre si te conviene y cómo funciona desde Puerto Rico."
+        emitHreflang
+        description="What does a travel concierge do? Explore planning, bookings, transfers and costs, and decide what support you need for your trip from Puerto Rico."
         canonical="https://www.sjuluxetravel.com/blog/servicios-concierge-viaje"
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
@@ -79,7 +82,7 @@ const Post = () => {
             url: "https://www.sjuluxetravel.com/blog/servicios-concierge-viaje",
           },
         ]}
-        schemaJson={schemaJson}
+        schemaJson={{ ...schemaJson, "@graph": (schemaJson["@graph"] as Record<string, unknown>[]).map(node => node["@type"] === "BlogPosting" ? { ...node, inLanguage: isEs ? "es-PR" : "en", url: `https://www.sjuluxetravel.com${isEs ? "/es" : ""}/blog/servicios-concierge-viaje` } : node) }}
       />
       <script
         type="application/ld+json"
@@ -112,7 +115,7 @@ const Post = () => {
                 Daniel Santiago Díaz
                 <span className="text-muted-foreground/70">
                   {" "}
-                  — {isEs ? "Agente de viajes personalizados" : "Travel Advisor"}
+                  — {isEs ? "Agente de viajes personalizados" : "Travel agent"}
                 </span>
               </Link>
               <span className="flex items-center gap-1.5">
@@ -147,6 +150,12 @@ const Post = () => {
                 ? '"Servicio de concierge de viaje" suena abstracto, pero significa algo muy concreto: alguien que se encarga de los detalles antes, durante y después de tu viaje. Esto es lo que realmente incluye un buen concierge desde Puerto Rico.'
                 : '"Travel concierge" sounds abstract, but it means something very concrete: someone who handles the details before, during and after your trip. Here\'s what a good concierge actually includes from Puerto Rico.'}
             </p>
+
+            <div className="border-y border-border py-6">
+              <h2 className="font-heading text-2xl text-foreground mb-3">{isEs ? "¿Qué necesitas para tu viaje?" : "What support does your trip need?"}</h2>
+              <p>{isEs ? "Un agente de viaje ayuda a comparar y reservar opciones. La coordinación concierge añade apoyo con el itinerario, traslados y otros detalles acordados. Confirma qué servicios incluye tu propuesta, sus costos y cómo contactar al equipo durante el viaje; los beneficios dependen del proveedor y la reserva." : "A travel agent helps compare and book options. Concierge coordination adds support with the itinerary, transfers and other agreed details. Confirm the services, fees and contact arrangements in your proposal; benefits depend on the provider and booking."}</p>
+              <Link to={localPath("/contact")} className="inline-flex items-center gap-2 text-gold underline mt-4">{isEs ? "Consultar mi viaje y presupuesto" : "Discuss my trip and budget"}</Link>
+            </div>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">
               {isEs ? "Antes del viaje" : "Before the trip"}

@@ -1,3 +1,4 @@
+import { HolidayTravel } from "@/components/HolidayTravel";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import {
@@ -191,6 +192,7 @@ const schemaJsonEs = buildGraph(webPageEs, localBusiness, faqPageEs);
 const Index = () => {
   const { t, localPath, language } = useLanguage();
 
+  const servicePaths = ["/es/cruceros-de-lujo-desde-san-juan", "/es/luna-de-miel-de-lujo", "/contact", "/destinations", "/blog/luxury-solo-female-travel", "/es/viajes-de-lujo-desde-puerto-rico", "/contact"];
   const serviceIcons = [Compass, Heart, Users, Globe, Shield, Sparkles, Star];
   const services = t.home.offer.map((o, i) => ({ icon: serviceIcons[i], title: o.t, description: o.d }));
 
@@ -341,6 +343,8 @@ const Index = () => {
         </div>
       </section>
 
+      <HolidayTravel />
+
       {/* Trust Bar */}
       <section
         className="py-10 md:py-12 bg-charcoal border-y border-border/40"
@@ -469,6 +473,7 @@ const Index = () => {
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   {service.description}
                 </p>
+                <Link to={localPath(servicePaths[index])} className="inline-flex items-center gap-2 mt-5 text-gold underline text-sm">{language === "es" ? "Consultar opciones" : "Explore options"}<ArrowRight size={14} /></Link>
               </div>
             ))}
           </div>

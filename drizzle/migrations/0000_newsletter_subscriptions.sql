@@ -1,0 +1,3 @@
+CREATE TABLE public.newsletter_subscriptions (id uuid PRIMARY KEY DEFAULT gen_random_uuid(), created_at timestamptz NOT NULL DEFAULT now(), name text NOT NULL CHECK (length(name) BETWEEN 1 AND 120), email text NOT NULL CHECK (length(email) BETWEEN 3 AND 254), language text NOT NULL CHECK (language IN ('en','es')), source text NOT NULL CHECK (source IN ('blog','footer')), consent boolean NOT NULL CHECK (consent = true));
+GRANT ALL ON public.newsletter_subscriptions TO service_role;
+ALTER TABLE public.newsletter_subscriptions ENABLE ROW LEVEL SECURITY;

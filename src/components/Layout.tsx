@@ -1,3 +1,4 @@
+import { NewsletterForm } from "@/components/NewsletterForm";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import {
@@ -83,7 +84,7 @@ const Header = () => {
             {t.home.slogan}
           </span>
         </Link>
-        <nav className="hidden md:flex items-center gap-10">
+        <nav className="hidden lg:flex items-center gap-10">
           {navLinks.map((link) =>
             link.children ? (
               <div key={link.to} className="relative group">
@@ -118,7 +119,7 @@ const Header = () => {
             ),
           )}
         </nav>
-        <div className="hidden md:flex items-center gap-5">
+        <div className="hidden lg:flex items-center gap-5">
           <Link
             to={localPath("/contact")}
             className="pill-cta px-5 py-2 border border-gold/60 text-gold font-body text-[11px] font-semibold tracking-[0.2em] uppercase hover:bg-gold/10 hover:border-gold"
@@ -128,7 +129,7 @@ const Header = () => {
           <LanguageToggle />
         </div>
         {/* Mobile controls */}
-        <div className="md:hidden flex items-center gap-3">
+        <div className="lg:hidden flex items-center gap-3">
           <LanguageToggle />
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
@@ -141,7 +142,7 @@ const Header = () => {
       </div>
       {/* Mobile dropdown */}
       {mobileOpen && (
-        <nav className="md:hidden bg-background/95 backdrop-blur-md border-t border-border/30 animate-fade-in">
+        <nav className="lg:hidden bg-background/95 backdrop-blur-md border-t border-border/30 animate-fade-in">
           <div className="container mx-auto px-6 py-4 flex flex-col gap-4">
             {navLinks.map((link) => (
               <div key={link.to}>
@@ -338,24 +339,7 @@ const Footer = () => {
               <h4 className="font-body text-gold text-sm tracking-[0.2em] uppercase mb-4">
                 {t.footer.newsletter}
               </h4>
-              <form onSubmit={(e) => e.preventDefault()} className="space-y-2">
-                <input
-                  type="text"
-                  placeholder={t.footer.fullName}
-                  className="w-full px-3 py-2 bg-background gold-border rounded-sm text-foreground text-xs placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors"
-                />
-                <input
-                  type="email"
-                  placeholder={t.footer.emailAddress}
-                  className="w-full px-3 py-2 bg-background gold-border rounded-sm text-foreground text-xs placeholder:text-muted-foreground focus:outline-none focus:border-gold transition-colors"
-                />
-                <button
-                  type="submit"
-                  className="w-full py-2 bg-gold-gradient text-primary-foreground font-body text-[10px] font-semibold tracking-[0.2em] uppercase rounded-sm"
-                >
-                  {t.footer.subscribe}
-                </button>
-              </form>
+              <NewsletterForm source="footer" />
             </div>
           </div>
         </div>

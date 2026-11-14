@@ -5,6 +5,8 @@
  */
 import fs from "fs";
 import path from "path";
+import { replaceMeta, escapeHtml } from "./seo-html.js";
+const snapshots = JSON.parse(fs.readFileSync(path.resolve("scripts/route-seo-snapshots.json"), "utf-8"));
 
 const DIST = path.resolve("dist");
 const template = fs.readFileSync(path.join(DIST, "index.html"), "utf-8");
@@ -373,9 +375,9 @@ const ROUTE_MANIFEST = [
   { path: "/", locales: ["default", "en", "es"], type: "home", hreflang: true },
   ...Object.keys(pages).map((p) => {
     const isBlogPost = p.startsWith("/blog/");
-    const isSingle = isBlogPost || SINGLE_LOCALE_PAGES.has(p);
+    const isSingle = SINGLE_LOCALE_PAGES.has(p);
     const isEsOnly = ES_ONLY_PREFIXED_PAGES.has(p);
-    const hasEn = !!pagesEn[p];
+    const hasEn = !!snapshots[p] && !!snapshots[`/es${p}`];
     return {
       path: p,
       // Blog posts and Spanish-only landing pages: single language, NO hreflang.
@@ -410,6 +412,7 @@ const buildAlternateLinksFor = (route) => {
   const en = getCanonicalUrl(route, "en");
   const es = getCanonicalUrl(route, "es");
   return `
+    <link rel="alternate" hreflang="es" href="${es}" />
     <link rel="alternate" hreflang="es-PR" href="${es}" />
     <link rel="alternate" hreflang="en" href="${en}" />
     <link rel="alternate" hreflang="x-default" href="${xDefault}" />`;
@@ -570,22 +573,22 @@ const renderPageHtml = ({ route, content, lang, canonical }) => {
   const ogLocale = lang === "es" ? "es_PR" : "en_US";
   const ogLocaleAlt = lang === "es" ? "en_US" : "es_PR";
 
-  let html = template
-    .replace(/<html lang="[^"]*">/, `<html lang="${htmlLang}">`)
-    .replace(/<title>[^<]*<\/title>/, `<title>${content.title}</title>`)
-    .replace(/<meta name="description" content="[^"]*"\s*\/?>/, `<meta name="description" content="${content.description}" />`)
-    .replace(/<meta property="og:title" content="[^"]*"\s*\/?>/, `<meta property="og:title" content="${content.title}" />`)
-    .replace(/<meta property="og:description" content="[^"]*"\s*\/?>/, `<meta property="og:description" content="${content.description}" />`)
-    .replace(/<meta property="og:url" content="[^"]*"\s*\/?>/, `<meta property="og:url" content="${canonical}" />`)
-    .replace(/<meta property="og:locale" content="[^"]*"\s*\/?>/, `<meta property="og:locale" content="${ogLocale}" />`)
-    .replace(/<meta property="og:locale:alternate" content="[^"]*"\s*\/?>/, `<meta property="og:locale:alternate" content="${ogLocaleAlt}" />`)
-    .replace(/<meta name="twitter:title" content="[^"]*"\s*\/?>/, `<meta name="twitter:title" content="${content.title}" />`)
-    .replace(/<meta name="twitter:description" content="[^"]*"\s*\/?>/, `<meta name="twitter:description" content="${content.description}" />`)
-    .replace(/<div id="root">[\s\S]*?<\/div>/, `<div id="root"><h1>${content.h1}</h1><p>${content.body}</p></div>`);
-
+  const routePath = lang === "es" ? (route === "/" ? "/es" : `/es${route}`) : route;
+  const snapshot = snapshots[routePath];
+  if (!snapshot) throw new Error(`Missing current route snapshot: ${routePath}`);
+  let html = template.replace(/<html lang="[^"]*">/, `<html lang="${htmlLang}">`)
+    .replace(/<title>[^<]*<\/title>/, `<title>${escapeHtml(snapshot.title)}</title>`)
+    .replace(/<div id="root">[\s\S]*?<\/div>/, `<div id="root"><h1>${escapeHtml(snapshot.h1)}</h1><p>${escapeHtml(snapshot.body)}</p></div>`);
+  for (const [key, value] of Object.entries({ description: snapshot.description, robots: snapshot.robots || "index, follow", "twitter:title": snapshot.title, "twitter:description": snapshot.description, "twitter:image": snapshot.image })) {
+    if (value) html = replaceMeta(html, key, value);
+  }
+  for (const [key, value] of Object.entries({ "og:title": snapshot.title, "og:description": snapshot.description, "og:url": canonical, "og:locale": ogLocale, "og:locale:alternate": ogLocaleAlt, "og:type": route.startsWith("/blog/") ? "article" : "website", "og:image": snapshot.image })) {
+    if (value) html = replaceMeta(html, key, value, "property");
+  }
   html = applyCanonicalAndHreflang(html, canonical, route);
-  html = applyOgImage(html, route);
-  html = injectJsonLd(html, buildSchema(route, content, canonical, lang));
+  const fallbackSchema = buildSchema(route, { ...content, title: snapshot.title, description: snapshot.description, h1: snapshot.h1 }, canonical, lang);
+  const schema = snapshot.schemas.length ? { "@context": "https://schema.org", "@graph": snapshot.schemas.flatMap(s => s["@graph"] || [s]) } : fallbackSchema;
+  html = injectJsonLd(html, schema);
   return html;
 };
 
@@ -622,7 +625,7 @@ for (const entry of ROUTE_MANIFEST) {
   if (!content) continue;
 
   // Determine default-variant language from content or forcedLang
-  const defaultLang = content.forcedLang === "en" ? "en" : "es";
+  const defaultLang = snapshots[entry.path] ? "en" : "es";
 
   // x-default (canonical, no /en /es prefix) — skipped for pages whose
   // unprefixed URL redirects to /es/...
@@ -642,7 +645,7 @@ for (const entry of ROUTE_MANIFEST) {
   }
   // /en variant
   if (entry.locales.includes("en")) {
-    const enContent = pagesEn[entry.path];
+    const enContent = pagesEn[entry.path] || content;
     if (enContent) {
       const canonical = getCanonicalUrl(entry.path, "en");
       const html = renderPageHtml({ route: entry.path, content: enContent, lang: "en", canonical });
@@ -657,6 +660,7 @@ fs.writeFileSync(
   path.join(DIST, "route-manifest.json"),
   JSON.stringify(ROUTE_MANIFEST.map((e) => ({
     ...e,
+    noindex: e.path === "/terms",
     lastmod: pages[e.path]?.dateModified || pages[e.path]?.datePublished || null,
   })), null, 2)
 );
