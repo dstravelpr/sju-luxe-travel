@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, MapPin, Clock, Users, Star } from "lucide-react";
+import { SearchAnswers } from "@/components/SearchAnswers";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -220,7 +221,8 @@ const Maldives = () => {
           </div>
         </div>
       </section>
-    </Layout>
+    <SearchAnswers topic="maldives" />
+      </Layout>
   );
 };
 

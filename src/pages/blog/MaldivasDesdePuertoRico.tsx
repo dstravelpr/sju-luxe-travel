@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
+import { SearchAnswers } from "@/components/SearchAnswers";
 import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -248,6 +249,7 @@ const Post = () => {
             </Link>
           </div>
         </div>
+      <SearchAnswers topic="maldives" />
       </article>
     </Layout>
   );
