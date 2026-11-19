@@ -459,7 +459,7 @@ export const es: typeof en = {
         category: "Consejos de Viaje",
         title: "¿Los Agentes de Viaje Realmente Te Ayudan a Ahorrar Dinero?",
         excerpt:
-          "Una perspectiva honesta de un consultor de viajes moderno sobre cómo la orientación profesional te ahorra dinero, tiempo y estrés — y por qué el verdadero valor va mucho más allá…",
+          "Una perspectiva honesta de un agente de viaje moderno sobre cómo la orientación profesional te ahorra dinero, tiempo y estrés — y por qué el verdadero valor va mucho más allá…",
         readTime: "7 min de lectura",
       },
       {

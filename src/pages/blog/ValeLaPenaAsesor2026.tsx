@@ -89,14 +89,14 @@ const Post = () => {
           <div className="aspect-[16/9] overflow-hidden rounded-lg gold-border mb-12">
             <img
               src={heroImg}
-              alt={isEs ? "Consultor de viajes personalizados" : "Travel agent"}
+              alt={isEs ? "Agente de viajes personalizados" : "Travel Agent"}
               className="w-full h-full object-cover"
             />
           </div>
           <div className="prose-custom space-y-6 text-muted-foreground text-base leading-relaxed">
             <p>
               {isEs
-                ? "En 2026, con IA reservando vuelos y Booking.com en cada bolsillo, la pregunta es legítima: ¿realmente necesitas un consultor de viajes? La respuesta honesta es: depende del viaje."
+                ? "En 2026, con IA reservando vuelos y Booking.com en cada bolsillo, la pregunta es legítima: ¿realmente necesitas un agente de viaje? La respuesta honesta es: depende del viaje."
                 : "In 2026, with AI booking flights and Booking.com in every pocket, the question is fair: do you really need a travel agent? The honest answer: it depends on the trip."}
             </p>
 
@@ -158,7 +158,7 @@ const Post = () => {
             </h2>
             <p>
               {isEs
-                ? "Cuando tu vuelo se cancela a las 2 AM en Frankfurt, ¿prefieres esperar 90 minutos en el chat de Expedia o que tu consultor ya esté reaccionando? Eso es lo que en realidad pagas."
+                ? "Cuando tu vuelo se cancela a las 2 AM en Frankfurt, ¿prefieres esperar 90 minutos en el chat de Expedia o que tu agente ya esté reaccionando? Eso es lo que en realidad pagas."
                 : "When your flight cancels at 2 AM in Frankfurt, do you prefer waiting 90 minutes in the Expedia chat — or your agent already on it? That's what you're really paying for."}
             </p>
           </div>

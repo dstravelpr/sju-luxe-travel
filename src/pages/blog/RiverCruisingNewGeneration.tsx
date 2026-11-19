@@ -270,7 +270,7 @@ const RiverCruisingNewGeneration = () => {
                 to={localPath("/about")}
                 className="text-gold hover:text-gold-light underline-offset-4 hover:underline"
               >
-                {isEs ? "agente de viaje" : "Travel agent"}
+                {isEs ? "agente de viaje" : "Travel Agent"}
               </Link>
               {isEs
                 ? '. Un cliente me dice: "Miré cruceros fluviales, pero me parecen caros." Y entonces lo desglosamos juntos: tu camarote, todas las comidas (y hablo de comida de verdad, no un buffet genérico), vinos con la cena, excursiones guiadas, traslados — todo incluido. Ahora cotiza hacer ese mismo itinerario por tu cuenta. Vuelos entre ciudades, hoteles en cada destino, restaurantes, taxis, entradas, propinas. Nueve de cada diez veces, el crucero fluvial sale mejor. Lo que pasa es que no lo ves a primera vista porque el precio aparece como un solo número grande en vez de cincuenta pequeños.'

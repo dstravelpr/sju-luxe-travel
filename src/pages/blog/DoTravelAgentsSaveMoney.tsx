@@ -171,7 +171,7 @@ const DoTravelAgentsSaveMoney = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Un consultor de viajes moderno no es solo alguien que reserva viajes. Piensa en él como tu estratega de viajes personal. Un buen agente de viaje se toma el tiempo para:"
+                ? "Un agente de viaje moderno no es solo alguien que reserva viajes. Piensa en él como tu estratega de viajes personal. Un buen agente de viaje se toma el tiempo para:"
                 : "A modern travel agent is not just someone who books trips. Think of them as your personal travel strategist. A professional agent takes the time to:"}
             </p>
 
@@ -201,14 +201,14 @@ const DoTravelAgentsSaveMoney = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed font-semibold">
               {isEs
-                ? "Los motores de reserva en línea muestran precios. Los consultores de viajes entregan valor, conocimiento y apoyo humano."
+                ? "Los motores de reserva en línea muestran precios. Los agentes de viaje entregan valor, conocimiento y apoyo humano."
                 : "Online booking engines show prices. Travel agents deliver value, insight, and human support."}
             </p>
 
             {/* Section 2 */}
             <h2 className="font-heading text-2xl text-foreground mt-10">
               {isEs
-                ? "Cómo los Consultores de Viajes Te Ayudan a Ahorrar (Sin Recortar Calidad)"
+                ? "Cómo los Agentes de Viaje Te Ayudan a Ahorrar (Sin Recortar Calidad)"
                 : "How travel agents Help You Save Money (Without Cutting Corners)"}
             </h2>
 
@@ -279,20 +279,20 @@ const DoTravelAgentsSaveMoney = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Horas de investigación, comparar opciones y dudar de las decisiones se acumulan. Un consultor de viajes agiliza el proceso para que puedas concentrarte en la experiencia—no en la logística."
+                ? "Horas de investigación, comparar opciones y dudar de las decisiones se acumulan. Un agente de viaje agiliza el proceso para que puedas concentrarte en la experiencia—no en la logística."
                 : "Hours of research, comparing options, and second‑guessing decisions adds up. A travel agent streamlines the process so you can focus on the experience—not the logistics."}
             </p>
 
             {/* Section 3 */}
             <h2 className="font-heading text-2xl text-foreground mt-10">
               {isEs
-                ? "Cuándo Tiene Más Sentido Usar un Consultor de Viajes"
+                ? "Cuándo Tiene Más Sentido Usar un Agente de Viaje"
                 : "When Using a travel agent Makes the Most Sense"}
             </h2>
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Si bien los viajes simples se pueden reservar en línea, un consultor de viajes es especialmente valioso cuando:"
+                ? "Si bien los viajes simples se pueden reservar en línea, un agente de viaje es especialmente valioso cuando:"
                 : "While simple trips can be booked online, a travel agent is especially valuable when:"}
             </p>
 

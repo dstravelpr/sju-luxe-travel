@@ -23,7 +23,7 @@ export const AUTHOR = {
   "@type": "Person",
   name: "Daniel Santiago Díaz",
   url: `${HOSTNAME}/about`,
-  jobTitle: "Travel agent",
+  jobTitle: "Travel Agent",
 } as const;
 
 export interface BreadcrumbCrumb {
