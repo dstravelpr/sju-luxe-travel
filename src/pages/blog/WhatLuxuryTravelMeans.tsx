@@ -127,7 +127,7 @@ const WhatLuxuryTravelMeans = () => {
                 Daniel Santiago Díaz
                 <span className="text-muted-foreground/70">
                   {" "}
-                  — {isEs ? "Agente de viajes personalizados" : "Travel Advisor"}
+                  — {isEs ? "Agente de viajes personalizados" : "Travel Agent"}
                 </span>
               </Link>
               <span className="flex items-center gap-1.5">

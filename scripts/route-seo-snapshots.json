@@ -1627,7 +1627,7 @@
                 "name": "¿Puedo reservar directamente con la línea o necesito una agencia?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Puedes reservarlo directamente, pero trabajar con una agencia como SJU Luxe Travel no tiene costo adicional para el cliente — las agencias reciben comisión de la línea. A cambio, recibes asesoría personalizada, la combinación con hoteles y tours, y alguien que gestione cualquier cambio o imprevisto."
+                  "text": "Puedes reservarlo directamente, pero trabajar con una agencia como SJU Luxe Travel no tiene costo adicional para el cliente — las agencias reciben comisión de la línea. A cambio, recibes la guía personalizada de tu agente de viaje, la combinación con hoteles y tours, y alguien que gestione cualquier cambio o imprevisto."
                 }
               },
               {
@@ -3496,7 +3496,7 @@
                 "name": "¿Puedo reservar directamente con la línea o necesito una agencia?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Puedes reservarlo directamente, pero trabajar con una agencia como SJU Luxe Travel no tiene costo adicional para el cliente — las agencias reciben comisión de la línea. A cambio, recibes asesoría personalizada, la combinación con hoteles y tours, y alguien que gestione cualquier cambio o imprevisto."
+                  "text": "Puedes reservarlo directamente, pero trabajar con una agencia como SJU Luxe Travel no tiene costo adicional para el cliente — las agencias reciben comisión de la línea. A cambio, recibes la guía personalizada de tu agente de viaje, la combinación con hoteles y tours, y alguien que gestione cualquier cambio o imprevisto."
                 }
               },
               {

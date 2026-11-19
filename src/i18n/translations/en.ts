@@ -169,7 +169,7 @@ export const en = {
     trustMaldives: "Koveli Travel Maldives Expert",
     trustQualNetwork: "Affiliate Network",
     trustQualConcierge: "Concierge Partner",
-    trustQualCertified: "Certified Advisor",
+    trustQualCertified: "Certified Travel Agent",
     trustQualExpert: "Destination Expert",
     trustNameTravelLeaders: "Travel Leaders",
     trustNameNcm: "NCM Concierge",

@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     q: "¿Puedo reservar directamente con la línea o necesito una agencia?",
-    a: "Puedes reservarlo directamente, pero trabajar con una agencia como SJU Luxe Travel no tiene costo adicional para el cliente — las agencias reciben comisión de la línea. A cambio, recibes asesoría personalizada, la combinación con hoteles y tours, y alguien que gestione cualquier cambio o imprevisto.",
+    a: "Puedes reservarlo directamente, pero trabajar con una agencia como SJU Luxe Travel no tiene costo adicional para el cliente — las agencias reciben comisión de la línea. A cambio, recibes la guía personalizada de tu agente de viaje, la combinación con hoteles y tours, y alguien que gestione cualquier cambio o imprevisto.",
   },
   {
     q: "¿Son los cruceros de reposicionamiento buenos para familias?",
