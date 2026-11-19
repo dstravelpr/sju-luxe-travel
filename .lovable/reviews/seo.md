@@ -1,6 +1,6 @@
 # Auditoría SEO / GEO / AEO — SJU Luxe Travel
 
-**2 de 8 revisiones automáticas fallan** — ambas son falsas alarmas: el escáner espera la dirección de Lovable, pero tu dirección real es www.sjuluxetravel.com. **Recomiendo no cambiarlas.**
+**2 de 9 revisiones automáticas fallan** — ambas son falsas alarmas: el escáner espera la dirección de Lovable, pero tu dirección real es www.sjuluxetravel.com. **Recomiendo no cambiarlas.**
 
 | Finding | Level | State |
 |---|---|---|
