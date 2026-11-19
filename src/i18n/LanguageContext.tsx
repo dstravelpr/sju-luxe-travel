@@ -27,16 +27,12 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   // Language is derived from the URL — single source of truth.
   const language: Language = detectLangFromPath(location.pathname);
 
-  // First visit: if the visitor's device is in Spanish and they haven't picked
-  // a language yet, open the Spanish version. The toggle then switches to English.
+  // First visit: always open the Spanish version unless the visitor already
+  // picked a language with the toggle. The toggle then switches to English.
   useEffect(() => {
     try {
       if (localStorage.getItem("langChosen")) return;
-      const prefersEs = (navigator.languages?.[0] || navigator.language || "")
-        .toLowerCase()
-        .startsWith("es");
       if (
-        prefersEs &&
         detectLangFromPath(location.pathname) === "en" &&
         !location.pathname.startsWith("/agencia-de-viajes-puerto-rico")
       ) {

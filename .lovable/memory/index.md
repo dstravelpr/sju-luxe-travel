@@ -5,6 +5,7 @@ SJU Luxe Travel — luxury travel agency site. Bilingual EN/ES, primary language
 Favicon is custom logo (favicon.png). Never use default Lovable branding.
 No scroll indicator pill on hero sections — user finds it annoying.
 html lang="es-PR" by default; dynamically switches to "en" via language toggle.
+Site always opens in Spanish on first visit (redirects to /es/...); English only when the visitor picks it with the toggle.
 
 ## Memories
 - [SEO keywords](mem://features/seo-keywords) — Keyword master and competitor gap analysis integrated
