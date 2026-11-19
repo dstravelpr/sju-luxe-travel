@@ -1,3 +1,5 @@
+import { BlogQuickAnswers } from "@/components/blog/BlogQuickAnswers";
+import { QUICK_ANSWERS } from "@/components/blog/quickAnswersData";
 import { Link } from "react-router-dom";
 import { ArrowLeft, User, Calendar, Clock } from "lucide-react";
 import { Layout } from "@/components/Layout";
@@ -485,6 +487,8 @@ const DoTravelAgentsSaveMoney = () => {
               </li>
             </ul>
           </div>
+
+          <BlogQuickAnswers {...QUICK_ANSWERS.save} />
 
           {/* CTA */}
           <p
