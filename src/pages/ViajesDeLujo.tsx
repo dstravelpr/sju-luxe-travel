@@ -218,6 +218,16 @@ const ViajesDeLujo = () => {
                 href: "/blog/wellness-travel-intentional-luxury",
                 category: "Tendencias",
               },
+              {
+                title: "¿Un agente de viajes realmente te ayuda a ahorrar?",
+                href: "/blog/do-travel-agents-really-help-save-money",
+                category: "Guía",
+              },
+              {
+                title: "Microvacaciones: viajes cortos bien planificados",
+                href: "/blog/micro-vacaciones-futuro-del-viaje",
+                category: "Tendencias",
+              },
             ]}
           />
 
