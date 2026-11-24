@@ -152,6 +152,27 @@ const crucerosDeLujo = () => {
               ))}
             </ul>
 
+            <CruiseFinder />
+
+            <h2 className="font-heading text-2xl text-foreground mt-10">
+              {language === "es" ? "Cruceros para todo presupuesto" : "Cruises for every budget"}
+            </h2>
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {language === "es"
+                ? "También planifico cruceros con las navieras más conocidas, ideales para familias, primeras experiencias en crucero y viajes con amistades. Te ayudo a comparar barcos, itinerarios y lo que incluye cada tarifa:"
+                : "I also plan cruises with the best-known cruise lines, great for families, first-time cruisers and trips with friends. I help you compare ships, itineraries and what each fare includes:"}
+            </p>
+            <ul className="flex flex-wrap gap-2 list-none">
+              {["Royal Caribbean", "Celebrity Cruises", "MSC Cruises", "Norwegian Cruise Line", "Carnival", "Princess Cruises", "Disney Cruise Line", "Virgin Voyages"].map((l) => (
+                <li key={l} className="px-4 py-2 rounded-full border border-border text-sm text-foreground/90">{l}</li>
+              ))}
+            </ul>
+            <p className="text-muted-foreground text-sm leading-relaxed">
+              {language === "es"
+                ? "Las salidas desde San Juan cambian por temporada; si tu barco favorito no sale de aquí, coordino el vuelo al puerto de salida."
+                : "Departures from San Juan vary by season; if your preferred ship doesn't sail from here, I coordinate the flight to its departure port."}
+            </p>
+
             <h2 className="font-heading text-2xl text-foreground mt-10">
               {d.h2Lines}
             </h2>
@@ -242,8 +263,6 @@ const crucerosDeLujo = () => {
               },
             ]}
           />
-
-          <CruiseFinder />
 
           <FAQSection
             heading="Preguntas Frecuentes sobre cruceros"
