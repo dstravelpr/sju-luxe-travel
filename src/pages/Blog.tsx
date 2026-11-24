@@ -51,7 +51,7 @@ const Blog = () => {
         title="Travel Blog from Puerto Rico | SJU Luxe Travel"
         description="bespoke travel guides from San Juan, PR: honeymoons, river cruises, Maldives, Portugal & more. Expert insights by Daniel Santiago Díaz."
         titleEs="Blog de Viajes desde Puerto Rico | SJU Luxe Travel"
-        descriptionEs="Guías de viajes desde Puerto Rico: lunas de miel, cruceros fluviales, Maldivas, Portugal y más. Por Daniel Santiago Díaz."
+        descriptionEs="Guías de viajes desde Puerto Rico: lunas de miel, cruceros de río, Maldivas, Portugal y más. Por Daniel Santiago Díaz."
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
@@ -164,11 +164,11 @@ const Blog = () => {
               <article>
                 <div className="aspect-[16/9] bg-charcoal relative overflow-hidden">
                   <div className="absolute top-3 left-3 px-2.5 py-1 bg-gold-gradient text-primary-foreground text-[10px] tracking-[0.15em] uppercase font-semibold rounded-sm z-10">
-                    {language === "es" ? "Cruceros Fluviales" : "River cruises"}
+                    {language === "es" ? "Cruceros de Río" : "River cruises"}
                   </div>
                   <img
                     src={blogDueroImg}
-                    alt="Crucero fluvial por el Duero desde Puerto Rico"
+                    alt="Crucero de río por el Duero desde Puerto Rico"
                     className="w-full h-full object-cover"
                     loading="lazy"
                   />
@@ -176,7 +176,7 @@ const Blog = () => {
                 <div className="p-6">
                   <h3 className="font-heading text-lg text-foreground mb-3 group-hover:text-gold transition-colors">
                     {language === "es"
-                      ? "Crucero Fluvial por el Duero desde Puerto Rico: Portugal desde el Río"
+                      ? "Crucero de Río por el Duero desde Puerto Rico: Portugal desde el Río"
                       : "Douro River Cruise from Puerto Rico: Portugal from the River"}
                   </h3>
                   <p className="text-muted-foreground text-xs leading-relaxed mb-4">

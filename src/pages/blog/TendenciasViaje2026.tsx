@@ -206,7 +206,7 @@ const Post = () => {
                 to={localPath("/blog/crucero-fluvial-duero-desde-puerto-rico")}
                 className="text-gold hover:text-gold-light underline"
               >
-                crucero fluvial
+                crucero de río
               </Link>
               , es bajarte en el pueblo pequeño en vez de la ciudad principal.
               En Italia, es Emilia-Romagna en vez de Toscana. En{" "}

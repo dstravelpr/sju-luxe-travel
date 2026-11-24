@@ -43,7 +43,7 @@ const SERVICES = [
     desc: "Regent, Silversea, Seabourn y Crystal — zarpando directamente desde Puerto Rico.",
   },
   {
-    title: "Cruceros fluviales por Europa",
+    title: "Cruceros de río por Europa",
     to: "/cruceros-fluviales-de-lujo-desde-puerto-rico",
     desc: "Danubio, Rin, Sena, Duero y Mekong con AmaWaterways, Uniworld y Scenic.",
   },

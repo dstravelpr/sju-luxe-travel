@@ -90,7 +90,7 @@ const Portugal = () => {
             <p>{d.p4}</p>
             <p>
               {language === "es"
-                ? "Portugal es uno de los destinos europeos más buscados por viajeros de Puerto Rico por su cercanía cultural, gastronomía de clase mundial y precios más razonables que otros destinos exclusivos. Desde San Juan (SJU) volamos vía Miami o Newark: TAP Air Portugal opera vuelos directos MIA–LIS y EWR–LIS/OPO, y United tiene servicio estacional desde EWR. Los highlights incluyen Lisboa (Belém, Alfama, cenas privadas con fadista), Porto y el valle del Duero (bodegas históricas de Oporto y crucero fluvial opcional), y la costa del Algarve (playas de acantilado, resorts boutique como Vila Vita Parc y Bela Vista)."
+                ? "Portugal es uno de los destinos europeos más buscados por viajeros de Puerto Rico por su cercanía cultural, gastronomía de clase mundial y precios más razonables que otros destinos exclusivos. Desde San Juan (SJU) volamos vía Miami o Newark: TAP Air Portugal opera vuelos directos MIA–LIS y EWR–LIS/OPO, y United tiene servicio estacional desde EWR. Los highlights incluyen Lisboa (Belém, Alfama, cenas privadas con fadista), Porto y el valle del Duero (bodegas históricas de Oporto y crucero de río opcional), y la costa del Algarve (playas de acantilado, resorts boutique como Vila Vita Parc y Bela Vista)."
                 : "Portugal is one of the most requested European destinations for Puerto Rico travelers thanks to cultural closeness, world-class food and better value than other European trips. From San Juan (SJU) we route via Miami or Newark: TAP Air Portugal runs nonstop MIA–LIS and EWR–LIS/OPO, and United flies seasonal EWR–LIS. Highlights include Lisbon (Belém, Alfama, private fado dinners), Porto and the Douro Valley (historic Port wine lodges plus optional river cruise), and the Algarve coast (cliff beaches, boutique resorts like Vila Vita Parc and Bela Vista)."}
             </p>
           </div>
@@ -112,7 +112,7 @@ const Portugal = () => {
               className="text-gold hover:text-gold-light underline"
             >
               {language === "es"
-                ? "cruceros fluviales desde PR"
+                ? "cruceros de río desde PR"
                 : "River cruises from PR"}
             </Link>
             {language === "es" ? " o " : " or "}
@@ -151,7 +151,7 @@ const Portugal = () => {
                 category: "Vuelos",
               },
               {
-                title: "Crucero fluvial por el Duero desde Puerto Rico",
+                title: "Crucero de río por el Duero desde Puerto Rico",
                 href: "/blog/crucero-fluvial-duero-desde-puerto-rico",
                 category: "Cruceros",
               },

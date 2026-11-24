@@ -459,7 +459,7 @@ const DoTravelAgentsSaveMoney = () => {
                   className="text-gold hover:text-gold-light underline"
                 >
                   {isEs
-                    ? "Cruceros fluviales: la nueva generación"
+                    ? "Cruceros de río: la nueva generación"
                     : "River cruising: the new generation"}
                 </Link>
               </li>

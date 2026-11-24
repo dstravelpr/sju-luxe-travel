@@ -11,7 +11,7 @@ export const es: typeof en = {
     tripsFromPR: "Viajes desde Puerto Rico",
     honeymoon: "Luna de Miel",
     luxuryCruises: "Cruceros",
-    riverCruises: "Cruceros Fluviales",
+    riverCruises: "Cruceros de Río",
     repositioningCruises: "Cruceros de Reposicionamiento",
     maldives: "Maldivas",
     portugal: "Portugal",
@@ -442,10 +442,10 @@ export const es: typeof en = {
     },
     posts: [
       {
-        category: "Cruceros Fluviales",
-        title: "Los cruceros Fluviales Ya No Son Solo Para Tus Padres",
+        category: "Cruceros de Río",
+        title: "Los cruceros de río Ya No Son Solo Para Tus Padres",
         excerpt:
-          "El 84% de los viajeros menores de 35 años se interesan por los cruceros fluviales. Un agente de viaje personalizado explica por qué una nueva generación los está descubriendo.",
+          "El 84% de los viajeros menores de 35 años se interesan por los cruceros de río. Un agente de viaje personalizado explica por qué una nueva generación los está descubriendo.",
         readTime: "6 min de lectura",
       },
       {
@@ -609,7 +609,7 @@ export const es: typeof en = {
     cruisesLink: "¿Te interesan los cruceros? Explora nuestras opciones de",
     oceanCruises: "Cruceros oceánicos",
     andText: "Y",
-    riverCruises: "Cruceros fluviales por Europa, Asia y más",
+    riverCruises: "Cruceros de río por Europa, Asia y más",
     ctaTitle: "¿Listo para planificar tu próximo",
     ctaTitleHighlight: "Viaje Personalizado desde Puerto Rico?",
     ctaDescription:
@@ -814,7 +814,7 @@ export const es: typeof en = {
     faqA1:
       "En 2026, San Juan cuenta con salidas de las principales líneas del mundo: Ritz-Carlton Yacht Collection, Explora Journeys, Virgin Voyages, Azamara, Crystal cruises, Oceania, Regent Seven Seas, Silversea, Viking Ocean, Seabourn y SeaDream Yacht Club. Como agente de viaje especializado en cruceros desde Puerto Rico, te ayudo a comparar opciones, acceder a tarifas preferenciales y elegir la línea que mejor se adapta a tu estilo de viaje y presupuesto.",
     riverCruisesLink: "¿Prefieres un crucero por ríos históricos?",
-    riverCruisesLinkText: "Descubre nuestros cruceros fluviales →",
+    riverCruisesLinkText: "Descubre nuestros cruceros de río →",
     ctaTitle: "¿Listo para zarpar desde San Juan",
     ctaTitleHighlight: "En el crucero de tus sueños?",
     ctaDescription:
@@ -822,8 +822,8 @@ export const es: typeof en = {
     ctaButton: "Consulta Gratuita de cruceros",
   },
   crucerosFluviales: {
-    label: "Cruceros Fluviales",
-    h1: "Cruceros Fluviales desde Puerto Rico —",
+    label: "Cruceros de Río",
+    h1: "Cruceros de Río (Fluviales) desde Puerto Rico —",
     h1Highlight: "Tu Agente de Viaje Certificado",
     certifications: [
       "AmaWaterways — Agente Certificado",
@@ -831,35 +831,35 @@ export const es: typeof en = {
       "Riverside Luxury cruises — Agente Certificado",
     ],
     introP:
-      "Los cruceros fluviales o river cruises son la forma más íntima y cultural de explorar Europa, Asia, Egipto y Sudamérica. Como agente de viaje certificado por <strong>AmaWaterways</strong>, <strong>Avalon Waterways</strong> y <strong>Riverside Luxury cruises</strong>, tengo acceso a tarifas preferenciales, beneficios exclusivos a bordo y el conocimiento especializado para ayudarte a elegir la línea y el itinerario perfectos para ti. Desde San Juan, coordino todo: vuelo, hotel pre-crucero, traslados y el crucero completo.",
-    h2Different: "¿Por Qué los cruceros Fluviales Son Diferentes?",
+      "Los cruceros de río o river cruises son la forma más íntima y cultural de explorar Europa, Asia, Egipto y Sudamérica. Como agente de viaje certificado por <strong>AmaWaterways</strong>, <strong>Avalon Waterways</strong> y <strong>Riverside Luxury cruises</strong>, tengo acceso a tarifas preferenciales, beneficios exclusivos a bordo y el conocimiento especializado para ayudarte a elegir la línea y el itinerario perfectos para ti. Desde San Juan, coordino todo: vuelo, hotel pre-crucero, traslados y el crucero completo.",
+    h2Different: "¿Por Qué los cruceros de río Son Diferentes?",
     differentP:
-      "Un crucero fluvial no es un crucero oceánico en pequeño — es una experiencia completamente distinta. Los barcos tienen entre 100 y 190 pasajeros máximo, lo que significa un servicio personalizado que los grandes barcos no pueden ofrecer. Navegas por el corazón de ciudades históricas — amarras en el centro de Viena, Budapest, Ámsterdam o París, a pasos de los museos, catedrales y mercados locales. No hay días en alta mar: cada mañana despiertas en un puerto nuevo. Y a diferencia del crucero oceánico, el crucero fluvial está diseñado para el viajero curioso que quiere profundidad cultural, no entretenimiento a bordo.",
+      "Un crucero de río no es un crucero oceánico en pequeño — es una experiencia completamente distinta. Los barcos tienen entre 100 y 190 pasajeros máximo, lo que significa un servicio personalizado que los grandes barcos no pueden ofrecer. Navegas por el corazón de ciudades históricas — amarras en el centro de Viena, Budapest, Ámsterdam o París, a pasos de los museos, catedrales y mercados locales. No hay días en alta mar: cada mañana despiertas en un puerto nuevo. Y a diferencia del crucero oceánico, el crucero de río está diseñado para el viajero curioso que quiere profundidad cultural, no entretenimiento a bordo.",
     h2Certifications: "Líneas con las que Trabajo — Certificaciones Oficiales",
     certificationsIntro:
-      "Soy agente de viaje certificado por las tres siguientes líneas fluviales, lo que me permite ofrecerte acceso prioritario, tarifas exclusivas y soporte dedicado:",
+      "Soy agente de viaje certificado por las tres siguientes líneas de cruceros de río, lo que me permite ofrecerte acceso prioritario, tarifas exclusivas y soporte dedicado:",
     amaTitle: "AmaWaterways — Certificación Oficial",
     amaDesc:
-      "Una de las líneas fluviales más premiadas del mundo. Sus buques de última generación navegan el Danubio, Rin, Mosela, Sena, Ródano, Mekong, Chobe y el Nilo. Reconocidos por su gastronomía de autor, sus excursiones para ciclistas y sus camarotes con balcón de doble uso (ventana panorámica y balcón francés). Sus itinerarios de Europa del Este — Budapest, Viena, Bratislava, Passau — son los más solicitados por nuestros clientes de Puerto Rico.",
+      "Una de las líneas de cruceros de río más premiadas del mundo. Sus buques de última generación navegan el Danubio, Rin, Mosela, Sena, Ródano, Mekong, Chobe y el Nilo. Reconocidos por su gastronomía de autor, sus excursiones para ciclistas y sus camarotes con balcón de doble uso (ventana panorámica y balcón francés). Sus itinerarios de Europa del Este — Budapest, Viena, Bratislava, Passau — son los más solicitados por nuestros clientes de Puerto Rico.",
     avalonTitle: "Avalon Waterways — Certificación Oficial",
     avalonDesc:
       'Pioneros en el concepto de "Suite Ship" con camarotes que se transforman en un balcón abierto de pared a pared. Itinerarios en Europa, Sudamérica (Galápagos y Amazonas) y Asia (Mekong). Sus barcos en el Danubio y el Rin combinan diseño contemporáneo con un enfoque en experiencias locales auténticas. Excelente opción para viajeros que buscan modernidad y flexibilidad en sus excursiones.',
     riversideTitle: "Riverside Luxury cruises — Certificación Oficial",
     riversideDesc:
-      "La propuesta más reciente y exclusiva del segmento. Buques diseñados con un estándar superior: suites más amplias, gastronomía de nivel superior y ratio de tripulación por pasajero de los más altos del mercado. Sus itinerarios europeos por el Rin y el Danubio son ideales para el viajero de Puerto Rico que busca la experiencia fluvial más refinada disponible.",
-    h2OtherLines: "Otras Líneas Fluviales de Primer Nivel",
+      "La propuesta más reciente y exclusiva del segmento. Buques diseñados con un estándar superior: suites más amplias, gastronomía de nivel superior y ratio de tripulación por pasajero de los más altos del mercado. Sus itinerarios europeos por el Rin y el Danubio son ideales para el viajero de Puerto Rico que busca la experiencia en crucero de río más refinada disponible.",
+    h2OtherLines: "Otras Líneas de Cruceros de Río de Primer Nivel",
     otherLinesIntro:
-      "Además de mis certificaciones, trabajo con todo el espectro dlos cruceros fluviales premium:",
+      "Además de mis certificaciones, trabajo con todo el espectro dlos cruceros de río premium:",
     vikingTitle: "Viking River cruises",
     vikingDesc:
-      "El líder del mercado por volumen. Precios todo incluido competitivos, itinerarios en casi todos los ríos principales del mundo y una experiencia cultural muy sólida. Ideal para una primera experiencia fluvial.",
+      "El líder del mercado por volumen. Precios todo incluido competitivos, itinerarios en casi todos los ríos principales del mundo y una experiencia cultural muy sólida. Ideal para una primera experiencia en crucero de río.",
     uniworldTitle: "Uniworld Boutique River cruises",
     uniworldDesc:
       "Cada barco es un hotel boutique flotante único, con obras de arte originales y decoración personalizada. Sus rutas por el Sena (París a Normandía) y el Ganges son las más exclusivas del mercado.",
     scenicTitle: "Scenic Luxury cruises",
     scenicDesc:
-      "Los camarotes más grandes del segmento fluvial europeo, con bañera de hidromasaje y balcón privado. Precio todo incluido con bebidas premium, excursiones y propinas incluidas.",
-    h2Destinations: "Destinos Fluviales Imperdibles",
+      "Los camarotes más grandes del segmento de cruceros de río europeo, con bañera de hidromasaje y balcón privado. Precio todo incluido con bebidas premium, excursiones y propinas incluidas.",
+    h2Destinations: "Destinos de Cruceros de Río Imperdibles",
     riverDestinations: [
       [
         "Europa Central — El Danubio",
@@ -888,29 +888,29 @@ export const es: typeof en = {
     ],
     h2Logistics: "Cómo Funciona la Logística desde Puerto Rico",
     logisticsIntro:
-      "Ningún crucero fluvial zarpa desde San Juan — todos los embarques son en Europa, Asia o África. Me encargo de coordinar el viaje completo:",
+      "Ningún crucero de río zarpa desde San Juan — todos los embarques son en Europa, Asia o África. Me encargo de coordinar el viaje completo:",
     logisticsSteps: [
       "Vuelo desde SJU con conexión en Miami, Nueva York, Atlanta o Filadelfia hacia el puerto de embarque europeo o asiático",
       "Hotel la noche antes del embarque para evitar imprevistos",
       "Traslado privado del hotel al barco",
       "El crucero completo con todos sus beneficios exclusivos",
       "Traslado de desembarque y vuelo de regreso a SJU",
-      "Seguro de viaje especializado para cruceros fluviales",
+      "Seguro de viaje especializado para cruceros de río",
     ],
     logisticsP:
       "Puedes reservar solo el crucero si prefieres gestionar los vuelos por tu cuenta, o dejarme armar el paquete completo. La mayoría de mis clientes prefieren el paquete — elimina el estrés logístico y muchas veces resulta más económico que reservar cada componente por separado.",
-    h2FAQ: "Preguntas Frecuentes sobre cruceros Fluviales",
+    h2FAQ: "Preguntas Frecuentes sobre cruceros de río",
     faqItems: [
       {
-        q: "¿En qué se diferencia un crucero fluvial de uno oceánico?",
-        a: "Los cruceros fluviales tienen barcos mucho más pequeños (100–190 pasajeros vs. 300–700 en cruceros oceánicos), navegan ríos históricos en lugar de océanos, y atracan en el centro de las ciudades. La experiencia es más íntima, más cultural y sin días en alta mar.",
+        q: "¿En qué se diferencia un crucero de río de uno oceánico?",
+        a: "Los cruceros de río tienen barcos mucho más pequeños (100–190 pasajeros vs. 300–700 en cruceros oceánicos), navegan ríos históricos en lugar de océanos, y atracan en el centro de las ciudades. La experiencia es más íntima, más cultural y sin días en alta mar.",
       },
       {
         q: "¿Por qué reservar con un agente de viaje certificado por AmaWaterways, Avalon y Riverside?",
         a: "Las certificaciones oficiales me dan acceso a tarifas que no están disponibles al público general, beneficios a bordo como créditos o upgrades cuando están disponibles, y soporte directo con los equipos de ventas de cada línea. No pago más por trabajar conmigo — en la mayoría de los casos el precio es igual o mejor que reservar directamente.",
       },
       {
-        q: "¿Cuál es la mejor época para un crucero fluvial en Europa?",
+        q: "¿Cuál es la mejor época para un crucero de río en Europa?",
         a: "Primavera (abril–mayo) y otoño (septiembre–octubre) son las temporadas más populares por clima y eventos locales. El verano (junio–agosto) es temporada alta con los mejores horarios pero mayor demanda. El mercado navideño (diciembre) en el Danubio y el Rin es una experiencia única y muy solicitada.",
       },
       {
@@ -918,12 +918,12 @@ export const es: typeof en = {
         a: "Para temporada alta en Europa (verano y Navidad), reserva con 12 a 18 meses de anticipación. Las cabinas con balcón privado y las suites se agotan primero. Para primavera y otoño, 10 a 12 meses es suficiente.",
       },
       {
-        q: "¿Puedo combinar el crucero fluvial con días de ciudad?",
+        q: "¿Puedo combinar el crucero de río con días de ciudad?",
         a: "Sí, y lo recomiendo. La mayoría de mis clientes añaden 2 a 3 noches en el puerto de embarque o desembarque — París, Ámsterdam, Budapest o Lisboa son destinos perfectos para extender el viaje.",
       },
     ],
     ctaTitle: "¿Te interesa un",
-    ctaTitleHighlight: "Crucero Fluvial?",
+    ctaTitleHighlight: "Crucero de Río?",
     ctaDescription:
       "Cuéntame tus fechas, el destino que te llama y tu presupuesto. Te preparo una propuesta comparando las mejores opciones de AmaWaterways, Avalon, Riverside y más.",
     ctaButton: "Solicitar Consulta Gratuita",

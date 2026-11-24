@@ -31,20 +31,20 @@ import { RelatedArticles } from "@/components/RelatedArticles";
 
 const FAQ_ITEMS = [
   {
-    q: "¿Qué es un crucero fluvial y en qué se diferencia de un crucero de mar?",
-    a: "Los cruceros fluviales navegan por ríos icónicos como el Danubio, el Rin o el Duero en barcos más pequeños y elegantes, con acceso a ciudades históricas del interior de Europa que los cruceros marítimos no pueden alcanzar.",
+    q: "¿Qué es un crucero de río y en qué se diferencia de un crucero de mar?",
+    a: "Los cruceros de río navegan por ríos icónicos como el Danubio, el Rin o el Duero en barcos más pequeños y elegantes, con acceso a ciudades históricas del interior de Europa que los cruceros marítimos no pueden alcanzar.",
   },
   {
-    q: "¿Desde dónde salen los cruceros fluviales si vivo en Puerto Rico?",
+    q: "¿Desde dónde salen los cruceros de río si vivo en Puerto Rico?",
     a: "Coordinaremos tu vuelo desde San Juan (SJU) hasta el puerto de embarque europeo —típicamente Ámsterdam, Budapest, Viena o Oporto— con trasferencias incluidas.",
   },
   {
-    q: "¿Qué río o itinerario fluvial me recomiendas para un primer crucero fluvial?",
-    a: "El Danubio (Budapest a Ámsterdam) o el Duero en Portugal son ideales para quienes viajan por primera vez en crucero fluvial: paisajes espectaculares, gastronomía de primera, y puertos manejables a pie.",
+    q: "¿Qué río o itinerario de río me recomiendas para un primer crucero de río?",
+    a: "El Danubio (Budapest a Ámsterdam) o el Duero en Portugal son ideales para quienes viajan por primera vez en crucero de río: paisajes espectaculares, gastronomía de primera, y puertos manejables a pie.",
   },
   {
     q: "¿Las excursiones en tierra están incluidas en el precio?",
-    a: "En las líneas fluviales como AmaWaterways, Avalon, y Riverside Luxury cruises, las excursiones guiadas en cada puerto de escala suelen estar incluidas. Lo confirmamos según la línea y categoría seleccionada.",
+    a: "En las líneas de cruceros de río como AmaWaterways, Avalon, y Riverside Luxury cruises, las excursiones guiadas en cada puerto de escala suelen estar incluidas. Lo confirmamos según la línea y categoría seleccionada.",
   },
 ];
 
@@ -57,7 +57,7 @@ const schema = buildGraph(
     "@type": "WebPage",
     "@id": `${PAGE_URL}#webpage`,
     url: PAGE_URL,
-    name: "Cruceros Fluviales desde PR",
+    name: "Cruceros de Río desde PR",
     isPartOf: WEBSITE_REF,
     inLanguage: "es",
   },
@@ -74,7 +74,7 @@ const schema = buildGraph(
   },
   breadcrumbList([
     { name: "Home", url: "https://www.sjuluxetravel.com" },
-    { name: "Cruceros Fluviales desde Puerto Rico", url: PAGE_URL },
+    { name: "Cruceros de Río desde Puerto Rico", url: PAGE_URL },
   ]),
 );
 
@@ -87,8 +87,8 @@ const crucerosFluviales = () => {
       <SEOHead
         title="River cruises from Puerto Rico | SJU Luxe Travel"
         description="Plan your river cruise from PR with a certified AmaWaterways, Avalon and Riverside Luxury cruises travel agent."
-        titleEs="Cruceros Fluviales desde PR | SJU Luxe Travel"
-        descriptionEs="Planifica tu crucero fluvial desde PR con un agente certificado por AmaWaterways, Avalon y Riverside Luxury cruises."
+        titleEs="Cruceros de Río desde PR | SJU Luxe Travel"
+        descriptionEs="Planifica tu crucero de río desde PR con un agente certificado por AmaWaterways, Avalon y Riverside Luxury cruises."
         schemaJson={schema}
         emitHreflang
       />
@@ -276,7 +276,7 @@ const crucerosFluviales = () => {
                 category: "Comparativa",
               },
               {
-                title: "Crucero fluvial por el Duero desde Puerto Rico",
+                title: "Crucero de río por el Duero desde Puerto Rico",
                 href: "/blog/crucero-fluvial-duero-desde-puerto-rico",
                 category: "Duero",
               },
@@ -289,7 +289,7 @@ const crucerosFluviales = () => {
           />
 
           <FAQSection
-            heading="Preguntas Frecuentes sobre cruceros Fluviales"
+            heading="Preguntas Frecuentes sobre cruceros de río"
             items={FAQ_ITEMS}
           />
 

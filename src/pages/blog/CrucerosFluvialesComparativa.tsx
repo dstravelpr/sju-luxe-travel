@@ -9,7 +9,7 @@ import heroImg from "@/assets/blog-river-cruise.jpg";
 
 const schemaJson = buildGraph({
   "@type": "BlogPosting",
-  headline: "Cruceros Fluviales: AmaWaterways vs Avalon vs Riverside",
+  headline: "Cruceros de Río: AmaWaterways vs Avalon vs Riverside",
   description:
     "Comparativa completa entre AmaWaterways, Avalon Waterways y Riverside Luxury cruises para viajeros desde Puerto Rico.",
   author: AUTHOR,
@@ -29,14 +29,14 @@ const Post = () => {
       <SEOHead
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/cruceros-fluviales.jpg"
-        title="Cruceros Fluviales: AmaWaterways vs Avalon vs Riverside"
+        title="Cruceros de Río: AmaWaterways vs Avalon vs Riverside"
         description="Compara AmaWaterways, Avalon Waterways y Riverside Luxury cruises. Diferencias en barcos, itinerarios, gastronomía y precio para viajeros de PR."
         canonical="https://www.sjuluxetravel.com/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside"
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
           {
-            name: "Cruceros Fluviales: AmaWaterways vs Avalon vs Riverside",
+            name: "Cruceros de Río: AmaWaterways vs Avalon vs Riverside",
             url: "https://www.sjuluxetravel.com/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside",
           },
         ]}
@@ -57,7 +57,7 @@ const Post = () => {
             </span>
             <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">
               {isEs
-                ? "Cruceros Fluviales: AmaWaterways vs Avalon vs Riverside"
+                ? "Cruceros de Río: AmaWaterways vs Avalon vs Riverside"
                 : "River cruises: AmaWaterways vs Avalon vs Riverside"}
             </h1>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
@@ -90,7 +90,7 @@ const Post = () => {
           <div className="aspect-[16/9] overflow-hidden rounded-lg gold-border mb-12">
             <img
               src={heroImg}
-              alt={isEs ? "Crucero fluvial" : "River cruise"}
+              alt={isEs ? "Crucero de río" : "River cruise"}
               className="w-full h-full object-cover"
             />
           </div>
@@ -98,7 +98,7 @@ const Post = () => {
           <div className="prose-custom space-y-6 text-muted-foreground text-base leading-relaxed">
             <p>
               {isEs
-                ? "Cada vez más viajeros desde Puerto Rico descubren los cruceros fluviales: barcos pequeños (100–200 huéspedes), un puerto distinto cada día, todo incluido, y sin las multitudes de los cruceros oceánicos. Pero ¿cuál línea elegir? Estas son las tres que recomendamos en SJU Luxe Travel, y cuándo tiene sentido cada una."
+                ? "Cada vez más viajeros desde Puerto Rico descubren los cruceros de río: barcos pequeños (100–200 huéspedes), un puerto distinto cada día, todo incluido, y sin las multitudes de los cruceros oceánicos. Pero ¿cuál línea elegir? Estas son las tres que recomendamos en SJU Luxe Travel, y cuándo tiene sentido cada una."
                 : "More travelers from Puerto Rico are discovering river cruising: small ships (100–200 guests), a new port every day, all-inclusive, and no ocean-cruise crowds. But which line should you pick? These are the three we recommend at SJU Luxe Travel — and when each makes sense."}
             </p>
 
@@ -166,7 +166,7 @@ const Post = () => {
                 {isEs ? "Mejor para:" : "Best for:"}
               </strong>{" "}
               {isEs
-                ? "el viajero que busca el escalón más alto dlos cruceros fluviales premium — verdaderamente all-inclusive premium, butler service, alcohol top-shelf incluido."
+                ? "el viajero que busca el escalón más alto dlos cruceros de río premium — verdaderamente all-inclusive premium, butler service, alcohol top-shelf incluido."
                 : "The traveler seeking the highest tier of premium river cruising — truly all-inclusive premium, butler service, top-shelf alcohol included."}
             </p>
             <p>
@@ -196,7 +196,7 @@ const Post = () => {
             </p>
             <p>
               {isEs
-                ? "¿Por qué el cruce fluvial está creciendo tanto? Lee "
+                ? "¿Por qué el crucero de río está creciendo tanto? Lee "
                 : "Why is river cruising growing so fast? Read "}
               <Link
                 to={localPath("/blog/river-cruising-new-generation")}
@@ -222,7 +222,7 @@ const Post = () => {
                   className="text-gold hover:text-gold-light underline"
                 >
                   {isEs
-                    ? "Cruceros fluviales desde Puerto Rico"
+                    ? "Cruceros de río desde Puerto Rico"
                     : "Luxury river cruises from Puerto Rico"}
                 </Link>
               </li>
@@ -253,7 +253,7 @@ const Post = () => {
               to={localPath("/cruceros-fluviales-de-lujo-desde-puerto-rico")}
               className="inline-flex items-center gap-2 px-8 py-4 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-[0.15em] uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105"
             >
-              {isEs ? "Ver cruceros Fluviales" : "View River cruises"}
+              {isEs ? "Ver cruceros de río" : "View River cruises"}
             </Link>
           </div>
         </div>

@@ -360,7 +360,7 @@ const WhatLuxuryTravelMeans = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "En SJU Luxe Travel, creemos que todos merecen acceso a ese tipo de viaje—porque la oportunidad nunca debería sentirse exclusiva. Desde San Juan, Puerto Rico, hemos diseñado lunas de miel en Maldivas, safaris en Sudáfrica, cruceros fluviales por el Danubio y escapadas cortas a Europa — siempre con el mismo principio: el lujo es la experiencia, no la etiqueta."
+                ? "En SJU Luxe Travel, creemos que todos merecen acceso a ese tipo de viaje—porque la oportunidad nunca debería sentirse exclusiva. Desde San Juan, Puerto Rico, hemos diseñado lunas de miel en Maldivas, safaris en Sudáfrica, cruceros de río por el Danubio y escapadas cortas a Europa — siempre con el mismo principio: el lujo es la experiencia, no la etiqueta."
                 : "At SJU Luxe Travel, we believe everyone deserves access to that kind of travel—because opportunity should never feel exclusive. From San Juan, Puerto Rico, we've designed honeymoons in the Maldives, South African safaris, Danube river cruises, and short European getaways — always with the same principle: is the experience, not the label."}
             </p>
 
@@ -456,7 +456,7 @@ const WhatLuxuryTravelMeans = () => {
                   className="text-gold hover:text-gold-light underline"
                 >
                   {isEs
-                    ? "Cruceros fluviales: la nueva generación de viajeros"
+                    ? "Cruceros de río: la nueva generación de viajeros"
                     : "River cruising: the new generation of travelers"}
                 </Link>
               </li>

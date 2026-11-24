@@ -122,7 +122,7 @@ const Post = () => {
                     "Luna de miel o aniversario importante",
                     "Cualquier viaje a Maldivas, Polinesia, África o Asia",
                     "Itinerario multi-destino (3+ países)",
-                    "Crucero o fluvial",
+                    "Crucero oceánico o de río",
                     "Viaje familiar con 6+ personas",
                     "Cuando el precio total supera $10,000",
                   ]

@@ -226,9 +226,9 @@ const crucerosDeLujo = () => {
           <RelatedArticles
             items={[
               {
-                title: "Crucero fluvial por el Duero desde Puerto Rico",
+                title: "Crucero de río por el Duero desde Puerto Rico",
                 href: "/blog/crucero-fluvial-duero-desde-puerto-rico",
-                category: "Cruceros Fluviales",
+                category: "Cruceros de Río",
               },
               {
                 title: "¿Vale la pena un agente de viajes en 2026?",

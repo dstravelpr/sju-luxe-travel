@@ -9,9 +9,9 @@ import heroImg from "@/assets/rivers/douro.png";
 const schemaJson = buildGraph({
   "@type": "BlogPosting",
   headline:
-    "Crucero Fluvial por el Duero desde Puerto Rico: Portugal desde el Río",
+    "Crucero de Río por el Duero desde Puerto Rico: Portugal desde el Río",
   description:
-    "Guía completa para hacer un crucero fluvial por el Duero desde Puerto Rico: navieras, rutas de vuelo, mejor temporada y experiencias de bodega en el valle vinícola más antiguo del mundo.",
+    "Guía completa para hacer un crucero de río por el Duero desde Puerto Rico: navieras, rutas de vuelo, mejor temporada y experiencias de bodega en el valle vinícola más antiguo del mundo.",
   author: AUTHOR,
   publisher: ORG_REF,
   datePublished: "2026-07-08",
@@ -31,14 +31,14 @@ const Post = () => {
       <SEOHead
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/crucero-fluvial-duero.jpg"
-        title="Crucero Fluvial por el Duero desde Puerto Rico | SJU Luxe"
+        title="Crucero de Río por el Duero desde Puerto Rico | SJU Luxe"
         description="Planifica un crucero por el Duero desde San Juan: navieras, rutas de vuelo, mejor temporada y experiencias de bodega en Portugal."
         canonical="https://www.sjuluxetravel.com/blog/crucero-fluvial-duero-desde-puerto-rico"
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
           {
-            name: "Crucero Fluvial por el Duero desde Puerto Rico: Portugal desde el Río",
+            name: "Crucero de Río por el Duero desde Puerto Rico: Portugal desde el Río",
             url: "https://www.sjuluxetravel.com/blog/crucero-fluvial-duero-desde-puerto-rico",
           },
         ]}
@@ -57,10 +57,10 @@ const Post = () => {
 
           <div className="mb-10">
             <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">
-              Cruceros Fluviales
+              Cruceros de Río
             </span>
             <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">
-              crucero Fluvial por el Duero desde Puerto Rico: Portugal desde el
+              crucero de río por el Duero desde Puerto Rico: Portugal desde el
               Río
             </h1>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
@@ -90,7 +90,7 @@ const Post = () => {
           <div className="aspect-[16/9] overflow-hidden rounded-lg gold-border mb-12">
             <img
               src={heroImg}
-              alt="Crucero fluvial por el valle del Duero en Portugal"
+              alt="Crucero de río por el valle del Duero en Portugal"
               className="w-full h-full object-cover"
               width={1600}
               height={900}
@@ -99,7 +99,7 @@ const Post = () => {
 
           <div className="prose-custom space-y-6 text-muted-foreground text-base leading-relaxed">
             <p className="text-lg text-foreground/90">
-              De todos los cruceros fluviales que reservamos desde Puerto Rico,
+              De todos los cruceros de río que reservamos desde Puerto Rico,
               el Duero es el que más sorprende a los clientes. Es un río corto,
               íntimo, tallado en un valle de terrazas vinícolas que la UNESCO
               protege como Patrimonio de la Humanidad — y se navega sin las
@@ -132,7 +132,7 @@ const Post = () => {
             </h2>
 
             <p>
-              Para una comparativa lado a lado con las otras líneas fluviales
+              Para una comparativa lado a lado con las otras líneas de cruceros de río
               del mercado, lee nuestra{" "}
               <Link
                 to={localPath(
@@ -290,7 +290,7 @@ const Post = () => {
                   )}
                   className="text-gold hover:text-gold-light underline"
                 >
-                  Cruceros fluviales desde Puerto Rico — todos los ríos
+                  Cruceros de río desde Puerto Rico — todos los ríos
                 </Link>
               </li>
               <li className="flex items-start gap-3">
@@ -337,7 +337,7 @@ const Post = () => {
               to={localPath("/cruceros-fluviales-de-lujo-desde-puerto-rico")}
               className="inline-flex items-center gap-2 px-8 py-4 bg-gold-gradient text-primary-foreground font-body text-xs font-semibold tracking-[0.15em] uppercase rounded-sm transition-all duration-300 hover:shadow-[0_0_30px_-5px_hsl(43,74%,49%,0.5)] hover:scale-105"
             >
-              Ver cruceros Fluviales
+              Ver cruceros de río
             </Link>
           </div>
         </div>

@@ -180,7 +180,7 @@ const faqPageEs = {
       name: "¿Qué tipos de viajes planifica SJU Luxe Travel?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nos especializamos en viajes internacionales, cruceros desde San Juan, cruceros fluviales por Europa, lunas de miel exclusivas y viajes corporativos de incentivo.",
+        text: "Nos especializamos en viajes internacionales, cruceros desde San Juan, cruceros de río por Europa, lunas de miel exclusivas y viajes corporativos de incentivo.",
       },
     },
   ],

@@ -95,12 +95,12 @@ const RiverCruisingNewGeneration = () => {
         schemaJson={schemaJson}
         title={
           isEs
-            ? "Cruceros Fluviales: Ya No Son Solo Para Tus Padres"
+            ? "Cruceros de Río: Ya No Son Solo Para Tus Padres"
             : "River Cruising Isn't Just for Your Parents Anymore"
         }
         description={
           isEs
-            ? "El 84% de viajeros menores de 35 quiere hacer un crucero fluvial. Un agente de viaje personalizado explica por qué y cómo aprovecharlo."
+            ? "El 84% de viajeros menores de 35 quiere hacer un crucero de río. Un agente de viaje personalizado explica por qué y cómo aprovecharlo."
             : "84% of travelers under 35 want to take a river cruise. A travel agent explains why — and how to get the most out of the experience."
         }
         canonical="https://www.sjuluxetravel.com/blog/river-cruising-new-generation"
@@ -126,11 +126,11 @@ const RiverCruisingNewGeneration = () => {
 
           <div className="mb-10">
             <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">
-              {isEs ? "Cruceros Fluviales" : "River Cruising"}
+              {isEs ? "Cruceros de Río" : "River Cruising"}
             </span>
             <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">
               {isEs
-                ? "Los cruceros fluviales ya no son solo para tus padres — y eso lo cambia todo"
+                ? "Los cruceros de río ya no son solo para tus padres — y eso lo cambia todo"
                 : "River Cruising Isn't Just for Your Parents Anymore — And That Changes Everything"}
             </h1>
             <p className="font-heading text-xl md:text-2xl text-muted-foreground italic mb-6">
@@ -172,7 +172,7 @@ const RiverCruisingNewGeneration = () => {
               src={heroImg}
               alt={
                 isEs
-                  ? "Crucero fluvial navegando el Danubio al atardecer junto a un castillo y viñedos"
+                  ? "Crucero de río navegando el Danubio al atardecer junto a un castillo y viñedos"
                   : "River cruise ship sailing the Danube at sunset past a castle and vineyards"
               }
               className="w-full h-full object-cover"
@@ -192,8 +192,8 @@ const RiverCruisingNewGeneration = () => {
             <ul className="space-y-2 text-muted-foreground text-sm leading-relaxed list-none">
               {(isEs
                 ? [
-                    "Gen X y Millennials son el segmento de más rápido crecimiento en cruceros fluviales según CLIA.",
-                    "Los pasajeros de cruceros fluviales en Norteamérica crecieron más de 20% interanual.",
+                    "Gen X y Millennials son el segmento de más rápido crecimiento en cruceros de río según CLIA.",
+                    "Los pasajeros de cruceros de río en Norteamérica crecieron más de 20% interanual.",
                     "Todo está incluido: cabina, comidas, vinos, excursiones y traslados.",
                     "El Danubio, el Rin, el Duero y el Mekong son los itinerarios estrella.",
                   ]
@@ -230,7 +230,7 @@ const RiverCruisingNewGeneration = () => {
                 CLIA
               </a>
               {isEs
-                ? ' (Cruise Lines International Association), los pasajeros de cruceros fluviales en Norteamérica crecieron más de 20% interanual, y Gen X y Millennials son el segmento de más rápido crecimiento. No es una curiosidad de nicho — es una generación entera de viajeros estadounidenses diciendo "sí, eso me interesa."'
+                ? ' (Cruise Lines International Association), los pasajeros de cruceros de río en Norteamérica crecieron más de 20% interanual, y Gen X y Millennials son el segmento de más rápido crecimiento. No es una curiosidad de nicho — es una generación entera de viajeros estadounidenses diciendo "sí, eso me interesa."'
                 : " (Cruise Lines International Association), North American river cruise passengers grew more than 20% year over year, with Gen X and Millennials as the fastest-growing demographic. That's not a niche curiosity — that's a whole generation of U.S. travelers saying, \"Yeah, I actually want this.\""}
             </p>
 
@@ -246,7 +246,7 @@ const RiverCruisingNewGeneration = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Un crucero fluvial te da todo eso sin el dolor de cabeza. Te despiertas en una ciudad nueva. Bajas del barco y estás en el centro — no en un puerto industrial a 45 minutos de todo. Exploras, comes bien, te unes a una excursión local o simplemente caminas por tu cuenta. Regresas, cenas increíble, y mientras duermes ya estás navegando hacia el próximo destino. Eso no es el viaje de tus abuelos — eso es viajar de manera inteligente."
+                ? "Un crucero de río te da todo eso sin el dolor de cabeza. Te despiertas en una ciudad nueva. Bajas del barco y estás en el centro — no en un puerto industrial a 45 minutos de todo. Exploras, comes bien, te unes a una excursión local o simplemente caminas por tu cuenta. Regresas, cenas increíble, y mientras duermes ya estás navegando hacia el próximo destino. Eso no es el viaje de tus abuelos — eso es viajar de manera inteligente."
                 : "River cruising checks every one of those boxes. You wake up in a new city. You walk off the ship into the heart of town — not some industrial port 45 minutes from anything interesting. You explore, eat well, maybe join a local excursion or just wander on your own. Then you come back, have a great dinner, and float to the next destination while you sleep."}
             </p>
 
@@ -258,7 +258,7 @@ const RiverCruisingNewGeneration = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Aquí es donde la cosa se pone interesante — y donde yo veo una oportunidad que casi nadie está aprovechando. Esa misma encuesta reveló que solo el nueve por ciento de las personas que nunca han hecho un crucero fluvial piensan que es buen valor comparado con un viaje por tierra. Nueve por ciento. Pero entre los que ya lo han hecho, ese número sube a 36 por ciento."
+                ? "Aquí es donde la cosa se pone interesante — y donde yo veo una oportunidad que casi nadie está aprovechando. Esa misma encuesta reveló que solo el nueve por ciento de las personas que nunca han hecho un crucero de río piensan que es buen valor comparado con un viaje por tierra. Nueve por ciento. Pero entre los que ya lo han hecho, ese número sube a 36 por ciento."
                 : "That same survey found that only 9% of people who haven't taken a river cruise think it's good value compared to a land-based trip. But among people who've actually done one? That number jumps to 36%. The product delivers. The industry is just doing a terrible job of communicating why it's worth the investment before someone books."}
             </p>
 
@@ -273,7 +273,7 @@ const RiverCruisingNewGeneration = () => {
                 {isEs ? "agente de viaje" : "Travel Agent"}
               </Link>
               {isEs
-                ? '. Un cliente me dice: "Miré cruceros fluviales, pero me parecen caros." Y entonces lo desglosamos juntos: tu camarote, todas las comidas (y hablo de comida de verdad, no un buffet genérico), vinos con la cena, excursiones guiadas, traslados — todo incluido. Ahora cotiza hacer ese mismo itinerario por tu cuenta. Vuelos entre ciudades, hoteles en cada destino, restaurantes, taxis, entradas, propinas. Nueve de cada diez veces, el crucero fluvial sale mejor. Lo que pasa es que no lo ves a primera vista porque el precio aparece como un solo número grande en vez de cincuenta pequeños.'
+                ? '. Un cliente me dice: "Miré cruceros de río, pero me parecen caros." Y entonces lo desglosamos juntos: tu camarote, todas las comidas (y hablo de comida de verdad, no un buffet genérico), vinos con la cena, excursiones guiadas, traslados — todo incluido. Ahora cotiza hacer ese mismo itinerario por tu cuenta. Vuelos entre ciudades, hoteles en cada destino, restaurantes, taxis, entradas, propinas. Nueve de cada diez veces, el crucero de río sale mejor. Lo que pasa es que no lo ves a primera vista porque el precio aparece como un solo número grande en vez de cincuenta pequeños.'
                 : ', I see this every day: a client says, "river cruises seem expensive." Then we break it down — cabin, all meals (and I mean good meals), wine with dinner, guided excursions, transfers — all included. Now price out the same itinerary on your own: flights between cities, hotels, restaurants, taxis, entrance fees, tips. Nine times out of ten, the river cruise is the better deal.'}
             </p>
 
@@ -285,7 +285,7 @@ const RiverCruisingNewGeneration = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? 'Las líneas de cruceros fluviales también están evolucionando. El modelo viejo de "aquí es tu hora de cenar, aquí es tu excursión, estate en el bus a las 8 AM" está desapareciendo. Los barcos y los itinerarios más nuevos te dan opciones reales — cenas cuando quieras, te saltas el tour grupal y exploras solo, o escoges entre varias excursiones que realmente van contigo.'
+                ? 'Las líneas de cruceros de río también están evolucionando. El modelo viejo de "aquí es tu hora de cenar, aquí es tu excursión, estate en el bus a las 8 AM" está desapareciendo. Los barcos y los itinerarios más nuevos te dan opciones reales — cenas cuando quieras, te saltas el tour grupal y exploras solo, o escoges entre varias excursiones que realmente van contigo.'
                 : "River cruise lines are catching on. The old model of \"here's your dinner time, here's your excursion, be on the bus at 8 AM\" is fading fast. The newer itineraries give you real choice — dine when you want, skip the group tour, or pick from multiple excursions that match your interests. That's huge for travelers who don't want to feel locked into someone else's schedule."}
             </p>
 
@@ -303,7 +303,7 @@ const RiverCruisingNewGeneration = () => {
 
             <p className="text-muted-foreground text-base leading-relaxed">
               {isEs
-                ? "Si tienes menos de 45 años y nunca has considerado un crucero fluvial, probablemente estás trabajando con suposiciones que ya no aplican. Esto no se trata de actividades para jubilados ni cenas a las cinco de la tarde. Se trata de amanecer en Burdeos, pasar la tarde en un viñedo familiar, y llegar a un pueblo completamente diferente por la mañana — todo sin hacer una sola maleta."
+                ? "Si tienes menos de 45 años y nunca has considerado un crucero de río, probablemente estás trabajando con suposiciones que ya no aplican. Esto no se trata de actividades para jubilados ni cenas a las cinco de la tarde. Se trata de amanecer en Burdeos, pasar la tarde en un viñedo familiar, y llegar a un pueblo completamente diferente por la mañana — todo sin hacer una sola maleta."
                 : "If you're under 45 and you've never considered a river cruise, you're probably working with outdated assumptions. The Danube, the Rhine, the "}
               {!isEs && (
                 <Link
@@ -339,21 +339,21 @@ const RiverCruisingNewGeneration = () => {
 
             <p className="text-foreground text-lg leading-relaxed font-heading italic">
               {isEs
-                ? "Esto es lo que sé después de una década planificando viajes personalizados por seis continentes: los mejores viajes son los que no te hacen pensar en logística. Simplemente estás ahí, presente, disfrutando cada momento. Los cruceros fluviales logran eso mejor que casi cualquier otra experiencia que he visto — y el hecho de que una nueva generación lo esté descubriendo es algo que me entusiasma de verdad."
+                ? "Esto es lo que sé después de una década planificando viajes personalizados por seis continentes: los mejores viajes son los que no te hacen pensar en logística. Simplemente estás ahí, presente, disfrutando cada momento. Los cruceros de río logran eso mejor que casi cualquier otra experiencia que he visto — y el hecho de que una nueva generación lo esté descubriendo es algo que me entusiasma de verdad."
                 : "The best trips are the ones where you're not thinking about logistics. You're just there, fully present. River cruising does that better than almost anything else."}
             </p>
 
             {/* FAQ */}
             <h2 className="font-heading text-2xl text-foreground mt-12">
               {isEs
-                ? "Preguntas Frecuentes sobre cruceros Fluviales"
+                ? "Preguntas Frecuentes sobre cruceros de río"
                 : "River cruise FAQs"}
             </h2>
             <div className="space-y-5">
               <div>
                 <h3 className="font-heading text-lg text-foreground mb-2">
                   {isEs
-                    ? "¿Son los cruceros fluviales para viajeros jóvenes?"
+                    ? "¿Son los cruceros de río para viajeros jóvenes?"
                     : "Are river cruises good for younger travelers?"}
                 </h3>
                 <p className="text-muted-foreground text-base leading-relaxed">
@@ -365,7 +365,7 @@ const RiverCruisingNewGeneration = () => {
               <div>
                 <h3 className="font-heading text-lg text-foreground mb-2">
                   {isEs
-                    ? "¿Cuál línea fluvial es la mejor?"
+                    ? "¿Cuál línea de cruceros de río es la mejor?"
                     : "Which river cruise line is best?"}
                 </h3>
                 <p className="text-muted-foreground text-base leading-relaxed">
@@ -377,7 +377,7 @@ const RiverCruisingNewGeneration = () => {
               <div>
                 <h3 className="font-heading text-lg text-foreground mb-2">
                   {isEs
-                    ? "¿Qué incluye un crucero fluvial?"
+                    ? "¿Qué incluye un crucero de río?"
                     : "What's included in a river cruise?"}
                 </h3>
                 <p className="text-muted-foreground text-base leading-relaxed">
@@ -389,7 +389,7 @@ const RiverCruisingNewGeneration = () => {
               <div>
                 <h3 className="font-heading text-lg text-foreground mb-2">
                   {isEs
-                    ? "¿Cuáles son los mejores destinos fluviales?"
+                    ? "¿Cuáles son los mejores destinos de cruceros de río?"
                     : "What are the best river cruise destinations?"}
                 </h3>
                 <p className="text-muted-foreground text-base leading-relaxed">
@@ -401,7 +401,7 @@ const RiverCruisingNewGeneration = () => {
               <div>
                 <h3 className="font-heading text-lg text-foreground mb-2">
                   {isEs
-                    ? "¿Cómo reservo un crucero fluvial desde Puerto Rico?"
+                    ? "¿Cómo reservo un crucero de río desde Puerto Rico?"
                     : "How do I book a river cruise from Puerto Rico?"}
                 </h3>
                 <p className="text-muted-foreground text-base leading-relaxed">
@@ -426,7 +426,7 @@ const RiverCruisingNewGeneration = () => {
                   className="text-gold hover:text-gold-light underline"
                 >
                   {isEs
-                    ? "Cruceros fluviales desde Puerto Rico"
+                    ? "Cruceros de río desde Puerto Rico"
                     : "Luxury river cruises from Puerto Rico"}
                 </Link>
               </li>
@@ -517,7 +517,7 @@ const RiverCruisingNewGeneration = () => {
             </h3>
             <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">
               {isEs
-                ? "Hablemos. Sin presión, sin compromiso — solo una conversación para ver si un crucero fluvial encaja con lo que realmente estás buscando."
+                ? "Hablemos. Sin presión, sin compromiso — solo una conversación para ver si un crucero de río encaja con lo que realmente estás buscando."
                 : "Let's talk. No pressure, no commitment — just a conversation about whether river cruising fits what you're actually looking for."}
             </p>
             <Link
@@ -532,7 +532,7 @@ const RiverCruisingNewGeneration = () => {
           <div className="mt-12 pt-8 border-t border-gold/20">
             <p className="text-muted-foreground text-sm leading-relaxed">
               {isEs
-                ? "Daniel Santiago Díaz es el fundador de SJU Luxe Travel, una agencia de viajes boutique en San Juan, Puerto Rico. Como especialista certificado en cruceros fluviales y agente independiente de NCM Concierge, diseña itinerarios a medida para viajeros en Estados Unidos, el Caribe y América Latina."
+                ? "Daniel Santiago Díaz es el fundador de SJU Luxe Travel, una agencia de viajes boutique en San Juan, Puerto Rico. Como especialista certificado en cruceros de río y agente independiente de NCM Concierge, diseña itinerarios a medida para viajeros en Estados Unidos, el Caribe y América Latina."
                 : "Daniel Santiago Díaz is the founder of SJU Luxe Travel, a boutique travel agency based in San Juan, Puerto Rico. As a certified river cruise specialist and independent agent of NCM Concierge, he designs bespoke river cruise itineraries for travelers across the US, Caribbean, and Latin America."}
             </p>
             <p className="text-gold text-sm mt-2">www.sjuluxetravel.com</p>
