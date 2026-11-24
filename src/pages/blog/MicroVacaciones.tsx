@@ -208,7 +208,7 @@ const MicroVacaciones = () => {
                 ? [
                     "Un fin de semana largo en Europa",
                     "Una escapada rápida al Caribe",
-                    "Una breve estancia en un complejo turístico",
+                    "Una estadía corta en un resort",
                   ]
                 : [
                     "A long weekend in Europe",
@@ -246,7 +246,7 @@ const MicroVacaciones = () => {
               {(isEs
                 ? [
                     "El exceso de equipaje y el consumo excesivo",
-                    "Estancias prolongadas en destinos muy concurridos",
+                    "Estadías largas en destinos muy concurridos",
                     "El cansancio del viaje (que a menudo lleva a un consumo excesivo)",
                   ]
                 : [
@@ -389,7 +389,7 @@ const MicroVacaciones = () => {
               {(isEs
                 ? [
                     "Una planificación fluida",
-                    "El hotel o complejo turístico adecuado",
+                    "El hotel o resort adecuado",
                     "Experiencias que se viven con naturalidad",
                   ]
                 : [
@@ -651,7 +651,7 @@ const MicroVacaciones = () => {
             </h3>
             <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">
               {isEs
-                ? "Ya sea una escapada rápida al Caribe, un fin de semana largo en Europa o una estancia corta perfectamente organizada, una buena planificación marca la diferencia."
+                ? "Ya sea una escapada rápida al Caribe, un fin de semana largo en Europa o una estadía corta perfectamente organizada, una buena planificación marca la diferencia."
                 : "Whether it's a quick Caribbean escape, a long European weekend, or a perfectly curated short stay, great planning makes all the difference."}
             </p>
             <Link

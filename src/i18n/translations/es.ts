@@ -97,7 +97,7 @@ export const es: typeof en = {
         "Viaja con confianza sabiendo que tu inversión está protegida. Te guiamos a través de opciones integrales de seguro de viaje y abogamos en tu nombre si los planes cambian o surgen problemas durante tu viaje.",
       luxuryAccommodations: "Alojamientos excepcionales",
       luxuryAccommodationsDesc:
-        "Hoteles boutique seleccionados a mano, resorts cinco estrellas y villas privadas elegidas por su servicio excepcional, ubicaciones impresionantes y carácter auténtico. Te emparejamos con alojamientos que elevan cada estancia.",
+        "Hoteles boutique seleccionados a mano, resorts cinco estrellas y villas privadas elegidas por su servicio excepcional, ubicaciones impresionantes y carácter auténtico. Te emparejamos con alojamientos que elevan cada estadía.",
     },
     destinationsLabel: "Destacados",
     destinationsTitle: "Destinos",
@@ -871,7 +871,7 @@ export const es: typeof en = {
       ],
       [
         "Francia — El Sena y el Ródano",
-        "El Sena conecta París con las playas históricas de Normandía. El Ródano une Lyon, Aviñón y la Provenza. Ideal para el viajero francófilo o para quienes quieren combinar el crucero con estancia en París.",
+        "El Sena conecta París con las playas históricas de Normandía. El Ródano une Lyon, Aviñón y la Provenza. Ideal para el viajero francófilo o para quienes quieren combinar el crucero con una estadía en París.",
       ],
       [
         "Portugal — El Duero",
