@@ -157,13 +157,6 @@ const GROUPS: { tier: Tier; sailings: [string, string, string, string, string][]
         [
           "Ritz-Carlton Evrima",
           "Ritz-Carlton Yacht Collection",
-          "12 nov 2026",
-          "San Juan → Ciudad de Panamá, Panamá",
-          "7 noches",
-        ],
-        [
-          "Ritz-Carlton Evrima",
-          "Ritz-Carlton Yacht Collection",
           "10 nov 2027",
           "San Juan → Ciudad de Panamá, Panamá",
           "7 noches",
@@ -179,7 +172,7 @@ const INFO_CARDS = [
   },
   {
     label: "¿Por Qué Salir desde San Juan?",
-    body: "Puerto Rico es territorio de EE.UU. — los americanos embarcan sin pasaporte. Sin vuelo previo a Miami o Nueva York. Aborda directamente desde el histórico Puerto de San Juan.",
+    body: "Sales directo desde Puerto Rico, sin vuelo previo a Miami o Nueva York. Aborda en el histórico Puerto de San Juan. Lleva pasaporte vigente: estas travesías terminan en otro país.",
   },
   {
     label: "Cómo Te Ayudamos",
@@ -202,9 +195,9 @@ const CrucerosReposicionamiento = () => {
     <Layout>
       <SEOHead
         title="Cruceros de Reposicionamiento desde San Juan | SJU Luxe Travel"
-        description="Descubre las 15 travesías de reposicionamiento disponibles desde San Juan, Puerto Rico — desde Mejor Valor hasta Ultra-Lujo. Agencia de viajes personalizados en todo presupuesto."
+        description="Descubre las 14 travesías de reposicionamiento disponibles desde San Juan, Puerto Rico — desde Mejor Valor hasta Ultra-Lujo. Agencia de viajes personalizados en todo presupuesto."
         titleEs="Cruceros de Reposicionamiento desde San Juan | SJU Luxe Travel"
-        descriptionEs="Descubre las 15 travesías de reposicionamiento disponibles desde San Juan, Puerto Rico — desde Mejor Valor hasta Ultra-Lujo. Agencia de viajes personalizados en todo presupuesto."
+        descriptionEs="Descubre las 14 travesías de reposicionamiento disponibles desde San Juan, Puerto Rico — desde Mejor Valor hasta Ultra-Lujo. Agencia de viajes personalizados en todo presupuesto."
         canonical={PAGE_URL}
         schemaJson={schema}
       />
@@ -220,7 +213,7 @@ const CrucerosReposicionamiento = () => {
                 Cruceros de Reposicionamiento desde San Juan
               </h1>
               <p className="text-muted-foreground font-body text-sm md:text-base mt-4">
-                15 travesías disponibles · Nov 2026 – Apr 2028 · 7 líneas de
+                14 travesías disponibles · Mar 2027 – Abr 2028 · 7 líneas de
                 cruceros · Ordenadas por valor
               </p>
             </div>
