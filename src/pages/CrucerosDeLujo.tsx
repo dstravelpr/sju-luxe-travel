@@ -18,6 +18,10 @@ import oceaniaImg from "@/assets/ocean/oceania.png";
 import ritzCarltonImg from "@/assets/ocean/ritz-carlton.jpg";
 import virginImg from "@/assets/ocean/virgin.jpg";
 import genericShipImg from "@/assets/blog-repositioning-cruise.jpg";
+import royalCaribbeanAsset from "@/assets/royal-caribbean-san-juan.jpg.asset.json";
+import celebrityAsset from "@/assets/celebrity-cruises-san-juan.jpg.asset.json";
+import carnivalAsset from "@/assets/carnival-san-juan.jpg.asset.json";
+import mscAsset from "@/assets/msc-cruises-san-juan.jpg.asset.json";
 import virginCertImg from "@/assets/ocean/virgin-cert.png";
 
 import { ORG_REF, WEBSITE_REF, buildGraph, breadcrumbList } from "@/lib/schema";
@@ -74,13 +78,13 @@ const FAQ_ITEMS = [
 ];
 
 const popularLines = [
-  { name: "Royal Caribbean", es: "Barcos grandes con muchas actividades, ideales para familias y grupos. Tiene salidas frecuentes desde San Juan por el Caribe Sur.", en: "Big ships packed with activities, great for families and groups. Frequent San Juan departures to the Southern Caribbean." },
-  { name: "Celebrity Cruises", es: "Ambiente moderno y relajado, buena comida y camarotes cómodos. Navega el Caribe con salidas desde San Juan en temporada.", en: "Modern, relaxed atmosphere, great dining and comfortable staterooms. Seasonal Caribbean sailings from San Juan." },
-  { name: "MSC Cruises", es: "Estilo mediterráneo y tarifas para distintos presupuestos; buena opción para familias.", en: "Mediterranean style with fares for different budgets; a good fit for families." },
-  { name: "Norwegian Cruise Line", es: "Sin horarios fijos para cenar y mucha flexibilidad a bordo. Opera itinerarios por el Caribe.", en: "No fixed dining times and plenty of flexibility on board. Sails Caribbean itineraries." },
-  { name: "Carnival", es: "Ambiente divertido y precios accesibles, perfecto para un primer crucero o un viaje con amistades.", en: "Fun atmosphere and accessible fares, perfect for a first cruise or a trip with friends." },
-  { name: "Princess Cruises", es: "Ritmo tranquilo, buen servicio y opciones para parejas y familias.", en: "Calm pace, attentive service and options for couples and families." },
-  { name: "Disney Cruise Line", es: "Pensado para familias con niños, con personajes y entretenimiento. Coordino el vuelo al puerto de salida.", en: "Designed for families with kids, with characters and shows. I coordinate the flight to the departure port." },
+  { name: "Royal Caribbean", img: royalCaribbeanAsset.url, es: "Barcos grandes con muchas actividades, ideales para familias y grupos. Tiene salidas frecuentes desde San Juan por el Caribe Sur.", en: "Big ships packed with activities, great for families and groups. Frequent San Juan departures to the Southern Caribbean." },
+  { name: "Celebrity Cruises", img: celebrityAsset.url, es: "Ambiente moderno y relajado, buena comida y camarotes cómodos. Navega el Caribe con salidas desde San Juan en temporada.", en: "Modern, relaxed atmosphere, great dining and comfortable staterooms. Seasonal Caribbean sailings from San Juan." },
+  { name: "MSC Cruises", img: mscAsset.url, es: "Estilo mediterráneo y tarifas para distintos presupuestos; buena opción para familias.", en: "Mediterranean style with fares for different budgets; a good fit for families." },
+  { name: "Norwegian Cruise Line", img: null as string | null, es: "Sin horarios fijos para cenar y mucha flexibilidad a bordo. Opera itinerarios por el Caribe.", en: "No fixed dining times and plenty of flexibility on board. Sails Caribbean itineraries." },
+  { name: "Carnival", img: carnivalAsset.url, es: "Ambiente divertido y precios accesibles, perfecto para un primer crucero o un viaje con amistades.", en: "Fun atmosphere and accessible fares, perfect for a first cruise or a trip with friends." },
+  { name: "Princess Cruises", img: null as string | null, es: "Ritmo tranquilo, buen servicio y opciones para parejas y familias.", en: "Calm pace, attentive service and options for couples and families." },
+  { name: "Disney Cruise Line", img: null as string | null, es: "Pensado para familias con niños, con personajes y entretenimiento. Coordino el vuelo al puerto de salida.", en: "Designed for families with kids, with characters and shows. I coordinate the flight to the departure port." },
 ];
 
 const crucerosDeLujo = () => {
@@ -187,7 +191,7 @@ const crucerosDeLujo = () => {
         <div className="container mx-auto px-6 max-w-6xl">
           <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 list-none mt-8">
             {[
-              ...popularLines.map((l) => ({ key: l.name, title: l.name, img: genericShipImg, desc: language === "es" ? l.es : l.en })),
+              ...popularLines.map((l) => ({ key: l.name, title: l.name, img: l.img ?? genericShipImg, desc: language === "es" ? l.es : l.en })),
               ...lineKeys.map((key) => ({ key, title: d.lines[key].title, img: lineImages[key] ?? genericShipImg, desc: d.lines[key].desc })),
             ].map((c) => (
               <li key={c.key} className="bg-card gold-border rounded-lg overflow-hidden flex flex-col">
@@ -206,6 +210,20 @@ const crucerosDeLujo = () => {
               </li>
             ))}
           </ul>
+          <p className="mt-6 text-xs text-muted-foreground/70 leading-relaxed">
+            {language === "es" ? "Créditos de fotos: " : "Photo credits: "}
+            Royal Caribbean: FEMA / Kenneth C. Wilsey,{" "}
+            <a href="https://commons.wikimedia.org/wiki/File:Harmony_of_the_Seas_docked_in_San_Juan_January_23,_2018.jpg" target="_blank" rel="noopener noreferrer" className="underline">Wikimedia Commons</a>
+            {language === "es" ? " (dominio público)" : " (public domain)"}. Celebrity Cruises: Master0Garfield,{" "}
+            <a href="https://commons.wikimedia.org/wiki/File:Celebrity_Edge_Jan_28_2020.png" target="_blank" rel="noopener noreferrer" className="underline">Wikimedia Commons</a>
+            {language === "es" ? " (dominio público)" : " (public domain)"}. Carnival: Thank You (23 Millions+) views / prayitnophotography,{" "}
+            <a href="https://commons.wikimedia.org/wiki/File:Carnival_Conquest1.jpg" target="_blank" rel="noopener noreferrer" className="underline">Wikimedia Commons</a>,{" "}
+            <a href="https://creativecommons.org/licenses/by/2.0/" target="_blank" rel="noopener noreferrer" className="underline">CC BY 2.0</a>
+            {language === "es" ? " (recortada y redimensionada)" : " (cropped and resized)"}. MSC Cruises: P. Hughes,{" "}
+            <a href="https://commons.wikimedia.org/wiki/File:San_Juan_-_Cruise_ship_entering_harbor.jpg" target="_blank" rel="noopener noreferrer" className="underline">Wikimedia Commons</a>,{" "}
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" className="underline">CC BY-SA 4.0</a>
+            {language === "es" ? " (recortada y redimensionada)" : " (cropped and resized)"}.
+          </p>
         </div>
         <div className="container mx-auto px-6 max-w-3xl">
           <div className="prose-custom space-y-6">
