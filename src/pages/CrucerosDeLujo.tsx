@@ -56,7 +56,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "¿Qué líneas de cruceros salen desde San Juan, Puerto Rico?",
-    a: "Desde el Puerto de San Juan operan itinerarios de líneas como Regent Seven Seas, Silversea, Oceania cruises y Celebrity cruises, con destinos al Caribe, Sudamérica y el Atlántico.",
+    a: "Desde el Puerto de San Juan operan itinerarios de líneas como Regent Seven Seas, Silversea, Oceania Cruises y Celebrity Cruises, con destinos al Caribe, Sudamérica y el Atlántico.",
   },
   {
     q: "¿Qué incluye la tarifa de un crucero?",

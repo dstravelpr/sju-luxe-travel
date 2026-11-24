@@ -29,7 +29,7 @@ const schemaJson = buildGraph(
       "Douro river cruise",
       "AmaWaterways",
       "Avalon Waterways",
-      "Riverside Luxury cruises",
+      "Riverside Luxury Cruises",
       "river cruise for young travelers",
     ],
     url: "https://www.sjuluxetravel.com/blog/river-cruising-new-generation",
@@ -52,7 +52,7 @@ const schemaJson = buildGraph(
         name: "Which river cruise line is best?",
         acceptedAnswer: {
           "@type": "Answer",
-          text: "AmaWaterways for active gourmet travelers (onboard bikes, Michelin-recognized dining). Avalon Waterways for biggest panoramic views and flexible excursion choices. Riverside Luxury cruises (former Crystal River) for top-tier all-inclusive luxury with butler service. The right line depends on your travel style.",
+          text: "AmaWaterways for active gourmet travelers (onboard bikes, Michelin-recognized dining). Avalon Waterways for biggest panoramic views and flexible excursion choices. Riverside Luxury Cruises (former Crystal River) for top-tier all-inclusive luxury with butler service. The right line depends on your travel style.",
         },
       },
       {
@@ -370,8 +370,8 @@ const RiverCruisingNewGeneration = () => {
                 </h3>
                 <p className="text-muted-foreground text-base leading-relaxed">
                   {isEs
-                    ? "AmaWaterways para gourmet activo. Avalon Waterways para vistas y flexibilidad. Riverside Luxury cruises (ex-Crystal) para el lujo más alto con servicio butler."
-                    : "AmaWaterways for active gourmet. Avalon Waterways for views and flexibility. Riverside Luxury cruises (former Crystal) for top-tier luxury with butler service."}
+                    ? "AmaWaterways para gourmet activo. Avalon Waterways para vistas y flexibilidad. Riverside Luxury Cruises (ex-Crystal) para el lujo más alto con servicio butler."
+                    : "AmaWaterways for active gourmet. Avalon Waterways for views and flexibility. Riverside Luxury Cruises (former Crystal) for top-tier luxury with butler service."}
                 </p>
               </div>
               <div>

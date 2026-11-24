@@ -741,15 +741,15 @@ export const es: typeof en = {
         desc: "Solo para adultos. Sin buffet, sin horarios fijos, sin el ambiente familiar del crucero convencional. Sus barcos tipo Scarlet Lady ofrecen más de 20 restaurantes incluidos en la tarifa, spa Redemption, entretenimiento curado y un ambiente que apela al viajero millennial y Gen X que rechaza el crucero tradicional. Tiene salidas desde San Juan al Caribe programadas para 2027.",
       },
       azamara: {
-        title: "Azamara cruises",
+        title: "Azamara Cruises",
         desc: "Especialistas en cruceros de inmersión cultural con estadías nocturnas en puerto. Sus barcos de tamaño medio (menos de 700 pasajeros) atracan cuando los demás ya han zarpado, permitiéndote vivir la ciudad de noche. Excelente opción para el viajero que quiere profundidad en cada destino, no solo un día de excursión.",
       },
       crystal: {
-        title: "Crystal cruises",
+        title: "Crystal Cruises",
         desc: "Regresaron renovados en 2023 tras su relanzamiento y están de vuelta en el Caribe. Sinónimo histórico de ultra-lujo en el mar: servicio de mayordomo, todo incluido premium y una clientela fiel que los ha seguido por décadas. Sus camarotes y suites figuran entre los más espaciosos del segmento.",
       },
       oceania: {
-        title: "Oceania cruises",
+        title: "Oceania Cruises",
         desc: "Para el viajero que pone la gastronomía primero. Barcos boutique, cocina de autor con el programa Culinary Center a bordo y destinos boutique que los barcos grandes no pueden visitar. Sus rutas desde San Juan hacia el Caribe sur son perfectas para quienes ya conocen el Caribe convencional.",
       },
       regent: {
@@ -761,7 +761,7 @@ export const es: typeof en = {
         desc: "Elegancia europea y servicio ultra-personalizado. Sus barcos de expedición abren puertas a la Antártida, Galápagos y el Ártico, mientras que su flota clásica cubre el Caribe con el refinamiento que los distingue. Todo suite, todo incluido.",
       },
       viking: {
-        title: "Viking Ocean cruises",
+        title: "Viking Ocean Cruises",
         desc: "Sin casinos, sin espectáculos masivos, sin niños. Solo destinos, historia y gastronomía. Sus barcos uniformes de 930 pasajeros ofrecen conferencias a bordo, excursiones culturales incluidas y una clientela que viaja para aprender, no solo para descansar.",
       },
       seabourn: {
@@ -828,10 +828,10 @@ export const es: typeof en = {
     certifications: [
       "AmaWaterways — Agente Certificado",
       "Avalon Waterways — Agente Certificado",
-      "Riverside Luxury cruises — Agente Certificado",
+      "Riverside Luxury Cruises — Agente Certificado",
     ],
     introP:
-      "Los cruceros de río o river cruises son la forma más íntima y cultural de explorar Europa, Asia, Egipto y Sudamérica. Como agente de viaje certificado por <strong>AmaWaterways</strong>, <strong>Avalon Waterways</strong> y <strong>Riverside Luxury cruises</strong>, tengo acceso a tarifas preferenciales, beneficios exclusivos a bordo y el conocimiento especializado para ayudarte a elegir la línea y el itinerario perfectos para ti. Desde San Juan, coordino todo: vuelo, hotel pre-crucero, traslados y el crucero completo.",
+      "Los cruceros de río o river cruises son la forma más íntima y cultural de explorar Europa, Asia, Egipto y Sudamérica. Como agente de viaje certificado por <strong>AmaWaterways</strong>, <strong>Avalon Waterways</strong> y <strong>Riverside Luxury Cruises</strong>, tengo acceso a tarifas preferenciales, beneficios exclusivos a bordo y el conocimiento especializado para ayudarte a elegir la línea y el itinerario perfectos para ti. Desde San Juan, coordino todo: vuelo, hotel pre-crucero, traslados y el crucero completo.",
     h2Different: "¿Por Qué los cruceros de río Son Diferentes?",
     differentP:
       "Un crucero de río no es un crucero oceánico en pequeño — es una experiencia completamente distinta. Los barcos tienen entre 100 y 190 pasajeros máximo, lo que significa un servicio personalizado que los grandes barcos no pueden ofrecer. Navegas por el corazón de ciudades históricas — amarras en el centro de Viena, Budapest, Ámsterdam o París, a pasos de los museos, catedrales y mercados locales. No hay días en alta mar: cada mañana despiertas en un puerto nuevo. Y a diferencia del crucero oceánico, el crucero de río está diseñado para el viajero curioso que quiere profundidad cultural, no entretenimiento a bordo.",
@@ -844,19 +844,19 @@ export const es: typeof en = {
     avalonTitle: "Avalon Waterways — Certificación Oficial",
     avalonDesc:
       'Pioneros en el concepto de "Suite Ship" con camarotes que se transforman en un balcón abierto de pared a pared. Itinerarios en Europa, Sudamérica (Galápagos y Amazonas) y Asia (Mekong). Sus barcos en el Danubio y el Rin combinan diseño contemporáneo con un enfoque en experiencias locales auténticas. Excelente opción para viajeros que buscan modernidad y flexibilidad en sus excursiones.',
-    riversideTitle: "Riverside Luxury cruises — Certificación Oficial",
+    riversideTitle: "Riverside Luxury Cruises — Certificación Oficial",
     riversideDesc:
       "La propuesta más reciente y exclusiva del segmento. Buques diseñados con un estándar superior: suites más amplias, gastronomía de nivel superior y ratio de tripulación por pasajero de los más altos del mercado. Sus itinerarios europeos por el Rin y el Danubio son ideales para el viajero de Puerto Rico que busca la experiencia en crucero de río más refinada disponible.",
     h2OtherLines: "Otras Líneas de Cruceros de Río de Primer Nivel",
     otherLinesIntro:
-      "Además de mis certificaciones, trabajo con todo el espectro dlos cruceros de río premium:",
-    vikingTitle: "Viking River cruises",
+      "Además de mis certificaciones, trabajo con todo el espectro de los cruceros de río premium:",
+    vikingTitle: "Viking River Cruises",
     vikingDesc:
       "El líder del mercado por volumen. Precios todo incluido competitivos, itinerarios en casi todos los ríos principales del mundo y una experiencia cultural muy sólida. Ideal para una primera experiencia en crucero de río.",
-    uniworldTitle: "Uniworld Boutique River cruises",
+    uniworldTitle: "Uniworld Boutique River Cruises",
     uniworldDesc:
       "Cada barco es un hotel boutique flotante único, con obras de arte originales y decoración personalizada. Sus rutas por el Sena (París a Normandía) y el Ganges son las más exclusivas del mercado.",
-    scenicTitle: "Scenic Luxury cruises",
+    scenicTitle: "Scenic Luxury Cruises",
     scenicDesc:
       "Los camarotes más grandes del segmento de cruceros de río europeo, con bañera de hidromasaje y balcón privado. Precio todo incluido con bebidas premium, excursiones y propinas incluidas.",
     h2Destinations: "Destinos de Cruceros de Río que No Te Puedes Perder",

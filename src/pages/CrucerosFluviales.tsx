@@ -44,7 +44,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "¿Las excursiones en tierra están incluidas en el precio?",
-    a: "En las líneas de cruceros de río como AmaWaterways, Avalon, y Riverside Luxury cruises, las excursiones guiadas en cada puerto de escala suelen estar incluidas. Lo confirmamos según la línea y categoría seleccionada.",
+    a: "En las líneas de cruceros de río como AmaWaterways, Avalon, y Riverside Luxury Cruises, las excursiones guiadas en cada puerto de escala suelen estar incluidas. Lo confirmamos según la línea y categoría seleccionada.",
   },
 ];
 
@@ -86,9 +86,9 @@ const crucerosFluviales = () => {
     <Layout>
       <SEOHead
         title="River cruises from Puerto Rico | SJU Luxe Travel"
-        description="Plan your river cruise from PR with a certified AmaWaterways, Avalon and Riverside Luxury cruises travel agent."
+        description="Plan your river cruise from PR with a certified AmaWaterways, Avalon and Riverside Luxury Cruises travel agent."
         titleEs="Cruceros de Río desde PR | SJU Luxe Travel"
-        descriptionEs="Planifica tu crucero de río desde PR con un agente certificado por AmaWaterways, Avalon y Riverside Luxury cruises."
+        descriptionEs="Planifica tu crucero de río desde PR con un agente certificado por AmaWaterways, Avalon y Riverside Luxury Cruises."
         schemaJson={schema}
         emitHreflang
       />
@@ -181,14 +181,14 @@ const crucerosFluviales = () => {
             <div className="aspect-[4/3] overflow-hidden rounded-lg border border-border/30 mt-3 mb-4">
               <img
                 src={riversidePhoto}
-                alt="Riverside Luxury cruises panoramic suite with river view"
+                alt="Riverside Luxury Cruises panoramic suite with river view"
                 loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
             </div>
             <img
               src={riversideLogo}
-              alt="Riverside Luxury cruises Specialist"
+              alt="Riverside Luxury Cruises Specialist"
               className="w-28 rounded-full mb-4 mx-auto"
             />
             <p className="text-muted-foreground text-base leading-relaxed">

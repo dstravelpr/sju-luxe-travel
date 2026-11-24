@@ -11,7 +11,7 @@ const schemaJson = buildGraph({
   "@type": "BlogPosting",
   headline: "Cruceros de Río: AmaWaterways vs Avalon vs Riverside",
   description:
-    "Comparativa completa entre AmaWaterways, Avalon Waterways y Riverside Luxury cruises para viajeros desde Puerto Rico.",
+    "Comparativa completa entre AmaWaterways, Avalon Waterways y Riverside Luxury Cruises para viajeros desde Puerto Rico.",
   author: AUTHOR,
   publisher: ORG_REF,
   datePublished: "2026-05-29",
@@ -30,7 +30,7 @@ const Post = () => {
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/cruceros-fluviales.jpg"
         title="Cruceros de Río: AmaWaterways vs Avalon vs Riverside"
-        description="Compara AmaWaterways, Avalon Waterways y Riverside Luxury cruises. Diferencias en barcos, itinerarios, gastronomía y precio para viajeros de PR."
+        description="Compara AmaWaterways, Avalon Waterways y Riverside Luxury Cruises. Diferencias en barcos, itinerarios, gastronomía y precio para viajeros de PR."
         canonical="https://www.sjuluxetravel.com/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside"
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
@@ -58,7 +58,7 @@ const Post = () => {
             <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">
               {isEs
                 ? "Cruceros de Río: AmaWaterways vs Avalon vs Riverside"
-                : "River cruises: AmaWaterways vs Avalon vs Riverside"}
+                : "River Cruises: AmaWaterways vs Avalon vs Riverside"}
             </h1>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
               <Link
@@ -159,14 +159,14 @@ const Post = () => {
             </p>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              Riverside Luxury cruises
+              Riverside Luxury Cruises
             </h2>
             <p>
               <strong className="text-foreground">
                 {isEs ? "Mejor para:" : "Best for:"}
               </strong>{" "}
               {isEs
-                ? "el viajero que busca el escalón más alto dlos cruceros de río premium — verdaderamente all-inclusive premium, butler service, alcohol top-shelf incluido."
+                ? "el viajero que busca el escalón más alto de los cruceros de río premium — verdaderamente all-inclusive premium, butler service, alcohol top-shelf incluido."
                 : "The traveler seeking the highest tier of premium river cruising — truly all-inclusive premium, butler service, top-shelf alcohol included."}
             </p>
             <p>
@@ -182,8 +182,8 @@ const Post = () => {
                 {isEs ? "Diferencial:" : "Differentiator:"}
               </strong>{" "}
               {isEs
-                ? "barcos recién renovados (ex-Crystal River cruises), ratio personal/huésped de casi 1:1."
-                : "Newly refurbished ships (former Crystal River cruises), nearly 1:1 staff-to-guest ratio."}
+                ? "barcos recién renovados (ex-Crystal River Cruises), ratio personal/huésped de casi 1:1."
+                : "Newly refurbished ships (former Crystal River Cruises), nearly 1:1 staff-to-guest ratio."}
             </p>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">

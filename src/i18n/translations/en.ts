@@ -9,8 +9,8 @@ export const en = {
     tripsFromPR: "Trips from Puerto Rico",
     honeymoon: "Honeymoon",
     luxuryCruises: "Cruises",
-    riverCruises: "River cruises",
-    repositioningCruises: "Repositioning cruises",
+    riverCruises: "River Cruises",
+    repositioningCruises: "Repositioning Cruises",
     maldives: "Maldives",
     portugal: "Portugal",
     mexico: "Mexico",
@@ -605,7 +605,7 @@ export const en = {
     occasionsP:
       "From Puerto Rico, we plan bespoke travel for: honeymoons, anniversaries and couples' getaways, destination weddings, family adventures, wellness retreats, women-only trips, and corporate and incentive travel.",
     cruisesLink: "Interested in cruises? Explore our",
-    oceanCruises: "Ocean cruises",
+    oceanCruises: "Ocean Cruises",
     andText: "And",
     riverCruises: "River cruises through Europe, Asia, and beyond",
     ctaTitle: "Ready to plan your next",
@@ -738,15 +738,15 @@ export const en = {
         desc: "Adults only. No buffet, no fixed schedules, no family-cruise atmosphere. Their Scarlet Lady-type ships offer more than 20 restaurants included in the fare, Redemption Spa, curated entertainment, and an atmosphere that appeals to millennial and Gen X Discerning Travelers who reject the traditional cruise. It has Caribbean sailings from San Juan scheduled for 2027.",
       },
       azamara: {
-        title: "Azamara cruises",
+        title: "Azamara Cruises",
         desc: "Specialists in cultural immersion cruises with overnight port stays. Their mid-size ships (under 700 passengers) dock when everyone else has sailed, allowing you to experience the city at night. Excellent option for travelers who want depth at each destination.",
       },
       crystal: {
-        title: "Crystal cruises",
+        title: "Crystal Cruises",
         desc: "Returned renovated in 2023 after their relaunch and are back in the Caribbean. A historic synonym for ultra-at sea: butler service, premium all-inclusive, and a loyal clientele that has followed them for decades. Their cabins and suites are among the most spacious in the segment.",
       },
       oceania: {
-        title: "Oceania cruises",
+        title: "Oceania Cruises",
         desc: "For the traveler who puts gastronomy first. Boutique ships, signature cuisine with the onboard Culinary Center program, and boutique destinations that large ships can't visit. Their routes from San Juan to the southern Caribbean are perfect for those who already know the conventional Caribbean.",
       },
       regent: {
@@ -758,7 +758,7 @@ export const en = {
         desc: "European elegance and ultra-personalized service. Their expedition ships open doors to Antarctica, Galápagos, and the Arctic, while their classic fleet covers the Caribbean with the refinement that distinguishes them. All-suite, all-inclusive.",
       },
       viking: {
-        title: "Viking Ocean cruises",
+        title: "Viking Ocean Cruises",
         desc: "No casinos, no massive shows, no children. Just destinations, history, and gastronomy. Their uniform 930-passenger ships offer onboard lectures, included cultural excursions, and a clientele that travels to learn, not just to rest.",
       },
       seabourn: {
@@ -786,11 +786,11 @@ export const en = {
         "Cross the Atlantic to Spain, Portugal, or the Canary Islands",
       ],
       [
-        "Repositioning cruises",
+        "Repositioning Cruises",
         "Reduced rates on long itineraries from San Juan to Europe or the Mediterranean",
       ],
     ],
-    h2Groups: "Group cruises from Puerto Rico",
+    h2Groups: "Group Cruises from Puerto Rico",
     groupsIntro:
       "Celebrating a special birthday, honeymoon, anniversary, or family reunion? We coordinate group cruises with:",
     groupItems: [
@@ -808,7 +808,7 @@ export const en = {
       "Private transfer from your home to the port",
       "Pre-cruise dinner at one of San Juan's best restaurants",
     ],
-    h2FAQ: "Frequently Asked Questions About cruises from San Juan",
+    h2FAQ: "Frequently Asked Questions About Cruises from San Juan",
     faqQ1: "Which cruise lines sail from San Juan in 2027?",
     faqA1:
       "For 2027, San Juan has scheduled sailings from lines such as Ritz-Carlton Yacht Collection, Explora Journeys, Virgin Voyages, Azamara, Crystal, Oceania, Regent Seven Seas, Silversea, Viking and SeaDream, plus well-known lines like Royal Caribbean, Celebrity and MSC depending on the season. Dates change, so we confirm them before booking. As a travel agent specializing in cruises from Puerto Rico, I help you compare options, access preferential rates, and choose the line that best fits your travel style and budget.",
@@ -821,17 +821,17 @@ export const en = {
     ctaButton: "Free cruise Consultation",
   },
   crucerosFluviales: {
-    label: "River cruises",
-    h1: "River cruises from Puerto Rico —",
+    label: "River Cruises",
+    h1: "River Cruises from Puerto Rico —",
     h1Highlight: "Your Certified travel agent",
     certifications: [
       "AmaWaterways — Certified Agent",
       "Avalon Waterways — Certified Agent",
-      "Riverside cruises — Certified Agent",
+      "Riverside Luxury Cruises — Certified Agent",
     ],
     introP:
-      "River cruises are the most intimate and cultural way to explore Europe, Asia, Egypt, and South America. As a travel agent certified by <strong>AmaWaterways</strong>, <strong>Avalon Waterways</strong>, and <strong>Riverside cruises</strong>, I have access to preferential rates, exclusive onboard benefits, and specialized knowledge to help you choose the perfect line and itinerary. From San Juan, I coordinate everything: flights, pre-cruise hotel, transfers, and the complete cruise.",
-    h2Different: "Why Are River cruises Different?",
+      "River cruises are the most intimate and cultural way to explore Europe, Asia, Egypt, and South America. As a travel agent certified by <strong>AmaWaterways</strong>, <strong>Avalon Waterways</strong>, and <strong>Riverside Luxury Cruises</strong>, I have access to preferential rates, exclusive onboard benefits, and specialized knowledge to help you choose the perfect line and itinerary. From San Juan, I coordinate everything: flights, pre-cruise hotel, transfers, and the complete cruise.",
+    h2Different: "Why Are River Cruises Different?",
     differentP:
       "A river cruise is not a small ocean cruise — it's a completely different experience. Ships have between 100 and 190 passengers maximum, meaning personalized service that large ships can't offer. You sail through the heart of historic cities — docking in the center of Vienna, Budapest, Amsterdam, or Paris, steps from museums, cathedrals, and local markets. There are no days at sea: every morning you wake up in a new port. And unlike ocean cruises, river cruises are designed for the curious traveler who wants cultural depth, not onboard entertainment.",
     h2Certifications: "Lines I Work With — Official Certifications",
@@ -843,19 +843,19 @@ export const en = {
     avalonTitle: "Avalon Waterways — Official Certification",
     avalonDesc:
       'Pioneers of the "Suite Ship" concept with cabins that transform into a wall-to-wall open balcony. Itineraries in Europe, South America (Galápagos and Amazon), and Asia (Mekong). Their ships on the Danube and Rhine combine contemporary design with a focus on authentic local experiences. Excellent option for travelers seeking modernity and flexibility.',
-    riversideTitle: "Riverside cruises — Official Certification",
+    riversideTitle: "Riverside Luxury Cruises — Official Certification",
     riversideDesc:
       "The most recent and exclusive proposition in the segment. Vessels designed to a superior standard: larger suites, superior gastronomy, and one of the highest crew-to-passenger ratios on the market. Their European itineraries on the Rhine and Danube are ideal for the Puerto Rico traveler seeking the most refined river experience available.",
     h2OtherLines: "Other Top-Tier River Lines",
     otherLinesIntro:
       "In addition to my certifications, I work with the full spectrum of premium river cruising:",
-    vikingTitle: "Viking River cruises",
+    vikingTitle: "Viking River Cruises",
     vikingDesc:
       "The market leader by volume. Competitive all-inclusive pricing, itineraries on almost every major river in the world, and a very solid cultural experience. Ideal for a first river cruise experience.",
-    uniworldTitle: "Uniworld Boutique River cruises",
+    uniworldTitle: "Uniworld Boutique River Cruises",
     uniworldDesc:
       "Each ship is a unique floating boutique hotel, with original artworks and personalized décor. Their Seine (Paris to Normandy) and Ganges routes are the most exclusive on the market.",
-    scenicTitle: "Scenic cruises",
+    scenicTitle: "Scenic Luxury Cruises",
     scenicDesc:
       "The largest cabins in the European river segment, with jacuzzi and private balcony. All-inclusive pricing with premium beverages, excursions, and gratuities included.",
     h2Destinations: "Must-Visit River Destinations",
@@ -898,7 +898,7 @@ export const en = {
     ],
     logisticsP:
       "You can book just the cruise if you prefer to manage flights on your own, or let me put together the complete package. Most of my clients prefer the package — it eliminates logistical stress and often ends up being more economical than booking each component separately.",
-    h2FAQ: "Frequently Asked Questions About River cruises",
+    h2FAQ: "Frequently Asked Questions About River Cruises",
     faqItems: [
       {
         q: "How is a river cruise different from an ocean cruise?",
