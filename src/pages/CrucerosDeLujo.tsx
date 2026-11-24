@@ -22,6 +22,7 @@ import royalCaribbeanAsset from "@/assets/royal-caribbean-san-juan.jpg.asset.jso
 import celebrityAsset from "@/assets/celebrity-cruises-san-juan.jpg.asset.json";
 import carnivalAsset from "@/assets/carnival-san-juan.jpg.asset.json";
 import mscAsset from "@/assets/msc-cruises-san-juan.jpg.asset.json";
+import princessAsset from "@/assets/princess-cruises-san-juan.png.asset.json";
 import virginCertImg from "@/assets/ocean/virgin-cert.png";
 
 import { ORG_REF, WEBSITE_REF, buildGraph, breadcrumbList } from "@/lib/schema";
@@ -83,7 +84,7 @@ const popularLines = [
   { name: "MSC Cruises", img: mscAsset.url, es: "Estilo mediterráneo y tarifas para distintos presupuestos; buena opción para familias.", en: "Mediterranean style with fares for different budgets; a good fit for families." },
   { name: "Norwegian Cruise Line", img: null as string | null, es: "Sin horarios fijos para cenar y mucha flexibilidad a bordo. Opera itinerarios por el Caribe.", en: "No fixed dining times and plenty of flexibility on board. Sails Caribbean itineraries." },
   { name: "Carnival", img: carnivalAsset.url, es: "Ambiente divertido y precios accesibles, perfecto para un primer crucero o un viaje con amistades.", en: "Fun atmosphere and accessible fares, perfect for a first cruise or a trip with friends." },
-  { name: "Princess Cruises", img: null as string | null, es: "Ritmo tranquilo, buen servicio y opciones para parejas y familias.", en: "Calm pace, attentive service and options for couples and families." },
+  { name: "Princess Cruises", img: princessAsset.url, es: "Ritmo tranquilo, buen servicio y opciones para parejas y familias.", en: "Calm pace, attentive service and options for couples and families." },
   { name: "Disney Cruise Line", img: null as string | null, es: "Pensado para familias con niños, con personajes y entretenimiento. Coordino el vuelo al puerto de salida.", en: "Designed for families with kids, with characters and shows. I coordinate the flight to the departure port." },
 ];
 
