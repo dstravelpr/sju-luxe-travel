@@ -10,3 +10,7 @@
 - [ ] Publish through the existing custom-domain deployment: domain is not linked to this Lovable project.
 - [ ] Owner email notifications: no verified sending domain.
 - [ ] Send outreach / run ads: recipient permission, offer, budget and audience not supplied; contact delivery remains unverified.
+
+## Concierge planning-fee clarification
+- [x] Clarify planning costs in the existing EN/ES concierge article without fixed prices or an unconfirmed fee policy.
+- [x] Align visible answers, structured information and route snapshots; verify both languages.

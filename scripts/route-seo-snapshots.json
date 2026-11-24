@@ -1283,9 +1283,9 @@
   },
   "/blog/servicios-concierge-viaje": {
     "title": "Travel Concierge: Services and Costs | SJU Luxe Travel",
-    "description": "What does a travel concierge do? Explore planning, bookings, transfers and costs, and decide what support you need for your trip from Puerto Rico.",
+    "description": "Travel concierge from Puerto Rico: explore planning services, understand travel planning fees and learn what to confirm before paying.",
     "h1": "Travel Concierge Services: What They Are, What's Included & Why They're Worth It",
-    "body": "Last updated: July 23, 2026 \"Travel concierge\" sounds abstract, but it means something very concrete: someone who handles the details before, during and after your trip. Here's what a good concierge actually includes from Puerto Rico. A travel agent helps compare and book options. Concierge coordination adds support with the itinerary, transfers and other agreed details. Confirm the services, fees and contact arrangements in your proposal; benefits depend on the provider and booking. Worth it when the trip is complex enough (multi-destination, honeymoons, major anniversaries, high-value business travel) or when you simply don't want to spend 20+ hours planning. For Miami weekends, no. At SJU Luxe Travel we don't charge concierge fees for itineraries — we're compensated by our hotel and cruise partners. Only for highly complex itineraries do we charge a planning fee, always confirmed up front.",
+    "body": "Last updated: November 24, 2026 \"Travel concierge\" sounds abstract, but it means something very concrete: someone who handles the details before, during and after your trip. Here's what a good concierge actually includes from Puerto Rico. A travel agent helps compare and book options. Concierge coordination adds support with the itinerary, transfers and other agreed details. Confirm the services, fees and contact arrangements in your proposal; benefits depend on the provider and booking. Worth it when the trip is complex enough (multi-destination, honeymoons, major anniversaries, high-value business travel) or when you simply don't want to spend 20+ hours planning. For Miami weekends, no. To find out whether your trip requires a planning fee, contact Daniel Santiago Díaz, a travel agent at SJU Luxe Travel in Puerto Rico, before requesting itinerary development. Confirm whether a fee applies, its amount and the services it covers before authorizing paid work. Do not assume planning is free or that every trip carries the same fee. A planning fee, when applicable, pays for the research, itinerary design and coordination agreed with your travel agent. It is separate from the cost of flights, hotels, cruises and excursions. The scope of work can vary with destinations, trip length, traveler count, lead time and requested revisions; confirm how your trip is assessed. Request the amount, included services, number of proposals or revisions, payment timing, and change and refund conditions in writing. Ask whether the fee is credited toward your trip or paid separately. Do not assume it covers supplier charges, cancellations or assistance beyond the agreed scope. If you're evaluating a complex trip, book a Consultation with our travel agent or explore our Personalized trips from Puerto Rico. It is personalized support with planning and coordinating trip details. Confirm the scope, costs and availability of assistance with your travel agent before engaging the service. It may include itinerary design, bookings, transfer coordination and recommendations. Specific services and benefits depend on the proposal, provider and booking; not every service is included in every trip. A travel agent helps compare and book options. Concierge coordination may add support with the itinerary and other agreed details. The terms can overlap; compare included services rather than assuming a title guarantees a level of assistance. Ready to travel with real concierge service? Explore our personalized travel services → Share your dates, destinations and budget to discuss services and any applicable planning fee. A travel concierge service is personal help before and during your trip: a travel agent helps you plan, compare options, book and handle changes, based on your interests and budget. It means having one person take care of the details for you. For travel, that includes itineraries, flights, hotels, cruises, transfers and recommendations. No. Travel is not a luxury, it's an opportunity: personal planning helps at any budget, from a cruise out of San Juan to a honeymoon. Tell me your dates, group size and budget. I'll share options before anything is booked.",
     "canonical": "https://www.sjuluxetravel.com/blog/servicios-concierge-viaje",
     "robots": "index, follow",
     "image": "https://www.sjuluxetravel.com/og/servicios-concierge-viaje.jpg",
@@ -1294,20 +1294,92 @@
         "@context": "https://schema.org",
         "@graph": [
           {
+            "@type": [
+              "Organization",
+              "TravelAgency",
+              "LocalBusiness"
+            ],
+            "@id": "https://www.sjuluxetravel.com/#organization",
+            "name": "SJU Luxe Travel",
+            "url": "https://www.sjuluxetravel.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.sjuluxetravel.com/logo.png"
+            },
+            "telephone": "+16179355714",
+            "email": "info@sjuluxetravel.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "San Juan",
+              "addressRegion": "PR",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 18.4528361,
+              "longitude": -66.0635516
+            },
+            "hasMap": "https://www.google.com/maps/place/SJU+Luxe+Travel/@18.4528361,-66.0635516,17z",
+            "areaServed": {
+              "@type": "State",
+              "name": "Puerto Rico"
+            },
+            "priceRange": "$$$",
+            "serviceType": "Travel agency",
+            "description": "Travel agency based in San Juan, Puerto Rico, helping Puerto Rico residents plan trips abroad for every budget: cruises, honeymoons, family trips, adventures and custom itineraries.",
+            "sameAs": [
+              "https://www.instagram.com/sjuluxetravel",
+              "https://www.facebook.com/sjuluxetravel",
+              "https://www.linkedin.com/company/sju-luxe-travel",
+              "https://www.google.com/maps/place/SJU+Luxe+Travel/@18.4528361,-66.0635516,17z",
+              "https://www.travelleaders.com/agent/501399?ref=search&slctState=PR",
+              "https://maps.apple.com/p/.bHFuB9NFWe9Nz"
+            ],
+            "potentialAction": {
+              "@type": "ReserveAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.sjuluxetravel.com/contact",
+                "actionPlatform": [
+                  "http://schema.org/DesktopWebPlatform",
+                  "http://schema.org/MobileWebPlatform"
+                ]
+              },
+              "result": {
+                "@type": "Reservation",
+                "name": "Travel Consultation"
+              }
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.sjuluxetravel.com/#website",
+            "url": "https://www.sjuluxetravel.com",
+            "name": "SJU Luxe Travel",
+            "publisher": {
+              "@id": "https://www.sjuluxetravel.com/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
             "@type": "BlogPosting",
-            "headline": "Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena",
-            "description": "Guía completa de servicios de concierge de viaje: qué es un travel concierge, qué incluye (reservas VIP, upgrades, asistencia 24/7) y cómo acceder gratis con un agente en Puerto Rico.",
+            "headline": "Travel Concierge Services: What They Are, What's Included & Why They're Worth It",
+            "description": "Travel concierge from Puerto Rico: explore planning services, understand travel planning fees and learn what to confirm before paying.",
             "author": {
               "@type": "Person",
               "name": "Daniel Santiago Díaz",
               "url": "https://www.sjuluxetravel.com/about",
-              "jobTitle": "Travel agent"
+              "jobTitle": "Travel Agent"
             },
             "publisher": {
               "@id": "https://www.sjuluxetravel.com/#organization"
             },
             "datePublished": "2026-05-29",
-            "dateModified": "2026-07-23",
+            "dateModified": "2026-11-24",
             "inLanguage": "en",
             "url": "https://www.sjuluxetravel.com/blog/servicios-concierge-viaje"
           }
@@ -1343,34 +1415,50 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "¿Qué es un servicio de concierge de viaje?",
+            "name": "What is a travel concierge service?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Un servicio de concierge de viaje es un profesional que se encarga de planificar, coordinar y resolver cada detalle de tu viaje —desde el diseño del itinerario hasta la asistencia 24/7 mientras estás fuera. En vez de que tú corras detrás de reservas, vuelos y cambios de última hora, un concierge lo hace por ti con acceso a contactos y beneficios que no aparecen en las páginas públicas."
+              "text": "It is personalized support with planning and coordinating trip details. Confirm the scope, costs and availability of assistance with your travel agent before engaging the service."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Qué incluye un servicio de concierge de viaje?",
+            "name": "What does a travel concierge service include?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Incluye diseño de itinerario a la medida, reservas VIP en hoteles y restaurantes con estrella Michelin, tours privados con guías locales, coordinación de visados y documentación, transferencias privadas y asistencia 24/7 en español e inglés durante el viaje. También cubre upgrades de habitación, amenidades de cortesía y re-booking inmediato si hay cancelaciones o cambios."
+              "text": "It may include itinerary design, bookings, transfer coordination and recommendations. Specific services and benefits depend on the proposal, provider and booking; not every service is included in every trip."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Cuánto cuesta un travel concierge?",
+            "name": "What is the difference between a concierge and a travel agent?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "En SJU Luxe Travel el servicio de concierge está incluido —no cobramos honorarios para itinerarios a medida porque somos compensados directamente por nuestros hoteles y cruceros partners. Ofrecemos una consulta inicial gratuita para evaluar tu viaje, y solo en casos de itinerarios extremadamente complejos aplicamos un fee de planificación, siempre confirmado al inicio."
+              "text": "A travel agent helps compare and book options. Concierge coordination may add support with the itinerary and other agreed details. The terms can overlap; compare included services rather than assuming a title guarantees a level of assistance."
             }
           },
           {
             "@type": "Question",
-            "name": "¿Cuál es la diferencia entre un concierge y un agente de viaje?",
+            "name": "Does SJU Luxe Travel charge a travel planning fee?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Un agente de viaje tradicional se enfoca principalmente en reservar vuelos, hoteles y paquetes al mejor precio. Un concierge de viaje va mucho más allá: diseña la experiencia completa, negocia beneficios exclusivos, coordina cada detalle en tierra y te acompaña 24/7 durante el viaje. En la práctica, todo buen concierge también es agente de viaje, pero no todo agente de viaje ofrece servicio de concierge real."
+              "text": "To find out whether your trip requires a planning fee, contact Daniel Santiago Díaz, a travel agent at SJU Luxe Travel in Puerto Rico, before requesting itinerary development. Confirm whether a fee applies, its amount and the services it covers before authorizing paid work. Do not assume planning is free or that every trip carries the same fee."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a planning fee, and what can affect its cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A planning fee, when applicable, pays for the research, itinerary design and coordination agreed with your travel agent. It is separate from the cost of flights, hotels, cruises and excursions. The scope of work can vary with destinations, trip length, traveler count, lead time and requested revisions; confirm how your trip is assessed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I confirm before paying a travel planning fee?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Request the amount, included services, number of proposals or revisions, payment timing, and change and refund conditions in writing. Ask whether the fee is credited toward your trip or paid separately. Do not assume it covers supplier charges, cancellations or assistance beyond the agreed scope."
             }
           }
         ]
@@ -3152,9 +3240,9 @@
   },
   "/es/blog/servicios-concierge-viaje": {
     "title": "Travel Concierge: Qué Incluye y Cuánto Cuesta | SJU Luxe",
-    "description": "Qué hace un travel concierge: reservas, upgrades, traslados y ayuda 24/7 durante tu viaje. Descubre si te conviene y cómo funciona desde Puerto Rico.",
+    "description": "Servicios de concierge de viaje desde Puerto Rico: qué incluye la planificación, qué es un cargo por planificación y qué confirmar antes de pagar.",
     "h1": "Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena",
-    "body": "Última actualización: 23 de julio de 2026 \"Servicio de concierge de viaje\" suena abstracto, pero significa algo muy concreto: alguien que se encarga de los detalles antes, durante y después de tu viaje. Esto es lo que realmente incluye un buen concierge desde Puerto Rico. Un agente de viaje ayuda a comparar y reservar opciones. La coordinación concierge añade apoyo con el itinerario, traslados y otros detalles acordados. Confirma qué servicios incluye tu propuesta, sus costos y cómo contactar al equipo durante el viaje; los beneficios dependen del proveedor y la reserva. Vale cuando el viaje es lo suficientemente complejo (multi-destino, lunas de miel, aniversarios importantes, viajes de negocios de alto valor) o cuando simplemente no quieres dedicarle 20+ horas a planificarlo. Para fines de semana en Miami, no. En SJU Luxe Travel no cobramos honorarios de concierge para itinerarios a medida — somos compensados por nuestros hoteles y cruceros partners. Solo para itinerarios muy complejos cobramos un fee de planificación, siempre confirmado al inicio.",
+    "body": "Última actualización: 24 de noviembre de 2026 \"Servicio de concierge de viaje\" suena abstracto, pero significa algo muy concreto: alguien que se encarga de los detalles antes, durante y después de tu viaje. Esto es lo que realmente incluye un buen concierge desde Puerto Rico. Un agente de viaje ayuda a comparar y reservar opciones. La coordinación concierge añade apoyo con el itinerario, traslados y otros detalles acordados. Confirma qué servicios incluye tu propuesta, sus costos y cómo contactar al equipo durante el viaje; los beneficios dependen del proveedor y la reserva. Vale cuando el viaje es lo suficientemente complejo (multi-destino, lunas de miel, aniversarios importantes, viajes de negocios de alto valor) o cuando simplemente no quieres dedicarle 20+ horas a planificarlo. Para fines de semana en Miami, no. Para saber si tu viaje requiere un cargo por planificación, consulta con Daniel Santiago Díaz, agente de viaje de SJU Luxe Travel en Puerto Rico, antes de solicitar el desarrollo de tu itinerario. Confirma si aplica un cargo, su importe y los servicios que cubre antes de autorizar trabajo con costo. No asumas que la planificación es gratuita ni que todos los viajes tienen el mismo cargo. Un cargo por planificación, cuando aplica, remunera el trabajo de investigación, diseño del itinerario y coordinación acordado con el agente de viaje. Es distinto del costo de vuelos, hoteles, cruceros y excursiones. El alcance del trabajo puede variar según los destinos, la duración, la cantidad de viajeros, la anticipación y las revisiones solicitadas; confirma cómo se evalúa tu caso. Solicita por escrito el importe, los servicios incluidos, la cantidad de propuestas o revisiones, el momento del pago y las condiciones de cambios y reembolsos. Pregunta si el cargo se acredita al costo del viaje o se paga por separado. No des por hecho que incluye cargos de proveedores, cancelaciones o asistencia fuera del alcance acordado. Si estás evaluando un viaje complejo, agenda una consulta con nuestro agente de viaje o explora nuestros viajes personalizados desde Puerto Rico. Es apoyo personalizado para planificar y coordinar los detalles de un viaje. El alcance, los costos y la disponibilidad de asistencia deben confirmarse con el agente de viaje antes de contratar el servicio. Puede incluir diseño del itinerario, reservas, coordinación de traslados y recomendaciones. Los servicios y beneficios concretos dependen de la propuesta, el proveedor y la reserva; no todos los servicios están incluidos en todos los viajes. Un agente de viaje ayuda a comparar y reservar opciones. La coordinación concierge puede añadir apoyo con el itinerario y otros detalles acordados. Los términos pueden solaparse; compara los servicios incluidos en lugar de asumir que el título garantiza un nivel de asistencia. ¿Listo para viajar con servicio concierge real? Explora nuestros servicios de viajes personalizados → Comparte tus fechas, destinos y presupuesto para consultar los servicios y cualquier cargo aplicable. Un servicio de concierge de viajes es atención personalizada antes y durante tu viaje: un agente de viaje te ayuda a planificar, comparar opciones, reservar y resolver cambios, según tus intereses y tu presupuesto. Significa tener una persona que se encarga de los detalles por ti. En viajes, incluye itinerarios, vuelos, hoteles, cruceros, traslados y recomendaciones. No. Viajar no es un lujo, es una oportunidad: la atención personalizada sirve para cualquier presupuesto, desde un crucero desde San Juan hasta una luna de miel. Cuéntame tus fechas, cuántas personas viajan y tu presupuesto. Te presento opciones antes de reservar.",
     "canonical": "https://www.sjuluxetravel.com/es/blog/servicios-concierge-viaje",
     "robots": "index, follow",
     "image": "https://www.sjuluxetravel.com/og/servicios-concierge-viaje.jpg",
@@ -3163,20 +3251,92 @@
         "@context": "https://schema.org",
         "@graph": [
           {
+            "@type": [
+              "Organization",
+              "TravelAgency",
+              "LocalBusiness"
+            ],
+            "@id": "https://www.sjuluxetravel.com/#organization",
+            "name": "SJU Luxe Travel",
+            "url": "https://www.sjuluxetravel.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.sjuluxetravel.com/logo.png"
+            },
+            "telephone": "+16179355714",
+            "email": "info@sjuluxetravel.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "San Juan",
+              "addressRegion": "PR",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 18.4528361,
+              "longitude": -66.0635516
+            },
+            "hasMap": "https://www.google.com/maps/place/SJU+Luxe+Travel/@18.4528361,-66.0635516,17z",
+            "areaServed": {
+              "@type": "State",
+              "name": "Puerto Rico"
+            },
+            "priceRange": "$$$",
+            "serviceType": "Travel agency",
+            "description": "Travel agency based in San Juan, Puerto Rico, helping Puerto Rico residents plan trips abroad for every budget: cruises, honeymoons, family trips, adventures and custom itineraries.",
+            "sameAs": [
+              "https://www.instagram.com/sjuluxetravel",
+              "https://www.facebook.com/sjuluxetravel",
+              "https://www.linkedin.com/company/sju-luxe-travel",
+              "https://www.google.com/maps/place/SJU+Luxe+Travel/@18.4528361,-66.0635516,17z",
+              "https://www.travelleaders.com/agent/501399?ref=search&slctState=PR",
+              "https://maps.apple.com/p/.bHFuB9NFWe9Nz"
+            ],
+            "potentialAction": {
+              "@type": "ReserveAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.sjuluxetravel.com/contact",
+                "actionPlatform": [
+                  "http://schema.org/DesktopWebPlatform",
+                  "http://schema.org/MobileWebPlatform"
+                ]
+              },
+              "result": {
+                "@type": "Reservation",
+                "name": "Travel Consultation"
+              }
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.sjuluxetravel.com/#website",
+            "url": "https://www.sjuluxetravel.com",
+            "name": "SJU Luxe Travel",
+            "publisher": {
+              "@id": "https://www.sjuluxetravel.com/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
             "@type": "BlogPosting",
             "headline": "Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena",
-            "description": "Guía completa de servicios de concierge de viaje: qué es un travel concierge, qué incluye (reservas VIP, upgrades, asistencia 24/7) y cómo acceder gratis con un agente en Puerto Rico.",
+            "description": "Servicios de concierge de viaje desde Puerto Rico: qué incluye la planificación, qué es un cargo por planificación y qué confirmar antes de pagar.",
             "author": {
               "@type": "Person",
               "name": "Daniel Santiago Díaz",
               "url": "https://www.sjuluxetravel.com/about",
-              "jobTitle": "Travel agent"
+              "jobTitle": "Travel Agent"
             },
             "publisher": {
               "@id": "https://www.sjuluxetravel.com/#organization"
             },
             "datePublished": "2026-05-29",
-            "dateModified": "2026-07-23",
+            "dateModified": "2026-11-24",
             "inLanguage": "es-PR",
             "url": "https://www.sjuluxetravel.com/es/blog/servicios-concierge-viaje"
           }
@@ -3215,7 +3375,7 @@
             "name": "¿Qué es un servicio de concierge de viaje?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Un servicio de concierge de viaje es un profesional que se encarga de planificar, coordinar y resolver cada detalle de tu viaje —desde el diseño del itinerario hasta la asistencia 24/7 mientras estás fuera. En vez de que tú corras detrás de reservas, vuelos y cambios de última hora, un concierge lo hace por ti con acceso a contactos y beneficios que no aparecen en las páginas públicas."
+              "text": "Es apoyo personalizado para planificar y coordinar los detalles de un viaje. El alcance, los costos y la disponibilidad de asistencia deben confirmarse con el agente de viaje antes de contratar el servicio."
             }
           },
           {
@@ -3223,15 +3383,7 @@
             "name": "¿Qué incluye un servicio de concierge de viaje?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Incluye diseño de itinerario a la medida, reservas VIP en hoteles y restaurantes con estrella Michelin, tours privados con guías locales, coordinación de visados y documentación, transferencias privadas y asistencia 24/7 en español e inglés durante el viaje. También cubre upgrades de habitación, amenidades de cortesía y re-booking inmediato si hay cancelaciones o cambios."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "¿Cuánto cuesta un travel concierge?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "En SJU Luxe Travel el servicio de concierge está incluido —no cobramos honorarios para itinerarios a medida porque somos compensados directamente por nuestros hoteles y cruceros partners. Ofrecemos una consulta inicial gratuita para evaluar tu viaje, y solo en casos de itinerarios extremadamente complejos aplicamos un fee de planificación, siempre confirmado al inicio."
+              "text": "Puede incluir diseño del itinerario, reservas, coordinación de traslados y recomendaciones. Los servicios y beneficios concretos dependen de la propuesta, el proveedor y la reserva; no todos los servicios están incluidos en todos los viajes."
             }
           },
           {
@@ -3239,7 +3391,31 @@
             "name": "¿Cuál es la diferencia entre un concierge y un agente de viaje?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Un agente de viaje tradicional se enfoca principalmente en reservar vuelos, hoteles y paquetes al mejor precio. Un concierge de viaje va mucho más allá: diseña la experiencia completa, negocia beneficios exclusivos, coordina cada detalle en tierra y te acompaña 24/7 durante el viaje. En la práctica, todo buen concierge también es agente de viaje, pero no todo agente de viaje ofrece servicio de concierge real."
+              "text": "Un agente de viaje ayuda a comparar y reservar opciones. La coordinación concierge puede añadir apoyo con el itinerario y otros detalles acordados. Los términos pueden solaparse; compara los servicios incluidos en lugar de asumir que el título garantiza un nivel de asistencia."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿SJU Luxe Travel cobra un cargo por planificación de viajes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Para saber si tu viaje requiere un cargo por planificación, consulta con Daniel Santiago Díaz, agente de viaje de SJU Luxe Travel en Puerto Rico, antes de solicitar el desarrollo de tu itinerario. Confirma si aplica un cargo, su importe y los servicios que cubre antes de autorizar trabajo con costo. No asumas que la planificación es gratuita ni que todos los viajes tienen el mismo cargo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué es un cargo por planificación y qué puede afectar su costo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Un cargo por planificación, cuando aplica, remunera el trabajo de investigación, diseño del itinerario y coordinación acordado con el agente de viaje. Es distinto del costo de vuelos, hoteles, cruceros y excursiones. El alcance del trabajo puede variar según los destinos, la duración, la cantidad de viajeros, la anticipación y las revisiones solicitadas; confirma cómo se evalúa tu caso."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "¿Qué debo confirmar antes de pagar por la planificación de mi viaje?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Solicita por escrito el importe, los servicios incluidos, la cantidad de propuestas o revisiones, el momento del pago y las condiciones de cambios y reembolsos. Pregunta si el cargo se acredita al costo del viaje o se paga por separado. No des por hecho que incluye cargos de proveedores, cancelaciones o asistencia fuera del alcance acordado."
             }
           }
         ]

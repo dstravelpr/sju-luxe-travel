@@ -7,62 +7,64 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { AUTHOR, ORG_REF, WEBSITE_REF, buildGraph } from "@/lib/schema";
 import heroImg from "@/assets/traveler-airport.jpg";
 
-const schemaJson = buildGraph({
-  "@type": "BlogPosting",
-  headline:
-    "Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena",
-  description:
-    "Guía completa de servicios de concierge de viaje: qué es un travel concierge, qué incluye (reservas VIP, upgrades, asistencia 24/7) y cómo acceder gratis con un agente en Puerto Rico.",
-  author: AUTHOR,
-  publisher: ORG_REF,
-  datePublished: "2026-05-29",
-  dateModified: "2026-07-23",
-  inLanguage: "Es-PR",
-  url: "https://www.sjuluxetravel.com/blog/servicios-concierge-viaje",
-});
+const planningFeeAnswers = {
+  es: [
+    { question: "¿SJU Luxe Travel cobra un cargo por planificación de viajes?", answer: "Para saber si tu viaje requiere un cargo por planificación, consulta con Daniel Santiago Díaz, agente de viaje de SJU Luxe Travel en Puerto Rico, antes de solicitar el desarrollo de tu itinerario. Confirma si aplica un cargo, su importe y los servicios que cubre antes de autorizar trabajo con costo. No asumas que la planificación es gratuita ni que todos los viajes tienen el mismo cargo." },
+    { question: "¿Qué es un cargo por planificación y qué puede afectar su costo?", answer: "Un cargo por planificación, cuando aplica, remunera el trabajo de investigación, diseño del itinerario y coordinación acordado con el agente de viaje. Es distinto del costo de vuelos, hoteles, cruceros y excursiones. El alcance del trabajo puede variar según los destinos, la duración, la cantidad de viajeros, la anticipación y las revisiones solicitadas; confirma cómo se evalúa tu caso." },
+    { question: "¿Qué debo confirmar antes de pagar por la planificación de mi viaje?", answer: "Solicita por escrito el importe, los servicios incluidos, la cantidad de propuestas o revisiones, el momento del pago y las condiciones de cambios y reembolsos. Pregunta si el cargo se acredita al costo del viaje o se paga por separado. No des por hecho que incluye cargos de proveedores, cancelaciones o asistencia fuera del alcance acordado." },
+  ],
+  en: [
+    { question: "Does SJU Luxe Travel charge a travel planning fee?", answer: "To find out whether your trip requires a planning fee, contact Daniel Santiago Díaz, a travel agent at SJU Luxe Travel in Puerto Rico, before requesting itinerary development. Confirm whether a fee applies, its amount and the services it covers before authorizing paid work. Do not assume planning is free or that every trip carries the same fee." },
+    { question: "What is a planning fee, and what can affect its cost?", answer: "A planning fee, when applicable, pays for the research, itinerary design and coordination agreed with your travel agent. It is separate from the cost of flights, hotels, cruises and excursions. The scope of work can vary with destinations, trip length, traveler count, lead time and requested revisions; confirm how your trip is assessed." },
+    { question: "What should I confirm before paying a travel planning fee?", answer: "Request the amount, included services, number of proposals or revisions, payment timing, and change and refund conditions in writing. Ask whether the fee is credited toward your trip or paid separately. Do not assume it covers supplier charges, cancellations or assistance beyond the agreed scope." },
+  ],
+};
 
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "¿Qué es un servicio de concierge de viaje?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Un servicio de concierge de viaje es un profesional que se encarga de planificar, coordinar y resolver cada detalle de tu viaje —desde el diseño del itinerario hasta la asistencia 24/7 mientras estás fuera. En vez de que tú corras detrás de reservas, vuelos y cambios de última hora, un concierge lo hace por ti con acceso a contactos y beneficios que no aparecen en las páginas públicas.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Qué incluye un servicio de concierge de viaje?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Incluye diseño de itinerario a la medida, reservas VIP en hoteles y restaurantes con estrella Michelin, tours privados con guías locales, coordinación de visados y documentación, transferencias privadas y asistencia 24/7 en español e inglés durante el viaje. También cubre upgrades de habitación, amenidades de cortesía y re-booking inmediato si hay cancelaciones o cambios.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Cuánto cuesta un travel concierge?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "En SJU Luxe Travel el servicio de concierge está incluido —no cobramos honorarios para itinerarios a medida porque somos compensados directamente por nuestros hoteles y cruceros partners. Ofrecemos una consulta inicial gratuita para evaluar tu viaje, y solo en casos de itinerarios extremadamente complejos aplicamos un fee de planificación, siempre confirmado al inicio.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Cuál es la diferencia entre un concierge y un agente de viaje?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Un agente de viaje tradicional se enfoca principalmente en reservar vuelos, hoteles y paquetes al mejor precio. Un concierge de viaje va mucho más allá: diseña la experiencia completa, negocia beneficios exclusivos, coordina cada detalle en tierra y te acompaña 24/7 durante el viaje. En la práctica, todo buen concierge también es agente de viaje, pero no todo agente de viaje ofrece servicio de concierge real.",
-      },
-    },
+const generalFaqs = {
+  es: [
+    { question: "¿Qué es un servicio de concierge de viaje?", answer: "Es apoyo personalizado para planificar y coordinar los detalles de un viaje. El alcance, los costos y la disponibilidad de asistencia deben confirmarse con el agente de viaje antes de contratar el servicio." },
+    { question: "¿Qué incluye un servicio de concierge de viaje?", answer: "Puede incluir diseño del itinerario, reservas, coordinación de traslados y recomendaciones. Los servicios y beneficios concretos dependen de la propuesta, el proveedor y la reserva; no todos los servicios están incluidos en todos los viajes." },
+    { question: "¿Cuál es la diferencia entre un concierge y un agente de viaje?", answer: "Un agente de viaje ayuda a comparar y reservar opciones. La coordinación concierge puede añadir apoyo con el itinerario y otros detalles acordados. Los términos pueden solaparse; compara los servicios incluidos en lugar de asumir que el título garantiza un nivel de asistencia." },
+  ],
+  en: [
+    { question: "What is a travel concierge service?", answer: "It is personalized support with planning and coordinating trip details. Confirm the scope, costs and availability of assistance with your travel agent before engaging the service." },
+    { question: "What does a travel concierge service include?", answer: "It may include itinerary design, bookings, transfer coordination and recommendations. Specific services and benefits depend on the proposal, provider and booking; not every service is included in every trip." },
+    { question: "What is the difference between a concierge and a travel agent?", answer: "A travel agent helps compare and book options. Concierge coordination may add support with the itinerary and other agreed details. The terms can overlap; compare included services rather than assuming a title guarantees a level of assistance." },
   ],
 };
 
 const Post = () => {
   const { language, localPath } = useLanguage();
   const isEs = language === "es";
+  const locale = isEs ? "es" : "en";
+  const feeAnswers = planningFeeAnswers[locale];
+  const faqs = [...generalFaqs[locale], ...feeAnswers];
+  const description = isEs
+    ? "Servicios de concierge de viaje desde Puerto Rico: qué incluye la planificación, qué es un cargo por planificación y qué confirmar antes de pagar."
+    : "Travel concierge from Puerto Rico: explore planning services, understand travel planning fees and learn what to confirm before paying.";
+  const headline = isEs
+    ? "Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena"
+    : "Travel Concierge Services: What They Are, What's Included & Why They're Worth It";
+  const schemaJson = buildGraph({
+    "@type": "BlogPosting",
+    headline,
+    description,
+    author: AUTHOR,
+    publisher: ORG_REF,
+    datePublished: "2026-05-29",
+    dateModified: "2026-11-24",
+    inLanguage: isEs ? "es-PR" : "en",
+    url: `https://www.sjuluxetravel.com${isEs ? "/es" : ""}/blog/servicios-concierge-viaje`,
+  });
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map(({ question, answer }) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: { "@type": "Answer", text: answer },
+    })),
+  };
 
   return (
     <Layout>
@@ -71,9 +73,9 @@ const Post = () => {
         ogImage="https://www.sjuluxetravel.com/og/servicios-concierge-viaje.jpg"
         title="Travel Concierge: Services and Costs | SJU Luxe Travel"
         titleEs="Travel Concierge: Qué Incluye y Cuánto Cuesta | SJU Luxe"
-        descriptionEs="Qué hace un travel concierge: reservas, upgrades, traslados y ayuda 24/7 durante tu viaje. Descubre si te conviene y cómo funciona desde Puerto Rico."
+        descriptionEs="Servicios de concierge de viaje desde Puerto Rico: qué incluye la planificación, qué es un cargo por planificación y qué confirmar antes de pagar."
         emitHreflang
-        description="What does a travel concierge do? Explore planning, bookings, transfers and costs, and decide what support you need for your trip from Puerto Rico."
+        description="Travel concierge from Puerto Rico: explore planning services, understand travel planning fees and learn what to confirm before paying."
         canonical="https://www.sjuluxetravel.com/blog/servicios-concierge-viaje"
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
@@ -83,7 +85,7 @@ const Post = () => {
             url: "https://www.sjuluxetravel.com/blog/servicios-concierge-viaje",
           },
         ]}
-        schemaJson={{ ...schemaJson, "@graph": (schemaJson["@graph"] as Record<string, unknown>[]).map(node => node["@type"] === "BlogPosting" ? { ...node, inLanguage: isEs ? "es-PR" : "en", url: `https://www.sjuluxetravel.com${isEs ? "/es" : ""}/blog/servicios-concierge-viaje` } : node) }}
+        schemaJson={schemaJson}
       />
       <script
         type="application/ld+json"
@@ -130,8 +132,8 @@ const Post = () => {
             </div>
             <p className="text-muted-foreground/70 text-xs mt-3 italic">
               {isEs
-                ? "Última actualización: 23 de julio de 2026"
-                : "Last updated: July 23, 2026"}
+                ? "Última actualización: 24 de noviembre de 2026"
+                : "Last updated: November 24, 2026"}
             </p>
           </div>
           <div className="aspect-[16/9] overflow-hidden rounded-lg gold-border mb-12">
@@ -221,14 +223,21 @@ const Post = () => {
                 : "Worth it when the trip is complex enough (multi-destination, honeymoons, major anniversaries, high-value business travel) or when you simply don't want to spend 20+ hours planning. For Miami weekends, no."}
             </p>
 
-            <h2 className="font-heading text-2xl text-foreground mt-10">
-              {isEs ? "¿Cuánto cuesta?" : "How much does it cost?"}
-            </h2>
-            <p>
-              {isEs
-                ? "En SJU Luxe Travel no cobramos honorarios de concierge para itinerarios a medida — somos compensados por nuestros hoteles y cruceros partners. Solo para itinerarios muy complejos cobramos un fee de planificación, siempre confirmado al inicio."
-                : "At SJU Luxe Travel we don't charge concierge fees for itineraries — we're compensated by our hotel and cruise partners. Only for highly complex itineraries do we charge a planning fee, always confirmed up front."}
-            </p>
+            <section aria-labelledby="planning-fee-heading" className="border-y border-border py-6">
+              <h2 id="planning-fee-heading" className="font-heading text-2xl text-foreground mb-3">
+                {feeAnswers[0].question}
+              </h2>
+              <p>{feeAnswers[0].answer}</p>
+              {feeAnswers.slice(1).map(({ question, answer }) => (
+                <div key={question} className="mt-6">
+                  <h3 className="font-heading text-xl text-foreground mb-2">{question}</h3>
+                  <p>{answer}</p>
+                </div>
+              ))}
+              <Link to={localPath("/contact")} className="inline-flex text-gold underline mt-4">
+                {isEs ? "Consultar el alcance y los cargos de mi viaje" : "Ask about my trip’s planning scope and fees"}
+              </Link>
+            </section>
 
             <p>
               {isEs
@@ -239,8 +248,8 @@ const Post = () => {
                 className="text-gold hover:text-gold-light underline"
               >
                 {isEs
-                  ? "consulta gratis con nuestro concierge de viajes"
-                  : "Free consultation with our travel concierge"}
+                  ? "consulta con nuestro agente de viaje"
+                  : "Consultation with our travel agent"}
               </Link>
               {isEs ? " o explora nuestros " : " or explore our "}
               <Link
@@ -249,78 +258,21 @@ const Post = () => {
               >
                 {isEs
                   ? "viajes personalizados desde Puerto Rico"
-                  : "Bespoke luxury trips from Puerto Rico"}
+                  : "Personalized trips from Puerto Rico"}
               </Link>
               {isEs ? "." : "."}
             </p>
 
             <h2 className="font-heading text-2xl text-foreground mt-12">
-              Preguntas Frecuentes sobre Servicios de Concierge de Viaje
+              {isEs ? "Preguntas frecuentes sobre servicios de concierge de viaje" : "Travel concierge frequently asked questions"}
             </h2>
             <div className="space-y-6">
-              <div>
-                <h3 className="font-heading text-lg text-foreground mb-2">
-                  ¿Qué es un servicio de concierge de viaje?
-                </h3>
-                <p>
-                  Un servicio de concierge de viaje es un profesional que se
-                  encarga de planificar, coordinar y resolver cada detalle de tu
-                  viaje —desde el diseño del itinerario hasta la asistencia 24/7
-                  mientras estás fuera. En vez de que tú corras detrás de
-                  reservas, vuelos y cambios de última hora, un concierge lo
-                  hace por ti con acceso a contactos y beneficios que no
-                  aparecen en las páginas públicas.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-heading text-lg text-foreground mb-2">
-                  ¿Qué incluye un servicio de concierge de viaje?
-                </h3>
-                <p>
-                  Incluye diseño de itinerario a la medida, reservas VIP en
-                  hoteles y restaurantes con estrella Michelin, tours privados
-                  con guías locales, coordinación de visados y documentación,
-                  transferencias privadas y asistencia 24/7 en español e inglés
-                  durante el viaje. También cubre upgrades de habitación,
-                  amenidades de cortesía y re-booking inmediato si hay
-                  cancelaciones o cambios.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-heading text-lg text-foreground mb-2">
-                  ¿Cuánto cuesta un travel concierge?
-                </h3>
-                <p>
-                  En SJU Luxe Travel el servicio de concierge está incluido —no
-                  cobramos honorarios para itinerarios a medida porque somos
-                  compensados directamente por nuestros hoteles y cruceros
-                  partners. Ofrecemos una{" "}
-                  <Link
-                    to={localPath("/contact")}
-                    className="text-gold hover:text-gold-light underline"
-                  >
-                    consulta inicial gratuita
-                  </Link>{" "}
-                  para evaluar tu viaje, y solo en casos de itinerarios
-                  extremadamente complejos aplicamos un fee de planificación,
-                  siempre confirmado al inicio.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-heading text-lg text-foreground mb-2">
-                  ¿Cuál es la diferencia entre un concierge y un agente de
-                  viaje?
-                </h3>
-                <p>
-                  Un agente de viaje tradicional se enfoca principalmente en
-                  reservar vuelos, hoteles y paquetes al mejor precio. Un
-                  concierge de viaje va mucho más allá: diseña la experiencia
-                  completa, negocia beneficios exclusivos, coordina cada detalle
-                  en tierra y te acompaña 24/7 durante el viaje. En la práctica,
-                  todo buen concierge también es agente de viaje, pero no todo
-                  agente de viaje ofrece servicio de concierge real.
-                </p>
-              </div>
+              {generalFaqs[locale].map(({ question, answer }) => (
+                <div key={question}>
+                  <h3 className="font-heading text-lg text-foreground mb-2">{question}</h3>
+                  <p>{answer}</p>
+                </div>
+              ))}
             </div>
           </div>
           <p
@@ -336,7 +288,7 @@ const Post = () => {
             >
               {isEs
                 ? "Explora nuestros servicios de viajes personalizados →"
-                : "Explore our luxury travel services →"}
+                : "Explore our personalized travel services →"}
             </Link>
           </p>
           <div className="mt-16 text-center py-12 gold-border rounded-lg">
@@ -345,8 +297,8 @@ const Post = () => {
             </h3>
             <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">
               {isEs
-                ? "30 minutos gratis para evaluar si el concierge tiene sentido para tu viaje."
-                : "Complimentary 30 minutes to evaluate if concierge makes sense for your trip."}
+                ? "Comparte tus fechas, destinos y presupuesto para consultar los servicios y cualquier cargo aplicable."
+                : "Share your dates, destinations and budget to discuss services and any applicable planning fee."}
             </p>
             <Link
               to={localPath("/contact")}
