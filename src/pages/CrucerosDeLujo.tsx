@@ -69,7 +69,7 @@ const FAQ_ITEMS = [
 ];
 
 const crucerosDeLujo = () => {
-  const { t, localPath } = useLanguage();
+  const { t, localPath, language } = useLanguage();
   const d = t.crucerosDeLujo;
 
   const lineKeys = [
@@ -252,6 +252,13 @@ const crucerosDeLujo = () => {
               >
                 {d.riverCruisesLinkText}
               </Link>
+            </p>
+            <p className="text-muted-foreground text-sm mt-3">
+              {language === "es" ? "¿Quieres cruzar a Europa desde San Juan? Lee la " : "Want to sail to Europe from San Juan? Read the "}
+              <Link to={localPath("/blog/cruceros-de-reposicionamiento-desde-puerto-rico")} className="text-gold hover:underline">
+                {language === "es" ? "guía de cruceros de reposicionamiento 2027" : "2027 repositioning cruise guide"}
+              </Link>
+              .
             </p>
           </div>
 

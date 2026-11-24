@@ -196,7 +196,7 @@ const TierBadge = ({ tier }: { tier: Tier }) => (
 );
 
 const CrucerosReposicionamiento = () => {
-  const { localPath } = useLanguage();
+  const { localPath, language } = useLanguage();
 
   return (
     <Layout>
@@ -331,6 +331,14 @@ const CrucerosReposicionamiento = () => {
           <p className="text-muted-foreground text-xs leading-relaxed mt-8">
             Precios y disponibilidad sujetos a cambio. Contáctanos para confirmar
             disponibilidad y crear tu itinerario personalizado.
+          </p>
+
+          <p className="text-muted-foreground text-sm mt-6">
+            {language === "es" ? "¿Primera vez? Lee nuestra " : "First time? Read our "}
+            <Link to={localPath("/blog/cruceros-de-reposicionamiento-desde-puerto-rico")} className="text-gold hover:underline">
+              {language === "es" ? "guía de cruceros de reposicionamiento 2027 desde Puerto Rico" : "2027 repositioning cruise guide from Puerto Rico"}
+            </Link>
+            .
           </p>
 
           <div className="mt-16 text-center py-12 gold-border rounded-lg">

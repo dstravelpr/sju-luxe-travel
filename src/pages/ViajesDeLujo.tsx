@@ -58,7 +58,7 @@ const schema = buildGraph(
 );
 
 const ViajesDeLujo = () => {
-  const { t, localPath } = useLanguage();
+  const { t, localPath, language } = useLanguage();
   const d = t.viajesDeLujo;
 
   return (
@@ -196,6 +196,13 @@ const ViajesDeLujo = () => {
                 className="text-gold hover:underline"
               >
                 {d.riverCruises}
+              </Link>
+              .
+            </p>
+            <p className="text-muted-foreground text-base leading-relaxed mt-4">
+              {language === "es" ? "¿Qué incluye la planificación y cuándo aplica un cargo? Lee la " : "What does trip planning include, and when does a fee apply? Read the "}
+              <Link to={localPath("/blog/servicios-concierge-viaje")} className="text-gold hover:underline">
+                {language === "es" ? "guía de servicios de concierge de viaje" : "travel concierge services guide"}
               </Link>
               .
             </p>

@@ -24,6 +24,9 @@ export const AUTHOR = {
   name: "Daniel Santiago Díaz",
   url: `${HOSTNAME}/about`,
   jobTitle: "Travel Agent",
+  worksFor: { "@id": `${HOSTNAME}/#organization` },
+  knowsLanguage: ["es", "en"],
+  knowsAbout: ["Cruises from San Juan", "Repositioning cruises", "Travel planning", "Honeymoons", "Group travel"],
 } as const;
 
 export interface BreadcrumbCrumb {
