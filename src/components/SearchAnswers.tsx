@@ -19,7 +19,7 @@ const DATA: Record<Topic, Data> = {
     links: [home, { to: "/contact", label: { es: "Consultar mi viaje", en: "Ask about my trip" } }],
   },
   repositioning: {
-    title: { es: "Cruceros de reposicionamiento 2026–2027", en: "Repositioning cruises 2026–2027" },
+    title: { es: "Cruceros de reposicionamiento 2027", en: "2027 repositioning cruises" },
     intro: { es: "Las navieras publican sus salidas de reposicionamiento por temporada, normalmente en primavera y otoño, cuando los barcos cambian entre el Caribe y Europa. Fechas, puertos y precios cambian; los confirmamos antes de reservar.", en: "Cruise lines publish repositioning sailings by season, usually spring and fall, when ships move between the Caribbean and Europe. Dates, ports and fares change; we confirm them before booking." },
     qa: [
       { q: { es: "¿Hay cruceros de reposicionamiento desde Puerto Rico en 2027?", en: "Are there repositioning cruises from Puerto Rico in 2027?" }, a: { es: "Algunas navieras incluyen San Juan en sus rutas de reposicionamiento, pero varía cada año. Te ayudo a revisar las salidas disponibles para tus fechas.", en: "Some lines include San Juan on repositioning routes, but it varies each year. I can check available sailings for your dates." } },

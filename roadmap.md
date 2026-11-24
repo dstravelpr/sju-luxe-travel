@@ -14,3 +14,4 @@
 ## Concierge planning-fee clarification
 - [x] Clarify planning costs in the existing EN/ES concierge article without fixed prices or an unconfirmed fee policy.
 - [x] Align visible answers, structured information and route snapshots; verify both languages.
+- [x] Repositioning cruises 2027 article: bilingual, verified sailings table, total-trip planning, passport fix

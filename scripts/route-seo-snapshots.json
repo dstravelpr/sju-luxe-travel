@@ -1646,10 +1646,10 @@
     "descriptionCount": 1
   },
   "/blog/cruceros-de-reposicionamiento-desde-puerto-rico": {
-    "title": "Cruceros de Reposicionamiento desde Puerto Rico: La Guía Completa para 2026–2028",
-    "description": "¿Sabías que puedes cruzar el Atlántico desde San Juan en un crucero de lujo? Descubre qué son los cruceros de reposicionamiento y los 15 viajes disponibles desde Puerto Rico.",
-    "h1": "Cruceros de Reposicionamiento desde Puerto Rico: La Guía Completa para 2026–2028",
-    "body": "Última actualización: 8 de agosto de 2026 ¿Sabías que puedes cruzar el Atlántico desde San Juan en un crucero de clase mundial — sin hacer escala en Miami ni Nueva York? Los cruceros de reposicionamiento desde Puerto Rico son uno de los secretos mejor guardados del mundo del turismo, y en este momento hay 15 travesías disponibles saliendo directamente del Puerto de San Juan hacia Europa, Panamá y Costa Rica. En esta guía te explicamos qué son, por qué salir desde Puerto Rico es una ventaja enorme, y cuáles son las mejores opciones disponibles para 2026, 2027 y 2028. Al cambio de temporada, las grandes líneas de cruceros mueven sus barcos entre regiones: del Caribe al Mediterráneo para el verano europeo, o de Europa de regreso al Caribe para la temporada de invierno. En vez de navegar vacíos, venden esos viajes en sentido único — conocidos como \"repositioning cruises\" o \"repo cruises\" — a precios significativamente más bajos que un itinerario regular. Lo que obtienes es una travesía oceánica de varios días, con comidas, entretenimiento y paradas intermedias en puertos, todo incluido en el precio del camarote. Es la forma más épica — y a menudo la más económica — de llegar a Europa sin tomar un avión.",
+    "title": "2027 Repositioning Cruises from Puerto Rico | SJU Luxe",
+    "description": "2027 repositioning cruises from San Juan: what they are, when they sail, routes to Europe and Panama, passports and how to plan the whole trip.",
+    "h1": "2027 Repositioning Cruises from Puerto Rico: A Guide to Sailing from San Juan",
+    "body": "A repositioning cruise is a one-way sailing that moves a ship from one region to another. From San Juan, most 2027 departures are expected in spring (March to May), when ships cross from the Caribbean to Europe, with some in fall toward the Panama Canal. Dates and routes change every season, so confirm them with the cruise line before booking. When seasons change, cruise lines move their ships: from the Caribbean to the Mediterranean or Northern Europe for the European summer, and back to the Caribbean for winter. Those one-way legs are sold as repositioning cruises. They usually have more sea days and fewer ports than a regular cruise. The nightly fare is often lower, but that isn't guaranteed: it depends on the line, cabin and date.",
     "canonical": "https://www.sjuluxetravel.com/blog/cruceros-de-reposicionamiento-desde-puerto-rico",
     "robots": "index, follow",
     "image": "https://www.sjuluxetravel.com/og/cruceros-reposicionamiento.jpg",
@@ -1658,29 +1658,100 @@
         "@context": "https://schema.org",
         "@graph": [
           {
+            "@type": [
+              "Organization",
+              "TravelAgency",
+              "LocalBusiness"
+            ],
+            "@id": "https://www.sjuluxetravel.com/#organization",
+            "name": "SJU Luxe Travel",
+            "url": "https://www.sjuluxetravel.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.sjuluxetravel.com/logo.png"
+            },
+            "telephone": "+16179355714",
+            "email": "info@sjuluxetravel.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "San Juan",
+              "addressRegion": "PR",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 18.4528361,
+              "longitude": -66.0635516
+            },
+            "hasMap": "https://www.google.com/maps/place/SJU+Luxe+Travel/@18.4528361,-66.0635516,17z",
+            "areaServed": {
+              "@type": "State",
+              "name": "Puerto Rico"
+            },
+            "priceRange": "$$$",
+            "serviceType": "Travel agency",
+            "description": "Travel agency based in San Juan, Puerto Rico, helping Puerto Rico residents plan trips abroad for every budget: cruises, honeymoons, family trips, adventures and custom itineraries.",
+            "sameAs": [
+              "https://www.instagram.com/sjuluxetravel",
+              "https://www.facebook.com/sjuluxetravel",
+              "https://www.linkedin.com/company/sju-luxe-travel",
+              "https://www.google.com/maps/place/SJU+Luxe+Travel/@18.4528361,-66.0635516,17z",
+              "https://www.travelleaders.com/agent/501399?ref=search&slctState=PR",
+              "https://maps.apple.com/p/.bHFuB9NFWe9Nz"
+            ],
+            "potentialAction": {
+              "@type": "ReserveAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.sjuluxetravel.com/contact",
+                "actionPlatform": [
+                  "http://schema.org/DesktopWebPlatform",
+                  "http://schema.org/MobileWebPlatform"
+                ]
+              },
+              "result": {
+                "@type": "Reservation",
+                "name": "Travel Consultation"
+              }
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.sjuluxetravel.com/#website",
+            "url": "https://www.sjuluxetravel.com",
+            "name": "SJU Luxe Travel",
+            "publisher": {
+              "@id": "https://www.sjuluxetravel.com/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
             "@type": "BlogPosting",
-            "headline": "Cruceros de Reposicionamiento desde Puerto Rico: La Guía Completa para 2026–2028",
-            "description": "Qué son los cruceros de reposicionamiento, por qué salir desde San Juan es una ventaja y las 15 travesías disponibles desde Puerto Rico hacia Europa, Panamá y Costa Rica.",
+            "headline": "2027 Repositioning Cruises from Puerto Rico: A Guide to Sailing from San Juan",
+            "description": "2027 repositioning cruises from San Juan: what they are, when they sail, routes to Europe and Panama, passports and how to plan the whole trip.",
             "author": {
               "@type": "Person",
               "name": "Daniel Santiago Díaz",
               "url": "https://www.sjuluxetravel.com/about",
-              "jobTitle": "Travel agent"
+              "jobTitle": "Travel Agent"
             },
             "publisher": {
               "@id": "https://www.sjuluxetravel.com/#organization"
             },
             "datePublished": "2026-08-08",
-            "dateModified": "2026-08-08",
-            "inLanguage": "es-PR",
+            "dateModified": "2026-11-24",
+            "inLanguage": "en",
             "image": "https://www.sjuluxetravel.com/og/cruceros-reposicionamiento.jpg",
             "url": "https://www.sjuluxetravel.com/blog/cruceros-de-reposicionamiento-desde-puerto-rico",
             "mainEntityOfPage": "https://www.sjuluxetravel.com/blog/cruceros-de-reposicionamiento-desde-puerto-rico",
             "keywords": [
-              "cruceros de reposicionamiento desde Puerto Rico",
-              "cruceros transatlánticos desde San Juan",
-              "repositioning cruises San Juan",
-              "cruceros desde Puerto Rico a Europa"
+              "2027 repositioning cruises",
+              "repositioning cruises from Puerto Rico",
+              "transatlantic cruises from San Juan"
             ]
           },
           {
@@ -1688,42 +1759,50 @@
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "¿Necesito pasaporte para embarcar en San Juan?",
+                "name": "Are there repositioning cruises from Puerto Rico in 2027?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Los ciudadanos de los Estados Unidos no necesitan pasaporte para embarcar en Puerto Rico, ya que es territorio americano. Sin embargo, dependiendo de los puertos que visites durante la travesía y el país de destino final, puede que necesites uno al llegar. Siempre recomendamos viajar con pasaporte vigente."
+                  "text": "Several cruise lines often include San Juan on repositioning routes, especially spring crossings to Europe. Sailings change every year, so confirm exact dates with the cruise line."
                 }
               },
               {
                 "@type": "Question",
-                "name": "¿Cuánto duran los cruceros de reposicionamiento desde San Juan?",
+                "name": "How long are they?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Las travesías disponibles varían entre 7 y 23 noches. Los cruceros al Canal de Panamá son los más cortos (7 noches), mientras que las travesías transatlánticas hacia España o Italia pueden durar entre 12 y 23 noches."
+                  "text": "Panama Canal routes are often around a week. Transatlantic crossings to Europe usually run 12 to 20 nights or more, depending on the ports."
                 }
               },
               {
                 "@type": "Question",
-                "name": "¿En qué temporada salen los cruceros de reposicionamiento desde Puerto Rico?",
+                "name": "Do I need a passport for a repositioning cruise from San Juan?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "La mayoría de las salidas ocurren en primavera (marzo y abril), cuando los barcos migran del Caribe al Mediterráneo para el verano europeo. También hay salidas en noviembre hacia el Canal de Panamá y Costa Rica al inicio de la temporada caribeña."
+                  "text": "Yes, it's recommended. Because the cruise ends in another country, you need a valid passport to enter the destination and fly home. Also check the arrival country's entry requirements."
                 }
               },
               {
                 "@type": "Question",
-                "name": "¿Puedo reservar directamente con la línea o necesito una agencia?",
+                "name": "Are they cheaper than a regular cruise?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Puedes reservarlo directamente, pero trabajar con una agencia como SJU Luxe Travel no tiene costo adicional para el cliente — las agencias reciben comisión de la línea. A cambio, recibes la guía personalizada de tu agente de viaje, la combinación con hoteles y tours, y alguien que gestione cualquier cambio o imprevisto."
+                  "text": "The nightly fare is often lower, but not always. Add the flight home, hotels and excursions to compare the total trip cost."
                 }
               },
               {
                 "@type": "Question",
-                "name": "¿Son los cruceros de reposicionamiento buenos para familias?",
+                "name": "Are they good for families?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Depende del crucero. Celebrity Cruises y Norwegian son más versátiles para familias con programas para niños. Las líneas boutique como SeaDream o Ritz-Carlton Yacht Collection están diseñadas para adultos. Contáctanos para encontrar la opción ideal según tu grupo."
+                  "text": "It depends on the line. Some, like Celebrity or Norwegian, have kids' programs; others are designed for adults. There are also many sea days, worth considering with young children."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How does a travel agent help?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "I help you compare sailings, choose a cabin and coordinate the flight home, hotels and excursions. If a planning fee applies, I explain it before we start."
                 }
               }
             ]
@@ -1749,13 +1828,13 @@
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "Cruceros de Reposicionamiento desde Puerto Rico",
+            "name": "2027 Repositioning Cruises from Puerto Rico: A Guide to Sailing from San Juan",
             "item": "https://www.sjuluxetravel.com/blog/cruceros-de-reposicionamiento-desde-puerto-rico"
           }
         ]
       }
     ],
-    "descriptionCount": 1
+    "descriptionCount": 143
   },
   "/contact": {
     "title": "Free Travel Consultation | SJU Luxe Travel",
@@ -3603,10 +3682,10 @@
     "descriptionCount": 1
   },
   "/es/blog/cruceros-de-reposicionamiento-desde-puerto-rico": {
-    "title": "Cruceros de Reposicionamiento desde Puerto Rico: La Guía Completa para 2026–2028",
-    "description": "¿Sabías que puedes cruzar el Atlántico desde San Juan en un crucero de lujo? Descubre qué son los cruceros de reposicionamiento y los 15 viajes disponibles desde Puerto Rico.",
-    "h1": "Cruceros de Reposicionamiento desde Puerto Rico: La Guía Completa para 2026–2028",
-    "body": "Última actualización: 8 de agosto de 2026 ¿Sabías que puedes cruzar el Atlántico desde San Juan en un crucero de clase mundial — sin hacer escala en Miami ni Nueva York? Los cruceros de reposicionamiento desde Puerto Rico son uno de los secretos mejor guardados del mundo del turismo, y en este momento hay 15 travesías disponibles saliendo directamente del Puerto de San Juan hacia Europa, Panamá y Costa Rica. En esta guía te explicamos qué son, por qué salir desde Puerto Rico es una ventaja enorme, y cuáles son las mejores opciones disponibles para 2026, 2027 y 2028. Al cambio de temporada, las grandes líneas de cruceros mueven sus barcos entre regiones: del Caribe al Mediterráneo para el verano europeo, o de Europa de regreso al Caribe para la temporada de invierno. En vez de navegar vacíos, venden esos viajes en sentido único — conocidos como \"repositioning cruises\" o \"repo cruises\" — a precios significativamente más bajos que un itinerario regular. Lo que obtienes es una travesía oceánica de varios días, con comidas, entretenimiento y paradas intermedias en puertos, todo incluido en el precio del camarote. Es la forma más épica — y a menudo la más económica — de llegar a Europa sin tomar un avión.",
+    "title": "Cruceros de reposicionamiento 2027 desde Puerto Rico",
+    "description": "Cruceros de reposicionamiento 2027 desde San Juan: qué son, cuándo salen, rutas a Europa y Panamá, pasaporte y cómo planificar el viaje completo.",
+    "h1": "Cruceros de reposicionamiento 2027 desde Puerto Rico: guía para salir desde San Juan",
+    "body": "Un crucero de reposicionamiento es un viaje de ida en el que la naviera mueve un barco de una región a otra. Desde San Juan, la mayoría de las salidas de 2027 se esperan en primavera (marzo a mayo), cuando los barcos cruzan del Caribe hacia Europa, y algunas en otoño hacia el Canal de Panamá. Las fechas y rutas cambian cada temporada, así que conviene confirmarlas con la naviera antes de reservar. Al cambiar la temporada, las navieras mueven sus barcos: del Caribe al Mediterráneo o al norte de Europa para el verano europeo, y de regreso al Caribe para el invierno. Esos trayectos se venden como viajes de ida, conocidos en inglés como “repositioning cruises”. Suelen tener más días de navegación y menos puertos que un crucero regular. Por eso muchas veces la tarifa por noche es más baja, aunque eso no está garantizado: depende de la naviera, la cabina y la fecha.",
     "canonical": "https://www.sjuluxetravel.com/es/blog/cruceros-de-reposicionamiento-desde-puerto-rico",
     "robots": "index, follow",
     "image": "https://www.sjuluxetravel.com/og/cruceros-reposicionamiento.jpg",
@@ -3615,29 +3694,100 @@
         "@context": "https://schema.org",
         "@graph": [
           {
+            "@type": [
+              "Organization",
+              "TravelAgency",
+              "LocalBusiness"
+            ],
+            "@id": "https://www.sjuluxetravel.com/#organization",
+            "name": "SJU Luxe Travel",
+            "url": "https://www.sjuluxetravel.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.sjuluxetravel.com/logo.png"
+            },
+            "telephone": "+16179355714",
+            "email": "info@sjuluxetravel.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "San Juan",
+              "addressRegion": "PR",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 18.4528361,
+              "longitude": -66.0635516
+            },
+            "hasMap": "https://www.google.com/maps/place/SJU+Luxe+Travel/@18.4528361,-66.0635516,17z",
+            "areaServed": {
+              "@type": "State",
+              "name": "Puerto Rico"
+            },
+            "priceRange": "$$$",
+            "serviceType": "Travel agency",
+            "description": "Travel agency based in San Juan, Puerto Rico, helping Puerto Rico residents plan trips abroad for every budget: cruises, honeymoons, family trips, adventures and custom itineraries.",
+            "sameAs": [
+              "https://www.instagram.com/sjuluxetravel",
+              "https://www.facebook.com/sjuluxetravel",
+              "https://www.linkedin.com/company/sju-luxe-travel",
+              "https://www.google.com/maps/place/SJU+Luxe+Travel/@18.4528361,-66.0635516,17z",
+              "https://www.travelleaders.com/agent/501399?ref=search&slctState=PR",
+              "https://maps.apple.com/p/.bHFuB9NFWe9Nz"
+            ],
+            "potentialAction": {
+              "@type": "ReserveAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.sjuluxetravel.com/contact",
+                "actionPlatform": [
+                  "http://schema.org/DesktopWebPlatform",
+                  "http://schema.org/MobileWebPlatform"
+                ]
+              },
+              "result": {
+                "@type": "Reservation",
+                "name": "Travel Consultation"
+              }
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.sjuluxetravel.com/#website",
+            "url": "https://www.sjuluxetravel.com",
+            "name": "SJU Luxe Travel",
+            "publisher": {
+              "@id": "https://www.sjuluxetravel.com/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
             "@type": "BlogPosting",
-            "headline": "Cruceros de Reposicionamiento desde Puerto Rico: La Guía Completa para 2026–2028",
-            "description": "Qué son los cruceros de reposicionamiento, por qué salir desde San Juan es una ventaja y las 15 travesías disponibles desde Puerto Rico hacia Europa, Panamá y Costa Rica.",
+            "headline": "Cruceros de reposicionamiento 2027 desde Puerto Rico: guía para salir desde San Juan",
+            "description": "Cruceros de reposicionamiento 2027 desde San Juan: qué son, cuándo salen, rutas a Europa y Panamá, pasaporte y cómo planificar el viaje completo.",
             "author": {
               "@type": "Person",
               "name": "Daniel Santiago Díaz",
               "url": "https://www.sjuluxetravel.com/about",
-              "jobTitle": "Travel agent"
+              "jobTitle": "Travel Agent"
             },
             "publisher": {
               "@id": "https://www.sjuluxetravel.com/#organization"
             },
             "datePublished": "2026-08-08",
-            "dateModified": "2026-08-08",
+            "dateModified": "2026-11-24",
             "inLanguage": "es-PR",
             "image": "https://www.sjuluxetravel.com/og/cruceros-reposicionamiento.jpg",
-            "url": "https://www.sjuluxetravel.com/blog/cruceros-de-reposicionamiento-desde-puerto-rico",
-            "mainEntityOfPage": "https://www.sjuluxetravel.com/blog/cruceros-de-reposicionamiento-desde-puerto-rico",
+            "url": "https://www.sjuluxetravel.com/es/blog/cruceros-de-reposicionamiento-desde-puerto-rico",
+            "mainEntityOfPage": "https://www.sjuluxetravel.com/es/blog/cruceros-de-reposicionamiento-desde-puerto-rico",
             "keywords": [
+              "cruceros de reposicionamiento 2027",
               "cruceros de reposicionamiento desde Puerto Rico",
-              "cruceros transatlánticos desde San Juan",
-              "repositioning cruises San Juan",
-              "cruceros desde Puerto Rico a Europa"
+              "cruceros transatlánticos desde San Juan"
             ]
           },
           {
@@ -3645,42 +3795,50 @@
             "mainEntity": [
               {
                 "@type": "Question",
-                "name": "¿Necesito pasaporte para embarcar en San Juan?",
+                "name": "¿Hay cruceros de reposicionamiento desde Puerto Rico en 2027?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Los ciudadanos de los Estados Unidos no necesitan pasaporte para embarcar en Puerto Rico, ya que es territorio americano. Sin embargo, dependiendo de los puertos que visites durante la travesía y el país de destino final, puede que necesites uno al llegar. Siempre recomendamos viajar con pasaporte vigente."
+                  "text": "Varias navieras suelen incluir San Juan en sus rutas de reposicionamiento, sobre todo en primavera hacia Europa. Las salidas cambian cada año, así que hay que confirmarlas con la naviera para las fechas exactas."
                 }
               },
               {
                 "@type": "Question",
-                "name": "¿Cuánto duran los cruceros de reposicionamiento desde San Juan?",
+                "name": "¿Cuánto duran?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Las travesías disponibles varían entre 7 y 23 noches. Los cruceros al Canal de Panamá son los más cortos (7 noches), mientras que las travesías transatlánticas hacia España o Italia pueden durar entre 12 y 23 noches."
+                  "text": "Las rutas hacia el Canal de Panamá suelen ser de alrededor de una semana. Las travesías transatlánticas hacia Europa suelen durar entre 12 y 20 noches o más, según los puertos."
                 }
               },
               {
                 "@type": "Question",
-                "name": "¿En qué temporada salen los cruceros de reposicionamiento desde Puerto Rico?",
+                "name": "¿Necesito pasaporte para un crucero de reposicionamiento desde San Juan?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "La mayoría de las salidas ocurren en primavera (marzo y abril), cuando los barcos migran del Caribe al Mediterráneo para el verano europeo. También hay salidas en noviembre hacia el Canal de Panamá y Costa Rica al inicio de la temporada caribeña."
+                  "text": "Sí, es recomendable. Al terminar en otro país, necesitas pasaporte vigente para entrar al destino y volar de regreso. Revisa también los requisitos de entrada del país de llegada."
                 }
               },
               {
                 "@type": "Question",
-                "name": "¿Puedo reservar directamente con la línea o necesito una agencia?",
+                "name": "¿Son más baratos que un crucero regular?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Puedes reservarlo directamente, pero trabajar con una agencia como SJU Luxe Travel no tiene costo adicional para el cliente — las agencias reciben comisión de la línea. A cambio, recibes la guía personalizada de tu agente de viaje, la combinación con hoteles y tours, y alguien que gestione cualquier cambio o imprevisto."
+                  "text": "Muchas veces la tarifa por noche es más baja, pero no siempre. Hay que sumar el vuelo de regreso, hoteles y excursiones para comparar el costo total del viaje."
                 }
               },
               {
                 "@type": "Question",
-                "name": "¿Son los cruceros de reposicionamiento buenos para familias?",
+                "name": "¿Son buenos para familias?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Depende del crucero. Celebrity Cruises y Norwegian son más versátiles para familias con programas para niños. Las líneas boutique como SeaDream o Ritz-Carlton Yacht Collection están diseñadas para adultos. Contáctanos para encontrar la opción ideal según tu grupo."
+                  "text": "Depende de la naviera. Algunas, como Celebrity o Norwegian, tienen actividades para niños; otras están pensadas para adultos. También hay muchos días en alta mar, algo a considerar con niños pequeños."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "¿Cómo me ayuda un agente de viaje?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Te ayudo a comparar salidas, elegir cabina y coordinar el vuelo de regreso, los hoteles y las excursiones. Si aplica algún cargo por planificación, te lo explico antes de comenzar."
                 }
               }
             ]
@@ -3706,13 +3864,13 @@
           {
             "@type": "ListItem",
             "position": 3,
-            "name": "Cruceros de Reposicionamiento desde Puerto Rico",
-            "item": "https://www.sjuluxetravel.com/blog/cruceros-de-reposicionamiento-desde-puerto-rico"
+            "name": "Cruceros de reposicionamiento 2027 desde Puerto Rico: guía para salir desde San Juan",
+            "item": "https://www.sjuluxetravel.com/es/blog/cruceros-de-reposicionamiento-desde-puerto-rico"
           }
         ]
       }
     ],
-    "descriptionCount": 1
+    "descriptionCount": 145
   },
   "/es/contact": {
     "title": "Consulta Gratis con tu Agente de Viajes | SJU Luxe Travel",
