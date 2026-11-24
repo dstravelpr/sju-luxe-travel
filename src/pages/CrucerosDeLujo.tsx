@@ -11,7 +11,6 @@ import azamaraImg from "@/assets/ocean/azamara.png";
 import crystalImg from "@/assets/ocean/crystal.png";
 import exploraImg from "@/assets/ocean/explora.png";
 import regentImg from "@/assets/ocean/regent.png";
-import seabournImg from "@/assets/ocean/seabourn.png";
 import seadreamImg from "@/assets/ocean/seadream.png";
 import silverseaImg from "@/assets/ocean/silversea.png";
 import vikingImg from "@/assets/ocean/viking.png";
@@ -87,7 +86,6 @@ const crucerosDeLujo = () => {
     "regent",
     "silversea",
     "viking",
-    "seabourn",
     "seadream",
   ] as const;
   const lineImages: Partial<Record<(typeof lineKeys)[number], string>> = {
@@ -100,7 +98,6 @@ const crucerosDeLujo = () => {
     regent: regentImg,
     silversea: silverseaImg,
     viking: vikingImg,
-    seabourn: seabournImg,
     seadream: seadreamImg,
   };
 

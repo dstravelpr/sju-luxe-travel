@@ -724,9 +724,9 @@ export const es: typeof en = {
         "",
       ],
     ],
-    h2Lines: "Líneas de cruceros que Zarpan desde San Juan en 2026",
+    h2Lines: "Líneas de cruceros con salidas desde San Juan en 2027",
     linesIntro:
-      "Estas son las líneas con salidas confirmadas o programadas desde el Puerto de San Juan este año — y las que trabajo como agente de viaje especializado:",
+      "Estas navieras tienen salidas programadas desde el Puerto de San Juan para 2027 (confirmamos fechas y disponibilidad antes de reservar). Te ayudo a comparar cada una:",
     lines: {
       ritzCarlton: {
         title: "Ritz-Carlton Yacht Collection",
@@ -734,11 +734,11 @@ export const es: typeof en = {
       },
       explora: {
         title: "Explora Journeys",
-        desc: "La nueva línea de MSC, llegando al Caribe con una propuesta diseñada para el viajero moderno de alto nivel. Sus barcos combinan espacios amplios, múltiples restaurantes de autor y un ambiente que se siente más resort de playa que crucero tradicional. Una de las propuestas más frescas del segmento en 2026.",
+        desc: "La nueva línea de MSC, llegando al Caribe con una propuesta diseñada para el viajero moderno de alto nivel. Sus barcos combinan espacios amplios, múltiples restaurantes de autor y un ambiente que se siente más resort de playa que crucero tradicional. Tiene salidas de reposicionamiento desde San Juan en 2027.",
       },
       virgin: {
         title: "Virgin Voyages",
-        desc: "Solo para adultos. Sin buffet, sin horarios fijos, sin el ambiente familiar del crucero convencional. Sus barcos tipo Scarlet Lady ofrecen más de 20 restaurantes incluidos en la tarifa, spa Redemption, entretenimiento curado y un ambiente que apela al viajero millennial y Gen X que rechaza el crucero tradicional. Sus salidas desde San Juan al Caribe son de las más solicitadas en 2026.",
+        desc: "Solo para adultos. Sin buffet, sin horarios fijos, sin el ambiente familiar del crucero convencional. Sus barcos tipo Scarlet Lady ofrecen más de 20 restaurantes incluidos en la tarifa, spa Redemption, entretenimiento curado y un ambiente que apela al viajero millennial y Gen X que rechaza el crucero tradicional. Tiene salidas desde San Juan al Caribe programadas para 2027.",
       },
       azamara: {
         title: "Azamara cruises",
@@ -810,9 +810,9 @@ export const es: typeof en = {
     ],
     h2FAQ: "Preguntas Frecuentes sobre cruceros desde San Juan",
     faqQ1:
-      "¿Cuáles son las mejores líneas de cruceros que salen de San Juan en 2026?",
+      "¿Qué líneas de cruceros salen de San Juan en 2027?",
     faqA1:
-      "En 2026, San Juan cuenta con salidas de las principales líneas del mundo: Ritz-Carlton Yacht Collection, Explora Journeys, Virgin Voyages, Azamara, Crystal cruises, Oceania, Regent Seven Seas, Silversea, Viking Ocean, Seabourn y SeaDream Yacht Club. Como agente de viaje especializado en cruceros desde Puerto Rico, te ayudo a comparar opciones, acceder a tarifas preferenciales y elegir la línea que mejor se adapta a tu estilo de viaje y presupuesto.",
+      "Para 2027 hay salidas programadas desde San Juan de navieras como Ritz-Carlton Yacht Collection, Explora Journeys, Virgin Voyages, Azamara, Crystal, Oceania, Regent Seven Seas, Silversea, Viking y SeaDream, además de navieras conocidas como Royal Caribbean, Celebrity y MSC según la temporada. Las fechas cambian, así que las confirmamos antes de reservar. Como agente de viaje especializado en cruceros desde Puerto Rico, te ayudo a comparar opciones, acceder a tarifas preferenciales y elegir la línea que mejor se adapta a tu estilo de viaje y presupuesto.",
     riverCruisesLink: "¿Prefieres un crucero por ríos históricos?",
     riverCruisesLinkText: "Descubre nuestros cruceros de río →",
     ctaTitle: "¿Listo para zarpar desde San Juan",

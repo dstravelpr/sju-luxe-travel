@@ -721,9 +721,9 @@ export const en = {
         "",
       ],
     ],
-    h2Lines: "Cruise Lines Departing from San Juan in 2026",
+    h2Lines: "Cruise Lines Sailing from San Juan in 2027",
     linesIntro:
-      "These are the lines with confirmed or scheduled departures from the Port of San Juan this year — and the ones I work with as a specialized travel agent:",
+      "These lines have sailings scheduled from the Port of San Juan for 2027 (we confirm dates and availability before booking). I help you compare each one:",
     lines: {
       ritzCarlton: {
         title: "Ritz-Carlton Yacht Collection",
@@ -731,11 +731,11 @@ export const en = {
       },
       explora: {
         title: "Explora Journeys",
-        desc: "MSC's new line, arriving in the Caribbean with a proposition designed for the modern high-end traveler. Their ships combine spacious areas, multiple signature restaurants, and an atmosphere that feels more like a beach resort than a traditional cruise. One of the freshest propositions in the segment for 2026.",
+        desc: "MSC's new line, arriving in the Caribbean with a proposition designed for the modern high-end traveler. Their ships combine spacious areas, multiple signature restaurants, and an atmosphere that feels more like a beach resort than a traditional cruise. It has repositioning sailings from San Juan in 2027.",
       },
       virgin: {
         title: "Virgin Voyages",
-        desc: "Adults only. No buffet, no fixed schedules, no family-cruise atmosphere. Their Scarlet Lady-type ships offer more than 20 restaurants included in the fare, Redemption Spa, curated entertainment, and an atmosphere that appeals to millennial and Gen X Discerning Travelers who reject the traditional cruise. Their San Juan departures to the Caribbean are among the most sought-after in 2026.",
+        desc: "Adults only. No buffet, no fixed schedules, no family-cruise atmosphere. Their Scarlet Lady-type ships offer more than 20 restaurants included in the fare, Redemption Spa, curated entertainment, and an atmosphere that appeals to millennial and Gen X Discerning Travelers who reject the traditional cruise. It has Caribbean sailings from San Juan scheduled for 2027.",
       },
       azamara: {
         title: "Azamara cruises",
@@ -809,9 +809,9 @@ export const en = {
       "Pre-cruise dinner at one of San Juan's best restaurants",
     ],
     h2FAQ: "Frequently Asked Questions About cruises from San Juan",
-    faqQ1: "What are the best cruise lines departing from San Juan in 2026?",
+    faqQ1: "Which cruise lines sail from San Juan in 2027?",
     faqA1:
-      "In 2026, San Juan features departures from the world's leading lines: Ritz-Carlton Yacht Collection, Explora Journeys, Virgin Voyages, Azamara, Crystal cruises, Oceania, Regent Seven Seas, Silversea, Viking Ocean, Seabourn, and SeaDream Yacht Club. As a travel agent specializing in cruises from Puerto Rico, I help you compare options, access preferential rates, and choose the line that best fits your travel style and budget.",
+      "For 2027, San Juan has scheduled sailings from lines such as Ritz-Carlton Yacht Collection, Explora Journeys, Virgin Voyages, Azamara, Crystal, Oceania, Regent Seven Seas, Silversea, Viking and SeaDream, plus well-known lines like Royal Caribbean, Celebrity and MSC depending on the season. Dates change, so we confirm them before booking. As a travel agent specializing in cruises from Puerto Rico, I help you compare options, access preferential rates, and choose the line that best fits your travel style and budget.",
     riverCruisesLink: "Prefer a cruise along historic rivers?",
     riverCruisesLinkText: "Discover our river cruises →",
     ctaTitle: "Ready to set sail from San Juan",
