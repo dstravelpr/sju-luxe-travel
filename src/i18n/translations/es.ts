@@ -436,7 +436,7 @@ export const es: typeof en = {
       category: "Cruceros",
       title: "Cruceros de Reposicionamiento desde Puerto Rico: Guía Completa 2026–2028",
       excerpt:
-        "Cruza el Atlántico desde San Juan en un crucero de reposicionamiento. Descubre 15 travesías hacia España, Portugal, Italia, Inglaterra, Panamá y Costa Rica — con consejos de cabina, temporada y vuelos.",
+        "Cruza el Atlántico desde San Juan en un crucero de reposicionamiento. Descubre salidas hacia España, Portugal, Italia, Inglaterra, Panamá y Costa Rica — con consejos de cabina, temporada y vuelos.",
       date: "8 de agosto de 2026",
       readTime: "7 min de lectura",
     },

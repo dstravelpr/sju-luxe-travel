@@ -22,7 +22,7 @@ const schema = buildGraph(
     "@id": `${PAGE_URL}#service`,
     name: "Cruceros de reposicionamiento desde San Juan",
     description:
-      "Travesías de reposicionamiento en sentido único desde San Juan, Puerto Rico, con itinerarios a la medida para todo presupuesto.",
+      "Cruceros de reposicionamiento de ida desde San Juan, Puerto Rico, con itinerarios a la medida para todo presupuesto.",
     provider: ORG_REF,
     areaServed: { "@type": "State", name: "Puerto Rico" },
     serviceType: "Repositioning cruise planning",
@@ -168,15 +168,15 @@ const GROUPS: { tier: Tier; sailings: [string, string, string, string, string][]
 const INFO_CARDS = [
   {
     label: "¿Qué es un Crucero de Reposicionamiento?",
-    body: "Las líneas de cruceros mueven sus barcos entre regiones al cambio de temporada y venden esas travesías en sentido único a precios reducidos. Un boleto, el cruce del océano incluido.",
+    body: "Las líneas de cruceros mueven sus barcos entre regiones al cambio de temporada y venden esos viajes de ida a precios reducidos. Un boleto, el cruce del océano incluido.",
   },
   {
     label: "¿Por Qué Salir desde San Juan?",
-    body: "Sales directo desde Puerto Rico, sin vuelo previo a Miami o Nueva York. Aborda en el histórico Puerto de San Juan. Lleva pasaporte vigente: estas travesías terminan en otro país.",
+    body: "Sales directo desde Puerto Rico, sin vuelo previo a Miami o Nueva York. Aborda en el histórico Puerto de San Juan. Lleva pasaporte vigente: estos cruceros terminan en otro país.",
   },
   {
     label: "Cómo Te Ayudamos",
-    body: "SJU Luxe Travel gestiona tu travesía, hoteles pre y post crucero, y cualquier viaje adicional — un itinerario completo, hecho a tu medida, para todo presupuesto.",
+    body: "SJU Luxe Travel planifica tu crucero, hoteles pre y post crucero, y cualquier viaje adicional — un itinerario completo, hecho a tu medida, para todo presupuesto.",
   },
 ];
 
@@ -195,9 +195,9 @@ const CrucerosReposicionamiento = () => {
     <Layout>
       <SEOHead
         title="Cruceros de Reposicionamiento desde San Juan | SJU Luxe Travel"
-        description="Descubre las 14 travesías de reposicionamiento disponibles desde San Juan, Puerto Rico — desde Mejor Valor hasta Ultra-Lujo. Agencia de viajes personalizados en todo presupuesto."
+        description="Descubre los 14 cruceros de reposicionamiento disponibles desde San Juan, Puerto Rico — desde Mejor Valor hasta Ultra-Lujo. Agencia de viajes personalizados en todo presupuesto."
         titleEs="Cruceros de Reposicionamiento desde San Juan | SJU Luxe Travel"
-        descriptionEs="Descubre las 14 travesías de reposicionamiento disponibles desde San Juan, Puerto Rico — desde Mejor Valor hasta Ultra-Lujo. Agencia de viajes personalizados en todo presupuesto."
+        descriptionEs="Descubre los 14 cruceros de reposicionamiento disponibles desde San Juan, Puerto Rico — desde Mejor Valor hasta Ultra-Lujo. Agencia de viajes personalizados en todo presupuesto."
         canonical={PAGE_URL}
         schemaJson={schema}
       />
@@ -207,13 +207,13 @@ const CrucerosReposicionamiento = () => {
           <div className="flex items-start justify-between gap-6">
             <div>
               <span className="font-body text-gold text-xs tracking-[0.3em] uppercase">
-                Travesías Transatlánticas
+                Cruceros Transatlánticos
               </span>
               <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3">
                 Cruceros de Reposicionamiento desde San Juan
               </h1>
               <p className="text-muted-foreground font-body text-sm md:text-base mt-4">
-                14 travesías disponibles · Mar 2027 – Abr 2028 · 7 líneas de
+                14 salidas disponibles · Mar 2027 – Abr 2028 · 7 líneas de
                 cruceros · Ordenadas por valor
               </p>
             </div>
@@ -338,7 +338,7 @@ const CrucerosReposicionamiento = () => {
             <h2 className="font-heading text-2xl text-foreground mb-3">
               ¿Listo para{" "}
               <span className="text-gold-gradient italic">
-                Planificar tu Travesía?
+                Planificar tu Crucero?
               </span>
             </h2>
             <p className="text-muted-foreground text-sm mb-6 max-w-lg mx-auto">

@@ -226,7 +226,7 @@ const Blog = () => {
                   </h3>
                   <p className="text-muted-foreground text-xs leading-relaxed mb-4">
                     {language === "es"
-                      ? "Cruza el Atlántico desde San Juan: 15 travesías hacia España, Portugal, Italia, Inglaterra, Panamá y Costa Rica."
+                      ? "Cruza el Atlántico desde San Juan: salidas hacia España, Portugal, Italia, Inglaterra, Panamá y Costa Rica."
                       : "Cross the Atlantic from San Juan: 15 sailings to Spain, Portugal, Italy, England, Panama and Costa Rica."}
                   </p>
 

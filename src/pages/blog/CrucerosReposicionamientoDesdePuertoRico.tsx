@@ -67,7 +67,7 @@ const content = {
       {
         h: "¿Cuándo salen desde San Juan en 2027?",
         p: [
-          "Primavera 2027 (marzo a mayo): travesías transatlánticas hacia puertos como Lisboa, Barcelona, Málaga, Civitavecchia (Roma) o Southampton.",
+          "Primavera 2027 (marzo a mayo): cruceros transatlánticos hacia puertos como Lisboa, Barcelona, Málaga, Civitavecchia (Roma) o Southampton.",
           "Otoño 2027 (octubre a diciembre): algunas rutas hacia el Canal de Panamá, Costa Rica o la costa del Pacífico, cuando los barcos se reubican para la temporada de invierno.",
           "Las navieras publican estas salidas con uno o dos años de anticipación, y pueden añadir, cambiar o cancelar puertos. Te ayudo a revisar qué hay disponible para tus fechas.",
         ],
@@ -104,7 +104,7 @@ const content = {
         h: "Planifica el viaje completo, no solo el crucero",
         p: [
           "Suma el vuelo de regreso desde el puerto de llegada, los traslados del puerto al hotel o al aeropuerto, las noches de hotel antes o después, las propinas y el seguro de viaje. Así comparas el costo real.",
-          "Ten en cuenta los días en alta mar: una travesía transatlántica puede tener seis o más días seguidos sin puertos. Es ideal si te gusta descansar, leer y disfrutar del barco, y si tienes tiempo flexible. Puede no ser la mejor opción si te mareas fácilmente, tienes poco tiempo de vacaciones o prefieres un puerto distinto cada día.",
+          "Ten en cuenta los días en alta mar: un crucero transatlántico puede tener seis o más días seguidos sin puertos. Es ideal si te gusta descansar, leer y disfrutar del barco, y si tienes tiempo flexible. Puede no ser la mejor opción si te mareas fácilmente, tienes poco tiempo de vacaciones o prefieres un puerto distinto cada día.",
           "Mi consejo: quédate unos días en el puerto final. Si llegas a Lisboa en barco, puedes seguir explorando Portugal antes de volar de regreso.",
         ],
       },
@@ -123,7 +123,7 @@ const content = {
       },
       {
         q: "¿Cuánto duran?",
-        a: "Las rutas hacia el Canal de Panamá suelen ser de alrededor de una semana. Las travesías transatlánticas hacia Europa suelen durar entre 12 y 20 noches o más, según los puertos.",
+        a: "Las rutas hacia el Canal de Panamá suelen ser de alrededor de una semana. Los cruceros transatlánticos hacia Europa suelen durar entre 12 y 20 noches o más, según los puertos.",
       },
       {
         q: "¿Necesito pasaporte para un crucero de reposicionamiento desde San Juan?",
@@ -146,7 +146,7 @@ const content = {
     book: "En SJU Luxe Travel planificamos viajes personalizados para todo presupuesto. Revisamos las salidas de 2027, coordinamos el vuelo de regreso y las noches de hotel antes o después del crucero.",
     contactPre: "¿Quieres saber qué opción va mejor contigo?",
     contact: "Escríbeme aquí",
-    ctaTitle: "¿Listo para planificar tu travesía?",
+    ctaTitle: "¿Listo para planificar tu crucero?",
     ctaSub: "Viajes personalizados · Todo presupuesto · Salidas desde San Juan",
     ctaBtn: "Contáctanos",
   },
