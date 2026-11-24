@@ -859,7 +859,7 @@ export const es: typeof en = {
     scenicTitle: "Scenic Luxury cruises",
     scenicDesc:
       "Los camarotes más grandes del segmento de cruceros de río europeo, con bañera de hidromasaje y balcón privado. Precio todo incluido con bebidas premium, excursiones y propinas incluidas.",
-    h2Destinations: "Destinos de Cruceros de Río Imperdibles",
+    h2Destinations: "Destinos de Cruceros de Río que No Te Puedes Perder",
     riverDestinations: [
       [
         "Europa Central — El Danubio",
