@@ -252,8 +252,29 @@ const crucerosDeLujo = () => {
             </h2>
             <p className="text-muted-foreground text-base leading-relaxed">
               {language === "es"
-                ? "San Juan fue seleccionado como puerto base en el Caribe para la primera temporada del Orient Express Corinthian, un velero de 54 suites y unos 110 pasajeros. Según la Compañía de Turismo de Puerto Rico, tiene tres salidas programadas desde San Juan entre octubre de 2026 y enero de 2027. Si te interesa una de las salidas de enero de 2027, te ayudo a confirmar fechas, itinerario y disponibilidad con la naviera."
-                : "San Juan was selected as a Caribbean home port for the Orient Express Corinthian's first season, a sailing yacht with 54 suites and about 110 guests. According to the Puerto Rico Tourism Company, it has three departures scheduled from San Juan between October 2026 and January 2027. If a January 2027 sailing interests you, I can confirm dates, itinerary and availability with the cruise line."}
+                ? "San Juan fue seleccionado como puerto base en el Caribe para la primera temporada del Orient Express Corinthian, un velero de 54 suites y unos 110 pasajeros. Según la Compañía de Turismo de Puerto Rico, tuvo su primera salida desde San Juan el 29 de octubre de 2026 y tiene dos salidas más en enero de 2027. Te ayudo a confirmar fechas, itinerario y disponibilidad con la naviera."
+                : "San Juan was selected as a Caribbean home port for the Orient Express Corinthian's first season, a sailing yacht with 54 suites and about 110 guests. According to the Puerto Rico Tourism Company, its first San Juan departure was October 29, 2026, with two more in January 2027. I can confirm dates, itinerary and availability with the cruise line."}
+            </p>
+            <ul className="mt-5 space-y-3 text-muted-foreground text-sm leading-relaxed list-none">
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">•</span>
+                <span>
+                  <strong className="text-foreground/90">{language === "es" ? "11–15 de enero de 2027 (4 noches)" : "January 11–15, 2027 (4 nights)"}</strong>
+                  {language === "es" ? " — Puerto Rico, Saint-Barth e Islas Vírgenes: San Juan → Gustavia (San Bartolomé) → Virgin Gorda (Islas Vírgenes Británicas) → Marigot (San Martín)." : " — Puerto Rico, Saint-Barth & the Virgin Islands: San Juan → Gustavia (Saint-Barthélemy) → Virgin Gorda (British Virgin Islands) → Marigot (Saint-Martin)."}
+                </span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-gold mt-1">•</span>
+                <span>
+                  <strong className="text-foreground/90">{language === "es" ? "25–28 de enero de 2027 (3 noches)" : "January 25–28, 2027 (3 nights)"}</strong>
+                  {language === "es" ? " — Saint-Barth y Anguila: San Juan → Gustavia (San Bartolomé) → Anguila → Marigot (San Martín)." : " — Saint-Barth & Anguilla: San Juan → Gustavia (Saint-Barthélemy) → Anguilla → Marigot (Saint-Martin)."}
+                </span>
+              </li>
+            </ul>
+            <p className="text-muted-foreground text-sm leading-relaxed mt-4">
+              {language === "es"
+                ? "Ambas son salidas de ida desde San Juan que terminan en San Martín, así que hay que planificar el vuelo de regreso. Justo antes del 25 de enero también hay una ruta de Marigot a San Juan, para quien prefiera terminar el viaje en Puerto Rico."
+                : "Both are one-way sailings from San Juan ending in Saint-Martin, so you'll need to plan a flight home. Just before January 25 there's also a Marigot-to-San Juan route for travelers who prefer to end in Puerto Rico."}
             </p>
             <p className="text-xs text-muted-foreground/80 mt-4">
               {language === "es" ? "Fuente: " : "Source: "}
