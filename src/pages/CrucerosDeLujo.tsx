@@ -243,6 +243,28 @@ const crucerosDeLujo = () => {
             items={FAQ_ITEMS}
           />
 
+          <section className="mt-12 p-8 gold-border rounded-lg">
+            <span className="font-body text-gold text-xs tracking-[0.25em] uppercase">
+              {language === "es" ? "Nuevo en San Juan" : "New in San Juan"}
+            </span>
+            <h2 className="font-heading text-2xl text-foreground mt-3 mb-4">
+              {language === "es" ? "Orient Express Corinthian: salidas desde San Juan" : "Orient Express Corinthian: departures from San Juan"}
+            </h2>
+            <p className="text-muted-foreground text-base leading-relaxed">
+              {language === "es"
+                ? "San Juan fue seleccionado como puerto base en el Caribe para la primera temporada del Orient Express Corinthian, un velero de 54 suites y unos 110 pasajeros. Según la Compañía de Turismo de Puerto Rico, tiene tres salidas programadas desde San Juan entre octubre de 2026 y enero de 2027. Si te interesa una de las salidas de enero de 2027, te ayudo a confirmar fechas, itinerario y disponibilidad con la naviera."
+                : "San Juan was selected as a Caribbean home port for the Orient Express Corinthian's first season, a sailing yacht with 54 suites and about 110 guests. According to the Puerto Rico Tourism Company, it has three departures scheduled from San Juan between October 2026 and January 2027. If a January 2027 sailing interests you, I can confirm dates, itinerary and availability with the cruise line."}
+            </p>
+            <p className="text-xs text-muted-foreground/80 mt-4">
+              {language === "es" ? "Fuente: " : "Source: "}
+              <a href="https://tourism.pr.gov/2026/10/29/puerto-rico-sera-puerto-base-de-exclusivo-velero-de-lujo-orient-express-corinthian/" target="_blank" rel="noopener" className="text-gold hover:underline">
+                {language === "es" ? "Compañía de Turismo de Puerto Rico (29 de octubre de 2026)" : "Puerto Rico Tourism Company (October 29, 2026)"}
+              </a>
+              {" · "}
+              <a href="https://www.orient-express.com/en/sailing-yachts/orient-express-corinthian" target="_blank" rel="noopener" className="text-gold hover:underline">Orient Express</a>
+            </p>
+          </section>
+
           <div className="mt-10 text-center">
             <p className="text-muted-foreground text-sm">
               {d.riverCruisesLink}{" "}
