@@ -17,6 +17,7 @@ import vikingImg from "@/assets/ocean/viking.png";
 import oceaniaImg from "@/assets/ocean/oceania.png";
 import ritzCarltonImg from "@/assets/ocean/ritz-carlton.jpg";
 import virginImg from "@/assets/ocean/virgin.jpg";
+import genericShipImg from "@/assets/blog-repositioning-cruise.jpg";
 import virginCertImg from "@/assets/ocean/virgin-cert.png";
 
 import { ORG_REF, WEBSITE_REF, buildGraph, breadcrumbList } from "@/lib/schema";
@@ -72,14 +73,24 @@ const FAQ_ITEMS = [
   },
 ];
 
+const popularLines = [
+  { name: "Royal Caribbean", es: "Barcos grandes con muchas actividades, ideales para familias y grupos. Tiene salidas frecuentes desde San Juan por el Caribe Sur.", en: "Big ships packed with activities, great for families and groups. Frequent San Juan departures to the Southern Caribbean." },
+  { name: "Celebrity Cruises", es: "Ambiente moderno y relajado, buena comida y camarotes cómodos. Navega el Caribe con salidas desde San Juan en temporada.", en: "Modern, relaxed atmosphere, great dining and comfortable staterooms. Seasonal Caribbean sailings from San Juan." },
+  { name: "MSC Cruises", es: "Estilo mediterráneo y tarifas para distintos presupuestos; buena opción para familias.", en: "Mediterranean style with fares for different budgets; a good fit for families." },
+  { name: "Norwegian Cruise Line", es: "Sin horarios fijos para cenar y mucha flexibilidad a bordo. Opera itinerarios por el Caribe.", en: "No fixed dining times and plenty of flexibility on board. Sails Caribbean itineraries." },
+  { name: "Carnival", es: "Ambiente divertido y precios accesibles, perfecto para un primer crucero o un viaje con amistades.", en: "Fun atmosphere and accessible fares, perfect for a first cruise or a trip with friends." },
+  { name: "Princess Cruises", es: "Ritmo tranquilo, buen servicio y opciones para parejas y familias.", en: "Calm pace, attentive service and options for couples and families." },
+  { name: "Disney Cruise Line", es: "Pensado para familias con niños, con personajes y entretenimiento. Coordino el vuelo al puerto de salida.", en: "Designed for families with kids, with characters and shows. I coordinate the flight to the departure port." },
+];
+
 const crucerosDeLujo = () => {
   const { t, localPath, language } = useLanguage();
   const d = t.crucerosDeLujo;
 
   const lineKeys = [
+    "virgin",
     "ritzCarlton",
     "explora",
-    "virgin",
     "azamara",
     "crystal",
     "oceania",
@@ -159,11 +170,6 @@ const crucerosDeLujo = () => {
                 ? "También planifico cruceros con las navieras más conocidas, ideales para familias, primeras experiencias en crucero y viajes con amistades. Te ayudo a comparar barcos, itinerarios y lo que incluye cada tarifa:"
                 : "I also plan cruises with the best-known cruise lines, great for families, first-time cruisers and trips with friends. I help you compare ships, itineraries and what each fare includes:"}
             </p>
-            <ul className="flex flex-wrap gap-2 list-none">
-              {["Royal Caribbean", "Celebrity Cruises", "MSC Cruises", "Norwegian Cruise Line", "Carnival", "Princess Cruises", "Disney Cruise Line", "Virgin Voyages"].map((l) => (
-                <li key={l} className="px-4 py-2 rounded-full border border-border text-sm text-foreground/90">{l}</li>
-              ))}
-            </ul>
             <p className="text-muted-foreground text-sm leading-relaxed">
               {language === "es"
                 ? "Las salidas desde San Juan cambian por temporada; si tu barco favorito no sale de aquí, coordino el vuelo al puerto de salida."
@@ -176,28 +182,33 @@ const crucerosDeLujo = () => {
             <p className="text-muted-foreground text-base leading-relaxed">
               {d.linesIntro}
             </p>
-
-            {lineKeys.map((key) => (
-              <div key={key}>
-                <h3 className="font-heading text-xl text-foreground mt-8">
-                  {d.lines[key].title}
-                </h3>
-                {lineImages[key] && (
-                  <div className="my-4 overflow-hidden rounded-lg aspect-[4/3] gold-border">
-                    <img
-                      src={lineImages[key]}
-                      alt={d.lines[key].title}
-                      loading="lazy"
-                      className="w-full h-full object-cover transition-transform duration-700 hover:scale-105"
-                    />
-                  </div>
-                )}
-                <p className="text-muted-foreground text-base leading-relaxed">
-                  {d.lines[key].desc}
-                </p>
-              </div>
+          </div>
+        </div>
+        <div className="container mx-auto px-6 max-w-6xl">
+          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 list-none mt-8">
+            {[
+              ...popularLines.map((l) => ({ key: l.name, title: l.name, img: genericShipImg, desc: language === "es" ? l.es : l.en })),
+              ...lineKeys.map((key) => ({ key, title: d.lines[key].title, img: lineImages[key] ?? genericShipImg, desc: d.lines[key].desc })),
+            ].map((c) => (
+              <li key={c.key} className="bg-card gold-border rounded-lg overflow-hidden flex flex-col">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img src={c.img} alt={`${c.title} — ${language === "es" ? "crucero desde San Juan, Puerto Rico" : "cruise from San Juan, Puerto Rico"}`} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105 motion-reduce:transition-none" />
+                </div>
+                <div className="p-5">
+                  <h3 className="font-heading text-lg text-foreground">{c.title}</h3>
+                  <details className="mt-2 group">
+                    <summary className="cursor-pointer text-xs tracking-[0.2em] uppercase text-gold list-none">
+                      {language === "es" ? "Ver más" : "Read more"}
+                    </summary>
+                    <p className="mt-2 text-muted-foreground text-sm leading-relaxed">{c.desc}</p>
+                  </details>
+                </div>
+              </li>
             ))}
-
+          </ul>
+        </div>
+        <div className="container mx-auto px-6 max-w-3xl">
+          <div className="prose-custom space-y-6">
             <h2 className="font-heading text-2xl text-foreground mt-10">
               {d.h2Itineraries}
             </h2>
