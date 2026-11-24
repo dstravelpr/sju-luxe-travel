@@ -199,7 +199,9 @@ const crucerosDeLujo = () => {
             {[
               ...popularLines.map((l) => ({ key: l.name, title: l.name, img: l.img ?? genericShipImg, desc: language === "es" ? l.es : l.en })),
               ...lineKeys.map((key) => ({ key, title: d.lines[key].title, img: lineImages[key] ?? genericShipImg, desc: d.lines[key].desc })),
-            ].map((c) => (
+            ]
+              .sort((a, b) => a.title.localeCompare(b.title))
+              .map((c) => (
               <li key={c.key} className="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1rem)] bg-card gold-border rounded-lg overflow-hidden flex flex-col">
                 <div className="aspect-[4/3] overflow-hidden">
                   <img src={c.img} alt={`${c.title} — ${language === "es" ? "crucero desde San Juan, Puerto Rico" : "cruise from San Juan, Puerto Rico"}`} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105 motion-reduce:transition-none" />
