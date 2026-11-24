@@ -11,7 +11,7 @@ const schemaJson = buildGraph({
   headline:
     "Crucero de Río por el Duero desde Puerto Rico: Portugal desde el Río",
   description:
-    "Guía completa para hacer un crucero de río por el Duero desde Puerto Rico: navieras, rutas de vuelo, mejor temporada y experiencias de bodega en el valle vinícola más antiguo del mundo.",
+    "Guía completa para hacer un crucero de río por el Duero desde Puerto Rico: líneas de cruceros, rutas de vuelo, mejor temporada y experiencias de bodega en el valle vinícola más antiguo del mundo.",
   author: AUTHOR,
   publisher: ORG_REF,
   datePublished: "2026-07-08",
@@ -32,7 +32,7 @@ const Post = () => {
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/crucero-fluvial-duero.jpg"
         title="Crucero de Río por el Duero desde Puerto Rico | SJU Luxe"
-        description="Planifica un crucero por el Duero desde San Juan: navieras, rutas de vuelo, mejor temporada y experiencias de bodega en Portugal."
+        description="Planifica un crucero por el Duero desde San Juan: líneas de cruceros, rutas de vuelo, mejor temporada y experiencias de bodega en Portugal."
         canonical="https://www.sjuluxetravel.com/blog/crucero-fluvial-duero-desde-puerto-rico"
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
@@ -128,7 +128,7 @@ const Post = () => {
             </p>
 
             <h2 className="font-heading text-2xl text-foreground mt-10">
-              Las tres navieras que recomendamos
+              Las tres líneas de cruceros que recomendamos
             </h2>
 
             <p>

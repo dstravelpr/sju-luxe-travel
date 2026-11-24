@@ -61,7 +61,7 @@ const schema = buildGraph(
 const FAQ_ITEMS = [
   {
     q: "¿Cómo escojo el crucero ideal saliendo desde Puerto Rico?",
-    a: "Empieza por cinco cosas: si prefieres un crucero por el océano o de río, cuándo quieres viajar, quién viaja, cuántas noches tienes y qué te importa más (precio, destinos, descanso o actividades). Con eso tu agente de viaje puede comparar navieras y salidas desde San Juan que encajen contigo.",
+    a: "Empieza por cinco cosas: si prefieres un crucero por el océano o de río, cuándo quieres viajar, quién viaja, cuántas noches tienes y qué te importa más (precio, destinos, descanso o actividades). Con eso tu agente de viaje puede comparar líneas de cruceros y salidas desde San Juan que encajen contigo.",
   },
   {
     q: "¿Qué líneas de cruceros salen desde San Juan, Puerto Rico?",
@@ -69,7 +69,7 @@ const FAQ_ITEMS = [
   },
   {
     q: "¿Qué incluye la tarifa de un crucero?",
-    a: "Depende de la naviera, el itinerario y la tarifa. Bebidas, excursiones, propinas e internet pueden estar incluidos o cobrarse por separado. Confirmamos por escrito lo que incluye tu reserva antes de comprar.",
+    a: "Depende de la línea de cruceros, el itinerario y la tarifa. Bebidas, excursiones, propinas e internet pueden estar incluidos o cobrarse por separado. Confirmamos por escrito lo que incluye tu reserva antes de comprar.",
   },
   {
     q: "¿Necesito pasaporte para hacer un crucero desde San Juan?",
@@ -177,7 +177,7 @@ const crucerosDeLujo = () => {
             </h2>
             <p className="text-muted-foreground text-base leading-relaxed">
               {language === "es"
-                ? "También planifico cruceros con las navieras más conocidas, ideales para familias, primeras experiencias en crucero y viajes con amistades. Te ayudo a comparar barcos, itinerarios y lo que incluye cada tarifa:"
+                ? "También planifico cruceros con las líneas de cruceros más conocidas, ideales para familias, primeras experiencias en crucero y viajes con amistades. Te ayudo a comparar barcos, itinerarios y lo que incluye cada tarifa:"
                 : "I also plan cruises with the best-known cruise lines, great for families, first-time cruisers and trips with friends. I help you compare ships, itineraries and what each fare includes:"}
             </p>
             <p className="text-muted-foreground text-sm leading-relaxed">
@@ -314,7 +314,7 @@ const crucerosDeLujo = () => {
             </h2>
             <p className="text-muted-foreground text-base leading-relaxed">
               {language === "es"
-                ? "San Juan fue seleccionado como puerto base en el Caribe para la primera temporada del Orient Express Corinthian, un velero de 54 suites y unos 110 pasajeros. Según la Compañía de Turismo de Puerto Rico, tuvo su primera salida desde San Juan el 29 de octubre de 2026 y tiene dos salidas más en enero de 2027. Te ayudo a confirmar fechas, itinerario y disponibilidad con la naviera."
+                ? "San Juan fue seleccionado como puerto base en el Caribe para la primera temporada del Orient Express Corinthian, un velero de 54 suites y unos 110 pasajeros. Según la Compañía de Turismo de Puerto Rico, tuvo su primera salida desde San Juan el 29 de octubre de 2026 y tiene dos salidas más en enero de 2027. Te ayudo a confirmar fechas, itinerario y disponibilidad con la línea de cruceros."
                 : "San Juan was selected as a Caribbean home port for the Orient Express Corinthian's first season, a sailing yacht with 54 suites and about 110 guests. According to the Puerto Rico Tourism Company, its first San Juan departure was October 29, 2026, with two more in January 2027. I can confirm dates, itinerary and availability with the cruise line."}
             </p>
             <ul className="mt-5 space-y-3 text-muted-foreground text-sm leading-relaxed list-none">

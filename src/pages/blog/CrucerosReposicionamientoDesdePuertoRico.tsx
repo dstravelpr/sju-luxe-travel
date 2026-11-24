@@ -55,13 +55,13 @@ const content = {
     read: "8 min de lectura",
     alt: "Crucero de reposicionamiento en alta mar, navegando el Atlántico al atardecer",
     answer:
-      "Un crucero de reposicionamiento es un viaje de ida en el que la naviera mueve un barco de una región a otra. Desde San Juan, la mayoría de las salidas de 2027 se esperan en primavera (marzo a mayo), cuando los barcos cruzan del Caribe hacia Europa, y algunas en otoño hacia el Canal de Panamá. Las fechas y rutas cambian cada temporada, así que conviene confirmarlas con la naviera antes de reservar.",
+      "Un crucero de reposicionamiento es un viaje de ida en el que la línea de cruceros mueve un barco de una región a otra. Desde San Juan, la mayoría de las salidas de 2027 se esperan en primavera (marzo a mayo), cuando los barcos cruzan del Caribe hacia Europa, y algunas en otoño hacia el Canal de Panamá. Las fechas y rutas cambian cada temporada, así que conviene confirmarlas con la línea de cruceros antes de reservar.",
     sections: [
       {
         h: "¿Qué es un crucero de reposicionamiento?",
         p: [
-          "Al cambiar la temporada, las navieras mueven sus barcos: del Caribe al Mediterráneo o al norte de Europa para el verano europeo, y de regreso al Caribe para el invierno. Esos trayectos se venden como viajes de ida, conocidos en inglés como “repositioning cruises”.",
-          "Suelen tener más días de navegación y menos puertos que un crucero regular. Por eso muchas veces la tarifa por noche es más baja, aunque eso no está garantizado: depende de la naviera, la cabina y la fecha.",
+          "Al cambiar la temporada, las líneas de cruceros mueven sus barcos: del Caribe al Mediterráneo o al norte de Europa para el verano europeo, y de regreso al Caribe para el invierno. Esos trayectos se venden como viajes de ida, conocidos en inglés como “repositioning cruises”.",
+          "Suelen tener más días de navegación y menos puertos que un crucero regular. Por eso muchas veces la tarifa por noche es más baja, aunque eso no está garantizado: depende de la línea de cruceros, la cabina y la fecha.",
         ],
       },
       {
@@ -69,7 +69,7 @@ const content = {
         p: [
           "Primavera 2027 (marzo a mayo): cruceros transatlánticos hacia puertos como Lisboa, Barcelona, Málaga, Civitavecchia (Roma) o Southampton.",
           "Otoño 2027 (octubre a diciembre): algunas rutas hacia el Canal de Panamá, Costa Rica o la costa del Pacífico, cuando los barcos se reubican para la temporada de invierno.",
-          "Las navieras publican estas salidas con uno o dos años de anticipación, y pueden añadir, cambiar o cancelar puertos. Te ayudo a revisar qué hay disponible para tus fechas.",
+          "Las líneas de cruceros publican estas salidas con uno o dos años de anticipación, y pueden añadir, cambiar o cancelar puertos. Te ayudo a revisar qué hay disponible para tus fechas.",
         ],
         table: true,
       },
@@ -83,21 +83,21 @@ const content = {
       {
         h: "¿Necesito pasaporte?",
         p: [
-          "Sí, recomiendo tener pasaporte vigente. Los cruceros de reposicionamiento terminan en otro país, así que no son viajes de ida y vuelta al mismo puerto de EE. UU. Necesitarás pasaporte para entrar al país de llegada y para volar de regreso. El Departamento de Estado recomienda verificar los requisitos de tu naviera y viajar con la libreta de pasaporte (passport book). Revisa también si tu destino exige otros requisitos de entrada, como el sistema ETIAS de Europa cuando esté vigente.",
+          "Sí, recomiendo tener pasaporte vigente. Los cruceros de reposicionamiento terminan en otro país, así que no son viajes de ida y vuelta al mismo puerto de EE. UU. Necesitarás pasaporte para entrar al país de llegada y para volar de regreso. El Departamento de Estado recomienda verificar los requisitos de tu línea de cruceros y viajar con la libreta de pasaporte (passport book). Revisa también si tu destino exige otros requisitos de entrada, como el sistema ETIAS de Europa cuando esté vigente.",
         ],
         link: { href: PASSPORT_URL, label: "Guía del Departamento de Estado para pasajeros de cruceros (en inglés)" },
       },
       {
-        h: "Navieras que han incluido San Juan en sus rutas",
+        h: "Líneas de cruceros que han incluido San Juan en sus rutas",
         p: [
-          "Estas navieras han programado reposicionamientos que pasan por San Juan en temporadas recientes. No todas repiten cada año; confirmamos la disponibilidad de 2027 antes de recomendarte una salida.",
+          "Estas líneas de cruceros han programado reposicionamientos que pasan por San Juan en temporadas recientes. No todas repiten cada año; confirmamos la disponibilidad de 2027 antes de recomendarte una salida.",
         ],
         list: lines,
       },
       {
         h: "¿Qué incluye y qué no?",
         p: [
-          "Generalmente incluye la cabina, comidas en los restaurantes principales, entretenimiento a bordo y las paradas del itinerario. Restaurantes de especialidad, bebidas, propinas, impuestos y cargos portuarios, wifi y excursiones pueden estar incluidos o no según la naviera y la tarifa; revisa cada salida.",
+          "Generalmente incluye la cabina, comidas en los restaurantes principales, entretenimiento a bordo y las paradas del itinerario. Restaurantes de especialidad, bebidas, propinas, impuestos y cargos portuarios, wifi y excursiones pueden estar incluidos o no según la línea de cruceros y la tarifa; revisa cada salida.",
         ],
       },
       {
@@ -110,8 +110,8 @@ const content = {
       },
     ],
     tableCaption: "Salidas de reposicionamiento 2027 desde San Juan",
-    th: ["Barco", "Naviera", "Sale de San Juan", "Llega a", "Noches"],
-    tableNote: "Todas estas salidas embarcan en San Juan (no son cruceros que llegan a San Juan). Fuente: listado de RepoCruises consultado el 24 de noviembre de 2026; confirma fechas y tarifas con la naviera antes de reservar.",
+    th: ["Barco", "Línea de cruceros", "Sale de San Juan", "Llega a", "Noches"],
+    tableNote: "Todas estas salidas embarcan en San Juan (no son cruceros que llegan a San Juan). Fuente: listado de RepoCruises consultado el 24 de noviembre de 2026; confirma fechas y tarifas con la línea de cruceros antes de reservar.",
     sourceLabel: "Ver listado de salidas desde San Juan",
     destLabel: "viajes personalizados a Portugal",
     guideLabel: "ver cruceros de reposicionamiento desde San Juan",
@@ -119,7 +119,7 @@ const content = {
     faqs: [
       {
         q: "¿Hay cruceros de reposicionamiento desde Puerto Rico en 2027?",
-        a: "Varias navieras suelen incluir San Juan en sus rutas de reposicionamiento, sobre todo en primavera hacia Europa. Las salidas cambian cada año, así que hay que confirmarlas con la naviera para las fechas exactas.",
+        a: "Varias líneas de cruceros suelen incluir San Juan en sus rutas de reposicionamiento, sobre todo en primavera hacia Europa. Las salidas cambian cada año, así que hay que confirmarlas con la línea de cruceros para las fechas exactas.",
       },
       {
         q: "¿Cuánto duran?",
@@ -135,7 +135,7 @@ const content = {
       },
       {
         q: "¿Son buenos para familias?",
-        a: "Depende de la naviera. Algunas, como Celebrity o Norwegian, tienen actividades para niños; otras están pensadas para adultos. También hay muchos días en alta mar, algo a considerar con niños pequeños.",
+        a: "Depende de la línea de cruceros. Algunas, como Celebrity o Norwegian, tienen actividades para niños; otras están pensadas para adultos. También hay muchos días en alta mar, algo a considerar con niños pequeños.",
       },
       {
         q: "¿Cómo me ayuda un agente de viaje?",

@@ -181,7 +181,7 @@ const Blog = () => {
                   </h3>
                   <p className="text-muted-foreground text-xs leading-relaxed mb-4">
                     {language === "es"
-                      ? "Navieras (Ama, Scenic, Uniworld), rutas de vuelo desde SJU, mejor temporada y experiencias privadas de bodega en el valle vinícola más antiguo del mundo."
+                      ? "Líneas de cruceros (Ama, Scenic, Uniworld), rutas de vuelo desde SJU, mejor temporada y experiencias privadas de bodega en el valle vinícola más antiguo del mundo."
                       : "Cruise lines (Ama, Scenic, Uniworld), flight routes from SJU, best season and private winery experiences in the world's oldest wine valley."}
                   </p>
 

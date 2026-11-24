@@ -123,9 +123,9 @@ const pages = {
   },
   "/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside": {
     title: "Cruceros Fluviales: AmaWaterways vs Avalon vs Riverside | SJU Luxe Travel",
-    description: "Comparativa detallada de las tres navieras fluviales premium: AmaWaterways, Avalon Waterways y Riverside. Cuál elegir según tu estilo de viaje.",
+    description: "Comparativa detallada de las tres líneas de cruceros fluviales premium: AmaWaterways, Avalon Waterways y Riverside. Cuál elegir según tu estilo de viaje.",
     h1: "Cruceros Fluviales: AmaWaterways vs Avalon vs Riverside",
-    body: "Comparativa detallada de las tres principales navieras fluviales premium. Analizamos AmaWaterways, Avalon Waterways y Riverside en camarotes, gastronomía, excursiones y estilo de servicio para ayudarte a elegir el crucero fluvial de lujo ideal.",
+    body: "Comparativa detallada de las tres principales líneas de cruceros fluviales premium. Analizamos AmaWaterways, Avalon Waterways y Riverside en camarotes, gastronomía, excursiones y estilo de servicio para ayudarte a elegir el crucero fluvial de lujo ideal.",
     datePublished: "2026-05-20", dateModified: "2026-05-20",
     breadcrumbs: [{ name: "Home", path: "/" }, { name: "Blog", path: "/blog" }, { name: "Comparativa Cruceros Fluviales", path: "/blog/cruceros-fluviales-ama-vs-avalon-vs-riverside" }],
   },
@@ -187,7 +187,7 @@ const pages = {
   },
   "/blog/crucero-fluvial-duero-desde-puerto-rico": {
     title: "Crucero Fluvial por el Duero desde Puerto Rico: Portugal desde el Río | SJU Luxe Travel",
-    description: "Cómo planificar un crucero fluvial de lujo por el Duero desde San Juan: navieras (AmaWaterways, Scenic, Uniworld), rutas de vuelo, mejor temporada y experiencias de bodega en Portugal.",
+    description: "Cómo planificar un crucero fluvial de lujo por el Duero desde San Juan: líneas de cruceros (AmaWaterways, Scenic, Uniworld), rutas de vuelo, mejor temporada y experiencias de bodega en Portugal.",
     h1: "Crucero Fluvial por el Duero desde Puerto Rico: Portugal desde el Río",
     body: "Guía completa para hacer un crucero fluvial por el Duero desde Puerto Rico. Comparamos AmaWaterways, Scenic y Uniworld, la mejor temporada (mayo, junio, septiembre y octubre para la vendimia), las rutas de vuelo desde SJU vía MIA o JFK, y las experiencias privadas de bodega en las quintas del valle vinícola más antiguo del mundo.",
     datePublished: "2026-07-08", dateModified: "2026-07-08",

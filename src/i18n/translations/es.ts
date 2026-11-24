@@ -699,7 +699,7 @@ export const es: typeof en = {
     h1: "Cruceros desde San Juan, Puerto Rico —",
     h1Highlight: "Tu Agente VIP",
     p1: "San Juan es uno de los puertos de cruceros más importantes del Caribe. Cada semana, decenas de barcos parten del Muelle de Pan American — pero no todos los cruceros son iguales, y definitivamente no todas las experiencias a bordo son iguales. La diferencia entre un crucero ordinario y un crucero extraordinario está, en gran parte, en cómo lo planificas y con quién lo planificas.",
-    p2: "<strong>SJU Luxe Travel</strong> es tu agente de cruceros con base en San Juan, Puerto Rico. Como parte de la red <strong>NCM Concierge — Travel Leaders</strong>, tenemos acceso a beneficios VIP exclusivos, tarifas preferentes y atención personalizada que simplemente no obtienes reservando directamente con la naviera.",
+    p2: "<strong>SJU Luxe Travel</strong> es tu agente de cruceros con base en San Juan, Puerto Rico. Como parte de la red <strong>NCM Concierge — Travel Leaders</strong>, tenemos acceso a beneficios VIP exclusivos, tarifas preferentes y atención personalizada que simplemente no obtienes reservando directamente con la línea de cruceros.",
     h2Why:
       "¿Por Qué Planificar Tu crucero con un Agente de Viaje Especializado?",
     whyIntro:
@@ -726,11 +726,11 @@ export const es: typeof en = {
     ],
     h2Lines: "Líneas de cruceros con salidas desde San Juan en 2027",
     linesIntro:
-      "Estas navieras tienen salidas programadas desde el Puerto de San Juan para 2027 (confirmamos fechas y disponibilidad antes de reservar). Te ayudo a comparar cada una:",
+      "Estas líneas de cruceros tienen salidas programadas desde el Puerto de San Juan para 2027 (confirmamos fechas y disponibilidad antes de reservar). Te ayudo a comparar cada una:",
     lines: {
       ritzCarlton: {
         title: "Ritz-Carlton Yacht Collection",
-        desc: "Lo más nuevo y exclusivo en llegar a San Juan. Tres yates de ultra-lujo (Evrima, Ilma, Luminara) con máximo 298 pasajeros, diseño de hotel de cinco estrellas y una propuesta que borra la línea entre yate privado y crucero. Servicio casi personalizado al 100%, gastronomía de nivel Michelin y acceso a puertos pequeños que las grandes navieras no pueden alcanzar.",
+        desc: "Lo más nuevo y exclusivo en llegar a San Juan. Tres yates de ultra-lujo (Evrima, Ilma, Luminara) con máximo 298 pasajeros, diseño de hotel de cinco estrellas y una propuesta que borra la línea entre yate privado y crucero. Servicio casi personalizado al 100%, gastronomía de nivel Michelin y acceso a puertos pequeños que las grandes líneas de cruceros no pueden alcanzar.",
       },
       explora: {
         title: "Explora Journeys",
@@ -774,7 +774,7 @@ export const es: typeof en = {
       },
       orientExpress: {
         title: "Orient Express Corinthian",
-        desc: "El nuevo velero de lujo con 54 suites y unos 110 pasajeros, seleccionado como puerto base en el Caribe para San Juan. Su primera salida desde San Juan fue el 29 de octubre de 2026 y tiene dos salidas más en enero de 2027. Te ayudo a confirmar fechas, itinerario y disponibilidad con la naviera.",
+        desc: "El nuevo velero de lujo con 54 suites y unos 110 pasajeros, seleccionado como puerto base en el Caribe para San Juan. Su primera salida desde San Juan fue el 29 de octubre de 2026 y tiene dos salidas más en enero de 2027. Te ayudo a confirmar fechas, itinerario y disponibilidad con la línea de cruceros.",
       },
     },
     h2Itineraries: "Itinerarios de crucero Populares desde San Juan",
@@ -816,7 +816,7 @@ export const es: typeof en = {
     faqQ1:
       "¿Qué líneas de cruceros salen de San Juan en 2027?",
     faqA1:
-      "Para 2027 hay salidas programadas desde San Juan de navieras como Ritz-Carlton Yacht Collection, Explora Journeys, Virgin Voyages, Azamara, Crystal, Oceania, Regent Seven Seas, Silversea, Viking y SeaDream, además de navieras conocidas como Royal Caribbean, Celebrity y MSC según la temporada. Las fechas cambian, así que las confirmamos antes de reservar. Como agente de viaje especializado en cruceros desde Puerto Rico, te ayudo a comparar opciones, acceder a tarifas preferenciales y elegir la línea que mejor se adapta a tu estilo de viaje y presupuesto.",
+      "Para 2027 hay salidas programadas desde San Juan de líneas de cruceros como Ritz-Carlton Yacht Collection, Explora Journeys, Virgin Voyages, Azamara, Crystal, Oceania, Regent Seven Seas, Silversea, Viking y SeaDream, además de líneas de cruceros conocidas como Royal Caribbean, Celebrity y MSC según la temporada. Las fechas cambian, así que las confirmamos antes de reservar. Como agente de viaje especializado en cruceros desde Puerto Rico, te ayudo a comparar opciones, acceder a tarifas preferenciales y elegir la línea que mejor se adapta a tu estilo de viaje y presupuesto.",
     riverCruisesLink: "¿Prefieres un crucero por ríos históricos?",
     riverCruisesLinkText: "Descubre nuestros cruceros de río →",
     ctaTitle: "¿Listo para zarpar desde San Juan",

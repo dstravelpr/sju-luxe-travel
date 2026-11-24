@@ -20,9 +20,9 @@ const DATA: Record<Topic, Data> = {
   },
   repositioning: {
     title: { es: "Cruceros de reposicionamiento 2027", en: "2027 repositioning cruises" },
-    intro: { es: "Las navieras publican sus salidas de reposicionamiento por temporada, normalmente en primavera y otoño, cuando los barcos cambian entre el Caribe y Europa. Fechas, puertos y precios cambian; los confirmamos antes de reservar.", en: "Cruise lines publish repositioning sailings by season, usually spring and fall, when ships move between the Caribbean and Europe. Dates, ports and fares change; we confirm them before booking." },
+    intro: { es: "Las líneas de cruceros publican sus salidas de reposicionamiento por temporada, normalmente en primavera y otoño, cuando los barcos cambian entre el Caribe y Europa. Fechas, puertos y precios cambian; los confirmamos antes de reservar.", en: "Cruise lines publish repositioning sailings by season, usually spring and fall, when ships move between the Caribbean and Europe. Dates, ports and fares change; we confirm them before booking." },
     qa: [
-      { q: { es: "¿Hay cruceros de reposicionamiento desde Puerto Rico en 2027?", en: "Are there repositioning cruises from Puerto Rico in 2027?" }, a: { es: "Algunas navieras incluyen San Juan en sus rutas de reposicionamiento, pero varía cada año. Te ayudo a revisar las salidas disponibles para tus fechas.", en: "Some lines include San Juan on repositioning routes, but it varies each year. I can check available sailings for your dates." } },
+      { q: { es: "¿Hay cruceros de reposicionamiento desde Puerto Rico en 2027?", en: "Are there repositioning cruises from Puerto Rico in 2027?" }, a: { es: "Algunas líneas de cruceros incluyen San Juan en sus rutas de reposicionamiento, pero varía cada año. Te ayudo a revisar las salidas disponibles para tus fechas.", en: "Some lines include San Juan on repositioning routes, but it varies each year. I can check available sailings for your dates." } },
     ],
     links: [{ to: "/cruceros-reposicionamiento", label: { es: "Ver cruceros de reposicionamiento", en: "See repositioning cruises" } }, home],
   },
@@ -31,7 +31,7 @@ const DATA: Record<Topic, Data> = {
     intro: { es: "Una guía general para empezar. Lo que incluye cada tarifa depende del itinerario y la fecha; lo confirmamos contigo.", en: "A general starting point. What each fare includes depends on itinerary and date; we confirm it with you." },
     qa: [],
     table: {
-      head: [{ es: "Naviera", en: "Cruise line" }, { es: "Ideal para", en: "Good fit for" }],
+      head: [{ es: "Línea de cruceros", en: "Cruise line" }, { es: "Ideal para", en: "Good fit for" }],
       rows: [
         [{ es: "AmaWaterways", en: "AmaWaterways" }, { es: "Viajeros que buscan excursiones incluidas y opciones activas, como bicicletas.", en: "Travelers who want included excursions and active options such as bikes." }],
         [{ es: "Avalon Waterways", en: "Avalon Waterways" }, { es: "Quienes valoran cabinas con vistas panorámicas y flexibilidad en las excursiones.", en: "Those who value panoramic-view cabins and flexible excursions." }],
