@@ -4169,6 +4169,78 @@
         "@context": "https://schema.org",
         "@graph": [
           {
+            "@type": [
+              "Organization",
+              "TravelAgency",
+              "LocalBusiness"
+            ],
+            "@id": "https://www.sjuluxetravel.com/#organization",
+            "name": "SJU Luxe Travel",
+            "url": "https://www.sjuluxetravel.com",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://www.sjuluxetravel.com/logo.png"
+            },
+            "telephone": "+16179355714",
+            "email": "info@sjuluxetravel.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "San Juan",
+              "addressRegion": "PR",
+              "addressCountry": "US"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 18.4528361,
+              "longitude": -66.0635516
+            },
+            "hasMap": "https://www.google.com/maps/place/SJU+Luxe+Travel/@18.4528361,-66.0635516,17z",
+            "areaServed": {
+              "@type": "State",
+              "name": "Puerto Rico"
+            },
+            "priceRange": "$$$",
+            "serviceType": "Travel agency",
+            "description": "Travel agency based in San Juan, Puerto Rico, helping Puerto Rico residents plan trips abroad for every budget: cruises, honeymoons, family trips, adventures and custom itineraries.",
+            "sameAs": [
+              "https://www.instagram.com/sjuluxetravel",
+              "https://www.facebook.com/sjuluxetravel",
+              "https://www.linkedin.com/company/sju-luxe-travel",
+              "https://www.google.com/maps/place/SJU+Luxe+Travel/@18.4528361,-66.0635516,17z",
+              "https://www.travelleaders.com/agent/501399?ref=search&slctState=PR",
+              "https://maps.apple.com/p/.bHFuB9NFWe9Nz"
+            ],
+            "potentialAction": {
+              "@type": "ReserveAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://www.sjuluxetravel.com/contact",
+                "actionPlatform": [
+                  "http://schema.org/DesktopWebPlatform",
+                  "http://schema.org/MobileWebPlatform"
+                ]
+              },
+              "result": {
+                "@type": "Reservation",
+                "name": "Travel Consultation"
+              }
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.sjuluxetravel.com/#website",
+            "url": "https://www.sjuluxetravel.com",
+            "name": "SJU Luxe Travel",
+            "publisher": {
+              "@id": "https://www.sjuluxetravel.com/#organization"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
             "@type": "WebPage",
             "@id": "https://www.sjuluxetravel.com/cruceros-de-lujo-desde-san-juan#webpage",
             "url": "https://www.sjuluxetravel.com/cruceros-de-lujo-desde-san-juan",
@@ -4216,6 +4288,14 @@
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "¿Cómo escojo el crucero ideal saliendo desde Puerto Rico?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Empieza por cinco cosas: si prefieres un crucero por el océano o de río, cuándo quieres viajar, quién viaja, cuántas noches tienes y qué te importa más (precio, destinos, descanso o actividades). Con eso tu agente de viaje puede comparar navieras y salidas desde San Juan que encajen contigo."
+            }
+          },
           {
             "@type": "Question",
             "name": "¿Qué líneas de cruceros salen desde San Juan, Puerto Rico?",
