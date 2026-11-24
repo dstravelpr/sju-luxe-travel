@@ -772,6 +772,10 @@ export const es: typeof en = {
         title: "SeaDream Yacht Club",
         desc: "Dos mega-yates de solo 112 pasajeros cada uno. La experiencia más cercana a un yate privado disponible en el mercado: sin horarios fijos, sin código de etiqueta estricto, sin masas. Atracan en puertos boutique del Caribe donde ningún otro crucero llega. La opción favorita para el cliente que lo ha probado todo y quiere algo verdaderamente diferente.",
       },
+      orientExpress: {
+        title: "Orient Express Corinthian",
+        desc: "El nuevo velero de lujo con 54 suites y unos 110 pasajeros, seleccionado como puerto base en el Caribe para San Juan. Su primera salida desde San Juan fue el 29 de octubre de 2026 y tiene dos salidas más en enero de 2027. Te ayudo a confirmar fechas, itinerario y disponibilidad con la naviera.",
+      },
     },
     h2Itineraries: "Itinerarios de crucero Populares desde San Juan",
     itineraries: [

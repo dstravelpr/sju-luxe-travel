@@ -15,3 +15,8 @@
 - [x] Clarify planning costs in the existing EN/ES concierge article without fixed prices or an unconfirmed fee policy.
 - [x] Align visible answers, structured information and route snapshots; verify both languages.
 - [x] Repositioning cruises 2027 article: bilingual, verified sailings table, total-trip planning, passport fix
+
+## Cruise lines grid (CrucerosDeLujo)
+- [x] Real photos for all seven popular lines (Royal Caribbean, Celebrity, MSC, Norwegian, Carnival, Princess, Disney).
+- [x] Cards shown 3 per row on every screen size, with the final row centered.
+- [x] Orient Express Corinthian added as the 18th line so the grid closes in six full rows of three; photo credit recorded.

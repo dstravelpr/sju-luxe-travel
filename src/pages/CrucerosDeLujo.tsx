@@ -25,6 +25,7 @@ import mscAsset from "@/assets/msc-cruises-san-juan.jpg.asset.json";
 import princessAsset from "@/assets/princess-cruises-san-juan.png.asset.json";
 import disneyAsset from "@/assets/disney-cruise-line-san-juan.png.asset.json";
 import norwegianAsset from "@/assets/norwegian-cruise-line-san-juan.png.asset.json";
+import orientExpressImg from "@/assets/orient-express-corinthian.jpg.asset.json";
 import virginCertImg from "@/assets/ocean/virgin-cert.png";
 
 import { ORG_REF, WEBSITE_REF, buildGraph, breadcrumbList } from "@/lib/schema";
@@ -105,6 +106,7 @@ const crucerosDeLujo = () => {
     "silversea",
     "viking",
     "seadream",
+    "orientExpress",
   ] as const;
   const lineImages: Partial<Record<(typeof lineKeys)[number], string>> = {
     ritzCarlton: ritzCarltonImg,
@@ -117,6 +119,7 @@ const crucerosDeLujo = () => {
     silversea: silverseaImg,
     viking: vikingImg,
     seadream: seadreamImg,
+    orientExpress: orientExpressImg.url,
   };
 
   return (
@@ -192,12 +195,12 @@ const crucerosDeLujo = () => {
           </div>
         </div>
         <div className="container mx-auto px-6 max-w-6xl">
-          <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 list-none mt-8">
+          <ul className="flex flex-wrap justify-center gap-6 list-none mt-8">
             {[
               ...popularLines.map((l) => ({ key: l.name, title: l.name, img: l.img ?? genericShipImg, desc: language === "es" ? l.es : l.en })),
               ...lineKeys.map((key) => ({ key, title: d.lines[key].title, img: lineImages[key] ?? genericShipImg, desc: d.lines[key].desc })),
             ].map((c) => (
-              <li key={c.key} className="bg-card gold-border rounded-lg overflow-hidden flex flex-col">
+              <li key={c.key} className="w-full sm:w-[calc(50%-0.75rem)] md:w-[calc(33.333%-1rem)] bg-card gold-border rounded-lg overflow-hidden flex flex-col">
                 <div className="aspect-[4/3] overflow-hidden">
                   <img src={c.img} alt={`${c.title} — ${language === "es" ? "crucero desde San Juan, Puerto Rico" : "cruise from San Juan, Puerto Rico"}`} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 hover:scale-105 motion-reduce:transition-none" />
                 </div>
@@ -225,7 +228,9 @@ const crucerosDeLujo = () => {
             {language === "es" ? " (recortada y redimensionada)" : " (cropped and resized)"}. MSC Cruises: P. Hughes,{" "}
             <a href="https://commons.wikimedia.org/wiki/File:San_Juan_-_Cruise_ship_entering_harbor.jpg" target="_blank" rel="noopener noreferrer" className="underline">Wikimedia Commons</a>,{" "}
             <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" className="underline">CC BY-SA 4.0</a>
-            {language === "es" ? " (recortada y redimensionada)" : " (cropped and resized)"}.
+            {language === "es" ? " (recortada y redimensionada)" : " (cropped and resized)"}. Orient Express Corinthian: JPD115,{" "}
+            <a href="https://commons.wikimedia.org/wiki/File:OE_Corinthian.jpg" target="_blank" rel="noopener noreferrer" className="underline">Wikimedia Commons</a>,{" "}
+            <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer" className="underline">CC BY-SA 4.0</a>.
           </p>
         </div>
         <div className="container mx-auto px-6 max-w-3xl">

@@ -769,6 +769,10 @@ export const en = {
         title: "SeaDream Yacht Club",
         desc: "Two mega-yachts of only 112 passengers each. The closest experience to a private yacht available on the market: no fixed schedules, no strict dress code, no crowds. They dock at boutique Caribbean ports that no other cruise reaches. The favorite option for the client who has tried everything and wants something truly different.",
       },
+      orientExpress: {
+        title: "Orient Express Corinthian",
+        desc: "The new luxury sailing yacht with 54 suites and about 110 guests, selected as a Caribbean home port in San Juan. Its first San Juan departure was October 29, 2026, with two more in January 2027. I can confirm dates, itinerary and availability with the cruise line.",
+      },
     },
     h2Itineraries: "Popular cruise Itineraries from San Juan",
     itineraries: [
