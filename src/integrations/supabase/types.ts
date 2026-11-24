@@ -14,6 +14,54 @@ export type Database = {
   }
   public: {
     Tables: {
+      cruise_requests: {
+        Row: {
+          budget: string | null
+          created_at: string
+          cruise_type: string
+          email: string | null
+          id: string
+          language: string
+          name: string
+          nights: string
+          notes: string | null
+          priority: string
+          travel_window: string
+          travelers: string
+          whatsapp: string | null
+        }
+        Insert: {
+          budget?: string | null
+          created_at?: string
+          cruise_type: string
+          email?: string | null
+          id?: string
+          language?: string
+          name: string
+          nights: string
+          notes?: string | null
+          priority: string
+          travel_window: string
+          travelers: string
+          whatsapp?: string | null
+        }
+        Update: {
+          budget?: string | null
+          created_at?: string
+          cruise_type?: string
+          email?: string | null
+          id?: string
+          language?: string
+          name?: string
+          nights?: string
+          notes?: string | null
+          priority?: string
+          travel_window?: string
+          travelers?: string
+          whatsapp?: string | null
+        }
+        Relationships: []
+      }
       newsletter_subscriptions: {
         Row: {
           consent: boolean

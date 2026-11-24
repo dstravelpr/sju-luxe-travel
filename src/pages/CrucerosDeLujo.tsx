@@ -5,6 +5,7 @@ import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { FAQSection } from "@/components/FAQSection";
+import { CruiseFinder } from "@/components/CruiseFinder";
 import { RelatedArticles } from "@/components/RelatedArticles";
 import azamaraImg from "@/assets/ocean/azamara.png";
 import crystalImg from "@/assets/ocean/crystal.png";
@@ -50,6 +51,10 @@ const schema = buildGraph(
 );
 
 const FAQ_ITEMS = [
+  {
+    q: "¿Cómo escojo el crucero ideal saliendo desde Puerto Rico?",
+    a: "Empieza por cinco cosas: si prefieres un crucero por el océano o de río, cuándo quieres viajar, quién viaja, cuántas noches tienes y qué te importa más (precio, destinos, descanso o actividades). Con eso tu agente de viaje puede comparar navieras y salidas desde San Juan que encajen contigo.",
+  },
   {
     q: "¿Qué líneas de cruceros salen desde San Juan, Puerto Rico?",
     a: "Desde el Puerto de San Juan operan itinerarios de líneas como Regent Seven Seas, Silversea, Oceania cruises y Celebrity cruises, con destinos al Caribe, Sudamérica y el Atlántico.",
@@ -237,6 +242,8 @@ const crucerosDeLujo = () => {
               },
             ]}
           />
+
+          <CruiseFinder />
 
           <FAQSection
             heading="Preguntas Frecuentes sobre cruceros"
