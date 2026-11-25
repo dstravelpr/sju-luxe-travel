@@ -40,10 +40,10 @@ const Post = () => {
   const feeAnswers = planningFeeAnswers[locale];
   const faqs = [...generalFaqs[locale], ...feeAnswers];
   const description = isEs
-    ? "Servicios de concierge de viaje desde Puerto Rico: qué incluye la planificación, qué es un cargo por planificación y qué confirmar antes de pagar."
+    ? "Qué es un servicio de concierge y qué significa en viajes: una persona que planifica, reserva y coordina tu viaje. Ejemplos y qué incluye desde Puerto Rico."
     : "Travel concierge from Puerto Rico: explore planning services, understand travel planning fees and learn what to confirm before paying.";
   const headline = isEs
-    ? "Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena"
+    ? "¿Qué es un Servicio de Concierge? Significado y Qué Incluye en tus Viajes"
     : "Travel Concierge Services: What They Are, What's Included & Why They're Worth It";
   const schemaJson = buildGraph({
     "@type": "BlogPosting",
@@ -52,7 +52,7 @@ const Post = () => {
     author: AUTHOR,
     publisher: ORG_REF,
     datePublished: "2026-05-29",
-    dateModified: "2026-11-24",
+    dateModified: "2026-11-25",
     inLanguage: isEs ? "es-PR" : "en",
     url: `https://www.sjuluxetravel.com${isEs ? "/es" : ""}/blog/servicios-concierge-viaje`,
   });
@@ -72,8 +72,8 @@ const Post = () => {
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/servicios-concierge-viaje.jpg"
         title="Travel Concierge: Services and Costs | SJU Luxe Travel"
-        titleEs="Travel Concierge: Qué Incluye y Cuánto Cuesta | SJU Luxe"
-        descriptionEs="Servicios de concierge de viaje desde Puerto Rico: qué incluye la planificación, qué es un cargo por planificación y qué confirmar antes de pagar."
+        titleEs="¿Qué es un Servicio de Concierge? Significado | SJU Luxe"
+        descriptionEs="Qué es un servicio de concierge y qué significa en viajes: una persona que planifica, reserva y coordina tu viaje. Ejemplos y qué incluye desde Puerto Rico."
         emitHreflang
         description="Travel concierge from Puerto Rico: explore planning services, understand travel planning fees and learn what to confirm before paying."
         canonical="https://www.sjuluxetravel.com/blog/servicios-concierge-viaje"
@@ -81,7 +81,7 @@ const Post = () => {
           { name: "Home", url: "https://www.sjuluxetravel.com" },
           { name: "Blog", url: "https://www.sjuluxetravel.com/blog" },
           {
-            name: "Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena",
+            name: "¿Qué es un Servicio de Concierge? Significado y Qué Incluye en tus Viajes",
             url: "https://www.sjuluxetravel.com/blog/servicios-concierge-viaje",
           },
         ]}
@@ -106,7 +106,7 @@ const Post = () => {
             </span>
             <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">
               {isEs
-                ? "Servicios de Concierge de Viaje: Qué Son, Qué Incluyen y Por Qué Valen la Pena"
+                ? "¿Qué es un Servicio de Concierge? Significado y Qué Incluye en tus Viajes"
                 : "Travel Concierge Services: What They Are, What's Included & Why They're Worth It"}
             </h1>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
@@ -132,8 +132,8 @@ const Post = () => {
             </div>
             <p className="text-muted-foreground/70 text-xs mt-3 italic">
               {isEs
-                ? "Última actualización: 24 de noviembre de 2026"
-                : "Last updated: November 24, 2026"}
+                ? "Última actualización: 25 de noviembre de 2026"
+                : "Last updated: November 25, 2026"}
             </p>
           </div>
           <div className="aspect-[16/9] overflow-hidden rounded-lg gold-border mb-12">
@@ -153,6 +153,12 @@ const Post = () => {
                 ? '"Servicio de concierge de viaje" suena abstracto, pero significa algo muy concreto: alguien que se encarga de los detalles antes, durante y después de tu viaje. Esto es lo que realmente incluye un buen concierge desde Puerto Rico.'
                 : '"Travel concierge" sounds abstract, but it means something very concrete: someone who handles the details before, during and after your trip. Here\'s what a good concierge actually includes from Puerto Rico.'}
             </p>
+
+            <div className="gold-border rounded-lg p-6 bg-card">
+              <h2 className="font-heading text-2xl text-foreground mb-3">{isEs ? "¿Qué es un servicio de concierge?" : "What is a concierge service?"}</h2>
+              <p>{isEs ? "Un servicio de concierge es atención personalizada: una persona se encarga de los detalles por ti. En viajes, significa que un agente de viaje planifica tu itinerario, compara y reserva vuelos, hoteles o cruceros, coordina traslados y te ayuda con cambios antes y durante el viaje." : "A concierge service is personalized assistance: one person handles the details for you. In travel, it means a travel agent plans your itinerary, compares and books flights, hotels or cruises, coordinates transfers and helps with changes before and during the trip."}</p>
+              <p className="mt-3">{isEs ? "Ejemplo: en vez de buscar tú solo vuelos, hotel y excursiones para tu luna de miel, le das tus fechas y presupuesto a tu agente, y recibes opciones listas para reservar." : "Example: instead of searching flights, hotels and tours for your honeymoon on your own, you share your dates and budget with your agent and receive options ready to book."}</p>
+            </div>
 
             <div className="border-y border-border py-6">
               <h2 className="font-heading text-2xl text-foreground mb-3">{isEs ? "¿Qué necesitas para tu viaje?" : "What support does your trip need?"}</h2>
