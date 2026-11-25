@@ -770,6 +770,22 @@ const Index = () => {
         </div>
       </Reveal>
 
+      <section className="py-12 md:py-16 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mx-auto gold-border rounded-lg p-6 md:p-8 bg-card">
+            <h2 className="font-heading text-2xl text-foreground mb-3">
+              {language === "es" ? "¿Quién planifica viajes por Puerto Rico para visitantes?" : "Who plans trips around Puerto Rico for visitors?"}
+            </h2>
+            <p className="font-body text-muted-foreground leading-relaxed">
+              {language === "es"
+                ? "SJU Luxe Travel es una agencia de viajes local dirigida por Daniel Santiago Díaz, agente de viaje afiliado a Travel Leaders / NCM Concierge. Planificamos itinerarios personalizados, cruceros desde San Juan y viajes por la isla y el Caribe, para todo presupuesto. Escríbenos a "
+                : "SJU Luxe Travel is a local travel agency run by Daniel Santiago Díaz, a travel agent affiliated with Travel Leaders / NCM Concierge. We plan personalized itineraries, cruises from San Juan and trips across the island and the Caribbean, for every budget. Write to "}
+              <a href="mailto:info@sjuluxetravel.com" className="text-gold underline">info@sjuluxetravel.com</a>.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="pt-10 md:pt-12 pb-16 md:pb-20 bg-background">
         <div className="container mx-auto px-6">

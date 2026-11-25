@@ -41,10 +41,10 @@ const Post = () => {
   const faqs = [...generalFaqs[locale], ...feeAnswers];
   const description = isEs
     ? "Qué es un servicio de concierge y qué significa en viajes: una persona que planifica, reserva y coordina tu viaje. Ejemplos y qué incluye desde Puerto Rico."
-    : "Travel concierge from Puerto Rico: explore planning services, understand travel planning fees and learn what to confirm before paying.";
+    : "A travel concierge plans, books and manages your trip for you: flights, hotels, tours and support while you travel. See what's included and what it costs.";
   const headline = isEs
     ? "¿Qué es un Servicio de Concierge? Significado y Qué Incluye en tus Viajes"
-    : "Travel Concierge Services: What They Are, What's Included & Why They're Worth It";
+    : "What Does a Travel Concierge Do? Services, What's Included & Costs";
   const schemaJson = buildGraph({
     "@type": "BlogPosting",
     headline,
@@ -71,11 +71,11 @@ const Post = () => {
       <SEOHead
         ogType="article"
         ogImage="https://www.sjuluxetravel.com/og/servicios-concierge-viaje.jpg"
-        title="Travel Concierge: Services and Costs | SJU Luxe Travel"
+        title="What Does a Travel Concierge Do? | SJU Luxe Travel"
         titleEs="¿Qué es un Servicio de Concierge? Significado | SJU Luxe"
         descriptionEs="Qué es un servicio de concierge y qué significa en viajes: una persona que planifica, reserva y coordina tu viaje. Ejemplos y qué incluye desde Puerto Rico."
         emitHreflang
-        description="Travel concierge from Puerto Rico: explore planning services, understand travel planning fees and learn what to confirm before paying."
+        description="A travel concierge plans, books and manages your trip for you: flights, hotels, tours and support while you travel. See what's included and what it costs."
         canonical="https://www.sjuluxetravel.com/blog/servicios-concierge-viaje"
         breadcrumbs={[
           { name: "Home", url: "https://www.sjuluxetravel.com" },
@@ -107,7 +107,7 @@ const Post = () => {
             <h1 className="font-heading text-3xl md:text-5xl text-foreground mt-3 mb-4">
               {isEs
                 ? "¿Qué es un Servicio de Concierge? Significado y Qué Incluye en tus Viajes"
-                : "Travel Concierge Services: What They Are, What's Included & Why They're Worth It"}
+                : "What Does a Travel Concierge Do? Services, What's Included & Costs"}
             </h1>
             <div className="flex flex-wrap items-center gap-4 text-muted-foreground text-xs">
               <Link
@@ -155,8 +155,8 @@ const Post = () => {
             </p>
 
             <div className="gold-border rounded-lg p-6 bg-card">
-              <h2 className="font-heading text-2xl text-foreground mb-3">{isEs ? "¿Qué es un servicio de concierge?" : "What is a concierge service?"}</h2>
-              <p>{isEs ? "Un servicio de concierge es atención personalizada: una persona se encarga de los detalles por ti. En viajes, significa que un agente de viaje planifica tu itinerario, compara y reserva vuelos, hoteles o cruceros, coordina traslados y te ayuda con cambios antes y durante el viaje." : "A concierge service is personalized assistance: one person handles the details for you. In travel, it means a travel agent plans your itinerary, compares and books flights, hotels or cruises, coordinates transfers and helps with changes before and during the trip."}</p>
+              <h2 className="font-heading text-2xl text-foreground mb-3">{isEs ? "¿Qué es un servicio de concierge?" : "What does a travel concierge do?"}</h2>
+              <p>{isEs ? "Un servicio de concierge es atención personalizada: una persona se encarga de los detalles por ti. En viajes, significa que un agente de viaje planifica tu itinerario, compara y reserva vuelos, hoteles o cruceros, coordina traslados y te ayuda con cambios antes y durante el viaje." : "A travel concierge plans and manages your trip from start to finish. They compare flights and hotels, book tours and transfers, handle special requests like anniversaries or dietary needs, and stay on call while you travel. If something changes, like a delayed flight or a closed restaurant, your agent fixes it so you don't have to."}</p>
               <p className="mt-3">{isEs ? "Ejemplo: en vez de buscar tú solo vuelos, hotel y excursiones para tu luna de miel, le das tus fechas y presupuesto a tu agente, y recibes opciones listas para reservar." : "Example: instead of searching flights, hotels and tours for your honeymoon on your own, you share your dates and budget with your agent and receive options ready to book."}</p>
             </div>
 
