@@ -18,14 +18,14 @@ import oceaniaImg from "@/assets/ocean/oceania.png";
 import ritzCarltonImg from "@/assets/ocean/ritz-carlton.jpg";
 import virginImg from "@/assets/ocean/virgin.jpg";
 import genericShipImg from "@/assets/blog-repositioning-cruise.jpg";
-import royalCaribbeanAsset from "@/assets/royal-caribbean-san-juan.jpg.asset.json";
-import celebrityAsset from "@/assets/celebrity-cruises-san-juan.jpg.asset.json";
-import carnivalAsset from "@/assets/carnival-san-juan.jpg.asset.json";
-import mscAsset from "@/assets/msc-cruises-san-juan.jpg.asset.json";
-import princessAsset from "@/assets/princess-cruises-san-juan.png.asset.json";
-import disneyAsset from "@/assets/disney-cruise-line-san-juan.png.asset.json";
-import norwegianAsset from "@/assets/norwegian-cruise-line-san-juan.png.asset.json";
-import orientExpressImg from "@/assets/orient-express-corinthian.jpg.asset.json";
+import royalCaribbeanAsset from "@/assets/ocean/royal-caribbean-san-juan.jpg";
+import celebrityAsset from "@/assets/ocean/celebrity-cruises-san-juan.jpg";
+import carnivalAsset from "@/assets/ocean/carnival-san-juan.jpg";
+import mscAsset from "@/assets/ocean/msc-cruises-san-juan.jpg";
+import princessAsset from "@/assets/ocean/princess-cruises-san-juan.jpg";
+import disneyAsset from "@/assets/ocean/disney-cruise-line-san-juan.jpg";
+import norwegianAsset from "@/assets/ocean/norwegian-cruise-line-san-juan.jpg";
+import orientExpressImg from "@/assets/ocean/orient-express-corinthian.jpg";
 import virginCertImg from "@/assets/ocean/virgin-cert.png";
 
 import { ORG_REF, WEBSITE_REF, buildGraph, breadcrumbList } from "@/lib/schema";
@@ -82,13 +82,13 @@ const FAQ_ITEMS = [
 ];
 
 const popularLines = [
-  { name: "Royal Caribbean", img: royalCaribbeanAsset.url, es: "Barcos grandes con muchas actividades, ideales para familias y grupos. Tiene salidas frecuentes desde San Juan por el Caribe Sur.", en: "Big ships packed with activities, great for families and groups. Frequent San Juan departures to the Southern Caribbean." },
-  { name: "Celebrity Cruises", img: celebrityAsset.url, es: "Ambiente moderno y relajado, buena comida y camarotes cómodos. Navega el Caribe con salidas desde San Juan en temporada.", en: "Modern, relaxed atmosphere, great dining and comfortable staterooms. Seasonal Caribbean sailings from San Juan." },
-  { name: "MSC Cruises", img: mscAsset.url, es: "Estilo mediterráneo y tarifas para distintos presupuestos; buena opción para familias.", en: "Mediterranean style with fares for different budgets; a good fit for families." },
-  { name: "Norwegian Cruise Line", img: norwegianAsset.url, es: "Sin horarios fijos para cenar y mucha flexibilidad a bordo. Opera itinerarios por el Caribe.", en: "No fixed dining times and plenty of flexibility on board. Sails Caribbean itineraries." },
-  { name: "Carnival", img: carnivalAsset.url, es: "Ambiente divertido y precios accesibles, perfecto para un primer crucero o un viaje con amistades.", en: "Fun atmosphere and accessible fares, perfect for a first cruise or a trip with friends." },
-  { name: "Princess Cruises", img: princessAsset.url, es: "Ritmo tranquilo, buen servicio y opciones para parejas y familias.", en: "Calm pace, attentive service and options for couples and families." },
-  { name: "Disney Cruise Line", img: disneyAsset.url, es: "Pensado para familias con niños, con personajes y entretenimiento. Coordino el vuelo al puerto de salida.", en: "Designed for families with kids, with characters and shows. I coordinate the flight to the departure port." },
+  { name: "Royal Caribbean", img: royalCaribbeanAsset, es: "Barcos grandes con muchas actividades, ideales para familias y grupos. Tiene salidas frecuentes desde San Juan por el Caribe Sur.", en: "Big ships packed with activities, great for families and groups. Frequent San Juan departures to the Southern Caribbean." },
+  { name: "Celebrity Cruises", img: celebrityAsset, es: "Ambiente moderno y relajado, buena comida y camarotes cómodos. Navega el Caribe con salidas desde San Juan en temporada.", en: "Modern, relaxed atmosphere, great dining and comfortable staterooms. Seasonal Caribbean sailings from San Juan." },
+  { name: "MSC Cruises", img: mscAsset, es: "Estilo mediterráneo y tarifas para distintos presupuestos; buena opción para familias.", en: "Mediterranean style with fares for different budgets; a good fit for families." },
+  { name: "Norwegian Cruise Line", img: norwegianAsset, es: "Sin horarios fijos para cenar y mucha flexibilidad a bordo. Opera itinerarios por el Caribe.", en: "No fixed dining times and plenty of flexibility on board. Sails Caribbean itineraries." },
+  { name: "Carnival", img: carnivalAsset, es: "Ambiente divertido y precios accesibles, perfecto para un primer crucero o un viaje con amistades.", en: "Fun atmosphere and accessible fares, perfect for a first cruise or a trip with friends." },
+  { name: "Princess Cruises", img: princessAsset, es: "Ritmo tranquilo, buen servicio y opciones para parejas y familias.", en: "Calm pace, attentive service and options for couples and families." },
+  { name: "Disney Cruise Line", img: disneyAsset, es: "Pensado para familias con niños, con personajes y entretenimiento. Coordino el vuelo al puerto de salida.", en: "Designed for families with kids, with characters and shows. I coordinate the flight to the departure port." },
 ];
 
 const crucerosDeLujo = () => {
@@ -119,7 +119,7 @@ const crucerosDeLujo = () => {
     silversea: silverseaImg,
     viking: vikingImg,
     seadream: seadreamImg,
-    orientExpress: orientExpressImg.url,
+    orientExpress: orientExpressImg,
   };
 
   return (
