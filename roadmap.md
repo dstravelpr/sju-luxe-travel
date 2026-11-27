@@ -1,6 +1,7 @@
 # Approved website improvements
 - [x] Release the approved 2027 savings blog in EN/ES, include both URLs in the existing sitemap, and verify publication metadata and blog links.
-- [ ] Request Lovable publishing and confirm whether the separately hosted public domain receives the new article before Search Console submission.
+- [x] Request Lovable publishing for the released article.
+- [ ] Confirm the separately hosted public-domain sitemap includes the new article before Search Console submission; blocked on that deployment (current public sitemap omits it).
 - [x] Restore the bilingual Google preferred-source button using sjuluxetravel.com after the owner confirmed that domain appears without www; leave canonical URLs and the unpublished draft unchanged.
 - [x] Expose the corrected draft through a preview-only Blog link, including hosted previews; retain public-site exclusion.
 - [x] Correct the 2027 savings article in EN/ES and verify a preview-only route; do not publish or add to the sitemap/blog index.
