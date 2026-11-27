@@ -7,7 +7,8 @@ import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { Picture } from "@/components/Picture";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { showArticleDrafts } from "@/lib/draftRoutes";
+import { savingsCopy, SAVINGS_PATH, SAVINGS_PUBLICATION_DATE } from "@/content/travelSavings2027";
+import savingsImg from "@/assets/blog-savings-flight-sunset.jpg";
 import blogMicrocationsImg from "@/assets/blog-microcations.jpg";
 import blogLuxuryImg from "@/assets/blog-luxury-travel.jpg";
 import blogAgentImg from "@/assets/blog-travel-agent.jpg";
@@ -28,7 +29,7 @@ const Blog = () => {
     if (!node) return;
     for (const card of Array.from(node.children)) {
       const href = card.getAttribute("href") ?? "";
-      const groups = [[], ["duero", "reposicionamiento", "micro-vacaciones"], ["concierge", "save-money", "what-luxury"], ["river-cruising", "duero", "wellness"], ["duero", "what-luxury"]];
+      const groups = [[], ["duero", "reposicionamiento", "micro-vacaciones"], ["concierge", "save-money", "what-luxury", "avoid-high-travel-costs"], ["river-cruising", "duero", "wellness"], ["duero", "what-luxury"]];
       (card as HTMLElement).hidden = activeCategoryIndex !== 0 && !groups[activeCategoryIndex]?.some(slug => href.includes(slug));
     }
   };
@@ -73,14 +74,6 @@ const Blog = () => {
 
       <section className="py-8 bg-background">
         <div className="container mx-auto px-6">
-          {showArticleDrafts && (
-            <section className="mx-auto mb-8 max-w-3xl border-y border-border py-6">
-              <h2 className="mb-3 font-heading text-2xl text-foreground">{language === "es" ? "Borrador · No publicado" : "Draft · Not published"}</h2>
-              <Link to={localPath("/blog/avoid-high-travel-costs-2027")} className="text-gold underline">
-                {language === "es" ? "Cómo evitar gastos altos en tus viajes de 2027" : "How to Avoid High Costs on Your 2027 Trips"}
-              </Link>
-            </section>
-          )}
           <div className="flex flex-wrap justify-center gap-3">
             {t.blog.categories.map((cat, index) => (
               <Button variant="outline"
@@ -166,6 +159,19 @@ const Blog = () => {
             </h2>
           </div>
           <div ref={filterCards} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Link to={localPath(SAVINGS_PATH)} className="gold-border gold-border-hover rounded-sm overflow-hidden group block">
+              <article>
+                <img src={savingsImg} alt={language === "es" ? "Avión despegando al atardecer" : "Airplane taking off at sunset"} loading="lazy" className="aspect-video w-full object-cover" />
+                <div className="p-6">
+                  <h3 className="font-heading text-lg text-foreground mb-3 group-hover:text-gold transition-colors">{savingsCopy[language].title}</h3>
+                  <p className="text-muted-foreground text-xs leading-relaxed mb-4">{savingsCopy[language].description}</p>
+                  <div className="flex flex-wrap gap-3 text-muted-foreground text-xs">
+                    <span>Daniel Santiago Díaz</span>
+                    <time dateTime={SAVINGS_PUBLICATION_DATE}>{language === "es" ? "27 de noviembre de 2026" : "November 27, 2026"}</time>
+                  </div>
+                </div>
+              </article>
+            </Link>
             <Link
               to={localPath("/blog/crucero-fluvial-duero-desde-puerto-rico")}
               className="gold-border gold-border-hover rounded-sm overflow-hidden group block"

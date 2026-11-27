@@ -5,7 +5,7 @@ import { SEOHead } from "@/components/SEOHead";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { AUTHOR, ORG_REF, HOSTNAME, buildGraph } from "@/lib/schema";
-import { savingsCopy, savingsSources, SAVINGS_PATH, SAVINGS_REVIEW_DATE } from "@/content/travelSavings2027";
+import { savingsCopy, savingsSources, SAVINGS_PATH, SAVINGS_REVIEW_DATE, SAVINGS_PUBLICATION_DATE } from "@/content/travelSavings2027";
 import heroImg from "@/assets/blog-savings-flight-sunset.jpg";
 import portugalImg from "@/assets/blog-porto-douro-sunset.jpg";
 
@@ -22,7 +22,9 @@ export default function TravelSavings2027() {
       publisher: ORG_REF,
       dateModified: SAVINGS_REVIEW_DATE,
       inLanguage: isEs ? "es-PR" : "en",
-      creativeWorkStatus: "Draft",
+      datePublished: SAVINGS_PUBLICATION_DATE,
+      mainEntityOfPage: `${HOSTNAME}${localPath(SAVINGS_PATH)}`,
+      url: `${HOSTNAME}${localPath(SAVINGS_PATH)}`,
       citation: savingsSources.map((source) => source.url),
     },
     {
@@ -43,8 +45,7 @@ export default function TravelSavings2027() {
         description={savingsCopy.en.description}
         descriptionEs={savingsCopy.es.description}
         ogType="article"
-        noindex
-        suppressCanonical
+        emitHreflang
         schemaJson={schema}
       />
       <article className="bg-background pt-36 pb-20">
@@ -55,7 +56,7 @@ export default function TravelSavings2027() {
           </Link>
           <header className="mb-10">
             <p className="mb-4 text-xs font-body uppercase text-gold">
-              {isEs ? "Borrador · No publicado" : "Draft · Not published"}
+              {isEs ? "Planifica tus viajes de 2027" : "Plan your 2027 travel"}
             </p>
             <h1 className="font-heading text-3xl leading-tight text-foreground md:text-5xl">{copy.title}</h1>
             <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
@@ -63,8 +64,8 @@ export default function TravelSavings2027() {
               {isEs ? " · Agente de viaje · SJU Luxe Travel" : " · Travel agent · SJU Luxe Travel"}
             </p>
             <p className="mt-2 text-xs text-muted-foreground">
-              {isEs ? "Revisado: " : "Reviewed: "}
-              <time dateTime={SAVINGS_REVIEW_DATE}>{isEs ? "27 de noviembre de 2026" : "November 27, 2026"}</time>
+              {isEs ? "Publicado: " : "Published: "}
+              <time dateTime={SAVINGS_PUBLICATION_DATE}>{isEs ? "27 de noviembre de 2026" : "November 27, 2026"}</time>
             </p>
           </header>
           <img src={heroImg} alt={isEs ? "Avión despegando al atardecer sobre la línea de un aeropuerto" : "An airplane taking off at sunset above an airport skyline"} className="mb-2 aspect-video w-full rounded-lg object-cover" />
@@ -123,20 +124,7 @@ export default function TravelSavings2027() {
               </ul>
             </section>
           </div>
-          <section className="mt-16 border-t border-border pt-8 text-sm leading-relaxed text-muted-foreground" aria-labelledby="publishing-notes">
-            <h2 id="publishing-notes" className="mb-6 font-heading text-2xl text-foreground">{isEs ? "Notas de publicación · No forman parte del artículo" : "Publishing notes · Not part of the article"}</h2>
-            <dl className="space-y-5 break-words">
-              <div><dt className="font-semibold text-foreground">SEO title ({copy.seoTitle.length})</dt><dd>{copy.seoTitle}</dd></div>
-              <div><dt className="font-semibold text-foreground">Meta description ({copy.description.length})</dt><dd>{copy.description}</dd></div>
-              <div><dt className="font-semibold text-foreground">URL</dt><dd>{localPath(SAVINGS_PATH)}</dd></div>
-              <div><dt className="font-semibold text-foreground">{isEs ? "Palabra clave principal" : "Focus keyword"}</dt><dd>{isEs ? "cómo ahorrar en viajes 2027" : "save money on travel 2027"}</dd></div>
-              <div><dt className="font-semibold text-foreground">{isEs ? "Palabras clave secundarias" : "Secondary keywords"}</dt><dd>{isEs ? "vuelos desde Puerto Rico, cuándo reservar vuelos, cruceros desde San Juan, cargos por planificación, costos de viaje" : "flights from Puerto Rico, when to book flights, cruises from San Juan, travel planning fees, total trip costs"}</dd></div>
-              <div><dt className="font-semibold text-foreground">{isEs ? "Publicación prevista" : "Planned publication"}</dt><dd>{isEs ? "1 de diciembre de 2026, pendiente de aprobación. La fecha de publicación se añadirá al publicarlo." : "December 1, 2026, pending approval. The actual publication date will be added on release."}</dd></div>
-              <div><dt className="font-semibold text-foreground">Canonical / hreflang</dt><dd>{isEs ? "Al publicar: versiones EN/ES con canonical propio y alternates. No se emiten en este borrador." : "On release: self-canonical EN/ES pages with language alternates. Not emitted for this draft."}<br />{HOSTNAME}{SAVINGS_PATH}<br />{HOSTNAME}/es{SAVINGS_PATH}</dd></div>
-              <div><dt className="font-semibold text-foreground">{isEs ? "Datos estructurados" : "Structured data"}</dt><dd>{isEs ? "BlogPosting con autor y fecha de revisión; FAQPage generado de las mismas respuestas visibles. No garantiza preguntas destacadas en Google." : "BlogPosting with author and review date; FAQPage generated from the exact visible answers. Does not guarantee FAQ displays in Google."}</dd></div>
-              <div><dt className="font-semibold text-foreground">{isEs ? "Estado" : "Status"}</dt><dd>{isEs ? "Solo en vista previa. No publicado, no indexable y fuera del índice del blog y sitemap." : "Preview only. Unpublished, noindex and excluded from the blog index and sitemap."}</dd></div>
-            </dl>
-          </section>
+
         </div>
       </article>
     </Layout>

@@ -1,5 +1,6 @@
 export const SAVINGS_PATH = "/blog/avoid-high-travel-costs-2027";
 export const SAVINGS_REVIEW_DATE = "2026-11-27";
+export const SAVINGS_PUBLICATION_DATE = "2026-11-27";
 export const savingsSources = [
   { name: "Google Flights — date grids, price graphs and flexible searches", url: "https://blog.google/products-and-platforms/products/search/how-to-save-money-google-travel-2024/" },
   { name: "Google Flights — route-specific booking insights and price tracking", url: "https://blog.google/products-and-platforms/products/travel/google-flights-find-deals/" },

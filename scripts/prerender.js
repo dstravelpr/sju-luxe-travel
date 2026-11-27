@@ -6,7 +6,10 @@
 import fs from "fs";
 import path from "path";
 import { replaceMeta, escapeHtml } from "./seo-html.js";
-const snapshots = JSON.parse(fs.readFileSync(path.resolve("scripts/route-seo-snapshots.json"), "utf-8"));
+const snapshots = {
+  ...JSON.parse(fs.readFileSync(path.resolve("scripts/route-seo-snapshots.json"), "utf-8")),
+  ...JSON.parse(fs.readFileSync(path.resolve("scripts/travel-savings-seo-snapshots.json"), "utf-8")),
+};
 
 const DIST = path.resolve("dist");
 const template = fs.readFileSync(path.join(DIST, "index.html"), "utf-8");
@@ -39,6 +42,10 @@ const ROUTE_IMAGES = {
 // Route content (Spanish is the default variant unless noted)
 // ---------------------------------------------------------------
 const pages = {
+  "/blog/avoid-high-travel-costs-2027": {
+    datePublished: "2026-11-27",
+    dateModified: "2026-11-27",
+  },
   "/about": {
     title: "Sobre SJU Luxe Travel — Agente de Viaje en Puerto Rico",
     description: "Conoce a Daniel Santiago Díaz, agente bilingüe de viajes de lujo certificado en San Juan, Puerto Rico. Itinerarios personalizados y beneficios exclusivos de NCM Concierge.",

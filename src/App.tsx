@@ -12,7 +12,6 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { LanguageProvider } from "@/i18n/LanguageContext";
-import { previewOnlyRoutes, showArticleDrafts } from "@/lib/draftRoutes";
 
 const GAPageViewTracker = () => {
   const location = useLocation();
@@ -113,9 +112,7 @@ const RedirectBlog = ({ to }: { to: string }) => {
 const queryClient = new QueryClient();
 
 const appRoutes = [
-  ...previewOnlyRoutes(showArticleDrafts, [
-    { path: "/blog/avoid-high-travel-costs-2027", element: <TravelSavings2027 /> },
-  ]),
+  { path: "/blog/avoid-high-travel-costs-2027", element: <TravelSavings2027 /> },
   { path: "/", element: <Index /> },
   { path: "/about", element: <About /> },
   { path: "/destinations", element: <Destinations /> },
