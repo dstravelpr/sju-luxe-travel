@@ -1,4 +1,5 @@
 # Approved website improvements
+- [x] Add a bilingual Google preferred-source button to the blog and articles without publishing the savings draft; Google eligibility confirmation requires the owner's signed-in account.
 - [x] Expose the corrected draft through a preview-only Blog link, including hosted previews; retain public-site exclusion.
 - [x] Correct the 2027 savings article in EN/ES and verify a preview-only route; do not publish or add to the sitemap/blog index.
 - [x] Store blog/footer subscriptions securely and verify both forms.
