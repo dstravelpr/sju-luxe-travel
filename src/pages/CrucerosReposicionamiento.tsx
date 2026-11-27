@@ -1,3 +1,5 @@
+import { BlogQuickAnswers } from "@/components/blog/BlogQuickAnswers";
+import { MORE_QUICK_ANSWERS } from "@/components/blog/quickAnswersMore";
 import { Fragment } from "react";
 import { Link } from "react-router-dom";
 import { ArrowRight, Printer } from "lucide-react";
@@ -355,6 +357,9 @@ const CrucerosReposicionamiento = () => {
           </div>
         </div>
       </article>
+      <div className="container mx-auto px-6 max-w-3xl pb-16">
+        <BlogQuickAnswers {...MORE_QUICK_ANSWERS.repositioning} />
+      </div>
     </Layout>
   );
 };

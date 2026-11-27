@@ -1,3 +1,5 @@
+import { BlogQuickAnswers } from "@/components/blog/BlogQuickAnswers";
+import { MORE_QUICK_ANSWERS } from "@/components/blog/quickAnswersMore";
 import { Link } from "react-router-dom";
 import { ArrowRight, MapPin, Clock, Users } from "lucide-react";
 import { Layout } from "@/components/Layout";
@@ -203,6 +205,9 @@ const Destinations = () => {
           ))}
         </div>
       </section>
+      <div className="container mx-auto px-6 max-w-3xl pb-16">
+        <BlogQuickAnswers {...MORE_QUICK_ANSWERS.destinations} />
+      </div>
     </Layout>
   );
 };

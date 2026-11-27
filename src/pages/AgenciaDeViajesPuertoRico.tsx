@@ -1,3 +1,5 @@
+import { BlogQuickAnswers } from "@/components/blog/BlogQuickAnswers";
+import { MORE_QUICK_ANSWERS } from "@/components/blog/quickAnswersMore";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import { ArrowRight } from "lucide-react";
@@ -175,6 +177,9 @@ const AgenciaDeViajesPuertoRico = () => (
         </div>
       </div>
     </article>
+      <div className="container mx-auto px-6 max-w-3xl pb-16">
+        <BlogQuickAnswers {...MORE_QUICK_ANSWERS.agency} />
+      </div>
   </Layout>
 );
 

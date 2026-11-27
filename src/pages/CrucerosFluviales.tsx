@@ -1,3 +1,5 @@
+import { BlogQuickAnswers } from "@/components/blog/BlogQuickAnswers";
+import { MORE_QUICK_ANSWERS } from "@/components/blog/quickAnswersMore";
 import { HolidayTravel } from "@/components/HolidayTravel";
 import { Link } from "react-router-dom";
 import { ArrowRight, Award } from "lucide-react";
@@ -313,6 +315,9 @@ const crucerosFluviales = () => {
           </div>
         </div>
       </article>
+      <div className="container mx-auto px-6 max-w-3xl pb-16">
+        <BlogQuickAnswers {...MORE_QUICK_ANSWERS.rivers} />
+      </div>
     </Layout>
   );
 };
