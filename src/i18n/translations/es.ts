@@ -433,12 +433,12 @@ export const es: typeof en = {
     ],
     featured: "Destacado",
     featuredPost: {
-      category: "Cruceros",
-      title: "Cruceros de Reposicionamiento desde Puerto Rico: Guía Completa 2026–2028",
+      category: "Consejos de Viaje",
+      title: "Cómo evitar gastos altos en tus viajes de 2027 (sin quedarte en casa)",
       excerpt:
-        "Cruza el Atlántico desde San Juan en un crucero de reposicionamiento. Descubre salidas hacia España, Portugal, Italia, Inglaterra, Panamá y Costa Rica — con consejos de cabina, temporada y vuelos.",
-      date: "8 de agosto de 2026",
-      readTime: "7 min de lectura",
+        "Planifica tus viajes de 2027 desde Puerto Rico: compara el costo completo del viaje, monitorea vuelos, revisa qué incluye realmente tu crucero y confirma los cargos por planificación antes de reservar.",
+      date: "27 de noviembre de 2026",
+      readTime: "6 min de lectura",
     },
     posts: [
       {

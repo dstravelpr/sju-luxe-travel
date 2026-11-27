@@ -431,12 +431,12 @@ export const en = {
     ],
     featured: "Featured",
     featuredPost: {
-      category: "Cruises",
-      title: "Repositioning Cruises from Puerto Rico: The Complete 2026–2028 Guide",
+      category: "Travel Tips",
+      title: "How to Avoid High Costs on Your 2027 Trips (Without Staying Home)",
       excerpt:
-        "Cross the Atlantic from San Juan on a repositioning cruise. Discover 15 sailings to Spain, Portugal, Italy, England, Panama and Costa Rica — with insider tips on cabins, seasons and flights.",
-      date: "August 8, 2026",
-      readTime: "7 min read",
+        "Plan your 2027 trips from Puerto Rico: compare the total cost of the trip, track flights, check what your cruise really includes and confirm travel planning fees before you book.",
+      date: "November 27, 2026",
+      readTime: "6 min read",
     },
     posts: [
       {

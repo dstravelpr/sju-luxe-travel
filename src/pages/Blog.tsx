@@ -7,7 +7,7 @@ import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { Picture } from "@/components/Picture";
 import { useLanguage } from "@/i18n/LanguageContext";
-import { savingsCopy, SAVINGS_PATH, SAVINGS_PUBLICATION_DATE } from "@/content/travelSavings2027";
+import { SAVINGS_PATH } from "@/content/travelSavings2027";
 import savingsImg from "@/assets/blog-savings-flight-sunset.jpg";
 import blogMicrocationsImg from "@/assets/blog-microcations.jpg";
 import blogLuxuryImg from "@/assets/blog-luxury-travel.jpg";
@@ -100,13 +100,16 @@ const Blog = () => {
               <div className="absolute top-4 left-4 px-3 py-1 bg-gold-gradient text-primary-foreground text-[10px] tracking-[0.15em] uppercase font-semibold rounded-sm z-10">
                 {t.blog.featured}
               </div>
-              <Picture
-                src={blogRepositioningImg}
-                webpSrc={blogRepositioningImgWebp}
-                alt={t.blog.featuredPost.title}
+              <img
+                src={savingsImg}
+                alt={
+                  language === "es"
+                    ? "Avión despegando al atardecer"
+                    : "Airplane taking off at sunset"
+                }
                 className="w-full h-full object-cover"
-                width={1536}
-                height={1152}
+                width={1600}
+                height={900}
               />
             </div>
             <div>
@@ -134,7 +137,7 @@ const Blog = () => {
                 </span>
               </div>
               <Link
-                to={localPath("/blog/cruceros-de-reposicionamiento-desde-puerto-rico")}
+                to={localPath(SAVINGS_PATH)}
                 className="inline-flex items-center gap-2 text-gold hover:text-gold-light transition-colors font-body text-sm tracking-wide"
               >
                 {t.blog.readArticle}
@@ -159,19 +162,6 @@ const Blog = () => {
             </h2>
           </div>
           <div ref={filterCards} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Link to={localPath(SAVINGS_PATH)} className="gold-border gold-border-hover rounded-sm overflow-hidden group block">
-              <article>
-                <img src={savingsImg} alt={language === "es" ? "Avión despegando al atardecer" : "Airplane taking off at sunset"} loading="lazy" className="aspect-video w-full object-cover" />
-                <div className="p-6">
-                  <h3 className="font-heading text-lg text-foreground mb-3 group-hover:text-gold transition-colors">{savingsCopy[language].title}</h3>
-                  <p className="text-muted-foreground text-xs leading-relaxed mb-4">{savingsCopy[language].description}</p>
-                  <div className="flex flex-wrap gap-3 text-muted-foreground text-xs">
-                    <span>Daniel Santiago Díaz</span>
-                    <time dateTime={SAVINGS_PUBLICATION_DATE}>{language === "es" ? "27 de noviembre de 2026" : "November 27, 2026"}</time>
-                  </div>
-                </div>
-              </article>
-            </Link>
             <Link
               to={localPath("/blog/crucero-fluvial-duero-desde-puerto-rico")}
               className="gold-border gold-border-hover rounded-sm overflow-hidden group block"
