@@ -1,5 +1,5 @@
 # Approved website improvements
-- [x] Remove the Google preferred-source button after the owner confirmed the site is absent from Google's selector; leave the savings draft unpublished.
+- [x] Restore the bilingual Google preferred-source button using sjuluxetravel.com after the owner confirmed that domain appears without www; leave canonical URLs and the unpublished draft unchanged.
 - [x] Expose the corrected draft through a preview-only Blog link, including hosted previews; retain public-site exclusion.
 - [x] Correct the 2027 savings article in EN/ES and verify a preview-only route; do not publish or add to the sitemap/blog index.
 - [x] Store blog/footer subscriptions securely and verify both forms.

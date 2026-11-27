@@ -1,4 +1,5 @@
 import { NewsletterForm } from "@/components/NewsletterForm";
+import { GooglePreferredSource } from "@/components/blog/GooglePreferredSource";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import {
@@ -396,7 +397,10 @@ const Footer = () => {
 export const Layout = ({ children }: { children: React.ReactNode }) => (
   <div className="min-h-screen bg-background">
     <Header />
-    <main>{children}</main>
+    <main>
+      {children}
+      <GooglePreferredSource />
+    </main>
     <Footer />
   </div>
 );
