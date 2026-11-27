@@ -1,4 +1,5 @@
 # Approved website improvements
+- [x] Correct the 2027 savings article in EN/ES and verify a preview-only route; do not publish or add to the sitemap/blog index.
 - [x] Store blog/footer subscriptions securely and verify both forms.
 - [x] Align initial HTML, bilingual metadata, canonical/hreflang and Terms noindex; preserve URLs/schema.
 - [x] Add bilingual Christmas/2027 sections to existing home and cruise pages, without unconfirmed offers.

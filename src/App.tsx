@@ -12,6 +12,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { LanguageProvider } from "@/i18n/LanguageContext";
+import { previewOnlyRoutes } from "@/lib/draftRoutes";
 
 const GAPageViewTracker = () => {
   const location = useLocation();
@@ -82,6 +83,7 @@ const CrucerosReposicionamientoBlog = lazy(
 const TendenciasViaje2026 = lazy(
   () => import("./pages/blog/TendenciasViaje2026.tsx"),
 );
+const TravelSavings2027 = lazy(() => import("./pages/blog/TravelSavings2027.tsx"));
 const Privacy = lazy(() => import("./pages/Privacy.tsx"));
 const Terms = lazy(() => import("./pages/Terms.tsx"));
 const ViajesDeLujo = lazy(() => import("./pages/ViajesDeLujo.tsx"));
@@ -111,6 +113,9 @@ const RedirectBlog = ({ to }: { to: string }) => {
 const queryClient = new QueryClient();
 
 const appRoutes = [
+  ...previewOnlyRoutes(import.meta.env.DEV, [
+    { path: "/blog/avoid-high-travel-costs-2027", element: <TravelSavings2027 /> },
+  ]),
   { path: "/", element: <Index /> },
   { path: "/about", element: <About /> },
   { path: "/destinations", element: <Destinations /> },
