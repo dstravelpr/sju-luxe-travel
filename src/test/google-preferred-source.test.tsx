@@ -15,6 +15,9 @@ const renderAt = (path: string) =>
     </MemoryRouter>,
   );
 
+const button = () =>
+  screen.getByRole("link", { name: /preferred source|fuente preferida/i });
+
 describe("Google preferred-source button", () => {
   it.each([
     "/",
@@ -25,15 +28,12 @@ describe("Google preferred-source button", () => {
     "/es/luna-de-miel-de-lujo",
   ])("appears on %s", (path) => {
     renderAt(path);
-    expect(screen.getByRole("link", { href: HREF })).toBeInTheDocument();
+    expect(button()).toHaveAttribute("href", HREF);
   });
 
   it("points at the public domain without www", () => {
     renderAt("/");
-    const link = screen.getByRole("link", { href: HREF });
-    expect(link).toHaveAttribute(
-      "href",
-      "https://www.google.com/preferences/source?q=sjuluxetravel.com",
-    );
+    expect(button().getAttribute("href")).toBe(HREF);
+    expect(button().getAttribute("href")).not.toContain("www.sjuluxetravel");
   });
 });
