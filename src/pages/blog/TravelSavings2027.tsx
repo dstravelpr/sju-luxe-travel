@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { AUTHOR, ORG_REF, HOSTNAME, buildGraph } from "@/lib/schema";
 import { savingsCopy, savingsSources, SAVINGS_PATH, SAVINGS_REVIEW_DATE } from "@/content/travelSavings2027";
-import heroImg from "@/assets/traveler-airport.jpg";
-import portugalImg from "@/assets/destination-portugal.jpg";
+import heroImg from "@/assets/blog-savings-flight-sunset.jpg";
+import portugalImg from "@/assets/blog-porto-douro-sunset.jpg";
 
 export default function TravelSavings2027() {
   const { language, localPath } = useLanguage();
@@ -67,7 +67,10 @@ export default function TravelSavings2027() {
               <time dateTime={SAVINGS_REVIEW_DATE}>{isEs ? "27 de noviembre de 2026" : "November 27, 2026"}</time>
             </p>
           </header>
-          <img src={heroImg} alt={isEs ? "Viajero con equipaje en un aeropuerto" : "Traveler with luggage at an airport"} className="mb-10 aspect-video w-full rounded-lg object-cover" />
+          <img src={heroImg} alt={isEs ? "Avión despegando al atardecer sobre la línea de un aeropuerto" : "An airplane taking off at sunset above an airport skyline"} className="mb-2 aspect-video w-full rounded-lg object-cover" />
+          <p className="mb-10 text-xs text-muted-foreground">
+            {isEs ? "Foto: Liuboyoupeter, Wikimedia Commons (CC BY-SA 4.0)" : "Photo: Liuboyoupeter, Wikimedia Commons (CC BY-SA 4.0)"}
+          </p>
           <div className="space-y-6 text-base leading-relaxed text-muted-foreground">
             {copy.intro.map((text) => <p key={text}>{text}</p>)}
             <section className="border-y border-border py-6" aria-labelledby="savings-answer">
@@ -87,7 +90,14 @@ export default function TravelSavings2027() {
                   </p>
                 )}
                 {section.link && <Link to={localPath(section.link.path)} className="mt-4 inline-block text-gold underline">{section.link.label}</Link>}
-                {index === 4 && <img src={portugalImg} loading="lazy" alt={isEs ? "Vista de Portugal, un destino para comparar en tu viaje de 2027" : "A view of Portugal, a destination to compare for a 2027 trip"} className="mt-8 aspect-video w-full rounded-lg object-cover" />}
+                {index === 4 && (
+                  <figure className="mt-8">
+                    <img src={portugalImg} loading="lazy" alt={isEs ? "El río Duero y la ciudad de Oporto, Portugal, al atardecer" : "The Douro River and the city of Porto, Portugal, at sunset"} className="aspect-video w-full rounded-lg object-cover" />
+                    <figcaption className="mt-2 text-xs text-muted-foreground">
+                      {isEs ? "Foto: Ted Moravec, Wikimedia Commons (CC0)" : "Photo: Ted Moravec, Wikimedia Commons (CC0)"}
+                    </figcaption>
+                  </figure>
+                )}
               </section>
             ))}
             <section className="border-t border-border pt-8" aria-labelledby="savings-faq">

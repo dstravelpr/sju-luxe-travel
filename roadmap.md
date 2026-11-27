@@ -22,3 +22,6 @@
 - [x] Real photos for all seven popular lines (Royal Caribbean, Celebrity, MSC, Norwegian, Carnival, Princess, Disney).
 - [x] Cards shown 3 per row on every screen size, with the final row centered.
 - [x] Orient Express Corinthian added as the 18th line so the grid closes in six full rows of three; photo credit recorded.
+
+## Draft article photos (2027 savings)
+- [x] Replace both draft images with real free-license photos (Wikimedia Commons), with credits and bilingual alt text.
