@@ -1,13 +1,9 @@
 import { ExternalLink } from "lucide-react";
-import { useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 export const GooglePreferredSource = () => {
-  const { pathname } = useLocation();
   const { language } = useLanguage();
-  const blogPath = pathname.replace(/^\/(en|es)(?=\/|$)/, "");
-  if (blogPath !== "/blog" && !blogPath.startsWith("/blog/")) return null;
 
   return (
     <section className="bg-background px-6 py-12 text-center">

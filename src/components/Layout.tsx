@@ -1,5 +1,5 @@
 import { NewsletterForm } from "@/components/NewsletterForm";
-import { GooglePreferredSource } from "@/components/blog/GooglePreferredSource";
+import { GooglePreferredSource } from "@/components/GooglePreferredSource";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import {
