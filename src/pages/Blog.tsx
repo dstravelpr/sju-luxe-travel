@@ -7,6 +7,7 @@ import { Layout } from "@/components/Layout";
 import { SEOHead } from "@/components/SEOHead";
 import { Picture } from "@/components/Picture";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { showArticleDrafts } from "@/lib/draftRoutes";
 import blogMicrocationsImg from "@/assets/blog-microcations.jpg";
 import blogLuxuryImg from "@/assets/blog-luxury-travel.jpg";
 import blogAgentImg from "@/assets/blog-travel-agent.jpg";
@@ -72,6 +73,14 @@ const Blog = () => {
 
       <section className="py-8 bg-background">
         <div className="container mx-auto px-6">
+          {showArticleDrafts && (
+            <section className="mx-auto mb-8 max-w-3xl border-y border-border py-6">
+              <h2 className="mb-3 font-heading text-2xl text-foreground">{language === "es" ? "Borrador · No publicado" : "Draft · Not published"}</h2>
+              <Link to={localPath("/blog/avoid-high-travel-costs-2027")} className="text-gold underline">
+                {language === "es" ? "Cómo evitar gastos altos en tus viajes de 2027" : "How to Avoid High Costs on Your 2027 Trips"}
+              </Link>
+            </section>
+          )}
           <div className="flex flex-wrap justify-center gap-3">
             {t.blog.categories.map((cat, index) => (
               <Button variant="outline"

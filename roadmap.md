@@ -1,4 +1,5 @@
 # Approved website improvements
+- [x] Expose the corrected draft through a preview-only Blog link, including hosted previews; retain public-site exclusion.
 - [x] Correct the 2027 savings article in EN/ES and verify a preview-only route; do not publish or add to the sitemap/blog index.
 - [x] Store blog/footer subscriptions securely and verify both forms.
 - [x] Align initial HTML, bilingual metadata, canonical/hreflang and Terms noindex; preserve URLs/schema.
