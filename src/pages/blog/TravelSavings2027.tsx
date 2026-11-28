@@ -45,6 +45,7 @@ export default function TravelSavings2027() {
         description={savingsCopy.en.description}
         descriptionEs={savingsCopy.es.description}
         ogType="article"
+        ogImage={`${HOSTNAME}/og/ahorrar-viajes-2027.jpg`}
         emitHreflang
         schemaJson={schema}
       />
